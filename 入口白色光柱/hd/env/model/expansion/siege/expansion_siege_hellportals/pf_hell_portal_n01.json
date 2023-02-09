@@ -1,0 +1,4056 @@
+{
+	"dependencies": {
+		"particles": [],
+		"models": [{
+			"path": "data/hd/env/foliage/expansion/model/expansion_bushes_dogwood/expansion_bush_dogwood04.model"
+		}, {
+			"path": "data/hd/env/foliage/expansion/model/expansion_bushes_shad/expansion_bush_shad01.model"
+		}, {
+			"path": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland01.model"
+		}, {
+			"path": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland02.model"
+		}, {
+			"path": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland03.model"
+		}, {
+			"path": "data/hd/env/model/act4/expansion/act4_expansion_props/banner01.model"
+		}, {
+			"path": "data/hd/env/model/act4/expansion/act4_expansion_props/banner01_cloth.model"
+		}, {
+			"path": "data/hd/env/model/act4/expansion/act4_expansion_props/skull_gate01.model"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_crystals/crystal_damage01.model"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_crystals/rock_spikes01.model"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_crystals/rock_spikes02.model"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_floors/bridge01.model"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_props/debris01.model"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_props/debris02.model"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_props/debris03.model"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_props/debris04.model"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_props/skull_pillar01.model"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_walls/bridge_pillar01.model"
+		}, {
+			"path": "data/hd/env/model/act4/mesa/act4_mesa_cliff_corners/cliff_inside_corner02.model"
+		}, {
+			"path": "data/hd/env/model/act4/mesa/act4_mesa_cliff_straights/cliff_medium01.model"
+		}, {
+			"path": "data/hd/env/model/act4/mesa/act4_mesa_gates/gate_chain_single01.model"
+		}, {
+			"path": "data/hd/env/model/act4/mesa/act4_mesa_gates/gate_chain_single02.model"
+		}, {
+			"path": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_perimeter01.model"
+		}, {
+			"path": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_pillar01.model"
+		}, {
+			"path": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_platform01.model"
+		}, {
+			"path": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_skirt01.model"
+		}, {
+			"path": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_stairs01.model"
+		}],
+		"skeletons": [{
+			"path": "data/hd/env/model/act4/expansion/act4_expansion_props/skeleton/act4_expansion_props.skeleton"
+		}],
+		"animations": [],
+		"textures": [{
+			"path": "data/hd/env/biome/expansion_siege.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood03_canopy_alb.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood03_canopy_b.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood03_canopy_nrm.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood03_canopy_orm.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood04_a_alb.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood04_a_nrm.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood04_a_orm.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood04_b_alb.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood04_b_nrm.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood04_b_orm.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood07_canopy_alb.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood07_canopy_b.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood07_canopy_nrm.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood07_canopy_orm.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood12_a_alb.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood12_a_nrm.texture"
+		}, {
+			"path": "data/hd/env/foliage/expansion/texture/expansion_bush_dogwood12_a_orm.texture"
+		}, {
+			"path": "data/hd/env/foliage/global/texture/expansion_grass_moorland_ALB.texture"
+		}, {
+			"path": "data/hd/env/foliage/global/texture/expansion_grass_moorland_B.texture"
+		}, {
+			"path": "data/hd/env/foliage/global/texture/expansion_grass_moorland_NRM.texture"
+		}, {
+			"path": "data/hd/env/foliage/global/texture/expansion_grass_moorland_ORM.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/act4_expansion_cart01_m1_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/act4_expansion_cart01_m1_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/act4_expansion_cart01_m1_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/banner_01_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/banner_01_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/banner_01_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/skull_gate01_m1_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/skull_gate01_m1_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/skull_gate01_m1_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/skull_gate01_m2_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/skull_gate01_m2_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/skull_gate01_m2_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/skull_gate01_m3_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/skull_gate01_m3_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/expansion/skull_gate01_m3_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_a_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_a_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_a_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_b_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_b_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_b_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_c_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_c_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_c_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_d_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_d_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_d_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_e_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_e_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_e_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_f_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_f_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_f_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_g_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_g_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_g_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_h_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_h_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_h_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_i_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_i_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/fort/act4_fort_stairs_Stairs03_i_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_crystals_crystal_damage01_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_crystals_crystal_damage01_b.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_crystals_crystal_damage01_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_crystals_crystal_damage01_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_crystals_rock_spikes01_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_crystals_rock_spikes01_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_crystals_rock_spikes01_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_crystals_rock_spikes02_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_crystals_rock_spikes02_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_crystals_rock_spikes02_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_floors_bridge01_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_floors_bridge01_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_floors_bridge01_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_fortress_pillar01_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_fortress_pillar01_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_fortress_pillar01_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_debris_pillar01_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_debris_pillar01_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_debris_pillar01_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_debris_pillar02_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_debris_pillar02_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_debris_pillar02_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_skull_pile01_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_skull_pile01_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_skull_pile01_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_skull_pillar01_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_skull_pillar01_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_props_skull_pillar01_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_stairs_bridge_stairs01_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_stairs_bridge_stairs01_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_stairs_bridge_stairs01_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_stairs_bridge_stairs02_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_stairs_bridge_stairs02_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_stairs_bridge_stairs02_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_stairs_bridge_stairs03_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_stairs_bridge_stairs03_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/lava/act4_lava_stairs_bridge_stairs03_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_corners_cliff_inside_corner02_a_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_corners_cliff_inside_corner02_a_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_corners_cliff_inside_corner02_a_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_corners_cliff_inside_corner02_b_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_corners_cliff_inside_corner02_b_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_corners_cliff_inside_corner02_b_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_large01_f_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_large01_f_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_large01_f_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_a_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_a_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_a_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_b_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_b_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_b_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_c_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_c_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_c_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_d_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_d_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_cliffs_straights_cliff_medium01_d_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_gates_gate_chains02_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_gates_gate_chains02_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_gates_gate_chains02_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_pillars_pillar_set_a_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_pillars_pillar_set_a_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_pillars_pillar_set_a_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_pillars_pillar_set_b_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_pillars_pillar_set_b_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_pillars_pillar_set_b_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_pillars_pillar_set_c_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_pillars_pillar_set_c_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_pillars_pillar_set_c_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_rubble_pebble01_alb.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_rubble_pebble01_nrm.texture"
+		}, {
+			"path": "data/hd/env/texture/act4/mesa/act4_mesa_rubble_pebble01_orm.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/act4/act4_mesa_fade_ALB.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/act4/act4_mesa_fade_NRM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/act4/act4_mesa_fade_ORM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/act4/act4_mesa_pebbles02_ALB.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/act4/act4_mesa_pebbles02_NRM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/act4/act4_mesa_pebbles02_ORM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/damage01_ALB.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/damage01_NRM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/damage01_ORM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/damage02_ALB.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/damage02_NRM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/damage02_ORM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/damage03_ALB.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/damage03_NRM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/damage03_ORM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/mud_splatter02_ALB.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/mud_splatter02_NRM.texture"
+		}, {
+			"path": "data/hd/env/texture/global/decal/global/mud_splatter02_ORM.texture"
+		}, {
+			"path": "data/hd/env/texture/test/detailnormal/detail_NRM.texture"
+		}],
+		"physics": [{
+			"path": "data/hd/env/model/act4/lava/act4_lava_floors/bridge01_collision.physics"
+		}, {
+			"path": "data/hd/env/model/act4/lava/act4_lava_walls/bridge_pillar01_collision.physics"
+		}, {
+			"path": "data/hd/env/model/act4/mesa/act4_mesa_cliff_corners/cliff_inside_corner02_collision.physics"
+		}, {
+			"path": "data/hd/env/model/act4/mesa/act4_mesa_cliff_straights/cliff_medium_collision.physics"
+		}, {
+			"path": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_platform01_collision.physics"
+		}, {
+			"path": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_stairs01_collision.physics"
+		}, {
+			"path": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal01_collision.physics"
+		}],
+		"json": [],
+		"variantdata": [],
+		"objecteffects": [],
+		"other": []
+	},
+	"type": "Prefab",
+	"name": "pf_hell_portal_N01",
+	"entities": [{
+		"type": "Entity",
+		"name": "expansion_grass_moorland01_07",
+		"id": 2863124639,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_grass_moorland01_07_components_TransformDefinitionComponent",
+			"position": {
+				"x": 8.0,
+				"y": 0.0,
+				"z": -36.19774
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": -0.858134,
+				"z": 0.0,
+				"w": 0.513425767
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_grass_moorland01_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_grass_moorland01_ModelPlatformTier",
+			"visibilityTier": 1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_bush_dogwood04_01",
+		"id": 3395895596,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_bush_dogwood04_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 20.91915,
+				"y": -0.3908754,
+				"z": -13.61702
+			},
+			"orientation": {
+				"x": -0.01139454,
+				"y": 0.202631,
+				"z": -0.1037258,
+				"w": 0.973679543
+			},
+			"scale": {
+				"x": 0.8417287,
+				"y": 0.8417287,
+				"z": 0.8417287
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent013",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition013",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition013",
+					"center": {
+						"x": 0.3461132,
+						"y": 8.223229,
+						"z": -2.535776
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 8.598166,
+						"y": 8.223267,
+						"z": 11.84292
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_bush_dogwood04_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/expansion/model/expansion_bushes_dogwood/expansion_bush_dogwood04.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 2
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_bush_dogwood04_02",
+		"id": 4267603684,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_bush_dogwood04_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": -19.35271,
+				"y": -3.109881,
+				"z": 5.03147
+			},
+			"orientation": {
+				"x": 0.05772366,
+				"y": -0.5417196,
+				"z": -0.08763134,
+				"w": 0.8339836
+			},
+			"scale": {
+				"x": 0.8417287,
+				"y": 0.8417287,
+				"z": 0.8417287
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent014",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition014",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition014",
+					"center": {
+						"x": 0.3461132,
+						"y": 8.223229,
+						"z": -2.535776
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 8.598166,
+						"y": 8.223267,
+						"z": 11.84292
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_bush_dogwood04_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/expansion/model/expansion_bushes_dogwood/expansion_bush_dogwood04.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 2
+		}]
+	}, {
+		"type": "Entity",
+		"name": "gate_chain_single01_01",
+		"id": 827960221,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "gate_chain_single01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 20.52058,
+				"y": -0.3592651,
+				"z": -3.87172
+			},
+			"orientation": {
+				"x": -0.201695889,
+				"y": -0.00578392157,
+				"z": 0.0988049656,
+				"w": 0.9744347
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent018",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition018",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition018",
+					"center": {
+						"x": 0.02703732,
+						"y": 5.799963,
+						"z": -2.711372
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 0.5618889,
+						"y": 5.821609,
+						"z": 4.677763
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "walltransparent",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "gate_chain_single01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/mesa/act4_mesa_gates/gate_chain_single01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "WallTransparencyComponent",
+			"name": "gate_chain_single01_WallTransparency",
+			"drawOrder": 0,
+			"wallTileLocalCoord": {
+				"x": -1,
+				"y": -1
+			}
+		}]
+	}, {
+		"type": "Entity",
+		"name": "mud_splatter02_05",
+		"id": 1360337961,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "mud_splatter02_05_components_TransformDefinitionComponent",
+			"position": {
+				"x": -1.65589,
+				"y": -0.2102681,
+				"z": -14.0
+			},
+			"orientation": {
+				"x": -0.0533256531,
+				"y": -0.210396916,
+				"z": 0.0229048617,
+				"w": 0.9758918
+			},
+			"scale": {
+				"x": 26.85309,
+				"y": 16.25839,
+				"z": 26.85309
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "DecalDefinitionComponent",
+			"name": "mud_splatter02_DecalDefinition",
+			"diffuseMap": "data/hd/env/texture/global/decal/global/mud_splatter02_ALB.texture",
+			"normalMap": "data/hd/env/texture/global/decal/global/mud_splatter02_NRM.texture",
+			"ormMap": "data/hd/env/texture/global/decal/global/mud_splatter02_ORM.texture",
+			"edgeFade": 0.0,
+			"heightFade": 0.1,
+			"weight": 1.0,
+			"applyToAlbedo": true,
+			"applyToNormal": true,
+			"applyToOcclusion": true,
+			"applyToRoughness": true,
+			"applyToMetalness": true,
+			"thresholdValue": 0.0,
+			"thresholdHardness": 1.0,
+			"emissiveIntensity": 0.0,
+			"emissiveFocus": 1.0,
+			"lightMask": 16
+		}]
+	}, {
+		"type": "Entity",
+		"name": "act4_lava_props_pillar01_09",
+		"id": 2232439266,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "act4_lava_props_pillar01_09_components_TransformDefinitionComponent",
+			"position": {
+				"x": 7.76111,
+				"y": 0.1108037,
+				"z": 13.88172
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition",
+					"center": {
+						"x": -0.03210056,
+						"y": 2.51278,
+						"z": 0.03378379
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 1.152076,
+						"y": 3.168002,
+						"z": 1.152526
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "act4_lava_props_pillar01_Alchemy_Runtime_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_props/skull_pillar01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "hellportal_skirt01_01",
+		"id": 3087763098,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "hellportal_skirt01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": -0.79836,
+				"y": 0.0,
+				"z": 13.4944
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent024",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition024",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition024",
+					"center": {
+						"x": 0.0,
+						"y": 0.311879,
+						"z": 4.986238
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 10.01269,
+						"y": 0.4409541,
+						"z": 5.026451
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "hellportal_skirt01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_skirt01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "debris04_01",
+		"id": 3636918055,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "debris04_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 18.6404,
+				"y": 0.0,
+				"z": 3.2832
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.2762417,
+				"z": 0.0,
+				"w": 0.9610882
+			},
+			"scale": {
+				"x": 1.4907968,
+				"y": 1.4907968,
+				"z": 1.4907968
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent012",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition012",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition012",
+					"center": {
+						"x": -0.9481559,
+						"y": 2.700847,
+						"z": 0.7036881
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 5.735041,
+						"y": 4.53442,
+						"z": 5.87528
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "lava_debris04_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_props/debris04.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "hellportal_pillar01_01",
+		"id": 3878333474,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "hellportal_pillar01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 6.00538,
+				"y": 2.279188,
+				"z": -16.69561
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent022",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition022",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition022",
+					"center": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 2.714086,
+						"y": 5.75886,
+						"z": 4.981294
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "hellportal_pillar01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_pillar01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "hellportal_pillar01_02",
+		"id": 438690266,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "hellportal_pillar01_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": -8.46433,
+				"y": 2.279188,
+				"z": -16.69561
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent023",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition023",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition023",
+					"center": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 2.714086,
+						"y": 5.75886,
+						"z": 4.981294
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "hellportal_pillar01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_pillar01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "skull_gate01_01",
+		"id": 987845479,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "skull_gate01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": -3.12586,
+				"y": 3.852416,
+				"z": -21.47844
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": -0.707106769,
+				"z": 0.0,
+				"w": 0.707106769
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.11963058
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent028",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition028",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition028",
+					"center": {
+						"x": 0.6090879,
+						"y": 11.6931,
+						"z": 0.0
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 3.422408,
+						"y": 11.6931,
+						"z": 10.019
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "skull_gate01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/expansion/act4_expansion_props/skull_gate01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "rock_spikes02_01",
+		"id": 1859946272,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "rock_spikes02_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 10.0,
+				"y": -0.3893532,
+				"z": 6.19123
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.00678610662,
+				"z": 0.0,
+				"w": 0.999977
+			},
+			"scale": {
+				"x": 1.13094616,
+				"y": 1.13094616,
+				"z": 1.13094616
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent027",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition027",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition027",
+					"center": {
+						"x": 0.4889727,
+						"y": 2.481057,
+						"z": 0.9949298
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 6.654376,
+						"y": 2.621526,
+						"z": 6.138978
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "rock_spikes02_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_crystals/rock_spikes02.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": true,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "banner01_cloth_01",
+		"id": 2392324524,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "banner01_cloth_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 19.99395,
+				"y": 19.18453,
+				"z": 10.05842
+			},
+			"orientation": {
+				"x": 0.02212004,
+				"y": -0.023638,
+				"z": -0.00142328,
+				"w": 0.9994748
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent004",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition004",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition004",
+					"center": {
+						"x": 0.7097361,
+						"y": -7.100114,
+						"z": 0.8044614
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 3.262001,
+						"y": 6.981534,
+						"z": 0.3834152
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "banner01_cloth_ModelDefinition",
+			"filename": "data/hd/env/model/act4/expansion/act4_expansion_props/banner01_cloth.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "PhysicsClothDefinitionComponent",
+			"name": "banner01_cloth_PhysicsClothDefinition",
+			"minimumPlatformTier": 0,
+			"gravity": {
+				"x": 0.0,
+				"y": -32.17405,
+				"z": 0.0
+			},
+			"selfWind": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"windFactor": 1.0,
+			"dragFactor": 3.0,
+			"liftFactor": 1.6,
+			"boneTrackingFactor": 0.0,
+			"actorTrackingFactor": 0.0,
+			"warpStiffness": 1.0,
+			"weftStiffness": 0.9,
+			"shearStiffness": 0.1,
+			"bendStiffness": 0.2,
+			"explosionFactor": 1.0,
+			"impulseFactor": 1.0,
+			"dampingFactor": 0.0,
+			"skinStiffness": 0.0,
+			"blendHz": 0.0,
+			"blendDamping": 0.7,
+			"isStatic": true
+		}, {
+			"type": "SkeletonDefinitionComponent",
+			"name": "banner01_cloth_SkeletonDefinition",
+			"filename": "data/hd/env/model/act4/expansion/act4_expansion_props/skeleton/act4_expansion_props.skeleton"
+		}]
+	}, {
+		"type": "Entity",
+		"name": "banner01_cloth_02",
+		"id": 3247648101,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "banner01_cloth_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": -27.7081,
+				"y": 19.18453,
+				"z": 11.92091
+			},
+			"orientation": {
+				"x": 0.0218670312,
+				"y": 0.0763735846,
+				"z": -0.0036269573,
+				"w": 0.996832848
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent005",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition005",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition005",
+					"center": {
+						"x": 0.7097361,
+						"y": -7.100114,
+						"z": 0.8044614
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 3.262001,
+						"y": 6.981534,
+						"z": 0.3834152
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "banner01_cloth_ModelDefinition",
+			"filename": "data/hd/env/model/act4/expansion/act4_expansion_props/banner01_cloth.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "PhysicsClothDefinitionComponent",
+			"name": "banner01_cloth_PhysicsClothDefinition",
+			"minimumPlatformTier": 0,
+			"gravity": {
+				"x": 0.0,
+				"y": -32.17405,
+				"z": 0.0
+			},
+			"selfWind": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"windFactor": 1.0,
+			"dragFactor": 3.0,
+			"liftFactor": 1.6,
+			"boneTrackingFactor": 0.0,
+			"actorTrackingFactor": 0.0,
+			"warpStiffness": 1.0,
+			"weftStiffness": 0.9,
+			"shearStiffness": 0.1,
+			"bendStiffness": 0.2,
+			"explosionFactor": 1.0,
+			"impulseFactor": 1.0,
+			"dampingFactor": 0.0,
+			"skinStiffness": 0.0,
+			"blendHz": 0.0,
+			"blendDamping": 0.7,
+			"isStatic": true
+		}, {
+			"type": "SkeletonDefinitionComponent",
+			"name": "banner01_cloth_SkeletonDefinition",
+			"filename": "data/hd/env/model/act4/expansion/act4_expansion_props/skeleton/act4_expansion_props.skeleton"
+		}]
+	}, {
+		"type": "Entity",
+		"name": "mud_splatter02_02",
+		"id": 4119749149,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "mud_splatter02_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": -1.96558,
+				"y": 6.180841,
+				"z": 13.31874
+			},
+			"orientation": {
+				"x": 0.157390192,
+				"y": 0.719521463,
+				"z": 0.1742465,
+				"w": 0.6535712
+			},
+			"scale": {
+				"x": 23.7884274,
+				"y": 11.094965,
+				"z": 23.7884274
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "DecalDefinitionComponent",
+			"name": "mud_splatter02_DecalDefinition",
+			"diffuseMap": "data/hd/env/texture/global/decal/global/mud_splatter02_ALB.texture",
+			"normalMap": "data/hd/env/texture/global/decal/global/mud_splatter02_NRM.texture",
+			"ormMap": "data/hd/env/texture/global/decal/global/mud_splatter02_ORM.texture",
+			"edgeFade": 0.0,
+			"heightFade": 0.1,
+			"weight": 1.0,
+			"applyToAlbedo": true,
+			"applyToNormal": true,
+			"applyToOcclusion": true,
+			"applyToRoughness": true,
+			"applyToMetalness": true,
+			"thresholdValue": 0.0,
+			"thresholdHardness": 1.0,
+			"emissiveIntensity": 0.0,
+			"emissiveFocus": 1.0,
+			"lightMask": 16
+		}]
+	}, {
+		"type": "Entity",
+		"name": "mud_splatter02_04",
+		"id": 1212483682,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "mud_splatter02_04_components_TransformDefinitionComponent",
+			"position": {
+				"x": 4.85614,
+				"y": -2.872018,
+				"z": 20.7425
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0965270847,
+				"z": 0.0,
+				"w": 0.995330334
+			},
+			"scale": {
+				"x": 26.85309,
+				"y": 16.25839,
+				"z": 26.85309
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "DecalDefinitionComponent",
+			"name": "mud_splatter02_DecalDefinition",
+			"diffuseMap": "data/hd/env/texture/global/decal/global/mud_splatter02_ALB.texture",
+			"normalMap": "data/hd/env/texture/global/decal/global/mud_splatter02_NRM.texture",
+			"ormMap": "data/hd/env/texture/global/decal/global/mud_splatter02_ORM.texture",
+			"edgeFade": 0.0,
+			"heightFade": 0.1,
+			"weight": 1.0,
+			"applyToAlbedo": true,
+			"applyToNormal": true,
+			"applyToOcclusion": true,
+			"applyToRoughness": true,
+			"applyToMetalness": true,
+			"thresholdValue": 0.0,
+			"thresholdHardness": 1.0,
+			"emissiveIntensity": 0.0,
+			"emissiveFocus": 1.0,
+			"lightMask": 16
+		}]
+	}, {
+		"type": "Entity",
+		"name": "cliff_inside_corner02_01",
+		"id": 2084584731,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "cliff_inside_corner02_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": -20.69852,
+				"y": -0.4241455,
+				"z": -32.38931
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": -0.175267667,
+				"z": 0.0,
+				"w": 0.9845208
+			},
+			"scale": {
+				"x": 1.04798126,
+				"y": 1.04798126,
+				"z": 1.04798126
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "cliff_inside_corner02_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/mesa/act4_mesa_cliff_corners/cliff_inside_corner02.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 0,
+			"ghostShadows": false,
+			"floorModel": true,
+			"terrainBlendEnableYUpBlend": true,
+			"terrainBlendMode": 1
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "cliff_inside_corner02_PhysicsBodyDefinitionComponent",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "cliff_inside_corner02_PhysicsFixtureDefinition",
+				"shapetype": {
+					"type": "PhysicsFileDefinition",
+					"name": "cliff_inside_corner02_PhysicsFileDefinition",
+					"filename": "data/hd/env/model/act4/mesa/act4_mesa_cliff_corners/cliff_inside_corner02_collision.physics"
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "floor",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}]
+	}, {
+		"type": "Entity",
+		"name": "act4_lava_walls_pillar_spike_b01_19",
+		"id": 2633739944,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "act4_lava_walls_pillar_spike_b01_19_components_TransformDefinitionComponent",
+			"position": {
+				"x": 7.05571,
+				"y": 0.9791909,
+				"z": 7.35802
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 1.0,
+				"z": 0.0,
+				"w": 2.83276934E-16
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "act4_lava_walls_pillar_spike_b01_Alchemy_Runtime_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_walls/bridge_pillar01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "bridge_pillar01_PhysicsBodyDefinition",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "bridge_pillar01_PhysicsBodyDefinition_fixturedefs_0",
+				"shapetype": {
+					"type": "PhysicsFileDefinition",
+					"name": "bridge_pillar01_PhysicsBodyDefinition_fixturedefs_0_shapetype",
+					"filename": "data/hd/env/model/act4/lava/act4_lava_walls/bridge_pillar01_collision.physics"
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "floor",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_grass_moorland02_02",
+		"id": 3489063776,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_grass_moorland02_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": 26.0,
+				"y": 0.0,
+				"z": -14.0
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 0.8,
+				"y": 0.8,
+				"z": 0.8
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_grass_moorland02_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland02.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_grass_moorland02_ModelPlatformTier",
+			"visibilityTier": 1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "crystal_damage01_01",
+		"id": 4021441773,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "crystal_damage01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 4.17297,
+				"y": 6.745899,
+				"z": -19.91571
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.869047463,
+				"z": 0.0,
+				"w": 0.494728684
+			},
+			"scale": {
+				"x": 0.9083263,
+				"y": 0.9083263,
+				"z": 0.9083263
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent006",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition006",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition006",
+					"center": {
+						"x": -0.1390612,
+						"y": 0.6307492,
+						"z": 0.3089898
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 3.689317,
+						"y": 0.7969865,
+						"z": 4.151052
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "act4_lava_crystals_crystal_clump05_Alchemy_Runtime_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_crystals/crystal_damage01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": true,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "crystal_damage01_03",
+		"id": 598575525,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "crystal_damage01_03_components_TransformDefinitionComponent",
+			"position": {
+				"x": -7.44247,
+				"y": 6.695128,
+				"z": -19.09492
+			},
+			"orientation": {
+				"x": 0.01836914,
+				"y": -0.9977705,
+				"z": -0.0103540495,
+				"w": 0.063320145
+			},
+			"scale": {
+				"x": 0.7506658,
+				"y": 0.7506658,
+				"z": 0.7506658
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent008",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition008",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition008",
+					"center": {
+						"x": -0.1390612,
+						"y": 0.6307492,
+						"z": 0.3089898
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 3.689317,
+						"y": 0.7969865,
+						"z": 4.151052
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "act4_lava_crystals_crystal_clump05_Alchemy_Runtime_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_crystals/crystal_damage01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": true,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "crystal_damage01_02",
+		"id": 1453899357,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "crystal_damage01_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": -3.0022,
+				"y": 0.0,
+				"z": 17.77583
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.9926682,
+				"z": 0.0,
+				"w": -0.120871134
+			},
+			"scale": {
+				"x": 0.9083263,
+				"y": 0.9083263,
+				"z": 0.9083263
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent007",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition007",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition007",
+					"center": {
+						"x": -0.1390612,
+						"y": 0.6307492,
+						"z": 0.3089898
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 3.689317,
+						"y": 0.7969865,
+						"z": 4.151052
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "act4_lava_crystals_crystal_clump05_Alchemy_Runtime_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_crystals/crystal_damage01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": true,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "debris02_01",
+		"id": 2003447786,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "debris02_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 13.16119,
+				"y": -1.22179,
+				"z": -32.75501
+			},
+			"orientation": {
+				"x": 0.0344555,
+				"y": 0.742080867,
+				"z": 0.122834094,
+				"w": 0.658058167
+			},
+			"scale": {
+				"x": 1.030361,
+				"y": 1.030361,
+				"z": 1.030361
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent010",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition010",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition010",
+					"center": {
+						"x": -0.1794605,
+						"y": 2.785885,
+						"z": -0.4272327
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 5.608451,
+						"y": 3.132118,
+						"z": 7.076233
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "lava_debris07_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_props/debris02.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "cliff_medium01_02",
+		"id": 2858378403,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "cliff_medium01_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": -23.80376,
+				"y": -0.7259486,
+				"z": -12.6249
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.707106769,
+				"z": 0.0,
+				"w": 0.707106769
+			},
+			"scale": {
+				"x": 1.04798126,
+				"y": 1.04798126,
+				"z": 1.04798126
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "cliff_medium01_ModelDefinition",
+			"filename": "data/hd/env/model/act4/mesa/act4_mesa_cliff_straights/cliff_medium01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 0,
+			"ghostShadows": false,
+			"floorModel": true,
+			"terrainBlendEnableYUpBlend": true,
+			"terrainBlendMode": 1
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "cliff_medium01_PhysicsBodyDefinitionComponent",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "cliff_medium01_PhysicsFixtureDefinition",
+				"shapetype": {
+					"type": "PhysicsFileDefinition",
+					"name": "cliff_medium01_PhysicsFileDefinition",
+					"filename": "data/hd/env/model/act4/mesa/act4_mesa_cliff_straights/cliff_medium_collision.physics"
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "floor",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}]
+	}, {
+		"type": "Entity",
+		"name": "debris01_01",
+		"id": 3713702235,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "debris01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": -22.47428,
+				"y": 0.0,
+				"z": 0.583
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.24967277,
+				"y": 1.24967277,
+				"z": 1.24967277
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent009",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition009",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition009",
+					"center": {
+						"x": 0.1232138,
+						"y": 2.700847,
+						"z": 0.1475351
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 4.522145,
+						"y": 4.53442,
+						"z": 3.90859
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "lava_debris02_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_props/debris01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "act4_lava_props_pillar01_10",
+		"id": 4262857448,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "act4_lava_props_pillar01_10_components_TransformDefinitionComponent",
+			"position": {
+				"x": -12.26989,
+				"y": 0.1108037,
+				"z": 13.88172
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent001",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition001",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition001",
+					"center": {
+						"x": -0.03210056,
+						"y": 2.51278,
+						"z": 0.03378379
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 1.152076,
+						"y": 3.168002,
+						"z": 1.152526
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "act4_lava_props_pillar01_Alchemy_Runtime_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_props/skull_pillar01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "rock_spikes01_01",
+		"id": 823213984,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "rock_spikes01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 18.55296,
+				"y": -1.849544,
+				"z": -8.21381
+			},
+			"orientation": {
+				"x": -0.0820911452,
+				"y": 0.8610708,
+				"z": 0.03948761,
+				"w": 0.500258744
+			},
+			"scale": {
+				"x": 0.9008165,
+				"y": 0.9008165,
+				"z": 0.9008165
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent025",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition025",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition025",
+					"center": {
+						"x": -0.2304883,
+						"y": 3.139003,
+						"z": -0.4383955
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 4.868892,
+						"y": 3.294799,
+						"z": 5.006645
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "rock_spikes01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_crystals/rock_spikes01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": true,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_bush_shad01_04",
+		"id": 1372368941,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_bush_shad01_04_components_TransformDefinitionComponent",
+			"position": {
+				"x": 7.0368,
+				"y": 0.0,
+				"z": -33.92639
+			},
+			"orientation": {
+				"x": 0.1384024,
+				"y": 0.04529128,
+				"z": -0.2157311,
+				"w": 0.9655328
+			},
+			"scale": {
+				"x": 0.6759911,
+				"y": 0.6759911,
+				"z": 0.6759911
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent017",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition017",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition017",
+					"center": {
+						"x": -0.2884717,
+						"y": 4.447103,
+						"z": -0.4563532
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 3.412338,
+						"y": 4.449499,
+						"z": 5.470881
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_bush_shad01_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/expansion/model/expansion_bushes_shad/expansion_bush_shad01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_bush_shad01_ModelPlatformTier",
+			"visibilityTier": -1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_bush_shad01_03",
+		"id": 2244470245,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_bush_shad01_03_components_TransformDefinitionComponent",
+			"position": {
+				"x": 22.0,
+				"y": 0.0,
+				"z": -4.0
+			},
+			"orientation": {
+				"x": 0.1384024,
+				"y": 0.04529128,
+				"z": -0.2157311,
+				"w": 0.9655328
+			},
+			"scale": {
+				"x": 0.6759911,
+				"y": 0.6759911,
+				"z": 0.6759911
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent016",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition016",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition016",
+					"center": {
+						"x": -0.2884717,
+						"y": 4.447103,
+						"z": -0.4563532
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 3.412338,
+						"y": 4.449499,
+						"z": 5.470881
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_bush_shad01_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/expansion/model/expansion_bushes_shad/expansion_bush_shad01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_bush_shad01_ModelPlatformTier",
+			"visibilityTier": -1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_bush_shad01_02",
+		"id": 3099793822,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_bush_shad01_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": 10.0,
+				"y": 0.0,
+				"z": 13.64479
+			},
+			"orientation": {
+				"x": 0.249846011,
+				"y": -0.209105521,
+				"z": -0.108528212,
+				"w": 0.939187646
+			},
+			"scale": {
+				"x": 0.6759911,
+				"y": 0.6759911,
+				"z": 0.6759911
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent015",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition015",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition015",
+					"center": {
+						"x": -0.2884717,
+						"y": 4.447103,
+						"z": -0.4563532
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 3.412338,
+						"y": 4.449499,
+						"z": 5.470881
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_bush_shad01_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/expansion/model/expansion_bushes_shad/expansion_bush_shad01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_bush_shad01_ModelPlatformTier",
+			"visibilityTier": -1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "rock_spikes01_02",
+		"id": 3632171819,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "rock_spikes01_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": -9.97825,
+				"y": 3.995368,
+				"z": -19.53509
+			},
+			"orientation": {
+				"x": 0.1019245,
+				"y": -0.05727078,
+				"z": 0.000434328715,
+				"w": 0.9931421
+			},
+			"scale": {
+				"x": 0.9008165,
+				"y": 0.9008165,
+				"z": 0.9008165
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent026",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition026",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition026",
+					"center": {
+						"x": -0.2304883,
+						"y": 3.139003,
+						"z": -0.4383955
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 4.868892,
+						"y": 3.294799,
+						"z": 5.006645
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "rock_spikes01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_crystals/rock_spikes01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": true,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "cliff_medium01_01",
+		"id": 209305827,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "cliff_medium01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 0.54585,
+				"y": -0.7259486,
+				"z": -33.59262
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.04798126,
+				"y": 1.04798126,
+				"z": 1.04798126
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "cliff_medium01_ModelDefinition",
+			"filename": "data/hd/env/model/act4/mesa/act4_mesa_cliff_straights/cliff_medium01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 0,
+			"ghostShadows": false,
+			"floorModel": true,
+			"terrainBlendEnableYUpBlend": true,
+			"terrainBlendMode": 1
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "cliff_medium01_PhysicsBodyDefinitionComponent",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "cliff_medium01_PhysicsFixtureDefinition",
+				"shapetype": {
+					"type": "PhysicsFileDefinition",
+					"name": "cliff_medium01_PhysicsFileDefinition",
+					"filename": "data/hd/env/model/act4/mesa/act4_mesa_cliff_straights/cliff_medium_collision.physics"
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "floor",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_grass_moorland03_02",
+		"id": 1064629403,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_grass_moorland03_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": -14.0,
+				"y": 0.0,
+				"z": 14.0
+			},
+			"orientation": {
+				"x": 0.05042331,
+				"y": -0.3659373,
+				"z": -0.04663292,
+				"w": 0.9281017
+			},
+			"scale": {
+				"x": 1.29562807,
+				"y": 1.29562807,
+				"z": 1.29562807
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_grass_moorland03_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland03.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_grass_moorland03_ModelPlatformTier",
+			"visibilityTier": 1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_grass_moorland03_03",
+		"id": 1597007400,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_grass_moorland03_03_components_TransformDefinitionComponent",
+			"position": {
+				"x": 8.23853,
+				"y": -1.291371,
+				"z": 14.31113
+			},
+			"orientation": {
+				"x": 0.05042331,
+				"y": -0.3659373,
+				"z": -0.04663292,
+				"w": 0.9281017
+			},
+			"scale": {
+				"x": 1.539777,
+				"y": 1.539777,
+				"z": 1.539777
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_grass_moorland03_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland03.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_grass_moorland03_ModelPlatformTier",
+			"visibilityTier": 1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "bridge01_03",
+		"id": 2469108448,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "bridge01_03_components_TransformDefinitionComponent",
+			"position": {
+				"x": -1.51177,
+				"y": 7.69352,
+				"z": -4.84576
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.29079032,
+				"y": 1.025179,
+				"z": 1.025179
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "bridge01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_floors/bridge01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": true,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "bridge01_PhysicsBodyDefinitionComponent",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "bridge01_PhysicsFixtureDefinition",
+				"shapetype": {
+					"type": "PhysicsFileDefinition",
+					"name": "bridge01_PhysicsFileDefinition",
+					"filename": "data/hd/env/model/act4/lava/act4_lava_floors/bridge01_collision.physics"
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "floor",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_grass_moorland01_04",
+		"id": 3018263661,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_grass_moorland01_04_components_TransformDefinitionComponent",
+			"position": {
+				"x": -22.0,
+				"y": 0.0,
+				"z": 8.0
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_grass_moorland01_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_grass_moorland01_ModelPlatformTier",
+			"visibilityTier": 1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_grass_moorland01_05",
+		"id": 3873587238,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_grass_moorland01_05_components_TransformDefinitionComponent",
+			"position": {
+				"x": 24.0,
+				"y": 0.0,
+				"z": -2.0
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_grass_moorland01_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_grass_moorland01_ModelPlatformTier",
+			"visibilityTier": 1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_grass_moorland01_06",
+		"id": 450721246,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_grass_moorland01_06_components_TransformDefinitionComponent",
+			"position": {
+				"x": 18.0,
+				"y": 0.0,
+				"z": -32.0
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_grass_moorland01_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_grass_moorland01_ModelPlatformTier",
+			"visibilityTier": 1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "debris03_01",
+		"id": 983099243,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "debris03_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 19.71235,
+				"y": 0.0,
+				"z": -17.73386
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.9999531,
+				"z": 0.0,
+				"w": -0.009685077
+			},
+			"scale": {
+				"x": 1.465262,
+				"y": 1.912981,
+				"z": 1.465262
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent011",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition011",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition011",
+					"center": {
+						"x": -0.2254391,
+						"y": 2.612032,
+						"z": -0.4584303
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 4.935271,
+						"y": 3.462295,
+						"z": 5.465258
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "lava_debris03_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_props/debris03.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_grass_moorland01_08",
+		"id": 1838422819,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_grass_moorland01_08_components_TransformDefinitionComponent",
+			"position": {
+				"x": 13.26127,
+				"y": -0.6797161,
+				"z": -36.06454
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.7151403,
+				"z": 0.0,
+				"w": -0.6989809
+			},
+			"scale": {
+				"x": 1.10800481,
+				"y": 1.10800481,
+				"z": 1.10800481
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_grass_moorland01_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_grass_moorland01_ModelPlatformTier",
+			"visibilityTier": 1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "expansion_grass_moorland01_09",
+		"id": 2710917340,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "expansion_grass_moorland01_09_components_TransformDefinitionComponent",
+			"position": {
+				"x": -26.0,
+				"y": 0.0,
+				"z": -2.0
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.7151403,
+				"z": 0.0,
+				"w": -0.6989809
+			},
+			"scale": {
+				"x": 1.10800481,
+				"y": 1.10800481,
+				"z": 1.10800481
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "expansion_grass_moorland01_ModelDefinitionComponent",
+			"filename": "data/hd/env/foliage/global/model/expansion_grass_moorland/expansion_grass_moorland01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "ModelPlatformTierComponent",
+			"name": "expansion_grass_moorland01_ModelPlatformTier",
+			"visibilityTier": 1,
+			"shadowTier": 3
+		}]
+	}, {
+		"type": "Entity",
+		"name": "act4_lava_walls_pillar_spike_b01_20",
+		"id": 3242901864,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "act4_lava_walls_pillar_spike_b01_20_components_TransformDefinitionComponent",
+			"position": {
+				"x": -11.32169,
+				"y": 1.257427,
+				"z": 7.58412
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 1.0,
+				"z": 0.0,
+				"w": 2.83276934E-16
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "act4_lava_walls_pillar_spike_b01_Alchemy_Runtime_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/lava/act4_lava_walls/bridge_pillar01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "bridge_pillar01_PhysicsBodyDefinition",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "bridge_pillar01_PhysicsBodyDefinition_fixturedefs_0",
+				"shapetype": {
+					"type": "PhysicsFileDefinition",
+					"name": "bridge_pillar01_PhysicsBodyDefinition_fixturedefs_0_shapetype",
+					"filename": "data/hd/env/model/act4/lava/act4_lava_walls/bridge_pillar01_collision.physics"
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "floor",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}]
+	}, {
+		"type": "Entity",
+		"name": "hellportal_perimeter01_01",
+		"id": 4098225697,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "hellportal_perimeter01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": -3.98562,
+				"y": -0.7503587,
+				"z": -11.83113
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "hellportal_perimeter01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_perimeter01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": true,
+			"terrainBlendMode": 2
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "hellportal_perimeter01_PhysicsBodyDefinitionComponent",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "hellportal_perimeter01_PhysicsFixtureDefinition",
+				"shapetype": {
+					"type": "PhysicsFileDefinition",
+					"name": "hellportal_perimeter01_PhysicsFileDefinition",
+					"filename": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal01_collision.physics"
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "effectfloor",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}]
+	}, {
+		"type": "Entity",
+		"name": "banner01_01",
+		"id": 1224514662,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "banner01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 19.95935,
+				"y": 0.0,
+				"z": 9.20801
+			},
+			"orientation": {
+				"x": 0.02212004,
+				"y": -0.023638,
+				"z": -0.00142328,
+				"w": 0.9994748
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent002",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition002",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition002",
+					"center": {
+						"x": 0.698688,
+						"y": 12.17911,
+						"z": 0.2825515
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 5.520534,
+						"y": 12.17918,
+						"z": 0.854883
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "banner01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/expansion/act4_expansion_props/banner01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "hellportal_platform01_01",
+		"id": 2079838494,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "hellportal_platform01_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": -1.84278,
+				"y": 2.903875,
+				"z": -15.48831
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "hellportal_platform01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_platform01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "hellportal_platform01_PhysicsBodyDefinition",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "hellportal_platform01_PhysicsBodyDefinition_fixturedefs_0",
+				"shapetype": {
+					"type": "PhysicsFileDefinition",
+					"name": "hellportal_platform01_PhysicsBodyDefinition_fixturedefs_0_shapetype",
+					"filename": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_platform01_collision.physics"
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "floor",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}]
+	}, {
+		"type": "Entity",
+		"name": "banner01_02",
+		"id": 2628993707,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "banner01_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": -27.9111,
+				"y": 0.0,
+				"z": 11.09437
+			},
+			"orientation": {
+				"x": 0.0218670312,
+				"y": 0.0763735846,
+				"z": -0.0036269573,
+				"w": 0.996832848
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent003",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition003",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition003",
+					"center": {
+						"x": 0.698688,
+						"y": 12.17911,
+						"z": 0.2825515
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 5.520534,
+						"y": 12.17918,
+						"z": 0.854883
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "wall",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "banner01_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/expansion/act4_expansion_props/banner01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}]
+	}, {
+		"type": "Entity",
+		"name": "gate_chain_single02_01",
+		"id": 3484317540,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "gate_chain_single02_01_components_TransformDefinitionComponent",
+			"position": {
+				"x": 16.39088,
+				"y": 1.545906,
+				"z": -16.55534
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.5135783,
+				"z": 0.0,
+				"w": 0.8580427
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent019",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition019",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition019",
+					"center": {
+						"x": -0.002967954,
+						"y": 6.968329,
+						"z": -5.052044
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 0.5508926,
+						"y": 6.984548,
+						"z": 6.962538
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "walltransparent",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "gate_chain_single02_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/mesa/act4_mesa_gates/gate_chain_single02.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "WallTransparencyComponent",
+			"name": "gate_chain_single02_WallTransparency",
+			"drawOrder": 0,
+			"wallTileLocalCoord": {
+				"x": -1,
+				"y": -1
+			}
+		}]
+	}, {
+		"type": "Entity",
+		"name": "gate_chain_single02_03",
+		"id": 44674076,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "gate_chain_single02_03_components_TransformDefinitionComponent",
+			"position": {
+				"x": -22.12225,
+				"y": -1.07845,
+				"z": -20.22419
+			},
+			"orientation": {
+				"x": 0.07043724,
+				"y": -0.6617045,
+				"z": 0.04968771,
+				"w": 0.7447932
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent021",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition021",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition021",
+					"center": {
+						"x": -0.002967954,
+						"y": 6.968329,
+						"z": -5.052044
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 0.5508926,
+						"y": 6.984548,
+						"z": 6.962538
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "walltransparent",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "gate_chain_single02_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/mesa/act4_mesa_gates/gate_chain_single02.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "WallTransparencyComponent",
+			"name": "gate_chain_single02_WallTransparency",
+			"drawOrder": 0,
+			"wallTileLocalCoord": {
+				"x": -1,
+				"y": -1
+			}
+		}]
+	}, {
+		"type": "Entity",
+		"name": "gate_chain_single02_02",
+		"id": 593829289,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "gate_chain_single02_02_components_TransformDefinitionComponent",
+			"position": {
+				"x": 5.71488,
+				"y": 0.24934,
+				"z": -31.84864
+			},
+			"orientation": {
+				"x": 0.03187138,
+				"y": 0.959667563,
+				"z": -0.121638894,
+				"w": 0.251448572
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "PhysicsBodyDefinitionComponent020",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "PhysicsFixtureDefinition020",
+				"shapetype": {
+					"type": "PhysicsBoxDefinition",
+					"name": "PhysicsBoxDefinition020",
+					"center": {
+						"x": -0.002967954,
+						"y": 6.968329,
+						"z": -5.052044
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0,
+						"w": 1.0
+					},
+					"extents": {
+						"x": 0.5508926,
+						"y": 6.984548,
+						"z": 6.962538
+					}
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "walltransparent",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "gate_chain_single02_ModelDefinitionComponent",
+			"filename": "data/hd/env/model/act4/mesa/act4_mesa_gates/gate_chain_single02.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": false,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "WallTransparencyComponent",
+			"name": "gate_chain_single02_WallTransparency",
+			"drawOrder": 0,
+			"wallTileLocalCoord": {
+				"x": -1,
+				"y": -1
+			}
+		}]
+	}, {
+		"type": "Entity",
+		"name": "hellportal_stairs01_02",
+		"id": 2562586069,
+		"components": [{
+			"type": "TransformDefinitionComponent",
+			"name": "hellportal_stairs01_02_TransformDefinitionComponent",
+			"position": {
+				"x": -1.73717582,
+				"y": 0.0,
+				"z": 10.27887
+			},
+			"orientation": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0,
+				"w": 1.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"inheritOnlyPosition": false
+		}, {
+			"type": "ModelDefinitionComponent",
+			"name": "hellportal_stairs01_ModelDefinition",
+			"filename": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_stairs01.model",
+			"visibleLayers": 1,
+			"lightMask": 19,
+			"shadowMask": 3,
+			"ghostShadows": false,
+			"floorModel": true,
+			"terrainBlendEnableYUpBlend": false,
+			"terrainBlendMode": 1
+		}, {
+			"type": "PhysicsBodyDefinitionComponent",
+			"name": "hellportal_stairs01_PhysicsBodyDefinitionComponent",
+			"bodytype": "static",
+			"fixturedefs": [{
+				"type": "PhysicsFixtureDefinition",
+				"name": "hellportal_stairs01_PhysicsFixtureDefinition",
+				"shapetype": {
+					"type": "PhysicsFileDefinition",
+					"name": "hellportal_stairs01_PhysicsFileDefinition",
+					"filename": "data/hd/env/model/expansion/siege/expansion_siege_hellportals/hellportal_stairs01_collision.physics"
+				},
+				"friction": 0.6,
+				"restitution": 0.0,
+				"rollingresistance": 0.2,
+				"impulsefactor": 1.0,
+				"explosionfactor": 1.0,
+				"explosionliftfactor": 1.0,
+				"windfactor": 0.0,
+				"dragfactor": 0.0,
+				"liftfactor": 1.0,
+				"density": 37.5,
+				"boneindex": -1
+			}],
+			"filter": "floor",
+			"allowTransition": true,
+			"removeOnDeath": true,
+			"lineardamping": 0.0,
+			"angulardamping": 0.0,
+			"gravityscale": 1.0
+		}]
+	},
+//正上方
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":0.0,"y":0.0,"z":0.0},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+
+//偏转方向  0.0-1.0  ，按XYZ对应轴逆时针偏转
+//右上 Z-
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":20.0,"y":25.0,"z":-40.0},"orientation":{"x":0.7,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":20.0,"y":25.0,"z":-70.0},"orientation":{"x":0.7,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":20.0,"y":25.0,"z":-100.0},"orientation":{"x":0.7,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":20.0,"y":25.0,"z":-130.0},"orientation":{"x":0.7,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":20.0,"y":25.0,"z":-160.0},"orientation":{"x":0.7,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+
+//右下 X+
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":80.0,"y":25.0,"z":20.0},"orientation":{"x":0.0,"y":0.0,"z":0.7,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":110.0,"y":25.0,"z":20.0},"orientation":{"x":0.0,"y":0.0,"z":0.7,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":140.0,"y":25.0,"z":20.0},"orientation":{"x":0.0,"y":0.0,"z":0.7,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":170.0,"y":25.0,"z":20.0},"orientation":{"x":0.0,"y":0.0,"z":0.7,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":200.0,"y":25.0,"z":20.0},"orientation":{"x":0.0,"y":0.0,"z":0.7,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+
+//左上 X-
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-40.0,"y":25.0,"z":20.0},"orientation":{"x":0.0,"y":0.0,"z":-0.7,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-70.0,"y":25.0,"z":20.0},"orientation":{"x":0.0,"y":0.0,"z":-0.7,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-100.0,"y":25.0,"z":20.0},"orientation":{"x":0.0,"y":0.0,"z":-0.7,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-130.0,"y":25.0,"z":20.0},"orientation":{"x":0.0,"y":0.0,"z":-0.7,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-160.0,"y":25.0,"z":20.0},"orientation":{"x":0.0,"y":0.0,"z":-0.7,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+
+//左下 Z+
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":20.0,"y":25.0,"z":80.0},"orientation":{"x":-0.7,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":20.0,"y":25.0,"z":110.0},"orientation":{"x":-0.7,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":20.0,"y":25.0,"z":140.0},"orientation":{"x":-0.7,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":20.0,"y":25.0,"z":170.0},"orientation":{"x":-0.7,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":20.0,"y":25.0,"z":200.0},"orientation":{"x":-0.7,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+
+//  上  X- Z-
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-40.0,"y":50.0,"z":-40.0},"orientation":{"x":0.0,"y":0.0,"z":1.0,"w":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-70.0,"y":50.0,"z":-70.0},"orientation":{"x":0.0,"y":0.0,"z":1.0,"w":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-100.0,"y":50.0,"z":-100.0},"orientation":{"x":0.0,"y":0.0,"z":1.0,"w":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+
+//  下  X+ Z+
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":60.0,"y":0.0,"z":60.0},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":90.0,"y":0.0,"z":90.0},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":120.0,"y":0.0,"z":120.0},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+
+//  左  X- Z+
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-10.0,"y":25.0,"z":50.0},"orientation":{"x":-0.9355,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-25.0,"y":25.0,"z":65.0},"orientation":{"x":-0.9355,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-40.0,"y":25.0,"z":80.0},"orientation":{"x":-0.9355,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-55.0,"y":25.0,"z":95.0},"orientation":{"x":-0.9355,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-70.0,"y":25.0,"z":110.0},"orientation":{"x":-0.9355,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":-85.0,"y":25.0,"z":125.0},"orientation":{"x":-0.9355,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+
+//  右  X+ Z-
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":50.0,"y":25.0,"z":-10.0},"orientation":{"x":0.0,"y":0.0,"z":0.9355,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":65.0,"y":25.0,"z":-25.0},"orientation":{"x":0.0,"y":0.0,"z":0.9355,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":80.0,"y":25.0,"z":-40.0},"orientation":{"x":0.0,"y":0.0,"z":0.9355,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":95.0,"y":25.0,"z":-55.0},"orientation":{"x":0.0,"y":0.0,"z":0.9355,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":110.0,"y":25.0,"z":-70.0},"orientation":{"x":0.0,"y":0.0,"z":0.9355,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+{"type":"Entity","name":"entity_will_entrance_light","id":9999999666,"components":[{"type":"TransformDefinitionComponent","name":"transform_will_entrance_light",
+"position":{"x":125.0,"y":25.0,"z":-85.0},"orientation":{"x":0.0,"y":0.0,"z":0.9355,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"VfxDefinitionComponent","name":"vfx_will_entrance_light","filename":"data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles","hardKillOnDestroy":false}]},
+
+	]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "作弊配方",
+  "description": "添加各种作弊器。",
+  "author": "fadedRob",
+  "website": "https://github.com/fadedRob/d2rmm.mods",
+  "version": "1.4",
+  "config": [
+    {
+      "id": "easierToken",
+      "type": "checkbox",
+      "name": "更容易的赦免标志",
+      "description": "使用Tome of Identify和Tome of Town Portal，可以添加更简单的“赦免令牌”配方。",
+      "defaultValue": true
+    },
+    {
+      "id": "easierRunes",
+      "type": "checkbox",
+      "name": "更容易的符文",
+      "description": "启用以从符文配方中删除宝石要求。",
+      "defaultValue": true
+    },
+    {
+      "id": "easierCowPortal",
+      "type": "checkbox",
+      "name": "更容易的奶牛级入口",
+      "description": "启用以使奶牛级门户配方使用标识和城镇门户的卷轴。",
+      "defaultValue": true
+    },
+    {
+      "id": "convertPandemoniumKeys",
+      "type": "checkbox",
+      "name": "转换精华类型",
+      "description": "启用添加一个配方来转换熊猫键（恐怖->仇恨->毁灭->恐怖）。",
+      "defaultValue": true
+    },
+    {
+      "id": "cubeStart",
+      "type": "checkbox",
+      "name": "角色自带方块盒子",
+      "description": "启用新角色库中的Horadric Cube。",
+      "defaultValue": true
+    },
+    {
+      "id": "levelingMultiplier",
+      "type": "number",
+      "name": "经验增益百分比",
+      "description": "将经验增益更改为该百分比，即100=默认值，200=双倍经验。",
+      "defaultValue": "100"
+    },
+    {
+      "id": "manaRegen",
+      "type": "number",
+      "name": "更改法力再生",
+      "description": "120=默认值。数字越低，法力恢复越快。",
+      "defaultValue": 120,
+      "minValue": 0
+    }
+  ]
+}

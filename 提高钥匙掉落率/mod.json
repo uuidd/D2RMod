@@ -1,0 +1,17 @@
+{
+  "name": "提高钥匙掉落率",
+  "description": "乘以超级键掉落的概率。",
+  "author": "Jobus",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "multiplier",
+      "type": "number",
+      "name": "概率乘数",
+      "description": "将钥匙从地狱中的伯爵夫人、召唤师和尼列塔克手中掉落的概率增加这个乘数。",
+      "defaultValue": 3,
+      "minValue": 1,
+      "maxValue": 100
+    }
+  ]
+}

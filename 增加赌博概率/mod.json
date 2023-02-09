@@ -1,0 +1,77 @@
+{
+    "name": "增加赌博机会",
+    "description": "增加赌博的机会。",
+    "author": "BotSarge",
+    "version": "1.0",
+    "config": [
+        {
+            "id": "gamble",
+            "type": "checkbox",
+            "name": "是否调整赌博机会",
+            "description": "禁用以不修改赌博机会。",
+            "defaultValue": true
+        },
+        {
+            "id": "unique",
+            "type": "number",
+            "name": "- 暗金物品机率",
+            "description": "0~100%. 如果你将这个值设置为100，你就不能从赌博中获得魔法物品/稀有物品。默认几率为0.05%。",
+            "defaultValue": 1,
+            "minValue": 0,
+            "maxValue": 100
+        },
+        {
+            "id": "set",
+            "type": "number",
+            "name": "- 绿色物品机率",
+            "description": "0~100%. 如果将此值设置为100，则无法从赌博中获得稀有物品。香草几率为0.1%。",
+            "defaultValue": 3,
+            "minValue": 0,
+            "maxValue": 100
+        },
+        {
+            "id": "rare",
+            "type": "number",
+            "name": "- 金色物品机率",
+            "description": "0~100%. 如果将此值设置为100，则无法从赌博中获得魔法物品。香草的几率是10%。",
+            "defaultValue": 10,
+            "minValue": 0,
+            "maxValue": 100
+        },
+        {
+            "id": "normal",
+            "type": "checkbox",
+            "name": "普通难度的只出普通级物品",
+            "description": "你只能从赌博中获得普通物品。",
+            "defaultValue": false
+        },
+        {
+            "id": "nightmare",
+            "type": "checkbox",
+            "name": "噩梦难度中只出的扩展级物品",
+            "description": "如果你的角色等级不够高，你可能会得到普通物品。",
+            "defaultValue": false
+        },
+        {
+            "id": "hell",
+            "type": "checkbox",
+            "name": "地狱难度中只出精英级物品",
+            "description": "如果你的角色等级不够高，你可能会得到普通物品。",
+            "defaultValue": false
+        },
+        {
+            "id": "add_missing_item",
+            "type": "checkbox",
+            "name": "添加缺少的项目",
+            "description": "添加权杖、手杖、魔杖和职业特定物品。",
+            "defaultValue": false
+        },
+        {
+            "id": "nolimit",
+            "type": "checkbox",
+            "name": "允许重复暗金物品",
+            "description": "无论您是否购买，当您进入赌博屏幕时，物品质量都是固定的。如果您单击刷新按钮，并且它是唯一的，则在重新启动游戏之前，您无法获得它。启用以帮助制作暗金物品的自动售货机。",
+            "defaultValue": false
+        }
+    ]
+}

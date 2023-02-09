@@ -1,0 +1,37 @@
+{
+  "name": "物品的最大堆叠大小",
+  "description": "增加各种物品的堆栈大小。",
+  "author": "olegbl",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/175",
+  "version": "1.2",
+  "config": [
+    {
+      "id": "tomes",
+      "type": "number",
+      "name": "书籍",
+      "description": "所有书籍的最大堆叠大小（回城/辨识卷轴）。",
+      "defaultValue": 100
+    },
+    {
+      "id": "keys",
+      "type": "number",
+      "name": "钥匙",
+      "description": "钥匙的最大堆叠大小",
+      "defaultValue": 100
+    },
+    {
+      "id": "projectiles",
+      "type": "number",
+      "name": "箭/弩矢",
+      "description": "所有射弹的最大堆叠大小（箭矢/弩矢）。",
+      "defaultValue": 500
+    },
+    {
+      "id": "throwingweapons",
+      "type": "number",
+      "name": "投掷类武器",
+      "description": "所有投掷武器（飞镖、标枪等）的最大堆叠尺寸。",
+      "defaultValue": 500
+    }
+  ]
+}

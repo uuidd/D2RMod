@@ -1,0 +1,27 @@
+{
+  "name": "符文降级",
+  "description": "将任何符文通过horadric立方体，将其降级到前一层。",
+  "author": "Jobus",
+  "version": "1.2",
+  "config": [
+    {
+      "id": "requireScrollOfIdentify",
+      "type": "checkbox",
+      "name": "需要标识卷轴",
+      "description": "降级配方将需要标识卷轴",
+      "defaultValue": true
+    },
+    {
+      "id": "outputCount",
+      "type": "select",
+      "name": "一个高级符文输出几个低一级符文",
+      "description": "降级食谱给出多少符文。",
+      "options": [
+        { "label": "1", "value": "1" },
+        { "label": "2", "value": "2" },
+        { "label": "3/2", "value": "3/2", "description": "3 for low/mid, 2 for high" }
+      ],
+      "defaultValue": "2"
+    }
+  ]
+}

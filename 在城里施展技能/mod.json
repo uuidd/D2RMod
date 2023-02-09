@@ -1,0 +1,16 @@
+{
+  "name": "在城里施展更多技能",
+  "description": "让你在镇上施展更多技能。",
+  "author": "olegbl",
+  "website": "https://github.com/olegbl/d2rmm.mods",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "allskills",
+      "type": "checkbox",
+      "name": "允许在城镇中使用所有技能，而不仅仅额外的移动和增益技能",
+      "description": "允许在城镇中使用所有技能。禁用后，只允许额外的移动和增益技能。",
+      "defaultValue": false
+    }
+  ]
+}

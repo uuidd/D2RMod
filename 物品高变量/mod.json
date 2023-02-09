@@ -1,0 +1,44 @@
+{
+  "name": "物品高变量",
+  "description": "让所有物品都能完美滚动。",
+  "author": "olegbl",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/182",
+  "version": "1.6",
+  "config": [
+    {
+      "id": "blue",
+      "type": "checkbox",
+      "name": "蓝色/金色物品",
+      "description": "即使是魔法和稀有物品，也可以强制它们拥有完美的掷骰。禁用以仅具有完美的唯一、集合和Runword项目。",
+      "defaultValue": true
+    },
+    {
+      "id": "crafted",
+      "type": "checkbox",
+      "name": "手工制品",
+      "description": "使Horadric Cuberecipes生成的物品具有完美滚动.",
+      "defaultValue": true
+    },
+    {
+      "id": "equalchances",
+      "type": "checkbox",
+      "name": "均衡高级和低级词缀出现的概率",
+      "description": "启用以使高级词缀与低级词缀一样频繁出现。",
+      "defaultValue": true
+    },
+    {
+      "id": "skilltab3",
+      "type": "checkbox",
+      "name": "总是+3到技能树",
+      "description": "启用此选项可强制所有对特定技能树给予奖励的词缀始终给予3级奖励。",
+      "defaultValue": true
+    },
+    {
+      "id": "defense",
+      "type": "checkbox",
+      "name": "最大防御力",
+      "description": "启用以强制装甲物品以最大防御值。",
+      "defaultValue": true
+    }
+  ]
+}
