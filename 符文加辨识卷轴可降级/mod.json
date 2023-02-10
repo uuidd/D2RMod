@@ -1,5 +1,5 @@
 {
-  "name": "符文降级",
+  "name": "符文加辨识卷轴可降级",
   "description": "将任何符文通过horadric立方体，将其降级到前一层。",
   "author": "Jobus",
   "version": "1.2",
@@ -21,7 +21,7 @@
         { "label": "2", "value": "2" },
         { "label": "3/2", "value": "3/2", "description": "3 for low/mid, 2 for high" }
       ],
-      "defaultValue": "2"
+      "defaultValue": "1"
     }
   ]
 }
