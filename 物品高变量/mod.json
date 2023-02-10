@@ -29,7 +29,7 @@
     {
       "id": "skilltab3",
       "type": "checkbox",
-      "name": "总是+3到技能树",
+      "name": "项链有加技能的全变成是+3技能",
       "description": "启用此选项可强制所有对特定技能树给予奖励的词缀始终给予3级奖励。",
       "defaultValue": true
     },

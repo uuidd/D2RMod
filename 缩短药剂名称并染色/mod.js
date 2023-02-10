@@ -99,7 +99,7 @@ itemNames.forEach((item) => {
 
     // thawing
     if (itemtype === 'wms') {
-        newName = `${COLOR_THAWING}溶解药剂`;
+        newName = `${COLOR_THAWING}溶冰药剂`;
     }
 
     // stamina

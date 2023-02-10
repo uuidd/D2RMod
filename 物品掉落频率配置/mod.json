@@ -10,7 +10,7 @@
       "type": "checkbox",
       "name": "调整符文掉落率",
       "description": "禁用以不修改符文的掉落率。",
-      "defaultValue": true
+      "defaultValue": false
     },
     {
       "id": "runesScaling",
@@ -26,14 +26,14 @@
       "type": "checkbox",
       "name": "调整装备掉落率",
       "description": "禁用以不修改装备的掉落率。",
-      "defaultValue": true
+      "defaultValue": false
     },
     {
       "id": "unique",
       "type": "number",
       "name": "暗金装备掉落率",
       "description": "假设掉落的物品可以是该区域级别中的暗黑装备，则它有可能是暗黑装备。默认值为0.25%。",
-      "defaultValue": 5,
+      "defaultValue": 1,
       "minValue": 0,
       "maxValue": 100
     },
@@ -42,7 +42,7 @@
       "type": "number",
       "name": "设置装备掉落率",
       "description": "假设掉落的物品可以是该区域级别中的集合项，这就是它成为集合项的可能性。默认值为0.625%。",
-      "defaultValue": 10,
+      "defaultValue": 3,
       "minValue": 0,
       "maxValue": 100
     },
@@ -51,7 +51,7 @@
       "type": "number",
       "name": "金色物品掉落的几率",
       "description": "假设掉落的基本物品可以是金色物品，这就是金色物品的可能性。默认值为1%。",
-      "defaultValue": 20,
+      "defaultValue": 4,
       "minValue": 0,
       "maxValue": 100
     },
@@ -60,7 +60,7 @@
       "type": "number",
       "name": "蓝色物品掉落几率",
       "description": "假设掉落的基本物品可以是蓝色物品，这就是它成为蓝色物品的可能性。默认值为2.94%。",
-      "defaultValue": 20,
+      "defaultValue": 10,
       "minValue": 0,
       "maxValue": 100
     },
@@ -69,7 +69,7 @@
       "type": "number",
       "name": "超强物品掉落的几率",
       "description": "假设掉落的基本物品可以是高质量的物品，这是它成为超强物品的机会。默认值为8.33%。",
-      "defaultValue": 50,
+      "defaultValue": 25,
       "minValue": 0,
       "maxValue": 100
     },
@@ -78,14 +78,14 @@
       "type": "checkbox",
       "name": "禁用最小稀疏度",
       "description": "默认情况下，独特、套装和金色物品的稀有度最低，即使魔法发现等，它们也不能低于。打开此选项可禁用此机制。",
-      "defaultValue": true
+      "defaultValue": false
     },
     {
       "id": "disablelevelscaling",
       "type": "checkbox",
       "name": "禁用级别缩放",
       "description": "默认情况下，如果从更高级别的怪物手中掉落，物品质量更高。启用此选项可禁用此机制。",
-      "defaultValue": true
+      "defaultValue": false
     }
   ]
 }
