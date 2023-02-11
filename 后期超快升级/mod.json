@@ -1,6 +1,6 @@
 {
-    "name": "去除 70 级后的经验惩罚",
-    "description": "将经验增益从 70 降低到 99",
+    "name": "后期超快升级",
+    "description": "将经验减益从 70 降低到 99",
     "author": "SommeSensei",
     "website": "https://www.nexusmods.com/diablo2resurrected/mods/306",
     "version": "1.0"

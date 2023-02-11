@@ -1,0 +1,32 @@
+{
+  "name": "推叠宝石(有使用门槛)",
+  "description": "添加另一种可以堆叠在一起的宝石变体。转换立方体中的宝石以在两个变体之间转换. Based on https://www.nexusmods.com/diablo2resurrected/mods/80.",
+  "author": "olegbl",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/176",
+  "version": "1.5",
+  "config": [
+    {
+      "id": "default",
+      "type": "checkbox",
+      "name": "默认为可堆叠",
+      "description": "启用以将可堆叠变量设置为默认值（例如，项目将作为可堆叠的项目放置）。",
+      "defaultValue": true
+    },
+    {
+      "id": "maxStack",
+      "type": "number",
+      "name": "最大堆栈大小",
+      "description": "每个堆栈可以拥有的最大数量。",
+      "defaultValue": 100,
+      "minValue": 2,
+      "maxValue": 1000
+    },
+    {
+      "id": "convertWhenDestacking",
+      "type": "checkbox",
+      "name": "卸载时转换",
+      "description": "允许在拆分堆栈时将拆分的gem自动转换为不可堆叠的变体。警告：这增加了15k+的立方体配方，这会减慢游戏的启动速度。",
+      "defaultValue": false
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 // 改过
 const COLOR_PREFIX = 'ÿc';
-const COLOR_ANTIDOTE = `${COLOR_PREFIX}5`;
-const COLOR_GAS = `${COLOR_PREFIX}:`;
+const COLOR_ANTIDOTE = `${COLOR_PREFIX}0`;
+const COLOR_GAS = `${COLOR_PREFIX}0`;
 const COLOR_HEALTH = `${COLOR_PREFIX}1`;
 const COLOR_MANA = `${COLOR_PREFIX}3`;
-const COLOR_OIL = `${COLOR_PREFIX}S`;
+const COLOR_OIL = `${COLOR_PREFIX}0`;
 const COLOR_REJUVENATION = `${COLOR_PREFIX};`;
-const COLOR_STAMINA = `${COLOR_PREFIX}5`;
-const COLOR_THAWING = `${COLOR_PREFIX}5`;
+const COLOR_STAMINA = `${COLOR_PREFIX}0`;
+const COLOR_THAWING = `${COLOR_PREFIX}0`;
 
 // ÿc0 - white
 // ÿc1 - red
@@ -89,7 +89,7 @@ itemNames.forEach((item) => {
             : itemtype.endsWith('m')
                 ? '中'
                 : '大';
-        newName = `${COLOR_OIL}${suffix}油瓶`;
+        newName = `${COLOR_OIL}${suffix}炸瓶`;
     }
 
     // antidote
