@@ -66,7 +66,7 @@ itemNames.forEach((item) => {
 
     // rejuvenation
     if (['rvl', 'rvs'].indexOf(itemtype) !== -1) {
-        const suffix = itemtype.endsWith('l') ? '小紫' : '大紫';
+        const suffix = itemtype.endsWith('l') ? '大紫' : '小紫';
         newName = `${COLOR_REJUVENATION}${suffix}`;
     }
 
