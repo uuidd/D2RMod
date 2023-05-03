@@ -1,0 +1,8 @@
+{
+  "name": "NoD2RMM-To-D2RMM",
+  "description": "按mod顺序始终为1！加载非D2RMM文件，用作D2RMM将修改的基本文件",
+  "author": "qd0t",
+  "website": "",
+  "version": "1.1",
+  "config": []
+}

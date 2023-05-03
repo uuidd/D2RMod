@@ -187,7 +187,7 @@ itemNames.push(
     "id": 60001,
     "Key": "sot",
     "enUS": "Stone of Terror",
-    "zhTW": "Stone of Terror",
+    "zhTW": "恐怖之石",
     "deDE": "Stone of Terror",
     "esES": "Stone of Terror",
     "frFR": "Stone of Terror",
@@ -198,7 +198,7 @@ itemNames.push(
     "jaJP": "恐怖の石",
     "ptBR": "Stone of Terror",
     "ruRU": "Stone of Terror",
-    "zhCN": "Stone of Terror"
+    "zhCN": "恐怖之石"
   }
 );
 

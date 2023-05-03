@@ -1,0 +1,248 @@
+{
+    "desecrated_zones": [
+        {
+            "start_time_utc": "2022-01-27 00:00:00",
+            /* "end_time_utc": "2022-12-15 00:00:00", */ /* Use end time to automate multiple configs. Useful for events. */
+            "terror_duration_min": 60,
+            "terror_break_min": 0,
+            "seed": 16664395743979097666, /* UInt64. Can't be above 18446744073709551615 */
+            "non_ladder_enabled": true,
+            "enabled_normal": true,
+            "enabled_nightmare": true,
+            "enabled_hell": true,
+            "default_normal": {
+                "bound_incl_min": 3, /* Minimum level of a terrorized monster. MAX(bound_incl_min, original_monster_level) */
+                "bound_incl_max": 45, /* Maximum level of a terrorized monster. MAX(bound_incl_max, original_monster_level) */
+                "boost_level": 2, /* player_level + boost_level = terrorized_monster_level */
+                "difficulty_scale": 1, /* Fake the amount of players in the game. AKA /players X */
+                "boost_experience_percent": 25 /* Bonus experience percentage applied at to the monster's base experience in monstats.txt */
+            },
+            "default_nightmare": {
+                "bound_incl_min": 40,
+                "bound_incl_max": 71,
+                "boost_level": 2,
+                "difficulty_scale": 1,
+                "boost_experience_percent": 25
+            },
+            "default_hell": {
+                "bound_incl_min": 70,
+                "bound_incl_max": 96,
+                "boost_level": 2,
+                "difficulty_scale": 1,
+                "boost_experience_percent": 25
+            },
+            "warnings": [
+                {
+                    "announce_time_min": 10,
+                    "tier": 1
+                },
+                {
+                    "announce_time_min": 5,
+                    "tier": 2
+                },
+                {
+                    "announce_time_min": 1,
+                    "tier": 3
+                },
+                {
+                    /* DO NOT REMOVE! ALWAYS NEED A TIER 0 AT MINUTE 0. DO NOT REMOVE! */
+                    "announce_time_min": 0,
+                    "tier": 0
+                }
+            ],
+            "zones": [
+                {
+                    /* Key Group */
+                    "id": 1,
+                    /* You can have a MAX of 20 desecrated levels at a time */
+                    "levels": [
+                        {
+                            /* Moo Moo Farm */
+                            "level_id": 39,
+                            /* Rogue Encampment */
+                            "waypoint_level_id": 1
+                        },
+                        {
+                            /* Tristram */
+                            "level_id": 38,
+                            /* Stony Field */
+                            "waypoint_level_id": 4
+                        },
+                        {
+                            /* Forgotten Tower */
+                            "level_id": 20,
+                            /* Black Marsh */
+                            "waypoint_level_id": 6
+                        },
+                        {
+                            /* Tower Cellar Level 1 */
+                            "level_id": 21
+                        },
+                        {
+                            /* Tower Cellar Level 2 */
+                            "level_id": 22
+                        },
+                        {
+                            /* Tower Cellar Level 3 */
+                            "level_id": 23
+                        },
+                        {
+                            /* Tower Cellar Level 4 */
+                            "level_id": 24
+                        },
+                        {
+                            /* Tower Cellar Level 5 */
+                            "level_id": 25
+                        },
+                        {
+                            /*  Pit Level 1 */
+                            "level_id": 12,
+                            /* Outer Cloister */
+                            "waypoint_level_id": 27
+                        },
+                        {
+                            /* Pit Level 2 */
+                            "level_id": 16
+                        },
+                        {
+                            /* Catacombs Level 1 */
+                            "level_id": 34
+                        },
+                        {
+                            /* Catacombs Level 2 */
+                            "level_id": 35,
+                            /* Catacombs Level 2 */
+                            "waypoint_level_id": 35
+                        },
+                        {
+                            /* Catacombs Level 3 */
+                            "level_id": 36
+                        },
+                        {
+                            /* Catacombs Level 4 */
+                            "level_id": 37
+                        },
+                        {
+                            /* Arcane Sanctuary */
+                            "level_id": 74,
+                            /* Arcane Sanctuary */
+                            "waypoint_level_id": 74
+                        },
+                        {
+                            /* Nihlathak's Temple */
+                            "level_id": 121,
+                            /* Harrogath */
+                            "waypoint_level_id": 109
+                        },
+                        {
+                            /* Halls of Anguish */
+                            "level_id": 122
+                        },
+                        {
+                            /* Halls of Pain */
+                            "level_id": 123
+                        },
+                        {
+                            /* Halls of Vaught */
+                            "level_id": 124
+                        }
+                    ]
+                },
+                {
+                    /* Essence Group */
+                    "id": 2,
+                    "levels": [
+                        {
+                            /* Ancient Tunnels */
+                            "level_id": 65,
+                            /* Lost City */
+                            "waypoint_level_id": 44
+                        },
+                        {
+                            /* Tal Rasha's Tomb */
+                            "level_id": 66,
+                            /* Canyon of the Magi */
+                            "waypoint_level_id": 46
+                        },
+                        {
+                            /* Tal Rasha's Tomb */
+                            "level_id": 67
+                        },
+                        {
+                            /* Tal Rasha's Tomb */
+                            "level_id": 68
+                        },
+                        {
+                            /* Tal Rasha's Tomb */
+                            "level_id": 69
+                        },
+                        {
+                            /* Tal Rasha's Tomb */
+                            "level_id": 70
+                        },
+                        {
+                            /* Tal Rasha's Tomb */
+                            "level_id": 71
+                        },
+                        {
+                            /* Tal Rasha's Tomb */
+                            "level_id": 72
+                        },
+                        {
+                            /* Tal Rasha's Chamber */
+                            "level_id": 73
+                        },
+                        {
+                            /* Travincal */
+                            "level_id": 83,
+                            /* Travincal */
+                            "waypoint_level_id": 83
+                        },
+                        {
+                            /* Durance of Hate Level 1 */
+                            "level_id": 100
+                        },
+                        {
+                            /* Durance of Hate Level 2 */
+                            "level_id": 101,
+                            /* Durance of Hate Level 2 */
+                            "waypoint_level_id": 101
+                        },
+                        {
+                            /* Durance of Hate Level 3 */
+                            "level_id": 102
+                        },
+                        {
+                            /* Chaos Sanctuary */
+                            "level_id": 108,
+                            /* River of Flame */
+                            "waypoint_level_id": 107
+                        },
+                        {
+                            /* Worldstone Keep Level 1 */
+                            "level_id": 128
+                        },
+                        {
+                            /* Worldstone Keep Level 2 */
+                            "level_id": 129,
+                            /* Worldstone Keep Level 2 */
+                            "waypoint_level_id": 129
+                        },
+                        {
+                            /* Worldstone Keep Level 3 */
+                            "level_id": 130
+                        },
+                        {
+                            /* Throne of Destruction */
+                            "level_id": 131
+                        },
+                        {
+                            /* Worldstone Chamber */
+                            "level_id": 132
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

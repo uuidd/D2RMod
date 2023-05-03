@@ -1,0 +1,187 @@
+{
+    "type": "SettingsPanel",
+    "name": "messagePanel",
+    "fields": {
+        "anchor": "$LeftPanelAnchor",
+        "priority": 100,
+    },
+    "children": [
+        {
+            "type": "RectangleWidget",
+            "name": "Background",
+            "children": [
+                {
+                    "type": "ClickCatcherWidget",
+                    "name": "catcher",
+                },
+                {
+                    "type": "Widget",
+                    "name": "Anchor",
+                    "fields": {
+                        "anchor": {
+                            "x": 0.5,
+                            "y": 0.5
+                        },
+                        "rect": "$SettingsPanelAnchorRect",
+                    },
+                    "children": [
+                        {
+                            "type": "ClickCatcherWidget",
+                            "name": "click_catcher",
+                            "fields": {
+                                "rect": {
+                                    "x": 2365,
+                                    "y": 300,
+                                    "width": 900,
+                                    "height": 1507
+                                },
+                            },
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "Background",
+                            "fields": {
+                                "rect": {
+                                    "x": 2375,
+                                    "y": 300,
+                                },
+                                "filename": "PANEL\\AdvancedCharacterSheet\\AdvancedCharacterSheet_BG"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "Title",
+                            "fields": {
+                                "rect": {
+                                    "x": 2415,
+                                    "y": 385,
+                                    "width": 795,
+                                    "height": 25
+                                },
+                                "text": "@mod51096gameguidetxt1",
+                                "style": "$StyleTitleBlock",
+                            },
+                        },
+      //                  {
+       //                     "type": "ButtonWidget",
+     //                       "name": "MessagePanel",
+     //                       "fields": {
+     //                           "rect": {
+    //                                "x": 2319,
+  //                                  "y": 1013,
+   //                                 "width": 60,
+     //                               "height": 70
+      //                          },
+     //                           "hoveredFrame": 1,
+     //                           "onClickMessage": "PanelManager:ClosePanel:messagePanel",
+    //                            "pressLabelOffset": {
+    //                                "x": 0,
+    //                                "y": 2
+   //                             },
+   //                         },
+   //                     },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CloseButton",
+                            "fields": {
+                                "rect": {
+                                    "x": 3166,
+                                    "y": 312
+                                },
+                                "filename": "PANEL\\closebtn_4x",
+                                "hoveredFrame": 3,
+                                "onClickMessage": "PanelManager:ClosePanel:messagePanel", 
+                                "sound": "cursor_close_window_hd",
+                                "tooltipString": "@strClose",
+                                "acceptsEscKeyEverywhere": true
+                            },
+                        },
+     //                   {
+     //                       "type": "ButtonWidget",
+     //                       "name": "CloseButton",
+     //                       "fields": {
+    //                            "rect": {
+     //                               "x": 2286,
+      //                              "y": 312,
+      //                              "width": 80,
+     //                               "height": 90
+     //                           },
+    //                            "hoveredFrame": 1,
+    //                            "onClickMessage": "PanelManager:ClosePanel:messagePanel",
+     //                           "sound": "cursor_close_window_hd",
+     //                       },
+    //                    },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "TabBarWidget",
+            "name": "OptionsTabs",
+            "fields": {
+                "rect": {
+                    "x": 1435,
+                    "y": -480,
+                    "width": 800,
+                    "height": 121
+                },
+                "anchor": {
+                    "x": 0.5
+                },
+                "tabCount": 3,
+                "tabSize": {
+                    "x": 220,
+                    "y": 60,
+                },
+                "tabPadding": {
+                    "x": 0,
+                    "y": 0
+                },
+                "unavailableTabsLeaveGaps": false,
+                "tabSizingMethod": "fixedCenter",
+                "filename": "PANEL\\message\\Tab",
+                "inactiveFrames": [
+                    1,
+                    1,
+                    1
+                ],
+                "activeFrames": [
+                    0,
+                    0,
+                    0
+                ],
+                "activeTextColor": "$FontColorGoldYellow",
+                "inactiveTextColor": "$TabsInactiveTextColor",
+                "tabTextOffset": {
+                    "x": 0,
+                    "y": -15,
+                },
+                "textStyle": {
+                    "options": {
+                        "lineWrap": true
+                    },
+                    "pointSize": "$MediumFontSize",
+                    "alignment": {
+                        "h": "center",
+                        "v": "center"
+                    },
+                    "fontColor": "$FontColorWhite",
+                    "spacing": {
+                        "leading": 0.9,
+                        "kerning": 0.95
+                    }
+                },
+                "textStrings": [
+                    "@mod51095gameguidetxt2",
+                    "@mod51094gameguidetxt3",
+                    "@mod51093gameguidetxt4"
+                ],
+                "tabMessages": [
+                    "SettingsPanelMessage:CheckChanges:message1Panel",
+                    "SettingsPanelMessage:CheckChanges:message2Panel",
+                    "SettingsPanelMessage:CheckChanges:message3Panel",
+                ],
+            },
+        },
+    ]
+}
