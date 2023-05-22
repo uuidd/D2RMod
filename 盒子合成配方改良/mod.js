@@ -11,7 +11,7 @@ if (config.easierToken) {
     "input 1": "tsc",
     "input 2": "isc",
     output: "toa",
-    "*eol": 0,
+    "*eol\r": 0,
   });
 }
 
@@ -58,7 +58,7 @@ if (config.easierRunes) {
       numinputs: 3,
       "input 1": recipe,
       output: output,
-      "*eol": 0,
+      "*eol\r": 0,
     });
   }
 
@@ -76,7 +76,7 @@ if (config.easierRunes) {
       numinputs: 2,
       "input 1": recipe,
       output: output,
-      "*eol": 0,
+      "*eol\r": 0,
     });
   }
 }
@@ -91,7 +91,7 @@ if (config.easierCowPortal) {
     "input 1": "tbk",
     "input 2": "ibk",
     output: "Cow Portal",
-    "*eol": 0,
+    "*eol\r": 0,
   });
 }
 
@@ -103,7 +103,7 @@ if (config.convertPandemoniumKeys) {
     numinputs: 1,
     "input 1": "pk1",
     output: "pk2",
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "Key of Hate -> Key of Destruction",
@@ -112,7 +112,7 @@ if (config.convertPandemoniumKeys) {
     numinputs: 1,
     "input 1": "pk2",
     output: "pk3",
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "Key of Destruction -> Key of Terror",
@@ -121,7 +121,7 @@ if (config.convertPandemoniumKeys) {
     numinputs: 1,
     "input 1": "pk3",
     output: "pk1",
-    "*eol": 0,
+    "*eol\r": 0,
   });
 }
 if (config.easierRollMagicItem) {
@@ -135,7 +135,7 @@ if (config.easierRollMagicItem) {
     "input 2": "rvl",
     output: "usetype,mag",
     ilvl: 100,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description:
@@ -147,7 +147,67 @@ if (config.easierRollMagicItem) {
     "input 2": "rvs",
     output: "usetype,mag",
     ilvl: 100,
-    "*eol": 0,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description:
+      "1 Magic Item + 1 gem0 -> Re-rolled Magic Item",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "any,mag",
+    "input 2": "gem0",
+    output: "usetype,mag",
+    ilvl: 100,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description:
+      "1 Magic Item + 1 gem1 -> Re-rolled Magic Item",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "any,mag",
+    "input 2": "gem1",
+    output: "usetype,mag",
+    ilvl: 100,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description:
+      "1 Magic Item + 1 gem2 -> Re-rolled Magic Item",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "any,mag",
+    "input 2": "gem2",
+    output: "usetype,mag",
+    ilvl: 100,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description:
+      "1 Magic Item + 1 gem3 -> Re-rolled Magic Item",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "any,mag",
+    "input 2": "gem3",
+    output: "usetype,mag",
+    ilvl: 100,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description:
+      "1 Magic Item + 1 gem4 -> Re-rolled Magic Item",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "any,mag",
+    "input 2": "gem4",
+    output: "usetype,mag",
+    ilvl: 100,
+    "*eol\r": 0,
   });
 }
 
@@ -162,7 +222,7 @@ if (config.easierRollRareItem) {
     "input 2": "rvl",
     output: "usetype,rar",
     ilvl: 100,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description:
@@ -174,8 +234,69 @@ if (config.easierRollRareItem) {
     "input 2": "rvs",
     output: "usetype,rar",
     ilvl: 100,
-    "*eol": 0,
+    "*eol\r": 0,
   });
+  cubemain.rows.push({
+    description:
+      "1 Rare Item + 1 gem0 -> Re-rolled Rare Item",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "any,rar",
+    "input 2": "gem0",
+    output: "usetype,rar",
+    ilvl: 100,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description:
+      "1 Rare Item + 1 gem1 -> Re-rolled Rare Item",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "any,rar",
+    "input 2": "gem1",
+    output: "usetype,rar",
+    ilvl: 100,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description:
+      "1 Rare Item + 1 gem2 -> Re-rolled Rare Item",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "any,rar",
+    "input 2": "gem2",
+    output: "usetype,rar",
+    ilvl: 100,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description:
+      "1 Rare Item + 1 gem3 -> Re-rolled Rare Item",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "any,rar",
+    "input 2": "gem3",
+    output: "usetype,rar",
+    ilvl: 100,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description:
+      "1 Rare Item + 1 gem4 -> Re-rolled Rare Item",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "any,rar",
+    "input 2": "gem4",
+    output: "usetype,rar",
+    ilvl: 100,
+    "*eol\r": 0,
+  });
+
 }
 
 
@@ -190,7 +311,7 @@ if (config.easierDestruction) {
     "input 2": "ceh",
     "input 3": "bet",
     output: "fed",
-    "*eol": 0,
+    "*eol\r": 0,
   });
 }
 
@@ -207,7 +328,7 @@ if (config.releasePerfectGem) {
       output: "gl" + gem,
       "output b": "gl" + gem,
       "output c": "gl" + gem,
-      "*eol": 0,
+      "*eol\r": 0,
     });
   }
   cubemain.rows.push({
@@ -220,7 +341,7 @@ if (config.releasePerfectGem) {
     output: "gzv",
     "output b": "gzv",
     "output c": "gzv",
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description:
@@ -232,7 +353,7 @@ if (config.releasePerfectGem) {
     output: "skl",
     "output b": "skl",
     "output c": "skl",
-    "*eol": 0,
+    "*eol\r": 0,
   });
 }
 
@@ -244,7 +365,7 @@ if (config.easierEssence) {
     numinputs: 1,
     "input 1": "tes",
     output: "ceh",
-    "*eol": 0,
+    "*eol\r": 0,
   });
 
   cubemain.rows.push({
@@ -254,7 +375,7 @@ if (config.easierEssence) {
     numinputs: 1,
     "input 1": "ceh",
     output: "bet",
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "A4->A5",
@@ -263,7 +384,7 @@ if (config.easierEssence) {
     numinputs: 1,
     "input 1": "bet",
     output: "fed",
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "A5->A1/A2",
@@ -272,7 +393,7 @@ if (config.easierEssence) {
     numinputs: 1,
     "input 1": "fed",
     output: "tes",
-    "*eol": 0,
+    "*eol\r": 0,
   });
 }
 
@@ -286,7 +407,7 @@ if (config.easierAmulet) {
     "input 2": "gem3",
     "input 3": "mpot",
     "input 4": "rune",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "regen-mana",
@@ -298,7 +419,7 @@ if (config.easierAmulet) {
     "mod 3": "cast1",
     "mod 3 min": 5,
     "mod 3 max": 10,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "蓝色项链 + 蓝药 + 无暇宝石(不分颜色) + 珠宝 = 施法项链",
@@ -309,7 +430,7 @@ if (config.easierAmulet) {
     "input 2": "gem3",
     "input 3": "mpot",
     "input 4": "jew",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "regen-mana",
@@ -321,7 +442,7 @@ if (config.easierAmulet) {
     "mod 3": "cast1",
     "mod 3 min": 5,
     "mod 3 max": 10,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "蓝色项链 + 红药 + 无暇宝石(不分颜色) + 任意符文 = 吸血项链",
@@ -332,7 +453,7 @@ if (config.easierAmulet) {
     "input 2": "gem3",
     "input 3": "hpot",
     "input 4": "rune",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "lifesteal",
@@ -344,7 +465,7 @@ if (config.easierAmulet) {
     "mod 3": "move1",
     "mod 3 min": 5,
     "mod 3 max": 10,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "蓝色项链 + 红药 + 无暇宝石(不分颜色) + 珠宝 = 吸血项链",
@@ -355,7 +476,7 @@ if (config.easierAmulet) {
     "input 2": "gem3",
     "input 3": "hpot",
     "input 4": "jew",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "lifesteal",
@@ -367,7 +488,7 @@ if (config.easierAmulet) {
     "mod 3": "move1",
     "mod 3 min": 5,
     "mod 3 max": 10,
-    "*eol": 0,
+    "*eol\r": 0,
   });
 }
 if (config.easierRing) {
@@ -380,7 +501,7 @@ if (config.easierRing) {
     "input 2": "gem3",
     "input 3": "hpot",
     "input 4": "rune",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "lifesteal",
@@ -392,7 +513,7 @@ if (config.easierRing) {
     "mod 3": "str",
     "mod 3 min": 1,
     "mod 3 max": 5,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "蓝色戒指 + 红药 + 无暇宝石(不分颜色) + 珠宝 = 吸血戒指",
@@ -403,7 +524,7 @@ if (config.easierRing) {
     "input 2": "gem3",
     "input 3": "hpot",
     "input 4": "jew",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "lifesteal",
@@ -415,7 +536,7 @@ if (config.easierRing) {
     "mod 3": "str",
     "mod 3 min": 1,
     "mod 3 max": 5,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "蓝色戒指 + 蓝药 + 无暇宝石(不分颜色) + 任意符文 = 施法戒指",
@@ -426,7 +547,7 @@ if (config.easierRing) {
     "input 2": "gem3",
     "input 3": "mpot",
     "input 4": "rune",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "regen-mana",
@@ -438,7 +559,7 @@ if (config.easierRing) {
     "mod 3": "mana%",
     "mod 3 min": 1,
     "mod 3 max": 5,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "蓝色戒指 + 蓝药 + 无暇宝石(不分颜色) + 珠宝 = 施法戒指",
@@ -449,7 +570,7 @@ if (config.easierRing) {
     "input 2": "gem3",
     "input 3": "mpot",
     "input 4": "jew",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "regen-mana",
@@ -461,7 +582,7 @@ if (config.easierRing) {
     "mod 3": "mana%",
     "mod 3 min": 1,
     "mod 3 max": 5,
-    "*eol": 0,
+    "*eol\r": 0,
   });
 }
 
@@ -475,7 +596,7 @@ if (config.easierGloves) {
     "input 2": "gem3",
     "input 3": "hpot",
     "input 4": "rune",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "lifesteal",
@@ -487,7 +608,7 @@ if (config.easierGloves) {
     "mod 3": "crush",
     "mod 3 min": 5,
     "mod 3 max": 10,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "蓝色重/鲨皮/吸血鬼骸骨手套 + 红药 + 无暇宝石(不分颜色) + 珠宝 = 吸血手套",
@@ -498,7 +619,7 @@ if (config.easierGloves) {
     "input 2": "gem3",
     "input 3": "hpot",
     "input 4": "jew",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "lifesteal",
@@ -510,7 +631,7 @@ if (config.easierGloves) {
     "mod 3": "crush",
     "mod 3 min": 5,
     "mod 3 max": 10,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "蓝色皮/魔皮/荆棘连指手套+ 蓝药 + 无暇宝石(不分颜色) + 任意符文 = 施法手套",
@@ -521,7 +642,7 @@ if (config.easierGloves) {
     "input 2": "gem3",
     "input 3": "mpot",
     "input 4": "rune",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "regen-mana",
@@ -533,7 +654,7 @@ if (config.easierGloves) {
     "mod 3": "mana-kill",
     "mod 3 min": 1,
     "mod 3 max": 3,
-    "*eol": 0,
+    "*eol\r": 0,
   });
   cubemain.rows.push({
     description: "蓝色皮/魔皮/荆棘连指手套+ 蓝药 + 无暇宝石(不分颜色) + 珠宝 = 施法手套",
@@ -544,7 +665,7 @@ if (config.easierGloves) {
     "input 2": "gem3",
     "input 3": "mpot",
     "input 4": "jew",
-    output: "usetype,crf",
+    output: '"usetype,crf"',
     plvl: 50,
     ilvl: 50,
     "mod 1": "regen-mana",
@@ -556,10 +677,63 @@ if (config.easierGloves) {
     "mod 3": "mana-kill",
     "mod 3 min": 1,
     "mod 3 max": 3,
-    "*eol": 0,
+    "*eol\r": 0,
   });
 }
-
+if (config.easierEthereal) {
+  cubemain.rows.push({
+    description: "armo uni -> armo uni ethereal",
+    enabled: 1,
+    version: 100,
+    numinputs: 7,
+    "input 1": '"armo,uni"',
+    "input 2": '"rune,qty=6"',
+    output: '"useitem"',
+    "mod 1": "ethereal",
+    "mod 1 min": 1,
+    "mod 1 max": 1,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description: "weap uni -> weap uni ethereal",
+    enabled: 1,
+    version: 100,
+    numinputs: 7,
+    "input 1": '"weap,uni"',
+    "input 2": '"rune,qty=6"',
+    output: '"useitem"',
+    "mod 1": "ethereal",
+    "mod 1 min": 1,
+    "mod 1 max": 1,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description: "armo hiq -> armo hiq ethereal",
+    enabled: 1,
+    version: 100,
+    numinputs: 7,
+    "input 1": '"armo,hiq"',
+    "input 2": '"rune,qty=6"',
+    output: '"useitem"',
+    "mod 1": "ethereal",
+    "mod 1 min": 1,
+    "mod 1 max": 1,
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description: "weap hiq -> weap hiq ethereal",
+    enabled: 1,
+    version: 100,
+    numinputs: 7,
+    "input 1": '"weap,hiq"',
+    "input 2": '"rune,qty=6"',
+    output: '"useitem"',
+    "mod 1": "ethereal",
+    "mod 1 min": 1,
+    "mod 1 max": 1,
+    "*eol\r": 0,
+  });
+}
 D2RMM.writeTsv(cubemainFilename, cubemain);
 
 const monstatsFilename = "global\\excel\\monstats.txt";

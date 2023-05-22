@@ -58,15 +58,15 @@
     {
       "id": "easierRollMagicItem",
       "type": "checkbox",
-      "name": "使用大紫/小紫洗蓝色装备",
-      "description": "使用大紫/小紫洗蓝色装备，洗板子或者偏向盾血甲",
+      "name": "使用大紫/小紫/任意宝石洗蓝色装备",
+      "description": "使用大紫/小紫/任意宝石洗蓝色装备，洗板子或者偏向盾血甲",
       "defaultValue": true
     },
     {
       "id": "easierRollRareItem",
       "type": "checkbox",
-      "name": "使用大紫/小紫洗金色装备",
-      "description": "使用大紫/小紫洗金色装备",
+      "name": "使用大紫/小紫/任意宝石洗金色装备",
+      "description": "使用大紫/小紫/任意宝石洗金色装备",
       "defaultValue": true
     },
     {
@@ -109,6 +109,13 @@
       "type": "checkbox",
       "name": "无暇宝石等做手工手套",
       "description": "蓝色重/鲨皮/吸血鬼骸骨手套 + 红药 +  无暇宝石(不分颜色) + 任意符文或珠宝 = 压碎性手套（武学标马手套）， 蓝色锁链/重型/吸血鬼手套 + 蓝药 +  无暇宝石(不分颜色) + 任意符文或珠宝 = 击退手套（弓马手套）",
+      "defaultValue": true
+    },
+    {
+      "id": "easierEthereal",
+      "type": "checkbox",
+      "name": "使用10个任意符文可以将物品变成无形",
+      "description": "使用10个任意符文可以将物品变成无形",
       "defaultValue": true
     }
   ]

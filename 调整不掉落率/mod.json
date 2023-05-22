@@ -1,0 +1,32 @@
+{
+  "name": "调整不掉落率",
+  "description": "Modifies the nodrop chance for treasure categories to simulate a specific /players setup.",
+  "author": "olegbl",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/171",
+  "version": "1.3",
+  "config": [
+    {
+      "id": "players",
+      "type": "number",
+      "name": "/players",
+      "description": "Sets the drop rate to simulate the /players command. 0 = /players infinite (nodrop = 0). 1 = /players 1. 8 = /players 8. etc...",
+      "defaultValue": 0,
+      "minValue": 0
+    },
+    {
+      "id": "fixcountess",
+      "type": "checkbox",
+      "name": "修复女伯爵夫人的符文与物品的掉落顺序",
+      "description": "Make countess prefer to drop runes instead of items. Without this fix, the countess will never drop a full 3 runes with NoDrop set to 0.",
+      "defaultValue": true
+    },
+    {
+      "id": "sunderplayers",
+      "type": "number",
+      "name": "Sunder魅力",
+      "description": "The /players value to use for Sunder Charms. If you set 0 here, you'll get a Sunder Charm from every monster, so don't do that.",
+      "defaultValue": 1,
+      "minValue": 1
+    }
+  ]
+}
