@@ -1,0 +1,78 @@
+{
+    "basedOn": "YtemodInfoHD.json",
+    "type": "UKComplianceModal", "name": "YtemodInfo",
+    "fields": {
+        "defaultWidget": "Close"
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "YtemodInfoTile",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph1",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph2",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph3",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph4",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph5",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph6",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph7",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph8",
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph9",
+                },
+                {
+                    "type": "ButtonWidget", "name": "MoreSetting",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/Cog_Hover",
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            "down": { "name": "Close" }
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "MoreInfo",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            "right": { "name": "Close" }
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
+                        "focusIndicatorVisible": true,
+                        "focusIndicatorOffset": { "x": -2, "y": 0 },
+                        "navigation": {
+                            "up": { "name": "MoreSetting" },
+                            "left": { "name": "MoreInfo" }
+                        }
+                    }
+                },
+            ]
+        },
+    ]
+}
