@@ -106,24 +106,16 @@ if (config.convertPandemoniumKeys) {
     "*eol\r": 0,
   });
   cubemain.rows.push({
-    description: "Key of Hate -> Key of Destruction",
+    description: "Key of Hate -> Key of Terror",
     enabled: 1,
     version: 100,
     numinputs: 1,
     "input 1": "pk2",
-    output: "pk3",
-    "*eol\r": 0,
-  });
-  cubemain.rows.push({
-    description: "Key of Destruction -> Key of Terror",
-    enabled: 1,
-    version: 100,
-    numinputs: 1,
-    "input 1": "pk3",
     output: "pk1",
     "*eol\r": 0,
   });
 }
+
 if (config.easierRollMagicItem) {
   cubemain.rows.push({
     description:
