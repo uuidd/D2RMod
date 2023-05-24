@@ -1,1 +1,0 @@
-folders like global,hd,local should be in this directory

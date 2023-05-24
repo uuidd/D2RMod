@@ -642,17 +642,20 @@
             "type": "LanguageFontRemapper", "name": "LanguageFontRemapper",
             "fields": {
                 "fontLoadingInfo": [
-                     //{ "loadFont": "BlizzardGlobal", "inLanguage": "English" },
+                     { "loadFont": "BlizzardGlobal", "inLanguage": "English" },
                      { "loadFont": "BlizzardGlobal", "inLanguage": "German" },
                      { "loadFont": "BlizzardGlobal", "inLanguage": "Spanish" },
                      { "loadFont": "BlizzardGlobal", "inLanguage": "French" },
                      { "loadFont": "BlizzardGlobal", "inLanguage": "Italian" },
                      { "loadFont": "BlizzardGlobal", "inLanguage": "Polish" },
                      { "loadFont": "BlizzardGlobal", "inLanguage": "Russian" },
-                     //{ "loadFont": "BlizzardGlobal", "inLanguage": "Chinese" },
+                     { "loadFont": "BlizzardGlobal", "inLanguage": "Chinese" },
                      { "loadFont": "BlizzardGlobal", "inLanguage": "Spanish Mexican" },
                      { "loadFont": "BlizzardGlobal", "inLanguage": "Portuguese" },
-                     { "loadFont": "BlizzardGlobalTraditionalChinese", "inLanguage": "Traditional Chinese" },
+                  {
+                    "loadFont": "BlizzardGlobal",
+                    "inLanguage": "Traditional Chinese"
+                  },
                      { "loadFont": "BlizzardGlobalTraditionalChinese", "inLanguage": "Korean" },
                      { "loadFont": "BlizzardGlobalJapanese", "inLanguage": "Japanese" },
                      { "loadFont": "Philosopher", "inLanguage": "Russian" },
@@ -660,10 +663,6 @@
                      { "loadFont": "TB Gothic", "inLanguage": "Japanese" },
                      { "loadFont": "KoDia", "inLanguage": "Korean" },
                      { "loadFont": "Iris", "inLanguage": "Korean" },
-                     { "loadFont": "BlizzardGlobalTraditionalChinese", "inLanguage": "Chinese" },
-                     { "loadFont": "AR FangXinShuh", "inLanguage": "Chinese" },
-                     { "loadFont": "BlizzardGlobalTraditionalChinese", "inLanguage": "English" },
-                     { "loadFont": "AR FangXinShuh", "inLanguage": "English" },
                      { "loadFont": "AR FangXinShuh", "inLanguage": "Traditional Chinese" },
                 ],
                 "fontRemapping": [
@@ -674,29 +673,32 @@
                      { "inLanguage": "Korean", "useFont": "Iris", "asFont": "Formal" },
                      { "inLanguage": "Korean", "useFont": "KoDia", "asFont": "Exocet" },
                      { "inLanguage": "Korean", "useFont": "BlizzardGlobalTraditionalChinese", "asFont": "BlizzardGlobal" },
-                     //{ "inLanguage": "Chinese", "useFont": "BlizzardGlobal", "asFont": "Exocet" },
-                    // { "inLanguage": "Chinese", "useFont": "BlizzardGlobal", "asFont": "Formal" },
-                     { "inLanguage": "Chinese", "useFont": "AR FangXinShuh", "asFont": "Formal" },
-                     { "inLanguage": "Chinese", "useFont": "AR FangXinShuh", "asFont": "Exocet" },
-                     { "inLanguage": "Chinese", "useFont": "BlizzardGlobalTraditionalChinese", "asFont": "BlizzardGlobal" },
-                     //{ "inLanguage": "English", "useFont": "AR FangXinShuh", "asFont": "Formal" },
-                     { "inLanguage": "English", "useFont": "AR FangXinShuh", "asFont": "Exocet" },
-                     { "inLanguage": "English", "useFont": "BlizzardGlobalTraditionalChinese", "asFont": "BlizzardGlobal" },
+                     { "inLanguage": "Chinese", "useFont": "BlizzardGlobal", "asFont": "Exocet" },
+                     { "inLanguage": "Chinese", "useFont": "BlizzardGlobal", "asFont": "Formal" },
                      { "inLanguage": "Traditional Chinese", "useFont": "AR FangXinShuh", "asFont": "Formal" },
                      { "inLanguage": "Traditional Chinese", "useFont": "AR FangXinShuh", "asFont": "Exocet" },
-                     { "inLanguage": "Traditional Chinese", "useFont": "BlizzardGlobalTraditionalChinese", "asFont": "BlizzardGlobal" },
+                     { "inLanguage": "Traditional Chinese", "useFont": "BlizzardGlobal", "asFont": "BlizzardGlobal" },
                 ]
             }
         },
         {
             "type": "ShowItemsParameters", "name": "ShowItemsParameters",
             "fields": {
-                "itemNamesFont": {
-                    "fontColor": "$FontColorWhite",
-                    "pointSize": "$TooltipFontSize",
-                    "alignment": { "h": "center", "v": "center" },
-                    "options": { "pipeCharacterBehavior": "handle", "newlineHandling": "reversed" },
+              "itemNamesFont":
+              {
+                "fontColor": "$FontColorWhite",
+                "pointSize": "$ShowItemFontSize", //"$TooltipFontSize",
+                "alignment":
+                {
+                  "h": "center",
+                  "v": "center"
                 },
+                "options":
+                {
+                  "pipeCharacterBehavior": "handle",
+                  "newlineHandling": "reversed"
+                }
+              },
             },
         },
     ]    

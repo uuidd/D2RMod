@@ -1,0 +1,266 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/env/foliage/global/model/act1_weeds/act1_weeds02.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act1_weeds/act1_weeds04.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_ferns/act3_epiphyte01.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_ferns/act3_fern05.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_ferns/act3_fern06.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_ivy/act3_ivy_climbing01.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_ivy/act3_ivy_hanging05.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_ivy/act3_ivy_hanging06.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_roots/act3_roots_ground01.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_roots/act3_roots_hanging03.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_saplings/act3_sapling05.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_weeds/act3_clover01.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_weeds/act3_weeds01.model"
+      },
+      {
+        "path": "data/hd/env/foliage/global/model/act3_weeds/act3_weeds02.model"
+      },
+      {
+        "path": "data/hd/env/model/act3/jungle/act3_jungle_waypoints/waypoint01.model"
+      },
+      {
+        "path": "data/hd/env/model/global/prop/act3/jungle/act3_jungle_ground/wall_mound03.model"
+      }
+    ],
+    "skeletons":
+    [
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/env/biome/test.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/act3/texture/act3_bush_fern02_alb.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/act3/texture/act3_bush_fern02_B.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/act3/texture/act3_bush_fern02_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/act3/texture/act3_bush_fern02_orm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_weeds_alb.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_weeds_B.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_weeds_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_weeds_orm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_ferns_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_ferns_B.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_ferns_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_ferns_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_ivy_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_ivy_B.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_ivy_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_ivy_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_roots_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_roots_B.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_roots_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_roots_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds01_alb.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds01_B.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds01_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds01_orm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds02_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds02_B.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds02_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds02_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds03_alb.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds03_b.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds03_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_weeds03_orm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/global_act3_saplings_a_alb.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/global_act3_saplings_a_B.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/global_act3_saplings_a_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/global_act3_saplings_a_orm.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act3/jungle/waypoint/act3_jungle_waypoints_a_alb.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act3/jungle/waypoint/act3_jungle_waypoints_a_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act3/jungle/waypoint/act3_jungle_waypoints_a_orm.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act3/jungle/waypoint/act3_jungle_waypoints_b_alb.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act3/jungle/waypoint/act3_jungle_waypoints_b_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act3/jungle/waypoint/act3_jungle_waypoints_b_orm.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act3/jungle/waypoint/act3_jungle_waypoints_c_alb.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act3/jungle/waypoint/act3_jungle_waypoints_c_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act3/jungle/waypoint/act3_jungle_waypoints_c_orm.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/act3/moss01_decal01_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/act3/moss01_decal01_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/act3/moss01_decal01_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/global/birdpoop01_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/global/birdpoop01_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/global/birdpoop01_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/global/mud_splatter01_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/global/mud_splatter01_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/global/mud_splatter01_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/act3/jungle/ac3_jungle_rocky_mud01_alb.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/act3/jungle/ac3_jungle_rocky_mud01_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/act3/jungle/ac3_jungle_rocky_mud01_orm.texture"
+      }
+    ],
+    "physics":
+    [
+      {
+        "path": "data/hd/env/model/act3/jungle/act3_jungle_waypoints/waypoint01_collision.physics"
+      }
+    ],
+    "json":
+    [
+    ],
+    "variantdata":
+    [
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "Prefab",
+  "name": "pf_jungle_waypoint01",
+  "entities":
+  [
+  
+  ]
+}

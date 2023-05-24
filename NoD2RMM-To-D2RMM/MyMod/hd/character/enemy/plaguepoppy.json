@@ -1,0 +1,249 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/character/enemy/plaguepoppy/torso.model"
+      }
+    ],
+    "skeletons":
+    [
+      {
+        "path": "data/hd/character/enemy/plaguepoppy/skeleton/plaguepoppy.skeleton"
+      }
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+      {
+        "path": "data/hd/character/enemy/plaguepoppy/plaguepoppy_state_machine.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_pod_attack_1.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_pod_death_1.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_pod_jump_fade_out.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_pod_neutral_1.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_pod_neutral_fade_out.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_pod_walk_1.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_pod_walk_1_fade_out.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_pod_walk_2.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_pod_walk_2_fade_out.json"
+      }
+    ],
+    "variantdata":
+    [
+      {
+        "path": "data/hd/character/enemy/plaguepoppy/plaguepoppy_variant.json"
+      }
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "plaguepoppy",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 3875480090,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/character/enemy/plaguepoppy/plaguepoppy_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/character/enemy/plaguepoppy/skeleton/plaguepoppy.skeleton"
+        },
+        {
+          "type": "VariantDefinitionComponent",
+          "name": "component_variant",
+          "filename": "data/hd/character/enemy/plaguepoppy/plaguepoppy_variant.json"
+        },
+        {
+          "type": "DefinitionPreloadComponent",
+          "name": "entity_root_DefinitionPreload",
+          "missiles":
+          [
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "entity_root_DefinitionPreload_missiles_0",
+              "filename": "data/hd/missiles/expansion_pod_attack_1.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "entity_root_DefinitionPreload_missiles_1",
+              "filename": "data/hd/missiles/expansion_pod_death_1.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "entity_root_DefinitionPreload_missiles_2",
+              "filename": "data/hd/missiles/expansion_pod_jump_fade_out.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "entity_root_DefinitionPreload_missiles_3",
+              "filename": "data/hd/missiles/expansion_pod_neutral_1.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "entity_root_DefinitionPreload_missiles_4",
+              "filename": "data/hd/missiles/expansion_pod_neutral_fade_out.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "entity_root_DefinitionPreload_missiles_5",
+              "filename": "data/hd/missiles/expansion_pod_walk_1.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "entity_root_DefinitionPreload_missiles_6",
+              "filename": "data/hd/missiles/expansion_pod_walk_1_fade_out.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "entity_root_DefinitionPreload_missiles_7",
+              "filename": "data/hd/missiles/expansion_pod_walk_2.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "entity_root_DefinitionPreload_missiles_8",
+              "filename": "data/hd/missiles/expansion_pod_walk_2_fade_out.json"
+            }
+          ],
+          "overlays":
+          [
+          ],
+          "minions":
+          [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 452614098,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/character/enemy/plaguepoppy/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_pointlight",
+      "id": 2353308128,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0, //0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PointLightDefinitionComponent",
+          "name": "white_light",
+          "color":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 300.0,
+          "radius": 10.0,
+          "attenuation": 1.0,
+          "lightMask": 1,
+          "diffuseContribution": 1.0,
+          "specularContribution": 1.0,
+          "isLocalLight": false
+        }
+      ]
+    }
+  ]
+}

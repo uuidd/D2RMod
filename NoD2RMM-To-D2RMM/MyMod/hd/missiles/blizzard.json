@@ -1,0 +1,166 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+      {
+        "path": "data/hd/vfx/particles/missiles/ice_blizzard/fx_ice_blizzard_missile.particles"
+      }
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/vfx/meshes/fx_mesh_cylinder_smoke02.model"
+      }
+    ],
+    "skeletons":
+    [
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/vfx/textures/gradient/T_FX_AlphaRemapLinear_HoriMirror.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+    ],
+    "variantdata":
+    [
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "blizzard",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2775209862,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx1",
+      "id": 3647310910,
+      "components":
+      [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "component_vfx1",
+          "filename": "data/hd/vfx/particles/missiles/ice_blizzard/fx_ice_blizzard_missile.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_spotlight",
+      "id": 2353308128,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 35.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "SpotLightDefinitionComponent",
+          "name": "spotlight_Entity_SpotLightDefinition",
+          "color":
+          {
+            "x": 0.6,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 500.0,
+          "angle": 12.0,
+          "distance": 100.0,
+          "attenuation": 5.0,
+          "shadowCaster": false,
+          "lightMask": 1,
+          "isLocalLight": false,
+          "diffuseContribution": 1.0,
+          "specularContribution": 0.5
+        }
+      ]
+    }
+
+  ]
+}

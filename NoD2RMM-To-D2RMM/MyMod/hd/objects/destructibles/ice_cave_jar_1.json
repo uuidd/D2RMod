@@ -1,0 +1,1853 @@
+{
+    "dependencies": {
+        "particles": [],
+        "models": [
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_1.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_10.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_11.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_12.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_13.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_14.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_15.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_16.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_17.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_18.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_19.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_2.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_3.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_4.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_5.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_6.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_7.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_8.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_9.model"
+            }
+        ],
+        "skeletons": [
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/skeleton/ice_cave_jar_1.skeleton"
+            }
+        ],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/texture/ice_cave_jar_1_ALB.texture"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/texture/ice_cave_jar_1_NRM.texture"
+            },
+            {
+                "path": "data/hd/objects/destructibles/ice_cave_jar_1/texture/ice_cave_jar_1_ORM.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "UnitDefinition",
+    "name": "ice_cave_jar_1",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 4072590953,
+            "components": [
+                {
+                    "type": "UnitRootComponent",
+                    "name": "component_root",
+                    "state_machine_filename": "",
+                    "doNotInheritRotation": false,
+                    "rotationOverride": {
+                        "x": 0.0,
+                        "y": 0.3826834,
+                        "z": 0.0,
+                        "w": 0.9238795
+                    },
+                    "doNotUseHDHeight": false,
+                    "hideAllMeshWhenInOpenedMode": false,
+                    "onCreateEventName": "",
+                    "animations": []
+                },
+                {
+                    "type": "SkeletonDefinitionComponent",
+                    "name": "component_skeleton",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/skeleton/ice_cave_jar_1.skeleton"
+                },
+                {
+                    "type": "PhysicsApplyForceOnDynamicDefinitionComponent",
+                    "name": "entity_root_PhysicsApplyForceOnDynamicDefinition",
+                    "isExplosion": false,
+                    "explosionRadius": 15.0,
+                    "fromPlayerPosition": true,
+                    "manualForceDirection": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "force": 100.0,
+                    "variance": 50.0,
+                    "life": 10.0,
+                    "lifeVariance": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_torso",
+            "id": 649658913,
+            "components": [
+                {
+                    "type": "UnitPartComponent",
+                    "name": "component_part_torso",
+                    "part": "torso",
+                    "variant": "lit"
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_0",
+            "id": 3946114410,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_1.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition",
+                                "center": {
+                                    "x": -0.2716036,
+                                    "y": 1.68096,
+                                    "z": -0.7429547
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.4183245,
+                                    "y": 0.2768736,
+                                    "z": 0.3090635
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_1",
+            "id": 523182626,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform001",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model001",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_10.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent001",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition001",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition001",
+                                "center": {
+                                    "x": -0.1124433,
+                                    "y": 2.213988,
+                                    "z": 0.009446979
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.555981,
+                                    "y": 0.3638321,
+                                    "z": 0.4629946
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_2",
+            "id": 1378571995,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform002",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model002",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_11.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent002",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition002",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition002",
+                                "center": {
+                                    "x": 0.4503501,
+                                    "y": 0.9913397,
+                                    "z": -0.7255423
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.4695478,
+                                    "y": 0.3778151,
+                                    "z": 0.3115351
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_3",
+            "id": 1927727208,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform003",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model003",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_12.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent003",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition003",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition003",
+                                "center": {
+                                    "x": -0.1151668,
+                                    "y": 1.559984,
+                                    "z": 0.645835
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.4217064,
+                                    "y": 0.4583033,
+                                    "z": 0.2577197
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_4",
+            "id": 2799828000,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform004",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model004",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_13.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent004",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition004",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition004",
+                                "center": {
+                                    "x": 0.4971703,
+                                    "y": 1.78194,
+                                    "z": -0.3166035
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.4602538,
+                                    "y": 0.3321338,
+                                    "z": 0.3943872
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_5",
+            "id": 3332206253,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform005",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model005",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_14.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent005",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition005",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition005",
+                                "center": {
+                                    "x": -0.6589259,
+                                    "y": 1.20082,
+                                    "z": -0.5885218
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.2566068,
+                                    "y": 0.6116273,
+                                    "z": 0.3180759
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_6",
+            "id": 4187529829,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform006",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model006",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_15.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent006",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition006",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition006",
+                                "center": {
+                                    "x": -0.4803912,
+                                    "y": 0.9184635,
+                                    "z": 0.6371369
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.2911693,
+                                    "y": 0.5198779,
+                                    "z": 0.2083538
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_7",
+            "id": 764663581,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform007",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model007",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_16.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent007",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition007",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition007",
+                                "center": {
+                                    "x": -0.8304968,
+                                    "y": 0.9925159,
+                                    "z": 0.06784958
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.1150691,
+                                    "y": 0.6278352,
+                                    "z": 0.425896
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_8",
+            "id": 1297041834,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform008",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model008",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_17.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent008",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition008",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition008",
+                                "center": {
+                                    "x": -0.3263667,
+                                    "y": 1.146883,
+                                    "z": -0.9288926
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.1718216,
+                                    "y": 0.3707533,
+                                    "z": 0.08540726
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_9",
+            "id": 2152365411,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform009",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model009",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_18.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent009",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition009",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition009",
+                                "center": {
+                                    "x": 0.02948004,
+                                    "y": 1.926875,
+                                    "z": -0.695677
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.3231348,
+                                    "y": 0.08716935,
+                                    "z": 0.1073444
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_10",
+            "id": 3024466459,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform010",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model010",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_19.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent010",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition010",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition010",
+                                "center": {
+                                    "x": 0.02555341,
+                                    "y": 0.4707699,
+                                    "z": -0.0799067
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 1.024943,
+                                    "y": 0.4737889,
+                                    "z": 1.021012
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_11",
+            "id": 3556778920,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform011",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model011",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_2.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent011",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition011",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition011",
+                                "center": {
+                                    "x": -0.4847473,
+                                    "y": 1.679731,
+                                    "z": 0.1741984
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.461576,
+                                    "y": 0.3639657,
+                                    "z": 0.5869074
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_12",
+            "id": 133978208,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform012",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model012",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_3.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent012",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition012",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition012",
+                                "center": {
+                                    "x": 0.1690392,
+                                    "y": 0.7549704,
+                                    "z": 0.7457655
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.4975746,
+                                    "y": 0.3859123,
+                                    "z": 0.1479263
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_13",
+            "id": 683133421,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform013",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model013",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_4.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent013",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition013",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition013",
+                                "center": {
+                                    "x": 0.7690691,
+                                    "y": 1.242224,
+                                    "z": 0.05244339
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.234292,
+                                    "y": 0.7354329,
+                                    "z": 0.5932467
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_14",
+            "id": 1538457253,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform014",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model014",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_5.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent014",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition014",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition014",
+                                "center": {
+                                    "x": 0.4878394,
+                                    "y": 1.568704,
+                                    "z": -0.7473026
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.4156183,
+                                    "y": 0.3140523,
+                                    "z": 0.296735
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_15",
+            "id": 2410492766,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform015",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model015",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_6.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent015",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition015",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition015",
+                                "center": {
+                                    "x": -0.2700323,
+                                    "y": 0.558413,
+                                    "z": 0.6822314
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.5122725,
+                                    "y": 0.2821125,
+                                    "z": 0.2250482
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_16",
+            "id": 2942936299,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform016",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model016",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_7.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent016",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition016",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition016",
+                                "center": {
+                                    "x": 0.4781843,
+                                    "y": 1.28452,
+                                    "z": 0.5240529
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.3009802,
+                                    "y": 0.7529873,
+                                    "z": 0.3424603
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_17",
+            "id": 3798260131,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform017",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model017",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_8.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent017",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition017",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition017",
+                                "center": {
+                                    "x": -0.02939481,
+                                    "y": 2.186695,
+                                    "z": -0.156362
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.6733638,
+                                    "y": 0.3923664,
+                                    "z": 0.4689511
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_18",
+            "id": 375328347,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform018",
+                    "position": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model018",
+                    "filename": "data/hd/objects/destructibles/ice_cave_jar_1/model/icejar1_piece_9.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent018",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition018",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition018",
+                                "center": {
+                                    "x": 0.03374377,
+                                    "y": 1.107627,
+                                    "z": -0.9968795
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.2217444,
+                                    "y": 0.3265721,
+                                    "z": 0.0417634
+                                }
+                            },
+                            "friction": 0.6,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+		{
+            "type": "Entity",
+            "name": "vfx",
+            "id": 856925902,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "vfx_VfxDefinition",
+                    "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                    "hardKillOnDestroy": false
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "vfx_TransformDefinition",
+                    "position": {
+                        "x": 0.5,
+                        "y": 0.0,
+                        "z": 1.5
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,313 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/character/enemy/skeleton1/base_body.model"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/head_lit.model"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/special1_lit.model"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/special2_lit.model"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/torso_lit.model"
+      }
+    ],
+    "skeletons":
+    [
+      {
+        "path": "data/hd/character/enemy/skeleton1/skeleton/skeleton1.skeleton"
+      }
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/character/common/common_ktint.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_armormed_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_armormed_KTINT.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_armormed_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_armormed_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_basebody_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_basebody_KTINT.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_basebody_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_basebody_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton1_armorlit_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton1_armorlit_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton1_armorlit_orm.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+      {
+        "path": "data/hd/character/enemy/skeleton1/skeleton1_state_machine.json"
+      },
+      {
+        "path": "data/hd/missiles/arrow.json"
+      }
+    ],
+    "variantdata":
+    [
+      {
+        "path": "data/hd/character/enemy/act2guard3/act2guard3_variant.json"
+      }
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "act2guard3",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 4187056697,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/character/enemy/skeleton1/skeleton1_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/character/enemy/skeleton1/skeleton/skeleton1.skeleton"
+        },
+        {
+          "type": "VariantDefinitionComponent",
+          "name": "component_variant",
+          "filename": "data/hd/character/enemy/act2guard3/act2guard3_variant.json"
+        },
+        {
+          "type": "DefinitionPreloadComponent",
+          "name": "Root_DefinitionPreloadComponent",
+          "missiles":
+          [
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry1",
+              "filename": "data/hd/missiles/arrow.json"
+            }
+          ],
+          "overlays":
+          [
+          ],
+          "minions":
+          [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso_lit",
+      "id": 424467398,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/character/enemy/skeleton1/torso_lit.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_head_lit",
+      "id": 3983428789,
+      "components":
+      [
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "entity_head_lit_ModelDefinition",
+          "filename": "data/hd/character/enemy/skeleton1/head_lit.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_base_body",
+      "id": 464271664,
+      "components":
+      [
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "entity_base_body_ModelDefinition",
+          "filename": "data/hd/character/enemy/skeleton1/base_body.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special1_lit",
+      "id": 3981649130,
+      "components":
+      [
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "entity_special1_lit_ModelDefinition",
+          "filename": "data/hd/character/enemy/skeleton1/special1_lit.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special2_lit",
+      "id": 2880386176,
+      "components":
+      [
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "entity_special2_lit_ModelDefinition",
+          "filename": "data/hd/character/enemy/skeleton1/special2_lit.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_pointlight",
+      "id": 2353308128,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0, //0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PointLightDefinitionComponent",
+          "name": "white_light",
+          "color":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 300.0,
+          "radius": 10.0,
+          "attenuation": 1.0,
+          "lightMask": 1,
+          "diffuseContribution": 1.0,
+          "specularContribution": 1.0,
+          "isLocalLight": false
+        }
+      ]
+    }
+  ]
+}

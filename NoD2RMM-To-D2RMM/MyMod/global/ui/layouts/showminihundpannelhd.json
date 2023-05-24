@@ -1,0 +1,50 @@
+{
+  "type": "UKComplianceModal",
+  "name": "showminihundpannel",
+  "fields":
+  {
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "isDismissable": true
+  },
+  "children":
+  [
+    {
+      "type": "Widget",
+      "name": "link",
+      "children":
+      [
+        {
+          "type": "TimerWidget",
+          "name": "TimerClose",
+          "fields":
+          {
+            "time": 0.1,
+            "message": "PanelManager:TogglePanel:hudpanel_mini"
+          }
+        },
+        {
+          "type": "TimerWidget",
+          "name": "TimerClose",
+          "fields":
+          {
+            "time": 0.1,
+            "message": "PanelManager:TogglePanel:hudpanel_real"
+          }
+        },
+        {
+          "type": "TimerWidget",
+          "name": "TimerClose",
+          "fields":
+          {
+            "time": 0.1,
+            "message": "PanelManager:ClosePanel:showminihundpannel"
+          }
+        }
+      ]
+    }
+  ]
+}

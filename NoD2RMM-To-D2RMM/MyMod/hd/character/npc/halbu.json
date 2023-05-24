@@ -1,0 +1,266 @@
+{
+    "dependencies": {
+        "particles": [],
+        "models": [
+            {
+                "path": "data/hd/character/npc/halbu/torso.model"
+            }
+        ],
+        "skeletons": [
+            {
+                "path": "data/hd/character/npc/halbu/skeleton/halbu.skeleton"
+            }
+        ],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/character/common/common_hair2_FLOW.texture"
+            },
+            {
+                "path": "data/hd/character/common/common_hair2_HRT.texture"
+            },
+            {
+                "path": "data/hd/character/common/common_ktint.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_armor_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_armor_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_armor_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_body_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_body_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_body_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_hair_ALB.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_head_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_head_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_head_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/halbu/textures/halbu_head_SSS.texture"
+            }
+        ],
+        "physics": [],
+        "json": [
+            {
+                "path": "data/hd/character/npc/halbu/halbu_state_machine.json"
+            }
+        ],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "UnitDefinition",
+    "name": "halbu",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 442459874,
+            "components": [
+                {
+                    "type": "UnitRootComponent",
+                    "name": "component_root",
+                    "state_machine_filename": "data/hd/character/npc/halbu/halbu_state_machine.json",
+                    "doNotInheritRotation": false,
+                    "rotationOverride": {
+                        "x": 0.0,
+                        "y": 0.3826834,
+                        "z": 0.0,
+                        "w": 0.9238795
+                    },
+                    "doNotUseHDHeight": false,
+                    "hideAllMeshWhenInOpenedMode": false,
+                    "onCreateEventName": "",
+                    "animations": []
+                },
+                {
+                    "type": "SkeletonDefinitionComponent",
+                    "name": "component_skeleton",
+                    "filename": "data/hd/character/npc/halbu/skeleton/halbu.skeleton"
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 0.95,
+                        "y": 0.95,
+                        "z": 0.95
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "IKComponent",
+                    "name": "entity_root_IK",
+                    "preset": {
+                        "type": "IKPreset",
+                        "name": "Default_NPC",
+                        "footIKSetup": [
+                            {
+                                "type": "FootIKSetup",
+                                "name": "Default_NPC_footIKSetup_0",
+                                "footBoneName": "L_leg_03_bind_jnt",
+                                "kneeBoneName": "L_leg_02_bind_jnt",
+                                "hipBoneName": "L_leg_01_bind_jnt",
+                                "locationTrackName": "L_IK_position",
+                                "enabledTrackName": "L_FKIK",
+                                "hyperExtensionStart": 0.0,
+                                "hyperExtensionScale": 0.0,
+                                "defaultEnabled": true,
+                                "kneeRotationAxis": 1,
+                                "flipKneeRotationAxis": false
+                            },
+                            {
+                                "type": "FootIKSetup",
+                                "name": "Default_NPC_footIKSetup_1",
+                                "footBoneName": "R_leg_03_bind_jnt",
+                                "kneeBoneName": "R_leg_02_bind_jnt",
+                                "hipBoneName": "R_leg_01_bind_jnt",
+                                "locationTrackName": "R_IK_position",
+                                "enabledTrackName": "R_FKIK",
+                                "hyperExtensionStart": 0.0,
+                                "hyperExtensionScale": 0.0,
+                                "defaultEnabled": true,
+                                "kneeRotationAxis": 1,
+                                "flipKneeRotationAxis": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "MoveAnimationSelectComponent",
+                    "name": "entity_root_MoveAnimationSelect",
+                    "animationOptions": [
+                        {
+                            "type": "MoveAnimationOption",
+                            "name": "entity_root_MoveAnimationSelect_animationOptions_0",
+                            "validForWalk": true,
+                            "validForRun": true,
+                            "validInsideTown": true,
+                            "validOutsideTown": true,
+                            "minMoveSpeed": 0.0,
+                            "maxMoveSpeed": 99.0,
+                            "baseMoveSpeed": 3.0,
+                            "animationName": "Walk"
+                        }
+                    ],
+                    "defaultAnimationName": "Walk"
+                },
+                {
+                    "type": "LookAtAnimationControlComponent",
+                    "name": "entity_root_LookAtAnimationControl",
+                    "controlOverrides": [],
+                    "aimLayerName": "Aim_Head",
+                    "blendInTime": 0.25,
+                    "blendOutTime": 0.25
+                },
+                {
+                    "type": "AimLayersComponent",
+                    "name": "entity_root_AimLayers",
+                    "aimLayers": [
+                        {
+                            "type": "AimLayerSetup",
+                            "name": "entity_root_AimLayers_aimLayers_0",
+                            "layerName": "Aim_Head",
+                            "yawAnimationState": "HeadAimLayer_Yaw",
+                            "yawOutOfRangeBehavior": 2,
+                            "yawAngleOffset": 0.0,
+                            "pitchAnimationState": "",
+                            "pitchOutOfRangeBehavior": 0,
+                            "pitchAngleOffset": 0.0,
+                            "aimLocationTrackName": "aim_location",
+                            "aimDampingFactor": 0.15,
+                            "aimTarget": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_torso",
+            "id": 974837871,
+            "components": [
+                {
+                    "type": "UnitPartComponent",
+                    "name": "component_part_torso",
+                    "part": "torso",
+                    "variant": "lit"
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "component_model_torso",
+                    "filename": "data/hd/character/npc/halbu/torso.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                }
+            ]
+        },
+        {
+          "type": "Entity",
+          "name": "entity_root",
+          "id": 1079187010,
+          "components": [
+              {
+                  "type": "VfxDefinitionComponent",
+                  "name": "entity_root_VfxDefinition",
+                  "filename": "data/hd/nickname/particles/halbu.particles",
+                  "hardKillOnDestroy": false
+              },
+              {
+                  "type": "TransformDefinitionComponent",
+                  "name": "vfx4294962040_component_transform",
+                  "position": {
+                      "x": 0.0,
+                      "y": 9.0,
+                      "z": 0.0
+                  },
+                  "orientation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                  },
+                  "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                  },
+                  "inheritOnlyPosition": false
+              }
+          ]
+      }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "basedOn": "SettingsPanelHD.json",
+    "type": "SettingsPanel", "name": "OnlineGameSettingPanel",
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "catcher",
+        },
+        {
+            "type": "RectangleWidget", "name": "Background",
+            "children": [
+                {
+                    "type": "Widget", "name": "Anchor",
+                    "children": [
+                        {
+                            "type": "ImageWidget", "name": "Background",
+                        },
+                        {
+                            "type": "TextBoxWidget", "name": "Title",
+                        },
+                      {
+                        "type": "ButtonWidget",
+                        "name": "CloseButton",
+                        "fields":
+                        {
+                          "rect":
+                          {
+                            "x": 1868,
+                            "y": 8
+                          },
+                          "filename": "PANEL\\closebtn_4x",
+                          "hoveredFrame": 3,
+                          "onClickMessage": "PanelManager:ClosePanel:OnlineGameSettingPanel",
+                          "tooltipString": "@strClose",
+                          "sound": "cursor_close_window_hd",
+                          "acceptsEscKeyEverywhere": true
+                        }
+                      },
+                    ]
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "SettingsBackground",
+        },
+        {
+            "type": "TabBarWidget", "name": "OptionsTabs",
+            "fields": {
+                "tabSize": { "x": 255, "y": 121, },
+                "tabTextOffset": { "x": 3, "y": -4, },
+                "tabCount": 1,
+                "textStrings": [ "@GameCreationHD" ],
+                "tabMessages": [
+                    "SettingsPanelMessage:CheckChanges:OnlineGameOptionsPanel",
+                ],
+            },
+        },
+        {
+            "type": "TableWidget", "name": "ActionButtonsTable",
+            "children": [
+                {
+                    "type": "TableRowWidget", "name": "Row",
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "AcceptButton",
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "DefaultButton",
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "CancelButton",
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

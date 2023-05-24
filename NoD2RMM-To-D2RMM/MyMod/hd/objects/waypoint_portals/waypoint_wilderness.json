@@ -1,0 +1,175 @@
+{
+  "dependencies": {
+    "particles": [
+      { "path": "data/hd/vfx/particles/objects/waypoint_portals/Waypoint_Fire/vfx_waypoint_Fire.particles" },
+      { "path": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles" },
+      { "path": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles" }
+    ],
+    "models": [
+      { "path": "data/hd/objects/waypoint_portals/waypoint_wilderness/model/special1.model" },
+      { "path": "data/hd/objects/waypoint_portals/waypoint_wilderness/model/torso.model" },
+      { "path": "data/hd/vfx/meshes/fx_mesh_fireballVertPaint.model" }
+    ],
+    "skeletons": [
+      { "path": "data/hd/objects/waypoint_portals/waypoint_wilderness/skeleton/waypoint_wilderness.skeleton" }
+    ],
+    "animations": [],
+    "textures": [
+      { "path": "data/hd/objects/waypoint_portals/waypoint_wilderness/texture/waypoint_wilderness_alb.texture" },
+      { "path": "data/hd/objects/waypoint_portals/waypoint_wilderness/texture/waypoint_wilderness_nrm.texture" },
+      { "path": "data/hd/objects/waypoint_portals/waypoint_wilderness/texture/waypoint_wilderness_orm.texture" },
+      { "path": "data/hd/vfx/textures/noise/T_FX_perlin_noise_bigger_02.texture" }
+    ],
+    "physics": [],
+    "json": [{ "path": "data/hd/objects/waypoint_portals/waypoint_wilderness/waypoint_wilderness_state_machine.json" }],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "waypoint_wilderness",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 4204304631,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/objects/waypoint_portals/waypoint_wilderness/waypoint_wilderness_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride": { "x": 0.0, "y": 0.3826834, "z": 0.0, "w": 0.9238795 },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/waypoint_portals/waypoint_wilderness/skeleton/waypoint_wilderness.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 1313816124,
+      "components": [
+        { "type": "UnitPartComponent", "name": "component_part_torso", "part": "torso", "variant": "lit" },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/waypoint_portals/waypoint_wilderness/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special1",
+      "id": 441715331,
+      "components": [
+        { "type": "UnitPartComponent", "name": "component_part_special1", "part": "special1", "variant": "lit" },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_special1",
+          "filename": "data/hd/objects/waypoint_portals/waypoint_wilderness/model/special1.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "FireRight",
+      "id": 4121855879,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "FireRight_VfxDefinition",
+          "filename": "data/hd/vfx/particles/objects/waypoint_portals/Waypoint_Fire/vfx_waypoint_Fire.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "FireRight_TransformDefinition",
+          "position": { "x": 0.086, "y": 1.4, "z": -5.031 },
+          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
+          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "FireLeft",
+      "id": 918881598,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "FireLeft_VfxDefinition",
+          "filename": "data/hd/vfx/particles/objects/waypoint_portals/Waypoint_Fire/vfx_waypoint_Fire.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "FireLeft_TransformDefinition",
+          "position": { "x": 0.6, "y": 1.4, "z": 5.4 },
+          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
+          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "pf_jg_waypoint",
+      "id": 586091854,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "prefab_TransformDefinitionComponent",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PrefabPlacementDefinitionComponent",
+          "name": "prefab_PrefabPlacementDefinitionComponent",
+          "prefab": "data/hd/env/jg/pf_jg_waypoint.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1825 @@
+﻿{
+  "type": "SettingsPanel",
+  "name": "PiercingEyePanel",
+  "fields":
+  {
+    "priority": 9003,
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 1
+    },
+    "fitToParent": false,
+    "applySettingsImmediately": false,
+    "rect":
+    {
+      "x": -357,
+      "y": -1700,
+      "width": 695,
+      "height": 1140
+    }
+  },
+  "children":
+  [
+    {
+      "type": "ImageWidget",
+      "name": "ScrollBarBackground",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 10,
+          "y": -110
+        },
+        "anchor":
+        {
+          "x": 1.0
+        },
+        "filename": "PauseMenu\\VerticalScroll"
+      },
+      "children":
+      [
+        {
+          "type": "ScrollControllerWidget",
+          "name": "ScrollController",
+          "fields":
+          {
+            "rect":
+            {
+              "x": -31,
+              "y": 29,
+              "width": 26,
+              "height": 1208
+            },
+            "anchor":
+            {
+              "x": 1.0
+            },
+            "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+            "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+            "barFilepath": "PauseMenu\\VerticalIndicator",
+            "viewName": "ScrollView",
+            "wheelScrollSound": "cursor_scroll_hd",
+            "buttonScrollSound": "cursor_scroll_hd"
+          }
+        }
+      ]
+    },
+    {
+      "type": "ScrollViewWidget",
+      "name": "ScrollView",
+      "fields":
+      {
+        "fitToParent": true,
+        "scrollControllerName": "ScrollController"
+      },
+      "children":
+      [
+        {
+          "type": "TableWidget",
+          "name": "OptionsTable",
+          "fields":
+          {
+            "columns":
+            [
+              {
+                "width": 320,
+                "alignment":
+                {
+                  "h": "left",
+                  "v": "center"
+                }
+              },
+              {
+                "width": 550,
+                "alignment":
+                {
+                  "h": "left",
+                  "v": "center"
+                }
+              }
+            ],
+            "rowHeight": 70
+          },
+          "children":
+          [
+            {
+              "type": "Widget",
+              "name": "SpecialAffixesHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 0
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "SpecialAffixes",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "SpecialAffixesTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "height": 80
+                        },
+                        "text": "@jghelp50701SpecialAffixesTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 10,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "EtherealText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 360,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@strethereal",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp50702etherealtooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HiqualityText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 400,
+                          "y": 0,
+                          "width": 300,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@Hiquality",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp50703Hiqualitytooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "ProprietaryPropertiesHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 130
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "ProprietaryProperties",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "ProprietaryPropertiesTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 300,
+                          "height": 80
+                        },
+                        "text": "@jghelp50704ProprietaryPropertiesTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp50705ProprietaryPropertiesTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 10,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "ButtonWidget",
+                      "name": "AmazonProprietaryProperties",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 10,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\amazonicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50706AmazonProprietaryPropertiesTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "AssassinProprietaryProperties",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 90,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\assassinicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50707AssassinProprietaryPropertiesTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "BarbariaProprietaryProperties",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 170,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\barbarianicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50708BarbariaProprietaryPropertiesTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "DruidProprietaryProperties",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 250,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\druidicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50709DruidProprietaryPropertiesTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "NecromancerProprietaryProperties",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 330,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\necromancericon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50710NecromancerProprietaryPropertiesTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "PaladinProprietaryProperties",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 410,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\paladinicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50711PaladinProprietaryPropertiesTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "SorceressProprietaryProperties",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 490,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\sorceressicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50712SorceressProprietaryPropertiesTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    }
+
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "MagicItemsAffixHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 280
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "MagicItemsAffix",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "MagicItemsAffixTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 300,
+                          "height": 80
+                        },
+                        "text": "@jghelp50800MagicItemsAffixTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp50801MagicItemsAffixTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 10,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "ButtonWidget",
+                      "name": "CharmSmall",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 10,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\charm\\charm_small",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50802MagicItemsAffixSmallCharmTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "CharmMedium",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 90,
+                          "y": 0,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\misc\\charm\\charm_medium",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50803MagicItemsAffixLargeCharmTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "CharmLarge",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 150,
+                          "y": 0,
+                          "scale": 0.25
+                        },
+                        "filename": "items\\misc\\charm\\charm_large",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50804MagicItemsAffixGrandCharmTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "PerfectDiamond",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 210,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\gem\\perfect_diamond2",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50805MagicItemsAffixJewelTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Ring",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 290,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\ring\\ring3",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50806MagicItemsAffixRingTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Amulet",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 360,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\amulet\\amulet3",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50807MagicItemsAffixAmuletTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Helm",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 10,
+                          "y": 80,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\helmet\\helm",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50808MagicItemsAffixHelmTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "HelmBar",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 80,
+                          "y": 80,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\helmet\\fanged_helm",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50809MagicItemsAffixHelmBarTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "HelmDru",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 150,
+                          "y": 80,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\pelt\\antlers",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50810MagicItemsAffixHelmDruTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Circlet",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 220,
+                          "y": 80,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\circlet\\tiara",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50811MagicItemsAffixCircletTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Armor",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 290,
+                          "y": 80,
+                          "scale": 0.2
+                        },
+                        "filename": "items\\armor\\armor\\ancient_armor",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50812MagicItemsAffixArmorTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Shield",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 360,
+                          "y": 90,
+                          "scale": 0.2
+                        },
+                        "filename": "items\\armor\\shield\\steelclash",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50813MagicItemsAffixShieldTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "ShieldPal",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 430,
+                          "y": 90,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\shield\\crown_shield",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50814MagicItemsAffixShieldPalTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "ShieldNec",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 500,
+                          "y": 90,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\voodoo_head\\demon_head",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50815MagicItemsAffixShieldNecTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Belt",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 430,
+                          "y": 10,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\belt\\heavy_belt",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50816MagicItemsAffixBeltTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Boot",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 500,
+                          "y": 0,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\boot\\chain_boots",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50817MagicItemsAffixBootTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Glove",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 570,
+                          "y": 0,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\glove\\bracers_m",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50818MagicItemsAffixGloveTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    }
+
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "RareItemsAffixHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 520
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "RareItemsAffix",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "RareItemsAffixTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 300,
+                          "height": 80
+                        },
+                        "text": "@jghelp50900RareItemsAffixTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp50901RareItemsAffixTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 10,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "ButtonWidget",
+                      "name": "PerfectDiamond",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 10,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\gem\\perfect_diamond3",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50902RareItemsAffixJewelTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Ring",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 90,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\ring\\ring4",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50903RareItemsAffixRingTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Amulet",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 160,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\amulet\\amulet2",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50904RareItemsAffixAmuletTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Helm",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 10,
+                          "y": 80,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\helmet\\helm",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50905RareItemsAffixHelmTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "HelmBar",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 80,
+                          "y": 80,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\helmet\\fanged_helm",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50906RareItemsAffixHelmBarTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "HelmDru",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 150,
+                          "y": 80,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\pelt\\antlers",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50907RareItemsAffixHelmDruTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Circlet",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 220,
+                          "y": 80,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\circlet\\tiara",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50908RareItemsAffixCircletTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Armor",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 290,
+                          "y": 80,
+                          "scale": 0.2
+                        },
+                        "filename": "items\\armor\\armor\\ancient_armor",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50909RareItemsAffixArmorTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Shield",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 360,
+                          "y": 90,
+                          "scale": 0.2
+                        },
+                        "filename": "items\\armor\\shield\\steelclash",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50910RareItemsAffixShieldTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "ShieldPal",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 430,
+                          "y": 90,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\shield\\crown_shield",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50911RareItemsAffixShieldPalTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "ShieldNec",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 500,
+                          "y": 90,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\voodoo_head\\demon_head",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50912RareItemsAffixShieldNecTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Belt",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 230,
+                          "y": 10,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\belt\\heavy_belt",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50913RareItemsAffixBeltTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Boot",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 300,
+                          "y": 0,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\boot\\chain_boots",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50914RareItemsAffixBootTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Glove",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 370,
+                          "y": 0,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\glove\\bracers_m",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp50915RareItemsAffixGloveTitletooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    }
+
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "MagicItemsAvailableForAuctionHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 760
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "MagicItemsAvailableForAuction",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "MagicItemsAvailableForAuctionTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 300,
+                          "height": 80
+                        },
+                        "text": "@jghelp52300MagicItemsAvailableForAuctionTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52301MagicItemsAvailableForAuctionTitleTooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 10,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "ButtonWidget",
+                      "name": "CharmSmall",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 10,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\charm\\charm_small",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52302MagicItemsAvailableForAuctionSmallCharmTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "CharmLarge",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 90,
+                          "y": 0,
+                          "scale": 0.25
+                        },
+                        "filename": "items\\misc\\charm\\charm_large",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52303MagicItemsAvailableForAuctionGrandCharmTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "PerfectDiamond",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 150,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\gem\\perfect_diamond2",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52304MagicItemsAvailableForAuctionJewelTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Ring",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 225,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\ring\\ring3",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52305MagicItemsAvailableForAuctionRingTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Amulet",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 290,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "items\\misc\\amulet\\amulet3",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52306MagicItemsAvailableForAuctionAmuletTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 10,
+                      "y": 160
+                    }
+                  },
+                  "children":
+                  [                                     
+                    {
+                      "type": "ButtonWidget",
+                      "name": "HelmBar",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 10,
+                          "y": 0,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\helmet\\fanged_helm",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52312MagicItemsAvailableForAuctionHelmBarTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "HelmDru",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 80,
+                          "y": 0,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\pelt\\antlers",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52311MagicItemsAvailableForAuctionHelmDruTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Circlet",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 150,
+                          "y": 0,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\circlet\\tiara",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52314MagicItemsAvailableForAuctionCircletTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Armor",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 230,
+                          "y": 0,
+                          "scale": 0.2
+                        },
+                        "filename": "items\\armor\\armor\\ancient_armor",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52313MagicItemsAvailableForAuctionArmorTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "Shield",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 290,
+                          "y": 0,
+                          "scale": 0.2
+                        },
+                        "filename": "items\\armor\\shield\\steelclash",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52308MagicItemsAvailableForAuctionShieldTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "ShieldPal",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 355,
+                          "y": 0,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\shield\\crown_shield",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52309MagicItemsAvailableForAuctionShieldPalTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "ShieldNec",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 430,
+                          "y": 0,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\armor\\voodoo_head\\demon_head",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52310MagicItemsAvailableForAuctionShieldNecTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 10,
+                      "y": 230
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "ButtonWidget",
+                      "name": "WeaponAssassin",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 20,
+                          "y": -10,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\weapon\\h2h\\claws",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52315MagicItemsAvailableForAuctionWeaponAssassinTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "WeaponAmazon",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 90,
+                          "y": -5,
+                          "scale": 0.3
+                        },
+                        "filename": "items\\weapon\\javelin\\maiden_javelin",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52317MagicItemsAvailableForAuctionWeaponAmazonTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "WeaponSorceress",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 160,
+                          "y": 0,
+                          "scale": 0.25
+                        },
+                        "filename": "items\\weapon\\orb\\dragon_stone",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52316MagicItemsAvailableForAuctionWeaponSorceressTitleTooltip",
+                        "tooltipStyle": "$StandardToolTipStyle",
+                        "tooltipOffset":
+                        {
+                          "x": 400
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+
+          ]
+        }
+      ]
+    }
+  ]
+}

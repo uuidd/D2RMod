@@ -1,154 +1,838 @@
 {
-    // Base (parent) profile.
-    "basedOn": "HD",
+  // Base (parent) profile.
+  "basedOn": "HD",
 
-    // In-game panel rects.
-    "LeftPanelRect": { "x": 0, "y": -856, "width": 1162, "height": 1507, "scale": 1.16 },
-    "RightPanelRect":  { "x": -1346, "y": -856, "width": 1162, "height": 1507, "scale": 1.16 },
-    "ScrollSpeechWidth": 1050,
-    "ScrollSpeechBorderWidth": 1150,
-    "ScrollSpeechOffset": -525, // This is negative and half of the width; Used as the horizontal offset.
-    "QuestLogScrollingSpeechParentRect": { "x": 168, "y": 1190, "width": 1000, "height": 254 },// "x": 298, "y": 1190, "width": 770, "height": 254
-    "ModsScrollingTextWidth": 1000,//Mods designed
-    "ModsScrollControllerHeight": 372,//Mods designed
+  // In-game panel rects.
 
-    "StyleWeaponSwapTabs": {
-        "fontColor": "$FontColorLightGold",
-        "pointSize": "$LargeFontSize",
-        "alignment": { "h": "center", "v": "center" },
+  //"LeftPanelRect":
+  //{
+  //  "x": 0,
+  //  "y": -856,
+  //  "width": 1162,
+  //  "height": 1507,
+  //  "scale": 1.16
+  //},
+  //"RightPanelRect":
+  //{
+  //  "x": -1346,
+  //  "y": -856,
+  //  "width": 1162,
+  //  "height": 1507,
+  //  "scale": 1.16
+  //},
+
+  "ScrollSpeechWidth": 1050,
+  "ScrollSpeechBorderWidth": 1150,
+  "ScrollSpeechOffset": -525, // This is negative and half of the width; Used as the horizontal offset.
+  "QuestLogScrollingSpeechParentRect":
+  {
+    "x": 298,
+    "y": 1190,
+    "width": 770,
+    "height": 254
+  },
+
+
+  "StyleWeaponSwapTabs":
+  {
+    "fontColor": "$FontColorLightGold",
+    "pointSize": "$LargeFontSize",
+    "alignment":
+    {
+      "h": "center",
+      "v": "center"
+    }
+  },
+  "StyleScrollingSpeech":
+  {
+    "fontFace": "Formal",
+    "fontColor":
+    {
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
     },
-    "StyleScrollingSpeech": {
-        "fontFace": "Formal",
-        "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
-        "pointSize": "$LargeFontSize",
-        "alignment": { "h": "left" },
-        "options": { "newlineHandling": "standard", "lineWrap": true },
+    "pointSize": "$LargeFontSize",
+    "alignment":
+    {
+      "h": "left"
     },
-    "StyleNPCDialogueSize": "$LargeFontSize",
+    "options":
+    {
+      "newlineHandling": "standard",
+      "lineWrap": true
+    }
+  },
+  "StyleNPCDialogueSize": "$LargeFontSize",
 
-    // K&M LV-mode in-game panels are just scaled up, thus we need
-    // versions of fonts which can be used in panels.
-    "XMediumPanelFontSize": 28,
-    "MediumPanelFontSize": 26,
-    "ModsMediumPanelFontSize": 26,// Usage : Large Font Mode for Mods
-    "ModsScrollingTextFontSize": 32,// Usage : Large Font Mode for Mods
-    "SmallPanelFontSize": 22,
+  // K&M LV-mode in-game panels are just scaled up, thus we need
+  // versions of fonts which can be used in panels.
+  "XMediumPanelFontSize": 28,
+  "MediumPanelFontSize": 26,
+  "SmallPanelFontSize": 22,
 
-    "XMediumFontSize": 32,
-    "MediumFontSize": 32,
-    "SmallFontSize": 28,
-    "TooltipFontSize": 40,
+  "XMediumFontSize": 32,
+  "MediumFontSize": 32,
+  "SmallFontSize": 28,
+  "TooltipFontSize": 40,
 
-    "TooltipStyle": {
-        "fontStyle": {
-            "fontColor": "$FontColorWhite",
-            "pointSize": "$TooltipFontSize",
-            "alignment": { "h": "center", "v": "center" },
-            "options": { "pipeCharacterBehavior" : "handle", "newlineHandling": "reversed" }
-        },
-        "padding": [ 20, 12, 20, 12 ],
-        "inGameTargetPadding": [ -3, 0, -3, 0 ],
-        "drawBorder": false,
-        "centeredOnAnchor": true,
-        "hp": 0,
-        "backgroundColor": [ 0, 0, 0, 0.95 ],
-        // This color is used for in-game tooltip label backgrounds
-        "inGameBackgroundColor": [ 0, 0, 0, 0.6 ],
-        // This color is used for the show items selected label background
-        "inGameShowItemsSelectedBackgroundColor": [ 0, 0.25, 0.5, 1.0 ],
-        "substringColor": [ 150, 128, 77, 255 ],
-        "healthColor": [ 0.31, 0, 0, 1.0 ],
-        "borderColor": "$TooltipBorderColor",
-        "DefaultColor": "$FontColorWhite",
-        "QuestColor": "$FontColorGoldYellow",
-        "RareColor": "$FontColorYellow",
-        "CraftedColor": "$FontColorOrange",
-        "TemperedColor":"$FontColorDarkGreen",
-        "MagicColor": "$FontColorBlue",
-        "SetColor": "$FontColorGreen",
-        "UniqueColor": "$FontColorGoldYellow",
-        "SocketedColor": "$FontColorSocketedColor",//$FontColorGrey
-        "EtherealColor":"$FontColorEtherealColor",//$FontColorGrey
-        "HealthPotionColor":"$FontColorWhite",
-        "ManaPotionColor": "$FontColorWhite",
-        "RejuvPotionColor": "$FontColorWhite",
-        "GoldColor": "$FontColorGray",//$FontColorWhite
-        "RuneColor": "$FontColorOrange",
-        "EventItemsColor": "$FontColorOrange",
+  "TooltipStyle":
+  {
+    "fontStyle":
+    {
+      "fontColor": "$FontColorWhite",
+      "pointSize": "$TooltipFontSize",
+      "alignment":
+      {
+        "h": "center",
+        "v": "center"
+      },
+      "options":
+      {
+        "pipeCharacterBehavior": "handle",
+        "newlineHandling": "reversed"
+      }
     },
+    "padding":
+    [
+      20,
+      12,
+      20,
+      12
+    ],
+    "inGameTargetPadding":
+    [
+      0,
+      1,
+      0,
+      1
+    ],
+    "drawBorder": false,
+    "centeredOnAnchor": true,
+    "hp": 0,
+    "backgroundColor":
+    [
+      0,
+      0,
+      0,
+      0.75
+    ],
+    // This color is used for in-game tooltip label backgrounds
+    "inGameBackgroundColor":
+    [
+      0,
+      0,
+      0,
+      0.6
+    ],
+    // This color is used for the show items selected label background
+    "inGameShowItemsSelectedBackgroundColor":
+    [
+      0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "substringColor":
+    [
+      150,
+      128,
+      77,
+      255
+    ],
+    "healthColor":
+    [
+      0.31,
+      0,
+      0,
+      1.0
+    ],
+    "borderColor": "$TooltipBorderColor",
+    "DefaultColor": "$FontColorWhite",
+    "QuestColor": "$FontColorGoldYellow",
+    "RareColor": "$FontColorYellow",
+    "CraftedColor": "$FontColorOrange",
+    "TemperedColor": "$FontColorDarkGreen",
+    "MagicColor": "$FontColorBlue",
+    "SetColor": "$FontColorGreen",
+    "UniqueColor": "$FontColorGoldYellow",
+    //"SocketedColor": "$FontColorSocketedColor",
+    "SocketedColor": "$FontColorGrey",
+    "EtherealColor": "$FontColorGrey",
+    "HealthPotionColor": "$FontColorWhite",
+    "ManaPotionColor": "$FontColorWhite",
+    "RejuvPotionColor": "$FontColorWhite",
+    "GoldColor": "$FontColorWhite",
+    "RuneColor": "$FontColorOrange",
+    "EventItemsColor": "$FontColorOrange"
+  },
 
-    // HirablesPanel
-    "SecondSetIconOffset": { "x": 225 },
+  // HirablesPanel
+  //"SecondSetIconOffset":
+  //{
+  //  "x": 225
+  //},
 
-    // SidePanel
-    "LeftHingeSprite": "",
-    "LeftSideSprite": "PANEL\\Docking_Bar\\SidePanel_LV",
-    "LeftSideRect": { "y": 1744, "scale": 1.16 },
-    "LeftSideCatcherRect": { "x": 0, "y": 1744, "width": 1162, "height": 360, "scale": 1.16 },
-    "LeftSideRectImbuePanel": { "y": 1506 },
-    "LeftSideRectHireMenu": { "y": 1506 },
-    "RightHingeSprite": "",
-    "RightSideSprite": "PANEL\\Docking_Bar\\SidePanel_LV",
-    "RightSideRect": { "x": -1348, "y": 1744, "scale": 1.16 },
-    "RightSideCatcherRect": { "x": -1348, "y": 1744, "width": 1162, "height": 360, "scale": 1.16 },
+  // SidePanel
+  //"LeftHingeSprite": "",
+  //"LeftSideSprite": "PANEL\\Docking_Bar\\SidePanel_LV",
+  //"LeftSideRect":
+  //{
+  //  "y": 1744,
+  //  "scale": 1.16
+  //},
+  //"LeftSideCatcherRect":
+  //{
+  //  "x": 0,
+  //  "y": 1744,
+  //  "width": 1162,
+  //  "height": 360,
+  //  "scale": 1.16
+  //},
+  //"LeftSideRectImbuePanel":
+  //{
+  //  "y": 1506
+  //},
+  //"LeftSideRectHireMenu":
+  //{
+  //  "y": 1506
+  //},
+  //"RightHingeSprite": "",
+  //"RightSideSprite": "PANEL\\Docking_Bar\\SidePanel_LV",
+  //"RightSideRect":
+  //{
+  //  "x": -1348,
+  //  "y": 1744,
+  //  "scale": 1.16
+  //},
+  //"RightSideCatcherRect":
+  //{
+  //  "x": -1348,
+  //  "y": 1744,
+  //  "width": 1162,
+  //  "height": 360,
+  //  "scale": 1.16
+  //},
 
-    // Cutscenes
-    "SubtitleConfiguration": {
-        "anchor": { "x": 0.5, "y": 0.8 },
-        "style": {
-            "pointSize": "$HugeFontSize",
-            "options": { "newlineHandling": "standard" },
-            "alignment": { "h": "center", "v": "center" },
-            "highlight": {
-                "endIndex": "$INT_MAX", // longer than any chunk of subtitle text
-                "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 127 }
-            },
-        },
+  // Cutscenes
+  "SubtitleConfiguration":
+  {
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 0.8
     },
-    "HoldToSkipTextConfiguration": {
-        "anchor": { "x": 0.9, "y": 0.1 },
-        "style": {
-            "pointSize": "$XExtraLargeFontSize",
-            "alignment": { "h": "right", "v": "bottom" },
-        },
-        "text": "@MoviePlaybackHoldToSkip",
+    "style":
+    {
+      "pointSize": "$HugeFontSize",
+      "options":
+      {
+        "newlineHandling": "standard"
+      },
+      "alignment":
+      {
+        "h": "center",
+        "v": "center"
+      },
+      "highlight":
+      {
+        "endIndex": "$INT_MAX", // longer than any chunk of subtitle text
+        "backgroundColor":
+        {
+          "r": 0,
+          "g": 0,
+          "b": 0,
+          "a": 127
+        }
+      }
+    }
+  },
+  "HoldToSkipTextConfiguration":
+  {
+    "anchor":
+    {
+      "x": 0.9,
+      "y": 0.1
     },
+    "style":
+    {
+      "pointSize": "$XExtraLargeFontSize",
+      "alignment":
+      {
+        "h": "right",
+        "v": "bottom"
+      }
+    },
+    "text": "@MoviePlaybackHoldToSkip"
+  },
 
-    // Account Linking
-    "AccountLinkingTileRect": { "x": -875, "y": 561, "width": 1750, "height": 1100 },
-    "AccountLinkingDescriptionRect": { "x": 50 , "y": 180, "width": 1650, "height": 160 },
-    "AccountLinkingUserCodeRect": { "x": 50 , "y": 390, "width": 1650, "height": 215 },
-    "AccountLinkingUrlRect": { "x": 50 , "y": 625, "width": 1650, "height": 110 },
-    "AccountLinkingOkButtonRect": { "x": -260, "y": 1500 },
+  // Account Linking
+  "AccountLinkingTileRect":
+  {
+    "x": -875,
+    "y": 561,
+    "width": 1750,
+    "height": 1100
+  },
+  "AccountLinkingActiveUserRect":
+  {
+    "x": 50,
+    "y": 10,
+    "width": 1650,
+    "height": 160
+  },
+  "AccountLinkingDescriptionRect":
+  {
+    "x": 50,
+    "y": 180,
+    "width": 1650,
+    "height": 160
+  },
+  "AccountLinkingUserCodeRect":
+  {
+    "x": 50,
+    "y": 390,
+    "width": 1650,
+    "height": 215
+  },
+  "AccountLinkingUrlRect":
+  {
+    "x": 50,
+    "y": 625,
+    "width": 1650,
+    "height": 110
+  },
+  "AccountLinkingOkButtonRect":
+  {
+    "x": -260,
+    "y": 1500
+  },
 
-    //Tutorial Tooltips
-    "TutorialTooltipIntroRect" : { "x": 175, "y": 351, "width": 900, "height": 1400 },
-    "TutorialTooltipLocalRect" : { "x": 175, "y": 451, "width": 900, "height": 1100 },
-    "TutorialTooltipTabsRect" : { "x": 175, "y": 351, "width": 900, "height": 575 },
-    "TutorialTooltipCreateNewRect" : { "x": 475, "y": 951, "width": 900, "height": 800 },
-    "TutorialTooltipDeleteRect" : { "x": 475, "y": 1351, "width": 900, "height": 575 },
-    "TutorialTooltipConvertRect" : { "x": 475, "y": 751, "width": 900, "height": 1100 },
+  //Tutorial Tooltips
+  "TutorialTooltipIntroRect":
+  {
+    "x": 175,
+    "y": 351,
+    "width": 900,
+    "height": 1400
+  },
+  "TutorialTooltipLocalRect":
+  {
+    "x": 175,
+    "y": 451,
+    "width": 900,
+    "height": 1100
+  },
+  "TutorialTooltipTabsRect":
+  {
+    "x": 175,
+    "y": 351,
+    "width": 900,
+    "height": 575
+  },
+  "TutorialTooltipCreateNewRect":
+  {
+    "x": 475,
+    "y": 951,
+    "width": 900,
+    "height": 800
+  },
+  "TutorialTooltipDeleteRect":
+  {
+    "x": 475,
+    "y": 1351,
+    "width": 900,
+    "height": 575
+  },
+  "TutorialTooltipConvertRect":
+  {
+    "x": 475,
+    "y": 751,
+    "width": 900,
+    "height": 1100
+  },
 
-    "TutorialTooltipChatRect" : { "x": 175, "y": 751, "width": 900, "height": 575 },
-    "TutorialTooltipChatArrowRect" : { "x": -1075, "y": 751, "width": 900, "height": 575 },
-    "TutorialTooltipCreateGameRect": { "x": -275, "y": 451, "width": 900, "height": 575 },
-    "TutorialTooltipGameName": { "x": -575, "y": 451, "width": 900, "height": 800 },
-    "TutorialTooltipJoinGame": { "x": 275, "y": 451, "width": 900, "height": 575 },
-    "TutorialTooltipLadder": { "x": 275, "y": 451, "width": 900, "height": 1100 },
+  "TutorialTooltipChatRect":
+  {
+    "x": 175,
+    "y": 751,
+    "width": 900,
+    "height": 575
+  },
+  "TutorialTooltipChatArrowRect":
+  {
+    "x": -1075,
+    "y": 751,
+    "width": 900,
+    "height": 575
+  },
+  "TutorialTooltipCreateGameRect":
+  {
+    "x": -275,
+    "y": 451,
+    "width": 900,
+    "height": 575
+  },
+  "TutorialTooltipGameName":
+  {
+    "x": -575,
+    "y": 451,
+    "width": 900,
+    "height": 800
+  },
+  "TutorialTooltipJoinGame":
+  {
+    "x": 275,
+    "y": 451,
+    "width": 900,
+    "height": 575
+  },
+  "TutorialTooltipLadder":
+  {
+    "x": 275,
+    "y": 451,
+    "width": 900,
+    "height": 1100
+  },
 
-    "TutorialTooltipConsoleIntroRect": { "x": -675, "y": 751, "width": 900, "height": 575 },
-    "TutorialTooltipConsoleTabsRect": { "x": -675, "y": 751, "width": 900, "height": 800 },
-    "TutorialTooltipConsoleOnlineRect": { "x": -1375, "y": 451, "width": 900, "height": 1400 },
-    "TutorialTooltipConsoleOfflineRect": { "x": -1375, "y": 451, "width": 900, "height": 1400 },
-    "TutorialTooltipConsoleSoloRect": { "x": 275, "y": 451, "width": 900, "height": 800 },
-    "TutorialTooltipConsoleMultiRect": { "x": -1375, "y": 451, "width": 900, "height": 800 },
+  "TutorialTooltipConsoleIntroRect":
+  {
+    "x": -675,
+    "y": 751,
+    "width": 900,
+    "height": 575
+  },
+  "TutorialTooltipConsoleTabsRect":
+  {
+    "x": -675,
+    "y": 751,
+    "width": 900,
+    "height": 800
+  },
+  "TutorialTooltipConsoleOnlineRect":
+  {
+    "x": -1375,
+    "y": 451,
+    "width": 900,
+    "height": 1400
+  },
+  "TutorialTooltipConsoleOfflineRect":
+  {
+    "x": -1375,
+    "y": 451,
+    "width": 900,
+    "height": 1400
+  },
+  "TutorialTooltipConsoleSoloRect":
+  {
+    "x": -200,
+    "y": 451,
+    "width": 900,
+    "height": 800
+  },
+  "TutorialTooltipConsoleGameCreatorRect":
+  {
+    "x": -1600,
+    "y": 451,
+    "width": 900,
+    "height": 800
+  },
+  "TutorialTooltipConsoleGameListRect":
+  {
+    "x": -700,
+    "y": 451,
+    "width": 900,
+    "height": 800
+  },
 
-    "TooltipConfirmSmall": { "x": 200, "y": 300 },
-    "TooltipDismissSmall": { "x": 200, "y": 450 },
-    "TooltipConfirmMed": { "x": 200, "y": 475 },
-    "TooltipDismissMed": { "x": 200, "y": 625 },
-    "TooltipConfirmLarge": { "x": 200, "y": 750 },
-    "TooltipDismissLarge": { "x": 200, "y": 900 },
-    "TooltipConfirmXL": { "x": 200, "y": 1050 },
-    "TooltipDismissXL": { "x": 200, "y": 1200 },
+  "TooltipConfirmSmall":
+  {
+    "x": 200,
+    "y": 300
+  },
+  "TooltipDismissSmall":
+  {
+    "x": 200,
+    "y": 450
+  },
+  "TooltipConfirmMed":
+  {
+    "x": 200,
+    "y": 475
+  },
+  "TooltipDismissMed":
+  {
+    "x": 200,
+    "y": 625
+  },
+  "TooltipConfirmLarge":
+  {
+    "x": 200,
+    "y": 750
+  },
+  "TooltipDismissLarge":
+  {
+    "x": 200,
+    "y": 900
+  },
+  "TooltipConfirmXL":
+  {
+    "x": 200,
+    "y": 1050
+  },
+  "TooltipDismissXL":
+  {
+    "x": 200,
+    "y": 1200
+  },
+
+  // Join game tweaks.
+  "JoinGamePlayerEntryHeight": 140,
+  "JoinGamePlayerNameHeight": 100,
+  //jgmod
+  "StandardToolTipStyle":
+  {
+    "fontStyle":
+    {
+      "options":
+      {
+        "newlineHandling": "standard"
+      }
+    }
+  },
+
+
+  "SmallStandardLeftToolTipStyle":
+  {
+    "fontStyle":
+    {
+      "pointSize": 26, //jg修改物品属性文字大小,原来是36
+      "alignment":
+      {
+        "h": "left",
+        "v": "center"
+      },
+      "options":
+      {
+        "newlineHandling": "standard"
+      }
+    }
+  },
+
+  "StandardLeftToolTipStyle":
+  {
+    "fontStyle":
+    {
+      "alignment":
+      {
+        "h": "left",
+        "v": "center"
+      },
+      "options":
+      {
+        "newlineHandling": "standard"
+      }
+    }
+  },
+  //"rect": "$RuneWordFirstRuneRect"
+  "RuneWordFirstRuneRect":
+  {
+    "x": 36,
+    "y": -10,
+    "scale": 0.7
+  },
+  //"rect": "$RuneWordSecondRuneRect"
+  "RuneWordSecondRuneRect":
+  {
+    "x": 106,
+    "y": -10,
+    "scale": 0.7
+  },
+  //"rect": "$RuneWordThreeRuneRect"
+  "RuneWordThirdRuneRect":
+  {
+    "x": 176,
+    "y": -10,
+    "scale": 0.7
+  },
+  //"rect": "$RuneWordFourRuneRect"
+  "RuneWordForthRuneRect":
+  {
+    "x": 246,
+    "y": -10,
+    "scale": 0.7
+  },
+  //"rect": "$RuneWordFiveRuneRect"
+  "RuneWordFifthRuneRect":
+  {
+    "x": 316,
+    "y": -10,
+    "scale": 0.7
+  },
+  //"rect": "$RuneWordSixRuneRect"
+  "RuneWordSixRuneRect":
+  {
+    "x": 386,
+    "y": -10,
+    "scale": 0.7
+  },
+
+  //"rect": "$RuneWordNameWidgetRect"
+  "RuneWordNameWidgetRect":
+  {
+    "x": 0,
+    "y": 0,
+    "width": 240,
+    "height": 60,
+    "scale": 0.95
+  },
+
+  //"fields": "$RuneWordRunesWidgetRect"
+  "RuneWordRunesWidgetRect":
+  {
+    "x": 250,
+    "y": 0,
+    "scale": 0.95
+  },
+
+
+  //"style": "$RuneWordTextBoxWidgetStyle"
+  "RuneWordTextBoxWidgetStyle":
+  {
+    "pointSize": "$XMediumLargeFontSize",
+    "alignment":
+    {
+      "h": "left",
+      "v": "center"
+    },
+    "options":
+    {
+      "pipeCharacterBehavior": "handle"
+    }
+  },
+
+  "FileRune1": "items\\misc\\rune\\El_rune",
+  "TooltipRune1": "@r01@jghelp50601rune01tooltip",
+  "FileRune2": "items\\misc\\rune\\Eld_rune",
+  "TooltipRune2": "@r02@jghelp50602rune02tooltip",
+  "FileRune3": "items\\misc\\rune\\Tir_rune",
+  "TooltipRune3": "@r03@jghelp50603rune03tooltip",
+  "FileRune4": "items\\misc\\rune\\Nef_rune",
+  "TooltipRune4": "@r04@jghelp50604rune04tooltip",
+  "FileRune5": "items\\misc\\rune\\Eth_rune",
+  "TooltipRune5": "@r05@jghelp50605rune05tooltip",
+  "FileRune6": "items\\misc\\rune\\Ith_rune",
+  "TooltipRune6": "@r06@jghelp50606rune06tooltip",
+  "FileRune7": "items\\misc\\rune\\Tal_rune",
+  "TooltipRune7": "@r07@jghelp50607rune07tooltip",
+  "FileRune8": "items\\misc\\rune\\Ral_rune",
+  "TooltipRune8": "@r08@jghelp50608rune08tooltip",
+  "FileRune9": "items\\misc\\rune\\Ort_rune",
+  "TooltipRune9": "@r09@jghelp50609rune09tooltip",
+  "FileRune10": "items\\misc\\rune\\Thul_rune",
+  "TooltipRune10": "@r10@jghelp50610rune10tooltip",
+  "FileRune11": "items\\misc\\rune\\Amn_rune",
+  "TooltipRune11": "@r11@jghelp50611rune11tooltip",
+  "FileRune12": "items\\misc\\rune\\Sol_rune",
+  "TooltipRune12": "@r12@jghelp50612rune12tooltip",
+  "FileRune13": "items\\misc\\rune\\Shael_rune",
+  "TooltipRune13": "@r13@jghelp50613rune13tooltip",
+  "FileRune14": "items\\misc\\rune\\Dol_rune",
+  "TooltipRune14": "@r14@jghelp50614rune14tooltip",
+  "FileRune15": "items\\misc\\rune\\Hel_rune",
+  "TooltipRune15": "@r15@jghelp50615rune15tooltip",
+  "FileRune16": "items\\misc\\rune\\Io_rune",
+  "TooltipRune16": "@r16@jghelp50616rune16tooltip",
+  "FileRune17": "items\\misc\\rune\\Lum_rune",
+  "TooltipRune17": "@r17@jghelp50617rune17tooltip",
+  "FileRune18": "items\\misc\\rune\\Ko_rune",
+  "TooltipRune18": "@r18@jghelp50618rune18tooltip",
+  "FileRune19": "items\\misc\\rune\\Fal_rune",
+  "TooltipRune19": "@r19@jghelp50619rune19tooltip",
+  "FileRune20": "items\\misc\\rune\\Lem_rune",
+  "TooltipRune20": "@r20@jghelp50620rune20tooltip",
+  "FileRune21": "items\\misc\\rune\\Pul_rune",
+  "TooltipRune21": "@r21@jghelp50621rune21tooltip",
+  "FileRune22": "items\\misc\\rune\\Um_rune",
+  "TooltipRune22": "@r22@jghelp50622rune22tooltip",
+  "FileRune23": "items\\misc\\rune\\Mal_rune",
+  "TooltipRune23": "@r23@jghelp50623rune23tooltip",
+  "FileRune24": "items\\misc\\rune\\Ist_rune",
+  "TooltipRune24": "@r24@jghelp50624rune24tooltip",
+  "FileRune25": "items\\misc\\rune\\Gul_rune",
+  "TooltipRune25": "@r25@jghelp50625rune25tooltip",
+  "FileRune26": "items\\misc\\rune\\Vex_rune",
+  "TooltipRune26": "@r26@jghelp50626rune26tooltip",
+  "FileRune27": "items\\misc\\rune\\Ohm_rune",
+  "TooltipRune27": "@r27@jghelp50627rune27tooltip",
+  "FileRune28": "items\\misc\\rune\\Lo_rune",
+  "TooltipRune28": "@r28@jghelp50628rune28tooltip",
+  "FileRune29": "items\\misc\\rune\\Sur_rune",
+  "TooltipRune29": "@r29@jghelp50629rune29tooltip",
+  "FileRune30": "items\\misc\\rune\\Ber_rune",
+  "TooltipRune30": "@r30@jghelp50630rune30tooltip",
+  "FileRune31": "items\\misc\\rune\\Jah_rune",
+  "TooltipRune31": "@r31@jghelp50631rune31tooltip",
+  "FileRune32": "items\\misc\\rune\\Cham_rune",
+  "TooltipRune32": "@r32@jghelp50632rune32tooltip",
+  "FileRune33": "items\\misc\\rune\\Zod_rune",
+  "TooltipRune33": "@r33@jghelp50633rune33tooltip",
+
+
+  "RuneUpWidgetRect":
+  {
+    "x": 0,
+    "y": 0,
+    "scale": 0.7
+  },
+
+  "EqualTextBoxWidgetStyle":
+  {
+    "pointSize": "$XLargeFontSize",
+    "alignment":
+    {
+      "h": "center",
+      "v": "center"
+    },
+    "options":
+    {
+      "pipeCharacterBehavior": "handle"
+    },
+    "fontColor": "$FontColorGoldYellow",
+    "dropShadow":
+    {
+      "shadowColor": "$FontColorGoldYellow",
+      "offset":
+      {
+        "x": 3,
+        "y": 3
+      }
+    }
+  },
+  "RuneUpEqualTextBoxWidgetRect":
+  {
+    "x": 75,
+    "y": 30,
+    "scale": 0.7
+  },
+
+  "RuneUpFirstItemRect":
+  {
+    "x": 85,
+    "y": 0,
+    "scale": 0.7
+  },
+
+  "RuneUpSecondItemRect":
+  {
+    "x": 155,
+    "y": 0,
+    "scale": 0.7
+  },
+
+  "RuneUpThirdItemRect":
+  {
+    "x": 225,
+    "y": 0,
+    "scale": 0.7
+  },
+
+  "RuneUpForthItemRect":
+  {
+    "x": 295,
+    "y": 0,
+    "scale": 0.7
+  },
+
+  "FileChippedTopaz": "items\\misc\\gem\\chipped_topaz",
+  "TooltipChippedTopaz": "@gcy",
+  "FileFlawedTopaz": "items\\misc\\gem\\flawed_topaz",
+  "TooltipFlawedTopaz": "@gfy",
+  "FileTopaz": "items\\misc\\gem\\topaz",
+  "TooltipTopaz": "@gsy",
+  "FileFlawlessTopaz": "items\\misc\\gem\\flawless_topaz",
+  "TooltipFlawlessTopaz": "@gly",
+  "FilePerfectTopaz": "items\\misc\\gem\\perfect_topaz",
+  "TooltipPerfectTopaz": "@gpy",
+
+  "FileChippedAmethyst": "items\\misc\\gem\\chipped_amethyst",
+  "TooltipChippedAmethyst": "@gcv",
+  "FileFlawedAmethyst": "items\\misc\\gem\\flawed_amethyst",
+  "TooltipFlawedAmethyst": "@gfv",
+  "FileAmethyst": "items\\misc\\gem\\amethyst",
+  "TooltipAmethyst": "@gsv",
+  "FileFlawlessAmethyst": "items\\misc\\gem\\flawless_amethyst",
+  "TooltipFlawlessAmethyst": "@gzv",
+  "FilePerfectAmethyst": "items\\misc\\gem\\perfect_amethyst",
+  "TooltipPerfectAmethystz": "@gpv",
+
+  "FileChippedSapphire": "items\\misc\\gem\\chipped_saphire",
+  "TooltipChippedSapphire": "@gcb",
+  "FileFlawedSapphire": "items\\misc\\gem\\flawed_saphire",
+  "TooltipFlawedSapphire": "@gfb",
+  "FileSapphire": "items\\misc\\gem\\saphire",
+  "TooltipSapphire": "@gsb",
+  "FileFlawlessSapphire": "items\\misc\\gem\\flawless_saphire",
+  "TooltipFlawlessSapphire": "@glb",
+  "FilePerfectSapphire": "items\\misc\\gem\\perfect_saphire",
+  "TooltipPerfectSapphirez": "@gpb",
+
+  "FileChippedRuby": "items\\misc\\gem\\chipped_ruby",
+  "TooltipChippedRuby": "@gcr",
+  "FileFlawedRuby": "items\\misc\\gem\\flawed_ruby",
+  "TooltipFlawedRuby": "@gfr",
+  "FileRuby": "items\\misc\\gem\\ruby",
+  "TooltipRuby": "@gsr",
+  "FileFlawlessRuby": "items\\misc\\gem\\flawless_ruby",
+  "TooltipFlawlessRuby": "@glr",
+  "FilePerfectRuby": "items\\misc\\gem\\perfect_ruby",
+  "TooltipPerfectRubyz": "@gpr",
+
+  "FileChippedEmerald": "items\\misc\\gem\\chipped_emerald",
+  "TooltipChippedEmerald": "@gcg",
+  "FileFlawedEmerald": "items\\misc\\gem\\flawed_emerald",
+  "TooltipFlawedEmerald": "@gfg",
+  "FileEmerald": "items\\misc\\gem\\emerald",
+  "TooltipEmerald": "@gsg",
+  "FileFlawlessEmerald": "items\\misc\\gem\\flawless_emerald",
+  "TooltipFlawlessEmerald": "@glg",
+  "FilePerfectEmerald": "items\\misc\\gem\\perfect_emerald",
+  "TooltipPerfectEmeraldz": "@gpg",
+
+  "FileChippedDiamond": "items\\misc\\gem\\chipped_diamond",
+  "TooltipChippedDiamond": "@gcw",
+  "FileFlawedDiamond": "items\\misc\\gem\\flawed_diamond",
+  "TooltipFlawedDiamond": "@gfw",
+  "FileDiamond": "items\\misc\\gem\\diamond",
+  "TooltipDiamond": "@gsw",
+  "FileFlawlessDiamond": "items\\misc\\gem\\flawless_diamond",
+  "TooltipFlawlessDiamond": "@glw",
+  "FilePerfectDiamond": "items\\misc\\gem\\perfect_diamond",
+  "TooltipPerfectDiamondz": "@gpw",
+
+  "FileChippedSkull": "items\\misc\\gem\\chipped_skull",
+  "TooltipChippedSkull": "@skc",
+  "FileFlawedSkull": "items\\misc\\gem\\flawed_skull",
+  "TooltipFlawedSkull": "@skf",
+  "FileSkull": "items\\misc\\gem\\skull",
+  "TooltipSkull": "@sku",
+  "FileFlawlessSkull": "items\\misc\\gem\\flawless_skull",
+  "TooltipFlawlessSkull": "@skl",
+  "FilePerfectSkull": "items\\misc\\gem\\perfect_skull",
+  "TooltipPerfectSkullz": "@skz",
+
+
+  "StyleLinkButtonText":
+  {
+    "fontColor": "$LightButtonTextColor",
+    "pointSize": "$MediumLargeFontSize",
+    "dropShadow": "$DefaultDropShadow",
+    "spacing": "$MinimumSpacing",
+    "alignment":
+    {
+      "h": "left",
+      "v": "center"
+    }
+  }
 }

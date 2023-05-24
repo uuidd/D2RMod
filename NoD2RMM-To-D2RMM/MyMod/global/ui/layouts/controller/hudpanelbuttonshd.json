@@ -1,0 +1,26 @@
+{
+  "type": "TooltipsPanel",
+  "name": "hudpanelbuttons",
+  "fields":
+  {
+    "priority": -1,
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 1
+    },
+
+    "rect":
+    {
+      "x": 600,
+      "y": -270,
+      "width": 200,
+      "height": 200,
+      "scale": 1
+    }
+  },
+  "children":
+  [
+
+  ]
+}
