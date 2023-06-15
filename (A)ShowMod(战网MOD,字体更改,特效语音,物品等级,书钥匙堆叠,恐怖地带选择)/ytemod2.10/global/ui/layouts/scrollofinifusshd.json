@@ -1,0 +1,164 @@
+{
+    "type": "ScrollOfInifussPanel", "name": "ScrollOfInifuss",
+    "fields": {
+        "rect": "$LeftPanelRect", 
+        "anchor": "$LeftPanelAnchor",
+        "secondsBetweenStarts": 1.0,
+        "fadeInSeconds": 0.6,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": "$PanelClickCatcherRect"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/SoI_PanelBG"
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "LeftHinge",
+            "fields": {
+                "rect": "$LeftHingeRect",
+                "filename": "$LeftHingeSprite"
+            },
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "rect": { "x": 91, "y": 67, "width": 972, "height": 71 },
+                "style": "$StyleTitleBlock",
+                "text": "@bksmods",//@bks
+            },
+        },
+        {
+            "type": "ImageWidget", "name": "Symbol1",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/SoI_DropUp",
+                "rect": { "x": 694, "y": 541 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Symbol2",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/SoI_I",
+                "rect": { "x": 762, "y": 785 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Symbol3",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/SoI_DropDown",
+                "rect": { "x": 529, "y": 955 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Symbol4",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/SoI_II",
+                "rect": { "x": 301, "y": 785 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Symbol5",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/SoI_Zero",
+                "rect": { "x": 372, "y": 539 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Number1",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/Labels",
+                "rect": { "x": 841, "y": 465 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Number2",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/Labels",
+                "rect": { "x": 900, "y": 785 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Number3",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/Labels",
+                "rect": { "x": 529, "y": 1095 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Number4",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/Labels",
+                "rect": { "x": 170, "y": 785 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "Number5",
+            "fields": {
+                "filename": "ScrollOfInifuss/Panel/Labels",
+                "rect": { "x": 220, "y": 465 }
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Sparkle1",
+            "fields": {
+                "rect": { "x": 623, "y": 470 },
+                "filename": "ScrollOfInifuss/Animation/ScrollAnim",
+                "fps": 18,
+                "loop": false
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Sparkle2",
+            "fields": {
+                "rect": { "x": 693, "y": 717 },
+                "filename": "ScrollOfInifuss/Animation/ScrollAnim",
+                "fps": 18,
+                "loop": false
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Sparkle3",
+            "fields": {
+                "rect": { "x": 464, "y": 878 },
+                "filename": "ScrollOfInifuss/Animation/ScrollAnim",
+                "fps": 18,
+                "loop": false
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Sparkle4",
+            "fields": {
+                "rect": { "x": 247, "y": 714 },
+                "filename": "ScrollOfInifuss/Animation/ScrollAnim",
+                "fps": 18,
+                "loop": false
+            }
+        },
+        {
+            "type": "AnimatedImageWidget", "name": "Sparkle5",
+            "fields": {
+                "rect": { "x": 315, "y": 470 },
+                "filename": "ScrollOfInifuss/Animation/ScrollAnim",
+                "fps": 18,
+                "loop": false
+            }
+        },
+        {
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+                "rect": { "x": 1075, "y": 9 },
+                "filename": "PANEL/closebtn_4x",
+                "hoveredFrame": 3,
+                "tooltipString": "@strClose",
+                "sound": "cursor_close_window_hd",
+                "onClickMessage": "PanelManager:ClosePanel:ScrollOfInifuss",
+            },
+        },
+    ]
+}

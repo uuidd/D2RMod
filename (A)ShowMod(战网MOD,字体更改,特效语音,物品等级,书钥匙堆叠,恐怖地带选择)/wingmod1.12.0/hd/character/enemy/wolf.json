@@ -1,0 +1,313 @@
+{
+  "dependencies": {
+    "animations": [],
+    "json": [
+      {
+        "path": "data/hd/character/enemy/wolf/wolf_state_machine.json"
+      }
+    ],
+    "models": [
+      {
+        "path": "data/hd/character/enemy/wolf/torso.model"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/vfxshell.model"
+      }
+    ],
+    "objecteffects": [],
+    "other": [],
+    "particles": [],
+    "physics": [],
+    "skeletons": [
+      {
+        "path": "data/hd/character/enemy/wolf/skeleton/wolf.skeleton"
+      }
+    ],
+    "textures": [
+      {
+        "path": "data/hd/character/common/common_alb.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_ktint.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/textures/fur_ktint.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/textures/trinkets_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/textures/trinkets_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/textures/trinkets_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/textures/werewolf_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/textures/werewolf_fur_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/textures/werewolf_fur_FLOW.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/textures/werewolf_fur_HRT.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/textures/werewolf_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/wolf/textures/werewolf_orm.texture"
+      }
+    ],
+    "variantdata": [
+      {
+        "path": "data/hd/character/enemy/wolf/wolf_variant.json"
+      }
+    ]
+  },
+  "entities": [
+    {
+      "components": [
+        {
+          "animations": [],
+          "doNotInheritRotation": false,
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "name": "component_root",
+          "onCreateEventName": "",
+          "rotationOverride": {
+            "w": 0.9238795,
+            "x": 0,
+            "y": 0.3826834,
+            "z": 0
+          },
+          "state_machine_filename": "data/hd/character/enemy/wolf/wolf_state_machine.json",
+          "type": "UnitRootComponent"
+        },
+        {
+          "filename": "data/hd/character/enemy/wolf/skeleton/wolf.skeleton",
+          "name": "component_skeleton",
+          "type": "SkeletonDefinitionComponent"
+        },
+        {
+          "filename": "data/hd/character/enemy/wolf/wolf_variant.json",
+          "name": "component_variant",
+          "type": "VariantDefinitionComponent"
+        },
+        {
+          "fineTurnAngle": 30,
+          "fineTurnDamping": 0.4,
+          "name": "entity_root_TraversalAnimation",
+          "runStartAnimation": "Run_Start",
+          "runStartTownAnimation": "Run_Start",
+          "runStopAnimation": "Run_Stop",
+          "runStopRequiredTimeRunning": 0.1,
+          "runStopTownAnimation": "Run_Stop",
+          "runTurn180AngleThresholdController": 120,
+          "runTurn180AngleThresholdMouse": 110,
+          "runTurn180CCWAnimation": "Run_Turn_180_CCW",
+          "runTurn180CCWTownAnimation": "Run_Turn_180_CCW",
+          "runTurn180CWAnimation": "Run_Turn_180_CW",
+          "runTurn180CWTownAnimation": "Run_Turn_180_CW",
+          "runTurn180CooldownTime": 0.2,
+          "runTurn180NoiseProtectionAngleThreshold": 30,
+          "runTurn180RotationLockTime": 0.1,
+          "runTurn180StopInterruptableTime": 0.25,
+          "runTurnRateControllerMax": 1080,
+          "runTurnRateControllerMin": 180,
+          "runTurnRateMouseMax": 1080,
+          "runTurnRateMouseMin": 30,
+          "stopToStartRunSkipWindow": 0.25,
+          "type": "TraversalAnimationComponent",
+          "walkToStartRunInterruptWindow": 0.25,
+          "walkTurnRateControllerMax": 1080,
+          "walkTurnRateControllerMin": 180,
+          "walkTurnRateMouseMax": 1080,
+          "walkTurnRateMouseMin": 30
+        },
+        {
+          "characterSelectSet": {},
+          "frontendSet": {},
+          "name": "entity_root_FidgetAnimation",
+          "neutralSet": {
+            "firstFidgetDelayMax": 7,
+            "firstFidgetDelayMin": 5,
+            "name": "entity_root_FidgetAnimation_neutralSet",
+            "options": [
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_neutralSet_options_0",
+                "stateName": "Fidget01",
+                "type": "FidgetAnimationOption",
+                "weight": 1
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_neutralSet_options_1",
+                "stateName": "Fidget02",
+                "type": "FidgetAnimationOption",
+                "weight": 1
+              }
+            ],
+            "subsequentFidgetDelayMax": 5,
+            "subsequentFidgetDelayMin": 2,
+            "type": "FidgetAnimationSet"
+          },
+          "townNeutralSet": {},
+          "type": "FidgetAnimationComponent"
+        },
+        {
+          "aimLayers": [
+            {
+              "aimDampingFactor": 0.15,
+              "aimLocationTrackName": "aim_location",
+              "aimTarget": 2,
+              "layerName": "Aim_Head",
+              "name": "entity_root_AimLayers_aimLayers_0",
+              "pitchAngleOffset": 0,
+              "pitchAnimationState": "HeadAimLayer_Pitch",
+              "pitchOutOfRangeBehavior": 0,
+              "type": "AimLayerSetup",
+              "yawAngleOffset": 0,
+              "yawAnimationState": "HeadAimLayer_Yaw",
+              "yawOutOfRangeBehavior": 2
+            },
+            {
+              "aimDampingFactor": 0.3,
+              "aimLocationTrackName": "aim_location",
+              "aimTarget": 2,
+              "layerName": "Aim_Melee",
+              "name": "entity_root_AimLayers_aimLayers_1",
+              "pitchAngleOffset": 0,
+              "pitchAnimationState": "MeleeAimLayer",
+              "pitchOutOfRangeBehavior": 0,
+              "type": "AimLayerSetup",
+              "yawAngleOffset": 0,
+              "yawAnimationState": "",
+              "yawOutOfRangeBehavior": 2
+            }
+          ],
+          "name": "entity_root_AimLayers",
+          "type": "AimLayersComponent"
+        },
+        {
+          "aimLayerName": "Aim_Head",
+          "blendInTime": 0.25,
+          "blendOutTime": 0.25,
+          "controlOverrides": [],
+          "name": "entity_root_LookAtAnimationControl",
+          "type": "LookAtAnimationControlComponent"
+        }
+      ],
+      "id": 3575604196,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_torso",
+          "part": "torso",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/enemy/wolf/torso.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_torso",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 152737949,
+      "name": "entity_torso",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/character/enemy/wolf/vfxshell.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "entity_vfxshell_ModelDefinition",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1073741824
+        },
+        {
+          "name": "entity_vfxshell_UnitPart",
+          "part": "special7",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        }
+      ],
+      "id": 2755913362,
+      "name": "entity_vfxshell",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "inheritOnlyPosition": false,
+          "name": "entity_torso_TransformDefinition",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 50,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        },
+        {
+          "attenuation": 1,
+          "color": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "diffuseContribution": 1,
+          "isLocalLight": false,
+          "lightMask": 1,
+          "name": "white_light",
+          "power": 25000,
+          "radius": 200,
+          "specularContribution": 1,
+          "type": "PointLightDefinitionComponent"
+        }
+      ],
+      "id": 2353308128,
+      "name": "entity_pointlight",
+      "type": "Entity"
+    }
+  ],
+  "name": "wolf",
+  "type": "UnitDefinition"
+}

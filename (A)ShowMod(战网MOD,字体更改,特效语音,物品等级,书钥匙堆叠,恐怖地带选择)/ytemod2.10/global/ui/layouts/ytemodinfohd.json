@@ -1,0 +1,201 @@
+{
+    "type": "UKComplianceModal", "name": "YtemodInfo",
+    "fields": {
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "isDismissable": true,//false
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "YtemodInfoTile",
+            "fields": {
+                "rect": { "x": -1000, "y": -650, "width": 2000, "height": 1400 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.80 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "rect": { "x": 0, "y": 0, "width": 2000, "height": 150 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$LargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@modinfo", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph1",
+                    "fields": {
+                        "rect": { "x": 150, "y": 100, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@modsname", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph2",
+                    "fields": {
+                        "rect": { "x": 150, "y": 200, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@modsversion", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph3",
+                    "fields": {
+                        "rect": { "x": 150, "y": 300, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@modsupdatedate", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph4",
+                    "fields": {
+                        "rect": { "x": 150, "y": 400, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@modsauthor", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph5",
+                    "fields": {
+                        "rect": { "x": 150, "y": 600, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@modstatusinfo", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph6",
+                    "fields": {
+                        "rect": { "x": 150, "y": 700, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@modtextlng", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph7",
+                    "fields": {
+                        "rect": { "x": 150, "y": 800, "width": 1850, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$SmallFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@modtextenh@modtextenh1@modtextenh2@modtextenh3@modtextenh4", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph8",
+                    "fields": {
+                        "rect": { "x": 150, "y": 900, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@moditemfilter@moditemfilterplan", 
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PromptParagraph9",
+                    "fields": {
+                        "rect": { "x": 150, "y": 1000, "width": 1800, "height": 100 },
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "alignment": { "h": "left", "v": "center" },
+                            "options": { "lineWrap": true, "pipeCharacterBehavior": "handle", "newlineHandling": "standard" },
+                            "pointSize": "$MediumFontSize",
+                            "spacing": "$DefaultSpacing",
+                        },
+                        "text": "@modreadme", 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "MoreSetting",
+                    "fields": {
+                        "rect": { "x": 1220, "y": 1100 },
+                        "filename": "FrontEnd\\HD\\Final\\FrontEnd_Cog",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
+                        "hoveredFrame": 2,
+                        "onClickMessage": "ModalMessage:Confirm:https://www.wolai.com/5cyjCCgBFwVrFRsH4pwrZe",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "tooltipString": "@moremodsettinginfo",
+                        "textString": "", 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "MoreInfo",
+                    "fields": {
+                        "rect": { "x": 460, "y": 1250 },
+                        "filename": "Panel\\Modals\\ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
+                        "hoveredFrame": 3,
+                        "onClickMessage": "ModalMessage:Confirm:https://bbs.d.163.com/forum.php?mod=viewthread&tid=174608896&fromuid=3100517",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEButtonText",
+                        "tooltipString": "@modlinkjumptip",
+                        "textString": "@modupdateorfeedback", 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "rect": { "x": 1010, "y": 1250 },
+                        "filename": "Panel\\Modals\\ModalButton",
+                        "focusIndicatorFilename": "Controller/HoverImages/ModalButton_NoGap_Hover",
+                        "hoveredFrame": 3,
+                        "onClickMessage": "PanelManager:ClosePanel:YtemodInfo",
+                        "textColor": "$LightButtonTextColor",
+                        "text/style" : "$StyleFEMultiLineButtonText",
+                        "textString": "@close", 
+                    }
+                },
+            ]
+        },
+    ]
+}

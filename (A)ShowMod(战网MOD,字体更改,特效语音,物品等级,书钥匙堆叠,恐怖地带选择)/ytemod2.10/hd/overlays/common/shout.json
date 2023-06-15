@@ -1,0 +1,39 @@
+{
+	"dependencies": {
+		"particles": [
+			{
+				"path": "data/hd/vfx/particles/overlays/common/progressive_lightning_3/vfx_progressive_lightning_3.particles"
+			}
+		],
+		"models": [],
+		"skeletons": [],
+		"animations": [],
+		"textures": [
+			{
+				"path": "data/hd/vfx/textures/gradient/T_FX_flame_gradient_09.texture"
+			}
+		],
+		"physics": [],
+		"json": [],
+		"variantdata": [],
+		"objecteffects": [],
+		"other": []
+	},
+	"type": "OverlayDefinition",
+	"name": "shout",
+	"entities": [
+		{
+			"type": "Entity",
+			"name": "entity_root",
+			"id": 106750880,
+			"components": [
+				{
+					"type": "VfxDefinitionComponent",
+					"name": "component_vfx",
+					"filename": "data/hd/vfx/particles/overlays/common/progressive_lightning_3/vfx_progressive_lightning_3.particles",
+					"hardKillOnDestroy": true
+				}
+			]
+		}
+	]
+}

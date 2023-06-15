@@ -1,0 +1,58 @@
+{
+  "name": "Perfect Drops(全物品属性与手工满变量)(N网)",
+  "description": "符文之语暗金等所有物品的满变量,防具为最大防御满变",
+  "author": "olegbl & lil174",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/182",
+  "version": "1.6",
+    "config": [
+        {
+            "id": "blue",
+            "type": "checkbox",
+            "name": "(蓝)魔法和(亮金)稀有物品支持满变",
+            "description": "注意词缀有挡位之分,这不代表就是直接最高挡位的满变",
+            "defaultValue": true
+        },
+        {
+            "id": "setitem",
+            "type": "checkbox",
+            "name": "绿色套装支持满变",
+            "description": "绿色套装支持满变",
+            "defaultValue": true
+        },
+        {
+            "id": "uniitem",
+            "type": "checkbox",
+            "name": "暗金物品支持满变",
+            "description": "暗金物品支持满变(其中也包括了暗金珠宝,基德,毁灭,火炬,破免板子等等)",
+            "defaultValue": true
+        },
+        {
+            "id": "crafted",
+            "type": "checkbox",
+            "name": "手工物品固定词缀为满变",
+            "description": "允许强制赫拉迪克方块合成的物品具有完美的满变词缀(注意这里指的是手工品的固定词缀(3~4缀)的满变).",
+            "defaultValue": true
+        },
+        {
+            "id": "super",
+            "type": "checkbox",
+            "name": "让超强的物品也支持满变",
+            "description": "+15ed,+3ar,+15耐久",
+            "defaultValue": true
+        },
+        {
+            "id": "equalchances",
+            "type": "checkbox",
+            "name": "automod属性高等装备只出高挡位",
+            "description": "automod是亚马逊专用武器(黄+2)(蓝+3)(弓或标枪)技能,圣骑盾(黄+35)(蓝+45)全抗,还有65ed等等,需要物品等级高",
+            "defaultValue": true
+        },
+        {
+            "id": "defense",
+            "type": "checkbox",
+            "name": "最大防御",
+            "description": "启用则强制护甲物品生成的防御为最大变量.",
+            "defaultValue": true
+        }
+    ]
+}

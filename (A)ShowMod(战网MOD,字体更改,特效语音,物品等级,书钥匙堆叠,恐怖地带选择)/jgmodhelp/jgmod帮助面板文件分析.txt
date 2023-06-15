@@ -1,0 +1,19 @@
+global\ui\layouts\controller\hudpanel_realhd.json 这个文件必须要有不然会出现手柄移动时下方UI还是鼠标的没有切换过来
+
+_profilehd.json 这个文件不能少,否则帮助面板上的字体特别小
+boxpanelhd.json 这个文件是第3页的配方手工排版
+hudpanel_realhd.json 这个文件不能少,不然屏幕下方中间就没有那本书了
+hudwarninghd.json 这个文件与_profilehd.json关联不能少不然会出现右上角什么都不显示的问题
+hudwarningshd.json 这个文件不能少,不然屏幕下方什么UI都不显示了
+linkmaxsockhd.json 最大孔数查询(最后一页)如果没有这个文件就不会弹出孔数查询的网页(只显示孔数查询几个字)
+onlinegamesettingspanelhd.json 这个是在线游戏的设置页面(帮助面板利用的就是这个文件改的)
+otherpanelhd.json 这个文件是第4页其他页面排版
+piercingeyepanelhd.json 这个文件是第2页火眼金晴的排版
+runewordspanelhd.json 这个文件是第1页符文之语的排版
+
+hd\global\ui\panel\jgmod\label.lowend.sprite和label.sprite(如果没有这2个文件孔数查询那一行的排版就会不正常)
+local\lng\strings\npcs.json 这个文件就是帮助面板上的各种字符串了
+
+另外还个问题FCR查询那里法师与死灵法师最后几行有点错位向右偏移
+实际上要使用jgmod里面的hd\ui\fonts\arfangxinshuh7c95b5_eb_t.ttf特有字体文件可以解决此问题
+但是会让字体更改功能失效,所以不建议替换此字体,问题本身影响不大

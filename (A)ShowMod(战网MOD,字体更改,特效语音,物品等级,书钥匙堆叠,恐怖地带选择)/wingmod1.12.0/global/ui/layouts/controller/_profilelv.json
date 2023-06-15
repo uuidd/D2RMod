@@ -1,0 +1,254 @@
+{
+  "AccountLinkingActiveUserRect": {
+    "height": 160,
+    "width": 1650,
+    "x": 50,
+    "y": 10
+  },
+  "AccountLinkingDescriptionRect": {
+    "height": 160,
+    "width": 1650,
+    "x": 50,
+    "y": 130
+  },
+  "AccountLinkingOkButtonRect": {
+    "x": -260,
+    "y": 1370
+  },
+  "AccountLinkingTileRect": {
+    "height": 930,
+    "width": 1750,
+    "x": -875,
+    "y": 561
+  },
+  "AccountLinkingUrlRect": {
+    "height": 110,
+    "width": 1650,
+    "x": 50,
+    "y": 690
+  },
+  "AccountLinkingUserCodeRect": {
+    "height": 215,
+    "width": 1650,
+    "x": 50,
+    "y": 440
+  },
+  "ButtonLegendRect": {
+    "height": 106,
+    "width": 1164,
+    "x": 0,
+    "y": 1661
+  },
+  "FontColorSocketedEtherealColor": {
+    "a": 255,
+    "b": 128,
+    "g": 128,
+    "r": 255
+  },
+  "FontColorWhite": {
+    "a": 255,
+    "b": 255,
+    "g": 255,
+    "r": 255
+  },
+  "JoinGamePlayerEntryHeight": 140,
+  "JoinGamePlayerNameHeight": 100,
+  "MediumFontSize": 32,
+  "PanelTitleRect": {
+    "height": 130,
+    "width": 1065,
+    "x": 52,
+    "y": 151
+  },
+  "ScrollSpeechBorderWidth": 1550,
+  "ScrollSpeechOffset": -675,
+  "ScrollSpeechWidth": 1350,
+  "SecondSetIconOffset": {
+    "x": 225
+  },
+  "SmallFontSize": 28,
+  "StyleNPCDialogueSize": "$LargeFontSize",
+  "StyleScrollingSpeech": {
+    "alignment": {
+      "h": "left"
+    },
+    "fontColor": {
+      "a": 255,
+      "b": 255,
+      "g": 255,
+      "r": 255
+    },
+    "fontFace": "Formal",
+    "options": {
+      "lineWrap": true,
+      "newlineHandling": "standard"
+    },
+    "pointSize": "$LargeFontSize"
+  },
+  "StyleSettingsText": {
+    "alignment": {
+      "h": "left",
+      "v": "center"
+    },
+    "fontColor": "$FontColorLightGold",
+    "options": {
+      "lineWrap": true
+    },
+    "pointSize": "$MediumFontSize"
+  },
+  "StyleSettingsTitle": {
+    "alignment": {
+      "h": "left",
+      "v": "center"
+    },
+    "fontColor": "$FontColorLightGold",
+    "pointSize": "$LargeFontSize"
+  },
+  "TooltipConfirmLarge": {
+    "x": 200,
+    "y": 750
+  },
+  "TooltipConfirmMed": {
+    "x": 200,
+    "y": 475
+  },
+  "TooltipConfirmSmall": {
+    "x": 200,
+    "y": 300
+  },
+  "TooltipConfirmXL": {
+    "x": 200,
+    "y": 1050
+  },
+  "TooltipDismissLarge": {
+    "x": 200,
+    "y": 900
+  },
+  "TooltipDismissMed": {
+    "x": 200,
+    "y": 625
+  },
+  "TooltipDismissSmall": {
+    "x": 200,
+    "y": 450
+  },
+  "TooltipDismissXL": {
+    "x": 200,
+    "y": 1200
+  },
+  "TooltipFontSize": 40,
+  "TooltipStyle": {
+    "CraftedColor": "$FontColorOrange",
+    "DefaultColor": "$FontColorWhite",
+    "EtherealColor": "$FontColorSocketedEtherealColor",
+    "EventItemsColor": "$FontColorOrange",
+    "GoldColor": "$FontColorWhite",
+    "HealthPotionColor": "$FontColorWhite",
+    "MagicColor": "$FontColorBlue",
+    "ManaPotionColor": "$FontColorWhite",
+    "QuestColor": "$FontColorGoldYellow",
+    "RareColor": "$FontColorYellow",
+    "RejuvPotionColor": "$FontColorWhite",
+    "RuneColor": "$FontColorOrange",
+    "SetColor": "$FontColorGreen",
+    "SocketedColor": "$FontColorSocketedEtherealColor",
+    "TemperedColor": "$FontColorDarkGreen",
+    "UniqueColor": "$FontColorGoldYellow",
+    "backgroundColor": [
+      0,
+      0,
+      0,
+      0.95
+    ],
+    "borderColor": "$TooltipBorderColor",
+    "centeredOnAnchor": true,
+    "drawBorder": false,
+    "fontStyle": {
+      "alignment": {
+        "h": "center",
+        "v": "center"
+      },
+      "fontColor": "$FontColorWhite",
+      "options": {
+        "newlineHandling": "reversed",
+        "pipeCharacterBehavior": "handle"
+      },
+      "pointSize": "$TooltipFontSize"
+    },
+    "healthColor": [
+      0.31,
+      0,
+      0,
+      1
+    ],
+    "hp": 0,
+    "inGameBackgroundColor": [
+      0,
+      0,
+      0,
+      0.95
+    ],
+    "inGameShowItemsSelectedBackgroundColor": [
+      0,
+      0.25,
+      0.5,
+      1
+    ],
+    "padding": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "substringColor": [
+      150,
+      128,
+      77,
+      255
+    ]
+  },
+  "TutorialTooltipConsoleGameCreatorRect": {
+    "height": 800,
+    "width": 900,
+    "x": -1600,
+    "y": 451
+  },
+  "TutorialTooltipConsoleGameListRect": {
+    "height": 800,
+    "width": 900,
+    "x": -700,
+    "y": 451
+  },
+  "TutorialTooltipConsoleIntroRect": {
+    "height": 575,
+    "width": 900,
+    "x": -675,
+    "y": 751
+  },
+  "TutorialTooltipConsoleOfflineRect": {
+    "height": 1400,
+    "width": 900,
+    "x": -1375,
+    "y": 451
+  },
+  "TutorialTooltipConsoleOnlineRect": {
+    "height": 1400,
+    "width": 900,
+    "x": -1375,
+    "y": 451
+  },
+  "TutorialTooltipConsoleSoloRect": {
+    "height": 800,
+    "width": 900,
+    "x": -200,
+    "y": 451
+  },
+  "TutorialTooltipConsoleTabsRect": {
+    "height": 800,
+    "width": 900,
+    "x": -675,
+    "y": 751
+  },
+  "XMediumFontSize": 32,
+  "basedOn": "ControllerHD"
+}

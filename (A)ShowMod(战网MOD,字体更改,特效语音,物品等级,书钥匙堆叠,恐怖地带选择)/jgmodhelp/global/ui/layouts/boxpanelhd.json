@@ -1,0 +1,2052 @@
+﻿{
+  "type": "SettingsPanel",
+  "name": "BoxPanel",
+  "fields":
+  {
+    "priority": 9003,
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 1
+    },
+    "fitToParent": false,
+    "applySettingsImmediately": false,
+    "rect":
+    {
+      "x": -357,
+      "y": -1700,
+      "width": 695,
+      "height": 1140
+    }
+  },
+  "children":
+  [
+    {
+      "type": "ImageWidget",
+      "name": "ScrollBarBackground",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 10,
+          "y": -110
+        },
+        "anchor":
+        {
+          "x": 1.0
+        },
+        "filename": "PauseMenu\\VerticalScroll"
+      },
+      "children":
+      [
+        {
+          "type": "ScrollControllerWidget",
+          "name": "ScrollController",
+          "fields":
+          {
+            "rect":
+            {
+              "x": -31,
+              "y": 29,
+              "width": 26,
+              "height": 1208
+            },
+            "anchor":
+            {
+              "x": 1.0
+            },
+            "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+            "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+            "barFilepath": "PauseMenu\\VerticalIndicator",
+            "viewName": "ScrollView",
+            "wheelScrollSound": "cursor_scroll_hd",
+            "buttonScrollSound": "cursor_scroll_hd"
+          }
+        }
+      ]
+    },
+    {
+      "type": "ScrollViewWidget",
+      "name": "ScrollView",
+      "fields":
+      {
+        "fitToParent": true,
+        "scrollControllerName": "ScrollController"
+      },
+      "children":
+      [
+        {
+          "type": "TableWidget",
+          "name": "OptionsTable",
+          "fields":
+          {
+            "columns":
+            [
+              {
+                "width": 320,
+                "alignment":
+                {
+                  "h": "left",
+                  "v": "center"
+                }
+              },
+              {
+                "width": 550,
+                "alignment":
+                {
+                  "h": "left",
+                  "v": "center"
+                }
+              }
+            ],
+            "rowHeight": 70
+          },
+          "children":
+          [
+            {
+              "type": "Widget",
+              "name": "BoxTitleHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 0
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "BoxTitle",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "BoxTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "height": 80
+                        },
+                        "text": "@jghelp52000BoxTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52001BoxTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "RuneText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52002RuneTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52003RuneTitletooltip",
+                            "tooltipStyle": "$SmallStandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "GemsText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52004GemsTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52005GemsTitletooltip",
+                            "tooltipStyle": "$SmallStandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row2",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 140
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "EventsText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52006EventsTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52007EventsTitletooltip",
+                            "tooltipStyle": "$SmallStandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "PotionsText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52008PotionsTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52009PotionsTitletooltip",
+                            "tooltipStyle": "$SmallStandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row3",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 200
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HoleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp520010HoleTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52011HoleTitletooltip",
+                            "tooltipStyle": "$SmallStandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "ItemUpgradesText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52012ItemUpgradesTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52013ItemUpgradesTitletooltip",
+                            "tooltipStyle": "$SmallStandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row4",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 260
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "RepairsText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52014RepairsTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52015RepairsTitletooltip",
+                            "tooltipStyle": "$SmallStandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "ItemRerollsText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52016ItemRerollsTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52017ItemRerollsTitletooltip",
+                            "tooltipStyle": "$SmallStandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row5",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 320
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "MagicalItemCreationText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52018MagicalItemCreationTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52019MagicalItemCreationTitletooltip",
+                            "tooltipStyle": "$SmallStandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "CraftingTitleHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 380
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "CraftingTitle",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "CraftingTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 600,
+                          "height": 80
+                        },
+                        "text": "@jghelp52100CraftingTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52101CraftingTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HitPowerAmuletText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52102HitPowerAmuletTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52103HitPowerAmuletTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HitPowerRingText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52104HitPowerRingTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52105HitPowerRingTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row2",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 140
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HitPowerGlovesText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52106HitPowerGlovesTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52107HitPowerGlovesTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HitPowerBeltText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52108HitPowerBeltTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52109HitPowerBeltTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row3",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 200
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HitPowerBootsText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52110HitPowerBootsTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52111HitPowerBootsTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HitPowerHelmText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52112HitPowerHelmTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52113HitPowerHelmTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row4",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 260
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HitPowerShieldText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52114HitPowerShieldTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52115HitPowerShieldTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HitPowerBodyArmorText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52116HitPowerBodyArmorTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52117HitPowerBodyArmorTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row5",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 320
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "HitPowerWeaponText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52118HitPowerWeaponTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52119HitPowerWeaponTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "CraftingTitleHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 770
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 10
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "BloodAmuletText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52120BloodAmuletTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52121BloodAmuletTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "BloodRingText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52172BloodRingTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52173BloodRingTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row2",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 70
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "BloodGlovesText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52122BloodGlovesTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52123BloodGlovesTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "BloodBeltText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52124BloodBeltTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52125BloodBeltTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row3",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 130
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "BloodBootsText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52126BloodBootsTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52127BloodBootsTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "BloodHelmText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52128BloodHelmTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52129BloodHelmTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row4",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 190
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "BloodShieldText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52130BloodShieldTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52131BloodShieldTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "BloodBodyArmorText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52132BloodBodyArmorTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52133BloodBodyArmorTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row5",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 250
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "BloodWeaponText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52134BloodWeaponTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52135BloodWeaponTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "CraftingTitleHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 1090
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 10
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "CasterAmuletText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52136CasterAmuletTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52137CasterAmuletTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "CasterRingText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52138CasterRingTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52139CasterRingTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row2",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 70
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "CasterGlovesText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52140CasterGlovesTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52141CasterGlovesTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "CasterBeltText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52142CasterBeltTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52143CasterBeltTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row3",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 130
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "CasterBootsText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52144CasterBootsTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52145CasterBootsTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "CasterHelmText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52146CasterHelmTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52147CasterHelmTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row4",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 190
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "CasterShieldText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52148CasterShieldTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52149CasterShieldTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "CasterBodyArmorText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52150CasterBodyArmorTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52151CasterBodyArmorTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row5",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 250
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "CasterWeaponText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52152CasterWeaponTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52153CasterWeaponTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "CraftingTitleHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 1410
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 10
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "SafetyAmuletText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52154SafetyAmuletTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52155SafetyAmuletTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "SafetyRingText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52156SafetyRingTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52157SafetyRingTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row2",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 70
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "SafetyGlovesText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52158SafetyGlovesTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52159SafetyGlovesTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "SafetyBeltText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52160SafetyBeltTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52161SafetyBeltTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row3",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 130
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "SafetyBootsText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52162SafetyBootsTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52163SafetyBootsTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "SafetyHelmText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52164SafetyHelmTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52165SafetyHelmTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row4",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 190
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "SafetyShieldText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52166SafetyShieldTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52167SafetyShieldTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "SafetyBodyArmorText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 380,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52168SafetyBodyArmorTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52169SafetyBodyArmorTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row5",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 250
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "SafetyWeaponText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 370,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52170SafetyWeaponTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52171SafetyWeaponTitletooltip",
+                            "tooltipStyle": "$StandardToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+
+          ]
+        }
+      ]
+    }
+  ]
+}

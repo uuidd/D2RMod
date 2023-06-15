@@ -1,0 +1,41 @@
+{
+  "type": "UKComplianceModal",
+  "name": "linkmaxsock",
+  "fields":
+  {
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "isDismissable": true
+  },
+  "children":
+  [
+    {
+      "type": "Widget",
+      "name": "link",
+      "children":
+      [
+        {
+          "type": "TimerWidget",
+          "name": "TimerClose",
+          "fields":
+          {
+            "time": 0.1,
+            "message": "ModalMessage:Confirm:https://www.caimogu.cc/d2r/tools/maxHole.html?i=game"
+          }
+        },
+        {
+          "type": "TimerWidget",
+          "name": "TimerClose",
+          "fields":
+          {
+            "time": 0.1,
+            "message": "PanelManager:ClosePanel:linkmaxsock"
+          }
+        }
+      ]
+    }
+  ]
+}

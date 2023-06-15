@@ -1,0 +1,197 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [
+      { "path": "data/hd/objects/characters/dead_barbarian/model/torso.model" }
+    ],
+    "skeletons": [
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/skeleton/dead_barbarian.skeleton"
+      }
+    ],
+    "animations": [],
+    "textures": [
+      { "path": "data/hd/character/common/common_ktint.texture" },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_axe_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_axe_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_axe_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_bloodplane_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_bloodplane_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_bloodplane_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_body_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_body_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_body_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_eye_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_eye_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_eye_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_hair_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_hair_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_hair_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_head_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_head_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_head_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_outfit_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_outfit_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_outfit_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_wound_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_wound_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/textures/dead_barbarian_wound_orm.texture"
+      }
+    ],
+    "physics": [],
+    "json": [
+      {
+        "path": "data/hd/objects/characters/dead_barbarian/dead_barbarian_state_machine.json"
+      }
+    ],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "dead_barbarian",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2373643746,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/objects/characters/dead_barbarian/dead_barbarian_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride": {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/characters/dead_barbarian/skeleton/dead_barbarian.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 3245679258,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/characters/dead_barbarian/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": true,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
+          "scale": { "x": 1.1, "y": 1.1, "z": 1.1 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 0.5,
+                    "y": -1.5,
+                    "z": 1.5
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
+  ]
+}

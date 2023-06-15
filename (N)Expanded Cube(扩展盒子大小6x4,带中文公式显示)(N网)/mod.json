@@ -1,0 +1,16 @@
+{
+    "name": "Expanded Cube(扩展盒子大小6x4,带中文公式显示)(N网)",
+    "description": "将盒子大小增加到6x4,支持手柄,方块内带中文公式信息可开关",
+    "author": "olegbl & lil174",
+    "website": "https://github.com/olegbl/d2rmm.mods",
+    "version": "1.2",
+    "config": [
+        {
+            "id": "enable_help",
+            "type": "checkbox",
+            "name": "启用方块内的中文公式信息",
+            "description": "手柄鼠标都支持,by lil174",
+            "defaultValue": true
+        }
+    ]
+}
