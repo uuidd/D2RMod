@@ -131,18 +131,6 @@ if (config.easierRollMagicItem) {
   });
   cubemain.rows.push({
     description:
-      "1 Magic Item + 1 Rejuvenation Potions-> Re-rolled Magic Item",
-    enabled: 1,
-    version: 100,
-    numinputs: 2,
-    "input 1": "any,mag",
-    "input 2": "rvs",
-    output: "usetype,mag",
-    ilvl: 100,
-    "*eol\r": 0,
-  });
-  cubemain.rows.push({
-    description:
       "1 Magic Item + 1 gem0 -> Re-rolled Magic Item",
     enabled: 1,
     version: 100,
@@ -212,18 +200,6 @@ if (config.easierRollRareItem) {
     numinputs: 2,
     "input 1": "any,rar",
     "input 2": "rvl",
-    output: "usetype,rar",
-    ilvl: 100,
-    "*eol\r": 0,
-  });
-  cubemain.rows.push({
-    description:
-      "1 Rare Item + 1 Rejuvenation Potions -> Re-rolled Rare Item",
-    enabled: 1,
-    version: 100,
-    numinputs: 2,
-    "input 1": "any,rar",
-    "input 2": "rvs",
     output: "usetype,rar",
     ilvl: 100,
     "*eol\r": 0,
@@ -672,14 +648,15 @@ if (config.easierGloves) {
     "*eol\r": 0,
   });
 }
+
 if (config.easierEthereal) {
   cubemain.rows.push({
     description: "armo uni -> armo uni ethereal",
     enabled: 1,
     version: 100,
-    numinputs: 7,
+    numinputs: 2,
     "input 1": '"armo,uni"',
-    "input 2": '"rune,qty=6"',
+    "input 2": '"std,qty=1"',
     output: '"useitem"',
     "mod 1": "ethereal",
     "mod 1 min": 1,
@@ -690,9 +667,9 @@ if (config.easierEthereal) {
     description: "weap uni -> weap uni ethereal",
     enabled: 1,
     version: 100,
-    numinputs: 7,
+    numinputs: 2,
     "input 1": '"weap,uni"',
-    "input 2": '"rune,qty=6"',
+    "input 2": '"std,qty=1"',
     output: '"useitem"',
     "mod 1": "ethereal",
     "mod 1 min": 1,
@@ -703,9 +680,9 @@ if (config.easierEthereal) {
     description: "armo hiq -> armo hiq ethereal",
     enabled: 1,
     version: 100,
-    numinputs: 7,
+    numinputs: 2,
     "input 1": '"armo,hiq"',
-    "input 2": '"rune,qty=6"',
+    "input 2": '"std,qty=1"',
     output: '"useitem"',
     "mod 1": "ethereal",
     "mod 1 min": 1,
@@ -716,15 +693,45 @@ if (config.easierEthereal) {
     description: "weap hiq -> weap hiq ethereal",
     enabled: 1,
     version: 100,
-    numinputs: 7,
+    numinputs: 2,
     "input 1": '"weap,hiq"',
-    "input 2": '"rune,qty=6"',
+    "input 2": '"std,qty=1"',
     output: '"useitem"',
     "mod 1": "ethereal",
     "mod 1 min": 1,
     "mod 1 max": 1,
     "*eol\r": 0,
   });
+}
+if (config.easierReduce) {
+  for (let tier = 2; tier <= 33; tier++) {
+    let previousTier = tier - 1;
+    let outPut = 'r' + previousTier;
+    let recipe = {
+      description: '2 Rune ' + tier + ' -> 1 Rune ' + previousTier,
+      enabled: 1,
+      version: 100,
+      numinputs: 2,
+      "input 1": 'r' + tier,
+      "input 2": 'isc',
+      output: outPut,
+      "*eol\r": 0,
+    };
+    cubemain.rows.push(recipe);
+  }
+}
+
+if (config.genJew) {
+  let recipe = {
+    description: '3 gem4 -> 1 jew',
+    enabled: 1,
+    version: 100,
+    numinputs: 3,
+    "input 1": 'gem4,qty=3',
+    output: 'jew',
+    "*eol\r": 0,
+  };
+  cubemain.rows.push(recipe);
 }
 D2RMM.writeTsv(cubemainFilename, cubemain);
 
