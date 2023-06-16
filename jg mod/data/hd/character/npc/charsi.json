@@ -1,0 +1,283 @@
+{
+    "dependencies": {
+        "particles": [],
+        "models": [
+            {
+                "path": "data/hd/character/npc/charsi/torso.model"
+            }
+        ],
+        "skeletons": [
+            {
+                "path": "data/hd/character/npc/charsi/skeleton/charsi.skeleton"
+            }
+        ],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/character/common/common_hair1_FLOW.texture"
+            },
+            {
+                "path": "data/hd/character/common/common_hair1_HRT.texture"
+            },
+            {
+                "path": "data/hd/character/common/common_ktint.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_armor_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_armor_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_armor_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_body_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_body_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_body_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_body_SSS.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/Charsi_Hair_ALB.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_hammer_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_hammer_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_hammer_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_head_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_head_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_head_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/charsi/textures/charsi_head_SSS.texture"
+            },
+            {
+                "path": "data/hd/items/weapon/sword/saber/weapon_saber_ALB.texture"
+            },
+            {
+                "path": "data/hd/items/weapon/sword/saber/weapon_saber_mask.texture"
+            },
+            {
+                "path": "data/hd/items/weapon/sword/saber/weapon_saber_NRM.texture"
+            },
+            {
+                "path": "data/hd/items/weapon/sword/saber/weapon_saber_ORM.texture"
+            }
+        ],
+        "physics": [],
+        "json": [
+            {
+                "path": "data/hd/character/npc/charsi/charsi_state_machine.json"
+            }
+        ],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "UnitDefinition",
+    "name": "charsi",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 3399272243,
+            "components": [
+                {
+                    "type": "UnitRootComponent",
+                    "name": "component_root",
+                    "state_machine_filename": "data/hd/character/npc/charsi/charsi_state_machine.json",
+                    "doNotInheritRotation": false,
+                    "rotationOverride": {
+                        "x": 0.0,
+                        "y": 0.3826834,
+                        "z": 0.0,
+                        "w": 0.9238795
+                    },
+                    "doNotUseHDHeight": false,
+                    "hideAllMeshWhenInOpenedMode": false,
+                    "onCreateEventName": "",
+                    "animations": []
+                },
+                {
+                    "type": "SkeletonDefinitionComponent",
+                    "name": "component_skeleton",
+                    "filename": "data/hd/character/npc/charsi/skeleton/charsi.skeleton"
+                },
+                {
+                    "type": "IKComponent",
+                    "name": "entity_root_IK",
+                    "preset": {
+                        "type": "IKPreset",
+                        "name": "Default_Biped_VV",
+                        "footIKSetup": [
+                            {
+                                "type": "FootIKSetup",
+                                "name": "Default_Biped_VV_footIKSetup_0",
+                                "footBoneName": "R_Foot",
+                                "kneeBoneName": "R_Calf",
+                                "hipBoneName": "R_Thigh",
+                                "locationTrackName": "R_IK_position",
+                                "enabledTrackName": "R_FKIK",
+                                "hyperExtensionStart": 0.0,
+                                "hyperExtensionScale": 1.0,
+                                "defaultEnabled": false,
+                                "kneeRotationAxis": 2,
+                                "flipKneeRotationAxis": false
+                            },
+                            {
+                                "type": "FootIKSetup",
+                                "name": "Default_Biped_VV_footIKSetup_1",
+                                "footBoneName": "L_Foot",
+                                "kneeBoneName": "L_Calf",
+                                "hipBoneName": "L_Thigh",
+                                "locationTrackName": "L_IK_position",
+                                "enabledTrackName": "L_FKIK",
+                                "hyperExtensionStart": 0.0,
+                                "hyperExtensionScale": 1.0,
+                                "defaultEnabled": false,
+                                "kneeRotationAxis": 2,
+                                "flipKneeRotationAxis": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "FidgetAnimationComponent",
+                    "name": "entity_root_FidgetAnimation",
+                    "neutralSet": {
+                        "type": "FidgetAnimationSet",
+                        "name": "entity_root_FidgetAnimation_neutralSet",
+                        "options": [
+                            {
+                                "type": "FidgetAnimationOption",
+                                "name": "entity_root_FidgetAnimation_neutralSet_options_0",
+                                "stateName": "fidget01",
+                                "weight": 0.5,
+                                "cooldownMin": 0.0,
+                                "cooldownMax": 0.0
+                            },
+                            {
+                                "type": "FidgetAnimationOption",
+                                "name": "entity_root_FidgetAnimation_neutralSet_options_1",
+                                "stateName": "fidget02",
+                                "weight": 1.0,
+                                "cooldownMin": 0.0,
+                                "cooldownMax": 0.0
+                            }
+                        ],
+                        "firstFidgetDelayMin": 0.0,
+                        "firstFidgetDelayMax": 0.0,
+                        "subsequentFidgetDelayMin": 2.0,
+                        "subsequentFidgetDelayMax": 10.0
+                    },
+                    "townNeutralSet": {},
+                    "frontendSet": {},
+                    "characterSelectSet": {}
+                },
+                {
+                    "type": "AimLayersComponent",
+                    "name": "entity_root_AimLayers",
+                    "aimLayers": [
+                        {
+                            "type": "AimLayerSetup",
+                            "name": "entity_root_AimLayers_aimLayers_0",
+                            "layerName": "Aim_Head",
+                            "yawAnimationState": "HeadAnimLayer_Yaw",
+                            "yawOutOfRangeBehavior": 2,
+                            "yawAngleOffset": 0.0,
+                            "pitchAnimationState": "HeadAnimLayer_Pitch",
+                            "pitchOutOfRangeBehavior": 0,
+                            "pitchAngleOffset": 0.0,
+                            "aimLocationTrackName": "aim_location",
+                            "aimDampingFactor": 0.15,
+                            "aimTarget": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "LookAtAnimationControlComponent",
+                    "name": "entity_root_LookAtAnimationControl",
+                    "controlOverrides": [],
+                    "aimLayerName": "Aim_Head",
+                    "blendInTime": 0.25,
+                    "blendOutTime": 0.25
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_torso",
+            "id": 4271438828,
+            "components": [
+                {
+                    "type": "UnitPartComponent",
+                    "name": "component_part_torso",
+                    "part": "torso",
+                    "variant": "lit"
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "component_model_torso",
+                    "filename": "data/hd/character/npc/charsi/torso.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                }
+            ]
+        },
+        {
+          "type": "Entity",
+          "name": "entity_root",
+          "id": 1079187010,
+          "components": [
+              {
+                  "type": "VfxDefinitionComponent",
+                  "name": "entity_root_VfxDefinition",
+                  "filename": "data/hd/nickname/particles/charsi.particles",
+                  "hardKillOnDestroy": false
+              },
+              {
+                  "type": "TransformDefinitionComponent",
+                  "name": "vfx4294962040_component_transform",
+                  "position": {
+                      "x": 0.0,
+                      "y": 9.0,
+                      "z": 0.0
+                  },
+                  "orientation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                  },
+                  "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                  },
+                  "inheritOnlyPosition": false
+              }
+          ]
+      }
+    ]
+}

@@ -1,0 +1,72 @@
+{"dependencies":{"particles":[],"models":[{"path":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail.model"}],"skeletons":[{"path":"data/hd/items/weapon/mace/super_khalim_flail/skeleton/super_khalim_flail.skeleton"}],"animations":[],"textures":[{"path":"data/hd/items/weapon/mace/super_khalim_flail/weapon_super_khalim_flail_ALB.texture"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/weapon_super_khalim_flail_mask.texture"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/weapon_super_khalim_flail_NRM.texture"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/weapon_super_khalim_flail_ORM.texture"}],"physics":[],"json":[{"path":"data/hd/items/dropped_items/dropped_items_khalim_will_flip.json"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_amazon_state_machine.json"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_assassin_state_machine.json"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_barbarian_state_machine.json"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_druid_state_machine.json"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_lh_barbarian_state_machine.json"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_necromancer_state_machine.json"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_paladin_state_machine.json"},{"path":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_sorceress_state_machine.json"}],"variantdata":[],"objecteffects":[],"other":[]},"type":"UnitDefinition","name":"super_khalim_flail","entities":[{"type":"Entity","name":"entity_root","id":1155585086,"components":[{"type":"UnitRootComponent","name":"component_root","state_machine_filename":"data/hd/items/dropped_items/dropped_items_khalim_will_flip.json","doNotInheritRotation":false,"rotationOverride":{"x":0.0,"y":0.3826834,"z":0.0,"w":0.9238795},"doNotUseHDHeight":false,"hideAllMeshWhenInOpenedMode":false,"onCreateEventName":"","animations":[]},{"type":"SkeletonDefinitionComponent","name":"component_skeleton","filename":"data/hd/items/weapon/mace/super_khalim_flail/skeleton/super_khalim_flail.skeleton"},{"type":"TransformDefinitionComponent","name":"entity_root_TransformDefinition","position":{"x":-0.5,"y":-0.1,"z":-0.5},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false},{"type":"PlayerAttachedItemAnimationComponent","name":"entity_root_PlayerAttachedItemAnimation","stateMachineTable":[{"type":"PlayerAttachedItemAnimationStateMachineComponentEntry","name":"entity_root_PlayerAttachedItemAnimation_stateMachineTable_0","playerClass":2,"attachLocation":5,"stateMachineFilename":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_necromancer_state_machine.json"},{"type":"PlayerAttachedItemAnimationStateMachineComponentEntry","name":"entity_root_PlayerAttachedItemAnimation_stateMachineTable_1","playerClass":3,"attachLocation":5,"stateMachineFilename":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_paladin_state_machine.json"},{"type":"PlayerAttachedItemAnimationStateMachineComponentEntry","name":"entity_root_PlayerAttachedItemAnimation_stateMachineTable_2","playerClass":6,"attachLocation":5,"stateMachineFilename":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_assassin_state_machine.json"},{"type":"PlayerAttachedItemAnimationStateMachineComponentEntry","name":"entity_root_PlayerAttachedItemAnimation_stateMachineTable_3","playerClass":5,"attachLocation":5,"stateMachineFilename":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_druid_state_machine.json"},{"type":"PlayerAttachedItemAnimationStateMachineComponentEntry","name":"entity_root_PlayerAttachedItemAnimation_stateMachineTable_4","playerClass":4,"attachLocation":5,"stateMachineFilename":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_barbarian_state_machine.json"},{"type":"PlayerAttachedItemAnimationStateMachineComponentEntry","name":"entity_root_PlayerAttachedItemAnimation_stateMachineTable_5","playerClass":4,"attachLocation":6,"stateMachineFilename":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_lh_barbarian_state_machine.json"},{"type":"PlayerAttachedItemAnimationStateMachineComponentEntry","name":"entity_root_PlayerAttachedItemAnimation_stateMachineTable_6","playerClass":1,"attachLocation":5,"stateMachineFilename":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_sorceress_state_machine.json"},{"type":"PlayerAttachedItemAnimationStateMachineComponentEntry","name":"entity_root_PlayerAttachedItemAnimation_stateMachineTable_7","playerClass":0,"attachLocation":5,"stateMachineFilename":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail_amazon_state_machine.json"}]},{"type":"OverrideAttachmentTransformComponent","name":"entity_root_OverrideAttachmentTransform","playerClassTransforms":{"0":{"type":"Transform","name":"entity_root_OverrideAttachmentTransform_playerClassTransforms_Amazon","translation":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.0,"y":1.0,"z":1.0}},"6":{"type":"Transform","name":"entity_root_OverrideAttachmentTransform_playerClassTransforms_Assassin","translation":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":0.95,"y":0.95,"z":0.95}},"4":{"type":"Transform","name":"entity_root_OverrideAttachmentTransform_playerClassTransforms_Barbarian","translation":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.05,"y":1.05,"z":1.05}},"5":{"type":"Transform","name":"entity_root_OverrideAttachmentTransform_playerClassTransforms_Druid","translation":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.05,"y":1.05,"z":1.05}},"2":{"type":"Transform","name":"entity_root_OverrideAttachmentTransform_playerClassTransforms_Necromancer","translation":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":0.92,"y":0.92,"z":0.92}},"3":{"type":"Transform","name":"entity_root_OverrideAttachmentTransform_playerClassTransforms_Paladin","translation":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":1.05,"y":1.05,"z":1.05}},"1":{"type":"Transform","name":"entity_root_OverrideAttachmentTransform_playerClassTransforms_Sorceress","translation":{"x":0.0,"y":0.0,"z":0.0},"rotation":{"x":0.0,"y":0.0,"z":0.0},"scale":{"x":0.85,"y":0.85,"z":0.85}}}}]},{"type":"Entity","name":"entity_model","id":3696205783,"components":[{"type":"ModelDefinitionComponent","name":"component_model_super_khalim_flail","filename":"data/hd/items/weapon/mace/super_khalim_flail/super_khalim_flail.model","visibleLayers":1,"lightMask":19,"shadowMask":3,"ghostShadows":false,"floorModel":false,"terrainBlendEnableYUpBlend":false,"terrainBlendMode":1}]},
+{
+"type": "Entity",
+"name": "droplight",
+"id": 9999996974,
+"components": [
+{
+"type": "TransformDefinitionComponent",
+"name": "component_transform1",
+"position": {
+"x": 0.0,
+"y": 0.0,
+"z": 0.0
+},
+"orientation": {
+"x": 0.0,
+"y": 0.0,
+"z": 0.0,
+"w": 1.0
+},
+"scale": {
+"x": 1.0,
+"y": 1.0,
+"z": 1.0
+},
+"inheritOnlyPosition": false
+},
+{
+"type": "VfxDefinitionComponent",
+"name": "entity_vfx_gousemyideaandshareyourfilthymods",
+"filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+"hardKillOnDestroy": false
+}
+]
+},
+//女武神召唤效果追加部分：
+{
+"type": "Entity",
+"name": "droplight",
+"id": 9999996974,
+"components": [
+{
+"type": "TransformDefinitionComponent",
+"name": "component_transform1",
+"position": {
+"x": 0.0,
+"y": 0.0,
+"z": 0.0
+},
+"orientation": {
+"x": 0.0,
+"y": 0.0,
+"z": 0.0,
+"w": 1.0
+},
+"scale": {
+"x": 1.0,
+"y": 1.0,
+"z": 1.0
+},
+"inheritOnlyPosition": false
+},
+{
+"type": "VfxDefinitionComponent",
+"name": "entity_vfx_gousemyideaandshareyourfilthymods",
+"filename": "data/hd/vfx/particles/overlays/common/valkyriestart/valkriestart_overlay.particles",
+"hardKillOnDestroy": false
+}
+]
+}
+]
+}

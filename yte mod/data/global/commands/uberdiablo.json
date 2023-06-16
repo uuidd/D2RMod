@@ -1,0 +1,7 @@
+{
+    // /uberdiablo
+    "CommandName": "D2CommandsUberDiablo",
+    "Aliases": [ "uberdiablo", "dc", "db", "hm" ],
+    "Execute": "UberDiablo",
+    "Description": "D2CommandsUberDiabloDescription"
+}

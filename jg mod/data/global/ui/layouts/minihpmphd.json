@@ -1,0 +1,305 @@
+{
+  "type": "TooltipsPanel",
+  "name": "minihpmp",
+  "fields":
+  {
+    "priority": -111,
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "rect":
+    {
+      "x": -170,
+      "y": -520,
+      "width": 200,
+      "height": 200,
+      "scale": 1,
+      "transparency": 0.1
+    }
+  },
+  "children":
+  [
+    {
+      "type": "ImageWidget",
+      "name": "ManaBarBG",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 32,
+          "y": 34,
+          "width": 105,
+          "height": 103,
+          "scale": 0.8
+        },
+        "filename": "PANEL/jgmod/minimp_bg"
+      }
+    },
+    {
+      "type": "AttributeBallWidget",
+      "name": "ManaBarMana",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 32,
+          "y": 34,
+          "width": 105,
+          "height": 103,
+          "scale": 0.8
+        },
+        "attribute": "mana",
+        "minLiquidWidth": 2,
+        "maxSmoothingSeconds": 1.0,
+        "jumpSmoothingSeconds": 0.25,
+        "smoothDecrease": false,
+        "potionPreviewTransparency": 0.1,
+        "poisonHsvTransform":
+        [
+          0.3,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "children":
+      [
+        {
+          "type": "AnimatedImageWidget",
+          "name": "BallImage",
+          "fields":
+          {
+            "filename": "PANEL/jgmod/minimp_mana",
+            "transparency": 0.1,
+            "fps": 1,
+            "loop": false,
+            "useAdvancedColoring": true,
+            "hsvTransform":
+            [
+              -0.3333,
+              -0.05,
+              -0.05,
+              0.0
+            ]
+          }
+        },
+        {
+          "type": "TextBoxWidget",
+          "name": "ValueDisplay",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 104,
+              "y": 20
+            },
+            "style":
+            {
+              "pointSize": "$XMediumLargeFontSize",
+              "fontColor": "$FontColorLightBlue",
+              "alignment":
+              {
+                "v": "center",
+                "h": "left"
+              },
+              "spacing": "$MinimumSpacing",
+              "dropShadow": "$DefaultDropShadow"
+            }
+          }
+        },
+        {
+          "type": "ClickCatcherWidget",
+          "name": "click_catcher",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 32,
+              "y": 34,
+              "width": 105,
+              "height": 103
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ImageWidget",
+      "name": "HealthBarBG",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 0,
+          "y": 0,
+          "width": 165,
+          "height": 162,
+          "scale": 0.8        },
+        "filename": "PANEL/jgmod/minihp_bg"
+      }
+    },
+    {
+      "type": "AttributeBallWidget",
+      "name": "HealthBarLife",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 0,
+          "y": 0,
+          "width": 165,
+          "height": 162,
+          "scale": 0.8
+        },
+        "attribute": "health",
+        "minLiquidWidth": 2,
+        "maxSmoothingSeconds": 1.0,
+        "jumpSmoothingSeconds": 0.25,
+        "smoothDecrease": false,
+        "potionPreviewTransparency": 0.1,
+        "poisonHsvTransform":
+        [
+          0.3,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "children":
+      [
+        {
+          "type": "AnimatedImageWidget",
+          "name": "BallImage",
+          "fields":
+          {
+            "filename": "PANEL/jgmod/minihp_life",
+            "transparency": 0.1,
+            "fps": 1,
+            "loop": false,
+            "useAdvancedColoring": true,
+            "hsvTransform":
+            [
+              -0.3333,
+              -0.05,
+              -0.5,
+              0.0
+            ]
+          }
+        },
+        {
+          "type": "TextBoxWidget",
+          "name": "ValueDisplay",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 164,
+              "y": 20
+            },
+            "style":
+            {
+              "pointSize": "$XMediumLargeFontSize",
+              "fontColor": "$FontColorLightRed",
+              "alignment":
+              {
+                "v": "center",
+                "h": "left"
+              },
+              "spacing": "$MinimumSpacing",
+              "dropShadow": "$DefaultDropShadow"
+            }
+          }
+        },
+        {
+          "type": "ClickCatcherWidget",
+          "name": "click_catcher",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 0,
+              "y": 0,
+              "width": 165,
+              "height": 162
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "SkillSelectButtonWidget",
+      "name": "BowLeftCounter",
+      "fields":
+      {
+        "rect":
+        {
+          "x": -26,
+          "y": 40
+        },
+        "side": "left"
+      },
+      "children":
+      [
+        {
+          "type": "TextBoxWidget",
+          "name": "QuantityText",
+          "fields":
+          {
+            "rect": "$SkillHotkeyTextRect",
+            "style":
+            {
+              "pointSize": "$SmallFontSize",
+              "fontColor": "$FontColorGold",
+              "alignment":
+              {
+                "v": "bottom",
+                "h": "left"
+              },
+              "spacing": "$MinimumSpacing",
+              "dropShadow": "$DefaultDropShadow"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "SkillSelectButtonWidget",
+      "name": "BowRightCounter",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 40,
+          "y": 40
+        },
+        "side": "right"
+      },
+      "children":
+      [
+        {
+          "type": "TextBoxWidget",
+          "name": "QuantityText",
+          "fields":
+          {
+            "rect": "$SkillHotkeyTextRect",
+            "style":
+            {
+              "pointSize": "$SmallFontSize",
+              "fontColor": "$FontColorGold",
+              "alignment":
+              {
+                "v": "bottom",
+                "h": "left"
+              },
+              "spacing": "$MinimumSpacing",
+              "dropShadow": "$DefaultDropShadow"
+            }
+          }
+        }
+      ]
+    }
+
+  ]
+}

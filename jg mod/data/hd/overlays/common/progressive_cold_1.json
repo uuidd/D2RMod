@@ -1,0 +1,59 @@
+{
+	"dependencies": {
+		"particles": [
+			{
+				"path": "data/hd/vfx/particles/overlays/common/progressive_cold_1/progressive_cold_1_fix.particles"
+			}
+		],
+		"models": [],
+		"skeletons": [],
+		"animations": [],
+		"textures": [],
+		"physics": [],
+		"json": [],
+		"variantdata": [],
+		"objecteffects": [],
+		"other": []
+	},
+	"type": "OverlayDefinition",
+	"name": "progressive_cold_1",
+	"entities": [
+		{
+			"type": "Entity",
+			"name": "entity_root",
+			"id": 2846492227,
+			"components": [
+				{
+					"type": "VfxDefinitionComponent",
+					"name": "component_vfx",
+					"filename": "data/hd/vfx/particles/overlays/common/progressive_cold_1/progressive_cold_1_fix.particles",
+					"hardKillOnDestroy": true
+				},
+				{
+					"type": "TransformDefinitionComponent",
+					"name": "entity_root_TransformDefinition",
+					"position":
+					{
+						"x": -1.0,
+						"y": 9.7,
+						"z": 1.0
+					},
+					"inheritOnlyPosition": true
+				}
+			]
+		},
+		{
+			"type": "Entity",
+			"name": "entity_root",
+			"id": 2337602525,
+			"components": [
+				{
+					"type": "VfxDefinitionComponent",
+					"name": "component_vfx",
+					"filename": "data/hd/vfx/particles/overlays/common/progressive_cold_1/vfx_progressive_cold_1.particles",
+					"hardKillOnDestroy": true
+				}
+			]
+		}
+	]
+}

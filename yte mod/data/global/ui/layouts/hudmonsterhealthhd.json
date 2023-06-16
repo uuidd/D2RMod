@@ -1,0 +1,60 @@
+{
+    "type": "MonsterHealthPanel", "name": "HUDMonsterHealth",
+    "fields": {
+        "priority": -100,
+        "anchor": { "x": 0.5 },
+        "rect": { "x": -550, "y": 65, "width": 1100, "height": 75 }
+    },
+    "children": [
+        {
+            "type": "HealthBarWidget", "name": "Health",
+            "fields": {
+                "fitToParent": true,
+                "normalColor": { "r": 0.5, "g": 0.0, "b": 0.0 },
+                "transparency": 0.75,
+                "backgroundTransparency": 0.75,
+                "criticalHealthPercent": 0,
+                "warningHealthPercent": 0,
+                "drawWhenEmpty": true
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "Name",
+                    "fields": {
+                        "anchor": { "x": 0.5, "y": 0.5 },
+						"style": {
+							"pointSize": "$LargeFontSize",
+                            "alignment": { "h": "center", "v": "center" },
+                            "options": { "pipeCharacterBehavior": "handle" },
+							"spacing": { "kerning": 1 }
+                        }
+                    }
+                },
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "Unique",
+            "fields": {
+				"anchor": { "x": 0.5 },
+                "rect": { "x":0, "y": 125 },
+                "style": {
+                    "pointSize": "$MediumFontSize",
+                    "alignment": { "h": "center", "v": "center"  },
+                    "options": { "pipeCharacterBehavior": "handle" }
+                }
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Additional",
+            "fields": {
+                "rect": { "x":0, "y": 170 },
+				"anchor": { "x": 0.5 },
+                "style": {
+                    "pointSize": "$MediumFontSize",
+                    "alignment": { "h": "center", "v": "center"  },
+                    "options": { "pipeCharacterBehavior": "handle" }
+                }
+            }
+        }
+    ]
+}

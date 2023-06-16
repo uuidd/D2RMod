@@ -1,0 +1,83 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+      {
+        "path": "data/hd/vfx/particles/overlays/common/battleorders/vfx_battle_orders.particles"
+      }
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/vfx/meshes/FX_Mesh_Bless.model"
+      }
+    ],
+    "skeletons":
+    [
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/vfx/textures/gradient/T_FX_Mirror_Gradient_02.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+    ],
+    "variantdata":
+    [
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "OverlayDefinition",
+  "name": "battleorders",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 3238534566,
+      "components":
+      [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "component_vfx",
+          "filename": "data/hd/vfx/particles/overlays/common/battleorders/vfx_battle_orders.particles",
+          "hardKillOnDestroy": true
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special5_cld",
+      "id": 3418918684,
+      "components":
+      [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_special5_cld_VfxDefinition",
+          "filename": "data/hd/vfx/particles/missiles/sanctuary/vfx_sanctuary_missile.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "entity_special3_fir_EntityAttachmentDefinition",
+          "targetbone": "R_weapon_attach"
+        }
+
+      ]
+    }
+  ]
+}

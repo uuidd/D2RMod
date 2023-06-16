@@ -1,0 +1,3153 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface1.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface10.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface11.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface12.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface13.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface14.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface15.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface16.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface17.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface18.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface19.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface2.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface20.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface21.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface22.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface23.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface24.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface25.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface26.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface27.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface28.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface29.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface3.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface30.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface4.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface5.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface6.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface7.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface8.model"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface9.model"
+      }
+    ],
+    "skeletons":
+    [
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/skeleton/jug_outdoor_1.skeleton"
+      }
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/texture/jug_outdoor_1_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/texture/jug_outdoor_1_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/destructibles/jug_outdoor_1/texture/jug_outdoor_1_orm.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+    ],
+    "variantdata":
+    [
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "jug_outdoor_1",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 1423452585,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/skeleton/jug_outdoor_1.skeleton"
+        },
+        {
+          "type": "PhysicsApplyForceOnDynamicDefinitionComponent",
+          "name": "entity_root_PhysicsApplyForceOnDynamicDefinition",
+          "isExplosion": false,
+          "explosionRadius": 20.0,
+          "fromPlayerPosition": true,
+          "manualForceDirection":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 1.0
+          },
+          "force": 180.0,
+          "variance": 50.0,
+          "life": 10.0,
+          "lifeVariance": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 2278841953,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_1",
+      "id": 704457781,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform001",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model001",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface1.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent001",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition001",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition001",
+                "center":
+                {
+                  "x": 0.5709783,
+                  "y": 0.5110839,
+                  "z": 1.026056
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 2.926588E-05,
+                  "y": 3.528595E-05,
+                  "z": 5.143881E-05
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_2",
+      "id": 1576165869,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform002",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model002",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface10.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent002",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition002",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition002",
+                "center":
+                {
+                  "x": -0.5145823,
+                  "y": 1.099611,
+                  "z": 0.8731692
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.4795138,
+                  "y": 0.4155318,
+                  "z": 0.5179994
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_3",
+      "id": 2108543610,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform003",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model003",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface11.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent003",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition003",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition003",
+                "center":
+                {
+                  "x": -0.09410816,
+                  "y": 0.8993157,
+                  "z": 1.2849
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.02485402,
+                  "y": 0.006182283,
+                  "z": 0.01415241
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_4",
+      "id": 2963801906,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform004",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model004",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface12.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent004",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition004",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition004",
+                "center":
+                {
+                  "x": -1.119156,
+                  "y": 0.7701827,
+                  "z": 0.1846061
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.1283799,
+                  "y": 0.3665124,
+                  "z": 0.1880144
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_5",
+      "id": 3513022655,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform005",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model005",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface13.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent005",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition005",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition005",
+                "center":
+                {
+                  "x": -1.124912,
+                  "y": 0.96909,
+                  "z": 0.1347301
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.03580886,
+                  "y": 0.04315415,
+                  "z": 0.02467236
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_6",
+      "id": 73379191,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform006",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model006",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface14.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent006",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition006",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition006",
+                "center":
+                {
+                  "x": 0.132377,
+                  "y": 0.3835679,
+                  "z": -0.4974474
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.847614,
+                  "y": 0.3857473,
+                  "z": 0.398669
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_7",
+      "id": 928703024,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform007",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model007",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface15.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent007",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition007",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition007",
+                "center":
+                {
+                  "x": -0.09533668,
+                  "y": 0.4660373,
+                  "z": 0.6687838
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 1.101529,
+                  "y": 0.4784076,
+                  "z": 0.7222738
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_8",
+      "id": 1477858237,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform008",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model008",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface16.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent008",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition008",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition008",
+                "center":
+                {
+                  "x": -0.6445881,
+                  "y": 0.4992112,
+                  "z": -0.3827077
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.3975626,
+                  "y": 0.5010722,
+                  "z": 0.4091313
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_9",
+      "id": 2333575285,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform009",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model009",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface17.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent009",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition009",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition009",
+                "center":
+                {
+                  "x": 0.2684282,
+                  "y": 0.6389151,
+                  "z": -0.280063
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.688062,
+                  "y": 0.6408518,
+                  "z": 0.537227
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_10",
+      "id": 3188505645,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform010",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model010",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface18.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent010",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition010",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition010",
+                "center":
+                {
+                  "x": -0.07393318,
+                  "y": 0.9913533,
+                  "z": 0.9472617
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.7319597,
+                  "y": 0.4240265,
+                  "z": 0.312881
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_11",
+      "id": 3754438330,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform011",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model011",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface19.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent011",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition011",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition011",
+                "center":
+                {
+                  "x": 0.2197365,
+                  "y": 1.446992,
+                  "z": 0.2975487
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.5800397,
+                  "y": 0.3708726,
+                  "z": 0.4785969
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_12",
+      "id": 315187827,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform012",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model012",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface2.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent012",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition012",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition012",
+                "center":
+                {
+                  "x": 0.160931,
+                  "y": 1.341916,
+                  "z": 0.5943069
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.2809672,
+                  "y": 0.2722211,
+                  "z": 0.5881131
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_13",
+      "id": 847566079,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform013",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model013",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface20.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent013",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition013",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition013",
+                "center":
+                {
+                  "x": -0.6297536,
+                  "y": 1.087661,
+                  "z": 0.5916929
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.3590691,
+                  "y": 0.3945769,
+                  "z": 0.3989913
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_14",
+      "id": 1719273912,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform014",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model014",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface21.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent014",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition014",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition014",
+                "center":
+                {
+                  "x": -0.7386936,
+                  "y": 0.3625167,
+                  "z": 0.6362541
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.3721735,
+                  "y": 0.3645966,
+                  "z": 0.5843627
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_15",
+      "id": 2574597488,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform015",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model015",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface22.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent015",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition015",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition015",
+                "center":
+                {
+                  "x": -0.8191272,
+                  "y": 1.051096,
+                  "z": -0.2567723
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.2079921,
+                  "y": 0.3039595,
+                  "z": 0.3191422
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_16",
+      "id": 3106975741,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform016",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model016",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface23.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent016",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition016",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition016",
+                "center":
+                {
+                  "x": -0.8432537,
+                  "y": 1.114469,
+                  "z": 0.3326426
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.2268645,
+                  "y": 0.2694969,
+                  "z": 0.3816
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_17",
+      "id": 3979076533,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform017",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model017",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface24.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent017",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition017",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition017",
+                "center":
+                {
+                  "x": -0.8927767,
+                  "y": 0.4792981,
+                  "z": 0.1751107
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.2301807,
+                  "y": 0.4814044,
+                  "z": 0.6689001
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_18",
+      "id": 539433070,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform018",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model018",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface25.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent018",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition018",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition018",
+                "center":
+                {
+                  "x": -0.05953148,
+                  "y": 0.2862088,
+                  "z": 0.5806885
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.3208799,
+                  "y": 0.2881817,
+                  "z": 0.6798815
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_19",
+      "id": 1088588282,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform019",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model019",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface26.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent019",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition019",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition019",
+                "center":
+                {
+                  "x": -0.08115715,
+                  "y": 1.489282,
+                  "z": -0.05361283
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.5755645,
+                  "y": 0.3282478,
+                  "z": 0.4879893
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_20",
+      "id": 1961082547,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform020",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model020",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface27.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent020",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition020",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition020",
+                "center":
+                {
+                  "x": 0.2647526,
+                  "y": 0.4433279,
+                  "z": 0.9707385
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.4035241,
+                  "y": 0.4451621,
+                  "z": 0.2881361
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_21",
+      "id": 2493460544,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform021",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model021",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface28.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent021",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition021",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition021",
+                "center":
+                {
+                  "x": -0.4475496,
+                  "y": 0.02920983,
+                  "z": 0.3625327
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.3763252,
+                  "y": 0.03127169,
+                  "z": 0.6531911
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_22",
+      "id": 3348391160,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform022",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model022",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface29.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent022",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition022",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition022",
+                "center":
+                {
+                  "x": -0.2941708,
+                  "y": 0.9290347,
+                  "z": -0.383603
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.4867049,
+                  "y": 0.4826342,
+                  "z": 0.4336945
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_23",
+      "id": 4220492208,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform023",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model023",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface3.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent023",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition023",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition023",
+                "center":
+                {
+                  "x": 0.9868203,
+                  "y": 0.05071026,
+                  "z": 0.4660637
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.01757994,
+                  "y": 0.01368703,
+                  "z": 0.01845823
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_24",
+      "id": 457902653,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform024",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model024",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface30.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent024",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition024",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition024",
+                "center":
+                {
+                  "x": 0.5540268,
+                  "y": 0.5598207,
+                  "z": 0.5406686
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.4065215,
+                  "y": 0.5617546,
+                  "z": 0.5125476
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_25",
+      "id": 1313226742,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform025",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model025",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface4.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent025",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition025",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition025",
+                "center":
+                {
+                  "x": 0.6712583,
+                  "y": 0.8117438,
+                  "z": 0.5988386
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.4015687,
+                  "y": 0.6910594,
+                  "z": 0.4801316
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_26",
+      "id": 2185327790,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform026",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model026",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface5.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent026",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition026",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition026",
+                "center":
+                {
+                  "x": -0.5884786,
+                  "y": 0.6815611,
+                  "z": -0.4504417
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.594146,
+                  "y": 0.6850513,
+                  "z": 0.4831979
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_27",
+      "id": 2734482747,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform027",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model027",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface6.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent027",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition027",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition027",
+                "center":
+                {
+                  "x": -0.5902839,
+                  "y": 1.221079,
+                  "z": 0.1359362
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.6111111,
+                  "y": 0.3979807,
+                  "z": 0.493549
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_28",
+      "id": 3590200051,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform028",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model028",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface7.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent028",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition028",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition028",
+                "center":
+                {
+                  "x": 0.9222933,
+                  "y": 0.5942265,
+                  "z": 0.09108222
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.1536689,
+                  "y": 0.594733,
+                  "z": 0.3641242
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_29",
+      "id": 4139355008,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform029",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model029",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface8.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent029",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition029",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition029",
+                "center":
+                {
+                  "x": 0.9795249,
+                  "y": 0.9484173,
+                  "z": 0.2735036
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.006478816,
+                  "y": 0.009597152,
+                  "z": 0.002778083
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "destro_30",
+      "id": 699318328,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "transform030",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "model030",
+          "filename": "data/hd/objects/destructibles/jug_outdoor_1/model/polySurface9.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "PhysicsBodyDefinitionComponent030",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "PhysicsFixtureDefinition030",
+              "shapetype":
+              {
+                "type": "PhysicsBoxDefinition",
+                "name": "PhysicsBoxDefinition030",
+                "center":
+                {
+                  "x": 0.3149583,
+                  "y": 0.8869589,
+                  "z": -0.2083734
+                },
+                "orientation":
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0,
+                  "w": 1.0
+                },
+                "extents":
+                {
+                  "x": 0.5521343,
+                  "y": 0.6563014,
+                  "z": 0.3797073
+                }
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "destructible",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "vfx",
+      "id": 856925902,
+      "components":
+      [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "vfx_VfxDefinition",
+          "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "vfx_TransformDefinition",
+          "position":
+          {
+            "x": 0.5,
+            "y": 1.0,
+            "z": 1.5
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    }
+  ]
+}

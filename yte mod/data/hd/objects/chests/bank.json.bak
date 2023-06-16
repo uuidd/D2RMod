@@ -1,0 +1,171 @@
+{
+  "dependencies": {
+    "particles": [
+      {
+        "path": "data/hd/vfx/particles/overlays/objects/multigleam/FX_MultiGleam.particles"
+      }
+    ],
+    "models": [
+      {
+        "path": "data/hd/objects/chests/bank/model/torso.model"
+      }
+    ],
+    "skeletons": [
+      {
+        "path": "data/hd/objects/chests/bank/skeleton/bank.skeleton"
+      }
+    ],
+    "animations": [],
+    "textures": [
+      {
+        "path": "data/hd/objects/chests/bank/texture/chest_bank_ALB.texture"
+      },
+      {
+        "path": "data/hd/objects/chests/bank/texture/chest_bank_NRM.texture"
+      },
+      {
+        "path": "data/hd/objects/chests/bank/texture/chest_bank_ORM.texture"
+      }
+    ],
+    "physics": [],
+    "json": [],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "bank",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 668709650,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "",
+          "doNotInheritRotation": false,
+          "rotationOverride": {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/chests/bank/skeleton/bank.skeleton"
+        },
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 1201022111,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/chests/bank/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "ModelPlatformTierComponent",
+          "name": "entity_torso_ModelPlatformTier",
+          "visibilityTier": -1,
+          "shadowTier": 0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 1366704500,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/overlays/objects/multigleam/FX_MultiGleam.particles",
+          "hardKillOnDestroy": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 1366704500,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/overlays/objects/multigleam/FX_MultiGleam.particles",
+          "hardKillOnDestroy": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_spotlight",
+      "id": 2353308128,
+      "components": [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position": {
+            "x": 0.0,
+            "y": 35.0,
+            "z": 0.0
+          },
+          "orientation": {
+            "x": 0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "SpotLightDefinitionComponent",
+          "name": "spotlight_Entity_SpotLightDefinition",
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 2500.0,
+          "angle": 20.0,
+          "distance": 80.0,
+          "attenuation": 5.0,
+          "shadowCaster": false,
+          "lightMask": 1,
+          "isLocalLight": false,
+          "diffuseContribution": 1.0,
+          "specularContribution": 0.5
+        }
+      ]
+    }
+  ]
+}

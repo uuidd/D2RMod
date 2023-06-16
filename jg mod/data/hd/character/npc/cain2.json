@@ -1,0 +1,317 @@
+{
+    "dependencies": {
+        "particles": [],
+        "models": [
+            {
+                "path": "data/hd/character/npc/cain1/torso.model"
+            }
+        ],
+        "skeletons": [
+            {
+                "path": "data/hd/character/npc/cain1/skeleton/cain1.skeleton"
+            }
+        ],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/character/common/common_hair1_FLOW.texture"
+            },
+            {
+                "path": "data/hd/character/common/common_hair1_HRT.texture"
+            },
+            {
+                "path": "data/hd/character/common/common_ktint.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_body_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_body_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_body_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_body_SSS.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_cloth_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_cloth_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_cloth_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_hair_ALB.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_head_ALB.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_head_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_head_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_head_SSS.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_staff_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_staff_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/cain1/textures/cain1_staff_orm.texture"
+            },
+            {
+                "path": "data/hd/items/misc/book/_monsters/book_deckard_cain/misc_deckard_cain_book_ALB.texture"
+            },
+            {
+                "path": "data/hd/items/misc/book/_monsters/book_deckard_cain/misc_deckard_cain_book_NRM.texture"
+            },
+            {
+                "path": "data/hd/items/misc/book/_monsters/book_deckard_cain/misc_deckard_cain_book_ORM.texture"
+            }
+        ],
+        "physics": [],
+        "json": [
+            {
+                "path": "data/hd/character/npc/cain2/cain2_state_machine.json"
+            }
+        ],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "UnitDefinition",
+    "name": "cain2",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 1237776998,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/character/npc/cain2/cain2_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/character/npc/cain1/skeleton/cain1.skeleton"
+        },
+        {
+          "type": "IKComponent",
+          "name": "entity_root_IK",
+          "preset":
+          {
+            "type": "IKPreset",
+            "name": "Default_NPC",
+            "footIKSetup":
+            [
+              {
+                "type": "FootIKSetup",
+                "name": "Default_NPC_footIKSetup_0",
+                "footBoneName": "L_leg_03_bind_jnt",
+                "kneeBoneName": "L_leg_02_bind_jnt",
+                "hipBoneName": "L_leg_01_bind_jnt",
+                "locationTrackName": "L_IK_position",
+                "enabledTrackName": "L_FKIK",
+                "hyperExtensionStart": 0.0,
+                "hyperExtensionScale": 0.0,
+                "defaultEnabled": true,
+                "kneeRotationAxis": 1,
+                "flipKneeRotationAxis": false
+              },
+              {
+                "type": "FootIKSetup",
+                "name": "Default_NPC_footIKSetup_1",
+                "footBoneName": "R_leg_03_bind_jnt",
+                "kneeBoneName": "R_leg_02_bind_jnt",
+                "hipBoneName": "R_leg_01_bind_jnt",
+                "locationTrackName": "R_IK_position",
+                "enabledTrackName": "R_FKIK",
+                "hyperExtensionStart": 0.0,
+                "hyperExtensionScale": 0.0,
+                "defaultEnabled": true,
+                "kneeRotationAxis": 1,
+                "flipKneeRotationAxis": false
+              }
+            ]
+          }
+        },
+        {
+          "type": "AimLayersComponent",
+          "name": "entity_root_AimLayers",
+          "aimLayers":
+          [
+            {
+              "type": "AimLayerSetup",
+              "name": "entity_root_AimLayers_aimLayers_0",
+              "layerName": "Aim_Head",
+              "yawAnimationState": "HeadAimLayer_Yaw",
+              "yawOutOfRangeBehavior": 2,
+              "yawAngleOffset": 0.0,
+              "pitchAnimationState": "HeadAimLayer_Pitch",
+              "pitchOutOfRangeBehavior": 0,
+              "pitchAngleOffset": 0.0,
+              "aimLocationTrackName": "aim_location",
+              "aimDampingFactor": 0.15,
+              "aimTarget": 2
+            }
+          ]
+        },
+        {
+          "type": "LookAtAnimationControlComponent",
+          "name": "entity_root_LookAtAnimationControl",
+          "controlOverrides":
+          [
+          ],
+          "aimLayerName": "Aim_Head",
+          "blendInTime": 0.25,
+          "blendOutTime": 0.25
+        },
+        {
+          "type": "FidgetAnimationComponent",
+          "name": "entity_root_FidgetAnimation",
+          "neutralSet":
+          {
+            "type": "FidgetAnimationSet",
+            "name": "entity_root_FidgetAnimation_neutralSet",
+            "options":
+            [
+              {
+                "type": "FidgetAnimationOption",
+                "name": "entity_root_FidgetAnimation_neutralSet_options_0",
+                "stateName": "Fidget01",
+                "weight": 1.0,
+                "cooldownMin": 0.0,
+                "cooldownMax": 0.0
+              },
+              {
+                "type": "FidgetAnimationOption",
+                "name": "entity_root_FidgetAnimation_neutralSet_options_1",
+                "stateName": "Fidget02",
+                "weight": 1.0,
+                "cooldownMin": 0.0,
+                "cooldownMax": 0.0
+              }
+            ],
+            "firstFidgetDelayMin": 0.0,
+            "firstFidgetDelayMax": 0.0,
+            "subsequentFidgetDelayMin": 2.0,
+            "subsequentFidgetDelayMax": 10.0
+          },
+          "townNeutralSet":
+          {
+          },
+          "frontendSet":
+          {
+          },
+          "characterSelectSet":
+          {
+          }
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 1770154995,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/character/npc/cain1/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 1079187010,
+      "components":
+      [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/overlays/paladin/aura_fanatic/aura_fanatic.particles",
+          "hardKillOnDestroy": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 1079187010,
+      "components":
+      [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/nickname/particles/cain.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "vfx4294962040_component_transform",
+          "position":
+          {
+            "x": 0.0,
+            "y": 9.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    }
+  ]
+}

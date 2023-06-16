@@ -1,0 +1,195 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [
+      { "path": "data/hd/objects/characters/corpse_2_act_3/model/torso.model" }
+    ],
+    "skeletons": [
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/skeleton/corpse_2_act_3.skeleton"
+      }
+    ],
+    "animations": [],
+    "textures": [
+      { "path": "data/hd/character/common/common_hair1_FLOW.texture" },
+      { "path": "data/hd/character/common/common_hair1_HRT.texture" },
+      { "path": "data/hd/character/common/common_ktint.texture" },
+      {
+        "path": "data/hd/character/npc/act3male/textures/act3male_body_SSS.texture"
+      },
+      {
+        "path": "data/hd/character/npc/act3male/textures/act3male_head1_SSS.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse_2_act3_head_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse_2_act3_head_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse_2_act3_head_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_body_2_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_body_2_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_body_2_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_clothing_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_clothing_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_clothing_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_groundplane_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_groundplane_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_groundplane_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_hair_ALB.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_headband_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_headband_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_headband_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_treestump_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_treestump_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/textures/corpse2_act3_treestump_orm.texture"
+      }
+    ],
+    "physics": [],
+    "json": [
+      {
+        "path": "data/hd/objects/characters/corpse_2_act_3/corpse_2_act_3_state_machine.json"
+      }
+    ],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "corpse_2_act_3",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 3102571216,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/objects/characters/corpse_2_act_3/corpse_2_act_3_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride": {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/characters/corpse_2_act_3/skeleton/corpse_2_act_3.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 3635014493,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/characters/corpse_2_act_3/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "orientation": {
+            "x": 0.0,
+            "y": 0.104528464,
+            "z": 0.0,
+            "w": 0.9945219
+          },
+          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 2.5
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
+  ]
+}

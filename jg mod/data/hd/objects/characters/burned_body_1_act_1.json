@@ -1,0 +1,232 @@
+{
+  "dependencies": {
+    "particles": [
+      {
+        "path": "data/hd/vfx/particles/objects/characters/burned_body_1_act_1/vfx_burned_body1_act1.particles"
+      }
+    ],
+    "models": [
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/model/special1.model"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/model/torso.model"
+      },
+      { "path": "data/hd/vfx/meshes/fx_mesh_polarDiscLump.model" }
+    ],
+    "skeletons": [
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/skeleton/burned_body_1_act_1.skeleton"
+      }
+    ],
+    "animations": [],
+    "textures": [
+      { "path": "data/hd/character/common/common_hair1_FLOW.texture" },
+      { "path": "data/hd/character/common/common_hair1_HRT.texture" },
+      { "path": "data/hd/character/common/common_ktint.texture" },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_arrows_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_arrows_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_arrows_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_ash_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_ash_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_ash_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_body_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_body_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_body_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_hair_ALB.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_head_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_head_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_head_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_outfit_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_outfit_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/textures/burned_body_1_outfit_orm.texture"
+      },
+      { "path": "data/hd/vfx/textures/gradient/T_FX_flame_gradient_02.texture" }
+    ],
+    "physics": [],
+    "json": [
+      {
+        "path": "data/hd/objects/characters/burned_body_1_act_1/burned_body_1_act_1_state_machine.json"
+      }
+    ],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "burned_body_1_act_1",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 4024284447,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/objects/characters/burned_body_1_act_1/burned_body_1_act_1_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride": {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/characters/burned_body_1_act_1/skeleton/burned_body_1_act_1.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 1456676495,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/characters/burned_body_1_act_1/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": true,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
+          "scale": { "x": 1.2, "y": 1.2, "z": 1.2 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special1",
+      "id": 601418199,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_special1",
+          "part": "special1",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_special1",
+          "filename": "data/hd/objects/characters/burned_body_1_act_1/model/special1.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "vfx",
+      "id": 1169150209,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "vfx_VfxDefinition",
+          "filename": "data/hd/vfx/particles/objects/characters/burned_body_1_act_1/vfx_burned_body1_act1.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "vfx_TransformDefinition",
+          "position": { "x": -1.2, "y": 0.15, "z": 0.2 },
+          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
+          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 0.0,
+                    "y": -2.0,
+                    "z": 1.0
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
+  ]
+}

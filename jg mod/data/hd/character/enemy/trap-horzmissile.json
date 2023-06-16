@@ -1,0 +1,225 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/character/enemy/trap-horzmissile/torso.model"
+      }
+    ],
+    "skeletons":
+    [
+      {
+        "path": "data/hd/character/enemy/trap-horzmissile/skeleton/trap-horzmissile.skeleton"
+      }
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+      {
+        "path": "data/hd/character/enemy/trap-horzmissile/trap-horzmissile_state_machine.json"
+      },
+      {
+        "path": "data/hd/missiles/poison_left.json"
+      },
+      {
+        "path": "data/hd/missiles/poison_right.json"
+      },
+      {
+        "path": "data/hd/missiles/poison_smoke_puff.json"
+      },
+      {
+        "path": "data/hd/missiles/poison_sparks.json"
+      },
+      {
+        "path": "data/hd/missiles/skull_right.json"
+      },
+      {
+        "path": "data/hd/missiles/spike_right.json"
+      }
+    ],
+    "variantdata":
+    [
+      {
+        "path": "data/hd/character/enemy/trap-horzmissile/trap-horzmissile_variant.json"
+      }
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "trap-horzmissile",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 3986397603,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/character/enemy/trap-horzmissile/trap-horzmissile_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/character/enemy/trap-horzmissile/skeleton/trap-horzmissile.skeleton"
+        },
+        {
+          "type": "VariantDefinitionComponent",
+          "name": "component_variant",
+          "filename": "data/hd/character/enemy/trap-horzmissile/trap-horzmissile_variant.json"
+        },
+        {
+          "type": "DefinitionPreloadComponent",
+          "name": "Root_DefinitionPreloadComponent",
+          "missiles":
+          [
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry1",
+              "filename": "data/hd/missiles/poison_sparks.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry2",
+              "filename": "data/hd/missiles/skull_right.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry3",
+              "filename": "data/hd/missiles/poison_right.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry4",
+              "filename": "data/hd/missiles/poison_smoke_puff.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry5",
+              "filename": "data/hd/missiles/poison_left.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry6",
+              "filename": "data/hd/missiles/spike_right.json"
+            }
+          ],
+          "overlays":
+          [
+          ],
+          "minions":
+          [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 563531099,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/character/enemy/trap-horzmissile/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_pointlight",
+      "id": 2353308128,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0, //0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PointLightDefinitionComponent",
+          "name": "white_light",
+          "color":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 300.0,
+          "radius": 10.0,
+          "attenuation": 1.0,
+          "lightMask": 1,
+          "diffuseContribution": 1.0,
+          "specularContribution": 1.0,
+          "isLocalLight": false
+        }
+      ]
+    }
+  ]
+}

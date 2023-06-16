@@ -1,0 +1,485 @@
+{
+  "type": "PartyPanel",
+  "name": "PartyPanel",
+  "fields":
+  {
+    "priority": 5,
+    "rect": "$LeftPanelRect",
+    "anchor": "$LeftPanelAnchor",
+    "hostileColor": "$FontColorRed",
+    "yourPartyColor": "$FontColorPartyGreen",
+    "inAnotherPartyColor": "$FontColorPartyOrange",
+    "unpartiedColor": "$FontColorWhite",
+    "nonHardcoreSquelchXPosition": 835,
+    "hardcoreSquelchXPosition": 885,
+    "partyFrameFilename": "PANEL\\Party\\PartyGroupBorder_%dSlots"
+  },
+  "children":
+  [
+    {
+      "type": "ClickCatcherWidget",
+      "name": "click_catcher",
+      "fields":
+      {
+        "rect": "$PanelClickCatcherRect"
+      }
+    },
+    {
+      "type": "GridImageWidget",
+      "name": "PanelBackground",
+      "fields":
+      {
+        "filename": "PANEL\\Party\\Party_BG"
+      }
+    },
+    {
+      "type": "ImageWidget",
+      "name": "LeftHinge",
+      "fields":
+      {
+        "rect": "$LeftHingeRect",
+        "filename": "$LeftHingeSprite"
+      }
+    },
+    {
+      "type": "TextBoxWidget",
+      "name": "Title",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 96,
+          "y": 64,
+          "width": 972,
+          "height": 71
+        },
+        "style": "$StyleTitleBlock",
+        "text": "@PartyScreenTitle"
+      }
+    },
+
+    /* BNET Game information display */
+    {
+      "type": "ImageWidget",
+      "name": "GameInformationBackground",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 230,
+          "y": 176,
+          "width": 292,
+          "height": 30
+        },
+        "filename": "PANEL\\Party\\GameInformationBackground_Bnet"
+      }
+    },
+    {
+      "type": "TextBoxWidget",
+      "name": "GameNameHeadingText",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 266,
+          "y": 164,
+          "width": 292,
+          "height": 30
+        },
+        "text": "@strGameName",
+        "style": "$StylePartyPanelSmallHeading"
+      }
+    },
+    {
+      "type": "TextBoxWidget",
+      "name": "GameNameText",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 276,
+          "y": 216,
+          "width": 274,
+          "height": 36
+        },
+        "text": "?",
+        "style": "$StylePartyPanelGameInfo",
+        "truncateWithEllipsis": true
+      },
+      "children":
+      [
+        {
+          "type": "FocusableWidget",
+          "name": "GameNameTooltip",
+          "fields":
+          {
+            "fitToParent": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "TextBoxWidget",
+      "name": "PasswordHeadingText",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 605,
+          "y": 164,
+          "width": 292,
+          "height": 30
+        },
+        "text": "@strPassword",
+        "style": "$StylePartyPanelSmallHeading"
+      }
+    },
+    {
+      "type": "TextBoxWidget",
+      "name": "PasswordText",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 610,
+          "y": 216,
+          "width": 274,
+          "height": 36
+        },
+        "text": "?",
+        "style": "$StylePartyPanelGameInfo",
+        "truncateWithEllipsis": true
+      },
+      "children":
+      [
+        {
+          "type": "FocusableWidget",
+          "name": "GamePasswordTooltip",
+          "fields":
+          {
+            "fitToParent": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "ButtonWidget",
+      "name": "ShowHidePasswordButton",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 850,
+          "y": 155
+        },
+        "filename": "PANEL\\Party\\EyeBTN",
+        "tooltipString": "@ShowHidePasswordTooltip",
+        "disabledFrame": 2,
+        "hoveredFrame": 3,
+        "onClickMessage": "PartyPanelMessage:ShowPassword"
+      }
+    },
+    {
+      "type": "ButtonWidget",
+      "name": "LeavePartyButton",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 345,
+          "y": 1277
+        },
+        "filename": "PANEL\\Party\\LeavePartyButton",
+        "onClickMessage": "PartyPanelMessage:LeaveParty",
+        "pointSize": "$MediumLargeFontSize",
+        "textColor": "$LightButtonTextColor",
+        "text/style": "$StyleFEButtonText",
+        "textString": "@PartyPanelLeaveButton",
+        "tooltipString": "@strParty24",
+        "disabledFrame": 2,
+        "hoveredFrame": 3
+      }
+    },
+    {
+      "type": "ListWidget",
+      "name": "ListContainer",
+      "fields":
+      {
+        "direction": "vertical",
+        "rect":
+        {
+          "x": 81,
+          "y": 315,
+          "width": 1001,
+          "height": 1078
+        }
+      },
+      "children":
+      [
+        {
+          "type": "ListItemWidget",
+          "name": "FriendsListTemplate",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 0,
+              "y": 0,
+              "width": 996,
+              "height": 130
+            },
+            "focusOnMouseOver": false
+          },
+          "children":
+          [
+            {
+              "type": "ImageWidget",
+              "name": "ListBackground",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 5
+                },
+                "filename": "PANEL\\Party\\CharacterTile"
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "PlayerName",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 108,
+                  "y": 14,
+                  "width": 340,
+                  "height": 46
+                },
+                "style":
+                {
+                  "fontColor": "$FontColorGold",
+                  "pointSize": "$MediumPanelFontSize",//20
+                  "alignment":
+                  {
+                    "h": "left",
+                    "v": "center"
+                  },
+                  "options":
+                  {
+                    "newlineHandling": "standard",
+                    "pipeCharacterBehavior": "handle"
+                  },
+                  "spacing":
+                  {
+                    "leading": 1.0
+                  }
+                },
+                "text": "",
+                "truncateWithEllipsis": true
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "PlayerInfo",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 108,
+                  "y": 62,
+                  "width": 340,
+                  "height": 68
+                },
+                "style":
+                {
+                  "fontColor": "$FontColorGold",
+                  "pointSize":"$SmallPanelFontSize", //18,
+                  "alignment":
+                  {
+                    "h": "left",
+                    "v": "top"
+                  },
+                  "options":
+                  {
+                    "newlineHandling": "standard",
+                    "pipeCharacterBehavior": "handle",
+                    "lineWrap": true
+                  },
+                  "spacing":
+                  {
+                    "leading": 0.95
+                  }
+                },
+                "text": "",
+                "truncateWithEllipsis": true
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "PartyInfoText",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 432,//452,
+                  "y": 10,
+                  "width": 336,//296,
+                  "height": 120
+                },
+                "style":
+                {
+                  "fontColor":
+                  {
+                    "r": 255,
+                    "g": 168,
+                    "b": 0,
+                    "a": 255
+                  },
+                  "alignment":
+                  {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "pointSize": "$SmallPanelFontSize",
+                  "spacing": "$MinimumSpacing",
+                  "options":
+                  {
+                    "newlineHandling": "standard",
+                    "pipeCharacterBehavior": "handle",
+                    "lineWrap": false
+                  }
+                },
+                "truncateWithEllipsis": true,
+                "text": "@Inparty"
+              }
+            },
+            {
+              "type": "ToggleButtonWidget",
+              "name": "LootBodyButton",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 785,
+                  "y": 33
+                },
+                "filename": "PANEL\\Party\\LootBody",
+                "onClickMessage": "PartyPanelMessage:ToggleLootBody",
+                "untoggledFrame": 0,
+                "untoggledPressedFrame": 1,
+                "untoggledDisabledFrame": 2,
+                "untoggledHoveredFrame": 3,
+                "toggledFrame": 4,
+                "toggledPressedFrame": 5,
+                "toggledHoveredFrame": 6
+              }
+            },
+            {
+              "type": "ToggleButtonWidget",
+              "name": "SquelchPlayerButton",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 915,
+                  "y": 33
+                },
+                "filename": "PANEL\\Party\\Squelch",
+                "onClickMessage": "PartyPanelMessage:ToggleSquelchPlayer",
+                "untoggledFrame": 0,
+                "untoggledPressedFrame": 1,
+                "untoggledDisabledFrame": 2,
+                "untoggledHoveredFrame": 3,
+                "toggledFrame": 4,
+                "toggledPressedFrame": 5,
+                "toggledHoveredFrame": 6
+              }
+            },
+            {
+              "type": "ToggleButtonWidget",
+              "name": "HostileButton",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 15,
+                  "y": 33
+                },
+                "filename": "PANEL\\Party\\PVP",
+                "onClickMessage": "PartyPanelMessage:ToggleHostile",
+                "untoggledFrame": 4,
+                "untoggledPressedFrame": 5,
+                "untoggledHoveredFrame": 6,
+                "toggledFrame": 0,
+                "toggledPressedFrame": 1,
+                "toggledHoveredFrame": 3,
+                "disabledTint":
+                [
+                  1.0,
+                  0,
+                  0,
+                  1.0
+                ]
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "InviteButton",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 458,
+                  "y": 29
+                },
+                "filename": "PANEL\\Party\\InviteButton",
+                "onClickMessage": "PartyPanelMessage:ProcessInviteButton",
+                "textColor": "$FontColorWhite",
+                "pointSize": "$SmallPanelFontSize",
+                "hoveredFrame": 3,
+                "text/style":
+                {
+                  "spacing": "$ReducedSpacing"
+                },
+                "textString": "@Invite"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ButtonWidget",
+      "name": "close",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 1075,
+          "y": 9
+        },
+        "filename": "PANEL\\closebtn_4x",
+        "tooltipString": "@strClose",
+        "sound": "cursor_close_window_hd",
+        "hoveredFrame": 3,
+        "onClickMessage": "PartyPanelMessage:Close"
+      }
+    },
+    // Party panel can have up to 3 party groupings (double check this)
+    // Do not change these names, we use them to look up the images for the panel to use
+    {
+      "type": "ImageWidget",
+      "name": "PartyBorder0"
+    },
+    {
+      "type": "ImageWidget",
+      "name": "PartyBorder1"
+    },
+    {
+      "type": "ImageWidget",
+      "name": "PartyBorder2"
+    }
+  ]
+}

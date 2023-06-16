@@ -1,0 +1,173 @@
+{
+  "dependencies": {
+    "particles": [
+      { "path": "data/hd/vfx/particles/objects/waypoint_portals/Waypoint_Fire/vfx_waypoint_Fire.particles" },
+      { "path": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles" },
+      { "path": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles" }
+    ],
+    "models": [
+      { "path": "data/hd/objects/waypoint_portals/waypoint_ice_cave/model/special1.model" },
+      { "path": "data/hd/objects/waypoint_portals/waypoint_ice_cave/model/torso.model" },
+      { "path": "data/hd/vfx/meshes/fx_mesh_fireballVertPaint.model" }
+    ],
+    "skeletons": [{ "path": "data/hd/objects/waypoint_portals/waypoint_ice_cave/skeleton/waypoint_ice_cave.skeleton" }],
+    "animations": [],
+    "textures": [
+      { "path": "data/hd/objects/waypoint_portals/waypoint_ice_cave/texture/waypoint_ice_cave_alb.texture" },
+      { "path": "data/hd/objects/waypoint_portals/waypoint_ice_cave/texture/waypoint_ice_cave_nrm.texture" },
+      { "path": "data/hd/objects/waypoint_portals/waypoint_ice_cave/texture/waypoint_ice_cave_orm.texture" },
+      { "path": "data/hd/vfx/textures/noise/T_FX_perlin_noise_bigger_02.texture" }
+    ],
+    "physics": [],
+    "json": [{ "path": "data/hd/objects/waypoint_portals/waypoint_ice_cave/waypoint_ice_cave_state_machine.json" }],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "waypoint_ice_cave",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 847827782,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/objects/waypoint_portals/waypoint_ice_cave/waypoint_ice_cave_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride": { "x": 0.0, "y": 0.3826834, "z": 0.0, "w": 0.9238795 },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/waypoint_portals/waypoint_ice_cave/skeleton/waypoint_ice_cave.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 2575187382,
+      "components": [
+        { "type": "UnitPartComponent", "name": "component_part_torso", "part": "torso", "variant": "lit" },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/waypoint_portals/waypoint_ice_cave/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special1",
+      "id": 1703086334,
+      "components": [
+        { "type": "UnitPartComponent", "name": "component_part_special1", "part": "special1", "variant": "lit" },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_special1",
+          "filename": "data/hd/objects/waypoint_portals/waypoint_ice_cave/model/special1.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "FireRight",
+      "id": 3936994662,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "FireRight_VfxDefinition",
+          "filename": "data/hd/vfx/particles/objects/waypoint_portals/Waypoint_Fire/vfx_waypoint_Fire.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "FireRight_TransformDefinition",
+          "position": { "x": 1.0, "y": 1.85, "z": -4.0 },
+          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
+          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "FireLeft",
+      "id": 4156821092,
+      "components": [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "FireLeft_VfxDefinition",
+          "filename": "data/hd/vfx/particles/objects/waypoint_portals/Waypoint_Fire/vfx_waypoint_Fire.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "FireLeft_TransformDefinition",
+          "position": { "x": -1.25, "y": 1.85, "z": 4.6 },
+          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
+          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "pf_jg_waypoint",
+      "id": 586091854,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "prefab_TransformDefinitionComponent",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PrefabPlacementDefinitionComponent",
+          "name": "prefab_PrefabPlacementDefinitionComponent",
+          "prefab": "data/hd/env/jg/pf_jg_waypoint.json"
+        }
+      ]
+    }
+  ]
+}

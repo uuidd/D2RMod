@@ -1,0 +1,211 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/model/torso.model"
+      }
+    ],
+    "skeletons":
+    [
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/skeleton/inifuss_tree.skeleton"
+      }
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/env/foliage/global/texture/act2_oasisweeds_alb.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act2_oasisweeds_B.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act2_oasisweeds_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act2_oasisweeds_orm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_wadi_weeds_alb.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_wadi_weeds_b.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_wadi_weeds_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act3_wadi_weeds_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/act1_tree_inifuss_canopy01_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/act1_tree_inifuss_canopy01_b.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/act1_tree_inifuss_canopy01_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/act1_tree_inifuss_canopy01_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/inifuss_tree_a_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/inifuss_tree_a_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/inifuss_tree_a_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/inifuss_tree_b_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/inifuss_tree_b_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/inifuss_tree_b_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/inifuss_tree_c_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/inifuss_tree_c_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/env_wood/inifuss_tree/texture/inifuss_tree_c_orm.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+    ],
+    "variantdata":
+    [
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "inifuss_tree",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 987818672,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/env_wood/inifuss_tree/skeleton/inifuss_tree.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 1843076969,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/env_wood/inifuss_tree/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "ModelPlatformTierComponent",
+          "name": "entity_torso_ModelPlatformTier",
+          "visibilityTier": -1,
+          "shadowTier": 0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "droplight",
+      "id": 9999996974,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "component_transform1",
+          "position":
+          {
+            "x": 0.0,
+            "y": 8.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_vfx_gousemyideaandshareyourfilthymods",
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+          "hardKillOnDestroy": false
+        }
+      ]
+    }
+  ]
+}
