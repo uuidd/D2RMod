@@ -167,7 +167,28 @@ function ModItemOnlyFirst(row, TCName, item1, prob1)
     }
 }
 
-
+function BossQ(row, tcName, actNum, difficulty, abc, prob1, prob2, essence) {
+    ModBossQ(row, tcName, 993, 993, 1024, 1024);
+    ClearItem(row, tcName, 10);
+    if (row['Treasure Class'] === tcName) {
+        if (difficulty === 1){
+            difficulty = '';
+        }else if(difficulty === 2){
+            difficulty = ' (N)';
+        }else if (difficulty === 3){
+            difficulty = ' (H)';
+        }
+        let actDifficulty = actNum + difficulty;
+        row['Item1'] = 'Act ' + actDifficulty + ' Equip ' + abc;
+        row['Prob1'] = prob1;
+        row['Item2'] = 'Act ' + actDifficulty + ' Good';
+        row['Prob2'] = prob2;
+        if (essence !== undefined) {
+            row['Item3'] = essence;
+            row['Prob3'] = 1;
+        }
+    }
+}
 
 treasureclassex.rows.forEach((row) =>
 {
@@ -179,62 +200,65 @@ treasureclassex.rows.forEach((row) =>
             row.Prob3 = Math.floor(row.Prob3 / config.runes_drop);
             if (row.Prob3 < 2) row.Prob3 = 2;
         }
-        if (row.Prob2 == 5170) row.Prob2 = Math.floor(row.Prob2 / config.runes_drop);// 33#符文
+        if (row.Prob2 === 5170) row.Prob2 = Math.floor(row.Prob2 / config.runes_drop);// 33#符文
     }
 
     // 让所有BOSS都是首杀掉率
-    // 原设定首杀时BOSS不会掉金币，但是代码太麻烦了所以不改算了,只改掉率
     ModBossQ(row, 'Andariel', 995, 995, 1024, 1024);
+    ModItem4(row, 'Andariel', 'Act 2 Equip A', 19, 'Act 2 Good', 3,'','','','');
     ModBossQ(row, 'Andariel (N)', 995, 995, 1024, 1024);
+    ModItem4(row, 'Andariel (N)', 'Act 2 (N) Equip A', 19, 'Act 2 (N) Good', 3,'','','','');
     ModBossQ(row, 'Andariel (H)', 995, 995, 1024, 1024);
-
-    ModBossQ(row, 'Duriel - Base', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel - Base Desecrated A', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel - Base Desecrated B', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel - Base Desecrated C', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel (N) - Base', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel (N) - Base Desecrated A', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel (N) - Base Desecrated B', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel (N) - Base Desecrated C', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel (H) - Base', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel (H) - Base Desecrated A', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel (H) - Base Desecrated B', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel (H) - Base Desecrated C', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Duriel (H) - Base Desecrated D', 993, 993, 1024, 1024);
-
-    ModBossQ(row, 'Mephisto', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto Desecrated A', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto Desecrated B', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto Desecrated C', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto (N)', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto (N) Desecrated A', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto (N) Desecrated B', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto (N) Desecrated C', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto (H)', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto Item (H) Desecrated A', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto Item (H) Desecrated B', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto Item (H) Desecrated C', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Mephisto Item (H) Desecrated D', 993, 993, 1024, 1024);
+    ModItem4(row, 'Andariel (H)', 'Act 2 (H) Equip A', 19, 'Act 2 (H) Good', 3,'tes','1','','');
 
 
-    ModBossQ(row, 'Diablo', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Diablo Desecrated A', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Diablo Desecrated B', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Diablo (N)', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Diablo (N) Desecrated A', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Diablo (N) Desecrated B', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Diablo (N) Desecrated C', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Diablo (H)', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Diablo Item (H) Desecrated A', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Diablo Item (H) Desecrated B', 993, 993, 1024, 1024);
+    BossQ(row, 'Duriel - Base',3, 1, 'A',19, 3);
+    BossQ(row, 'Duriel - Base Desecrated A',3, 1, 'B',19, 3);
+    BossQ(row, 'Duriel - Base Desecrated B',5, 1, 'B',19, 3);
+    BossQ(row, 'Duriel - Base Desecrated C',3, 2,'A', 19, 3);
+    BossQ(row, 'Duriel (N) - Base', 3, 2, 'A',19, 3);
+    BossQ(row, 'Duriel (N) - Base Desecrated A', 4, 2, 'A',19, 3);
+    BossQ(row, 'Duriel (N) - Base Desecrated B', 5, 2, 'B',19, 3);
+    BossQ(row, 'Duriel (N) - Base Desecrated C', 3, 3, 'A',19, 3);
+    BossQ(row, 'Duriel (H) - Base', 3, 3, 'A',19, 3, 'tes');
+    BossQ(row, 'Duriel (H) - Base Desecrated A', 4, 3, 'B',19, 3, 'tes');
+    BossQ(row, 'Duriel (H) - Base Desecrated B', 5, 3, 'A',19, 3, 'tes');
+    BossQ(row, 'Duriel (H) - Base Desecrated C', 5, 3, 'B',19, 3, 'tes');
+    BossQ(row, 'Duriel (H) - Base Desecrated D', 5, 3, 'C',19, 3, 'tes');
+
+    BossQ(row, 'Mephisto', 4, 1, 'A',52, 3);
+    BossQ(row, 'Mephisto Desecrated A', 4, 1, 'A',52, 3);
+    BossQ(row, 'Mephisto Desecrated B', 5, 1, 'C',52, 3);
+    BossQ(row, 'Mephisto Desecrated C', 3, 2, 'A',52, 3);
+    BossQ(row, 'Mephisto (N)', 4, 2, 'A',52, 3);
+    BossQ(row, 'Mephisto (N) Desecrated A', 4, 2, 'B',52, 3);
+    BossQ(row, 'Mephisto (N) Desecrated B', 5, 2, 'C',52, 3);
+    BossQ(row, 'Mephisto (N) Desecrated C', 3, 3, 'A',52, 3);
+    BossQ(row, 'Mephisto (H)', 4, 3, 'A',52, 3,'ceh');
+    BossQ(row, 'Mephisto Item (H) Desecrated A', 4, 3, 'B',52, 3,'ceh');
+    BossQ(row, 'Mephisto Item (H) Desecrated B', 5, 3, 'A',52, 3,'ceh');
+    BossQ(row, 'Mephisto Item (H) Desecrated C', 5, 3, 'B',52, 3,'ceh');
+    BossQ(row, 'Mephisto Item (H) Desecrated D', 5, 3, 'C',52, 3,'ceh');
 
 
-    ModBossQ(row, 'Baal', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Baal Desecrated', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Baal (N)', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Baal (N) Desecrated', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Baal (H)', 993, 993, 1024, 1024);
-    ModBossQ(row, 'Baal Item (H) Desecrated', 993, 993, 1024, 1024);
+    BossQ(row, 'Diablo', 5, 1, 'A', 52, 3);
+    BossQ(row, 'Diablo Desecrated A', 1, 2, 'A', 52, 3);
+    BossQ(row, 'Diablo Desecrated B', 3, 2, 'A', 52, 3);
+    BossQ(row, 'Diablo (N)', 5, 2, 'A', 52, 3);
+    BossQ(row, 'Diablo (N) Desecrated A', 5, 2, 'A', 52, 3);
+    BossQ(row, 'Diablo (N) Desecrated B', 1, 3, 'A', 52, 3);
+    BossQ(row, 'Diablo (N) Desecrated C', 3, 3, 'A', 52, 3);
+    BossQ(row, 'Diablo (H)', 5, 3, 'A', 52, 3, 'bet');
+    BossQ(row, 'Diablo Item (H) Desecrated A', 5, 3, 'B', 52, 3, 'bet');
+    BossQ(row, 'Diablo Item (H) Desecrated B', 5, 3, 'C', 52, 3, 'bet');
+
+
+    BossQ(row, 'Baal', 1, 2, 'A', 52, 3);
+    BossQ(row, 'Baal Desecrated', 3, 2, 'A', 52, 3);
+    BossQ(row, 'Baal (N)', 1, 3, 'A', 52, 3);
+    BossQ(row, 'Baal (N) Desecrated', 3, 3, 'A', 52, 3);
+    BossQ(row, 'Baal (H)', 5, 3, 'B', 52, 3,'fed');
+    BossQ(row, 'Baal Item (H) Desecrated', 5, 3, 'C', 52, 3,'fed');
 
     // 禁止BOSS掉落精华
     if (config.disdrop_bosstoken)
@@ -433,10 +457,10 @@ itemratio.rows.forEach((row) =>
     row.Set = Math.floor(row.Set / config.set_drop);
     row.Magic = Math.floor(row.Magic / config.mag_drop);
     row.HiQuality = Math.floor(row.HiQuality / config.hiq_drop);
-    if (row.Unique == 0) row.Unique = 1;
-    if (row.Rare == 0) row.Rare = 1;
-    if (row.Set == 0) row.Set = 1;
-    if (row.Magic == 0) row.Magic = 1;
-    if (row.HiQuality == 0) row.HiQuality = 1;
+    if (row.Unique === 0) row.Unique = 1;
+    if (row.Rare === 0) row.Rare = 1;
+    if (row.Set === 0) row.Set = 1;
+    if (row.Magic === 0) row.Magic = 1;
+    if (row.HiQuality === 0) row.HiQuality = 1;
 });
 D2RMM.writeTsv(itemratioFilename, itemratio);
