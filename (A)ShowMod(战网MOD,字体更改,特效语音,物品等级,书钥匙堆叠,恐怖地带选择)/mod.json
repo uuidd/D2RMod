@@ -1,159 +1,111 @@
 {
-    "name": "Show Mod(战网MOD,字体更改,特效语音,物品等级,书钥匙堆叠,恐怖地带选择)",
-    "description": "战网MOD包含变量吐槽光柱音效帮助,战斗命令等16种特效结束语音,恐怖地带循环场景更改.(Show Mod的加载顺序必须为最上方不要随意更改)",
-    "author": "lil174",
-    "website": "https://bbs.d.163.com/forum.php?mod=forumdisplay&fid=458&filter=typeid&typeid=1463",
-    "version": "1.5",
-    "config": [
+  "name": "Show Mod(战网MOD,字体更改,特效语音,物品等级,书钥匙堆叠)",
+  "description": "战网MOD包含变量吐槽光柱音效帮助,战斗命令等16种特效结束语音,.(Show Mod的加载顺序必须为最上方不要随意更改)",
+  "author": "lil174",
+  "website": "https://bbs.d.163.com/forum.php?mod=forumdisplay&fid=458&filter=typeid&typeid=1463",
+  "version": "1.5",
+  "config": [
+    {
+      "id": "talk_mod_select",
+      "type": "select",
+      "name": "选择战网MOD",
+      "description": "变量吐槽光柱音效帮助信息",
+      "defaultValue": "mod_def",
+      "options": [
         {
-            "id": "talk_mod_select",
-            "type": "select",
-            "name": "选择战网MOD",
-            "description": "变量吐槽光柱音效帮助信息",
-            "defaultValue": "mod_def",
-            "options": [
-                {
-                    "value": "mod_def",
-                    "label": "官方默认无吐槽",
-                    "description": "游戏默认"
-                },
-                {
-                    "value": "mod_wing",
-                    "label": "WingMod 1.12.0"
-                },
-                {
-                    "value": "mod_yte",
-                    "label": "YteMod 2.10"
-                }
-            ]
+          "value": "mod_def",
+          "label": "官方默认无吐槽",
+          "description": "游戏默认"
         },
         {
-            "id": "fonts_select",
-            "type": "select",
-            "name": "选择字体(繁体)",
-            "description": "不支持YteMod,字体预览请查看文件夹",
-            "defaultValue": "mod_def",
-            "options": [
-                {
-                    "value": "mod_def",
-                    "label": "官方字体",
-                    "description": "ytemod则为自带字体"
-                },
-                {
-                    "value": "mod_1",
-                    "label": "D2r繁体客户端隶书字体"
-                },
-                {
-                    "value": "mod_2",
-                    "label": "MElleHK-蒙娜繁雅丽"
-                },
-                {
-                    "value": "mod_3",
-                    "label": "方正准雅宋"
-                },
-                {
-                    "value": "mod_4",
-                    "label": "古印-暗黑3字体"
-                },
-                {
-                    "value": "mod_5",
-                    "label": "汉仪极隶"
-                }
-            ]
+          "value": "mod_wing",
+          "label": "WingMod 1.12.0"
         },
         {
-            "id": "jgmod_help",
-            "type": "checkbox",
-            "name": "jgmod的帮助面板",
-            "description": "不支持YteMod,jgmod帮助面板有FCR等更多资料查询",
-            "defaultValue": false
-        },
-        {
-            "id": "jgmod_color",
-            "type": "checkbox",
-            "name": "jgmod的彩色词缀",
-            "description": "采用jgmod的彩色词缀区分影响角色佣兵面板与装备属性",
-            "defaultValue": false
-        },
-        {
-            "id": "skillOff_sound",
-            "type": "checkbox",
-            "name": "Buff技能结束后的语音提示",
-            "description": "包括战斗命令,战斗指挥,速度爆发,影散,骸骨护甲等16种buff结束时的提示语音",
-            "defaultValue": false
-        },
-        {
-            "id": "Show_level",
-            "type": "checkbox",
-            "name": "显示物品等级",
-            "description": "显示武器护甲项链戒指珠宝板子的等级",
-            "defaultValue": false
-        },
-        {
-            "id": "tomes_stacks",
-            "type": "number",
-            "name": "书堆叠大小",
-            "description": "城镇书/辨识书(限制20-500)",
-            "defaultValue": 20,
-            "minValue": 20,
-            "maxValue": 500
-        },
-        {
-            "id": "keys_stacks",
-            "type": "number",
-            "name": "钥匙堆叠大小",
-            "description": "宝箱钥匙(限制12-500)",
-            "defaultValue": 12,
-            "minValue": 12,
-            "maxValue": 500
-        },
-        {
-            "id": "zone_select",
-            "type": "select",
-            "name": "选择恐怖地带的循环方式",
-            "description": "刷图场景详情请查看文件说明",
-            "defaultValue": "mod_def",
-            "options": [
-                {
-                    "value": "mod_def",
-                    "label": "官方默认循环方式",
-                    "description": "游戏默认"
-                },
-                {
-                    "value": "mod_all_map",
-                    "label": "流畅刷图循环方式",
-                    "description": "比官方图更多更流畅"
-                },
-                {
-                    "value": "mod_all_ActMap",
-                    "label": "全章节刷图循环方式",
-                    "description": "整个章节的全连续图"
-                },
-                {
-                    "value": "mod_4_map",
-                    "label": "只刷热门4图(牛场,塔墓,魔殿,王座)"
-                },
-                {
-                    "value": "mod_only_a1",
-                    "label": "只刷牛场"
-                },
-                {
-                    "value": "mod_only_a2",
-                    "label": "只刷塔拉夏古墓"
-                },
-                {
-                    "value": "mod_only_a3",
-                    "label": "只刷崔凡克+劳模"
-                },
-                {
-                    "value": "mod_only_a4",
-                    "label": "只刷混沌避难所"
-                },
-                {
-                    "value": "mod_only_a5",
-                    "label": "只刷世界之石王座"
-                }
-            ]
+          "value": "mod_yte",
+          "label": "YteMod 2.10"
         }
-    ]
+      ]
+    },
+    {
+      "id": "fonts_select",
+      "type": "select",
+      "name": "选择字体(繁体)",
+      "description": "不支持YteMod,字体预览请查看文件夹",
+      "defaultValue": "mod_def",
+      "options": [
+        {
+          "value": "mod_def",
+          "label": "官方字体",
+          "description": "ytemod则为自带字体"
+        },
+        {
+          "value": "mod_1",
+          "label": "D2r繁体客户端隶书字体"
+        },
+        {
+          "value": "mod_2",
+          "label": "MElleHK-蒙娜繁雅丽"
+        },
+        {
+          "value": "mod_3",
+          "label": "方正准雅宋"
+        },
+        {
+          "value": "mod_4",
+          "label": "古印-暗黑3字体"
+        },
+        {
+          "value": "mod_5",
+          "label": "汉仪极隶"
+        }
+      ]
+    },
+    {
+      "id": "jgmod_help",
+      "type": "checkbox",
+      "name": "jgmod的帮助面板",
+      "description": "不支持YteMod,jgmod帮助面板有FCR等更多资料查询",
+      "defaultValue": false
+    },
+    {
+      "id": "jgmod_color",
+      "type": "checkbox",
+      "name": "jgmod的彩色词缀",
+      "description": "采用jgmod的彩色词缀区分影响角色佣兵面板与装备属性",
+      "defaultValue": false
+    },
+    {
+      "id": "skillOff_sound",
+      "type": "checkbox",
+      "name": "Buff技能结束后的语音提示",
+      "description": "包括战斗命令,战斗指挥,速度爆发,影散,骸骨护甲等16种buff结束时的提示语音",
+      "defaultValue": false
+    },
+    {
+      "id": "Show_level",
+      "type": "checkbox",
+      "name": "显示物品等级",
+      "description": "显示武器护甲项链戒指珠宝板子的等级",
+      "defaultValue": false
+    },
+    {
+      "id": "tomes_stacks",
+      "type": "number",
+      "name": "书堆叠大小",
+      "description": "城镇书/辨识书(限制20-500)",
+      "defaultValue": 20,
+      "minValue": 20,
+      "maxValue": 500
+    },
+    {
+      "id": "keys_stacks",
+      "type": "number",
+      "name": "钥匙堆叠大小",
+      "description": "宝箱钥匙(限制12-500)",
+      "defaultValue": 12,
+      "minValue": 12,
+      "maxValue": 500
+    }
+  ]
 }
