@@ -46,7 +46,6 @@ D2RMM.writeJson(profileLVFilename, profileLV);
 const bankOriginalLayoutFilename =
   'global\\ui\\layouts\\bankoriginallayout.json';
 const bankOriginalLayout = D2RMM.readJson(bankOriginalLayoutFilename);
-// TODO: new sprite & layout for classic UI
 bankOriginalLayout.children.forEach((child) => {
   if (child.name === 'grid') {
     child.fields.cellCount.x = 16;
