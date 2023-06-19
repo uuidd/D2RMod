@@ -1,0 +1,88 @@
+{
+  "name": "(N)死亡经验惩罚,体力消耗,出生送东西,法力恢复,技能城镇施放,书钥匙堆叠",
+  "description": "高难度不掉经验,角色跑步体力消耗,创建新角色送东西,法力恢复加快，技能能在城镇施放,书钥匙堆叠",
+  "author": "lil174 & Demo",
+  "version": "1.1",
+  "config": [
+    {
+      "id": "exp_noPunDeah",
+      "type": "checkbox",
+      "name": "高难度死亡不掉落经验",
+      "description": "游戏原设定为死亡时普通不掉经验,恶梦掉落5%经验,地狱掉落10%经验(也就是1格经验)",
+      "defaultValue": false
+    },
+    {
+      "id": "run_drain",
+      "type": "number",
+      "name": "跑步的体力消耗倍率",
+      "description": "1=正常,<1=消耗更慢,0=不消耗,限制0-1",
+      "defaultValue": 1,
+      "minValue": 0,
+      "maxValue": 1
+    },
+    {
+      "id": "replace_tsc_isc",
+      "type": "checkbox",
+      "name": "替换出生时的卷轴为书",
+      "description": "替换原来出生送的2个回城和辩识卷轴为书,默认数量塞满.",
+      "defaultValue": false
+    },
+    {
+      "id": "create_box",
+      "type": "checkbox",
+      "name": "出生时送赫拉迪方块",
+      "description": "出生时送赫拉迪方块.",
+      "defaultValue": false
+    },
+    {
+      "id": "manaRegen",
+      "type": "number",
+      "name": "增加法力恢复速度",
+      "description": "120=默认值。数字越低，法力恢复越快。",
+      "defaultValue": 120,
+      "minValue": 0
+    },
+    {
+      "id": "skillTown",
+      "type": "select",
+      "name": "技能在城镇中施放",
+      "description": "技能在城镇中施放.",
+      "defaultValue": "sillDef",
+      "options": [
+        {
+          "value": "sillDef",
+          "label": "游戏默认",
+          "description": "游戏默认"
+        },
+        {
+          "value": "allSkill",
+          "label": "允许在城镇中使用所有技能",
+          "description": "允许在城镇中使用所有技能"
+        },
+        {
+          "value": "partSkill",
+          "label": "只允许额外的移动和增益技能",
+          "description": "只允许额外的移动和增益技能"
+        }
+      ]
+    },
+    {
+      "id": "tomes_stacks",
+      "type": "number",
+      "name": "书堆叠大小",
+      "description": "城镇书/辨识书(限制20-500)",
+      "defaultValue": 20,
+      "minValue": 20,
+      "maxValue": 500
+    },
+    {
+      "id": "keys_stacks",
+      "type": "number",
+      "name": "钥匙堆叠大小",
+      "description": "宝箱钥匙(限制12-500)",
+      "defaultValue": 12,
+      "minValue": 12,
+      "maxValue": 500
+    }
+  ]
+}

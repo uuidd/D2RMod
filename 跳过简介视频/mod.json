@@ -1,7 +1,0 @@
-{
-  "name": "跳过简介视频",
-  "description": "启动D2R时跳过介绍视频，将其替换为空文件。",
-  "author": "olegbl",
-  "website": "https://github.com/olegbl/d2rmm.mods",
-  "version": "1.0"
-}

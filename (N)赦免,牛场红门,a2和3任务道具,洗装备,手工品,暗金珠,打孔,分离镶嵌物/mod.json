@@ -1,0 +1,135 @@
+{
+  "name": "(N)赦免,牛场红门,a2和3任务道具,洗装备,手工品,暗金珠,打孔,分离镶嵌物",
+  "description": "盒子合成配方改良。",
+  "author": "Demo",
+  "website": "https://bbs.d.163.com/forum.php?mod=viewthread&tid=174903947&extra=",
+  "version": "1.3",
+  "config": [
+    {
+      "id": "easierToken",
+      "type": "checkbox",
+      "name": "鉴定卷轴+回城卷轴=赦免徽章",
+      "description": "使用Tome of Identify和Tome of Town Portal，可以添加更简单的“赦免令牌”配方。",
+      "defaultValue": true
+    },
+    {
+      "id": "easierRunes",
+      "type": "checkbox",
+      "name": "符文配方中删除宝石要求",
+      "description": "启用以从符文配方中删除宝石要求。",
+      "defaultValue": true
+    },
+    {
+      "id": "easierCowPortal",
+      "type": "checkbox",
+      "name": "鉴定书+回城书=奶牛关",
+      "description": "启用以使奶牛级门户配方使用标识和城镇门户的卷轴。",
+      "defaultValue": true
+    },
+    {
+      "id": "convertPandemoniumKeys",
+      "type": "checkbox",
+      "name": "a1/a2钥匙互转",
+      "description": "启用添加一个配方来转换钥匙（恐怖->仇恨->毁灭->恐怖）。",
+      "defaultValue": true
+    },
+    {
+      "id": "easierRollMagicItem",
+      "type": "checkbox",
+      "name": "使用大紫/任意宝石洗蓝色装备",
+      "description": "使用大紫/任意宝石洗蓝色装备，洗板子或者偏向盾血甲",
+      "defaultValue": true
+    },
+    {
+      "id": "easierRollRareItem",
+      "type": "checkbox",
+      "name": "使用大紫/任意宝石洗金色装备",
+      "description": "使用大紫/任意宝石洗金色装备",
+      "defaultValue": true
+    },
+    {
+      "id": "easierDestruction",
+      "type": "checkbox",
+      "name": "A1/A2精华+A3精华+A4精华=A5精华",
+      "description": "扭曲的苦难精华（蓝色精华）+充能的仇恨精华（黄色精华）+恐怖燃烧精华（红色精华）= 毁灭的溃烂精华（绿色精华）",
+      "defaultValue": true
+    },
+    {
+      "id": "releasePerfectGem",
+      "type": "checkbox",
+      "name": "一个完美宝石=三个无暇同色宝石",
+      "description": "一个完美宝石=三个无暇同色宝石",
+      "defaultValue": true
+    },
+    {
+      "id": "easierEssence",
+      "type": "checkbox",
+      "name": "转换精华类型",
+      "description": "扭曲的苦难精华（蓝色精华）-> 充能的仇恨精华（黄色精华）-> 恐怖燃烧精华（红色精华）-> 毁灭的溃烂精华（绿色精华）-> 扭曲的苦难精华（蓝色精华）",
+      "defaultValue": true
+    },
+    {
+      "id": "easierManual",
+      "type": "checkbox",
+      "name": "简单手工品",
+      "description": "蓝色装备 + 无暇宝石(不分颜色) + 任意符文或珠宝 + 药水 = 对应类型手工品，药水指红药=红PG/蓝药=紫PG/融冰=蓝PG/解毒=绿PG药剂，",
+      "defaultValue": true
+    },
+    {
+      "id": "easierEthereal",
+      "type": "checkbox",
+      "name": "使用英雄旗帜(火炬副产品)物品变成无形",
+      "description": "使用英雄旗帜(火炬副产品)物品变成无形",
+      "defaultValue": true
+    },
+    {
+      "id": "easierReduce",
+      "type": "checkbox",
+      "name": "符文降级",
+      "description": "符文降级",
+      "defaultValue": true
+    },
+    {
+      "id": "genJew",
+      "type": "checkbox",
+      "name": "宝石合珠宝",
+      "description": "宝石合珠宝",
+      "defaultValue": true
+    },
+    {
+      "id": "genUniqueJew",
+      "type": "checkbox",
+      "name": "暗金破免板合成暗金宝珠",
+      "description": "暗金破免板合成暗金宝珠",
+      "defaultValue": true
+    },
+    {
+      "id": "a2task_item",
+      "type": "checkbox",
+      "name": "回城书 + 6大紫 = 国王之杖",
+      "description": "A2任务道具合成公式,不替换原有公式",
+      "defaultValue": true
+    },
+    {
+      "id": "a3task_item",
+      "type": "checkbox",
+      "name": "回城书 + 3大紫 = 克林姆的遗愿",
+      "description": "A3任务道具合成公式,不替换原有公式",
+      "defaultValue": true
+    },
+    {
+      "id": "socket",
+      "type": "checkbox",
+      "name": "使用珠宝打孔",
+      "description": "通过将一个有镶嵌物的物品与1-6颗珠宝一起转化。",
+      "defaultValue": true
+    },
+    {
+      "id": "unsocket",
+      "type": "checkbox",
+      "name": "分离镶嵌物",
+      "description": "允许通过将已有镶嵌物的物品与珠宝一起转化来分离物品与镶嵌物。",
+      "defaultValue": true
+    }
+  ]
+}

@@ -1,8 +1,3 @@
-D2RMM.copyFile(
-  'hd', // <mod folder>\hd
-  'hd', // <diablo 2 folder>\mods\<modname>\<modname>.mpq\data\hd
-  true // overwrite any conflicts
-);
 // 地图的编号请参考levels.txt文件
 switch (config.zone_select) {
   case 'mod_all_map':

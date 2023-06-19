@@ -1,0 +1,34 @@
+{
+  "name": "(ZN)显示物品掉落等级,书钥匙堆叠",
+  "description": "(ZN)显示物品掉落等级,书钥匙堆叠",
+  "author": "lil174",
+  "website": "https://bbs.d.163.com/forum.php?mod=forumdisplay&fid=458&filter=typeid&typeid=1463",
+  "version": "1.5",
+  "config": [
+    {
+      "id": "Show_level",
+      "type": "checkbox",
+      "name": "显示物品等级",
+      "description": "显示武器护甲项链戒指珠宝板子的等级",
+      "defaultValue": false
+    },
+    {
+      "id": "tomes_stacks",
+      "type": "number",
+      "name": "书堆叠大小",
+      "description": "城镇书/辨识书(限制20-500)",
+      "defaultValue": 20,
+      "minValue": 20,
+      "maxValue": 500
+    },
+    {
+      "id": "keys_stacks",
+      "type": "number",
+      "name": "钥匙堆叠大小",
+      "description": "宝箱钥匙(限制12-500)",
+      "defaultValue": 12,
+      "minValue": 12,
+      "maxValue": 500
+    }
+  ]
+}
