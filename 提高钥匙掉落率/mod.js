@@ -13,13 +13,13 @@ function MultiplyProb(row, item) {
 treasureclassex.rows.forEach((row) => {
   const treasureClass = row['Treasure Class'];
 
-  if (treasureClass === 'Countess Item (H)')
+  if (treasureClass.includes('Countess Item (H)'))
     MultiplyProb(row, 'pk1')
 
-  if (treasureClass === 'Summoner (H)')
+  if (treasureClass === 'Summoner (H)' || treasureClass.includes('Summoner Item (H)'))
     MultiplyProb(row, 'pk2')
 
-  if (treasureClass === 'Nihlathak (H)')
+  if (treasureClass === 'Nihlathak (H)' || treasureClass.includes('Nihlathak Item (H)'))
     MultiplyProb(row, 'pk3')
 });
 D2RMM.writeTsv(treasureclassexFilename, treasureclassex);

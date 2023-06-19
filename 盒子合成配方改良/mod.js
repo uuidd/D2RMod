@@ -651,7 +651,7 @@ if (config.easierGloves) {
 
 if (config.easierEthereal) {
   cubemain.rows.push({
-    description: "armo uni -> armo uni ethereal",
+    description: "1 armo uni + 1 flag -> armo uni ethereal",
     enabled: 1,
     version: 100,
     numinputs: 2,
@@ -664,7 +664,7 @@ if (config.easierEthereal) {
     "*eol\r": 0,
   });
   cubemain.rows.push({
-    description: "weap uni -> weap uni ethereal",
+    description: "1 weap uni + 1 flag -> weap uni ethereal",
     enabled: 1,
     version: 100,
     numinputs: 2,
@@ -677,7 +677,7 @@ if (config.easierEthereal) {
     "*eol\r": 0,
   });
   cubemain.rows.push({
-    description: "armo hiq -> armo hiq ethereal",
+    description: "1 armo hiq + 1 flag -> armo hiq ethereal",
     enabled: 1,
     version: 100,
     numinputs: 2,
@@ -690,7 +690,7 @@ if (config.easierEthereal) {
     "*eol\r": 0,
   });
   cubemain.rows.push({
-    description: "weap hiq -> weap hiq ethereal",
+    description: "1 weap hiq + 1 flag -> weap hiq ethereal",
     enabled: 1,
     version: 100,
     numinputs: 2,
@@ -723,22 +723,65 @@ if (config.easierReduce) {
 
 if (config.genJew) {
   let recipe = {
-    description: '3 gem4 -> 1 jew',
+    description: '2 gem4 -> 1 jew',
     enabled: 1,
     version: 100,
-    numinputs: 3,
-    "input 1": 'gem4,qty=3',
+    numinputs: 2,
+    "input 1": 'gem4,qty=2',
     output: 'jew',
+    lvl: 100,
     "*eol\r": 0,
   };
   cubemain.rows.push(recipe);
 }
+
+if (config.genUniqueJew) {
+  let recipe1 = {
+    description: '1 Unique GC + 1 jew -> 1 unique jew',
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": 'jew,any',
+    "input 2": 'cm3,uni',
+    output: 'jew,uni',
+    lvl: 100,
+    "*eol\r": 0,
+  };
+  let recipe2 = {
+    description: '1 unique jew + 3 gem4 -> new 1 unique jew',
+    enabled: 1,
+    version: 100,
+    numinputs: 4,
+    "input 1": 'jew,uni',
+    "input 2": 'gem4,qty=3',
+    output: 'Rainbow Facet',
+    "*eol\r": 0,
+  };
+  cubemain.rows.push(recipe1);
+  cubemain.rows.push(recipe2);
+}
+
+if (config.rollHellfire) {
+  let recipe1 = {
+    description: '1 Hellfire Torch + 3 gem4 -> new 1 Hellfire Torch',
+    enabled: 1,
+    version: 100,
+    numinputs: 4,
+    "input 1": 'cm2,uni',
+    "input 2": 'gem4,qty=3',
+    output: 'usetype,uni',
+    lvl: 100,
+    "*eol\r": 0,
+  };
+  cubemain.rows.push(recipe1);
+}
+
 D2RMM.writeTsv(cubemainFilename, cubemain);
 
 const monstatsFilename = "global\\excel\\monstats.txt";
 const monstats = D2RMM.readTsv(monstatsFilename);
 
-if (config.levelingMultiplier != 100) {
+if (config.levelingMultiplier !== 100) {
   monstats.rows.forEach((row) => {
     if (row.Exp) {
       row["Exp"] = Math.floor(row["Exp"] * (config.levelingMultiplier / 100));
@@ -758,7 +801,7 @@ charstats.rows.forEach((row) => {
     row.ManaRegen = config.manaRegen;
 
     if (config.cubeStart) {
-      if (row.item5 == 0) {
+      if (row.item5 === 0) {
         row.item5 = "box";
         row.item5count = 1;
       } else {

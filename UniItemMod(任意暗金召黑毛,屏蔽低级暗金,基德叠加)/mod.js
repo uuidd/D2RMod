@@ -3,7 +3,7 @@ const uniqueitems = D2RMM.readTsv(uniqueitemsFilename);
 
 function DisUniItem(row, isDis, id)
 {
-    if (isDis && row[`*ID`] == id)
+    if (isDis && row[`*ID`] === id)
     {
         row['enabled'] = 0;
     }
@@ -20,7 +20,7 @@ uniqueitems.rows.forEach((row) =>
     // 基德板能带多个
     if (config.gheed_add)
     {
-        if (row[`*ID`] == 359)
+        if (row[`*ID`] === 359)
         {
             row['carry1'] = '';
         }

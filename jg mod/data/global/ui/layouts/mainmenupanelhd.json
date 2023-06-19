@@ -436,6 +436,39 @@
         "activateOnMessage": "CharacterSelect:SelectAct:Act5"
       }
     },
+    //jg 速刷按钮开始 如果不想显示这个按钮请删除开始和结束之间的代码
+    {
+      "type": "ButtonWidget",
+      "name": "Hell",
+      "fields":
+      {
+        "rect":
+        {
+          "x": -700,
+          "y": 300, //jg 直接修改这个数字来上下移动按钮，越大按钮越往下，设置个1600试试
+          "width": 1400,
+          "height": 1400
+        },
+        "anchor":
+        {
+          "x": 0.5
+        },
+        //"filename": "FrontEnd/HD/Final/FrontEnd_ButtonMed",
+        //"hoveredFrame": 3,
+        //"focusIndicatorFilename": "Controller/HoverImages/FrontEndButtonMed",
+        //"focusIndicatorOffset":
+        //{
+        //  "x": 0,
+        //  "y": 0
+        //},
+        //"textString": "速刷",
+        "tooltipString": "",
+        "onClickMessage": "CharacterSelect:LoadCharacter:2",
+        "textColor": "$LightButtonTextColor",
+        "text/style": "$StyleFEButtonText"
+      }
+    },
+    //jg 速刷按钮结束
     {
       "type": "ButtonWidget",
       "name": "QuickPlayButton",

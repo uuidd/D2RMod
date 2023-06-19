@@ -1,0 +1,1835 @@
+{
+    "name": "UniItem Mod(任意暗金召黑毛,屏蔽低级暗金,基德叠加)",
+    "description": "任意暗金召黑毛,基德板叠加赌博,屏蔽低级暗金,0~128为非资普通级暗金,129~246为扩展级暗金,以及一些共用底材的暗金",
+    "author": "lil174",
+    "version": "1.1",
+    "config": [
+        {
+            "id": "sell_superdia",
+            "type": "checkbox",
+            "name": "出售任意暗金装备即可召唤黑毛",
+            "description": "官方原设定为出售1个乔丹之石暗金戒指",
+            "defaultValue": false
+        },
+        {
+            "id": "gheed_add",
+            "type": "checkbox",
+            "name": "359-基德板能携带多个",
+            "description": "主要是为了减少赌博价格,别以为价格能减成0,官方是做了限制的",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_0",
+            "type": "checkbox",
+            "name": "0-噬咬者(屏蔽)(20小)",
+            "description": "(The Gnasher)手斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_1",
+            "type": "checkbox",
+            "name": "1-死亡之鏟(屏蔽)",
+            "description": "(Deathspade)斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_2",
+            "type": "checkbox",
+            "name": "2-肩胛骨(屏蔽)",
+            "description": "(Bladebone)雙刃斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_3",
+            "type": "checkbox",
+            "name": "3-劈顱斧(屏蔽)",
+            "description": "(Mindrend)軍用鎬",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_4",
+            "type": "checkbox",
+            "name": "4-耙痕(屏蔽)",
+            "description": "(Rakescar)征戰斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_5",
+            "type": "checkbox",
+            "name": "5-費屈瑪之斧(屏蔽)",
+            "description": "(Fechmars Axe)重斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_6",
+            "type": "checkbox",
+            "name": "6-血鍬(屏蔽)",
+            "description": "(Goreshovel)闊斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_7",
+            "type": "checkbox",
+            "name": "7-酋長(屏蔽)",
+            "description": "(The Chieftan)戰斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_8",
+            "type": "checkbox",
+            "name": "8-劈腦(屏蔽)",
+            "description": "(Brainhew)巨斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_9",
+            "type": "checkbox",
+            "name": "9-巨無霸(屏蔽)",
+            "description": "(The Humongous)巨人斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_10",
+            "type": "checkbox",
+            "name": "10-伊洛的火炬(屏蔽)(20小)",
+            "description": "(Iros Torch)魔杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_11",
+            "type": "checkbox",
+            "name": "11-漩渦(屏蔽)",
+            "description": "(Maelstromwrath)紫杉魔杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_12",
+            "type": "checkbox",
+            "name": "12-墓穴之脊(屏蔽)",
+            "description": "(Gravenspine)骸骨魔杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_13",
+            "type": "checkbox",
+            "name": "13-梅花嘆(屏蔽)",
+            "description": "(Umes Lament)陰森魔杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_14",
+            "type": "checkbox",
+            "name": "14-魔橡樹(屏蔽)(20小)",
+            "description": "(Felloak)短棒",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_15",
+            "type": "checkbox",
+            "name": "15-喪鐘敲擊者(屏蔽)(20小)",
+            "description": "(Knell Striker)權杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_16",
+            "type": "checkbox",
+            "name": "16-鏽蝕把手(屏蔽)",
+            "description": "(Rusthandle)莊嚴權杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_17",
+            "type": "checkbox",
+            "name": "17-暴風眼(屏蔽)",
+            "description": "(Stormeye)征戰權杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_18",
+            "type": "checkbox",
+            "name": "18-特粗鐵釘(屏蔽)",
+            "description": "(Stoutnail)狼牙棒",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_19",
+            "type": "checkbox",
+            "name": "19-碎擊釘錘(屏蔽)",
+            "description": "(Crushflange)釘鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_20",
+            "type": "checkbox",
+            "name": "20-血升(屏蔽)",
+            "description": "(Bloodrise)釘頭鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_21",
+            "type": "checkbox",
+            "name": "21-將軍的連枷(屏蔽)",
+            "description": "(The Generals Tan Do Li Ga)釘頭鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_22",
+            "type": "checkbox",
+            "name": "22-鐵石(屏蔽)",
+            "description": "(Ironstone)戰鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_23",
+            "type": "checkbox",
+            "name": "23-碎骨(屏蔽)",
+            "description": "(Bonesob)重鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_24",
+            "type": "checkbox",
+            "name": "24-打鋼鎚(屏蔽)",
+            "description": "(Steeldriver)巨型重鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_25",
+            "type": "checkbox",
+            "name": "25-瑞克塞斯的利刃(屏蔽)(20小)",
+            "description": "(Rixots Keen)短劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_26",
+            "type": "checkbox",
+            "name": "26-血紅新月(屏蔽)",
+            "description": "(Blood Crescent)彎刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_27",
+            "type": "checkbox",
+            "name": "27-克里維茲的肉叉(屏蔽)",
+            "description": "(Krintizs Skewer)軍刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_28",
+            "type": "checkbox",
+            "name": "28-閃耀鐮刀(屏蔽)",
+            "description": "(Gleamscythe)彎刃大刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_30",
+            "type": "checkbox",
+            "name": "30-格里斯瓦德之刃(屏蔽)",
+            "description": "(Griswolds Edge)闊劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_31",
+            "type": "checkbox",
+            "name": "31-地獄瘟疫(屏蔽)",
+            "description": "(Hellplague)長劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_32",
+            "type": "checkbox",
+            "name": "32-庫爾溫的尖刃(屏蔽)",
+            "description": "(Culwens Point)征戰劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_33",
+            "type": "checkbox",
+            "name": "33-暗影之牙(屏蔽)",
+            "description": "(Shadowfang)雙手劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_34",
+            "type": "checkbox",
+            "name": "34-剝魂(屏蔽)",
+            "description": "(Soulflay)闊刃大劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_35",
+            "type": "checkbox",
+            "name": "35-金麥爾的鑽錐(屏蔽)(+6神圣火焰)",
+            "description": "(Kinemils Awl)大劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_36",
+            "type": "checkbox",
+            "name": "36-黑舌(屏蔽)",
+            "description": "(Blacktongue)重劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_37",
+            "type": "checkbox",
+            "name": "37-齒鋸(屏蔽)",
+            "description": "(Ripsaw)焰形劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_38",
+            "type": "checkbox",
+            "name": "38-尊父(屏蔽)",
+            "description": "(The Patriarch)巨劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_39",
+            "type": "checkbox",
+            "name": "39-海鷗(屏蔽)",
+            "description": "(Gull)匕首",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_40",
+            "type": "checkbox",
+            "name": "40-迪格勒(屏蔽)",
+            "description": "(The Diggler)長匕首",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_41",
+            "type": "checkbox",
+            "name": "41-玉匕(屏蔽)",
+            "description": "(The Jade Tan Do)波刃匕首",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_42",
+            "type": "checkbox",
+            "name": "42-虹彩裂片(屏蔽)",
+            "description": "(Irices Shard)利刃匕首",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_43",
+            "type": "checkbox",
+            "name": "43-龍槍(屏蔽)",
+            "description": "(The Dragon Chang)長矛",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_44",
+            "type": "checkbox",
+            "name": "44-剃刀叉(屏蔽)",
+            "description": "(Razortine)三叉戟",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_45",
+            "type": "checkbox",
+            "name": "45-血賊(屏蔽)",
+            "description": "(Bloodthief)三叉槍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_46",
+            "type": "checkbox",
+            "name": "46-雅該長矛(屏蔽)",
+            "description": "(Lance of Yaggai)勾刃槍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_47",
+            "type": "checkbox",
+            "name": "47-坦納血杖(屏蔽)",
+            "description": "(The Tannr Gorerod)步戰矛",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_48",
+            "type": "checkbox",
+            "name": "48-迪馬克的砍刀(屏蔽)",
+            "description": "(Dimoaks Hew)月牙砍刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_49",
+            "type": "checkbox",
+            "name": "49-鐵刺棒(屏蔽)",
+            "description": "(Steelgoad)槍斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_50",
+            "type": "checkbox",
+            "name": "50-靈魂收割者(屏蔽)",
+            "description": "(Soul Harvest)鐮刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_51",
+            "type": "checkbox",
+            "name": "51-戰鬥枝椏(屏蔽)",
+            "description": "(The Battlebranch)長柄斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_52",
+            "type": "checkbox",
+            "name": "52-悲哀護杖(屏蔽)(煩惱詩集)",
+            "description": "(Woestave)長戟",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_53",
+            "type": "checkbox",
+            "name": "53-猙獰奪魂者(屏蔽)",
+            "description": "(The Grim Reaper)征戰鐮刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_54",
+            "type": "checkbox",
+            "name": "54-禍根之灰(屏蔽)(20小)",
+            "description": "(Bane Ash)短杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_55",
+            "type": "checkbox",
+            "name": "55-海蛇之王(屏蔽)",
+            "description": "(Serpent Lord)長杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_56",
+            "type": "checkbox",
+            "name": "56-拉撒雷茲之杖(屏蔽)",
+            "description": "(Lazarus Spire)木節法杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_57",
+            "type": "checkbox",
+            "name": "57-火精靈(屏蔽)(+2火5暖流4火球)",
+            "description": "(The Salamander)戰鬥法杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_58",
+            "type": "checkbox",
+            "name": "58-鐵長棒(屏蔽)",
+            "description": "(The Iron Jang Bong)征戰法杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_59",
+            "type": "checkbox",
+            "name": "59-奪人目(屏蔽)(20小)",
+            "description": "(Pluckeye)短弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_60",
+            "type": "checkbox",
+            "name": "60-凋萎之弦(屏蔽)",
+            "description": "(Witherstring)獵弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_61",
+            "type": "checkbox",
+            "name": "61-掠鴉之爪(屏蔽)(鸟弓)",
+            "description": "(Rimeraven)長弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_62",
+            "type": "checkbox",
+            "name": "62-俠盜之弓(屏蔽)",
+            "description": "(Piercerib)複合弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_63",
+            "type": "checkbox",
+            "name": "63-暴風之擊(屏蔽)",
+            "description": "(Pullspite)戰鬥短弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_64",
+            "type": "checkbox",
+            "name": "64-凋謝弓弦(屏蔽)",
+            "description": "(Wizendraw)戰鬥長弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_65",
+            "type": "checkbox",
+            "name": "65-地獄轟鳴(屏蔽)",
+            "description": "(Hellclap)征戰短弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_66",
+            "type": "checkbox",
+            "name": "66-爆裂咆哮(屏蔽)",
+            "description": "(Blastbark)征戰長弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_67",
+            "type": "checkbox",
+            "name": "67-鉛烏鴉(屏蔽)",
+            "description": "(Leadcrow)輕弩",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_68",
+            "type": "checkbox",
+            "name": "68-膿毒之刺(屏蔽)",
+            "description": "(Ichorsting)弩",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_69",
+            "type": "checkbox",
+            "name": "69-地獄擲弩(屏蔽)",
+            "description": "(Hellcast)重弩",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_70",
+            "type": "checkbox",
+            "name": "70-毀滅投索(屏蔽)",
+            "description": "(Doomspittle)連弩",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_71",
+            "type": "checkbox",
+            "name": "71-畢格因的軟帽(屏蔽)(20小)",
+            "description": "(War Bonnet)便帽",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_72",
+            "type": "checkbox",
+            "name": "72-塔因頭盔(屏蔽)(+1技能)",
+            "description": "(Tarnhelm)顱帽",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_73",
+            "type": "checkbox",
+            "name": "73-光榮罩盔(屏蔽)",
+            "description": "(Coif of Glory)頭盔",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_74",
+            "type": "checkbox",
+            "name": "74-黃昏深處(屏蔽)",
+            "description": "(Duskdeep)全罩盔",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_75",
+            "type": "checkbox",
+            "name": "75-蠕蟲頭骨(屏蔽)",
+            "description": "(Wormskull)骸骨頭盔",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_76",
+            "type": "checkbox",
+            "name": "76-怒號長牙(屏蔽)",
+            "description": "(Howltusk)重盔",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_77",
+            "type": "checkbox",
+            "name": "77-不死皇冠(屏蔽)",
+            "description": "(Undead Crown)王冠",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_78",
+            "type": "checkbox",
+            "name": "78-恐懼之臉(屏蔽)",
+            "description": "(The Face of Horror)面具",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_79",
+            "type": "checkbox",
+            "name": "79-灰暮之形(屏蔽)(20小)",
+            "description": "(Greyform)棉布甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_80",
+            "type": "checkbox",
+            "name": "80-閃蝠之軀(屏蔽)",
+            "description": "(Blinkbats Form)皮革甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_81",
+            "type": "checkbox",
+            "name": "81-百夫長(屏蔽)",
+            "description": "(The Centurion)硬皮甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_82",
+            "type": "checkbox",
+            "name": "82-抽動掙扎(屏蔽)",
+            "description": "(Twitchthroe)鑲釘皮甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_83",
+            "type": "checkbox",
+            "name": "83-暗光(屏蔽)",
+            "description": "(Darkglow)環甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_84",
+            "type": "checkbox",
+            "name": "84-鷹甲(屏蔽)",
+            "description": "(Hawkmail)鱗甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_85",
+            "type": "checkbox",
+            "name": "85-電光之甲(屏蔽)",
+            "description": "(Sparking Mail)鎖鍊甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_86",
+            "type": "checkbox",
+            "name": "86-毒之守禦(屏蔽)",
+            "description": "(Venomsward)胸鎧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_87",
+            "type": "checkbox",
+            "name": "87-冰晶(屏蔽)",
+            "description": "(Iceblink)板甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_88",
+            "type": "checkbox",
+            "name": "88-骨肉(屏蔽)",
+            "description": "(Boneflesh)鎧甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_89",
+            "type": "checkbox",
+            "name": "89-石羊毛(屏蔽)",
+            "description": "(Rockfleece)野戰鎧甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_90",
+            "type": "checkbox",
+            "name": "90-震骨(屏蔽)",
+            "description": "(Rattlecage)哥德鎧甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_91",
+            "type": "checkbox",
+            "name": "91-黃金之膚(屏蔽)",
+            "description": "(Goldskin)全身鎧甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_92",
+            "type": "checkbox",
+            "name": "92-勝利者的絲綢(屏蔽)",
+            "description": "(Victors Silk)上古鎧甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_93",
+            "type": "checkbox",
+            "name": "93-天堂裝束(屏蔽)",
+            "description": "(Heavenly Garb)輕型鎧甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_94",
+            "type": "checkbox",
+            "name": "94-新月小盾(屏蔽)(20小)",
+            "description": "(Pelta Lunata)小圓盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_95",
+            "type": "checkbox",
+            "name": "95-陰影圓盤(屏蔽)",
+            "description": "(Umbral Disk)小型盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_96",
+            "type": "checkbox",
+            "name": "96-風暴同盟(屏蔽)",
+            "description": "(Stormguild)大型盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_97",
+            "type": "checkbox",
+            "name": "97-無眼者之牆(屏蔽)",
+            "description": "(Wall of the Eyeless)骨盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_98",
+            "type": "checkbox",
+            "name": "98-劍棘之盾(屏蔽)",
+            "description": "(Swordback Hold)尖刺盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_99",
+            "type": "checkbox",
+            "name": "99-鋼鐵衝擊(屏蔽)",
+            "description": "(Steelclash)鳶盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_100",
+            "type": "checkbox",
+            "name": "100-布雷維特要塞(屏蔽)",
+            "description": "(Bverrit Keep)塔盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_101",
+            "type": "checkbox",
+            "name": "101-庇護結界(屏蔽)",
+            "description": "(The Ward)哥德盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_102",
+            "type": "checkbox",
+            "name": "102-柏克之手(屏蔽)(20小)",
+            "description": "(The Hand of Broc)皮革手套",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_103",
+            "type": "checkbox",
+            "name": "103-血拳(屏蔽)",
+            "description": "(Bloodfist)厚皮手套",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_104",
+            "type": "checkbox",
+            "name": "104-運氣守護(屏蔽)(打钱手)",
+            "description": "(Chance Guards)鍊甲手套",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_105",
+            "type": "checkbox",
+            "name": "105-法師之拳(屏蔽)(FCR手)",
+            "description": "(Magefist)輕型護手",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_106",
+            "type": "checkbox",
+            "name": "106-霜燃(屏蔽)(高法力手)",
+            "description": "(Frostburn)鋼鐵護手",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_107",
+            "type": "checkbox",
+            "name": "107-熱靴刺(屏蔽)(20小)",
+            "description": "(Hotspur)皮靴",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_108",
+            "type": "checkbox",
+            "name": "108-血腳(屏蔽)",
+            "description": "(Gorefoot)重靴",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_109",
+            "type": "checkbox",
+            "name": "109-凱松的足靴(屏蔽)",
+            "description": "(Treads of Cthon)鎖鍊靴",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_110",
+            "type": "checkbox",
+            "name": "110-哥布林腳趾(屏蔽)",
+            "description": "(Goblin Toe)輕鎧靴",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_111",
+            "type": "checkbox",
+            "name": "111-裂臀(屏蔽)",
+            "description": "(Tearhaunch)護脛",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_112",
+            "type": "checkbox",
+            "name": "112-雷尼摩(屏蔽)(20小)",
+            "description": "(Lenyms Cord)束帶",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_113",
+            "type": "checkbox",
+            "name": "113-蛇索(屏蔽)",
+            "description": "(Snakecord)輕腰帶",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_114",
+            "type": "checkbox",
+            "name": "114-夜煙(屏蔽)",
+            "description": "(Nightsmoke)腰帶",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_115",
+            "type": "checkbox",
+            "name": "115-黃金裹腰(屏蔽)(打钱腰)",
+            "description": "(Goldwrap)厚腰帶",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_116",
+            "type": "checkbox",
+            "name": "116-刀鋒扣帶(屏蔽)",
+            "description": "(Bladebuckle)鎧甲腰帶",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_117",
+            "type": "checkbox",
+            "name": "117-諾科藍遺物(屏蔽)",
+            "description": "(Nokozan Relic)護身符",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_118",
+            "type": "checkbox",
+            "name": "118-艾利曲之眼(屏蔽)",
+            "description": "(The Eye of Etlich)護身符",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_119",
+            "type": "checkbox",
+            "name": "119-瑪哈姆橡木古董(屏蔽)",
+            "description": "(The Mahim-Oak Curio)護身符",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_120",
+            "type": "checkbox",
+            "name": "120-拿各的戒指(屏蔽)",
+            "description": "(Nagelring)戒指",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_121",
+            "type": "checkbox",
+            "name": "121-瑪那德的治療(屏蔽)",
+            "description": "(Manald Heal)戒指",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_129",
+            "type": "checkbox",
+            "name": "129-冷殺(屏蔽)",
+            "description": "(Coldkill)短斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_130",
+            "type": "checkbox",
+            "name": "130-屠夫的徒弟(屏蔽)",
+            "description": "(Butcher's Pupil)斬斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_131",
+            "type": "checkbox",
+            "name": "131-島擊(屏蔽)",
+            "description": "(Islestrike)雙面斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_132",
+            "type": "checkbox",
+            "name": "132-龐貝之怒(屏蔽)",
+            "description": "(Pompe's Wrath)鴉嘴鎬",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_133",
+            "type": "checkbox",
+            "name": "133-那伽守護者(屏蔽)",
+            "description": "(Guardian Naga)那伽斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_134",
+            "type": "checkbox",
+            "name": "134-戰爵之證(屏蔽)",
+            "description": "(Warlord's Trust)軍斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_135",
+            "type": "checkbox",
+            "name": "135-鋼鐵魔咒(屏蔽)(衰老+传送斧)",
+            "description": "(Spellsteel)鉤斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_136",
+            "type": "checkbox",
+            "name": "136-暴風騎士(屏蔽)",
+            "description": "(Stormrider)長戰斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_137",
+            "type": "checkbox",
+            "name": "137-斬骨者之斧(屏蔽)",
+            "description": "(Boneslayer Blade)哥德斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_138",
+            "type": "checkbox",
+            "name": "138-牛頭怪(屏蔽)",
+            "description": "(The Minataur)上古斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_139",
+            "type": "checkbox",
+            "name": "139-自殘枝椏(屏蔽)",
+            "description": "(Suicide Branch)焦木魔杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_140",
+            "type": "checkbox",
+            "name": "140-凱林碎片(屏蔽)",
+            "description": "(Carin Shard)石木魔杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_141",
+            "type": "checkbox",
+            "name": "141-李奧瑞克王的手骨(屏蔽)(召唤死灵神器)",
+            "description": "(Arm of King Leoric)古墓魔杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_142",
+            "type": "checkbox",
+            "name": "142-黑手之鑰(屏蔽)",
+            "description": "(Blackhand Key)墓地魔杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_143",
+            "type": "checkbox",
+            "name": "143-闇族碎滅者(屏蔽)",
+            "description": "(Dark Clan Crusher)鬥棍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_144",
+            "type": "checkbox",
+            "name": "144-撒卡蘭姆之手(屏蔽)",
+            "description": "(Zakarum's Hand)符文權杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_145",
+            "type": "checkbox",
+            "name": "145-惡臭散佈者(屏蔽)",
+            "description": "(The Fetid Sprinkler)聖水禮杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_146",
+            "type": "checkbox",
+            "name": "146-聖光之手(屏蔽)(天堂骑可用)",
+            "description": "(Hand of Blessed Light)聖恩權杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_147",
+            "type": "checkbox",
+            "name": "147-血肉撕裂者(屏蔽)",
+            "description": "(Fleshrender)倒刺棍棒",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_148",
+            "type": "checkbox",
+            "name": "148-尖嘯冰霜(屏蔽)",
+            "description": "(Sureshrill Frost)凸緣釘鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_149",
+            "type": "checkbox",
+            "name": "149-月落(屏蔽)",
+            "description": "(Moonfall)鋸齒釘頭鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_150",
+            "type": "checkbox",
+            "name": "150-貝西爾的漩渦(屏蔽)",
+            "description": "(Baezil's Vortex)刑罪連枷",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_151",
+            "type": "checkbox",
+            "name": "151-震地者(屏蔽)",
+            "description": "(Earthshaker)戰鬥鐵鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_152",
+            "type": "checkbox",
+            "name": "152-血樹殘株(屏蔽)",
+            "description": "(Bloodtree Stump)征戰重鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_153",
+            "type": "checkbox",
+            "name": "153-痛苦之槌(屏蔽)(伤害加深锤)",
+            "description": "(The Gavel of Pain)長柄戰鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_154",
+            "type": "checkbox",
+            "name": "154-放血者(屏蔽)(破财剑)",
+            "description": "(Bloodletter)羅馬短劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_155",
+            "type": "checkbox",
+            "name": "155-冰鋼之眼(屏蔽)",
+            "description": "(Coldsteel Eye)水手刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_156",
+            "type": "checkbox",
+            "name": "156-妖火(屏蔽)",
+            "description": "(Hexfire)波斯彎刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_157",
+            "type": "checkbox",
+            "name": "157-阿里巴巴之刃(屏蔽)(打钱刀)",
+            "description": "(Blade of Ali Baba)印度彎刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_158",
+            "type": "checkbox",
+            "name": "158-金瑟的裂隙(屏蔽)",
+            "description": "(Ginther's Rift)次元刃",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_159",
+            "type": "checkbox",
+            "name": "159-擊頭者(屏蔽)(A5佣兵神器)",
+            "description": "(Headstriker)戰鬥長劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_160",
+            "type": "checkbox",
+            "name": "160-疫病帶原者(屏蔽)",
+            "description": "(Plague Bearer)符文劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_161",
+            "type": "checkbox",
+            "name": "161-亞特蘭提恩(屏蔽)",
+            "description": "(The Atlantian)上古劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_162",
+            "type": "checkbox",
+            "name": "162-恐懼之嘔(屏蔽)",
+            "description": "(Crainte Vomir)雙手重劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_163",
+            "type": "checkbox",
+            "name": "163-冰之王(屏蔽)",
+            "description": "(Bing Sz Wang)達西安長刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_164",
+            "type": "checkbox",
+            "name": "164-兇邪軀殼(屏蔽)",
+            "description": "(The Vile Husk)長牙劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_165",
+            "type": "checkbox",
+            "name": "165-雲裂(屏蔽)",
+            "description": "(Cloudcrack)哥德劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_166",
+            "type": "checkbox",
+            "name": "166-死落之火(屏蔽)",
+            "description": "(Todesfaelle Flamme)日耳曼大劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_167",
+            "type": "checkbox",
+            "name": "167-劍衛(屏蔽)",
+            "description": "(Swordguard)處刑劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_168",
+            "type": "checkbox",
+            "name": "168-裂脊者(屏蔽)",
+            "description": "(Spineripper)刺擊短劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_169",
+            "type": "checkbox",
+            "name": "169-刨心者(屏蔽)(野蛮人挖尸)",
+            "description": "(Heart Carver)圓柄匕首",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_170",
+            "type": "checkbox",
+            "name": "170-黑沼之鋒(屏蔽)(毒匕首死灵)",
+            "description": "(Blackbog's Sharp)闊身短劍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_171",
+            "type": "checkbox",
+            "name": "171-暴風尖刺(屏蔽)",
+            "description": "(Stormspike)窄刃匕首",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_172",
+            "type": "checkbox",
+            "name": "172-刺穿者(屏蔽)",
+            "description": "(The Impaler)征戰長矛",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_173",
+            "type": "checkbox",
+            "name": "173-水魔陷阱(屏蔽)(减速叉)",
+            "description": "(Kelpie Snare)矛叉",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_174",
+            "type": "checkbox",
+            "name": "174-噬魂叉(屏蔽)",
+            "description": "(Soulfeast Tine)征戰軍叉",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_175",
+            "type": "checkbox",
+            "name": "175-骨寸斷(屏蔽)(宏‧森丹)",
+            "description": "(Hone Sundan)三尖槍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_176",
+            "type": "checkbox",
+            "name": "176-榮耀尖塔(屏蔽)",
+            "description": "(Spire of Honor)長槍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_177",
+            "type": "checkbox",
+            "name": "177-刮肉者(屏蔽)",
+            "description": "(The Meat Scraper)鉤斧",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_178",
+            "type": "checkbox",
+            "name": "178-黑蛭長刀(屏蔽)",
+            "description": "(Blackleach Blade)長柄鍥",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_179",
+            "type": "checkbox",
+            "name": "179-雅典娜之怒(屏蔽)",
+            "description": "(Athena's Wrath)戰鬥鐮刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_180",
+            "type": "checkbox",
+            "name": "180-墓石長戟(屏蔽)",
+            "description": "(Pierre Tombale Couant)闊頭槍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_181",
+            "type": "checkbox",
+            "name": "181-血肉吞食者(屏蔽)",
+            "description": "(Husoldal Evo)渡鴉喙",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_182",
+            "type": "checkbox",
+            "name": "182-懼焰亡靈(屏蔽)",
+            "description": "(Grim's Burning Dead)陰森鐮刀",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_183",
+            "type": "checkbox",
+            "name": "183-剃刀杖(屏蔽)",
+            "description": "(Razorswitch)棍杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_184",
+            "type": "checkbox",
+            "name": "184-肋骨粉碎者(屏蔽)",
+            "description": "(Ribcracker)長棍",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_185",
+            "type": "checkbox",
+            "name": "185-炫彩之怒(屏蔽)",
+            "description": "(Chromatic Ire)杉木法杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_186",
+            "type": "checkbox",
+            "name": "186-扭曲之矛(屏蔽)",
+            "description": "(Warpspear)哥德法杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_187",
+            "type": "checkbox",
+            "name": "187-骷髏收集者(屏蔽)",
+            "description": "(Skullcollector)符文法杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_188",
+            "type": "checkbox",
+            "name": "188-天擊(屏蔽)",
+            "description": "(Skystrike)銳弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_189",
+            "type": "checkbox",
+            "name": "189-撕裂之鉤(屏蔽)",
+            "description": "(Riphook)剃刀弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_190",
+            "type": "checkbox",
+            "name": "190-社角久子(屏蔽)(日本弓)",
+            "description": "(Kuko Shakaku)杉木弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_191",
+            "type": "checkbox",
+            "name": "191-無盡冰雹(屏蔽)",
+            "description": "(Endlesshail)雙曲弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_192",
+            "type": "checkbox",
+            "name": "192-狂巫之弦(屏蔽)",
+            "description": "(Whichwild String)攻城短弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_193",
+            "type": "checkbox",
+            "name": "193-懸崖殺手(屏蔽)",
+            "description": "(Cliffkiller)攻城長弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_194",
+            "type": "checkbox",
+            "name": "194-巫師之怒(屏蔽)",
+            "description": "(Magewrath)符文弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_195",
+            "type": "checkbox",
+            "name": "195-金擊之拱(屏蔽)",
+            "description": "(Godstrike Arch)哥德弓",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_196",
+            "type": "checkbox",
+            "name": "196-蘭古布利薩(屏蔽)",
+            "description": "(Langer Briser)鋼弩",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_197",
+            "type": "checkbox",
+            "name": "197-吐膿毒弩(屏蔽)",
+            "description": "(Pus Spiter)攻城弩",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_198",
+            "type": "checkbox",
+            "name": "198-暴雪砲弩(屏蔽)(大炮)",
+            "description": "(Buriza-Do Kyanon)砲弩",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_199",
+            "type": "checkbox",
+            "name": "199-惡魔機弩(屏蔽)(火弩法师)",
+            "description": "(Demon Machine)諸葛弩",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_201",
+            "type": "checkbox",
+            "name": "201-農夫王冠(屏蔽)(+1技能)",
+            "description": "(Peasent Crown)戰帽",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_202",
+            "type": "checkbox",
+            "name": "202-石禦(屏蔽)(佣兵小物免头)",
+            "description": "(Rockstopper)便盔",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_203",
+            "type": "checkbox",
+            "name": "203-盜竊顱盔(屏蔽)",
+            "description": "(Stealskull)兜盔",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_204",
+            "type": "checkbox",
+            "name": "204-暗視之盔(屏蔽)",
+            "description": "(Darksight Helm)輕盔",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_205",
+            "type": "checkbox",
+            "name": "205-女武神之翼(屏蔽)(亚马逊高跑头)",
+            "description": "(Valkiry Wing)翼盔",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_206",
+            "type": "checkbox",
+            "name": "206-盜賊皇冠(屏蔽)(打钱头)",
+            "description": "(Crown of Thieves)莊嚴王冠",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_207",
+            "type": "checkbox",
+            "name": "207-黑荊角面具(屏蔽)(吸电头)",
+            "description": "(Blackhorn's Face)死亡面具",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_208",
+            "type": "checkbox",
+            "name": "208-吸血鬼的凝視(屏蔽)(佣兵物免头)",
+            "description": "(Vampiregaze)陰森頭盔",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_209",
+            "type": "checkbox",
+            "name": "209-靈魂帷幕(屏蔽)(+1技能)",
+            "description": "(The Spirit Shroud)鬼魂戰衣",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_210",
+            "type": "checkbox",
+            "name": "210-蛇魔法師之皮(屏蔽)(法师衣服)",
+            "description": "(Skin of the Vipermagi)海蛇皮甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_211",
+            "type": "checkbox",
+            "name": "211-剝皮者之皮(屏蔽)",
+            "description": "(Skin of the Flayerd One)魔皮護甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_212",
+            "type": "checkbox",
+            "name": "212-鋼鐵獸皮(屏蔽)",
+            "description": "(Ironpelt)格網護甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_213",
+            "type": "checkbox",
+            "name": "213-靈魂熔爐(屏蔽)",
+            "description": "(Spiritforge)鍊扣戰甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_214",
+            "type": "checkbox",
+            "name": "214-鴉啼(屏蔽)",
+            "description": "(Crow Caw)鎖鱗戰甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_215",
+            "type": "checkbox",
+            "name": "215-箭止(屏蔽)(佣兵物免甲)",
+            "description": "(Shaftstop)鐵網戰甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_216",
+            "type": "checkbox",
+            "name": "216-都瑞爾之殼(屏蔽)(佣兵冰免甲)",
+            "description": "(Duriel's Shell)護胸甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_217",
+            "type": "checkbox",
+            "name": "217-斯寇德的憤怒(屏蔽)(MF甲)",
+            "description": "(Skullder's Ire)赤褐戰甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_218",
+            "type": "checkbox",
+            "name": "218-守護天使(屏蔽)(高抗甲)",
+            "description": "(Guardian Angel)聖堂騎士戰甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_219",
+            "type": "checkbox",
+            "name": "219-排齒(屏蔽)",
+            "description": "(Toothrow)鯊齒戰甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_220",
+            "type": "checkbox",
+            "name": "220-亞特瑪的哭喊(屏蔽)",
+            "description": "(Atma's Wail)雕紋戰甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_221",
+            "type": "checkbox",
+            "name": "221-黑色黑帝斯(屏蔽)(恶魔甲)",
+            "description": "(Black Hades)混沌戰甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_222",
+            "type": "checkbox",
+            "name": "222-屍慟(屏蔽)",
+            "description": "(Corpsemourn)華麗戰甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_223",
+            "type": "checkbox",
+            "name": "223-教宗的智慧(屏蔽)",
+            "description": "(Que-Hegan's Wisdon)法師鎧甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_224",
+            "type": "checkbox",
+            "name": "224-維斯爾坦特(屏蔽)",
+            "description": "(Visceratuant)防禦盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_225",
+            "type": "checkbox",
+            "name": "225-摩瑟的祝福之圓(屏蔽)(过渡高抗盾)",
+            "description": "(Mosers Blessed Circle)圓型盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_226",
+            "type": "checkbox",
+            "name": "226-風暴追逐者(屏蔽)",
+            "description": "(Stormchaser)大圓盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_227",
+            "type": "checkbox",
+            "name": "227-魔龍的非難(屏蔽)",
+            "description": "(Tiamat's Rebuke)龍盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_228",
+            "type": "checkbox",
+            "name": "228-基爾克的聖堂(屏蔽)",
+            "description": "(Kerke's Sanctuary)大盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_229",
+            "type": "checkbox",
+            "name": "229-羅達門特的領域(屏蔽)",
+            "description": "(Radimant's Sphere)上古盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_230",
+            "type": "checkbox",
+            "name": "230-警戒之牆(屏蔽)(镰刀法副手盾)",
+            "description": "(Lidless Wall)陰森盾牌",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_231",
+            "type": "checkbox",
+            "name": "231-長槍守衛(屏蔽)",
+            "description": "(Lance Guard)倒刺盾",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_232",
+            "type": "checkbox",
+            "name": "232-劇毒之握(屏蔽)",
+            "description": "(Venom Grip)魔皮手套",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_233",
+            "type": "checkbox",
+            "name": "233-墓穴手掌(屏蔽)",
+            "description": "(Gravepalm)鯊皮手套",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_234",
+            "type": "checkbox",
+            "name": "234-食屍鬼之皮(屏蔽)(不死手套)",
+            "description": "(Ghoulhide)重型護腕",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_235",
+            "type": "checkbox",
+            "name": "235-熔岩之痛(屏蔽)(附魔手套+命中)",
+            "description": "(Lavagout)戰鬥護手",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_236",
+            "type": "checkbox",
+            "name": "236-地獄之口(屏蔽)(吸火手)",
+            "description": "(Hellmouth)征戰護手",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_237",
+            "type": "checkbox",
+            "name": "237-地獄闊步(屏蔽)(打钱鞋)",
+            "description": "(Infernostride)魔皮長靴",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_238",
+            "type": "checkbox",
+            "name": "238-水上飄(屏蔽)(高生命鞋)",
+            "description": "(Waterwalk)鯊皮靴",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_239",
+            "type": "checkbox",
+            "name": "239-紗織(屏蔽)(法力恢复鞋)",
+            "description": "(Silkweave)鐵網靴",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_240",
+            "type": "checkbox",
+            "name": "240-戰爭旅者(屏蔽)(远程+MF神鞋)",
+            "description": "(Wartraveler)戰鬥靴",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_241",
+            "type": "checkbox",
+            "name": "241-蝕肉騎士(屏蔽)(近战神鞋)",
+            "description": "(Gorerider)征戰靴",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_242",
+            "type": "checkbox",
+            "name": "242-長串之耳(屏蔽)(吸血+物抗)",
+            "description": "(String of Ears)魔皮束帶",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_243",
+            "type": "checkbox",
+            "name": "243-剃刀之尾(屏蔽)(远程神腰)",
+            "description": "(Razortail)鯊皮腰帶",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_244",
+            "type": "checkbox",
+            "name": "244-陰影陷阱(屏蔽)",
+            "description": "(Gloomstrap)鐵網腰帶",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_245",
+            "type": "checkbox",
+            "name": "245-冰雪交織(屏蔽)(暴风雪法师专用)",
+            "description": "(Snowclash)戰鬥腰帶",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_246",
+            "type": "checkbox",
+            "name": "246-雷神之力(屏蔽)(吸电神腰)",
+            "description": "(Thudergod's Vigor)征戰腰帶",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_270",
+            "type": "checkbox",
+            "name": "270-旭日東升(屏蔽)(吸火项链)",
+            "description": "(The Rising Sun)護身符",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_271",
+            "type": "checkbox",
+            "name": "271-新月(屏蔽)(双吸项链)",
+            "description": "(Crescent Moon)護身符",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_277",
+            "type": "checkbox",
+            "name": "277-薩拉森的機會(屏蔽)(项链)",
+            "description": "(Saracen's Chance)護身符",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_375",
+            "type": "checkbox",
+            "name": "375-金屬網格(屏蔽)(项链)",
+            "description": "(Metalgrid)護身符",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_249",
+            "type": "checkbox",
+            "name": "249-鋼鐵面紗(屏蔽)(只出夜翼面紗)",
+            "description": "(Veil of Steel)巨角頭盔",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_259",
+            "type": "checkbox",
+            "name": "259-光之軍刀(屏蔽)(只出碧藍怒火)",
+            "description": "(Lightsabre)幻化之刃",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_306",
+            "type": "checkbox",
+            "name": "306-地平線的龍捲風(屏蔽)(只出暴風之鞭)",
+            "description": "(Horizon's Tornado)罪罰連枷",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_307",
+            "type": "checkbox",
+            "name": "307-碎石者(屏蔽)(只出史恰佛之鎚)",
+            "description": "(Stone Crusher)傳說戰鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_366",
+            "type": "checkbox",
+            "name": "366-聖堂騎士之力(屏蔽)(只出泰瑞爾之力)",
+            "description": "(Templar's Might)神聖戰甲",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_385",
+            "type": "checkbox",
+            "name": "385-撼地者(屏蔽)(只出碎腦鎚)",
+            "description": "(Earthshifter)雷霆重鎚",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_389",
+            "type": "checkbox",
+            "name": "389-懺悔者(屏蔽)(只出天堂之光)",
+            "description": "(The Reedeemer)強威權杖",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_392396",
+            "type": "checkbox",
+            "name": "392(396)-彩虹刻面(屏蔽)(电珠)",
+            "description": "(Rainbow Facet)",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_393397",
+            "type": "checkbox",
+            "name": "393(397)-彩虹刻面(屏蔽)(冰珠)",
+            "description": "(Rainbow Facet)",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_394398",
+            "type": "checkbox",
+            "name": "394(398)-彩虹刻面(屏蔽)(火珠)",
+            "description": "(Rainbow Facet)",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_395399",
+            "type": "checkbox",
+            "name": "395(399)-彩虹刻面(屏蔽)(毒珠)",
+            "description": "(Rainbow Facet)",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_401",
+            "type": "checkbox",
+            "name": "401-冰寒裂縫(屏蔽)(破冰板)",
+            "description": "(Cold Rupture)",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_402",
+            "type": "checkbox",
+            "name": "402-火焰裂隙(屏蔽)(破火板)",
+            "description": "(Flame Rift)",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_403",
+            "type": "checkbox",
+            "name": "403-天堂裂擊(屏蔽)(破电板)",
+            "description": "(Crack of the Heavens)",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_404",
+            "type": "checkbox",
+            "name": "404-腐敗裂痕(屏蔽)(破毒板)",
+            "description": "(Rotting Fissure)",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_405",
+            "type": "checkbox",
+            "name": "405-分筋裂骨(屏蔽)(破物板)",
+            "description": "(Bone Break)",
+            "defaultValue": false
+        },
+        {
+            "id": "dis_406",
+            "type": "checkbox",
+            "name": "406-漆黑裂口(屏蔽)(破魔板)",
+            "description": "(Black Cleft)",
+            "defaultValue": false
+        }
+    ]
+}

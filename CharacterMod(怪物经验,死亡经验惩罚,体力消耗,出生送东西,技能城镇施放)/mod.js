@@ -37,9 +37,12 @@ if (config.exp_noPunDeah)
 {
     const difficultylevelsFilename = 'global\\excel\\difficultylevels.txt';
     const difficultylevels = D2RMM.readTsv(difficultylevelsFilename);
-    difficultylevels.rows.forEach((row) =>
-    {
-        row['DeathExpPenalty'] = 0;
+    difficultylevels.rows.forEach((row) => {
+        if (row['Name'] === 'Nightmare') {
+            row['DeathExpPenalty'] = 3;
+        } else if (row['Name'] === 'Hell') {
+            row['DeathExpPenalty'] = 5;
+        }
     });
     D2RMM.writeTsv(difficultylevelsFilename, difficultylevels);
 }

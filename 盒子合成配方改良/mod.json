@@ -131,6 +131,20 @@
       "name": "宝石合珠宝",
       "description": "宝石合珠宝",
       "defaultValue": true
+    },
+    {
+      "id": "genUniqueJew",
+      "type": "checkbox",
+      "name": "暗金破免板合成暗金宝珠",
+      "description": "暗金破免板合成暗金宝珠",
+      "defaultValue": true
+    },
+    {
+      "id": "rollHellfire",
+      "type": "checkbox",
+      "name": "刷新火炬属性",
+      "description": "刷新火炬属性",
+      "defaultValue": true
     }
   ]
 }
