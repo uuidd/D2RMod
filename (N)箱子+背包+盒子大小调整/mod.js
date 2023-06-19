@@ -613,9 +613,9 @@ switch (config.packageSize) {
 
 switch (config.boxSize) {
   case 'box_6X4':
-    const inventoryFilename = 'global\\excel\\inventory.txt';
-    const inventory = D2RMM.readTsv(inventoryFilename);
-    inventory.rows.forEach((row) => {
+    const inventoryFilename1 = 'global\\excel\\inventory.txt';
+    const inventory1 = D2RMM.readTsv(inventoryFilename1);
+    inventory1.rows.forEach((row) => {
       if (
         row.class === 'Transmogrify Box Page 1' ||
         row.class === 'Transmogrify Box2'
@@ -623,15 +623,15 @@ switch (config.boxSize) {
         row.gridX = 6;
       }
     });
-    D2RMM.writeTsv(inventoryFilename, inventory);
+    D2RMM.writeTsv(inventoryFilename1, inventory1);
 
-    const profileHDFilename = 'global\\ui\\layouts\\_profilehd.json';
-    const profileHD = D2RMM.readJson(profileHDFilename);
-    D2RMM.writeJson(profileHDFilename, profileHD);
+    const profileHDFilename1 = 'global\\ui\\layouts\\_profilehd.json';
+    const profileHD1 = D2RMM.readJson(profileHDFilename1);
+    D2RMM.writeJson(profileHDFilename1, profileHD1);
 
-    const profileLVFilename = 'global\\ui\\layouts\\_profilelv.json';
-    const profileLV = D2RMM.readJson(profileLVFilename);
-    D2RMM.writeJson(profileLVFilename, profileLV);
+    const profileLVFilename1 = 'global\\ui\\layouts\\_profilelv.json';
+    const profileLV1 = D2RMM.readJson(profileLVFilename1);
+    D2RMM.writeJson(profileLVFilename1, profileLV1);
 
     const horadricCubeLayoutFilename =
       'global\\ui\\layouts\\horadriccubelayout.json';
@@ -646,10 +646,10 @@ switch (config.boxSize) {
     });
     D2RMM.writeJson(horadricCubeLayoutFilename, horadricCubeLayout);
 
-    const horadricCubeLayoutHDFilename =
+    const horadricCubeLayoutHDFilename1 =
       'global\\ui\\layouts\\horadriccubelayouthd.json';
-    const horadricCubeHDLayout = D2RMM.readJson(horadricCubeLayoutHDFilename);
-    horadricCubeHDLayout.children.forEach((child) => {
+    const horadricCubeHDLayout1 = D2RMM.readJson(horadricCubeLayoutHDFilename1);
+    horadricCubeHDLayout1.children.forEach((child) => {
       if (child.name === 'grid') {
         child.fields.cellCount.x = 6;
         child.fields.cellCount.y = 4;
@@ -659,14 +659,14 @@ switch (config.boxSize) {
         child.fields.filename = 'PANEL\\Horadric_Cube\\HoradricCube_BG_Expanded';
       }
     });
-    D2RMM.writeJson(horadricCubeLayoutHDFilename, horadricCubeHDLayout);
+    D2RMM.writeJson(horadricCubeLayoutHDFilename1, horadricCubeHDLayout1);
 
-    const controllerHoradricCubeHDLayoutFilename =
+    const controllerHoradricCubeHDLayoutFilename1 =
       'global\\ui\\layouts\\controller\\horadriccubelayouthd.json';
-    const controllerHoradricCubeHDLayout = D2RMM.readJson(
-      controllerHoradricCubeHDLayoutFilename
+    const controllerHoradricCubeHDLayout1 = D2RMM.readJson(
+      controllerHoradricCubeHDLayoutFilename1
     );
-    controllerHoradricCubeHDLayout.children.forEach((child) => {
+    controllerHoradricCubeHDLayout1.children.forEach((child) => {
       if (child.name === 'grid') {
         child.fields.rect.x = child.fields.rect.x - 142;
       }
@@ -676,8 +676,8 @@ switch (config.boxSize) {
       }
     });
     D2RMM.writeJson(
-      controllerHoradricCubeHDLayoutFilename,
-      controllerHoradricCubeHDLayout
+      controllerHoradricCubeHDLayoutFilename1,
+      controllerHoradricCubeHDLayout1
     );
 
     D2RMM.copyFile(
