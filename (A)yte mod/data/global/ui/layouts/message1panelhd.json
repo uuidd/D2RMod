@@ -1,0 +1,1675 @@
+{
+    "type": "SettingsPanel",
+    "name": "message1Panel",
+    "fields": {
+        "priority": 9003,
+        "rect": {
+            "x": 1510,
+            "y": -377,
+            "width": 650,
+            "height": 1130
+        },
+        "anchor": "$LeftPanelAnchor",
+        "applySettingsImmediately": false
+    },
+    "children": [
+        {
+            "type": "ImageWidget",
+            "name": "ScrollBarBackground",
+            "fields": {
+                "rect": {
+                    "x": 10,
+                    "y": -128
+                },
+                "anchor": {
+                    "x": 1.0
+                },
+                "filename": "PauseMenu\\VerticalScroll"
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget",
+                    "name": "ScrollController",
+                    "fields": {
+                        "rect": {
+                            "x": -31,
+                            "y": 29,
+                            "width": 26,
+                            "height": 1208
+                        },
+                        "anchor": {
+                            "x": 1.0
+                        },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ScrollViewWidget",
+            "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController"
+            },
+            "children": [
+                {
+                    "type": "TableWidget",
+                    "name": "OptionsTable",
+                    "fields": {
+                        "columns": [
+                            "$OptionsTableColumn1",
+                            "$OptionsTableColumn2"
+                        ],
+                        "rowHeight": "$ModTableRowHeight"
+                    },
+                    "children": [
+                        {
+                            "type": "TableRowWidget",
+                            "name": "RowModQoL",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "ModQolTitle",
+                                    "fields": {
+                                        "text": "@mod51092gameguidetxt5",
+                                        "style": {
+                                            "fontColor": "$FontColorGold",
+                                            "pointSize": "$MediumFontSize",
+                                            "spacing": "$ReducedSpacing",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            },
+                                            "options": {
+                                                "lineWrap": true
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 80,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune1",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune1",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 80,
+                                    "y": 80,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune2",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune2",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 160,
+                                    "y": 80,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune3",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 80,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune4",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune4",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 80,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune5",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune5",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 400,
+                                    "y": 80,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune6",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune6",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 480,
+                                    "y": 80,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune7",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune7",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 80,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune8",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune8",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune9",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune9",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 80,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune10",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune10",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 160,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune11",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune11",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune12",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune12",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune13",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune13",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 400,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune14",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune14",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 480,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune15",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune15",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 160,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune16",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune16",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 240,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune17",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune17",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 80,
+                                    "y": 240,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune18",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune18",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 160,
+                                    "y": 240,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune19",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune19",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 240,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune20",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune20",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 240,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune21",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune21",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 400,
+                                    "y": 240,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune22",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune22",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 480,
+                                    "y": 240,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune23",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune23",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 240,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune24",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune24",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 320,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune25",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune25",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 80,
+                                    "y": 320,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune26",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune26",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 160,
+                                    "y": 320,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune27",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune27",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 240,
+                                    "y": 320,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune28",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune28",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 320,
+                                    "y": 320,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune29",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune29",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 400,
+                                    "y": 320,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune30",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune30",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 480,
+                                    "y": 320,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune31",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune31",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 560,
+                                    "y": 320,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune32",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune32",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 400,
+                                    "scale": 0.80
+                                },
+                                "filename": "$FileRune33",
+                                "hoveredFrame": 0,
+                                "pressedFrame": 0,
+                                "tooltipString": "$TooltipRune33",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row Spacer"
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row Spacer"
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row Spacer"
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row Spacer"
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row Spacer"
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Row Spacer"
+                        },
+//------------------------
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "ModInfoText",
+                            "fields": {
+                                "text": "@mod51090gameguidetxt7",
+                                "rect": {
+                                    "x": 0,
+                                    "y": 540
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "ModInfoText",
+                            "fields": {
+                                "text": "@mod51089gameguidetxt8",
+                                "rect": {
+                                    "x": 410,//420
+                                    "y": 540
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "dkgzwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 20,
+                                                    "y": 580,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\weapon\\sword\\crystal_sword",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@zbsjhelp51507wpn",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "dkgzwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 120,
+                                                    "y": 580,
+                                                    "scale": 0.4
+                                                },
+                                                "filename": "items\\armor\\armor\\light_plate",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@zbsjhelp51508arm",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "dkgzwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 440,//450
+                                                    "y": 580,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\weapon\\sword\\crystal_sword",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@xlhelp51505wpn",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "dkgzwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 540,//550
+                                                    "y": 580,
+                                                    "scale": 0.4
+                                                },
+                                                "filename": "items\\armor\\armor\\light_plate",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@xlhelp51506arm",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "ModInfoText",
+                            "fields": {
+                                "text": "@mod51088gameguidetxt9",
+                                "rect": {
+                                    "x": 0,
+                                    "y": 760
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "dkgzwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 10,
+                                                    "y": 800,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\weapon\\polearm\\poleaxe",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@dkhelp51501wpn",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "dkgzwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 170,
+                                                    "y": 800,
+                                                    "scale": 0.4
+                                                },
+                                                "filename": "items\\armor\\armor\\light_plate",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@dkhelp51502arm",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "dkgzwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 350,
+                                                    "y": 800,
+                                                    "scale": 0.4
+                                                },
+                                                "filename": "items\\armor\\circlet\\diadem",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@dkhelp51503het",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "dkgzwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 530,
+                                                    "y":800,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\shield\\kite_shield",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@dkhelp51504shd",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "ModInfoText",
+                            "fields": {
+                                "text": "@mod51087gameguidetxt10",
+                                "rect": {
+                                    "x": 0,
+                                    "y": 980
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "xqyc",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 550,//325
+                                                    "y":945,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\misc\\quest\\horadric_cube",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@xqychelp51509item",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "ModInfoText",
+                            "fields": {
+                                "text": "@mod51086gameguidetxt11",
+                                "rect": {
+                                    "x": 0,
+                                    "y": 1080
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "mmmng",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 550,//405
+                                                    "y":1045,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\misc\\quest\\horadric_cube",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@mmmnhelp51510way",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "ModInfoText",
+                            "fields": {
+                                "text": "@mod51085gameguidetxt12",
+                                "rect": {
+                                    "x": 0,
+                                    "y": 1180
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "xizb",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 550,//365
+                                                    "y":1145,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\misc\\quest\\horadric_cube",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@xizbhelp51511items",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "ModInfoText",
+                            "fields": {
+                                "text": "@mod51084gameguidetxt13",
+                                "rect": {
+                                    "x": 0,
+                                    "y": 1280
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorGold",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "smhzhc",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 550,//405
+                                                    "y":1245,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\misc\\quest\\horadric_cube",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@smhzhelp51512item",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }, 
+
+//-------------
+
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "ModInfoText",
+                            "fields": {
+                                "text": "@mod51083gameguidetxt14",
+                                "rect": {
+                                    "x": 0,
+                                    "y": 1380
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorPartyOrange",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "czhelphittitle",
+                            "fields": {
+                                "text": "@czhelp51097hittitle",
+                                "rect": {
+                                    "x": 10,
+                                    "y": 1440
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorPartyOrange",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphithet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 10,
+                                                    "y": 1500,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\helmet\\full_helm",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51101hithet",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitbot",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 80,
+                                                    "y": 1500,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\boot\\chain_boots",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51102hitbot",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitglv",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 150,
+                                                    "y": 1500,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\glove\\bracers_m",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51103hitglv",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                    {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitbet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 220,
+                                                    "y": 1500,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\belt\\heavy_belt",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51104hitbet",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitshd",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 290,
+                                                    "y": 1500,
+                                                    "scale": 0.2
+                                                },
+                                                "filename": "items\\armor\\shield\\gothic_shield",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51105hitshd",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitarm",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 360,
+                                                    "y": 1500,
+                                                    "scale": 0.2
+                                                },
+                                                "filename": "items\\armor\\armor\\field_plate",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51106hitarm",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitrin",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 430,
+                                                    "y": 1500,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\ring\\ring3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51107hitrin",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitamt",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 500,
+                                                    "y": 1500,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\amulet\\amulet3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51108hitamt",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 570,
+                                                    "y": 1500,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\weapon\\club\\spiked_club",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51109hitwpn",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },                     //1
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "czhelphittitle",
+                            "fields": {
+                                "text": "@czhelp51098bldtitle",
+                                "rect": {
+                                    "x": 10,
+                                    "y": 1600
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorPartyOrange",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphithet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 10,
+                                                    "y": 1660,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\helmet\\helm",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51201bldhet",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitbot",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 80,
+                                                    "y": 1660,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\boot\\light_plate_boots",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51202bldbot",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitglv",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 150,
+                                                    "y": 1660,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\glove\\heavy_gloves",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51203bldglv",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                    {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitbet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 220,
+                                                    "y": 1660,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\belt\\belt_m",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51204bldbet",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitshd",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 290,
+                                                    "y": 1660,
+                                                    "scale": 0.25
+                                                },
+                                                "filename": "items\\armor\\shield\\spiked_shield",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51205bldshd",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitarm",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 360,
+                                                    "y": 1660,
+                                                    "scale": 0.25
+                                                },
+                                                "filename": "items\\armor\\armor\\plate_mail",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51206bldarm",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitrin",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 430,
+                                                    "y": 1660,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\ring\\ring3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51207bldrin",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitamt",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 500,
+                                                    "y": 1660,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\amulet\\amulet3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51208bldamt",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 570,
+                                                    "y": 1660,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\weapon\\axe\\axe",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51209bldwpn",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },                     //2
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "czhelphittitle",
+                            "fields": {
+                                "text": "@czhelp51099castitle",
+                                "rect": {
+                                    "x": 10,
+                                    "y": 1760
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorPartyOrange",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphithet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 10,
+                                                    "y": 1820,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\helmet\\mask",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51301cashet",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitbot",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 80,
+                                                    "y": 1820,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\boot\\leather_boots",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51302casbot",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitglv",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 150,
+                                                    "y": 1820,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\glove\\gloves_l",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51303casglv",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                    {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitbet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 220,
+                                                    "y": 1820,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\belt\\light_belt",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51304casbet",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitshd",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 290,
+                                                    "y": 1820,
+                                                    "scale": 0.25
+                                                },
+                                                "filename": "items\\armor\\shield\\small_shield",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51305casshd",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitarm",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 360,
+                                                    "y": 1820,
+                                                    "scale": 0.2
+                                                },
+                                                "filename": "items\\armor\\armor\\light_plate",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51306casarm",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitrin",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 430,
+                                                    "y": 1820,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\ring\\ring3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51307casrin",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitamt",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 500,
+                                                    "y": 1820,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\amulet\\amulet3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51308casamt",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 570,
+                                                    "y": 1820,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\weapon\\staff\\long_staff",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51309caswpn",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },                     //3
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "czhelphittitle",
+                            "fields": {
+                                "text": "@czhelp51100sfttitle",
+                                "rect": {
+                                    "x": 10,
+                                    "y": 1920
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorPartyOrange",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphithet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 10,
+                                                    "y": 1980,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\helmet\\crown",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51401sfthet",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitbot",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 80,
+                                                    "y": 1980,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\boot\\plate_boots",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51402sftbot",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitglv",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 150,
+                                                    "y": 1980,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\glove\\gaunlets_h",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51403sftglv",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                    {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitbet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 220,
+                                                    "y": 1980,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\belt\\sash_l",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51404sftbet",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitshd",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 290,
+                                                    "y": 1980,
+                                                    "scale": 0.2
+                                                },
+                                                "filename": "items\\armor\\shield\\kite_shield",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51405sftshd",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitarm",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 360,
+                                                    "y": 1980,
+                                                    "scale": 0.25
+                                                },
+                                                "filename": "items\\armor\\armor\\breast_plate",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51406sftarm",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitrin",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 430,
+                                                    "y": 1980,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\ring\\ring3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51407sftrin",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitamt",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 500,
+                                                    "y": 1980,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\amulet\\amulet3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51408sftamt",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                       {
+                                            "type": "ButtonWidget",
+                                            "name": "czhelphitwpn",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 570,
+                                                    "y": 1980,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\weapon\\spear\\spear",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@czhelp51409sftwpn",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },                     //4
+
+
+ {
+                            "type": "TextBoxWidget",
+                            "name": "text",
+                            "fields": {
+                                "text": "  ",
+                                "rect": {
+                                    "x": 0,
+                                    "y": 2100
+                                },
+                                "style": {
+                                    "fontColor": "$FontColorWhite",
+                                    "pointSize": "$MediumFontSize",
+                                    "alignment": {
+                                        "h": "left",
+                                        "v": "center"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "type": "NpcDialogPanel", "name": "NpcDialogPanel",
+    "fields": {
+        "verticalOffset": 20,
+        "rect": { "x": 400, "y": 400, "width": 0, "height": 0 },
+        "padding": { "left": 32, "top": 24, "right": 32, "bottom": 24 },
+        "priority": 20,
+        "listEntryPadding": { "x": 0, "y": 10 },
+        "listStyle": {
+            "fontColor": { "r": 255, "g": 255, "b": 255, "a": 255 },
+            "pointSize": "$StyleNPCDialogueSize",
+            "alignment": { "h": "center" },
+            "options": { "lineWrap": false, "newlineHandling": "standard" },
+        }
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher"
+        },
+        {
+            "type": "NineTileImageWidget", "name": "DialogBorder",
+            "fields": {
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.70 ],
+                "tileScale": 1.0
+            }
+        },
+        {
+            "type": "Widget", "name": "Templates",
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TextTemplate",
+                    "fields": {
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$StyleNPCDialogueSize",
+                            "alignment": { "h": "center", "v": "center" },
+                          "options":
+                          {
+                            "lineWrap": false,
+                            "newlineHandling": "standard",
+                            "pipeCharacterBehavior": "handle"
+                          }
+                        }
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "ButtonTemplate",
+                    "fields": {
+                        "rect": { "x": 90, "y": 375, "width": 0, "height": 0 },
+                        "filename": "PANEL\\Modals\\Modal_Button",
+                        "textString": "@ok",
+                        "pointSize": "$StyleNPCDialogueSize",
+                        "textColor": "$FontColorGoldYellow"
+                    }
+                },
+                {
+                    "type": "ListWidget", "name": "ListTemplate",
+                    "fields": {
+                        "isHoverList": true,
+                        "direction": "vertical",
+                        "itemSelectionMessage": "DialogMessage:ListItemClicked",
+                        "selectorName": "Selector",
+                        "selectionChangedSound": "cursor_pass",
+                    },
+                    "children": [
+                        {
+                            "type": "HoverListItemWidget", "name": "ItemTemplate",
+                            "fields": {
+                                "focusOnMouseOver": true,
+                                "baseColor": "$FontColorWhite",
+                                "hoveredColor": "$FontColorBlue"
+                            },
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "TextBox",
+                                    "fields": {
+                                      "style":
+                                      {
+                                        "pointSize": "$StyleNPCDialogueSize",
+                                        "alignment":
+                                        {
+                                          "h": "center",
+                                          "v": "center"
+                                        },
+                                        "options":
+                                        {
+                                          //"lineWrap": false,
+                                          "newlineHandling": "standard",
+                                          "pipeCharacterBehavior": "handle"
+                                        }
+                                      },
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "Widget", "name": "Selector",
+                        },
+                    ]
+                },
+            ]
+        }
+    ]
+}

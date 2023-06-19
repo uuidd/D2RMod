@@ -1,0 +1,184 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [
+      { "path": "data/hd/objects/characters/harem_guard_3/model/torso.model" }
+    ],
+    "skeletons": [
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/skeleton/harem_guard_3.skeleton"
+      }
+    ],
+    "animations": [],
+    "textures": [
+      { "path": "data/hd/character/common/common_hair1_FLOW.texture" },
+      { "path": "data/hd/character/common/common_hair1_HRT.texture" },
+      { "path": "data/hd/character/common/common_ktint.texture" },
+      {
+        "path": "data/hd/character/npc/act2guard1/textures/act2guard1_hair_ALB.texture"
+      },
+      {
+        "path": "data/hd/items/armor/shield/small_shield/armor_small_shield_ALB.texture"
+      },
+      {
+        "path": "data/hd/items/armor/shield/small_shield/armor_small_shield_mask.texture"
+      },
+      {
+        "path": "data/hd/items/armor/shield/small_shield/armor_small_shield_NRM.texture"
+      },
+      {
+        "path": "data/hd/items/armor/shield/small_shield/armor_small_shield_ORM.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/armor_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/armor_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/armor_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/body_skin_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/body_skin_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/body_skin_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/face_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/face_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/face_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/Ground_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/Ground_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/Ground_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/w083_invpike_Spear_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/w083_invpike_Spear_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/w083_invpike_Spear_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/weapon_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/weapon_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/harem_guard_3/texture/weapon_orm.texture"
+      }
+    ],
+    "physics": [],
+    "json": [],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "harem_guard_3",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2691777553,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "",
+          "doNotInheritRotation": false,
+          "rotationOverride": {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/characters/harem_guard_3/skeleton/harem_guard_3.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 3224221342,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/characters/harem_guard_3/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 1.5,
+                    "y": 1.0,
+                    "z": 1.5
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
+  ]
+}

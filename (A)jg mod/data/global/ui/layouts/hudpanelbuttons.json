@@ -1,0 +1,99 @@
+{
+  "type": "TooltipsPanel",
+  "name": "hudpanelbuttons",
+  "fields":
+  {
+    "priority": 99,
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 1
+    },
+
+    "rect":
+    {
+      "x": 600,
+      "y": -270,
+      "width": 200,
+      "height": 200,
+      "scale": 1
+    }
+  },
+  "children":
+  [
+    {
+      "type": "ButtonWidget",
+      "name": "minihpmpconvert",
+      "fields":
+      {
+        "rect":
+        {
+          "x": -86,
+          "y": -100,
+          "scale": 1.2
+        },
+        "filename": "automap\\default15\\tiles",
+        "tooltipString": "@bank",
+        "onClickMessage": "PanelManager:TogglePanel:BankExpansionLayout",
+        "focusIndicatorVisible": true,
+        "hoveredFrame": 0,
+        "pressedFrame": 0
+      }
+    },
+    {
+      "type": "ButtonWidget",
+      "name": "minihpmpconvert",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 0,
+          "y": 0,
+          "scale": 0.7
+        },
+        "filename": "panel\\jgmod\\minihpmp_convert",
+        "tooltipString": "@jghelp50006minihpmpconverttooltip",
+        "onClickMessage": "PanelManager:TogglePanel:minihpmp",
+        "focusIndicatorVisible": true,
+        "hoveredFrame": 2
+      }
+    },
+    {
+      "type": "ButtonWidget",
+      "name": "minipanelconvert",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 80,
+          "y": 0,
+          "scale": 0.7
+        },
+        "filename": "FrontEnd\\HD\\Final\\FrontEnd_Convert",
+        "tooltipString": "@jghelp50007minipanelconverttooltip",
+        "onClickMessage": "PanelManager:OpenPanel:showminihundpannel",
+        "hoveredFrame": 2
+      }
+    },
+    {
+      "type": "ButtonWidget",
+      "name": "minicubeconvert",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 160,
+          "y": 0,
+          "scale": 0.3
+        },
+        "filename": "items\\misc\\quest\\horadric_cube",
+        "tooltipString": "@jghelp50008minicubeconverttooltip",
+        "onClickMessage": "PanelManager:TogglePanel:minihoradriccubelayout",
+        "focusIndicatorVisible": true,
+        "hoveredFrame": 0,
+        "pressedFrame": 0
+      }
+    }
+
+  ]
+}

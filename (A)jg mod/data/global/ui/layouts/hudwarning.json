@@ -1,0 +1,116 @@
+{
+    "type": "HUDWarningsPanel", "name": "HUDWarning",
+    "fields": {
+        "priority": -100,
+        "anchor": { "x": 1, "y": 0 },
+        "rect": { "x": -12, "y": 4 },
+        "showAutomapGameName": true,
+        "showAutomapGamePassword": true,
+        "showAutomapAreaName": true,
+        "showAutomapDesecratedLevel": true,
+        "showAutomapGameVersion": true,
+        "showAutomapGameDifficulty": true,
+        "showAutomapGameIPAddress": true,
+        "showAutomapGameTypeExpansion": true,
+    },
+    "children": [
+        {
+            "type": "LayoutItemWidget", "name": "InfoTextWrapper",
+            "fields": {
+                "minHeight": 48,
+                "marginRight": 4,
+                "marginTop": 4,
+                "marginBottom": 4,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "InfoText",
+                    "fields": {
+                        "fitToText": true,
+                        "fontType": "16pt",
+                        "style": {
+                            "fontColor": { "r": 199, "g": 179, "b": 119 },
+                            "alignment": { "v": "top", "h": "right" },
+                            "options": { "newlineHandling": "standard" }
+                        },
+                    }
+                },
+            ]
+        },
+        {
+            "type": "LayoutItemWidget", "name": "TerrorZoneInfoTextWrapper",
+            "fields": {
+                "minHeight": 16,
+                "marginRight": 4,
+                "marginTop": -4,
+                "marginBottom": 4,
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "TerrorZoneInfoText",
+                    "fields": {
+                        "fitToText": true,
+                        "fontType": "16pt",
+                      "style":
+                      {
+                        "fontColor":
+                        {
+                          "r": 174,
+                          "g": 0,
+                          "b": 255
+                        },
+                        "alignment":
+                        {
+                          "v": "top",
+                          "h": "right"
+                        },
+                        "options":
+                        {
+                          "newlineHandling": "standard",
+                          "pipeCharacterBehavior": "handle"
+                        }
+                      },
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ImageWidget", "name": "HostileWarning",
+            "fields": {
+                "filename": "PANEL/hostilepic",
+                "transparency": 0.5
+            }
+        },
+        {
+            "type": "DurabilityWidget", "name": "DurabilityWarning",
+            "fields": {
+                "requiredDamageLevel": "medium",
+                "lowDamageFraction": 0.5,
+                "mediumDamageFraction": 0.8,
+                "highDamageFraction": 1.0,
+                "damagedAlpha": 0.5,
+                "undamagedAlpha": 0.5,
+                "unwornAlpha": 0.5,
+            }
+        },
+        {
+            "type": "LayoutItemWidget", "name": "QuantityWarningWrapper",
+            "fields": {
+                "marginRight": 3,
+                "marginTop": 4,
+            },
+            "children": [
+                {
+                    "type": "QuantityWidget", "name": "QuantityWarning",
+                    "fields": {
+                        "amountsArrowsBolts": { "low": 50, "medium": 25, "high": 10 },
+                        "amountsJavelins": { "low": 15, "medium": 10, "high": 5 },
+                        "amountsPotions": { "low": 5, "medium": 4, "high": 2 },
+                        "amountsThrowingKnives": { "low": 15, "medium": 10, "high": 5 },
+                        "amountsThrowingAxes": { "low": 5, "medium": 4, "high": 2 },
+                    }
+                }
+            ]
+        }
+    ]
+}

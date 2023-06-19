@@ -1,0 +1,135 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [
+      {
+        "path": "data/hd/objects/chests/travincal_chest_large_left/model/torso.model"
+      }
+    ],
+    "skeletons": [
+      {
+        "path": "data/hd/objects/chests/travincal_chest_large_left/skeleton/travincal_chest_large_left.skeleton"
+      }
+    ],
+    "animations": [],
+    "textures": [
+      {
+        "path": "data/hd/objects/chests/travincal_chest_large_left/texture/travincal_chest_large_left_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/chests/travincal_chest_large_left/texture/travincal_chest_large_left_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/chests/travincal_chest_large_left/texture/travincal_chest_large_left_orm.texture"
+      }
+    ],
+    "physics": [],
+    "json": [
+      {
+        "path": "data/hd/objects/chests/travincal_chest_large_left/travincal_chest_large_left_state_machine.json"
+      }
+    ],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "travincal_chest_large_right",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2448219685,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/objects/chests/travincal_chest_large_left/travincal_chest_large_left_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride": {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/chests/travincal_chest_large_left/skeleton/travincal_chest_large_left.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 3303478237,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/chests/travincal_chest_large_left/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position": { "x": 0.3, "y": 0.0, "z": -0.2 },
+          "orientation": { "x": 0.0, "y": -0.5, "z": 0.0, "w": 0.8660254 },
+          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 0.5,
+                    "y": -1.0,
+                    "z": 1.5
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
+  ]
+}

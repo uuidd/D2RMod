@@ -1,0 +1,201 @@
+{
+  "type": "HUDWarningsPanel",
+  "name": "HUDWarning",
+  "fields":
+  {
+    "priority": -100,
+    "anchor":
+    {
+      "x": 1,
+      "y": 0
+    },
+    "rect":
+    {
+      "x": -40,
+      "y": 12
+    },
+    "showAutomapGameName": true,
+    "showAutomapGamePassword": true,
+    "showAutomapAreaName": true,
+    "showAutomapDesecratedLevel": true,
+    "showAutomapGameVersion": false,
+    "showAutomapGameDifficulty": true,
+    "showAutomapGameIPAddress": true,
+    "showAutomapGameTypeExpansion": false
+  },
+  "children":
+  [
+     {
+      "type": "LayoutItemWidget",
+      "name": "InfoTextWrapper",
+      "fields":
+      {
+        "minHeight": 50,
+        "marginRight": 12,
+        "marginTop": 12,
+        "marginBottom": 12
+      },
+      "children":
+      [
+        {
+          "type": "TextBoxWidget",
+          "name": "InfoText",
+          "fields":
+          {
+            "fitToText": true,
+            "style":
+            {
+              "pointSize": "$MediumFontSize",
+              "fontColor": "$FontColorGoldYellow",
+              "alignment":
+              {
+                "v": "top",
+                "h": "right"
+              },
+              "options":
+              {
+                "newlineHandling": "standard",
+                "pipeCharacterBehavior": "handle"
+              },
+              "spacing":
+              {
+                "kerning": 0.9
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "LayoutItemWidget",
+      "name": "TerrorZoneInfoTextWrapper",
+      "fields":
+      {
+        "minHeight": 50,
+        "marginRight": 12,
+        "marginTop": -12,
+        "marginBottom": 12
+      },
+      "children":
+      [
+        {
+          "type": "TextBoxWidget",
+          "name": "TerrorZoneInfoText",
+          "fields":
+          {
+            "fitToText": true,
+            "fontType": "16pt",
+            "style":
+            {
+              "pointSize": "$MediumFontSize",
+              "fontColor":
+              {
+                "r": 135,
+                "g": 82,
+                "b": 161
+              },
+              "alignment":
+              {
+                "v": "top",
+                "h": "right"
+              },
+              "options":
+              {
+                "newlineHandling": "standard",
+                "pipeCharacterBehavior": "handle"
+              },
+              "spacing":
+              {
+                "kerning": 0.9
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "LayoutItemWidget",
+      "name": "QuantityWarningWrapper",
+      "fields":
+      {
+        "marginRight": 5,
+        "marginTop": 47
+      },
+      "children":
+      [
+        {
+          "type": "ImageWidget",
+          "name": "HostileWarning",
+          "fields":
+          {
+            "filename": "PANEL/hostilepic",
+            "transparency": 0.7
+          }
+        }
+      ]
+    },
+    {
+      "type": "DurabilityWidget",
+      "name": "DurabilityWarning",
+      "fields":
+      {
+        "requiredDamageLevel": "medium",
+        "lowDamageFraction": 0.5,
+        "mediumDamageFraction": 0.8,
+        "highDamageFraction": 1.0,
+        "damagedAlpha": 1.0,
+        "undamagedAlpha": 1.0,
+        "unwornAlpha": 1.0
+      }
+    },
+    {
+      "type": "LayoutItemWidget",
+      "name": "QuantityWarningWrapper",
+      "fields":
+      {
+        "marginRight": 53,
+        "marginTop": 15
+      },
+      "children":
+      [
+        {
+          "type": "QuantityWidget",
+          "name": "QuantityWarning",
+          "fields":
+          {
+            "amountsArrowsBolts":
+            {
+              "low": 50,
+              "medium": 25,
+              "high": 10
+            },
+            "amountsJavelins":
+            {
+              "low": 15,
+              "medium": 10,
+              "high": 5
+            },
+            "amountsPotions":
+            {
+              "low": 5,
+              "medium": 4,
+              "high": 2
+            },
+            "amountsThrowingKnives":
+            {
+              "low": 15,
+              "medium": 10,
+              "high": 5
+            },
+            "amountsThrowingAxes":
+            {
+              "low": 5,
+              "medium": 4,
+              "high": 2
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

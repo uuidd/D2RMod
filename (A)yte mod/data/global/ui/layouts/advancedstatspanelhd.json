@@ -1,0 +1,111 @@
+{
+    "type": "AdvancedStatsPanel", "name": "AdvancedStatsPanel",
+    "fields": {
+        "rect": { "x": 1398, "y": -651 },
+        "anchor": "$LeftPanelAnchor",
+        "defaultWidget": "ScrollBar",
+        "textPadding": 16
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "Background",
+            "fields": {
+                "filename": "PANEL\\AdvancedCharacterSheet\\AdvancedCharacterSheet_BG"
+            }
+        },
+        {
+            "type": "ClickCatcherWidget", "name": "ClickCatcher",
+            "fields": {
+                "rect": {"width": 875, "height": 1500 }
+            }
+        },
+        {
+            "type": "ImageWidget", "name": "ScrollBackground",
+            "fields": {
+                "rect": {"x": 765, "y": 150 },
+                "filename": "PANEL\\AdvancedCharacterSheet\\AdvancedCharacterSheet_ScrollBar"
+            }
+        },
+        {
+            "type": "ScrollControllerWidget", "name": "ScrollBar",
+            "fields": {
+                "rect": { "x": 765, "y": 160, "width": 36, "height": 1233 },
+                "upArrowFilepath": "",
+                "downArrowFilepath": "",
+                "barFilepath": "PANEL\\AdvancedCharacterSheet\\AdvancedCharacterSheet_ScrollIndicator",
+                "viewName": "ListContainer",
+            }
+        },
+        {
+            "type": "TextBoxWidget", "name": "Title",
+            "fields": {
+                "text": "@AdvancedStats",
+                "rect": { "x": 120, "y": 61, "width": 640, "height": 85 },
+                "style": "$StyleTitleBlock"
+            }
+        },
+        {
+            "type": "ListWidget", "name": "ListContainer",
+            "fields": {
+                "rect": { "x": 148, "y": 212, "width": 576, "height": 1231},
+                "direction": "vertical",
+                "scrollControllerName": "ScrollBar",
+            },
+            "children": [
+                {
+                    "type": "ListItemWidget", "name": "OptionTemplate",
+                    "fields": {
+                        "rect": { "x": 0, "y": 10, "width": 576, "height": 70 }
+                    },
+                    "children": [
+                        {
+                            "type": "NineTileImageWidget", "name": "TextContainer",
+                            "fields": {
+                                "rect": { "x": 0, "y": 0, "width": 576, "height": 0 },
+                                "filename": "PANEL\\AdvancedCharacterSheet\\AdvancedCharacterSheet_Cell",
+                                "tileScale": 1.0
+                            }
+                        },
+                        {
+                          "type": "TextBoxWidget", "name": "StatText",
+                            "fields": {
+                                "rect": { "x": 20, "y": 0, "width": 516, "height": 50 },
+                                "style": {
+                                    "fontColor": "$FontColorWhite",
+                                    "pointSize": "$SmallFontSize",
+                                    "alignment": { "h": "center", "v": "center" },
+                                    "options": {
+                                        "lineWrap": true,
+                                        "pipeCharacterBehavior": "handle",
+                                    },
+                                }
+                            }
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ButtonWidget", "name": "AdvancedStatsPanelHelpBtn",
+            "fields": {
+                "rect": { "x": 700, "y": 65 },
+                "filename": "PANEL\\Character_Sheet\\AdvancedStatsButton",
+                "hoveredFrame": 3,
+                "onClickMessage": "PanelManager:TogglePanel:AdvancedStatsPanelHelp",
+                "pressLabelOffset": { "x": 0, "y": 2 },
+                "tooltipString": "@advancedstatspanelhelpbtnstr"
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "CloseButton",
+            "fields": {
+                "rect": { "x": 791, "y": 10 },
+                "filename": "PANEL\\closebtn_4x",
+                "hoveredFrame": 3,
+                "onClickMessage": "PanelManager:ClosePanel:AdvancedStatsPanel",
+                "tooltipString": "@strClose",
+                "sound": "cursor_close_window_hd",
+            },
+        },
+    ]
+}

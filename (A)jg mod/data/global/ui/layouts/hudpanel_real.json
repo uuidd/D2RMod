@@ -1,0 +1,607 @@
+{
+  "type": "SDHeadsUpPanel",
+  "name": "hudpanel_real",
+  "fields":
+  {
+    "priority": 100,
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 1
+    },
+    "rect":
+    {
+      "y": -104,
+      "height": 104
+    },
+    "background640": "PANEL/ctrlpnl7",
+    "background640Offsets":
+    [
+      0,
+      165,
+      293,
+      421,
+      523
+    ],
+    "background800": "PANEL/800ctrlpnl7",
+    "background800Offsets":
+    [
+      0,
+      165,
+      293,
+      421,
+      549,
+      683
+    ],
+    "solidFillHeight": 48,
+    "statUpFloatingPos":
+    {
+      "x": 43,
+      "y": -40
+    },
+    "skillUpFloatingPos":
+    {
+      "x": 570,
+      "y": -40
+    },
+    "questAlert800Offset":
+    {
+      "y": 55
+    }
+  },
+  "children":
+  [
+    {
+      "type": "ClickCatcherWidget",
+      "name": "BGClickCatcher",
+      "fields":
+      {
+        // width/height are large enough to cover both 800x600 and 640x480
+        "rect":
+        {
+          "y": 55,
+          "width": 10000,
+          "height": 100
+        }
+      }
+    },
+    {
+      "type": "Widget",
+      "name": "Left",
+      "fields":
+      {
+        "rect":
+        {
+          "width": 165,
+          "height": 104
+        }
+      },
+      "children":
+      [
+        {
+          "type": "AttributeBallWidget",
+          "name": "HealthBall",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 29,
+              "y": 11
+            },
+            "filename": "PANEL/hlthmana",
+            "attribute": "health",
+            "minLiquidHeight": 1,
+            "maxSmoothingSeconds": 1.0,
+            "jumpSmoothingSeconds": 0.25,
+            "smoothDecrease": false
+          },
+          "children":
+          [
+            {
+              "type": "ImageWidget",
+              "name": "HealthBallOverlay",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": -1
+                },
+                "filename": "PANEL/overlap"
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "ValueDisplay",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 36,
+                  "y": -2
+                },
+                "fontType": "16pt",
+                "style":
+                {
+                  "alignment":
+                  {
+                    "v": "bottom",
+                    "h": "center"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "SkillSelectButtonWidget",
+          "name": "LeftSkillButton",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 117,
+              "y": 56
+            },
+            "side": "left",
+            "skillIconFilenames": "$SkillIconFilenames"
+          },
+          "children":
+          [
+            {
+              "type": "TextBoxWidget",
+              "name": "HotkeyText",
+              "fields":
+              {
+                "rect": "$SkillHotkeyTextRect",
+                "style": "$SkillHotkeyTextStyle"
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "QuantityText",
+              "fields":
+              {
+                "rect": "$SkillQuantityTextRect",
+                "style": "$SkillQuantityTextStyle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Widget",
+      "name": "Middle",
+      "fields":
+      {
+        "rect":
+        {
+          "width": 310,
+          "height": 104
+        }
+      },
+      "children":
+      [
+        {
+          "type": "ExpBarWidget",
+          "name": "ExpBar",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 11,
+              "y": 65,
+              "width": 119,
+              "height": 2
+            },
+            "hitMargin":
+            {
+              "left": 2,
+              "right": 2,
+              "top": 4,
+              "bottom": 2
+            }
+          }
+        },
+        {
+          "type": "RunButtonWidget",
+          "name": "RunButton",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 10,
+              "y": 74
+            },
+            "filename": "PANEL/runbutton"
+          }
+        },
+        {
+          "type": "StaminaBarWidget",
+          "name": "StaminaBar",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 28,
+              "y": 77,
+              "width": 102,
+              "height": 18
+            },
+            "transparency": 0.75,
+            "maxSmoothingSeconds": 1.0,
+            "jumpSmoothingSeconds": 0.25
+          }
+        },
+        {
+          "type": "MiniMenuToggleWidget",
+          "name": "MiniMenuToggle",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 147,
+              "y": 64
+            },
+            "filename": "PANEL/menubutton",
+            "closedTooltip": "@panelmini",
+            "openedTooltip": "@panelcmini"
+          }
+        },
+        {
+          "type": "BeltWidget",
+          "name": "Belt",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 176,
+              "y": 63
+            },
+            "poppedRowFilename": "PANEL/ctrlpnl_popbelt",
+            "cellOffsetInRow":
+            {
+              "x": 1,
+              "y": 2
+            },
+            "itemOffsetInCell":
+            {
+              "x": 1,
+              "y": 1
+            },
+            "cellPadding":
+            {
+              "x": 2,
+              "y": 3
+            },
+            "cellSize": "$ItemCellSize"
+          },
+          "children":
+          [
+            {
+              "type": "TextBoxWidget",
+              "name": "HotkeyLabelTemplate",
+              "fields":
+              {
+                "text": "123",
+                "rect":
+                {
+                  "x": 3,
+                  "y": 0,
+                  "width": 28,
+                  "height": 28
+                },
+                "style":
+                {
+                  "alignment":
+                  {
+                    "v": "bottom"
+                  },
+                  "fontColor":
+                  {
+                    "r": 199,
+                    "g": 179,
+                    "b": 119
+                  },
+                  "options":
+                  {
+                    "hideOverflow": true
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Widget",
+      "name": "Right",
+      "fields":
+      {
+        "rect":
+        {
+          "width": 165,
+          "height": 104
+        }
+      },
+      "children":
+      [
+        {
+          "type": "AttributeBallWidget",
+          "name": "ManaBall",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 54,
+              "y": 11
+            },
+            "filename": "PANEL/hlthmana",
+            "attribute": "mana",
+            "maxSmoothingSeconds": 1.0,
+            "jumpSmoothingSeconds": 0.25
+          },
+          "children":
+          [
+            {
+              "type": "ImageWidget",
+              "name": "ManaBallOverlay",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 1,
+                  "y": -4
+                },
+                "filename": "PANEL/overlap",
+                "frame": 1
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "ValueDisplay",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 31,
+                  "y": -2
+                },
+                "fontType": "16pt",
+                "style":
+                {
+                  "alignment":
+                  {
+                    "v": "bottom",
+                    "h": "center"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "SkillSelectButtonWidget",
+          "name": "RightSkillButton",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 0,
+              "y": 56
+            },
+            "side": "right",
+            "skillIconFilenames": "$SkillIconFilenames"
+          },
+          "children":
+          [
+            {
+              "type": "TextBoxWidget",
+              "name": "HotkeyText",
+              "fields":
+              {
+                "rect": "$SkillHotkeyTextRect",
+                "style": "$SkillHotkeyTextStyle"
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "QuantityText",
+              "fields":
+              {
+                "rect": "$SkillQuantityTextRect",
+                "style": "$SkillQuantityTextStyle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LevelUpButtonWidget",
+      "name": "StatUp",
+      "fields":
+      {
+        "type": "stats",
+        "labels":
+        [
+          "@strlvlup",
+          "@strlvlup"
+        ],
+        "tooltipOffset":
+        {
+          "y": -12
+        },
+        "rect":
+        {
+          "x": 206,
+          "y": 66
+        },
+        "filename": "PANEL/level",
+        "socketFilename": "PANEL/levelsocket",
+        "socketOffset":
+        {
+          "x": -3,
+          "y": -2
+        },
+        "leftPanelOffset":
+        {
+          "x": 320
+        },
+        "disabledFrame": 2,
+        "disabledTint":
+        {
+          "a": 1
+        }
+      },
+      "children":
+      [
+        {
+          "type": "TextBoxWidget",
+          "name": "Label",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 15,
+              "y": -19
+            },
+            "style":
+            {
+              "alignment":
+              {
+                "h": "center"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "LevelUpButtonWidget",
+      "name": "SkillUp",
+      "fields":
+      {
+        "type": "skills",
+        "labels":
+        [
+          "@strnewskl",
+          "@strnewskl"
+        ],
+        "tooltipOffset":
+        {
+          "y": -12
+        },
+        "rect":
+        {
+          "x": 563,
+          "y": 66
+        },
+        "filename": "PANEL/level",
+        "socketFilename": "PANEL/levelsocket",
+        "socketOffset":
+        {
+          "x": -3,
+          "y": -2
+        },
+        "rightPanelOffset":
+        {
+          "x": -320
+        },
+        "disabledFrame": 2,
+        "disabledTint":
+        {
+          "a": 1
+        }
+      },
+      "children":
+      [
+        {
+          "type": "TextBoxWidget",
+          "name": "Label",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 15,
+              "y": -19
+            },
+            "style":
+            {
+              "alignment":
+              {
+                "h": "center"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "LevelUpButtonWidget",
+      "name": "QuestAlert",
+      "fields":
+      {
+        "type": "quests",
+        "labels":
+        [
+          "@CfgQuestLog",
+          "@CfgQuestLog"
+        ],
+        "isFloating": true,
+        "tooltipOffset":
+        {
+          "y": -12
+        },
+        "rect":
+        {
+          "x": 43,
+          "y": -95
+        },
+        "filename": "PANEL/level",
+        "socketFilename": "PANEL/levelsocket",
+        "socketOffset":
+        {
+          "x": -3,
+          "y": -2
+        },
+        "leftPanelOffset":
+        {
+          "x": 320
+        },
+        "leftPanel800BonusOffset":
+        {
+          "x": 80
+        },
+        "disabledFrame": 2,
+        "disabledTint":
+        {
+          "a": 1
+        }
+      },
+      "children":
+      [
+        {
+          "type": "TextBoxWidget",
+          "name": "Label",
+          "fields":
+          {
+            "rect":
+            {
+              "x": 15,
+              "y": -19
+            },
+            "style":
+            {
+              "alignment":
+              {
+                "h": "center"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

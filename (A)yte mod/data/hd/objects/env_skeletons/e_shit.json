@@ -1,0 +1,181 @@
+{
+    "dependencies": {
+        "particles": [],
+        "models": [
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/model/torso.model"
+            }
+        ],
+        "skeletons": [
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/skeleton/e_shit.skeleton"
+            }
+        ],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_ALB_01.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_ALB_02.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_ALB_03.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_ALB_04.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_NRM_01.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_NRM_02.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_NRM_03.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_NRM_04.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_ORM_01.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_ORM_02.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_ORM_03.texture"
+            },
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/textures/env_skeletons_e_shit_01_ORM_04.texture"
+            }
+        ],
+        "physics": [],
+        "json": [
+            {
+                "path": "data/hd/objects/env_skeletons/e_shit/e_shit_state_machine.json"
+            }
+        ],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "UnitDefinition",
+    "name": "e_shit",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 3646318441,
+            "components": [
+                {
+                    "type": "UnitRootComponent",
+                    "name": "component_root",
+                    "state_machine_filename": "data/hd/objects/env_skeletons/e_shit/e_shit_state_machine.json",
+                    "doNotInheritRotation": false,
+                    "rotationOverride": {
+                        "x": 0.0,
+                        "y": 0.3826834,
+                        "z": 0.0,
+                        "w": 0.9238795
+                    },
+                    "doNotUseHDHeight": false,
+                    "hideAllMeshWhenInOpenedMode": false,
+                    "onCreateEventName": "",
+                    "animations": []
+                },
+                {
+                    "type": "SkeletonDefinitionComponent",
+                    "name": "component_skeleton",
+                    "filename": "data/hd/objects/env_skeletons/e_shit/skeleton/e_shit.skeleton"
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_torso",
+            "id": 4178761973,
+            "components": [
+                {
+                    "type": "UnitPartComponent",
+                    "name": "component_part_torso",
+                    "part": "torso",
+                    "variant": "lit"
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "component_model_torso",
+                    "filename": "data/hd/objects/env_skeletons/e_shit/model/torso.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_torso_TransformDefinition",
+                    "position": {
+                        "x": 1.3,
+                        "y": 0.0,
+                        "z": 1.805
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelPlatformTierComponent",
+                    "name": "entity_torso_ModelPlatformTier",
+                    "visibilityTier": -1,
+                    "shadowTier": 0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "vfx",
+            "id": 856925902,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "vfx_VfxDefinition",
+                    "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                    "hardKillOnDestroy": false
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "vfx_TransformDefinition",
+                    "position": {
+                        "x": 0.5,
+                        "y": 1.0,
+                        "z": 1.5
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        }
+    ]
+}

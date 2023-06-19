@@ -1,0 +1,848 @@
+{
+    "type": "HelpPanel", "name": "HelpPanel",
+    "fields": {
+        "priority": 300,
+        "fitToParent": true,
+        "childFormats": [
+            { "name": "HelpRun", "rect": { "x": -1565, "y": 25 }, "command": "run", "text": "@StrHDHelp1" },//"x": -865, "y": 175
+            { "name": "HelpHighItems", "rect": { "x": -1565, "y": 155 }, "command": "showitems", "text": "@StrHDHelp2" },//"x": -865, "y": 305
+            { "name": "HelpStandAttack", "rect": { "x": -1565, "y": 90 }, "command": "standstill", "text": "@StrHDHelp3" },//"x": -865, "y": 240
+            { "name": "HelpAutoMap", "rect": { "x": -1565, "y": 420 }, "command": "automap", "text": "@StrHDHelp4" },//"x": -865, "y": 570
+            { "name": "HelpGameMenu", "rect": { "x": -1565, "y": 355 },"command": "exitmenu", "text": "@StrHDHelp5" },//"x": -865, "y": 505
+            { "name": "HelpchatMode", "rect": { "x": -1565, "y": 485 }, "command": "chat", "text": "@StrHDHelp6" },//"x": -865, "y": 635
+            { "name": "Helpskillbind", "rect": { "x": -1565, "y": 810 }, "command": [ "skill1", "skill8" ], "text": "@StrHDHelp7" },//"x": -865, "y": 960
+            { "name": "HelpRenderToggle", "rect": { "x": -1565, "y": 550 }, "command": "toggle_renderer", "text": "@StrHDHelp8" },//"x": -865, "y": 700
+            { "name": "HelpZoom", "rect": { "x": -1565, "y": 615 }, "command": "zoom", "text": "@StrHDHelpZoomDescription" },//"x": -865, "y": 765
+            { "name": "HelpMercenaryScreen", "rect": { "x": -1565, "y": 680 }, "command": "hirelingscreen", "text": "@StrHDHelp9" },//"x": -865, "y": 830
+            { "name": "HelpMercenaryPotion", "rect": { "x": -1565, "y": 745 }, "command": [ "standstill", "belt1", "belt2", "belt3", "belt4" ], "text": "@StrHDHelp10" },//"x": -865, "y": 895
+            //Ytemod help
+            { "name": "BRSSHELPB", "rect": { "x": 155, "y": 25 }, "command": "showitems", "text": "@Ytemodhelp3" },
+            { "name": "BRSSHELPR", "rect": { "x": 155, "y": 90 }, "command": "showitems", "text": "@Ytemodhelp4" },
+            { "name": "BRSSHELPS1", "rect": { "x": 155, "y": 155 }, "command": "showitems", "text": "@Ytemodhelp5" },
+            { "name": "BRSSHELPS21", "rect": { "x": 155, "y": 220 }, "command": "showitems", "text": "@Ytemodhelp6" },
+            { "name": "BRSSHELPS22", "rect": { "x": 155, "y": 285 }, "command": "showitems", "text": "@Ytemodhelp7" },
+            { "name": "BDSSHELPB", "rect": { "x": 155, "y": 485 }, "command": "showitems", "text": "@Ytemodhelp3b" },
+            { "name": "BDSSHELPD", "rect": { "x": 155, "y": 550 }, "command": "showitems", "text": "@Ytemodhelp9" },
+            { "name": "BDSSHELPS1", "rect": { "x": 155, "y": 615 }, "command": "showitems", "text": "@Ytemodhelp10" },
+            { "name": "BDSSHELPS21", "rect": { "x": 155, "y": 680 }, "command": "showitems", "text": "@Ytemodhelp11" },
+            { "name": "BDSSHELPS22", "rect": { "x": 155, "y": 745 }, "command": "showitems", "text": "@Ytemodhelp12" },
+            { "name": "PVGHELPBC", "rect": { "x": 155, "y": 945 }, "command": "showitems", "text": "@Ytemodhelp14" },
+            { "name": "PVGHELPMRUS", "rect": { "x": 155, "y": 1010 }, "command": "showitems", "text": "@Ytemodhelp15" },
+            { "name": "PVGHELPV", "rect": { "x": 155, "y": 1075 }, "command": "showitems", "text": "@Ytemodhelp16" },
+            { "name": "PVGHELPEG", "rect": { "x": 155, "y": 1140 }, "command": "showitems", "text": "@Ytemodhelp17" },
+            { "name": "YTEHELPPS", "rect": { "x": 155, "y": 1190 }, "command": "showitems", "text": "@Ytemodhelp18" },
+        ],
+    },
+    "children": [
+        {
+            "type": "RectangleWidget", "name": "TransparentBG",
+            "fields": {
+                "fitToScreen": true,
+                "color": [ 0.0, 0.0, 0.0, 0.0 ]
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget", "name": "catcher",
+                    "fields": {
+                        "fitToParent": true
+                    }
+                },  
+            ]
+        },
+        {
+            "type": "Widget", "name": "CenterSection",
+            "fields": {
+                "anchor": { "x": 0.5, "y": 0.5 },
+                "rect": { "x": -45, "y": -785 },
+            },
+            "children": [
+
+                // Text
+                {
+                    "type": "TextBoxWidget", "name": "Title",
+                    "fields": {
+                        "rect": { "x": -1620, "y": -200 },//"x": 0, "y": -150
+                        "text": "@Strhelp1",//暗黑破壞神II 簡易說明
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$ExtraLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }//"v": "center", "h": "center"
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Title2",
+                    "fields": {
+                        "rect": { "x": 100, "y": -200 },//"x": 0, "y": -150
+                        "text": "@Ytemodhelp1",//YTEMOD輔助信息簡易說明
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$ExtraLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },				
+                // All widgets below should use FONT_FORMAL_12PT
+                // Gameplay
+                {
+                    "type": "TextBoxWidget", "name": "GameplayLabel",
+                    "fields": {
+                        "rect": { "x": -1620, "y": -75 },//"x": -920, "y": 75
+                        "text": "@StrHDHelp12",//遊戲設定
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$LargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpRun",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpHighItems",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpStandAttack",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                // User Interface
+                {
+                    "type": "TextBoxWidget", "name": "UILabel",
+                    "fields": {
+                        "rect": { "x": -1620, "y": 255 },//"x": -920, "y": 405
+                        "text": "@StrHDHelp11",//使用者介面
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$LargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpAutoMap",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpGameMenu",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpchatMode",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Helpskillbind",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpRenderToggle",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpZoom",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpMercenaryScreen",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpMercenaryPotion",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                //Ytemod help
+                {
+                    "type": "TextBoxWidget", "name": "YtemodBRSS",
+                    "fields": {
+                        "rect": { "x": 100, "y": -75 },
+                        "text": "@Ytemodhelp2",//BRSS
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$LargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "BRSSHELPB",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "BRSSHELPR",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "BRSSHELPS1",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "BRSSHELPS21",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "BRSSHELPS22",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YtemodBDSS",
+                    "fields": {
+                        "rect": { "x": 100, "y": 385 },
+                        "text": "@Ytemodhelp8",//BDSS
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$LargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "BDSSHELPB",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "BDSSHELPD",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "BDSSHELPS1",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "BDSSHELPS21",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "BDSSHELPS22",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YtemodPVG",
+                    "fields": {
+                        "rect": { "x": 100, "y": 845 },
+                        "text": "@Ytemodhelp13",//PVG
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$LargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PVGHELPBC",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PVGHELPMRUS",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PVGHELPV",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "PVGHELPEG",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "YTEHELPPS",
+                    "fields": {
+                        "fontType": "12ptF",
+                        "style": {
+                            "options": { "pipeCharacterBehavior" : "handle" },
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+                // White text
+                {
+                    "type": "TextBoxWidget", "name": "HelpHealth",
+                    "fields": {
+                        "rect": { "x": -940, "y": 1295 },
+                        "text": "@StrHelp9",//生命球
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpMSkillLeftMouseButton",
+                    "fields": {
+                        "rect": { "x": -55, "y": 1240 },
+                        "text": "@StrHDHelpLeftMouse",//滑鼠左鍵技能
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "right" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpMSkillLeftMouseChange",
+                    "fields": {
+                        "rect": { "x": -55, "y": 1295 },
+                        "text": "@StrHelp12",//（點選加以變更）
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "right" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpRunToggle",
+                    "fields": {
+                        "rect": { "x": -670, "y": 1365 },
+                        "text": "@StrHDHelpRunWalkToggle",//跑步／走路切換
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "center" },
+                        },
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpStaminaBar",
+                    "fields": {
+                        "rect": { "x": -500, "y": 1465 },
+                        "text": "@StrHelp15",//精力
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpExperienceBar",
+                    "fields": {
+                        "rect": { "x": 420, "y": 1570 },
+                        "text": "@StrHDHelpExperienceBar",//經驗值長條
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpMenuPanel",
+                    "fields": {
+                        "rect": { "x": -345, "y": 1560 },
+                        "text": "@StrHDHelpMenuPanel",//選單面板
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpBelt",
+                    "fields": {
+                        "rect": { "x": 695, "y": 1515 },
+                        "text": "@StrHelp21",//腰帶
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpMSkillRightMouseButton",
+                    "fields": {
+                        "rect": { "x": 145, "y": 1240 },
+                        "text": "@StrHDHelpRightMouse",//滑鼠右鍵技能
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpMSkillRightMouseChange",
+                    "fields": {
+                        "rect": { "x": 145, "y": 1295 },
+                        "text": "@StrHelp12",//（點選加以變更）
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "left" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "Helpmana",
+                    "fields": {
+                        "rect": { "x": 1045, "y": 1295 },
+                        "text": "@StrHelp22",//法力球
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpSoD2rKlg",
+                    "fields": {
+                        "rect": { "x": 45, "y": 1465 },
+                        "text": "@0scmsgp",//暗黑知識卷軸
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HelpMiniCube",
+                    "fields": {
+                        "rect": { "x": 1385, "y": 1405 },
+                        "text": "@helpminicube",//迷你方塊
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "h": "center" }
+                        }
+                    }
+                },
+                // Indicator lines
+                {
+                    "type": "IndicatorLineWidget", "name": "LifeLine",
+                    "fields": {
+                        "rect": { "x": -940, "y": 1360, "width": 6, "height": 150 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "LeftMouseLine",
+                    "fields": {
+                        "rect": { "x": -115, "y": 1360, "width": 6, "height": 360 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "RunWalkLine",
+                    "fields": {
+                        "rect": { "x": -670, "y": 1430, "width": 6, "height": 305 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "StaminaBarLine",
+                    "fields": {
+                        "rect": { "x": -500, "y": 1525, "width": 6, "height": 220 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "ExperienceBarLine",
+                    "fields": {
+                        "rect": { "x": 420, "y": 1630, "width": 6, "height": 60 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "MenuPanelLine",
+                    "fields": {
+                        "rect": { "x": -345, "y": 1620, "width": 6, "height": 165 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "BeltLine",
+                    "fields": {
+                        "rect": { "x": 695, "y": 1580, "width": 6, "height": 150 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "RightMouseLine",
+                    "fields": {
+                        "rect": { "x": 205, "y": 1360, "width": 6, "height": 360 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "ManaLine",
+                    "fields": {
+                        "rect": { "x": 1045, "y": 1360, "width": 6, "height": 150 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "SoD2rKlgLine",//暗黑知識卷軸指示綫
+                    "fields": {
+                        "rect": { "x": 42, "y": 1525, "width": 6, "height": 220 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+                {
+                    "type": "IndicatorLineWidget", "name": "MiniCubeLine",//迷你方塊指示綫
+                    "fields": {
+                        "rect": { "x": 1382, "y": 1475, "width": 6, "height": 290 },
+                        "color": [ 1, 1, 1, 1 ]
+                    }
+                },
+//                {
+//                    "type": "IndicatorLineWidget", "name": "YtemodHelpLine",//Ytemod簡易説明分割綫
+//                    "fields": {
+//                        "rect": { "x": 50, "y": -270, "width": 6, "height": 1360 },
+//                        "color": [ 1, 1, 1, 1 ]
+//                    }
+//                },
+            ]
+        },
+        // Right Anchored Panel
+        {
+            "type": "Widget", "name": "RightSection",
+            "fields": {
+                "anchor": { "x": 1.0, "y": 1.0 },
+                "rect": { "x": -230, "y": -2000 },
+            },
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "Close",
+                    "fields": {
+                        "rect": { "x": 95, "y": -100 },
+                        "tooltipString": "@strClose",
+                        "sound": "cursor_close_window_hd",
+                        "onClickMessage": "PanelManager:ClosePanel:HelpPanel",
+                        "filename": "PANEL/closebtn_4x",
+                    }
+                },
+                // Warnings
+                {
+                    "type": "ImageWidget", "name": "HostileWarning",
+                    "fields": {
+                        "rect": { "x": -75, "y": 0, "scale": 1.5 },
+                        "filename": "PANEL/hostilepic",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "HostileLabel",
+                    "fields": {
+                        "rect": { "x": 0, "y": 190 },
+                        "text": "@StrHDHelpHostileStatus",
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "DurabilityWidget", "name": "DurabilityWarning",
+                    "fields": {
+                        "rect": { "x": -130, "y": 260 },
+                        "requiredDamageLevel": "none",
+                        "lowDamageFraction": 0.5,
+                        "mediumDamageFraction": 0.8,
+                        "highDamageFraction": 1.0,
+                        "damagedAlpha": 1.0,
+                        "undamagedAlpha": 1.0,
+                        "unwornAlpha": 1.0,
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "DurabilityLabel",
+                    "fields": {
+                        "rect": { "x": 0, "y": 565 },
+                        "text": "@StrHDHelpDurabilityStatus",
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "AmmoWarning",
+                    "fields": {
+                        "rect": { "x": -75, "y": 625 },
+                        "filename": "PANEL/invwarn",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "AmmoLabel",
+                    "fields": {
+                        "rect": { "x": 0, "y": 820 },
+                        "text": "@StrHDHelpAmmoStatus",
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "center" }
+                        }
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "RewardCode",
+                    "fields": {
+                        "rect": { "x": -125, "y": 1700, "scale": 0.8 },
+                        "filename": "PANEL/dgs",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "RewardText",
+                    "fields": {
+                        "rect": { "x": 0, "y": 1650 },
+                        "text": "@YtemodRewardText",
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "center" }
+                        }
+                    }
+                },
+            ]
+        },
+        // Left Anchored Panel
+        {
+            "type": "Widget", "name": "LeftSection",
+            "fields": {
+                "anchor": { "x": 0, "y": 0 },
+                "rect": { "x": 250, "y": 250 },
+            },
+            "children": [
+                // Ally Display
+                {
+                    "type": "ImageWidget", "name": "AllyPortait1",
+                    "fields": {
+                        "rect": { "x": -200, "y": -190, "scale": 1 },
+                        "filename": "PANEL/PortraitFrame",
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "AllyPortait2",
+                    "fields": {
+                        "rect": { "x": -200, "y": 14, "scale": 1 },
+                        "filename": "PANEL/PortraitFrame",
+                    }
+                },
+                {
+                    "type": "ImageWidget", "name": "AllyPortait3",
+                    "fields": {
+                        "rect": { "x": -200, "y": 218, "scale": 1 },
+                        "filename": "PANEL/PortraitFrame",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "AllyLabel",
+                    "fields": {
+                        "rect": { "x": -200, "y": 395 },
+                        "text": "@StrHDHelpAllyDisplay",
+                        "fontType": "12ptF",
+                        "style": {
+                            "fontColor": "$FontColorGoldYellow",
+                            "pointSize": "$MediumLargeFontSize",
+                            "alignment": { "v": "center", "h": "left" }
+                        }
+                    }
+                },
+            ]
+        },
+    ]
+}

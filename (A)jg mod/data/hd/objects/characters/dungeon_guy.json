@@ -1,0 +1,225 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [
+      { "path": "data/hd/objects/characters/dungeon_guy/model/torso.model" }
+    ],
+    "skeletons": [
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/skeleton/dungeon_guy.skeleton"
+      }
+    ],
+    "animations": [],
+    "textures": [
+      { "path": "data/hd/character/common/common_hair2_FLOW.texture" },
+      { "path": "data/hd/character/common/common_hair2_HRT.texture" },
+      { "path": "data/hd/character/common/common_ktint.texture" },
+      {
+        "path": "data/hd/character/npc/geglash/textures/Geglash_Body_SSS.texture"
+      },
+      {
+        "path": "data/hd/character/npc/geglash/textures/Geglash_Hair_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/npc/geglash/textures/Geglash_Head_SSS.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_bloodplane_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_bloodplane_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_bloodplane_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_body_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_body_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_body_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_hair_ALB.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_head_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_head_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_head_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_posts_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_posts_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_posts_orm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_ropes_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_ropes_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/textures/dungeonguy_ropes_orm.texture"
+      }
+    ],
+    "physics": [],
+    "json": [
+      {
+        "path": "data/hd/objects/characters/dungeon_guy/dungeon_guy_state_machine.json"
+      }
+    ],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "dungeon_guy",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 579829211,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/objects/characters/dungeon_guy/dungeon_guy_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride": {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/characters/dungeon_guy/skeleton/dungeon_guy.skeleton"
+        },
+        {
+          "type": "FidgetAnimationComponent",
+          "name": "entity_root_FidgetAnimation",
+          "neutralSet": {
+            "type": "FidgetAnimationSet",
+            "name": "entity_root_FidgetAnimation_neutralSet",
+            "options": [
+              {
+                "type": "FidgetAnimationOption",
+                "name": "entity_root_FidgetAnimation_neutralSet_options_0",
+                "stateName": "Fidget01",
+                "weight": 1.0,
+                "cooldownMin": 0.0,
+                "cooldownMax": 0.0
+              },
+              {
+                "type": "FidgetAnimationOption",
+                "name": "entity_root_FidgetAnimation_neutralSet_options_1",
+                "stateName": "Fidget02",
+                "weight": 1.0,
+                "cooldownMin": 0.0,
+                "cooldownMax": 0.0
+              },
+              {
+                "type": "FidgetAnimationOption",
+                "name": "entity_root_FidgetAnimation_neutralSet_options_2",
+                "stateName": "Fidget03",
+                "weight": 1.0,
+                "cooldownMin": 0.0,
+                "cooldownMax": 0.0
+              }
+            ],
+            "firstFidgetDelayMin": 1.0,
+            "firstFidgetDelayMax": 4.0,
+            "subsequentFidgetDelayMin": 1.0,
+            "subsequentFidgetDelayMax": 3.0
+          },
+          "townNeutralSet": {},
+          "frontendSet": {},
+          "characterSelectSet": {}
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 1451995795,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/characters/dungeon_guy/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position": { "x": 0.0, "y": 0.0, "z": 0.0 },
+          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
+          "scale": { "x": 0.8, "y": 0.8, "z": 0.8 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 0.0,
+                    "y": 2.5,
+                    "z": 1.0
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+    ],
+    "skeletons":
+    [
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+      {
+        "path": "data/hd/missiles/bighead_lightning_missile.json"
+      },
+      {
+        "path": "data/hd/missiles/charged_bolt.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_catapultpoisonbomb.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_fire_spike_explode.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_fire_spikes.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_fire_spikes_ground.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_molten_fragment_d.json"
+      },
+      {
+        "path": "data/hd/missiles/fire_arrow_explode_2.json"
+      },
+      {
+        "path": "data/hd/missiles/ground_fire_small.json"
+      },
+      {
+        "path": "data/hd/missiles/ice_orb.json"
+      },
+      {
+        "path": "data/hd/missiles/meteor.json"
+      },
+      {
+        "path": "data/hd/missiles/poison_smoke_puff.json"
+      },
+      {
+        "path": "data/hd/missiles/poison_sparks.json"
+      },
+      {
+        "path": "data/hd/overlays/common/lightning.json"
+      }
+    ],
+    "variantdata":
+    [
+      {
+        "path": "data/hd/character/enemy/catapultspotter1/catapultspotter1_variant.json"
+      }
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "catapultspotter1",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2352864836,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "VariantDefinitionComponent",
+          "name": "component_variant",
+          "filename": "data/hd/character/enemy/catapultspotter1/catapultspotter1_variant.json"
+        },
+        {
+          "type": "DefinitionPreloadComponent",
+          "name": "Root_DefinitionPreloadComponent",
+          "missiles":
+          [
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry1",
+              "filename": "data/hd/missiles/poison_sparks.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry2",
+              "filename": "data/hd/missiles/expansion_fire_spikes_ground.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry3",
+              "filename": "data/hd/missiles/expansion_molten_fragment_d.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry4",
+              "filename": "data/hd/missiles/fire_arrow_explode_2.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry5",
+              "filename": "data/hd/missiles/ice_orb.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry6",
+              "filename": "data/hd/missiles/charged_bolt.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry7",
+              "filename": "data/hd/missiles/ground_fire_small.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry8",
+              "filename": "data/hd/missiles/expansion_catapultpoisonbomb.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry9",
+              "filename": "data/hd/missiles/poison_smoke_puff.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry10",
+              "filename": "data/hd/missiles/meteor.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry11",
+              "filename": "data/hd/missiles/expansion_fire_spike_explode.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry12",
+              "filename": "data/hd/missiles/bighead_lightning_missile.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry13",
+              "filename": "data/hd/missiles/expansion_fire_spikes.json"
+            }
+          ],
+          "overlays":
+          [
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry1",
+              "filename": "data/hd/overlays/common/lightning.json"
+            }
+          ],
+          "minions":
+          [
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 2918731729,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_pointlight",
+      "id": 2353308128,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0, //0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PointLightDefinitionComponent",
+          "name": "white_light",
+          "color":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 300.0,
+          "radius": 10.0,
+          "attenuation": 1.0,
+          "lightMask": 1,
+          "diffuseContribution": 1.0,
+          "specularContribution": 1.0,
+          "isLocalLight": false
+        }
+      ]
+    }
+  ]
+}

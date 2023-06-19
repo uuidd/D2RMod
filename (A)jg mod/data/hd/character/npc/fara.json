@@ -1,0 +1,301 @@
+{
+    "dependencies": {
+        "particles": [],
+        "models": [
+            {
+                "path": "data/hd/character/npc/fara/torso.model"
+            }
+        ],
+        "skeletons": [
+            {
+                "path": "data/hd/character/npc/fara/skeleton/fara.skeleton"
+            }
+        ],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/character/common/common_ktint.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Body_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Body_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Body_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Body_SSS.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Hair_ALB.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Hair_Flowmap.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Hair_HRT.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Head_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Head_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Head_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Head_SSS.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Outfit_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Outfit_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/fara/textures/Fara_Outfit_orm.texture"
+            }
+        ],
+        "physics": [],
+        "json": [
+            {
+                "path": "data/hd/character/npc/fara/fara_state_machine.json"
+            },
+            {
+                "path": "data/hd/items/weapon/hammer/_monsters/faras_hammer.json"
+            }
+        ],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "UnitDefinition",
+    "name": "fara",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 217821671,
+            "components": [
+                {
+                    "type": "UnitRootComponent",
+                    "name": "component_root",
+                    "state_machine_filename": "data/hd/character/npc/fara/fara_state_machine.json",
+                    "doNotInheritRotation": false,
+                    "rotationOverride": {
+                        "x": 0.0,
+                        "y": 0.3826834,
+                        "z": 0.0,
+                        "w": 0.9238795
+                    },
+                    "doNotUseHDHeight": false,
+                    "hideAllMeshWhenInOpenedMode": false,
+                    "onCreateEventName": "",
+                    "animations": []
+                },
+                {
+                    "type": "SkeletonDefinitionComponent",
+                    "name": "component_skeleton",
+                    "filename": "data/hd/character/npc/fara/skeleton/fara.skeleton"
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "IKComponent",
+                    "name": "entity_root_IK",
+                    "preset": {
+                        "type": "IKPreset",
+                        "name": "Default_Biped_Outsource",
+                        "footIKSetup": [
+                            {
+                                "type": "FootIKSetup",
+                                "name": "Default_Biped_Outsource_footIKSetup_0",
+                                "footBoneName": "R_leg_03_bind_jnt",
+                                "kneeBoneName": "R_leg_02_bind_jnt",
+                                "hipBoneName": "R_leg_01_bind_jnt",
+                                "locationTrackName": "R_IK_position",
+                                "enabledTrackName": "R_FKIK",
+                                "hyperExtensionStart": 0.0,
+                                "hyperExtensionScale": 1.0,
+                                "defaultEnabled": false,
+                                "kneeRotationAxis": 0,
+                                "flipKneeRotationAxis": false
+                            },
+                            {
+                                "type": "FootIKSetup",
+                                "name": "Default_Biped_Outsource_footIKSetup_1",
+                                "footBoneName": "L_leg_03_bind_jnt",
+                                "kneeBoneName": "L_leg_02_bind_jnt",
+                                "hipBoneName": "L_leg_01_bind_jnt",
+                                "locationTrackName": "L_IK_position",
+                                "enabledTrackName": "L_FKIK",
+                                "hyperExtensionStart": 0.0,
+                                "hyperExtensionScale": 1.0,
+                                "defaultEnabled": false,
+                                "kneeRotationAxis": 0,
+                                "flipKneeRotationAxis": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "LookAtAnimationControlComponent",
+                    "name": "entity_root_LookAtAnimationControl",
+                    "controlOverrides": [],
+                    "aimLayerName": "Aim_Head",
+                    "blendInTime": 0.25,
+                    "blendOutTime": 0.25
+                },
+                {
+                    "type": "AimLayersComponent",
+                    "name": "entity_root_AimLayers",
+                    "aimLayers": [
+                        {
+                            "type": "AimLayerSetup",
+                            "name": "entity_root_AimLayers_aimLayers_0",
+                            "layerName": "Aim_Head",
+                            "yawAnimationState": "HeadAimLayer_Yaw",
+                            "yawOutOfRangeBehavior": 2,
+                            "yawAngleOffset": 0.0,
+                            "pitchAnimationState": "HeadAimLayer_Pitch",
+                            "pitchOutOfRangeBehavior": 0,
+                            "pitchAngleOffset": 0.0,
+                            "aimLocationTrackName": "aim_location",
+                            "aimDampingFactor": 0.15,
+                            "aimTarget": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "MoveAnimationSelectComponent",
+                    "name": "entity_root_MoveAnimationSelect",
+                    "animationOptions": [
+                        {
+                            "type": "MoveAnimationOption",
+                            "name": "entity_root_MoveAnimationSelect_animationOptions_0",
+                            "validForWalk": true,
+                            "validForRun": true,
+                            "validInsideTown": true,
+                            "validOutsideTown": true,
+                            "minMoveSpeed": 0.0,
+                            "maxMoveSpeed": 6.0,
+                            "baseMoveSpeed": 2.7,
+                            "animationName": "Walk"
+                        }
+                    ],
+                    "defaultAnimationName": "Walk"
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_torso",
+            "id": 750199412,
+            "components": [
+                {
+                    "type": "UnitPartComponent",
+                    "name": "component_part_torso",
+                    "part": "torso",
+                    "variant": "lit"
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "component_model_torso",
+                    "filename": "data/hd/character/npc/fara/torso.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "UnitAttachmentComponent",
+                    "name": "entity_torso_UnitAttachment",
+                    "filename": "data/hd/items/weapon/hammer/_monsters/faras_hammer.json",
+                    "overrideBoneName": "L_weapon_attach",
+                    "orientTowardBoneName": "",
+                    "attachmentTransform": {
+                        "type": "Transform",
+                        "name": "entity_torso_UnitAttachment_attachmentTransform",
+                        "translation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "rotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "scale": {
+                            "x": 0.85,
+                            "y": 0.85,
+                            "z": 0.85
+                        }
+                    },
+                    "attachmentStateMachineFilename": "",
+                    "part": "torso",
+                    "variant": "lit"
+                }
+            ]
+        },
+        {
+          "type": "Entity",
+          "name": "entity_root",
+          "id": 1079187010,
+          "components": [
+              {
+                  "type": "VfxDefinitionComponent",
+                  "name": "entity_root_VfxDefinition",
+                  "filename": "data/hd/nickname/particles/fara.particles",
+                  "hardKillOnDestroy": false
+              },
+              {
+                  "type": "TransformDefinitionComponent",
+                  "name": "vfx4294962040_component_transform",
+                  "position": {
+                      "x": 0.0,
+                      "y": 9.0,
+                      "z": 0.0
+                  },
+                  "orientation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                  },
+                  "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                  },
+                  "inheritOnlyPosition": false
+              }
+          ]
+      }
+    ]
+}

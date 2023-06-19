@@ -1,0 +1,386 @@
+{
+    "desecrated_zones": [
+        {
+            "start_time_utc": "2023-01-27 00:00:00",
+            /* "end_time_utc": "2022-12-15 00:00:00", */ /* Use end time to automate multiple configs. Useful for events. */
+            "terror_duration_min": 60,
+            "terror_break_min": 0,
+            "seed": 16664395743969097666, /* UInt64. Can't be above 18446744073709551615 */
+            "non_ladder_enabled": true,
+            "enabled_normal": true,
+            "enabled_nightmare": true,
+            "enabled_hell": true,
+            "default_normal": {
+                "bound_incl_min": 3, /* Minimum level of a terrorized monster. MAX(bound_incl_min, original_monster_level) */
+                "bound_incl_max": 45, /* Maximum level of a terrorized monster. MAX(bound_incl_max, original_monster_level) */
+                "boost_level": 2, /* player_level + boost_level = terrorized_monster_level */
+                "difficulty_scale": 1, /* Fake the amount of players in the game. AKA /players X */
+                "boost_experience_percent": 25 /* Bonus experience percentage applied at to the monster's base experience in monstats.txt */
+            },
+            "default_nightmare": {
+                "bound_incl_min": 40,
+                "bound_incl_max": 71,
+                "boost_level": 2,
+                "difficulty_scale": 1,
+                "boost_experience_percent": 25
+            },
+            "default_hell": {
+                "bound_incl_min": 70,
+                "bound_incl_max": 96,
+                "boost_level": 2,
+                "difficulty_scale": 1,
+                "boost_experience_percent": 25
+            },
+            "warnings": [
+                {
+                    "announce_time_min": 10,
+                    "tier": 1
+                },
+                {
+                    "announce_time_min": 5,
+                    "tier": 2
+                },
+                {
+                    "announce_time_min": 1,
+                    "tier": 3
+                },
+                {
+                    /* DO NOT REMOVE! ALWAYS NEED A TIER 0 AT MINUTE 0. DO NOT REMOVE! */
+                    "announce_time_min": 0,
+                    "tier": 0
+                }
+            ],
+            "zones": [
+                {
+                    /* A1第1套 */
+                    "id": 1,
+                    /* You can have a MAX of 20 desecrated levels at a time */
+                    "levels": [
+                        {
+                            /* 鲜血荒地 */
+                            "level_id": 2,
+                            /* 罗格营地 */
+                            "waypoint_level_id": 1
+                        },
+                        {
+                            /* 冰冷之原 */
+                            "level_id": 3
+                        },
+                        {
+                            /* 旷石荒野 */
+                            "level_id": 4
+                        },
+                        {
+                            /* 崔斯特瑞姆 */
+                            "level_id": 38
+                        },
+                        {
+                            /* 牛场 */
+                            "level_id": 39
+                        }
+                    ]
+                },
+                {
+                    /* A1第2套 */
+                    "id": 2,
+                    "levels": [
+                        {
+                            /* 黑暗森林 */
+                            "level_id": 5,
+                            /* 黑暗森林 */
+                            "waypoint_level_id": 5
+                        },
+                        {
+                            /* 黑色荒地 */
+                            "level_id": 6
+                        },
+                        {
+                            /* 泰摩高地 */
+                            "level_id": 7
+                        },
+                        {
+                            /* 地穴一层 */
+                            "level_id": 12
+                        },
+                        {
+                            /* 地穴二层 */
+                            "level_id": 16
+                        }
+                    ]
+                },
+                {
+                    /* A1第3套 */
+                    "id": 3,
+                    "levels": [
+                        {
+                            /* 大教堂 */
+                            "level_id": 33,
+                            /* 内侧回廊 */
+                            "waypoint_level_id": 32
+                        },
+                        {
+                            /* 地下墓穴一层 */
+                            "level_id": 34
+                        },
+                        {
+                            /* 地下墓穴二层 */
+                            "level_id": 35
+                        },
+                        {
+                            /* 地下墓穴三层 */
+                            "level_id": 36
+                        },
+                        {
+                            /* 地下墓穴四层 */
+                            "level_id": 37
+                        }
+                    ]
+                },
+                {
+                    /* A2第1套 */
+                    "id": 4,
+                    "levels": [
+                        {
+                            /* 碎石荒地 */
+                            "level_id": 41,
+                            /* 鲁高因 */
+                            "waypoint_level_id": 40
+                        },
+                        {
+                            /* 干燥高地 */
+                            "level_id": 42
+                        },
+                        {
+                            /* 遥远的绿洲 */
+                            "level_id": 43
+                        },
+                        {
+                            /* 失落之城 */
+                            "level_id": 44
+                        },
+                        {
+                            /* 群蛇峡谷 */
+                            "level_id": 45
+                        },
+                        {
+                            /* 利爪腹蛇神殿一层 */
+                            "level_id": 58
+                        },
+                        {
+                            /* 利爪腹蛇神殿二层 */
+                            "level_id": 61
+                        }
+                    ]
+                },
+                {
+                    /* A2第2套 */
+                    "id": 5,
+                    "levels": [
+                        {
+                            /* 塔拉夏古墓1 */
+                            "level_id": 66,
+                            /* 术士峡谷 */
+                            "waypoint_level_id": 46
+                        },
+                        {
+                            /* 塔拉夏古墓2 */
+                            "level_id": 67
+                        },
+                        {
+                            /* 塔拉夏古墓3 */
+                            "level_id": 68
+                        },
+                        {
+                            /* 塔拉夏古墓4 */
+                            "level_id": 69
+                        },
+                        {
+                            /* 塔拉夏古墓5 */
+                            "level_id": 70
+                        },
+                        {
+                            /* 塔拉夏古墓6 */
+                            "level_id": 71
+                        },
+                        {
+                            /* 塔拉夏古墓7 */
+                            "level_id": 72
+                        },
+                        {
+                            /* 都瑞尔的房间 */
+                            "level_id": 73
+                        }
+                    ]
+                },
+                {
+                    /* A3第1套 */
+                    "id": 6,
+                    "levels": [
+                        {
+                            /* 蜘蛛森林 */
+                            "level_id": 76,
+                            /* 库拉斯特 */
+                            "waypoint_level_id": 75
+                        },
+                        {
+                            /* 大沼泽 */
+                            "level_id": 77
+                        },
+                        {
+                            /* 剥皮森林 */
+                            "level_id": 78
+                        },
+                        {
+                            /* 库拉斯特下层 */
+                            "level_id": 79
+                        },
+                        {
+                            /* 库拉斯特集市 */
+                            "level_id": 80
+                        },
+                        {
+                            /* 库拉斯特上层 */
+                            "level_id": 81
+                        }
+                    ]
+                },
+                {
+                    /* A3第2套 */
+                    "id": 7,
+                    "levels": [
+                        {
+                            /* 崔凡克 */
+                            "level_id": 83,
+                            /* 崔凡克 */
+                            "waypoint_level_id": 83
+                        },
+                        {
+                            /* 憎恨囚牢一层 */
+                            "level_id": 100
+                        },
+                        {
+                            /* 恨囚牢二层 */
+                            "level_id": 101
+                        },
+                        {
+                            /* 憎恨囚牢三层 */
+                            "level_id": 102
+                        }
+                    ]
+                },
+                {
+                    /* A4第1套 */
+                    "id": 8,
+                    "levels": [
+                        {
+                            /* 外围荒原 */
+                            "level_id": 104,
+                            /* 群魔堡垒 */
+                            "waypoint_level_id": 103
+                        },
+                        {
+                            /* 绝望平原 */
+                            "level_id": 105
+                        },
+                        {
+                            /* 神罚之城 */
+                            "level_id": 106
+                        }
+                    ]
+                },
+                {
+                    /* A4第2套 */
+                    "id": 9,
+                    "levels": [
+                        {
+                            /* 火焰之河 */
+                            "level_id": 107,
+                            /* 神罚之城 */
+                            "waypoint_level_id": 106
+                        },
+                        {
+                            /* 混沌避难所 */
+                            "level_id": 108
+                        }
+                    ]
+                },
+                {
+                    /* A5第1套 */
+                    "id": 10,
+                    "levels": [
+                        {
+                            /* 血腥丘陵 */
+                            "level_id": 110,
+                            /* 哈洛加斯 */
+                            "waypoint_level_id": 109
+                        },
+                        {
+                            /* 冰冻高地 */
+                            "level_id": 111
+                        },
+                        {
+                            /* 亚瑞特高原 */
+                            "level_id": 112
+                        },
+                        {
+                            /* 亚巴顿 */
+                            "level_id": 126
+                        }
+                    ]
+                },
+                {
+                    /* A5第2套 */
+                    "id": 11,
+                    "levels": [
+                        {
+                            /* 水晶通道 */
+                            "level_id": 113,
+                            /* 水晶通道 */
+                            "waypoint_level_id": 113
+                        },
+                        {
+                            /* 冰河路径 */
+                            "level_id": 115
+                        },
+                        {
+                            /* 冰冻苔原 */
+                            "level_id": 117
+                        },
+                        {
+                            /* 先祖之路 */
+                            "level_id": 118
+                        }
+                    ]
+                },
+                {
+                    /* A5第3套和原版一样没变(世界之石大殿) */
+                    "id": 36,
+                    "levels": [
+                        {
+                            /* Worldstone Keep Level 1 */
+                            "level_id": 128
+                        },
+                        {
+                            /* Worldstone Keep Level 2 */
+                            "level_id": 129,
+                            /* Worldstone Keep Level 2 */
+                            "waypoint_level_id": 129
+                        },
+                        {
+                            /* Worldstone Keep Level 3 */
+                            "level_id": 130
+                        },
+                        {
+                            /* Throne of Destruction */
+                            "level_id": 131
+                        },
+                        {
+                            /* Worldstone Chamber */
+                            "level_id": 132
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

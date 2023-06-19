@@ -1,0 +1,72 @@
+{"dependencies":{"particles":[],"models":[{"path":"data/hd/items/misc/quest/horadric_cube/horadric_cube.model"}],"skeletons":[{"path":"data/hd/items/dropped_items/skeleton/dropped_items.skeleton"}],"animations":[],"textures":[{"path":"data/hd/items/misc/quest/horadric_cube/misc_horadric_cube_ALB.texture"},{"path":"data/hd/items/misc/quest/horadric_cube/misc_horadric_cube_NRM.texture"},{"path":"data/hd/items/misc/quest/horadric_cube/misc_horadric_cube_ORM.texture"}],"physics":[],"json":[{"path":"data/hd/items/dropped_items/dropped_items_potions_flip_ne.json"}],"variantdata":[],"objecteffects":[],"other":[]},"type":"UnitDefinition","name":"horadric_cube","entities":[{"type":"Entity","name":"entity_root","id":1575870965,"components":[{"type":"UnitRootComponent","name":"component_root","state_machine_filename":"data/hd/items/dropped_items/dropped_items_potions_flip_ne.json","doNotInheritRotation":false,"rotationOverride":{"x":0.0,"y":0.3826834,"z":0.0,"w":0.9238795},"doNotUseHDHeight":false,"hideAllMeshWhenInOpenedMode":false,"onCreateEventName":"","animations":[]},{"type":"SkeletonDefinitionComponent","name":"component_skeleton","filename":"data/hd/items/dropped_items/skeleton/dropped_items.skeleton"},{"type":"TransformDefinitionComponent","name":"entity_root_TransformDefinition","position":{"x":0.0,"y":-0.51,"z":0.0},"orientation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"scale":{"x":1.0,"y":1.0,"z":1.0},"inheritOnlyPosition":false}]},{"type":"Entity","name":"entity_model","id":848836899,"components":[{"type":"ModelDefinitionComponent","name":"component_model_horadric_cube","filename":"data/hd/items/misc/quest/horadric_cube/horadric_cube.model","visibleLayers":1,"lightMask":19,"shadowMask":3,"ghostShadows":false,"floorModel":false,"terrainBlendEnableYUpBlend":false,"terrainBlendMode":1}]},
+		{
+"type": "Entity",
+"name": "droplight",
+"id": 9999996974,
+"components": [
+{
+"type": "TransformDefinitionComponent",
+"name": "component_transform1",
+"position": {
+"x": 0.0,
+"y": 0.0,
+"z": 0.0
+},
+"orientation": {
+"x": 0.0,
+"y": 0.0,
+"z": 0.0,
+"w": 1.0
+},
+"scale": {
+"x": 1.0,
+"y": 1.0,
+"z": 1.0
+},
+"inheritOnlyPosition": false
+},
+{
+"type": "VfxDefinitionComponent",
+"name": "entity_vfx_gousemyideaandshareyourfilthymods",
+"filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+"hardKillOnDestroy": false
+}
+]
+},
+//女武神召唤效果追加部分：
+{
+"type": "Entity",
+"name": "droplight",
+"id": 9999996974,
+"components": [
+{
+"type": "TransformDefinitionComponent",
+"name": "component_transform1",
+"position": {
+"x": 0.0,
+"y": 0.0,
+"z": 0.0
+},
+"orientation": {
+"x": 0.0,
+"y": 0.0,
+"z": 0.0,
+"w": 1.0
+},
+"scale": {
+"x": 1.0,
+"y": 1.0,
+"z": 1.0
+},
+"inheritOnlyPosition": false
+},
+{
+"type": "VfxDefinitionComponent",
+"name": "entity_vfx_gousemyideaandshareyourfilthymods",
+"filename": "data/hd/vfx/particles/overlays/common/valkyriestart/valkriestart_overlay.particles",
+"hardKillOnDestroy": false
+}
+]
+}
+]
+}

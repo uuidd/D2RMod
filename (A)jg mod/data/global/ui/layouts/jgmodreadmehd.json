@@ -1,0 +1,217 @@
+{
+  "type": "SettingsPanel",
+  "name": "jgmodreadme",
+  "fields": {
+    "priority": 9003,
+    "fitToParent": false
+  },
+  "children": [
+    {
+      "type": "RectangleWidget",
+      "name": "Background",
+      "fields": {
+        "fitToScreen": true,
+        "color": [ 0.0, 0.0, 0.0, 0.7 ]
+      },
+      "children": [
+        {
+          "type": "ClickCatcherWidget",
+          "name": "catcher",
+          "fields": {
+            "fitToParent": true
+          }
+        },
+        {
+          "type": "Widget",
+          "name": "Anchor",
+          "fields": {
+            "anchor": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "rect": {
+              "x": -975,
+              "y": -953,
+              "width": 1950,
+              "height": 1463
+            }
+          },
+          "children": [
+            {
+              "type": "ImageWidget",
+              "name": "Background",
+              "fields": {
+                "filename": "\\PANEL\\Options\\FrontEndOptionsBG"
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Title",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 45,
+                  "width": 1950,
+                  "height": 103
+                },
+                "text": "@jgmodinfo",
+                "style": "$StyleTitleBlock"
+              }
+            },
+
+            {
+              "type": "TextBoxWidget",
+              "name": "Title",
+              "fields": {
+                "rect": {
+                  "x": 0,
+                  "y": 150,
+                  "width": 1950,
+                  "height": 103
+                },
+                "text": "@jgmodcontact",
+                "style": {
+                  "fontColor": "$PanelTitleColor",
+                  "pointSize": "$MediumLargeFontSize",
+                  "dropShadow": "$DefaultDropShadow",
+                  "alignment": {
+                    "h": "center",
+                    "v": "center"
+                  },
+                  "spacing": "$ReducedSpacing",
+                  "options": {
+                    "pipeCharacterBehavior": "handle",
+                    "newlineHandling": "standard"
+                  }
+                }
+              }
+            },
+            {
+              "type": "ButtonWidget",
+              "name": "CloseButton",
+              "fields": {
+                "rect": {
+                  "x": 1868,
+                  "y": 8
+                },
+                "filename": "PANEL\\closebtn_4x",
+                "hoveredFrame": 3,
+                "onClickMessage": "PanelManager:ClosePanel:jgmodreadme",
+                "tooltipString": "@strClose",
+                "sound": "cursor_close_window_hd",
+                "acceptsEscKeyEverywhere": true
+              }
+            },
+
+            {
+              "type": "ImageWidget",
+              "name": "ScrollBarBackground",
+              "fields": {
+                "rect": {
+                  "x": -90,
+                  "y":280
+                },
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll"
+              },
+              "children": [
+                {
+                  "type": "ScrollControllerWidget",
+                  "name": "ScrollController",
+                  "fields": {
+                    "rect": {
+                      "x": -31,
+                      "y": 29,
+                      "width": 26,
+                      "height": 1208
+                    },
+                    "anchor": { "x": 1.0 },
+                    "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                    "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                    "barFilepath": "PauseMenu\\VerticalIndicator",
+                    "viewName": "ScrollView",
+                    "wheelScrollSound": "cursor_scroll_hd",
+                    "buttonScrollSound": "cursor_scroll_hd"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "ScrollViewWidget",
+              "name": "ScrollView",
+              "fields": {
+                "fitToParent": false,
+                "scrollControllerName": "ScrollController",
+                "anchor": {
+                  "x": 0,
+                  "y": 0
+                },
+                "rect": {
+                  "x": 105,
+                  "y": 300,
+                  "width": 1950,
+                  "height": 1208
+                }
+              },
+              "children": [
+                {
+                  "type": "TableWidget",
+                  "name": "JGModInfoDetailTable",
+                  "fields": {
+                    "columns": [
+                      {
+                        "width": 1730,
+                        "alignment": {
+                          "h": "fit",
+                          "v": "fit"
+                        }
+                      }
+                    ],
+                    "rowHeight": 3600
+                  },
+                  "children": [
+                    {
+                      "type": "TableRowWidget",
+                      "name": "RowJGModInfoDetail",
+                      "children": [
+                        {
+                          "type": "TextBoxWidget",
+                          "name": "JGModInfoDetail",
+                          "fields": {
+                            "text": "@jgmodinfodetail",
+                            "style": {
+                              "fontColor": "$FontColorLightGold",
+                              "pointSize": "$MediumFontSize",
+                              "spacing": "$ReducedSpacing",
+                              "alignment": {
+                                "h": "left",
+                                "v": "top"
+                              },
+                              "options": {
+                                "newlineHandling": "standard",
+                                "lineWrap": true,
+                                "pipeCharacterBehavior": "handle"
+                              }
+                            }
+                          }
+
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TableRowWidget",
+                      "name": "Row Spacer"
+                    }
+                  ]
+                }
+              ]
+            }
+
+          ]
+        }
+      ]
+    },
+
+
+  ]
+}

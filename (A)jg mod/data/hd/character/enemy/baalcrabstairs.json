@@ -1,0 +1,218 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/character/enemy/baalcrabstairs/torso.model"
+      }
+    ],
+    "skeletons":
+    [
+      {
+        "path": "data/hd/character/enemy/baalcrabstairs/skeleton/baalcrabstairs.skeleton"
+      }
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/character/common/common_fur_HRT.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_hair1_FLOW.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_body_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_body_KTINT.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_body_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_body_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_body_SSS.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_clothing_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_clothing_KTINT.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_clothing_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_clothing_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_fur_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_fur_KTINT.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_head_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_head_KTINT.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_head_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_head_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/baalcrab/textures/baalcrab_head_SSS.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+      {
+        "path": "data/hd/character/enemy/baalcrabstairs/baalcrabstairs_state_machine.json"
+      }
+    ],
+    "variantdata":
+    [
+      {
+        "path": "data/hd/character/enemy/baalcrabstairs/baalcrabstairs_variant.json"
+      }
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "baalcrabstairs",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2751561727,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/character/enemy/baalcrabstairs/baalcrabstairs_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0,
+            "w": 6.123032E-17
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/character/enemy/baalcrabstairs/skeleton/baalcrabstairs.skeleton"
+        },
+        {
+          "type": "VariantDefinitionComponent",
+          "name": "component_variant",
+          "filename": "data/hd/character/enemy/baalcrabstairs/baalcrabstairs_variant.json"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 3300782476,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/character/enemy/baalcrabstairs/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_pointlight",
+      "id": 2353308128,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0, //0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PointLightDefinitionComponent",
+          "name": "white_light",
+          "color":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 300.0,
+          "radius": 10.0,
+          "attenuation": 1.0,
+          "lightMask": 1,
+          "diffuseContribution": 1.0,
+          "specularContribution": 1.0,
+          "isLocalLight": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+    "type": "UKComplianceModal", "name": "AdvancedStatsPanelHelp",
+    "fields": {
+        "drawTint": false,
+        "anchor": "$LeftPanelAnchor",
+        "priority": -100,
+        "isDismissable": true,//false  true
+    },
+    "children": [
+        {
+            "type": "NineTileImageWidget", "name": "AdvancedStatsPanelHelpBox",
+            "fields": {
+                "rect": { "x": 2280, "y": -640, "width": 145, "height": 1480 },
+                "filename": "PANEL/TooltipBorder/TooltipBorder",
+                "backgroundColor": [ 0.0, 0.0, 0.0, 0.50 ],
+                "tileScale": 1.0,
+            },
+            "children": [
+                {
+                    "type": "ButtonWidget", "name": "CharSorceressFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 130,"scale": 0.8 },
+                        "filename": "hireables\\sorceressicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelpsor",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "CharPaladinFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 240,"scale": 0.8 },
+                        "filename": "hireables\\paladinicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelppal",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" //$StandardToolTipStyle
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "CharNecromancerFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 350,"scale": 0.8 },
+                        "filename": "hireables\\necromancericon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelpnec",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "CharDruidFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 460,"scale": 0.8 },
+                        "filename": "hireables\\druidicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelpdru",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "CharBarbariaFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 570,"scale": 0.8 },
+                        "filename": "hireables\\barbarianicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelpbar",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "CharAssassinFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 680,"scale": 0.8 },
+                        "filename": "hireables\\assassinicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelpass",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "CharAmazonFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 790,"scale": 0.8 },
+                        "filename": "hireables\\amazonicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelpama",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "CharAct1HireableFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 930,"scale": 0.8 },
+                        "filename": "hireables\\rogueicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelpa1h",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "CharAct2HireableFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 1040,"scale": 0.8 },
+                        "filename": "hireables\\act2hireableicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelpa2h",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "CharAct3HireableFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 1150,"scale": 0.8 },
+                        "filename": "hireables\\act3hireableicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelpa3h",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" 
+                    }
+                },
+                {
+                    "type": "ButtonWidget", "name": "CharAct5HireableFXR",
+                    "fields": {
+                        "rect": { "x": 24, "y": 1260,"scale": 0.8 },
+                        "filename": "hireables\\barbhirable_icon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@advancedstatspanelhelpa5h",
+                        "tooltipStyle": "$YtemodLeftToolTipStyle" 
+                    }
+                },
+/*
+                {
+                    "type": "ButtonWidget", "name": "CloseButton",
+                    "fields": {
+                        "rect": { "x": 30, "y": 1390 },
+                        "filename": "PANEL\\closebtn_4x",
+                        "hoveredFrame": 3,
+                        "onClickMessage": "PanelManager:ClosePanel:AdvancedStatsPanelHelp",
+                        "tooltipString": "@strClose", 
+                    }
+                },
+*/
+            ]
+        },
+    ]
+}

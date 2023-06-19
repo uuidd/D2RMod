@@ -1,0 +1,478 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+      {
+        "path": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_chest_glow.particles"
+      },
+      {
+        "path": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_head_glow.particles"
+      },
+      {
+        "path": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_tail_glow.particles"
+      }
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/character/enemy/painworm1/painworm_shell.model"
+      },
+      {
+        "path": "data/hd/character/enemy/painworm1/torso.model"
+      },
+      {
+        "path": "data/hd/vfx/meshes/fx_mesh_polarDisc.model"
+      }
+    ],
+    "skeletons":
+    [
+      {
+        "path": "data/hd/character/enemy/painworm1/skeleton/painworm1.skeleton"
+      }
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/character/enemy/vileChild1/Textures/vilechild1_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/vileChild1/Textures/vilechild1_ktint.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/vileChild1/Textures/vilechild1_NRM.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/vileChild1/Textures/vilechild1_ORM.texture"
+      },
+      {
+        "path": "data/hd/vfx/textures/gradient/FX_Painworm_Variants_Gradient.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+      {
+        "path": "data/hd/character/enemy/painworm1/painworm1_state_machine.json"
+      }
+    ],
+    "variantdata":
+    [
+      {
+        "path": "data/hd/character/enemy/painworm1/painworm1_variant.json"
+      }
+    ],
+    "objecteffects":
+    [
+      {
+        "path": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_objFX.particles",
+        "dependency": ""
+      }
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "painworm1",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 3008125278,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/character/enemy/painworm1/painworm1_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/character/enemy/painworm1/skeleton/painworm1.skeleton"
+        },
+        {
+          "type": "VariantDefinitionComponent",
+          "name": "component_variant",
+          "filename": "data/hd/character/enemy/painworm1/painworm1_variant.json"
+        },
+        {
+          "type": "MoveAnimationSelectComponent",
+          "name": "entity_root_MoveAnimationSelect",
+          "animationOptions":
+          [
+            {
+              "type": "MoveAnimationOption",
+              "name": "entity_root_MoveAnimationSelect_animationOptions_0",
+              "validForWalk": true,
+              "validForRun": true,
+              "validInsideTown": true,
+              "validOutsideTown": true,
+              "minMoveSpeed": 0.0,
+              "maxMoveSpeed": 20.0,
+              "baseMoveSpeed": 5.0,
+              "animationName": "Walk"
+            }
+          ],
+          "defaultAnimationName": "Walk"
+        },
+        {
+          "type": "DeadAnimationSpeedOverrideComponent",
+          "name": "entity_root_DeadAnimationSpeedOverride",
+          "speed": 1.0
+        },
+        {
+          "type": "OverrideModelTransparencyComponent",
+          "name": "entity_root_OverrideModelTransparency",
+          "transMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 3880226326,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/character/enemy/painworm1/torso.model",
+          "visibleLayers": 9,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx_chest",
+      "id": 2814960998,
+      "components":
+      [
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "new_entity_EntityAttachmentDefinition",
+          "targetbone": "chest"
+        },
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "new_entity_VfxDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_chest_glow.particles",
+          "hardKillOnDestroy": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx_head",
+      "id": 808456644,
+      "components":
+      [
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "new_entity001_EntityAttachmentDefinition",
+          "targetbone": "head"
+        },
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "new_entity001_VfxDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_head_glow.particles",
+          "hardKillOnDestroy": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx_tail1",
+      "id": 2705881517,
+      "components":
+      [
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "new_entity002_EntityAttachmentDefinition",
+          "targetbone": "C_tail_tail1"
+        },
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "new_entity002_VfxDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_tail_glow.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_vfx_tail1_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx_tail3",
+      "id": 3479892012,
+      "components":
+      [
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "new_entity003_EntityAttachmentDefinition",
+          "targetbone": "C_tail_tail3"
+        },
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "new_entity003_VfxDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_tail_glow.particles",
+          "hardKillOnDestroy": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx_tail5",
+      "id": 2118015876,
+      "components":
+      [
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "new_entity004_EntityAttachmentDefinition",
+          "targetbone": "C_tail_tail5"
+        },
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "new_entity004_VfxDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_tail_glow.particles",
+          "hardKillOnDestroy": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx_tail6",
+      "id": 720319416,
+      "components":
+      [
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "new_entity005_EntityAttachmentDefinition",
+          "targetbone": "C_tail_tail6"
+        },
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "new_entity005_VfxDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_tail_glow.particles",
+          "hardKillOnDestroy": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx_tail2",
+      "id": 2746441043,
+      "components":
+      [
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "entity_vfx_tail2_EntityAttachmentDefinition",
+          "targetbone": "C_tail_tail2"
+        },
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_vfx_tail2_VfxDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_tail_glow.particles",
+          "hardKillOnDestroy": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx_tail4",
+      "id": 4075103496,
+      "components":
+      [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_vfx_tail4_VfxDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_tail_glow.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "entity_vfx_tail4_EntityAttachmentDefinition",
+          "targetbone": "C_tail_tail4"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx_pelvis",
+      "id": 2425526017,
+      "components":
+      [
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "new_entity_EntityAttachmentDefinition001",
+          "targetbone": "pelvis"
+        },
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "new_entity_VfxDefinition001",
+          "filename": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_chest_glow.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_vfx_pelvis_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_shell_mesh",
+      "id": 3578562659,
+      "components":
+      [
+        {
+          "type": "ObjectEffectDefinitionComponent",
+          "name": "entity_shell_mesh_ObjectEffectDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/painworm1/vfx_painworm1_objFX.particles"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "entity_shell_mesh_ModelDefinition",
+          "filename": "data/hd/character/enemy/painworm1/painworm_shell.model",
+          "visibleLayers": 1073741824,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "UnitPartComponent",
+          "name": "entity_shell_mesh_UnitPart",
+          "part": "torso",
+          "variant": "lit"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_pointlight",
+      "id": 2353308128,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0, //0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PointLightDefinitionComponent",
+          "name": "white_light",
+          "color":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 300.0,
+          "radius": 10.0,
+          "attenuation": 1.0,
+          "lightMask": 1,
+          "diffuseContribution": 1.0,
+          "specularContribution": 1.0,
+          "isLocalLight": false
+        }
+      ]
+    }
+  ]
+}

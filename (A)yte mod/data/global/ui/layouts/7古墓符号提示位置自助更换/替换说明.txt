@@ -1,0 +1,2 @@
+鼠键模式：将questlogpaneloriginalhd、questlogpanelexpansionhd文件拖入Data\global\ui\layouts路径下文件夹替换同名文件，
+手柄模式：将controller文件夹内questlogpaneloriginalhd、questlogpanelexpansionhd文件拖入Data\global\ui\layouts\controller路径下文件夹替换同名文件

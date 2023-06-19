@@ -1,0 +1,494 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/env/cluster/act1/outdoors/waypoint/waypoint_0/terrain.model"
+      },
+      {
+        "path": "data/hd/env/model/act1/outdoors/act1_outdoors_props/waypoint01.model"
+      },
+      {
+        "path": "data/hd/env/model/global/decorator/act1/outdoors/act1_outdoors_grass/grass_clump02.model"
+      },
+      {
+        "path": "data/hd/env/model/global/decorator/act1/outdoors/act1_outdoors_rocks/pebbles01.model"
+      },
+      {
+        "path": "data/hd/env/model/global/decorator/act1/outdoors/act1_outdoors_weeds/weeds_patch01.model"
+      },
+      {
+        "path": "data/hd/env/model/global/decorator/act1/outdoors/act1_outdoors_weeds/weeds02.model"
+      },
+      {
+        "path": "data/hd/env/model/global/grunge/leaves/grunge_leaves02_100.model"
+      }
+    ],
+    "skeletons":
+    [
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/env/biome/test.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_grassclumps_alb.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_grassclumps_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_grassclumps_orm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_weeds_alb.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_weeds_B.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_weeds_nrm.texture"
+      },
+      {
+        "path": "data/hd/env/foliage/global/texture/act1_weeds_orm.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act1/outdoors/act1_outdoors_markers/act1_Stones_dt1_Rocks_01_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act1/outdoors/act1_outdoors_markers/act1_Stones_dt1_Rocks_01_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act1/outdoors/act1_outdoors_markers/act1_Stones_dt1_Rocks_01_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act1/outdoors/act1_outdoors_props/act1_outdoors_props_waypoint01_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act1/outdoors/act1_outdoors_props/act1_outdoors_props_waypoint01_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/act1/outdoors/act1_outdoors_props/act1_outdoors_props_waypoint01_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/act3/act3_leaves02_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/act3/act3_leaves02_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/global/decal/act3/act3_leaves02_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/act1/outdoors/act1_outdoors_grass01_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/act1/outdoors/act1_outdoors_grass01_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/act1/outdoors/act1_outdoors_grass01_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/act1/outdoors/act1_outdoors_path01_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/act1/outdoors/act1_outdoors_path01_NRM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/act1/outdoors/act1_outdoors_path01_ORM.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/grass/act1_outdoors_grass_atlas01_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/grass/default_grass_ALB.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/noise/act1/act1_grass_tufty_NOISE.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/noise/act1/act1_outdoors_path01_NOISE.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/stamp/act1/act1_outdoors_square_clearing01_STAMP.texture"
+      },
+      {
+        "path": "data/hd/env/texture/terrain/stamp/act3/act3_kurast_dirt_interior01_STAMP.texture"
+      }
+    ],
+    "physics":
+    [
+      {
+        "path": "data/hd/env/cluster/act1/outdoors/waypoint/waypoint_0/terrain.physics"
+      },
+      {
+        "path": "data/hd/env/model/act1/outdoors/act1_outdoors_props/waypoint01_collision.physics"
+      }
+    ],
+    "json":
+    [
+      {
+        "path": "data/hd/env/biome/test.json"
+      }
+    ],
+    "variantdata":
+    [
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "Preset",
+  "name": "preset",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "terrain",
+      "id": 1599211540,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "terrain_TransformDefinitionComponent",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "TerrainDefinitionComponent",
+          "name": "terrain_TerrainDefinitionComponent"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "terrain_ModelDefinitionComponent",
+          "filename": "data/hd/env/cluster/act1/outdoors/waypoint/waypoint_0/terrain.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "PhysicsBodyDefinitionComponent",
+          "name": "terrain_PhysicsBodyDefinitionComponent",
+          "bodytype": "static",
+          "fixturedefs":
+          [
+            {
+              "type": "PhysicsFixtureDefinition",
+              "name": "physicsFixtureDefinition",
+              "shapetype":
+              {
+                "type": "PhysicsFileDefinition",
+                "name": "physicsFileDefinition",
+                "filename": "data/hd/env/cluster/act1/outdoors/waypoint/waypoint_0/terrain.physics"
+              },
+              "friction": 0.6,
+              "restitution": 0.0,
+              "rollingresistance": 0.2,
+              "impulsefactor": 1.0,
+              "explosionfactor": 1.0,
+              "explosionliftfactor": 1.0,
+              "windfactor": 0.0,
+              "dragfactor": 0.0,
+              "liftfactor": 1.0,
+              "density": 37.5,
+              "boneindex": -1
+            }
+          ],
+          "filter": "floor",
+          "allowTransition": true,
+          "removeOnDeath": true,
+          "lineardamping": 0.0,
+          "angulardamping": 0.0,
+          "gravityscale": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "square_clearing01_01",
+      "id": 3674324213,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "square_clearing01_01_TransformDefinitionComponent",
+          "position":
+          {
+            "x": 27.69316,
+            "y": 0.0,
+            "z": 27.94307
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": -0.000345660257,
+            "z": 0.0,
+            "w": 0.99999994
+          },
+          "scale":
+          {
+            "x": 17.29455,
+            "y": 17.29455,
+            "z": 18.09338
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "TerrainStampDefinitionComponent",
+          "name": "square_clearing01_TerrainStampDefinition",
+          "mask": "data/hd/env/texture/terrain/stamp/act1/act1_outdoors_square_clearing01_STAMP.texture",
+          "stomp": 1.0,
+          "stompG": 1.0,
+          "stompB": 1.0,
+          "snapOptions": 0,
+          "biomeName": "act1_outdoors",
+          "layerIndexR": 2,
+          "layerIndexG": 4294967295,
+          "layerIndexB": 4294967295
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "grunge_leaves02_100_01",
+      "id": 3800173234,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "grunge_leaves02_100_01_TransformDefinitionComponent",
+          "position":
+          {
+            "x": 30.84282,
+            "y": 0.4591902,
+            "z": 24.25381
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.17326987,
+            "y": 1.17326987,
+            "z": 1.17326987
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "grunge_leaves02_100_ModelDefinitionComponent",
+          "filename": "data/hd/env/model/global/grunge/leaves/grunge_leaves02_100.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 0,
+          "ghostShadows": false,
+          "floorModel": true,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "pf_jg_waypoint",
+      "id": 586091854,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "prefab_TransformDefinitionComponent",
+          "position":
+          {
+            "x": 36.0,
+            "y": 0.2740717,
+            "z": 36.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PrefabPlacementDefinitionComponent",
+          "name": "prefab_PrefabPlacementDefinitionComponent",
+          "prefab": "data/hd/env/jg/pf_jg_waypoint.json"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "prefab",
+      "id": 4010776020,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "prefab_TransformDefinitionComponent",
+          "position":
+          {
+            "x": 36.0,
+            "y": 0.2740717,
+            "z": 36.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PrefabPlacementDefinitionComponent",
+          "name": "prefab_PrefabPlacementDefinitionComponent",
+          "prefab": "data/hd/env/model/act1/outdoors/act1_outdoors_props/pf_waypoint01.json"
+        }
+      ]
+    }
+  ],
+  "terrain":
+  {
+    "type": "Entity",
+    "name": "terrain",
+    "id": 1599211540,
+    "components":
+    [
+      {
+        "type": "TransformDefinitionComponent",
+        "name": "terrain_TransformDefinitionComponent",
+        "position":
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "orientation":
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "scale":
+        {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "inheritOnlyPosition": false
+      },
+      {
+        "type": "TerrainDefinitionComponent",
+        "name": "terrain_TerrainDefinitionComponent"
+      },
+      {
+        "type": "ModelDefinitionComponent",
+        "name": "terrain_ModelDefinitionComponent",
+        "filename": "data/hd/env/cluster/act1/outdoors/waypoint/waypoint_0/terrain.model",
+        "visibleLayers": 1,
+        "lightMask": 19,
+        "shadowMask": 3,
+        "ghostShadows": false,
+        "floorModel": false,
+        "terrainBlendEnableYUpBlend": false,
+        "terrainBlendMode": 1
+      },
+      {
+        "type": "PhysicsBodyDefinitionComponent",
+        "name": "terrain_PhysicsBodyDefinitionComponent",
+        "bodytype": "static",
+        "fixturedefs":
+        [
+          {
+            "type": "PhysicsFixtureDefinition",
+            "name": "physicsFixtureDefinition",
+            "shapetype":
+            {
+              "type": "PhysicsFileDefinition",
+              "name": "physicsFileDefinition",
+              "filename": "data/hd/env/cluster/act1/outdoors/waypoint/waypoint_0/terrain.physics"
+            },
+            "friction": 0.6,
+            "restitution": 0.0,
+            "rollingresistance": 0.2,
+            "impulsefactor": 1.0,
+            "explosionfactor": 1.0,
+            "explosionliftfactor": 1.0,
+            "windfactor": 0.0,
+            "dragfactor": 0.0,
+            "liftfactor": 1.0,
+            "density": 37.5,
+            "boneindex": -1
+          }
+        ],
+        "filter": "floor",
+        "allowTransition": true,
+        "removeOnDeath": true,
+        "lineardamping": 0.0,
+        "angulardamping": 0.0,
+        "gravityscale": 1.0
+      }
+    ]
+  },
+  "biomeFilename": "data/hd/env/biome/test.json",
+  "perTileBiomeOverrides":
+  [
+  ],
+  "specialTiles":
+  {
+  }
+}
