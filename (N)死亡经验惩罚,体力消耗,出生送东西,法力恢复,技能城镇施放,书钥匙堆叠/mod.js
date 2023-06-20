@@ -105,21 +105,3 @@ skills.rows.forEach((row) => {
   }
 });
 D2RMM.writeTsv(skillsFilename, skills);
-
-// 书钥匙堆叠大小
-const miscFilename = 'global\\excel\\misc.txt';
-const misc = D2RMM.readTsv(miscFilename);
-misc.rows.forEach((row) => {
-  if (
-    row.code === 'tbk' || // Tome of Town Portal,默认20
-    row.code === 'ibk' // Tome of Identify,默认20
-  ) {
-    row.maxstack = config.tomes_stacks;
-  }
-  if (
-    row.code === 'key' // Key,默认12
-  ) {
-    row.maxstack = config.keys_stacks;
-  }
-});
-D2RMM.writeTsv(miscFilename, misc);

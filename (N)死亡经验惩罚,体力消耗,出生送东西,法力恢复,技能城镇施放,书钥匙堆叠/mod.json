@@ -1,6 +1,6 @@
 {
-  "name": "(N)死亡经验惩罚,体力消耗,出生送东西,法力恢复,技能城镇施放,书钥匙堆叠",
-  "description": "高难度不掉经验,角色跑步体力消耗,创建新角色送东西,法力恢复加快，技能能在城镇施放,书钥匙堆叠",
+  "name": "(N)死亡经验惩罚,体力消耗,出生送东西,法力恢复,技能城镇施放",
+  "description": "高难度不掉经验,角色跑步体力消耗,创建新角色送东西,法力恢复加快，技能能在城镇施放",
   "author": "lil174 & Demo",
   "version": "1.1",
   "config": [
@@ -65,24 +65,6 @@
           "description": "只允许额外的移动和增益技能"
         }
       ]
-    },
-    {
-      "id": "tomes_stacks",
-      "type": "number",
-      "name": "书堆叠大小",
-      "description": "城镇书/辨识书(限制20-500)",
-      "defaultValue": 20,
-      "minValue": 20,
-      "maxValue": 500
-    },
-    {
-      "id": "keys_stacks",
-      "type": "number",
-      "name": "钥匙堆叠大小",
-      "description": "宝箱钥匙(限制12-500)",
-      "defaultValue": 12,
-      "minValue": 12,
-      "maxValue": 500
     }
   ]
 }
