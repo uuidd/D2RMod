@@ -12,6 +12,12 @@ switch (config.zone_select) {
   case 'mod_4_map':
     D2RMM.copyFile('zone4Map', 'hd\\global\\excel', true);
     break;
+  case 'zone3allMap':
+    D2RMM.copyFile('zone3allMap', 'hd\\global\\excel', true);
+    break;
+  case 'zoneMfMap':
+    D2RMM.copyFile('zoneMfMap', 'hd\\global\\excel', true);
+    break;
   case 'zone4allMap':
     D2RMM.copyFile('zone4allMap', 'hd\\global\\excel', true);
     break;

@@ -33,6 +33,14 @@
                     "description": "整个章节的全连续图"
                 },
                 {
+                    "value": "zoneMfMap",
+                    "label": "MF场景(地穴+安姐+石质古墓+古代通道+劳模)"
+                },
+                {
+                    "value": "zone3allMap",
+                    "label": "热门3图同时出现(塔墓,魔殿,王座)"
+                },
+                {
                     "value": "zone4allMap",
                     "label": "热门4图同时出现(牛场,塔墓,魔殿,王座)"
                 },
