@@ -38,7 +38,7 @@
 				"anchor": { "x": 0.5 },
                 "rect": { "x":0, "y": 125 },
                 "style": {
-                    "pointSize": "$MediumFontSize",
+                    "pointSize": "$LargeFontSize",
                     "alignment": { "h": "center", "v": "center"  },
                     "options": { "pipeCharacterBehavior": "handle" }
                 }
@@ -50,7 +50,7 @@
                 "rect": { "x":0, "y": 170 },
 				"anchor": { "x": 0.5 },
                 "style": {
-                    "pointSize": "$MediumFontSize",
+                    "pointSize": "$LargeFontSize",
                     "alignment": { "h": "center", "v": "center"  },
                     "options": { "pipeCharacterBehavior": "handle" }
                 }

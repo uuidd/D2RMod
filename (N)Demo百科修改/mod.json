@@ -1,0 +1,30 @@
+{
+  "name": "(N)Demo百科修改",
+  "description": "",
+  "author": "Demo",
+  "website": "",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "baike",
+      "type": "checkbox",
+      "name": "Demo百科修改",
+      "description": "Demo百科修改",
+      "defaultValue": true
+    },
+    {
+      "id": "modsVersion",
+      "type": "text",
+      "name": "版本号",
+      "description": "版本号",
+      "defaultValue": "1.3.1"
+    },
+    {
+      "id": "modsUpdateDate",
+      "type": "text",
+      "name": "更新日期",
+      "description": "更新日期: 2023/6/16",
+      "defaultValue": "2023/6/16"
+    }
+  ]
+}
