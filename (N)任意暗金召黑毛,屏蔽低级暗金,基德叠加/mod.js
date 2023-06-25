@@ -16,7 +16,7 @@ uniqueitems.rows.forEach((row) => {
 
   // 基德板能带多个
   if (config.gheed_add) {
-    if (row[`*ID`] === 359) {
+    if (row[`*ID`] === '359') {
       row['carry1'] = '';
     }
   }

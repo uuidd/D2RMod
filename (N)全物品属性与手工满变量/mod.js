@@ -63,7 +63,7 @@ D2RMM.writeTsv(runesFilename, runes);
 // 死灵盾牌的+2~50毒伤(亮金不能出20~50毒伤的最高挡)(文件显示为128可能是毒伤换算的原因实际应该就是50)
 function ModMaxlevel(row, group, mod1code, level, maxleve)
 {
-    if (row.group == group && row.level == level && row.mod1code === mod1code)
+    if (row.group === group && row.level === level && row.mod1code === mod1code)
     {
         row['maxlevel'] = maxleve;
     }
