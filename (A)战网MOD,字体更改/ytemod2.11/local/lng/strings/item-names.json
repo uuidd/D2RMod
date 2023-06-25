@@ -5138,7 +5138,7 @@
     "id": 2236,
     "Key": "gcv",
     "enUS": "ÿc;ㅨ ÿc5Chipped Amethystÿc0",
-    "zhTW": "ÿc;ㅨ ÿc5碎裂紫寶石ÿc0",
+    "zhTW": "ÿc;ㅨ ÿc0碎裂紫寶石ÿc0",
     "deDE": "lädierter Amethyst",
     "esES": "Amatista fragmentada",
     "frFR": "Améthyste abîmée",
@@ -5149,13 +5149,13 @@
     "jaJP": "欠けたアメジスト",
     "ptBR": "Ametista Lascada",
     "ruRU": "Надколотый аметист",
-    "zhCN": "ÿc;ㅨ ÿc5碎裂的紫宝石ÿc0"
+    "zhCN": "ÿc;ㅨ ÿc0碎裂的紫宝石ÿc0"
   },
   {
     "id": 2237,
     "Key": "gfv",
-    "enUS": "ÿc;ㅨ ÿc5Flawed Amethystÿc0",
-    "zhTW": "ÿc;ㅨ ÿc5瑕疵紫寶石ÿc0",
+    "enUS": "ÿc;ㅨ ÿc0Flawed Amethystÿc0",
+    "zhTW": "ÿc;ㅨ ÿc0瑕疵紫寶石ÿc0",
     "deDE": "fehlerhafter Amethyst",
     "esES": "Amatista estropeada",
     "frFR": "Améthyste imparfaite",
@@ -5166,7 +5166,7 @@
     "jaJP": "傷のあるアメジスト",
     "ptBR": "Ametista Imperfeita",
     "ruRU": "Мутный аметист",
-    "zhCN": "ÿc;ㅨ ÿc5有瑕疵的紫宝石ÿc0"
+    "zhCN": "ÿc;ㅨ ÿc0有瑕疵的紫宝石ÿc0"
   },
   {
     "id": 2238,
@@ -5222,8 +5222,8 @@
   {
     "id": 2241,
     "Key": "gcy",
-    "enUS": "ÿc9ㅨ ÿc5Chipped Topazÿc0",
-    "zhTW": "ÿc9ㅨ ÿc5碎裂黃寶石ÿc0",
+    "enUS": "ÿc9ㅨ ÿc0Chipped Topazÿc0",
+    "zhTW": "ÿc9ㅨ ÿc0碎裂黃寶石ÿc0",
     "deDE": "lädierter Topas",
     "esES": "Topacio fragmentado",
     "frFR": "Topaze abîmée",
@@ -5234,13 +5234,13 @@
     "jaJP": "欠けたトパーズ",
     "ptBR": "Topázio Lascado",
     "ruRU": "Надколотый топаз",
-    "zhCN": "ÿc9ㅨ ÿc5碎裂的黄宝石ÿc0"
+    "zhCN": "ÿc9ㅨ ÿc0碎裂的黄宝石ÿc0"
   },
   {
     "id": 2242,
     "Key": "gfy",
-    "enUS": "ÿc9ㅨ ÿc5Flawed Topazÿc0",
-    "zhTW": "ÿc9ㅨ ÿc5瑕疵黃寶石ÿc0",
+    "enUS": "ÿc9ㅨ ÿc0Flawed Topazÿc0",
+    "zhTW": "ÿc9ㅨ ÿc0瑕疵黃寶石ÿc0",
     "deDE": "fehlerhafter Topas",
     "esES": "Topacio estropeado",
     "frFR": "Topaze imparfaite",
@@ -5251,7 +5251,7 @@
     "jaJP": "傷のあるトパーズ",
     "ptBR": "Topázio Imperfeito",
     "ruRU": "Мутный топаз",
-    "zhCN": "ÿc9ㅨ ÿc5有瑕疵的黄宝石ÿc0"
+    "zhCN": "ÿc9ㅨ ÿc0有瑕疵的黄宝石ÿc0"
   },
   {
     "id": 2243,
@@ -5307,8 +5307,8 @@
   {
     "id": 2246,
     "Key": "gcb",
-    "enUS": "ÿc3ㅨ ÿc5Chipped Sapphireÿc0",
-    "zhTW": "ÿc3ㅨ ÿc5碎裂藍寶石ÿc0",
+    "enUS": "ÿc3ㅨ ÿc0Chipped Sapphireÿc0",
+    "zhTW": "ÿc3ㅨ ÿc0碎裂藍寶石ÿc0",
     "deDE": "lädierter Saphir",
     "esES": "Zafiro fragmentado",
     "frFR": "Saphir abîmé",
@@ -5319,13 +5319,13 @@
     "jaJP": "欠けたサファイア",
     "ptBR": "Safira Lascada",
     "ruRU": "Надколотый сапфир",
-    "zhCN": "ÿc3ㅨ ÿc5碎裂的蓝宝石ÿc0"
+    "zhCN": "ÿc3ㅨ ÿc0碎裂的蓝宝石ÿc0"
   },
   {
     "id": 2247,
     "Key": "gfb",
-    "enUS": "ÿc3ㅨ ÿc5Flawed Sapphireÿc0",
-    "zhTW": "ÿc3ㅨ ÿc5瑕疵藍寶石ÿc0",
+    "enUS": "ÿc3ㅨ ÿc0Flawed Sapphireÿc0",
+    "zhTW": "ÿc3ㅨ ÿc0瑕疵藍寶石ÿc0",
     "deDE": "fehlerhafter Saphir",
     "esES": "Zafiro estropeado",
     "frFR": "Saphir imparfait",
@@ -5336,7 +5336,7 @@
     "jaJP": "傷のあるサファイア",
     "ptBR": "Safira Imperfeita",
     "ruRU": "Мутный сапфир",
-    "zhCN": "ÿc3ㅨ ÿc5有瑕疵的蓝宝石ÿc0"
+    "zhCN": "ÿc3ㅨ ÿc0有瑕疵的蓝宝石ÿc0"
   },
   {
     "id": 2248,
@@ -5392,8 +5392,8 @@
   {
     "id": 2251,
     "Key": "gcg",
-    "enUS": "ÿc2ㅨ ÿc5Chipped Emeraldÿc0",
-    "zhTW": "ÿc2ㅨ ÿc5碎裂綠寶石ÿc0",
+    "enUS": "ÿc2ㅨ ÿc0Chipped Emeraldÿc0",
+    "zhTW": "ÿc2ㅨ ÿc0碎裂綠寶石ÿc0",
     "deDE": "lädierter Smaragd",
     "esES": "Esmeralda fragmentada",
     "frFR": "Émeraude abîmée",
@@ -5404,13 +5404,13 @@
     "jaJP": "欠けたエメラルド",
     "ptBR": "Esmeralda Lascada",
     "ruRU": "Надколотый изумруд",
-    "zhCN": "ÿc2ㅨ ÿc5碎裂的绿宝石ÿc0"
+    "zhCN": "ÿc2ㅨ ÿc0碎裂的绿宝石ÿc0"
   },
   {
     "id": 2252,
     "Key": "gfg",
-    "enUS": "ÿc2ㅨ ÿc5Flawed Emeraldÿc0",
-    "zhTW": "ÿc2ㅨ ÿc5瑕疵綠寶石ÿc0",
+    "enUS": "ÿc2ㅨ ÿc0Flawed Emeraldÿc0",
+    "zhTW": "ÿc2ㅨ ÿc0瑕疵綠寶石ÿc0",
     "deDE": "fehlerhafter Smaragd",
     "esES": "Esmeralda estropeada",
     "frFR": "Émeraude imparfaite",
@@ -5421,7 +5421,7 @@
     "jaJP": "傷のあるエメラルド",
     "ptBR": "Esmeralda Imperfeita",
     "ruRU": "Мутный изумруд",
-    "zhCN": "ÿc2ㅨ ÿc5有瑕疵的绿宝石ÿc0"
+    "zhCN": "ÿc2ㅨ ÿc0有瑕疵的绿宝石ÿc0"
   },
   {
     "id": 2253,
@@ -5477,8 +5477,8 @@
   {
     "id": 2256,
     "Key": "gcr",
-    "enUS": "ÿc1ㅨ ÿc5Chipped Rubyÿc0",
-    "zhTW": "ÿc1ㅨ ÿc5碎裂紅寶石ÿc0",
+    "enUS": "ÿc1ㅨ ÿc0Chipped Rubyÿc0",
+    "zhTW": "ÿc1ㅨ ÿc0碎裂紅寶石ÿc0",
     "deDE": "lädierter Rubin",
     "esES": "Rubí fragmentado",
     "frFR": "Rubis abîmé",
@@ -5489,13 +5489,13 @@
     "jaJP": "欠けたルビー",
     "ptBR": "Rubi Lascado",
     "ruRU": "Надколотый рубин",
-    "zhCN": "ÿc1ㅨ ÿc5碎裂的红宝石ÿc0"
+    "zhCN": "ÿc1ㅨ ÿc0碎裂的红宝石ÿc0"
   },
   {
     "id": 2257,
     "Key": "gfr",
-    "enUS": "ÿc1ㅨ ÿc5Flawed Rubyÿc0",
-    "zhTW": "ÿc1ㅨ ÿc5瑕疵紅寶石ÿc0",
+    "enUS": "ÿc1ㅨ ÿc0Flawed Rubyÿc0",
+    "zhTW": "ÿc1ㅨ ÿc0瑕疵紅寶石ÿc0",
     "deDE": "fehlerhafter Rubin",
     "esES": "Rubí estropeado",
     "frFR": "Rubis imparfait",
@@ -5506,7 +5506,7 @@
     "jaJP": "傷のあるルビー",
     "ptBR": "Rubi Imperfeito",
     "ruRU": "Мутный рубин",
-    "zhCN": "ÿc1ㅨ ÿc5有瑕疵的红宝石ÿc0"
+    "zhCN": "ÿc1ㅨ ÿc0有瑕疵的红宝石ÿc0"
   },
   {
     "id": 2258,
@@ -5562,8 +5562,8 @@
   {
     "id": 2261,
     "Key": "gcw",
-    "enUS": "ÿc0ㅨ ÿc5Chipped Diamondÿc0",
-    "zhTW": "ÿc0ㅨ ÿc5碎裂鑽石ÿc0",
+    "enUS": "ÿc0ㅨ ÿc0Chipped Diamondÿc0",
+    "zhTW": "ÿc0ㅨ ÿc0碎裂鑽石ÿc0",
     "deDE": "lädierter Diamant",
     "esES": "Diamante fragmentado",
     "frFR": "Diamant abîmé",
@@ -5574,13 +5574,13 @@
     "jaJP": "欠けたダイヤモンド",
     "ptBR": "Diamante Lascado",
     "ruRU": "Надколотый бриллиант",
-    "zhCN": "ÿc0ㅨ ÿc5碎裂的钻石ÿc0"
+    "zhCN": "ÿc0ㅨ ÿc0碎裂的钻石ÿc0"
   },
   {
     "id": 2262,
     "Key": "gfw",
-    "enUS": "ÿc0ㅨ ÿc5Flawed Diamondÿc0",
-    "zhTW": "ÿc0ㅨ ÿc5瑕疵鑽石ÿc0",
+    "enUS": "ÿc0ㅨ ÿc0Flawed Diamondÿc0",
+    "zhTW": "ÿc0ㅨ ÿc0瑕疵鑽石ÿc0",
     "deDE": "fehlerhafter Diamant",
     "esES": "Diamante estropeado",
     "frFR": "Diamant imparfait",
@@ -5817,8 +5817,8 @@
   {
     "id": 2277,
     "Key": "skc",
-    "enUS": "ÿcNㅨ ÿc5Chipped Skullÿc0",
-    "zhTW": "ÿcNㅨ ÿc5碎裂骷髏石ÿc0",
+    "enUS": "ÿcNㅨ ÿc0Chipped Skullÿc0",
+    "zhTW": "ÿcNㅨ ÿc0碎裂骷髏石ÿc0",
     "deDE": "lädierter Schädel",
     "esES": "Cráneo fragmentado",
     "frFR": "Crâne abîmé",
@@ -5829,13 +5829,13 @@
     "jaJP": "欠けた頭蓋骨",
     "ptBR": "Caveira Lascada",
     "ruRU": "Надколотый череп",
-    "zhCN": "ÿcNㅨ ÿc5碎裂的头骨宝石ÿc0"
+    "zhCN": "ÿcNㅨ ÿc0碎裂的头骨宝石ÿc0"
   },
   {
     "id": 2278,
     "Key": "skf",
-    "enUS": "ÿcNㅨ ÿc5Flawed Skullÿc0",
-    "zhTW": "ÿcNㅨ ÿc5瑕疵骷髏石ÿc0",
+    "enUS": "ÿcNㅨ ÿc0Flawed Skullÿc0",
+    "zhTW": "ÿcNㅨ ÿc0瑕疵骷髏石ÿc0",
     "deDE": "fehlerhafter Schädel",
     "esES": "Cráneo estropeado",
     "frFR": "Crâne imparfait",
@@ -5846,7 +5846,7 @@
     "jaJP": "傷のある頭蓋骨",
     "ptBR": "Caveira Imperfeita",
     "ruRU": "Поврежденный череп",
-    "zhCN": "ÿcNㅨ ÿc5有瑕疵的头骨宝石ÿc0"
+    "zhCN": "ÿcNㅨ ÿc0有瑕疵的头骨宝石ÿc0"
   },
   {
     "id": 2279,

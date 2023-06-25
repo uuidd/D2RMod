@@ -164,9 +164,7 @@ if (config.allMonsters) {
     if (noMap1.indexOf(row['Id']) !== -1) {
       row['noMap'] = 1;
     }
-    if (displayBoss(row)) {
-
-    } else if (atuomapCel0.indexOf(row['Id']) !== -1) {
+    if (atuomapCel0.indexOf(row['Id']) !== -1) {
       row['automapCel'] = 0;
     } else if (row['Id'] === 'izualghost') {
       row['automapCel'] = '';
