@@ -1,5 +1,5 @@
 {
-  "name": "(N)Demo百科修改",
+  "name": "(N)Demo百科修改,凸显冰寒强化",
   "description": "",
   "author": "Demo",
   "website": "",
@@ -25,6 +25,13 @@
       "name": "更新日期",
       "description": "更新日期: 2023/6/16",
       "defaultValue": "2023/6/16"
+    },
+    {
+      "id": "coldText",
+      "type": "checkbox",
+      "name": "凸显冰寒强化文本",
+      "description": "冰寒强化文本",
+      "defaultValue": true
     }
   ]
 }

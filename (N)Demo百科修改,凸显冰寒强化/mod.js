@@ -27,3 +27,16 @@ if (config.baike) {
 }
 
 D2RMM.writeJson(npcsFilename, npcs);
+
+// 凸显冰寒强化文本
+const monstersFilename = 'local\\lng\\strings\\monsters.json';
+const monsters = D2RMM.readJson(monstersFilename);
+if (config.coldText) {
+  monsters.forEach((item) => {
+    if (item.Key === 'monsteruniqueprop1') {
+      item['zhTW'] = 'ÿcN╪冰寒強化';
+      item['zhCN'] = 'ÿcN╪冰霜强化';
+    }
+  });
+}
+D2RMM.writeJson(monstersFilename, monsters);
