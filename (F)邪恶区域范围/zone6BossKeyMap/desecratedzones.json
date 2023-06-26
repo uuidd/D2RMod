@@ -56,6 +56,16 @@
                     "levels": [
                         /* 高塔地牢A1女伯爵 */
                         {
+                            /* Black Marsh */
+                            "level_id": 6,
+                            /* Black Marsh */
+                            "waypoint_level_id": 6
+                        },
+                        {
+                            /* Forgotten Tower */
+                            "level_id": 20
+                        },
+                        {
                             /* Tower Cellar Level 1 */
                             "level_id": 21
                         },

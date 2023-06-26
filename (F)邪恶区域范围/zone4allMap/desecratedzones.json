@@ -70,10 +70,14 @@
             },
             /* 官方第2套热门塔拉夏 Tal Rasha's Tombs */
             {
-              /* Tal Rasha's Tomb */
-              "level_id": 66,
+              /* Canyon of the Magi */
+              "level_id": 46,
               /* Canyon of the Magi */
               "waypoint_level_id": 46
+            },
+            {
+              /* Tal Rasha's Tomb */
+              "level_id": 66
             },
             {
               /* Tal Rasha's Tomb */
@@ -105,10 +109,14 @@
             },
             /* 官方第3套热门混沌避难所 Chaos Sanctuary */
             {
-              /* Chaos Sanctuary */
-              "level_id": 108,
+              /* River of Flame */
+              "level_id": 107,
               /* River of Flame */
               "waypoint_level_id": 107
+            },
+            {
+              /* Chaos Sanctuary */
+              "level_id": 108
             },
             /* 官方第4套热门世界之石大殿 Worldstone Keep, Throne of Destruction, and Worldstone Chamber */
             {

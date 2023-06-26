@@ -339,7 +339,7 @@ if (config.genJew) {
     numinputs: 2,
     "input 1": 'gem4,qty=2',
     output: 'jew',
-    lvl: 100,
+    plvl: 100,
     "*eol\r": 0,
   };
   cubemain.rows.push(recipe);
@@ -355,7 +355,7 @@ if (config.genUniqueJew) {
     "input 1": 'jew,any',
     "input 2": 'cm3,uni',
     output: 'jew,uni',
-    lvl: 100,
+    plvl: 100,
     "*eol\r": 0,
   };
   let recipe2 = {
@@ -366,6 +366,7 @@ if (config.genUniqueJew) {
     "input 1": 'jew,uni',
     "input 2": 'gem4,qty=3',
     output: 'Rainbow Facet',
+    plvl: 100,
     "*eol\r": 0,
   };
   cubemain.rows.push(recipe1);
@@ -382,7 +383,7 @@ if (config.rollHellfire) {
     "input 1": 'cm2,uni',
     "input 2": 'gem4,qty=3',
     output: 'usetype,uni',
-    lvl: 100,
+    ilvl: 100,
     "*eol\r": 0,
   };
   cubemain.rows.push(recipe1);

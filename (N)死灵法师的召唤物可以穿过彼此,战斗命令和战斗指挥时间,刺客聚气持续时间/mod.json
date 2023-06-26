@@ -1,27 +1,9 @@
 {
-  "name": "(N)死灵法师的召唤物可以穿过彼此,战斗命令和战斗指挥时间,刺客聚气持续时间",
-  "description": "死灵法师的骷髅可以穿过彼此",
+  "name": "(N)战斗命令和战斗指挥时间,刺客聚气持续时间",
+  "description": "",
   "author": "kudlajz",
   "version": "1.0",
   "config": [
-    {
-      "id": "necroskeleton",
-      "type": "checkbox",
-      "name": "骷髅",
-      "defaultValue": true
-    },
-    {
-      "id": "necromage",
-      "type": "checkbox",
-      "name": "骷髅法师",
-      "defaultValue": true
-    },
-    {
-      "id": "golems",
-      "type": "checkbox",
-      "name": "魔像",
-      "defaultValue": true
-    },
     {
       "id": "Param1",
       "type": "number",
