@@ -1,6 +1,7 @@
 const statesFilename = 'global\\excel\\states.txt';
 const states = D2RMM.readTsv(statesFilename);
-
+const soundsFilename = 'global\\excel\\sounds.txt';
+const sounds = D2RMM.readTsv(soundsFilename);
 // 任何发现&取消光环的声音。。。
 if (config.notHaloSound) {
   states.rows.forEach((row) => {
@@ -56,7 +57,7 @@ function SoundsPushData(sounds, Sound, index, Channel, FileName) {
 }
 
 function StatesMod(row, id, offsound) {
-  if (row['*ID'] === id) row.offsound = offsound;
+  if (row['*ID'] === ('' + id)) row.offsound = offsound;
 }
 
 if (config.skillOff_sound) {
@@ -64,8 +65,7 @@ if (config.skillOff_sound) {
   D2RMM.copyFile('skill', 'hd\\global\\sfx\\skill', true);
 
   // sounds文件新增16行,来自jgmod
-  const soundsFilename = 'global\\excel\\sounds.txt';
-  const sounds = D2RMM.readTsv(soundsFilename);
+
   SoundsPushData(sounds, 'chillingarmor_off', 11399, 'sfx/items_hd', 'skill\\jg\\chillingarmor_off.flac');
   SoundsPushData(sounds, 'battleorders_off', 11400, 'sfx/items_hd', 'skill\\jg\\battleorders_off.flac');
   SoundsPushData(sounds, 'venom_off', 11401, 'sfx/items_hd', 'skill\\jg\\venom_off.flac');
@@ -82,13 +82,13 @@ if (config.skillOff_sound) {
   SoundsPushData(sounds, 'fade_off', 11412, 'sfx/items_hd', 'skill\\jg\\fade_off.flac');
   SoundsPushData(sounds, 'burstofspeed_off', 11413, 'sfx/items_hd', 'skill\\jg\\burstofspeed_off.flac');
   SoundsPushData(sounds, 'bladeshield_off', 11414, 'sfx/items_hd', 'skill\\jg\\bladeshield_off.flac');
-  D2RMM.writeTsv(soundsFilename, sounds);
+
 
   // states.txt文件16个效果修改让声音生效
   states.rows.forEach((row) => {
     StatesMod(row, 20, 'chillingarmor_off');//寒冰甲
     StatesMod(row, 32, 'battleorders_off'); //战斗命令
-    StatesMod(row, 31, 'venom_off');        //淬毒
+    // StatesMod(row, 31, 'venom_off');        //淬毒
     StatesMod(row, 30, 'energyshield_off'); //能量护盾
     StatesMod(row, 10, 'frozenarmor_off');  //冰封甲
     StatesMod(row, 16, 'enchant_off');      //附魔
@@ -97,15 +97,15 @@ if (config.skillOff_sound) {
     StatesMod(row, 140, 'morph_off');       //变形术(变熊)
     StatesMod(row, 26, 'shout_off');        //大吼
     StatesMod(row, 51, 'battlecommand_off');//战斗指挥
-    StatesMod(row, 14, 'bonearmor_off');    //骸骨护甲
+    // StatesMod(row, 14, 'bonearmor_off');    //骸骨护甲
     StatesMod(row, 151, 'cyclonearmor_off');//气旋护甲
     StatesMod(row, 88, 'shiverarmor_off');  //碎冰甲
     StatesMod(row, 159, 'fade_off');        //影散
     StatesMod(row, 157, 'burstofspeed_off');//速度爆发
     StatesMod(row, 158, 'bladeshield_off'); //利刃之盾
   });
-  D2RMM.writeTsv(statesFilename, states);
 }
 
 // Save changes
 D2RMM.writeTsv(statesFilename, states);
+D2RMM.writeTsv(soundsFilename, sounds);
