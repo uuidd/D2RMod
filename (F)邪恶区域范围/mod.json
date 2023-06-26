@@ -45,6 +45,10 @@
                     "label": "热门4图同时出现(牛场,塔墓,魔殿,王座)"
                 },
                 {
+                    "value": "zone6BossKeyMap",
+                    "label": "6boss钥匙场景(A1女伯爵,A2召唤者,A5尼拉塞克)"
+                },
+                {
                     "value": "mod_4_map",
                     "label": "只刷热门4图(牛场,塔墓,魔殿,王座)"
                 },

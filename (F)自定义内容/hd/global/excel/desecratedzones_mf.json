@@ -52,42 +52,62 @@
             ],
             "zones": [
                 {
-                    /* 只刷塔拉夏古墓 Tal Rasha's Tombs */
+                    /* 只刷崔凡克+劳模 */
                     "id": 1,
                     "levels": [
                         {
-                            /* Tal Rasha's Tomb */
-                            "level_id": 66,
-                            /* Canyon of the Magi */
-                            "waypoint_level_id": 46
+                            /* 地穴一层 */
+                            "level_id": 12
                         },
                         {
-                            /* Tal Rasha's Tomb */
-                            "level_id": 67
+                            /* 地穴二层 */
+                            "level_id": 16
                         },
                         {
-                            /* Tal Rasha's Tomb */
-                            "level_id": 68
+                            /* 地下墓穴一层 */
+                            "level_id": 34
                         },
                         {
-                            /* Tal Rasha's Tomb */
-                            "level_id": 69
+                            /* 地下墓穴二层 */
+                            "level_id": 35
                         },
                         {
-                            /* Tal Rasha's Tomb */
-                            "level_id": 70
+                            /* 地下墓穴三层 */
+                            "level_id": 36
                         },
                         {
-                            /* Tal Rasha's Tomb */
-                            "level_id": 71
+                            /* 地下墓穴四层 */
+                            "level_id": 37
                         },
                         {
-                            /* Tal Rasha's Tomb */
-                            "level_id": 72
+                            /* 石质古墓一层 */
+                            "level_id": 55
                         },
                         {
-                            /* Tal Rasha's Chamber */
-                            "level_id": 73
+                            /* 石质古墓二层 */
+                            "level_id": 59
+                        },
+                        {
+                            /* 古代通道 */
+                            "level_id": 65
+                        },
+                        {
+                            /* 崔凡克 */
+                            "level_id": 83,
+                            /* 崔凡克 */
+                            "waypoint_level_id": 83
+                        },
+                        {
+                            /* 憎恨囚牢一层 */
+                            "level_id": 100
+                        },
+                        {
+                            /* 恨囚牢二层 */
+                            "level_id": 101
+                        },
+                        {
+                            /* 憎恨囚牢三层 */
+                            "level_id": 102
                         }
                     ]
                 }

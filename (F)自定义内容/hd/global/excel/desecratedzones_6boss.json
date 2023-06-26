@@ -52,56 +52,54 @@
             ],
             "zones": [
                 {
-                    /* 只刷崔凡克+劳模 */
                     "id": 1,
                     "levels": [
+                        /* 高塔地牢A1女伯爵 */
                         {
-                            /* 地穴一层 */
-                            "level_id": 12
+                            /* Tower Cellar Level 1 */
+                            "level_id": 21
                         },
                         {
-                            /* 地穴二层 */
-                            "level_id": 16
+                            /* Tower Cellar Level 2 */
+                            "level_id": 22
                         },
                         {
-                            /* 地下墓穴一层 */
-                            "level_id": 34
+                            /* Tower Cellar Level 3 */
+                            "level_id": 23
                         },
                         {
-                            /* 地下墓穴二层 */
-                            "level_id": 35
+                            /* Tower Cellar Level 4 */
+                            "level_id": 24
                         },
                         {
-                            /* 地下墓穴三层 */
-                            "level_id": 36
+                            /* Tower Cellar Level 5 */
+                            "level_id": 25
+                        },
+                        /* 神秘避难所A2召唤者 */
+                        {
+                            /* Arcane Sanctuary */
+                            "level_id": 74,
+                            /* Arcane Sanctuary */
+                            "waypoint_level_id": 74
+                        },
+                      /* 尼拉塞克神殿A5尼拉塞克 */
+                        {
+                            /* Nihlathak's Temple */
+                            "level_id": 121,
+                            /* Harrogath */
+                            "waypoint_level_id": 109
                         },
                         {
-                            /* 地下墓穴四层 */
-                            "level_id": 37
+                            /* Halls of Anguish */
+                            "level_id": 122
                         },
                         {
-                            /* 石质古墓一层 */
-                            "level_id": 55
+                            /* Halls of Pain */
+                            "level_id": 123
                         },
                         {
-                            /* 石质古墓二层 */
-                            "level_id": 59
-                        },
-                        {
-                            /* 古代通道 */
-                            "level_id": 65
-                        },
-                        {
-                            /* 憎恨囚牢一层 */
-                            "level_id": 100
-                        },
-                        {
-                            /* 恨囚牢二层 */
-                            "level_id": 101
-                        },
-                        {
-                            /* 憎恨囚牢三层 */
-                            "level_id": 102
+                            /* Halls of Vaught */
+                            "level_id": 124
                         }
                     ]
                 }
