@@ -10,6 +10,10 @@ if (config.baike) {
       twName = "模組版本：v" + config.modsVersion + " (適配遊戲版本:2.7/2.6)";
       cnName = "模组版本：v" + config.modsVersion + " (适配游戏版本:2.7/2.6)"
     }
+    if (itemKey === "jgmodversion") {
+      twName = "Demo v" + config.modsVersion;
+      cnName = "Demo v" + config.modsVersion;
+    }
     if (itemKey === "modsupdatedate") {
       twName = "更新日期：" + config.modsUpdateDate
       cnName = "更新日期：" + config.modsUpdateDate
