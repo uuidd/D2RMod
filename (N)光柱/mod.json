@@ -1,6 +1,6 @@
 {
-  "name": "(N)¹âÖù",
-  "description": "µ±µôÂä·ûÎÄ¡¢·ûÖä¡¢³ğºŞÔ¿³×¡¢»ÙÃğÔ¿³×¡¢¿Ö¾åÔ¿³×¡¢±¦Ê¯¡¢ÍêÃÀ±¦Ê¯Ê±£¬»á²úÉúÒ»µÀ¹âÖù¡£»ùÓÚhttps:www.nexusmods.comdiablo2resurrectedmods12¡£",
+  "name": "(N)å…‰æŸ±",
+  "description": "å½“æ‰è½ç¬¦æ–‡ã€ç¬¦å’’ã€ä»‡æ¨é’¥åŒ™ã€æ¯ç­é’¥åŒ™ã€ææƒ§é’¥åŒ™ã€å®çŸ³ã€å®Œç¾å®çŸ³æ—¶ï¼Œä¼šäº§ç”Ÿä¸€é“å…‰æŸ±ã€‚åŸºäºhttps:www.nexusmods.comdiablo2resurrectedmods12ã€‚",
   "author": "qhu91it",
   "website": "https://github.com/olegbl/d2rmm.mods",
   "version": "1.0",
@@ -8,43 +8,43 @@
     {
       "id": "gem",
       "type": "checkbox",
-      "name": "±¦Ê¯",
-      "description": "±¦Ê¯¹âÖù",
+      "name": "å®çŸ³",
+      "description": "å®çŸ³å…‰æŸ±",
       "defaultValue": true
     },
     {
       "id": "gemStack",
       "type": "checkbox",
-      "name": "±¦Ê¯¶Ñµş",
-      "description": "±¦Ê¯¶ÑÓÃ¹âÖù",
+      "name": "å®çŸ³å †å ",
+      "description": "å®çŸ³å †ç”¨å…‰æŸ±",
       "defaultValue": false
     },
     {
       "id": "rune",
       "type": "checkbox",
-      "name": "·ûÎÄ",
-      "description": "´óºÅ21+·ûÎÄ¹âÖù",
+      "name": "ç¬¦æ–‡",
+      "description": "å¤§å·21+ç¬¦æ–‡å…‰æŸ±",
       "defaultValue": true
     },
     {
       "id": "runeStack",
       "type": "checkbox",
-      "name": "·ûÎÄ¶ÑÕ»",
-      "description": "·ûÎÄ¶ÑµşµÄ¹âÖù",
+      "name": "ç¬¦æ–‡å †æ ˆ",
+      "description": "ç¬¦æ–‡å †å çš„å…‰æŸ±",
       "defaultValue": false
     },
     {
       "id": "charm",
       "type": "checkbox",
-      "name": "Éñ·û",
-      "description": "´óĞ¡Éñ·û¹âÖù£¬ÖĞÉñ·ûÃ»¹âÖù",
+      "name": "ç¥ç¬¦",
+      "description": "å¤§å°ç¥ç¬¦å…‰æŸ±ï¼Œä¸­ç¥ç¬¦æ²¡å…‰æŸ±",
       "defaultValue": true
     },
     {
       "id": "key",
       "type": "checkbox",
-      "name": "6bossÔ¿³×",
-      "description": "6bossÔ¿³×µÄ¹âÖù",
+      "name": "6bossé’¥åŒ™",
+      "description": "6bossé’¥åŒ™çš„å…‰æŸ±",
       "defaultValue": true
     }
   ]

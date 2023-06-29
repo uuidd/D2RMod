@@ -1,6 +1,6 @@
 {
-  "name": "(YN)��ս��Χ�˺�",
-  "description": "����һ���µĽ�ս�����˺���Ʒ���ԡ�",
+  "name": "(YN)近战范围伤害",
+  "description": "添加一个新的近战区域伤害物品属性。",
   "author": "olegbl",
   "website": "https://www.nexusmods.com/diablo2resurrected/mods/230",
   "version": "1.1",
@@ -8,8 +8,8 @@
     {
       "id": "damage",
       "type": "number",
-      "name": "��Χ�˺�ֵ",
-      "description": "��Χ�˺������ڵ��˵������˺��ٷֱȡ�",
+      "name": "范围伤害值",
+      "description": "范围伤害区域内敌人的武器伤害百分比。",
       "defaultValue": 50,
       "minValue": 1,
       "maxValue": 100
@@ -17,8 +17,8 @@
     {
       "id": "damageReduction",
       "type": "number",
-      "name": "��Χ�˺��ݼ�",
-      "description": "�����˺�Ҳ�����ڳ�ʼĿ�����У����Ӧ���������˺��Ա���ƽ�⡣ ��ֵ���Ƽ��ٵĳ̶ȡ� 0 = �����٣������˺���������ɱ������Ŀ�꣩�� 100 = ƽ�⣨�Ե���Ŀ����˺����û�б仯���� 200 = ����˺�������������ɵ������˺���������",
+      "name": "范围伤害递减",
+      "description": "区域伤害也适用于初始目标命中，因此应减少整体伤害以保持平衡。 该值控制减少的程度。 0 = 不减少（区域伤害让你更快地杀死单个目标）。 100 = 平衡（对单个目标的伤害输出没有变化）。 200 = 你的伤害减少了你所造成的区域伤害的两倍。",
       "defaultValue": 100,
       "minValue": 0,
       "maxValue": 1000
@@ -26,8 +26,8 @@
     {
       "id": "radius",
       "type": "number",
-      "name": "��Χ�˺���Χ",
-      "description": "��ս�������е�Ŀ����Χ�����˺��İ뾶��2=�������ڵ��ˡ�4=��ʹ��������Ҳ�ܻ��е��ˡ�100=�����Ļ�ϵ��������ݡ�",
+      "name": "范围伤害范围",
+      "description": "近战攻击击中的目标周围区域伤害的半径。2=击中相邻敌人。4=即使在你身后也能击中敌人。100=点击屏幕上的所有内容。",
       "defaultValue": 2,
       "minValue": 1,
       "maxValue": 100
@@ -35,29 +35,29 @@
     {
       "id": "scha",
       "type": "checkbox",
-      "name": "С�����",
-      "description": "��Χ�˺�������С�����ϡ�",
+      "name": "小型神符",
+      "description": "范围伤害附加在小符咒上。",
       "defaultValue": false
     },
     {
       "id": "mcha",
       "type": "checkbox",
-      "name": "�������",
-      "description": "��Χ�˺������ڴ��ͷ����ϡ�",
+      "name": "中型神符",
+      "description": "范围伤害附加在大型符咒上。",
       "defaultValue": false
     },
     {
       "id": "lcha",
       "type": "checkbox",
-      "name": "�������",
-      "description": "��Χ�˺�������ʢ��ķ����ϡ�",
+      "name": "大型神符",
+      "description": "范围伤害附加在盛大的符咒上。",
       "defaultValue": true
     },
     {
       "id": "unique",
       "type": "checkbox",
-      "name": "����С�����",
-      "description": "Ϊ���µĵ��������˰���С�������",
+      "name": "暗金小型神符",
+      "description": "为基德的店铺添加了暗金小型神符。",
       "defaultValue": false
     }
   ]

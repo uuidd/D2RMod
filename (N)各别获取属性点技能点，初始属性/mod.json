@@ -1,6 +1,6 @@
 {
-  "name": "(N)¸÷±ğ»ñÈ¡ÊôĞÔµã¼¼ÄÜµã£¬³õÊ¼ÊôĞÔ",
-  "description": "ĞŞ¸ÄÆğÊ¼Í³¼ÆÊı¾İ¡¢Ã¿¼¶Í³¼ÆÊı¾İ¡¢Ã¿¸öÍ³¼ÆÊı¾İºÍÃ¿¼¶¼¼ÄÜÍ³¼ÆµãÊıµÈ",
+  "name": "(N)å„åˆ«è·å–å±æ€§ç‚¹æŠ€èƒ½ç‚¹ï¼Œåˆå§‹å±æ€§",
+  "description": "ä¿®æ”¹èµ·å§‹ç»Ÿè®¡æ•°æ®ã€æ¯çº§ç»Ÿè®¡æ•°æ®ã€æ¯ä¸ªç»Ÿè®¡æ•°æ®å’Œæ¯çº§æŠ€èƒ½ç»Ÿè®¡ç‚¹æ•°ç­‰",
   "author": "Doxorn",
   "website": "https://www.nexusmods.com/diablo2resurrected/mods/354",
   "version": "1.0",
@@ -8,8 +8,8 @@
     {
       "id": "globalstatperlevel",
       "type": "number",
-      "name": "Ã¿¸ö¼¶±ğµÄ»ñÈ¡µÄÊôĞÔµã",
-      "description": "Ä¬ÈÏÖµ£º5",
+      "name": "æ¯ä¸ªçº§åˆ«çš„è·å–çš„å±æ€§ç‚¹",
+      "description": "é»˜è®¤å€¼ï¼š5",
       "defaultValue": 5,
       "minValue": 0,
       "maxValue": 127
@@ -17,8 +17,8 @@
     {
       "id": "globalskillsperlevel",
       "type": "number",
-      "name": "Ã¿¸ö¼¶±ğµÄ»ñÈ¡µÄ¼¼ÄÜµãÊı",
-      "description": "Ä¬ÈÏÖµ£º1",
+      "name": "æ¯ä¸ªçº§åˆ«çš„è·å–çš„æŠ€èƒ½ç‚¹æ•°",
+      "description": "é»˜è®¤å€¼ï¼š1",
       "defaultValue": 1,
       "minValue": 0,
       "maxValue": 127
@@ -26,15 +26,15 @@
     {
       "id": "globalmanaregenable",
       "type": "checkbox",
-      "name": "ÆôÓÃ·¨Á¦»Ø¸´ĞŞ¸Ä",
-      "description": "Èç¹ûÆôÓÃ´ËÑ¡Ïî£¬ÔòÃ¿¸öÖ°ÒµµÄ·¨Á¦»Ø¸´£¨Ô½µÍÔ½¿ì£©Ñ¡Ïî½«±»ºöÂÔ",
+      "name": "å¯ç”¨æ³•åŠ›å›å¤ä¿®æ”¹",
+      "description": "å¦‚æœå¯ç”¨æ­¤é€‰é¡¹ï¼Œåˆ™æ¯ä¸ªèŒä¸šçš„æ³•åŠ›å›å¤ï¼ˆè¶Šä½è¶Šå¿«ï¼‰é€‰é¡¹å°†è¢«å¿½ç•¥",
       "defaultValue": false
     },
     {
       "id": "globalmanareg",
       "type": "number",
-      "name": "·¨Á¦»Ø¸´£¨Ô½µÍÔ½¿ì£©",
-      "description": "Ä¬ÈÏÖµ£º120¡£ĞèÒª¶àÉÙÃë²ÅÄÜÍêÈ«»Ö¸´ÄãµÄ·¨Á¦¡£Öµx 1.5£¬ÕâÒâÎ¶×ÅÄ¬ÈÏÇé¿öÏÂ120=180ÃëÀ´ÍêÈ«»Ö¸´ÄãµÄ·¨Á¦",
+      "name": "æ³•åŠ›å›å¤ï¼ˆè¶Šä½è¶Šå¿«ï¼‰",
+      "description": "é»˜è®¤å€¼ï¼š120ã€‚éœ€è¦å¤šå°‘ç§’æ‰èƒ½å®Œå…¨æ¢å¤ä½ çš„æ³•åŠ›ã€‚å€¼x 1.5ï¼Œè¿™æ„å‘³ç€é»˜è®¤æƒ…å†µä¸‹120=180ç§’æ¥å®Œå…¨æ¢å¤ä½ çš„æ³•åŠ›",
       "defaultValue": 120,
       "minValue": 1,
       "maxValue": 255
@@ -42,15 +42,15 @@
     {
       "id": "globalwalkenable",
       "type": "checkbox",
-      "name": "ÆôÓÃĞĞ×ßËÙ¶ÈĞŞ¸Ä",
-      "description": "Èç¹ûÆôÓÃ´ËÑ¡Ïî£¬Ôò½«ºöÂÔÃ¿¸ö½ÇÉ«µÄ¡°ĞĞ×ßËÙ¶È¡±Ñ¡Ïî",
+      "name": "å¯ç”¨è¡Œèµ°é€Ÿåº¦ä¿®æ”¹",
+      "description": "å¦‚æœå¯ç”¨æ­¤é€‰é¡¹ï¼Œåˆ™å°†å¿½ç•¥æ¯ä¸ªè§’è‰²çš„â€œè¡Œèµ°é€Ÿåº¦â€é€‰é¡¹",
       "defaultValue": false
     },    
 	{
       "id": "globalwalk",
       "type": "number",
-      "name": "ĞĞ×ßËÙ¶ÈĞŞ¸Ä",
-      "description": "Ä¬ÈÏÖµ£º6",
+      "name": "è¡Œèµ°é€Ÿåº¦ä¿®æ”¹",
+      "description": "é»˜è®¤å€¼ï¼š6",
       "defaultValue": 6,
       "minValue": 1,
       "maxValue": 127
@@ -58,15 +58,15 @@
     {
       "id": "globalrunenable",
       "type": "checkbox",
-      "name": "ÆôÓÃÅÜ²½ËÙ¶ÈĞŞ¸Ä",
-      "description": "Èç¹ûÆôÓÃ´ËÑ¡Ïî£¬Ôò½«ºöÂÔÃ¿¸öÀàµÄ¡°ÔËĞĞËÙ¶È¡±Ñ¡Ïî",
+      "name": "å¯ç”¨è·‘æ­¥é€Ÿåº¦ä¿®æ”¹",
+      "description": "å¦‚æœå¯ç”¨æ­¤é€‰é¡¹ï¼Œåˆ™å°†å¿½ç•¥æ¯ä¸ªç±»çš„â€œè¿è¡Œé€Ÿåº¦â€é€‰é¡¹",
       "defaultValue": false
     },    
 	{
       "id": "globalrun",
       "type": "number",
-      "name": "ÅÜ²½ËÙ¶ÈĞŞ¸Ä",
-      "description": "Ä¬ÈÏÖµ£º9¡£Èç¹ûÄãÔÚÎïÆ·ÉÏµÄÒÆ¶¯ËÙ¶È+¸ÃÖµ¸ßÓÚ127%£¬ÄãµÄÒÆ¶¯½«ÖĞ¶Ï",
+      "name": "è·‘æ­¥é€Ÿåº¦ä¿®æ”¹",
+      "description": "é»˜è®¤å€¼ï¼š9ã€‚å¦‚æœä½ åœ¨ç‰©å“ä¸Šçš„ç§»åŠ¨é€Ÿåº¦+è¯¥å€¼é«˜äº127%ï¼Œä½ çš„ç§»åŠ¨å°†ä¸­æ–­",
       "defaultValue": 9,
       "minValue": 0,
       "maxValue": 127
@@ -74,15 +74,15 @@
     {
       "id": "globalrundrainenable",
       "type": "checkbox",
-      "name": "ÆôÓÃÄÍÁ¦ÏûºÄĞŞ¸Ä",
-      "description": "Èç¹ûÄãÆôÓÃ´ËÑ¡Ïî£¬Ã¿¸öÖ°ÒµµÄÌåÁ¦ÏûºÄÑ¡Ïî½«±»ºöÂÔ",
+      "name": "å¯ç”¨è€åŠ›æ¶ˆè€—ä¿®æ”¹",
+      "description": "å¦‚æœä½ å¯ç”¨æ­¤é€‰é¡¹ï¼Œæ¯ä¸ªèŒä¸šçš„ä½“åŠ›æ¶ˆè€—é€‰é¡¹å°†è¢«å¿½ç•¥",
       "defaultValue": false
     },	    
 	{
       "id": "globalrundrain",
       "type": "number",
-      "name": "È«ÇòÄÍÁ¦ÏûºÄ",
-      "description": "Ä¬ÈÏÖµ£º20£»15´ú±í´Ì¿Í",
+      "name": "å…¨çƒè€åŠ›æ¶ˆè€—",
+      "description": "é»˜è®¤å€¼ï¼š20ï¼›15ä»£è¡¨åˆºå®¢",
       "defaultValue": 20,
       "minValue": 0,
       "maxValue": 254
@@ -92,15 +92,15 @@
 	{
       "id": "amenable",
       "type": "checkbox",
-      "name": "ÆôÓÃÑÇÂíÑ·Ä£¿é",
-      "description": "»¹Æğµ½µæÆ¬µÄ×÷ÓÃ",
+      "name": "å¯ç”¨äºšé©¬é€Šæ¨¡å—",
+      "description": "è¿˜èµ·åˆ°å«ç‰‡çš„ä½œç”¨",
       "defaultValue": false
     },	
     {
       "id": "amstr",
       "type": "number",
-      "name": "ÑÇÂíÑ·Æğ²½ÊµÁ¦",
-      "description": "Ä¬ÈÏÖµ£º20",
+      "name": "äºšé©¬é€Šèµ·æ­¥å®åŠ›",
+      "description": "é»˜è®¤å€¼ï¼š20",
       "defaultValue": 20,
       "minValue": 0,
       "maxValue": 255
@@ -108,8 +108,8 @@
     {
       "id": "amdex",
       "type": "number",
-      "name": "ÑÇÂíÑ·Æô¶¯Dexterity",
-      "description": "Ä¬ÈÏÖµ£º25",
+      "name": "äºšé©¬é€Šå¯åŠ¨Dexterity",
+      "description": "é»˜è®¤å€¼ï¼š25",
       "defaultValue": 25,
       "minValue": 0,
       "maxValue": 255
@@ -117,8 +117,8 @@
     {
       "id": "amint",
       "type": "number",
-      "name": "ÑÇÂíÑ·Æô¶¯Energy&Mana",
-      "description": "Ä¬ÈÏÖµ£º15",
+      "name": "äºšé©¬é€Šå¯åŠ¨Energy&Mana",
+      "description": "é»˜è®¤å€¼ï¼š15",
       "defaultValue": 15,
       "minValue": 0,
       "maxValue": 255
@@ -126,8 +126,8 @@
     {
       "id": "amvit",
       "type": "number",
-      "name": "ÑÇÂíÑ·Æô¶¯»îÁ¦Óë½¡¿µ",
-      "description": "Ä¬ÈÏÖµ£º20",
+      "name": "äºšé©¬é€Šå¯åŠ¨æ´»åŠ›ä¸å¥åº·",
+      "description": "é»˜è®¤å€¼ï¼š20",
       "defaultValue": 20,
       "minValue": 0,
       "maxValue": 255
@@ -135,8 +135,8 @@
     {
       "id": "amstam",
       "type": "number",
-      "name": "ÑÇÂíÑ·Æğ²½ÄÍÁ¦",
-      "description": "Ä¬ÈÏÖµ£º84",
+      "name": "äºšé©¬é€Šèµ·æ­¥è€åŠ›",
+      "description": "é»˜è®¤å€¼ï¼š84",
       "defaultValue": 84,
       "minValue": 0,
       "maxValue": 255
@@ -144,8 +144,8 @@
     {
       "id": "amstartinghealth",
       "type": "number",
-      "name": "ÑÇÂíÑ·¶îÍâ½¡¿µ¿ªÊ¼",
-      "description": "Ä¬ÈÏÖµ£º30¡£Õâ½«±»Ìí¼Óµ½ÄúµÄÆğÊ¼»îÁ¦ÖĞ£¬ÒÔÈ·¶¨ÄúµÄÆğÊ¼½¡¿µ³Ø",
+      "name": "äºšé©¬é€Šé¢å¤–å¥åº·å¼€å§‹",
+      "description": "é»˜è®¤å€¼ï¼š30ã€‚è¿™å°†è¢«æ·»åŠ åˆ°æ‚¨çš„èµ·å§‹æ´»åŠ›ä¸­ï¼Œä»¥ç¡®å®šæ‚¨çš„èµ·å§‹å¥åº·æ± ",
       "defaultValue": 30,
       "minValue": 0,
       "maxValue": 255
@@ -153,8 +153,8 @@
     {
       "id": "ammanareg",
       "type": "number",
-      "name": "ÑÇÂíÑ·Ä§·¨»Ø¸´£¨Ô½µÍÔ½¿ì£©",
-      "description": "Ä¬ÈÏÖµ£º120¡£ĞèÒª¶àÉÙÃë²ÅÄÜÍêÈ«»Ö¸´ÄãµÄ·¨Á¦¡£Öµx 1.5£¬ÕâÒâÎ¶×ÅÄ¬ÈÏÇé¿öÏÂ120=180ÃëÀ´ÍêÈ«»Ö¸´ÄãµÄ·¨Á¦",
+      "name": "äºšé©¬é€Šé­”æ³•å›å¤ï¼ˆè¶Šä½è¶Šå¿«ï¼‰",
+      "description": "é»˜è®¤å€¼ï¼š120ã€‚éœ€è¦å¤šå°‘ç§’æ‰èƒ½å®Œå…¨æ¢å¤ä½ çš„æ³•åŠ›ã€‚å€¼x 1.5ï¼Œè¿™æ„å‘³ç€é»˜è®¤æƒ…å†µä¸‹120=180ç§’æ¥å®Œå…¨æ¢å¤ä½ çš„æ³•åŠ›",
       "defaultValue": 120,
       "minValue": 1,
       "maxValue": 255
@@ -162,8 +162,8 @@
     {
       "id": "amwalk",
       "type": "number",
-      "name": "ÑÇÂíÑ·²½ĞĞËÙ¶È",
-      "description": "Ä¬ÈÏÖµ£º6",
+      "name": "äºšé©¬é€Šæ­¥è¡Œé€Ÿåº¦",
+      "description": "é»˜è®¤å€¼ï¼š6",
       "defaultValue": 6,
       "minValue": 1,
       "maxValue": 127
@@ -171,8 +171,8 @@
     {
       "id": "amrun",
       "type": "number",
-      "name": "ÑÇÂíÑ·ÅÜ²½ËÙ¶È",
-      "description": "Ä¬ÈÏÖµ£º9¡£Èç¹ûÄãÔÚÎïÆ·ÉÏµÄÒÆ¶¯ËÙ¶È+¸ÃÖµ¸ßÓÚ127%£¬ÄãµÄÒÆ¶¯½«ÖĞ¶Ï",
+      "name": "äºšé©¬é€Šè·‘æ­¥é€Ÿåº¦",
+      "description": "é»˜è®¤å€¼ï¼š9ã€‚å¦‚æœä½ åœ¨ç‰©å“ä¸Šçš„ç§»åŠ¨é€Ÿåº¦+è¯¥å€¼é«˜äº127%ï¼Œä½ çš„ç§»åŠ¨å°†ä¸­æ–­",
       "defaultValue": 9,
       "minValue": 0,
       "maxValue": 127
@@ -180,8 +180,8 @@
     {
       "id": "amrundrain",
       "type": "number",
-      "name": "ÑÇÂíÑ·ÄÍÁ¦ÏûºÄ",
-      "description": "Ä¬ÈÏÖµ£º20",
+      "name": "äºšé©¬é€Šè€åŠ›æ¶ˆè€—",
+      "description": "é»˜è®¤å€¼ï¼š20",
       "defaultValue": 20,
       "minValue": 0,
       "maxValue": 254
@@ -189,8 +189,8 @@
     {
       "id": "amlifeperlevel",
       "type": "number",
-      "name": "ÑÇÂíÑ·Éú»îÃ¿¼¶±ğ4",
-      "description": "Ä¬ÈÏÖµ£º8",
+      "name": "äºšé©¬é€Šç”Ÿæ´»æ¯çº§åˆ«4",
+      "description": "é»˜è®¤å€¼ï¼š8",
       "defaultValue": 8,
       "minValue": 0,
       "maxValue": 254
@@ -198,8 +198,8 @@
     {
       "id": "amstamperlevel",
       "type": "number",
-      "name": "ÑÇÂíÑ·ÄÍÁ¦Ã¿¼¶4",
-      "description": "Ä¬ÈÏÖµ£º4",
+      "name": "äºšé©¬é€Šè€åŠ›æ¯çº§4",
+      "description": "é»˜è®¤å€¼ï¼š4",
       "defaultValue": 4,
       "minValue": 0,
       "maxValue": 254
@@ -207,8 +207,8 @@
     {
       "id": "ammanaperlevel",
       "type": "number",
-      "name": "Ã¿¼¶4µÄÑÇÂíÑ·Ä§·¨Öµ",
-      "description": "Ä¬ÈÏÖµ£º6",
+      "name": "æ¯çº§4çš„äºšé©¬é€Šé­”æ³•å€¼",
+      "description": "é»˜è®¤å€¼ï¼š6",
       "defaultValue": 6,
       "minValue": 0,
       "maxValue": 254
@@ -216,8 +216,8 @@
     {
       "id": "amlifepervit",
       "type": "number",
-      "name": "ÑÇÂíÑ·ÉúÃüÃ¿»îÁ¦4",
-      "description": "Ä¬ÈÏÖµ£º12",
+      "name": "äºšé©¬é€Šç”Ÿå‘½æ¯æ´»åŠ›4",
+      "description": "é»˜è®¤å€¼ï¼š12",
       "defaultValue": 12,
       "minValue": 0,
       "maxValue": 254
@@ -225,8 +225,8 @@
     {
       "id": "amstampervit",
       "type": "number",
-      "name": "ÑÇÂíÑ·ÄÍÁ¦Ã¿»îÁ¦4",
-      "description": "Ä¬ÈÏÖµ£º4",
+      "name": "äºšé©¬é€Šè€åŠ›æ¯æ´»åŠ›4",
+      "description": "é»˜è®¤å€¼ï¼š4",
       "defaultValue": 4,
       "minValue": 0,
       "maxValue": 254
@@ -234,8 +234,8 @@
     {
       "id": "ammanapermagic",
       "type": "number",
-      "name": "Ã¿ÄÜÁ¿µÄÑÇÂíÑ·Ä§·¨Öµ4",
-      "description": "Ä¬ÈÏÖµ£º6",
+      "name": "æ¯èƒ½é‡çš„äºšé©¬é€Šé­”æ³•å€¼4",
+      "description": "é»˜è®¤å€¼ï¼š6",
       "defaultValue": 6,
       "minValue": 0,
       "maxValue": 254
@@ -243,8 +243,8 @@
     {
       "id": "amhppotpercent",
       "type": "number",
-      "name": "ÑÇÂíÑ·ÖÎÁÆÒ©¼ÁÓĞĞ§ÂÊ%",
-      "description": "Ä¬ÈÏÖµ£º150",
+      "name": "äºšé©¬é€Šæ²»ç–—è¯å‰‚æœ‰æ•ˆç‡%",
+      "description": "é»˜è®¤å€¼ï¼š150",
       "defaultValue": 150,
       "minValue": 0,
       "maxValue": 100000
@@ -252,8 +252,8 @@
     {
       "id": "ammppotpercent",
       "type": "number",
-      "name": "ÑÇÂíÑ·Ä§·¨Ò©¼ÁÓĞĞ§ÂÊ%",
-      "description": "Ä¬ÈÏÖµ£º150",
+      "name": "äºšé©¬é€Šé­”æ³•è¯å‰‚æœ‰æ•ˆç‡%",
+      "description": "é»˜è®¤å€¼ï¼š150",
       "defaultValue": 150,
       "minValue": 0,
       "maxValue": 100000
@@ -263,8 +263,8 @@
 	{
       "id": "soenable",
       "type": "checkbox",
-      "name": "ÆôÓÃ·¨Ê¦ĞŞ¸Ä",
-      "description": "»¹Æğµ½µæÆ¬µÄ×÷ÓÃ",
+      "name": "å¯ç”¨æ³•å¸ˆä¿®æ”¹",
+      "description": "è¿˜èµ·åˆ°å«ç‰‡çš„ä½œç”¨",
       "defaultValue": true
     },	
 	{
