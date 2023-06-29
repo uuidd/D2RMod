@@ -1,0 +1,51 @@
+{
+  "name": "(N)光柱",
+  "description": "当掉落符文、符咒、仇恨钥匙、毁灭钥匙、恐惧钥匙、宝石、完美宝石时，会产生一道光柱。基于https:www.nexusmods.comdiablo2resurrectedmods12。",
+  "author": "qhu91it",
+  "website": "https://github.com/olegbl/d2rmm.mods",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "gem",
+      "type": "checkbox",
+      "name": "宝石",
+      "description": "宝石光柱",
+      "defaultValue": true
+    },
+    {
+      "id": "gemStack",
+      "type": "checkbox",
+      "name": "宝石堆叠",
+      "description": "宝石堆用光柱",
+      "defaultValue": false
+    },
+    {
+      "id": "rune",
+      "type": "checkbox",
+      "name": "符文",
+      "description": "大号21+符文光柱",
+      "defaultValue": true
+    },
+    {
+      "id": "runeStack",
+      "type": "checkbox",
+      "name": "符文堆栈",
+      "description": "符文堆叠的光柱",
+      "defaultValue": false
+    },
+    {
+      "id": "charm",
+      "type": "checkbox",
+      "name": "神符",
+      "description": "大小神符光柱，中神符没光柱",
+      "defaultValue": true
+    },
+    {
+      "id": "key",
+      "type": "checkbox",
+      "name": "6boss钥匙",
+      "description": "6boss钥匙的光柱",
+      "defaultValue": true
+    }
+  ]
+}
