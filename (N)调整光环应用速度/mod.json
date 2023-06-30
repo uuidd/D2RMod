@@ -1,0 +1,34 @@
+{
+  "name": "(N)调整光环应用速度",
+  "description": "调整光环应用所需的时间",
+  "author": "Jeo",
+  "website": "https://github.com/naghi32/D2RMODS/tree/main/AdjustAuraSpeed",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "perdelay",
+      "type": "number",
+      "name": "光环延迟",
+      "description": "将光环延迟设置在1和99之间。",
+      "defaultValue": 50,
+      "minValue": 1,
+      "maxValue": 99
+    },
+	 {
+      "id": "damagefix",
+      "type": "checkbox",
+      "name": "修复光环伤害",
+      "description": "启用以修复光环伤害",
+      "defaultValue": true
+    },
+    {
+      "id": "basedmgfix",
+      "type": "number",
+      "name": "修复光环伤害值",
+      "description": "计算基础光环延迟1到250之间的光环伤害。",
+      "defaultValue": 50,
+      "minValue": 1,
+      "maxValue": 250
+    }
+  ]
+}
