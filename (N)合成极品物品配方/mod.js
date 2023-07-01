@@ -55,9 +55,9 @@ if (config.jew15sp30fire) {
 if (config.mara3) {
   cubemain.rows.push({
     ...baseRecipe,
-    description: `3 unique Amulet = Mara's Kaleidoscope`,
+    description: `3 unique Amulet -> Mara's Kaleidoscope`,
     numinputs: 3,
-    'input 1': 'amu,uni,qty=3',
+    'input 1': `"amu,uni,qty=3"`,
     output: `Mara's Kaleidoscope`
   });
 }
@@ -65,7 +65,7 @@ if (config.mara3) {
 if (config.mara26) {
   cubemain.rows.push({
     ...baseRecipe,
-    description: `r26 + 1 Amulet = Mara's Kaleidoscope`,
+    description: `r26 + 1 Amulet -> Mara's Kaleidoscope`,
     numinputs: 2,
     'input 1': 'amu',
     'input 2': 'r26',
@@ -76,7 +76,7 @@ if (config.mara26) {
 if (config.mara32) {
   cubemain.rows.push({
     ...baseRecipe,
-    description: `r32 + 1 Amulet = Mara's Kaleidoscope`,
+    description: `r32 + 1 Amulet -> Mara's Kaleidoscope`,
     numinputs: 2,
     'input 1': 'amu',
     'input 2': 'r32',
@@ -88,9 +88,9 @@ if (config.mara32) {
 if (config.soj3) {
   cubemain.rows.push({
     ...baseRecipe,
-    description: `3 unique ring = The Stone of Jordan`,
+    description: `3 unique ring -> The Stone of Jordan`,
     numinputs: 3,
-    'input 1': 'rin,uni,qty=3',
+    'input 1': `"rin,uni,qty=3"`,
     output: `The Stone of Jordan`
   });
 }
@@ -98,7 +98,7 @@ if (config.soj3) {
 if (config.soj28) {
   cubemain.rows.push({
     ...baseRecipe,
-    description: `r28 + ring = The Stone of Jordan`,
+    description: `r28 + ring -> The Stone of Jordan`,
     numinputs: 2,
     'input 1': 'rin',
     'input 2': 'r28',
@@ -109,7 +109,7 @@ if (config.soj28) {
 if (config.soj33) {
   cubemain.rows.push({
     ...baseRecipe,
-    description: `r33 + ring = The Stone of Jordan`,
+    description: `r33 + ring -> The Stone of Jordan`,
     numinputs: 2,
     'input 1': 'rin',
     'input 2': 'r33',
@@ -117,6 +117,36 @@ if (config.soj33) {
   });
 }
 
+if (config.torchToSmallCharm) {
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: '2 Torch -> 3 SmallCharm',
+    numinputs: 2,
+    'input 1': 'cm2,uni,qty=2',
+    output: `"cm1,mag,pre=322,suf=349"`, // smallCharm5res20lift
+    'output b': `"cm1,mag,pre=256,suf=349"`, // smallCharm3max20ar20lift
+    'output c': `"cm1,mag,pre=303,suf=349"` // smallCharm17mana20lift
+  });
+}
 
-
+//
+// if (config.smallCharm3max20ar20lift) {
+//   cubemain.rows.push({
+//     ...baseRecipe,
+//     description: '2',
+//     numinputs: 3,
+//     'input 1': 'hpot,qty=3',
+//     output: `"cm1,mag,pre=256,suf=349"`
+//   });
+// }
+//
+// if (config.smallCharm17mana20lift) {
+//   cubemain.rows.push({
+//     ...baseRecipe,
+//     description: '3',
+//     numinputs: 4,
+//     'input 1': 'hpot,qty=4',
+//     output: `"cm1,mag,pre=303,suf=349"`
+//   });
+// }
 D2RMM.writeTsv(cubemainFilename, cubemain);
