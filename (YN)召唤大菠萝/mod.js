@@ -174,7 +174,7 @@ cubemain.rows.push({
   "input 4": "bet",
   "input 5": "fed",
   output: "sot",
-  "*eol": 0,
+  "*eol\r": 0,
 });
 D2RMM.writeTsv(cubemainFilename, cubemain);
 

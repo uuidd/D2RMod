@@ -1,0 +1,30 @@
+{
+  "name": "(N)合成极品物品配方",
+  "description": "15攻速31-40ed、15攻速11-15全抗、15攻速16-30火炕珠；20生命5全抗、20生命17法力、3最大伤害20准确20生命小板子；乔丹，马拉",
+  "author": "Demo",
+  "website": "",
+  "version": "1.3",
+  "config": [
+    {
+      "id": "jew15sp40ed",
+      "type": "checkbox",
+      "name": "15攻速11-15全抗蓝色珠宝",
+      "description": "15攻速11-15全抗蓝色珠宝",
+      "defaultValue": true
+    },
+    {
+      "id": "jew15sp15res",
+      "type": "checkbox",
+      "name": "15攻速31-40ed蓝色珠宝(红白珠)",
+      "description": "15攻速31-40ed蓝色珠宝（红白珠）",
+      "defaultValue": true
+    },
+    {
+      "id": "jew15sp30fire",
+      "type": "checkbox",
+      "name": "15攻速16-30火炕蓝色珠宝(安头珠)",
+      "description": "15攻速16-30火炕蓝色珠宝(安头珠)",
+      "defaultValue": true
+    }
+  ]
+}

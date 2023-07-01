@@ -1,42 +1,42 @@
-// *·¨BUG²úÉúµÄÔ­ÒòÔ­À´ÊÇ´òÁËÒ»¸ötxtÕ¼ÓÃÁËÏµÍ³ÄÚ´æ,µ¼ÖÂMOD¹ÜÀíÆ÷ÎŞ·¨É¾³ıËùÒÔÔ½*Ô½¶à
-// ±ÈÈçÎÒÔÚÊ¹ÓÃAFJ Sheet¹¤¾ß²é¿´txtÊ±,¹Ø±Õµô¹¤¾ß²ÅÓÃÏû³ıÕ¼ÓÃ,MOD¹ÜÀíÆ÷ÖØĞÂINSTALLÒ»ÏÂ¾ÍĞĞÁË
-// gheed »ùµÂ(A1¶Ä²©)
-// charsi Ç¡Î÷
-// akara °¢¿¨À­
-// lysander À×É½µÂ
-// drognan ×¿¸ñÄÏ
-// elzix °¬¼ªË¹(A2¶Ä²©)
-// fara ·¨À­
-// hratli ºÕÀ­èFÁ¦
-// alkor °¬¿Â(A3¶Ä²©)
-// ormus ŠW¬”Ë¹
-// asheara °¬Ï¯À­
-// jamella ÙZÃ·À­(A4¶Ä²©)
-// halbu º£ –²¼
-// malah ¬”À­
-// drehya °²†(A5¶Ä²©)
-// larzuk À­ÌK¿Ë
-// nihlathak ÄáÀ­Èû¿Ë(A5¶Ä²©)
+// *æ³•BUGäº§ç”Ÿçš„åŸå› åŸæ¥æ˜¯æ‰“äº†ä¸€ä¸ªtxtå ç”¨äº†ç³»ç»Ÿå†…å­˜,å¯¼è‡´MODç®¡ç†å™¨æ— æ³•åˆ é™¤æ‰€ä»¥è¶Š*è¶Šå¤š
+// æ¯”å¦‚æˆ‘åœ¨ä½¿ç”¨AFJ Sheetå·¥å…·æŸ¥çœ‹txtæ—¶,å…³é—­æ‰å·¥å…·æ‰ç”¨æ¶ˆé™¤å ç”¨,MODç®¡ç†å™¨é‡æ–°INSTALLä¸€ä¸‹å°±è¡Œäº†
+// gheed åŸºå¾·(A1èµŒåš)
+// charsi æ°è¥¿
+// akara é˜¿å¡æ‹‰
+// lysander é›·å±±å¾·
+// drognan å“æ ¼å—
+// elzix è‰¾å‰æ–¯(A2èµŒåš)
+// fara æ³•æ‹‰
+// hratli èµ«æ‹‰éµåŠ›
+// alkor è‰¾æŸ¯(A3èµŒåš)
+// ormus å¥§ç‘ªæ–¯
+// asheara è‰¾å¸­æ‹‰
+// jamella è³ˆæ¢…æ‹‰(A4èµŒåš)
+// halbu æµ·çˆ¾å¸ƒ
+// malah ç‘ªæ‹‰
+// drehya å®‰äº(A5èµŒåš)
+// larzuk æ‹‰è˜‡å…‹
+// nihlathak å°¼æ‹‰å¡å…‹(A5èµŒåš)
 
 const miscFilename = 'global\\excel\\misc.txt';
 const misc = D2RMM.readTsv(miscFilename);
 // spawnable PermStoreItem
-// A1°¢¿¨À­ AkaraMin AkaraMax
-// A2×À¸ñÄÏ DrognanMin DrognanMax
-// A3°ÂÂêË¹ OrmusMin OrmusMax
-// A4¼ÖÃ·À­ JamellaMin JamellaMax
-// A5¬”À­ MalahMin MalahMax
+// A1é˜¿å¡æ‹‰ AkaraMin AkaraMax
+// A2æ¡Œæ ¼å— DrognanMin DrognanMax
+// A3å¥¥ç›æ–¯ OrmusMin OrmusMax
+// A4è´¾æ¢…æ‹‰ JamellaMin JamellaMax
+// A5ç‘ªæ‹‰ MalahMin MalahMax
 misc.rows.forEach((row) =>
 {
-    // ³öÊÛ·ûÎÄ
+    // å‡ºå”®ç¬¦æ–‡
     if (row.type.match(/rune/) != null)
     {
-        // ÒòÎª±íÖĞcodeÊÇr01, r02, r03....r32, r33ÕâÑùµÄ×Ö·û
-        // Õâ¸ösubstring(1)Òª×¢ÒâËüÖ§³Ö2¸ö²ÎÊı»ò1¸ö²ÎÊı
-        // ×Ö·û´®Ë÷Òı´Ó0¿ªÊ¼£¬Ö»Ğ´1¸ö²ÎÊı´ú±í½ØÈ¡ÆğµãÖ®ºóµÄËùÓĞ×Ö·û´®
-        // 2¸ö²ÎÊı¾Í¿ÉÒÔÖ¸¶¨½ØÈ¡×Ö·û´®µÄÆğµãºÍÖÕµã-1,±ÈÈç"Hello world! str.substring(3,7) = "lo w"
+        // å› ä¸ºè¡¨ä¸­codeæ˜¯r01, r02, r03....r32, r33è¿™æ ·çš„å­—ç¬¦
+        // è¿™ä¸ªsubstring(1)è¦æ³¨æ„å®ƒæ”¯æŒ2ä¸ªå‚æ•°æˆ–1ä¸ªå‚æ•°
+        // å­—ç¬¦ä¸²ç´¢å¼•ä»0å¼€å§‹ï¼Œåªå†™1ä¸ªå‚æ•°ä»£è¡¨æˆªå–èµ·ç‚¹ä¹‹åçš„æ‰€æœ‰å­—ç¬¦ä¸²
+        // 2ä¸ªå‚æ•°å°±å¯ä»¥æŒ‡å®šæˆªå–å­—ç¬¦ä¸²çš„èµ·ç‚¹å’Œç»ˆç‚¹-1,æ¯”å¦‚"Hello world! str.substring(3,7) = "lo w"
         const lvl = row.code.substring(1);
-        // ÕâÀïÊÇÍæ¼ÒÖ¸¶¨µÄ·ûºÅ±àºÅ
+        // è¿™é‡Œæ˜¯ç©å®¶æŒ‡å®šçš„ç¬¦å·ç¼–å·
         if (lvl <= config.runesUpTo)
         {
             row.AkaraMin = 1;
@@ -49,10 +49,10 @@ misc.rows.forEach((row) =>
             row.JamellaMax = 1;
             row.MalahMin = 1;
             row.MalahMax = 1;
-            row.PermStoreItem = 1; // ¹ºÂòÊ±²»ÏûÊ§ÓÀÔ¶ÓĞ»õ
+            row.PermStoreItem = 1; // è´­ä¹°æ—¶ä¸æ¶ˆå¤±æ°¸è¿œæœ‰è´§
         }
     }
-    // ³öÊÛ±¦Ê¯,type2=gem4,´ú±í×î¸ß¼¶±ğµÄ±¦Ê¯¾ÍÊÇÍê±¦°üº¬ÍêÃÀ÷¼÷Ã
+    // å‡ºå”®å®çŸ³,type2=gem4,ä»£è¡¨æœ€é«˜çº§åˆ«çš„å®çŸ³å°±æ˜¯å®Œå®åŒ…å«å®Œç¾éª·é«…
     if (config.allowGem)
     {
         if (row.type2.match(/gem4/) != null)
@@ -67,14 +67,14 @@ misc.rows.forEach((row) =>
             row.JamellaMax = 1;
             row.MalahMin = 1;
             row.MalahMax = 1;
-            row.PermStoreItem = 1; // ¹ºÂòÊ±²»ÏûÊ§ÓÀÔ¶ÓĞ»õ
+            row.PermStoreItem = 1; // è´­ä¹°æ—¶ä¸æ¶ˆå¤±æ°¸è¿œæœ‰è´§
         }
     }
 
-    // ³öÊÛ´ó×Ï
-    // Ğ¡×Ïcode=rvs,´ó×Ïcode=rvl
-    // ÎÒµÄË¼Â·±¾ÊÇÈÃÆÕÍ¨¶ñÃÎÄÑ¶ÈÖ»ÂôĞ¡×Ï£¬µ½µØÓüÄÑ¶È²ÅÂô´ó×Ï,ËùÒÔrvsµÄHellUpgrade=rvl
-    // µ«ÊÇ·¢ÏÖÒ»¸öBUG,¾ÍÊÇµ±µ½´ïµØÓüÄÑ¶ÈºóÔ­À´µÄĞ¡×Ï±ä´ó×Ï»áÖ»ÄÜÔÚNPC´¦Âòµ½1Æ¿¾ÍÏûÊ§ÁË£¡ËùÒÔ¸É´àÖ±½Ó´ó×ÏËãÁË
+    // å‡ºå”®å¤§ç´«
+    // å°ç´«code=rvs,å¤§ç´«code=rvl
+    // æˆ‘çš„æ€è·¯æœ¬æ˜¯è®©æ™®é€šæ¶æ¢¦éš¾åº¦åªå–å°ç´«ï¼Œåˆ°åœ°ç‹±éš¾åº¦æ‰å–å¤§ç´«,æ‰€ä»¥rvsçš„HellUpgrade=rvl
+    // ä½†æ˜¯å‘ç°ä¸€ä¸ªBUG,å°±æ˜¯å½“åˆ°è¾¾åœ°ç‹±éš¾åº¦ååŸæ¥çš„å°ç´«å˜å¤§ç´«ä¼šåªèƒ½åœ¨NPCå¤„ä¹°åˆ°1ç“¶å°±æ¶ˆå¤±äº†ï¼æ‰€ä»¥å¹²è„†ç›´æ¥å¤§ç´«ç®—äº†
     if (config.allowRev)
     {
         if (row.code.match('rvl') != null)
@@ -82,24 +82,24 @@ misc.rows.forEach((row) =>
             row.spawnable = 1;
             row.AkaraMin = 1;
             row.AkaraMax = 1;
-            row.LysanderMin = 1 // A2ÂôÒ©×¨Òµ»§
-            row.LysanderMax = 1 // A2ÂôÒ©×¨Òµ»§
+            row.LysanderMin = 1 // A2å–è¯ä¸“ä¸šæˆ·
+            row.LysanderMax = 1 // A2å–è¯ä¸“ä¸šæˆ·
             row.DrognanMin = 1;
             row.DrognanMax = 1;
-            row.AlkorMin = 1; // A3ÂôÒ©×¨Òµ»§
-            row.AlkorMax = 1; // A3ÂôÒ©×¨Òµ»§
+            row.AlkorMin = 1; // A3å–è¯ä¸“ä¸šæˆ·
+            row.AlkorMax = 1; // A3å–è¯ä¸“ä¸šæˆ·
             row.OrmusMin = 1;
             row.OrmusMax = 1;
             row.MalahMin = 1;
             row.MalahMax = 1;
             row.JamellaMin = 1;
             row.JamellaMax = 1;
-            row.PermStoreItem = 1; // ¹ºÂòÊ±²»ÏûÊ§ÓÀÔ¶ÓĞ»õ
-            row.multibuy = 1; // ÄÜÅúÁ¿×°ÂúÑü´ø
+            row.PermStoreItem = 1; // è´­ä¹°æ—¶ä¸æ¶ˆå¤±æ°¸è¿œæœ‰è´§
+            row.multibuy = 1; // èƒ½æ‰¹é‡è£…æ»¡è…°å¸¦
         }
     }
 
-    // ³öÊÛ3ÖÖºìÃÅÔ¿³×
+    // å‡ºå”®3ç§çº¢é—¨é’¥åŒ™
     if (config.allowUKey)
     {
         for (let i = 1; i <= 3; i++)
@@ -107,7 +107,7 @@ misc.rows.forEach((row) =>
             if (row.code.match('pk' + i) != null)
             {
                 row.spawnable = 1;
-                row.type = 'key'; // ÕâÀïÊÇĞŞ¸ÄÔ¿³×ÄÜ³öÊÛµÄ¹Ø¼ü
+                row.type = 'key'; // è¿™é‡Œæ˜¯ä¿®æ”¹é’¥åŒ™èƒ½å‡ºå”®çš„å…³é”®
                 row.AkaraMin = 1;
                 row.AkaraMax = 1;
                 row.DrognanMin = 1;
@@ -123,13 +123,13 @@ misc.rows.forEach((row) =>
         }
     }
 
-    // ³öÊÛÏ´µã
+    // å‡ºå”®æ´—ç‚¹
     if (config.allowToken)
     {
         if (row.code.match('toa') != null)
         {
             row.spawnable = 1;
-            row.type = 'key'; // ÕâÀïÊÇĞŞ¸ÄÏ´µãÄÜ³öÊÛµÄ¹Ø¼ü
+            row.type = 'key'; // è¿™é‡Œæ˜¯ä¿®æ”¹æ´—ç‚¹èƒ½å‡ºå”®çš„å…³é”®
             row.AkaraMin = 1;
             row.AkaraMax = 1;
             row.DrognanMin = 1;
@@ -144,7 +144,7 @@ misc.rows.forEach((row) =>
         }
     }
 
-    // ³öÊÛÖé±¦
+    // å‡ºå”®ç å®
     if (config.allowJewel)
     {
         if (row.code.match('jew') != null)
@@ -166,8 +166,8 @@ misc.rows.forEach((row) =>
 });
 D2RMM.writeTsv(miscFilename, misc);
 
-// A5±¾À´Ïë¸ÄÀ­ËÕ¿Ëµ«ÊÇ·¢ÏÖÁËÒ»¸öBUG, À­ËÕ¿ËÄÇÀïÊÖ±ú²»Ö§³Ö´ó×ÏµÄÅúÁ¿¹ºÂò
-// ÂêÀ­µÄ»°ÓÉÓÚ×îºóÒ»Ò³ÂôÌ«¶àµÄÍ¶ÖÀ±êÇ¹ÀàÎäÆ÷µ¼ÖÂ¸ñ×Ó²»¹»Ö»ÄÜĞŞ¸ÄÇå³ıÒ»ÏÂÁË
+// A5æœ¬æ¥æƒ³æ”¹æ‹‰è‹å…‹ä½†æ˜¯å‘ç°äº†ä¸€ä¸ªBUG, æ‹‰è‹å…‹é‚£é‡Œæ‰‹æŸ„ä¸æ”¯æŒå¤§ç´«çš„æ‰¹é‡è´­ä¹°
+// ç›æ‹‰çš„è¯ç”±äºæœ€åä¸€é¡µå–å¤ªå¤šçš„æŠ•æ·æ ‡æªç±»æ­¦å™¨å¯¼è‡´æ ¼å­ä¸å¤Ÿåªèƒ½ä¿®æ”¹æ¸…é™¤ä¸€ä¸‹äº†
 const weaponsFilename = 'global\\excel\\weapons.txt';
 const weapons = D2RMM.readTsv(weaponsFilename);
 
@@ -185,11 +185,11 @@ weapons.rows.forEach((row) =>
 
 D2RMM.writeTsv(weaponsFilename, weapons);
 
-// Î¬ĞŞ½µ¼Û
+// ç»´ä¿®é™ä»·
 const npcFilename = 'global\\excel\\npc.txt';
 const npc = D2RMM.readTsv(npcFilename);
 
-// ¡°rep-mult¡±Ä¬ÈÏÖµÎª128¡£128 1024¸ø³ö12.5%¡£Õâ¾ÍÊÇrepairMultiplierÖµµÄÀ´Ô´¡£
+// â€œrep-multâ€é»˜è®¤å€¼ä¸º128ã€‚128 1024ç»™å‡º12.5%ã€‚è¿™å°±æ˜¯repairMultiplierå€¼çš„æ¥æºã€‚
 npc.rows.forEach((row) => {
     row['rep mult'] = Math.floor((config.repMult * 1024) / 100);
 });

@@ -1,10 +1,10 @@
-// D2RMM.copyFile 3¸ö²ÎÊıµÄÏà¹Ø½âÊÍ
+// D2RMM.copyFile 3ä¸ªå‚æ•°çš„ç›¸å…³è§£é‡Š
 // <mod folder>\hd
 // <diablo 2 folder>\mods\<modname>\<modname>.mpq\data\hd
 // overwrite any conflicts
 
 function ModFontAndHelp() {
-  // ×ÖÌå¸ü¸Ä
+  // å­—ä½“æ›´æ”¹
   switch (config.fonts_select) {
     case 'mod_1':
       D2RMM.copyFile('fonts\\1', 'hd\\ui\\fonts', true);
@@ -22,7 +22,7 @@ function ModFontAndHelp() {
       D2RMM.copyFile('fonts\\5', 'hd\\ui\\fonts', true);
       break;
   }
-  // jgmod°ïÖúĞÅÏ¢
+  // jgmodå¸®åŠ©ä¿¡æ¯
   if (config.jgmod_help) {
     D2RMM.copyFile('jgmodhelp\\global', 'global', true);
     D2RMM.copyFile('jgmodhelp\\hd', 'hd', true);
@@ -30,9 +30,9 @@ function ModFontAndHelp() {
   }
 }
 
-// Ñ¡ÔñÕ½ÍøMOD
-// ×¢ÒâcopyFile»áÖÇÄÜÊ¶±ğÌæ»»ÎÄ¼şÉ¾³ıÎÄ¼ş
-// ËùÒÔµ±»¹Ô­Îª¹Ù·½Ä¬ÈÏÊ±ÎŞĞëMOD×÷Õß,×ÔĞĞ±¸·İÔ­¹Ù·½ÎÄ¼ş
+// é€‰æ‹©æˆ˜ç½‘MOD
+// æ³¨æ„copyFileä¼šæ™ºèƒ½è¯†åˆ«æ›¿æ¢æ–‡ä»¶åˆ é™¤æ–‡ä»¶
+// æ‰€ä»¥å½“è¿˜åŸä¸ºå®˜æ–¹é»˜è®¤æ—¶æ— é¡»MODä½œè€…,è‡ªè¡Œå¤‡ä»½åŸå®˜æ–¹æ–‡ä»¶
 switch (config.talk_mod_select) {
   case 'mod_wing':
     D2RMM.copyFile('wingmod1.12.0', '', true);
@@ -46,7 +46,7 @@ switch (config.talk_mod_select) {
 }
 
 
-// jgmod²ÊÉ«´Ê×º
+// jgmodå½©è‰²è¯ç¼€
 if (config.jgmod_color) {
   D2RMM.copyFile('jgmodcolor\\global', 'global', true);
   D2RMM.copyFile('jgmodcolor\\local', 'local', true);

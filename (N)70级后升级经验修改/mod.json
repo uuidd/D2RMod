@@ -1,11 +1,17 @@
 {
   "name": "(N)70级后升级经验修改",
   "description": "将经验减益从 70 降低到 99",
-  "author": "SommeSensei",
-  "website": "https://www.nexusmods.com/diablo2resurrected/mods/306",
+  "author": "Demo",
+  "website": "",
   "version": "1.0",
-  "id": "experience",
-  "type": "number",
-  "defaultValue": 1,
-  "minValue": 1
+  "config": [
+    {
+      "id": "expNum",
+      "type": "number",
+      "name": "70级后经验减益增加多少个百分点",
+      "defaultValue": 0,
+      "minValue": 0,
+      "description": "70级后经验减益增加多少个百分点，0表示不修改，1等于增加1个百分点，可以是分数例如0.5"
+    }
+  ]
 }

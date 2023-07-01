@@ -390,7 +390,7 @@ if (config.rollHellfire) {
 }
 
 // A2任务道具=回城书+6个大紫,op=28代表有条件限制
-// 有个注意的地方,当你身上本身带有零件时比如蛇项链，直接简化合成会无效还会消耗掉(辩识书+2#符文)，和op没关系
+// 有个注意的地方,当你身上本身带有零件时比如蛇项链，直接简化合成会无效还会消耗掉，和op没关系
 if (config.a2task_item) {
   cubemain.rows.push({
     'description': "tbk + 6 rvl = Horadric Staff",
@@ -406,7 +406,7 @@ if (config.a2task_item) {
 }
 
 // A3任务道具=回城书+3个大紫,op=28代表有条件限制
-// 有个注意的地方,当你身上本身带有零件时比如眼球，直接简化合成会无效还会消耗掉(辩识书+3#符文)，和op没关系
+// 有个注意的地方,当你身上本身带有零件时比如眼球，直接简化合成会无效还会消耗掉，和op没关系
 if (config.a3task_item) {
   cubemain.rows.push({
     'description': "1 tbk + 3 rvl = Khalim's Will",
@@ -431,7 +431,7 @@ if (config.unsocket) {
     // input 1 defined below
     'input 2': 'jew',
     output: '"useitem,rem"',
-    '*eol': 0,
+    '*eol\r': 0,
   };
 
   cubemain.rows.push({
@@ -462,7 +462,7 @@ function playSocket(rarity, maxSocket) {
         'mod 1': 'sock',
         'mod 1 min': sockets,
         'mod 1 max': sockets,
-        '*eol': 0,
+        '*eol\r': 0,
       };
 
       cubemain.rows.push({
