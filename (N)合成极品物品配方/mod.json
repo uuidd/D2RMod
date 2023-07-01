@@ -72,7 +72,14 @@
       "id": "torchToSmallCharm",
       "type": "checkbox",
       "name": "火炬换成小板子",
-      "description": "2火炬 -> 1个3-5全抗16-20生命小板子+1-3最大伤害10-20准确16-20生命小板子 + 13-17法力16-20生命小板子",
+      "description": "1火炬 + 3 珠宝-> 1个3-5全抗16-20生命小板子+1-3最大伤害10-20准确16-20生命小板子 + 13-17法力16-20生命小板子",
+      "defaultValue": true
+    },
+    {
+      "id": "traderie",
+      "type": "checkbox",
+      "name": "T网交易模式符文降级",
+      "description": "",
       "defaultValue": true
     }
   ]

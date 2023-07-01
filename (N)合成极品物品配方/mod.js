@@ -121,32 +121,88 @@ if (config.torchToSmallCharm) {
   cubemain.rows.push({
     ...baseRecipe,
     description: '2 Torch -> 3 SmallCharm',
-    numinputs: 2,
-    'input 1': 'cm2,uni,qty=2',
+    numinputs: 4,
+    'input 1': `"cm2,uni,qty=1"`,
+    'input 2': `"jew,qty=3"`,
     output: `"cm1,mag,pre=322,suf=349"`, // smallCharm5res20lift
     'output b': `"cm1,mag,pre=256,suf=349"`, // smallCharm3max20ar20lift
     'output c': `"cm1,mag,pre=303,suf=349"` // smallCharm17mana20lift
   });
 }
 
-//
-// if (config.smallCharm3max20ar20lift) {
-//   cubemain.rows.push({
-//     ...baseRecipe,
-//     description: '2',
-//     numinputs: 3,
-//     'input 1': 'hpot,qty=3',
-//     output: `"cm1,mag,pre=256,suf=349"`
-//   });
-// }
-//
-// if (config.smallCharm17mana20lift) {
-//   cubemain.rows.push({
-//     ...baseRecipe,
-//     description: '3',
-//     numinputs: 4,
-//     'input 1': 'hpot,qty=4',
-//     output: `"cm1,mag,pre=303,suf=349"`
-//   });
-// }
+function inputDic(inputList) {
+  const inputDic = {};
+  let i = 0;
+  if (inputList.length === 2) {
+    if (inputList[0] === inputList[1]) {
+      inputDic['input 1'] = `"${inputList[0]},qty=2"`;
+      return inputDic
+    }
+  } else if (inputList.length === 3) {
+    if (inputList[0] === inputList[1] && inputList[1] === inputList[2]) {
+      inputDic['input 1'] = `"${inputList[0]},qty=3"`;
+      return inputDic
+    }
+  }
+  for (; i < inputList.length; i++) {
+    inputDic['input ' + (i + 1)] = inputList[i];
+  }
+  return inputDic
+}
+
+function outputDic(outputList) {
+  const outputDic = {};
+  const numToABC = ['output', 'output b', 'output c'];
+  for (let i = 0; i < outputList.length; i++) {
+    outputDic[numToABC[i]] = outputList[i];
+  }
+  return outputDic
+}
+
+function twoWayRecipe(inputList, outputList) {
+  inputList.push('jew');
+  const inputDic1 = inputDic(inputList);
+  const outputDic1 = outputDic(outputList);
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `${inputList.join(' + ')} -> ${outputList.join(' + ')}`,
+    numinputs: inputList.length,
+    ...inputDic1,
+    ...outputDic1
+  });
+
+  // reverse
+  inputList.pop();
+  const inputDic2 = inputDic(outputList);
+  const outputDic2 = outputDic(inputList);
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `${outputList.join(' + ')} -> ${inputList.join(' + ')}`,
+    numinputs: outputList.length,
+    ...inputDic2,
+    ...outputDic2
+  });
+}
+
+if (config.traderie) {
+  twoWayRecipe(['r33'], ['r28', 'r15']);
+  twoWayRecipe(['r32'], ['r26', 'r15']);
+  twoWayRecipe(['r31'], ['r30', 'r28']);
+  twoWayRecipe(['r30'], ['r28', 'r28']);
+  twoWayRecipe(['r28'], ['r26', 'r26']);
+  twoWayRecipe(['r27'], ['r24', 'r24', 'r24']);
+  twoWayRecipe(['r26'], ['r25', 'r23']); // 马赛克，中后期兑换率
+  twoWayRecipe(['r25'], ['r23', 'r23']); // 中后期24和25等价，此配方分解后可以升级到24
+  twoWayRecipe(['r24'], ['r23', 'r22']);
+  twoWayRecipe(['r23'], ['r22', 'r21']);
+  twoWayRecipe(['r22'], ['r21', 'r20']);
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: '8 r24 -> r30',
+    numinputs: 8,
+    'input 1': 'r24,qty=8',
+    output: 'r30'
+  });
+}
+
 D2RMM.writeTsv(cubemainFilename, cubemain);
