@@ -25,6 +25,48 @@
       "name": "15攻速16-30火炕蓝色珠宝(安头珠)",
       "description": "15攻速16-30火炕蓝色珠宝(安头珠)",
       "defaultValue": true
+    },
+    {
+      "id": "mara3",
+      "type": "checkbox",
+      "name": "3个暗金项链合成马拉的项链",
+      "description": "3个暗金项链合成马拉的项链",
+      "defaultValue": true
+    },
+    {
+      "id": "mara26",
+      "type": "checkbox",
+      "name": "26号+项链合成马拉的项链",
+      "description": "26号+项链合成马拉的项链",
+      "defaultValue": true
+    },
+    {
+      "id": "mara32",
+      "type": "checkbox",
+      "name": "32号+项链合成马拉的项链",
+      "description": "32号+项链合成马拉的项链",
+      "defaultValue": true
+    },
+    {
+      "id": "soj3",
+      "type": "checkbox",
+      "name": "3个暗金戒指合成乔丹之石",
+      "description": "3个暗金戒指合成乔丹之石",
+      "defaultValue": true
+    },
+    {
+      "id": "soj28",
+      "type": "checkbox",
+      "name": "28号+戒指合成乔丹之石",
+      "description": "28号+戒指合成乔丹之石",
+      "defaultValue": true
+    },
+    {
+      "id": "soj33",
+      "type": "checkbox",
+      "name": "33号+戒指合成乔丹之石",
+      "description": "33号+戒指合成乔丹之石",
+      "defaultValue": true
     }
   ]
 }
