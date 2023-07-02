@@ -385,6 +385,15 @@ if (config.traderieUnique) {
   runeAndGoodsRecipe('r24', 'boot', `Gorerider`); // 蝕肉騎士 cb 鞋
   runeAndGoodsRecipe('r23', 'boot', `Sandstorm Trek`); // 沙暴之旅
   runeAndGoodsRecipe('r20', 'boot', `Silkweave`); // 紗織鞋
+  // 6boss 最终3boss红门
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `${rName['r32']} + key -> Pandemonium Finale Portal`,
+    'input 1': 'r32',
+    'input 2': 'key',
+    numinputs: 2,
+    output: 'Pandemonium Finale Portal'
+  });
 }
 
 
@@ -399,14 +408,14 @@ if (config.traderieUnique) {
 // 珠宝+刺客武器＝刺客武器
 // 珠宝+圣骑士盾＝圣骑士盾
 // 珠宝+死灵法师盾牌＝死灵法师盾牌
+const occBaseRecipe = {
+  ...baseRecipe,
+  numinputs: 2,
+  'input 1': 'hpot',
+  'output b': 'hpot',
+  plvl: 100
+}
 if (config.occupationExclusiveItems) {
-  const occBaseRecipe = {
-    ...baseRecipe,
-    numinputs: 2,
-    'input 1': 'hpot',
-    'output b': 'hpot',
-    plvl: 100
-  }
   // 珠宝+弓＝亚马逊专用弓，刷新配方不变
   cubemain.rows.push({
     ...occBaseRecipe,
@@ -502,6 +511,565 @@ if (config.refreshWhite) {
     output: `"head,nor"`
   });
 }
+
+const jpBaseRecipe = {
+  ...baseRecipe,
+  plvl: 100
+}
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + 3 x mpot -> mag circA1',
+  numinputs: 4,
+  'input 1': 'circ',
+  'input 2': `"mpot,qty=3"`,
+  output: `"usetype,mag,eth,suf=357,pre=422"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'phlm + 3 x mpot -> mag phlm',
+  numinputs: 4,
+  'input 1': 'phlm',
+  'input 2': `"mpot,qty=3"`,
+  output: `"usetype,mag,suf=320,pre=422"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'tors + 3 x mpot -> mag tors',
+  numinputs: 4,
+  'input 1': 'tors',
+  'input 2': `"mpot,qty=3"`,
+  output: `"usetype,mag,eth,suf=320,pre=422"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'shld + 3 x mpot -> mag shld',
+  numinputs: 4,
+  'input 1': 'shld',
+  'input 2': `"mpot,qty=3"`,
+  output: `"usetype,mag,eth,suf=173,pre=422"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'glov + r01 + r31 -> mag glov ama 1',
+  numinputs: 3,
+  'input 1': 'glov',
+  'input 2': 'r01',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=170,pre=435"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r01 + r32 -> mag circ ama',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r01',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=438,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'glov + r01 + r33 -> mag glov ama 2',
+  numinputs: 3,
+  'input 1': 'glov',
+  'input 2': 'r01',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=170,pre=441"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r02 + r31 -> mag circ ass 1',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r02',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=175,pre=507,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r02 + r32 -> mag circ ass 2',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r02',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=510,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r02 + r33 -> mag circ ass 3',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r02',
+  'input 3': 'r33',
+  output: `"usetype,mag,pre=513,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'glov + r02 + r33 -> mag glov ass',
+  numinputs: 3,
+  'input 1': 'glov',
+  'input 2': 'r02',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=170,pre=513"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r03 + r31 -> mag circ nec 1',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r03',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=175,pre=459,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r03 + r32 -> mag circ nec 2',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r03',
+  'input 3': 'r32',
+  output: `"usetype,mag,suf=175,pre=462,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r03 + r33 -> mag circ nec 3',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r03',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=175,pre=465,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'phlm + r04 + r31 -> mag phlm bar 1',
+  numinputs: 3,
+  'input 1': 'phlm',
+  'input 2': 'r04',
+  'input 3': 'r31',
+  output: `"usetype,mag,pre=483,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'phlm + r04 + r32 -> mag phlm bar 2',
+  numinputs: 3,
+  'input 1': 'phlm',
+  'input 2': 'r04',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=486,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'phlm + r04 + r33 -> mag phlm bar 3',
+  numinputs: 3,
+  'input 1': 'phlm',
+  'input 2': 'r04',
+  'input 3': 'r33',
+  output: `"usetype,mag,pre=489,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r05 + r31 -> mag circ pal 1',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r05',
+  'input 3': 'r31',
+  output: `"usetype,mag,pre=471,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r05 + r32 -> mag circ pal 2',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r05',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=474,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r05 + r33 -> mag circ pal 3',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r05',
+  'input 3': 'r33',
+  output: `"usetype,mag,pre=477,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r06 + r31 -> mag circ sor 1',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r06',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=175,pre=447,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r06 + r32 -> mag circ sor 2',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r06',
+  'input 3': 'r32',
+  output: `"usetype,mag,suf=175,pre=450,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r06 + r33 -> mag circ sor 3',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r06',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=175,pre=453,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r07 + r31 -> mag circ dru 1',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r07',
+  'input 3': 'r31',
+  output: `"usetype,mag,pre=495,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r07 + r32 -> mag circ dru 2',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r07',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=498,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'circ + r07 + r33 -> mag circ dru 3',
+  numinputs: 3,
+  'input 1': 'circ',
+  'input 2': 'r07',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=175,pre=501,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'pelt + r07 + r31 -> mag pelt dru 1',
+  numinputs: 3,
+  'input 1': 'pelt',
+  'input 2': 'r07',
+  'input 3': 'r31',
+  output: `"usetype,mag,pre=495,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'pelt + r07 + r32 -> mag pelt dru 2',
+  numinputs: 3,
+  'input 1': 'pelt',
+  'input 2': 'r07',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=498,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'pelt + r07 + r33 -> mag pelt dru 3',
+  numinputs: 3,
+  'input 1': 'pelt',
+  'input 2': 'r07',
+  'input 3': 'r33',
+  output: `"usetype,mag,pre=501,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r01 + r32 -> mag amul ama',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r01',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=438"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r02 + r31 -> mag amul ass 1',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r02',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=174,pre=507"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r02 + r32 -> mag amul ass 2',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r02',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=510"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r02 + r33 -> mag amul ass 3',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r02',
+  'input 3': 'r33',
+  output: `"usetype,mag,pre=513"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r03 + r31 -> mag amul nec 1',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r03',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=174,pre=459"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r03 + r32 -> mag amul nec 2',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r03',
+  'input 3': 'r32',
+  output: `"usetype,mag,suf=174,pre=462"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r03 + r33 -> mag amul nec 3',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r03',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=174,pre=465"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r04 + r32 -> mag amul bar 1',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r04',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=486"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r04 + r33 -> mag amul bar 2',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r04',
+  'input 3': 'r33',
+  output: `"usetype,mag,pre=489"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r05 + r31 -> mag amul pal 1',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r05',
+  'input 3': 'r31',
+  output: `"usetype,mag,pre=471"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r05 + r32 -> mag amul pal 2',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r05',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=474"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r05 + r33 -> mag amul pal 3',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r05',
+  'input 3': 'r33',
+  output: `"usetype,mag,pre=477"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r06 + r31 -> mag amul sor 1',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r06',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=174,pre=447"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r06 + r32 -> mag amul sor 2',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r06',
+  'input 3': 'r32',
+  output: `"usetype,mag,suf=174,pre=450"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r06 + r33 -> mag amul sor 3',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r06',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=174,pre=453"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r07 + r31 -> mag amul dru 1',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r07',
+  'input 3': 'r31',
+  output: `"usetype,mag,pre=495"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r07 + r32 -> mag amul dru 2',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r07',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=498"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'amul + r07 + r33 -> mag amul dru 3',
+  numinputs: 3,
+  'input 1': 'amul',
+  'input 2': 'r07',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=174,pre=501"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'orb + r06 + r31 -> mag orb sor 1',
+  numinputs: 3,
+  'input 1': 'orb',
+  'input 2': 'r06',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=175,pre=447,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'orb + r06 + r32 -> mag orb sor 2',
+  numinputs: 3,
+  'input 1': 'orb',
+  'input 2': 'r06',
+  'input 3': 'r32',
+  output: `"usetype,mag,suf=175,pre=450,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'orb + r06 + r33 -> mag orb sor 3',
+  numinputs: 3,
+  'input 1': 'orb',
+  'input 2': 'r06',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=175,pre=453,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'staf + r06 + r31 -> mag staf sor 1',
+  numinputs: 3,
+  'input 1': 'staf',
+  'input 2': 'r06',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=175,pre=447,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'staf + r06 + r32 -> mag staf sor 2',
+  numinputs: 3,
+  'input 1': 'staf',
+  'input 2': 'r06',
+  'input 3': 'r32',
+  output: `"usetype,mag,suf=175,pre=450,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'staf + r06 + r33 -> mag staf sor 3',
+  numinputs: 3,
+  'input 1': 'staf',
+  'input 2': 'r06',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=175,pre=453,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'head + r03 + r31 -> mag head nec 1',
+  numinputs: 3,
+  'input 1': 'head',
+  'input 2': 'r03',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=173,pre=459,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'head + r03 + r32 -> mag head nec 2',
+  numinputs: 3,
+  'input 1': 'head',
+  'input 2': 'r03',
+  'input 3': 'r32',
+  output: `"usetype,mag,suf=173,pre=462,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'head + r03 + r33 -> mag head nec 3',
+  numinputs: 3,
+  'input 1': 'head',
+  'input 2': 'r03',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=173,pre=465,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'wand + r03 + r31 -> mag wand nec 1',
+  numinputs: 3,
+  'input 1': 'wand',
+  'input 2': 'r03',
+  'input 3': 'r31',
+  output: `"usetype,mag,suf=175,pre=459,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'wand + r03 + r32 -> mag wand nec 2',
+  numinputs: 3,
+  'input 1': 'wand',
+  'input 2': 'r03',
+  'input 3': 'r32',
+  output: `"usetype,mag,suf=175,pre=462,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'wand + r03 + r33 -> mag wand nec 3',
+  numinputs: 3,
+  'input 1': 'wand',
+  'input 2': 'r03',
+  'input 3': 'r33',
+  output: `"usetype,mag,suf=175,pre=465,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'h2h + r02 + r31 -> mag h2h ass 1',
+  numinputs: 3,
+  'input 1': 'h2h',
+  'input 2': 'r02',
+  'input 3': 'r31',
+  output: `"usetype,mag,pre=507,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'h2h + r02 + r32 -> mag h2h ass 2',
+  numinputs: 3,
+  'input 1': 'h2h',
+  'input 2': 'r02',
+  'input 3': 'r32',
+  output: `"usetype,mag,pre=510,sock=2"`
+});
+cubemain.rows.push({
+  ...jpBaseRecipe,
+  description: 'h2h + r02 + r33 -> mag h2h ass 3',
+  numinputs: 3,
+  'input 1': 'h2h',
+  'input 2': 'r02',
+  'input 3': 'r33',
+  output: `"usetype,mag,pre=513,sock=2"`
+});
 
 
 D2RMM.writeTsv(cubemainFilename, cubemain);
