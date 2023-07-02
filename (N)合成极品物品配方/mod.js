@@ -98,18 +98,6 @@ if (config.mara3) {
   });
 }
 
-if (config.mara26) {
-  cubemain.rows.push({
-    ...baseRecipe,
-    description: `r26 + 1 Amulet -> Mara's Kaleidoscope`,
-    numinputs: 2,
-    plvl: 100,
-    'input 1': 'amu',
-    'input 2': 'r26',
-    output: `Mara's Kaleidoscope`
-  });
-}
-
 // 合成乔丹
 if (config.soj3) {
   cubemain.rows.push({
@@ -122,17 +110,6 @@ if (config.soj3) {
   });
 }
 
-if (config.soj28) {
-  cubemain.rows.push({
-    ...baseRecipe,
-    description: `r28 + ring -> The Stone of Jordan`,
-    numinputs: 2,
-    plvl: 100,
-    'input 1': 'rin',
-    'input 2': 'r28',
-    output: `The Stone of Jordan`
-  });
-}
 
 if (config.torchToSmallCharm) {
   cubemain.rows.push({
@@ -206,7 +183,7 @@ function genDescription(inputList, outputList) {
 }
 
 // 珠宝是手续费
-function twoWayRecipe(inputList, outputList) {
+function twoWayRuneRecipe(inputList, outputList) {
   inputList.push('jew');
   const inputDic1 = inputDic(inputList);
   const outputDic1 = outputDic(outputList);
@@ -252,31 +229,162 @@ function multiToOne(multi, num, one) {
 
 // 模拟T网交易，以中后期为准
 if (config.traderieRunes) {
-  twoWayRecipe(['r33'], ['r28', 'r15']);
-  twoWayRecipe(['r32'], ['r26', 'r15']);
-  twoWayRecipe(['r31'], ['r30', 'r28']);
-  twoWayRecipe(['r30'], ['r28', 'r28']);
-  twoWayRecipe(['r28'], ['r26', 'r26']);
-  twoWayRecipe(['r27'], ['r24', 'r24', 'r24']);
-  twoWayRecipe(['r26'], ['r25', 'r23']); // 马赛克，中后期兑换率
-  twoWayRecipe(['r25'], ['r23', 'r23']); // 中后期24和25等价，此配方分解后可以升级到24
-  twoWayRecipe(['r24'], ['r23', 'r21']);
-  twoWayRecipe(['r23'], ['r22', 'r20']);
-  twoWayRecipe(['r22'], ['r21', 'r20']);
-  twoWayRecipe(['r21'], ['r20', 'r18']);
-  twoWayRecipe(['r20'], ['r18', 'r15']);
+  twoWayRuneRecipe(['r33'], ['r28', 'r15']);
+  twoWayRuneRecipe(['r32'], ['r26', 'r15']);
+  twoWayRuneRecipe(['r31'], ['r30', 'r28']);
+  twoWayRuneRecipe(['r30'], ['r28', 'r28']);
+  twoWayRuneRecipe(['r29'], ['r28', 'r27']);
+  twoWayRuneRecipe(['r28'], ['r26', 'r26']);
+  twoWayRuneRecipe(['r27'], ['r24', 'r24', 'r24']);
+  twoWayRuneRecipe(['r26'], ['r25', 'r23']); // 马赛克，中后期兑换率
+  twoWayRuneRecipe(['r25'], ['r23', 'r23']); // 中后期24和25等价，此配方分解后可以升级到24
+  twoWayRuneRecipe(['r24'], ['r23', 'r21']);
+  twoWayRuneRecipe(['r23'], ['r22', 'r20']);
+  twoWayRuneRecipe(['r22'], ['r21', 'r20']);
+  twoWayRuneRecipe(['r21'], ['r20', 'r18']);
+  twoWayRuneRecipe(['r20'], ['r18', 'r15']);
   // r19-r2 r2-r19
   multiToOne('r19', 8, 'r24');
   for (let i = 19; i > 1; i--) {
     const rBig = 'r' + (i + '').padStart(2, '0');
     const rSmall = 'r' + ((i - 1) + '').padStart(2, '0');
-    twoWayRecipe([rBig], [rSmall]);
+    twoWayRuneRecipe([rBig], [rSmall]);
     if (rSmall === 'r15') {
       multiToOne(rSmall, 6, 'r24');
     } else {
       multiToOne(rSmall, 8, 'r24');
     }
   }
+}
+
+const sName = {
+  abow: 'Amazon Bow',// 亚马逊弓
+  ajav: 'Amazon Javelin',// 亚马逊标枪
+  aspe: 'Amazon Spear',// 亚马逊长矛
+  amu: 'Amulet',// 项链
+  h2h: 'Assassin Claw',// 刺客爪
+  axe: 'Axe',// 斧头
+  phlm: 'Barbarian Helm',// 野蛮人头盔
+  belt: 'Belt',// 腰带
+  tors: 'Body Armor',// 盔甲
+  boot: 'Boot',// 鞋子
+  bow: 'Bow',// 弓
+  circ: 'Circlet',//头环
+  club: 'Club',// 棍棒
+  xbow: 'Crossbow',// 弩
+  knif: 'Dagger',// 匕首
+  pelt: 'Druid Pelt',// 德鲁伊头盔
+  glov: 'Glove',// 手套
+  hamm: 'Hammer',// 戰鎚
+  helm: 'Helm',// 头盔
+  jave: 'Javelin',// 标枪
+  jew: 'Jewel',// 珠宝
+  mace: 'Mace',// 钉锤
+  ashd: 'Paladin Shield',// 圣骑士盾牌
+  pole: 'Polearm',// 长柄武器
+  tpot: 'Potion',// 攻击性药剂
+  rin: 'Ring',// 戒指
+  scep: 'Scepter',// 權杖
+  shie: 'Shield',// 盾牌
+  orb: 'Sorceress Orb',// 法师单手杖
+  spea: 'Spear',// 长矛
+  staf: 'Stave',// 法杖
+  swor: 'Sword',// 剑
+  taxe: 'Throwing Axe',// 飞斧
+  tkni: 'Throwing Knife',// 飞刀
+  head: 'Voodoo Head',// 死灵法师盾牌
+  wand: 'Wand',// 魔杖
+  sot: 'Stone of Terror'// 非原版物品，恐怖之石 出售召唤大菠萝
+}
+
+function runeAndGoodsRecipe(rune, type, unique) {
+  const uniBaseRecipe = {
+    ...baseRecipe,
+    numinputs: 2,
+    plvl: 100
+  }
+  cubemain.rows.push({
+    ...uniBaseRecipe,
+    description: `${rName[rune]} + ${sName[type]} -> ${unique}`,
+    'input 1': rune,
+    'input 2': type,
+    output: unique
+  });
+  cubemain.rows.push({
+    ...uniBaseRecipe,
+    description: `${unique} + ${sName['jew']} -> ${rName[rune]}`,
+    'input 1': unique,
+    'input 2': 'jew',
+    output: rune
+  });
+}
+
+if (config.traderieUnique) {
+  // 戒指
+  runeAndGoodsRecipe('r33', 'rin', `sot`); // 恐怖之石(自制召唤黑毛用)
+  runeAndGoodsRecipe('r28', 'rin', `The Stone of Jordan`); // 乔丹之石
+  runeAndGoodsRecipe('r26', 'rin', `Bul Katho's Wedding Band`); // 布爾凱索的婚戒
+  runeAndGoodsRecipe('r24', 'rin', `Raven Frost`); // 乌鸦之霜
+  runeAndGoodsRecipe('r22', 'rin', `Nature's Peace`); // 大自然的和平
+  runeAndGoodsRecipe('r21', 'rin', `Nagelring`); // 拿各的戒指
+  // 项链
+  runeAndGoodsRecipe('r26', 'amu', `Mara's Kaleidoscope`); // 馬拉的萬花筒
+  runeAndGoodsRecipe('r25', 'amu', `Highlord's Wrath`); // 大君之怒
+  runeAndGoodsRecipe('r24', 'amu', `Metalgrid`); // 金屬網格
+  runeAndGoodsRecipe('r22', 'amu', `Atma's Scarab`); // 亞特瑪的聖甲蟲
+  runeAndGoodsRecipe('r20', 'amu', `The Cat's Eye`); // 猫眼
+  // 头
+  runeAndGoodsRecipe('r31', 'circ', `Griffon's Eye`); // 格里芬之眼
+  runeAndGoodsRecipe('r29', 'helm', `Crown of Ages`); // 歲月之冠 年纪
+  runeAndGoodsRecipe('r27', 'helm', `Andariel's Visage`); // 安达利尔的面容 安头
+  runeAndGoodsRecipe('r26', 'helm', `Nightwing's Veil`); // 夜翼面紗 冰头
+  runeAndGoodsRecipe('r25', 'phlm', `Arreat's Face`); // 亞瑞特的面容 飞机头
+  runeAndGoodsRecipe('r23', 'helm', `Harlequin Crest`); // 諧角之冠 军帽
+  runeAndGoodsRecipe('r22', 'helm', `Kira's Guardian`); // 奇拉的守護
+  runeAndGoodsRecipe('r21', 'helm', `Guillaume's Face`); // 吉永之臉 cb头
+  runeAndGoodsRecipe('r20', 'helm', `Tal Rasha's Horadric Crest`); // 塔拉夏的赫拉迪姆之冠
+  // 护甲
+  runeAndGoodsRecipe('r24', 'tors', `Skin of the Vipermagi`); // 蛇魔法師之皮
+  runeAndGoodsRecipe('r22', 'tors', `Duriel's Shell`); // 都瑞爾之殼
+  runeAndGoodsRecipe('r21', 'tors', `Skullder's Ire`); // 斯寇德的憤怒 ire
+  runeAndGoodsRecipe('r20', 'tors', `Guardian Angel`); // 守護天使
+  // 法珠
+  runeAndGoodsRecipe('r30', 'orb', `Fathom`); // 死亡深度
+  runeAndGoodsRecipe('r26', 'orb', `Eschuta's temper`); // 艾斯屈塔的憤怒 脾气
+  runeAndGoodsRecipe('r23', 'orb', `The Oculus`); // 核瞳 眼球
+  // 武器
+  runeAndGoodsRecipe('r25', 'pole', `The Reaper's Toll`); // 死神喪鐘
+  runeAndGoodsRecipe('r24', 'swor', `Azurewrath`); // 碧藍怒火
+  runeAndGoodsRecipe('r22', 'pole', `Tomb Reaver`); // 盜墓者
+  runeAndGoodsRecipe('r21', 'swor', `Blade of Ali Baba`); // 阿里巴巴之刃
+  // 亚马逊
+  runeAndGoodsRecipe('r27', 'bow', `Windforce`); // 风之力
+  runeAndGoodsRecipe('r24', 'ajav', `Titan's Revenge`); // 泰坦的復仇
+  runeAndGoodsRecipe('r23', 'ajav', `Thunderstroke`); // 雷霆之擊
+  // 死灵法师
+  runeAndGoodsRecipe('r29', 'wand', `Deaths's Web`); // 破隐
+  runeAndGoodsRecipe('r22', 'head', `Homunculus`); // 魔胎 侏儒 尿壶
+  // 圣骑士
+  runeAndGoodsRecipe('r23', 'scep', `Heaven's Light`);// 天堂之光
+  // 盾牌
+  runeAndGoodsRecipe('r24', 'ashd', `Herald of Zakarum`); // 撒卡蘭姆使者 饰金盾
+  runeAndGoodsRecipe('r23', 'shie', `Stormshield`); // 暴風之盾
+  runeAndGoodsRecipe('r22', 'shie', `Lidless Wall`); // 警戒之墙
+  // 手套
+  runeAndGoodsRecipe('r23', 'glov', `Dracul's Grasp`); // 德古拉之握
+  runeAndGoodsRecipe('r22', 'glov', `Magefist`); // 法師之拳
+  runeAndGoodsRecipe('r21', 'glov', `Trang-Oul's Claws`); // 塔格奧之爪
+  runeAndGoodsRecipe('r20', 'glov', `Chance Guards`); // 運氣守護
+  // 腰带
+  runeAndGoodsRecipe('r27', 'belt', `Arachnid Mesh`); // 蜘蛛之網 技能腰
+  runeAndGoodsRecipe('r23', 'belt', `Thudergod's Vigor`); // 雷神之力
+  runeAndGoodsRecipe('r22', 'belt', `Goldwrap`); // 黃金裹腰
+  //鞋子
+  runeAndGoodsRecipe('r27', 'boot', `Shadowdancer`); // 影舞者
+  runeAndGoodsRecipe('r25', 'boot', `Wartraveler`); // 戰爭旅者
+  runeAndGoodsRecipe('r24', 'boot', `Gorerider`); // 蝕肉騎士 cb 鞋
+  runeAndGoodsRecipe('r23', 'boot', `Sandstorm Trek`); // 沙暴之旅
+  runeAndGoodsRecipe('r20', 'boot', `Silkweave`); // 紗織鞋
 }
 
 
@@ -286,97 +394,114 @@ if (config.traderieRunes) {
 // 珠宝+任意头盔＝野蛮人头盔
 // 珠宝+木棒＝德鲁伊头盔
 // 珠宝+双手法杖＝女巫法珠
-// 珠宝+单手法杖＝死灵法师盾牌
+// 珠宝+死灵魔杖＝死灵法师盾牌
 // 珠宝+盾牌＝圣骑士盾牌
 // 珠宝+刺客武器＝刺客武器
-// 珠宝+死灵法师盾牌＝死灵法师盾牌
 // 珠宝+圣骑士盾＝圣骑士盾
-// 珠宝+女巫法珠＝女巫法珠
+// 珠宝+死灵法师盾牌＝死灵法师盾牌
 if (config.occupationExclusiveItems) {
   const occBaseRecipe = {
     ...baseRecipe,
     numinputs: 2,
-    'input 1': 'jew',
-    'output b': 'jew',
+    'input 1': 'hpot',
+    'output b': 'hpot',
     plvl: 100
   }
+  // 珠宝+弓＝亚马逊专用弓，刷新配方不变
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Bow + Jewel -> Random Ama Bow',
     'input 1': 'miss',
-    output: `"abow,hiq"`
+    output: `"abow,nor"`
   });
+  // 珠宝+标枪＝亚马逊标枪，刷新配方不变
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Javelin + Jewel -> Random Ama Javelin',
     'input 1': 'jave',
-    output: `"ajav,hiq"`
+    output: `"ajav,nor"`
   });
+  // 珠宝+矛＝亚马逊矛，刷新配方不变
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Spear + Jewel -> Random Ama Spear',
     'input 1': 'spea',
-    output: `"aspe,hiq"`
+    output: `"aspe,nor"`
   });
+  // 珠宝+盾牌＝圣骑士盾牌
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Shield + Jewel -> Random Pal Shield',
     'input 1': 'shie',
-    output: `"ashd,hiq"`
+    output: `"ashd,nor"`
   });
+  // 珠宝+双手法杖＝女巫法珠
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Staff + Jewel -> Random Sor Orb',
     'input 1': 'staf',
-    output: `"orb,hiq"`
+    output: `"orb,nor"`
   });
+  // 珠宝+刺客武器＝刺客武器
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Asn Weapon + Jewel -> Random Asn Weapon',
     'input 1': 'h2h',
-    output: `"h2h,hiq"`
+    output: `"h2h,nor"`
   });
+  // 珠宝+死灵魔杖＝死灵法师盾牌
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Wand + Jewel -> Random Nec Skull Shield',
     'input 1': 'wand',
-    output: `"head,hiq"`
+    output: `"head,nor"`
   });
+  // 珠宝+任意头盔＝野蛮人头盔
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Helm + Jewel -> Random Bar Helm',
     'input 1': 'helm',
-    output: `"phlm,hiq"`
+    output: `"phlm,nor"`
   });
+  // 珠宝+木棒＝德鲁伊头盔
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Club + Jewel -> Random Dru Helm',
     'input 1': 'club',
-    output: `"pelt,hiq"`
+    output: `"pelt,nor"`
   });
+}
+
+if (config.refreshWhite) {
+  // 此配方会德鲁伊头会变成野蛮人头
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Pelt + Jewel -> Random Dru Helm',
     'input 1': 'pelt',
-    output: `"pelt,hiq"`
+    output: `"pelt,nor"`
   });
+  // 珠宝+圣骑士盾＝圣骑士盾
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Pal Shield + Jewel -> Random Pal Shield',
     'input 1': 'ashd',
-    output: `"ashd,hiq"`
+    output: `"ashd,nor"`
   });
+  // 珠宝+女巫法珠＝女巫法珠
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Sor Orb + Jewel -> Random Sor Orb',
     'input 1': 'orb',
-    output: `"orb,hiq"`
+    output: `"orb,nor"`
   });
+  // 珠宝+死灵法师盾牌＝死灵法师盾牌
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Nec Skull Shield + Jewel -> Random Nec Skull Shield',
     'input 1': 'head',
-    output: `"head,hiq"`
+    output: `"head,nor"`
   });
 }
+
+
 D2RMM.writeTsv(cubemainFilename, cubemain);

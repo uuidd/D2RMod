@@ -2,26 +2,26 @@ const uniqueitemsFilename = 'global\\excel\\uniqueitems.txt';
 const uniqueitems = D2RMM.readTsv(uniqueitemsFilename);
 
 function DisUniItem(row, isDis, id) {
-  // id Œ™Œƒ±æ≤ª « ˝◊÷
+  // id ‰∏∫ÊñáÊú¨‰∏çÊòØÊï∞Â≠ó
   if (isDis && row[`*ID`] === '' + id) {
     row['enabled'] = 0;
   }
 }
 
 uniqueitems.rows.forEach((row) => {
-  // ¬Ù»Œ“‚∞µΩ≥ˆ∫⁄√´
+  // Âçñ‰ªªÊÑèÊöóÈáëÂá∫ÈªëÊØõ
   if (config.sell_superdia) {
     row['diablocloneweight'] = 1;
   }
 
-  // ª˘µ¬∞Âƒ‹¥¯∂‡∏ˆ
+  // Âü∫Âæ∑ÊùøËÉΩÂ∏¶Â§ö‰∏™
   if (config.gheed_add) {
     if (row[`*ID`] === '359') {
       row['carry1'] = '';
     }
   }
 
-  // “‘œ¬Œ™∆¡±Œ∞µΩŒÔ∆∑(±‡∫≈0-128æ˘Œ™∑«◊ ¡œ∆¨÷–¥Ê‘⁄µƒ∞µΩ)
+  // ‰ª•‰∏ã‰∏∫Â±èËîΩÊöóÈáëÁâ©ÂìÅ(ÁºñÂè∑0-128Âùá‰∏∫ÈùûËµÑÊñôÁâá‰∏≠Â≠òÂú®ÁöÑÊöóÈáë)
   DisUniItem(row, config.dis_0, 0);
   DisUniItem(row, config.dis_1, 1);
   DisUniItem(row, config.dis_2, 2);
@@ -51,7 +51,7 @@ uniqueitems.rows.forEach((row) => {
   DisUniItem(row, config.dis_26, 26);
   DisUniItem(row, config.dis_27, 27);
   DisUniItem(row, config.dis_28, 28);
-  // ID:29 ’‚ «‘⁄”Œœ∑÷–±ªπŸ∑Ω“˛≤ÿµƒ1∞—Œ‰∆˜(ÀÆæßΩ£∞Ê±æµƒ±Ã¿∂≈≠ª)
+  // ID:29 ËøôÊòØÂú®Ê∏∏Êàè‰∏≠Ë¢´ÂÆòÊñπÈöêËóèÁöÑ1ÊääÊ≠¶Âô®(Ê∞¥Êô∂ÂâëÁâàÊú¨ÁöÑÁ¢ßËìùÊÄíÁÅ´)
   DisUniItem(row, config.dis_30, 30);
   DisUniItem(row, config.dis_31, 31);
   DisUniItem(row, config.dis_32, 32);
@@ -144,9 +144,9 @@ uniqueitems.rows.forEach((row) => {
   DisUniItem(row, config.dis_119, 119);
   DisUniItem(row, config.dis_120, 120);
   DisUniItem(row, config.dis_121, 121);
-  // ID:122 ««µ§÷Æ Ø(√ª”–∆¡±Œµƒ¿Ì”…)
-  // ID:123~128 Œ™»ŒŒÒ∞µΩµ¿æﬂ≤ªƒ‹∆¡±Œ
-  // ID:129~246 Œ™¿©’πº∂∞µΩ◊∞±∏
+  // ID:122 ‰πî‰∏π‰πãÁü≥(Ê≤°ÊúâÂ±èËîΩÁöÑÁêÜÁî±)
+  // ID:123~128 ‰∏∫‰ªªÂä°ÊöóÈáëÈÅìÂÖ∑‰∏çËÉΩÂ±èËîΩ
+  // ID:129~246 ‰∏∫Êâ©Â±ïÁ∫ßÊöóÈáëË£ÖÂ§á
   DisUniItem(row, config.dis_129, 129);
   DisUniItem(row, config.dis_130, 130);
   DisUniItem(row, config.dis_131, 131);
@@ -218,7 +218,7 @@ uniqueitems.rows.forEach((row) => {
   DisUniItem(row, config.dis_197, 197);
   DisUniItem(row, config.dis_198, 198);
   DisUniItem(row, config.dis_199, 199);
-  //ID:200√ª”–◊∞±∏÷ª «1∏ˆ¿‡–Õ
+  //ID:200Ê≤°ÊúâË£ÖÂ§áÂè™ÊòØ1‰∏™Á±ªÂûã
   DisUniItem(row, config.dis_201, 201);
   DisUniItem(row, config.dis_202, 202);
   DisUniItem(row, config.dis_203, 203);
@@ -265,19 +265,19 @@ uniqueitems.rows.forEach((row) => {
   DisUniItem(row, config.dis_244, 244);
   DisUniItem(row, config.dis_245, 245);
   DisUniItem(row, config.dis_246, 246);
-  // “‘œ¬Œ™π≤”√µ◊≤ƒµƒƒ—≥ˆµƒ∞µΩ◊∞±∏∫Õ≤ø∑÷∞µΩœÓ¡¥
-  DisUniItem(row, config.dis_249, 249);//‰ìËF√ÊºÜ
-  DisUniItem(row, config.dis_259, 259);//π‚÷Æ‹äµ∂
-  DisUniItem(row, config.dis_270, 270);//–Ò»’ñ|…˝(∞µΩœÓ¡¥)
-  DisUniItem(row, config.dis_271, 271);//–¬‘¬(∞µΩœÓ¡¥)
-  DisUniItem(row, config.dis_277, 277);//À_¿≠…≠µƒôCï˛(∞µΩœÓ¡¥)
-  DisUniItem(row, config.dis_306, 306);//µÿ∆ΩæÄµƒ˝àí‘ÔL
-  DisUniItem(row, config.dis_306, 307);//ÀÈ Ø’ﬂ
-  DisUniItem(row, config.dis_366, 366);//¬}Ã√ÚT ø÷Æ¡¶
-  DisUniItem(row, config.dis_375, 375);//ΩåŸæW∏Ò(∞µΩœÓ¡¥)
-  DisUniItem(row, config.dis_385, 385);//∫≥µÿ’ﬂ
-  DisUniItem(row, config.dis_389, 389);//ë‘ª⁄’ﬂ
-  // ≤ ∫ÁøÃ√Ê∞µΩ÷È±¶
+  // ‰ª•‰∏ã‰∏∫ÂÖ±Áî®Â∫ïÊùêÁöÑÈöæÂá∫ÁöÑÊöóÈáëË£ÖÂ§áÂíåÈÉ®ÂàÜÊöóÈáëÈ°πÈìæ
+  DisUniItem(row, config.dis_249, 249);//ÈãºÈêµÈù¢Á¥ó
+  DisUniItem(row, config.dis_259, 259);//ÂÖâ‰πãËªçÂàÄ
+  DisUniItem(row, config.dis_270, 270);//Êó≠Êó•Êù±Âçá(ÊöóÈáëÈ°πÈìæ)
+  DisUniItem(row, config.dis_271, 271);//Êñ∞Êúà(ÊöóÈáëÈ°πÈìæ)
+  DisUniItem(row, config.dis_277, 277);//Ëñ©ÊãâÊ£ÆÁöÑÊ©üÊúÉ(ÊöóÈáëÈ°πÈìæ)
+  DisUniItem(row, config.dis_306, 306);//Âú∞Âπ≥Á∑öÁöÑÈæçÊç≤È¢®
+  DisUniItem(row, config.dis_306, 307);//Á¢éÁü≥ËÄÖ
+  DisUniItem(row, config.dis_366, 366);//ËÅñÂ†ÇÈ®éÂ£´‰πãÂäõ
+  DisUniItem(row, config.dis_375, 375);//ÈáëÂ±¨Á∂≤Ê†º(ÊöóÈáëÈ°πÈìæ)
+  DisUniItem(row, config.dis_385, 385);//ÊíºÂú∞ËÄÖ
+  DisUniItem(row, config.dis_389, 389);//Êá∫ÊÇîËÄÖ
+  // ÂΩ©ËôπÂàªÈù¢ÊöóÈáëÁè†ÂÆù
   DisUniItem(row, config.dis_392396, 392);
   DisUniItem(row, config.dis_392396, 396);
   DisUniItem(row, config.dis_393397, 393);
@@ -286,7 +286,7 @@ uniqueitems.rows.forEach((row) => {
   DisUniItem(row, config.dis_394398, 398);
   DisUniItem(row, config.dis_395399, 395);
   DisUniItem(row, config.dis_395399, 399);
-  // ∆∆√‚∞Â◊”
+  // Á†¥ÂÖçÊùøÂ≠ê
   DisUniItem(row, config.dis_401, 401);
   DisUniItem(row, config.dis_402, 402);
   DisUniItem(row, config.dis_403, 403);
