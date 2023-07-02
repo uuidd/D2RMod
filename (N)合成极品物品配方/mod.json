@@ -76,10 +76,17 @@
       "defaultValue": true
     },
     {
-      "id": "traderie",
+      "id": "traderieRunes",
       "type": "checkbox",
-      "name": "T网交易模式符文降级",
-      "description": "",
+      "name": "模拟T网符文交易",
+      "description": "模拟T网符文交易，以中后期为基准",
+      "defaultValue": true
+    },
+    {
+      "id": "occupationExclusiveItems",
+      "type": "checkbox",
+      "name": "通过购买商店合成职业专属物品",
+      "description": "通过购买商店合成职业专属物品",
       "defaultValue": true
     }
   ]

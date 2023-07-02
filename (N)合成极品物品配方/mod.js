@@ -251,7 +251,7 @@ function multiToOne(multi, num, one) {
 }
 
 // 模拟T网交易，以中后期为准
-if (config.traderie) {
+if (config.traderieRunes) {
   twoWayRecipe(['r33'], ['r28', 'r15']);
   twoWayRecipe(['r32'], ['r26', 'r15']);
   twoWayRecipe(['r31'], ['r30', 'r28']);
@@ -279,4 +279,104 @@ if (config.traderie) {
   }
 }
 
+
+// 珠宝+弓＝亚马逊专用弓
+// 珠宝+标枪＝亚马逊标枪
+// 珠宝+矛＝亚马逊矛
+// 珠宝+任意头盔＝野蛮人头盔
+// 珠宝+木棒＝德鲁伊头盔
+// 珠宝+双手法杖＝女巫法珠
+// 珠宝+单手法杖＝死灵法师盾牌
+// 珠宝+盾牌＝圣骑士盾牌
+// 珠宝+刺客武器＝刺客武器
+// 珠宝+死灵法师盾牌＝死灵法师盾牌
+// 珠宝+圣骑士盾＝圣骑士盾
+// 珠宝+女巫法珠＝女巫法珠
+if (config.occupationExclusiveItems) {
+  const occBaseRecipe = {
+    ...baseRecipe,
+    numinputs: 2,
+    'input 1': 'jew',
+    'output b': 'jew',
+    plvl: 100
+  }
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Bow + Jewel -> Random Ama Bow',
+    'input 1': 'miss',
+    output: `"abow,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Javelin + Jewel -> Random Ama Javelin',
+    'input 1': 'jave',
+    output: `"ajav,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Spear + Jewel -> Random Ama Spear',
+    'input 1': 'spea',
+    output: `"aspe,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Shield + Jewel -> Random Pal Shield',
+    'input 1': 'shie',
+    output: `"ashd,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Staff + Jewel -> Random Sor Orb',
+    'input 1': 'staf',
+    output: `"orb,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Asn Weapon + Jewel -> Random Asn Weapon',
+    'input 1': 'h2h',
+    output: `"h2h,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Wand + Jewel -> Random Nec Skull Shield',
+    'input 1': 'wand',
+    output: `"head,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Helm + Jewel -> Random Bar Helm',
+    'input 1': 'helm',
+    output: `"phlm,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Club + Jewel -> Random Dru Helm',
+    'input 1': 'club',
+    output: `"pelt,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Pelt + Jewel -> Random Dru Helm',
+    'input 1': 'pelt',
+    output: `"pelt,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Pal Shield + Jewel -> Random Pal Shield',
+    'input 1': 'ashd',
+    output: `"ashd,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Sor Orb + Jewel -> Random Sor Orb',
+    'input 1': 'orb',
+    output: `"orb,hiq"`
+  });
+  cubemain.rows.push({
+    ...occBaseRecipe,
+    description: 'Nec Skull Shield + Jewel -> Random Nec Skull Shield',
+    'input 1': 'head',
+    output: `"head,hiq"`
+  });
+}
 D2RMM.writeTsv(cubemainFilename, cubemain);
