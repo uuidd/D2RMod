@@ -1,4 +1,4 @@
-// Modify the proportion of effective experience points obtained after level 70
+// 加快角色升级速度
 if (config.expNum > 0) {
   const experienceFilename = 'global\\excel\\experience.txt';
   const experience = D2RMM.readTsv(experienceFilename);
