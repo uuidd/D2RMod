@@ -1,18 +1,22 @@
-// 70级后升级经验修改
+// Modify the proportion of effective experience points obtained after level 70
 if (config.expNum > 0) {
-  const expFilename = 'global\\excel\\experience.txt';
-  const experience = D2RMM.readTsv(expFilename);
+  const experienceFilename = 'global\\excel\\experience.txt';
+  const experience = D2RMM.readTsv(experienceFilename);
   experience.rows.forEach((row) => {
     const level = row['Level'];
-    if (level !== 'MaxLvl' && level >= 70) {
-      const exp = row['ExpRatio\r'] / 1024; // 有效吸收经验百分比
-      let expValue = Math.round(((config.expNum / 100) + exp) * 1024); //
+    if (level !== 'MaxLvl' && level >= config.expStartLevel) {
+      const exp = row['ExpRatio\r'] / 1024;
+      let expValue = Math.round(((config.expIncreaseNum / 100) + exp) * 1024);
       if (expValue >= 1024) {
-        row['ExpRatio\r'] = 1024;
+        if (config.expRemoveMaxLimit) {
+          row['ExpRatio\r'] = expValue;
+        } else {
+          row['ExpRatio\r'] = 1024;
+        }
       } else {
         row['ExpRatio\r'] = expValue;
       }
     }
   });
-  D2RMM.writeTsv(expFilename, experience);
+  D2RMM.writeTsv(experienceFilename, experience);
 }
