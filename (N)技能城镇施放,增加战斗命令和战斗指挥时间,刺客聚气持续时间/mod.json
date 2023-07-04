@@ -1,0 +1,67 @@
+{
+  "name": "(N)技能城镇施放,增加战斗命令和战斗指挥时间,刺客聚气持续时间",
+  "description": "",
+  "author": "Nexus4896 & ",
+  "version": "1.0",
+  "file": "skills.txt",
+  "config": [
+    {
+      "id": "skillTown",
+      "type": "select",
+      "name": "技能在城镇中施放",
+      "description": "技能在城镇中施放.",
+      "defaultValue": "sillDef",
+      "options": [
+        {
+          "value": "sillDef",
+          "label": "游戏默认",
+          "description": "游戏默认"
+        },
+        {
+          "value": "allSkill",
+          "label": "允许在城镇中使用所有技能",
+          "description": "允许在城镇中使用所有技能"
+        },
+        {
+          "value": "partSkill",
+          "label": "只允许额外的移动和增益技能",
+          "description": "只允许额外的移动和增益技能"
+        }
+      ]
+    },
+    {
+      "id": "Param1",
+      "type": "number",
+      "name": "战斗命令和战斗指挥基础持续时间",
+      "description": "将基本持续时间设置在1到600之间，默认是30秒。总持续时间是基础持续时间加上第一级之后每级的10秒，所以3级战斗命令持续50秒",
+      "defaultValue": 30,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "Param3",
+      "type": "number",
+      "name": "所有刺客聚气持续时间（凤凰击除外）",
+      "description": "将聚气持续时间设置在1到400之间，默认为15秒",
+      "defaultValue": 15,
+      "minValue": 1,
+      "maxValue": 400
+    },
+    {
+      "id": "auralencalc",
+      "type": "number",
+      "name": "凤凰击聚气持续时间",
+      "description": "将凤凰击的聚气持续时间设置在1到400之间，默认是15秒",
+      "defaultValue": 15,
+      "minValue": 1,
+      "maxValue": 400
+    },
+    {
+      "id": "calc1",
+      "type": "checkbox",
+      "name": "限制火拳的元素转换",
+      "description": "如果启用，火之拳将固定50%的伤害转化为元素伤害。使用这个可以从攻击中吸取生命值和魔法值，无论技能等级如何",
+      "defaultValue": false
+    }
+  ]
+}

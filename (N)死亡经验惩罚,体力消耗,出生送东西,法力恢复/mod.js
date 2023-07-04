@@ -1,4 +1,4 @@
-// È¥µôËÀÍöÊ±µÄ¾­Ñé³Í·£
+// å»æ‰æ­»äº¡æ—¶çš„ç»éªŒæƒ©ç½š
 if (config.exp_noPunDeah) {
   const difficultylevelsFilename = 'global\\excel\\difficultylevels.txt';
   const difficultylevels = D2RMM.readTsv(difficultylevelsFilename);
@@ -17,23 +17,23 @@ const charstatsFilename = 'global\\excel\\charstats.txt';
 const charstats = D2RMM.readTsv(charstatsFilename);
 
 charstats.rows.forEach((row) => {
-  // ÅÜ²½µÄÌåÁ¦ÏûºÄ±¶ÂÊ
-  // RunDrain¹Ù·½Ä¬ÈÏÖµÎª20,´Ì¿ÍÌØÊâµãÊÇ15
+  // è·‘æ­¥çš„ä½“åŠ›æ¶ˆè€—å€ç‡
+  // RunDrainå®˜æ–¹é»˜è®¤å€¼ä¸º20,åˆºå®¢ç‰¹æ®Šç‚¹æ˜¯15
   if (config.run_drain !== 1) {
     if (row['class'] !== 'Expansion') {
       row['RunDrain'] *= config.run_drain;
     }
   }
 
-  // ³öÉúÊ±ËÍµÄ¶«Î÷
-  // ²»Í¬Ö°ÒµµÄ»Ø³Ç±æÊ¶¾íÖáÎ»ÖÃÓĞËù²»Í¬
+  // å‡ºç”Ÿæ—¶é€çš„ä¸œè¥¿
+  // ä¸åŒèŒä¸šçš„å›åŸè¾¨è¯†å·è½´ä½ç½®æœ‰æ‰€ä¸åŒ
   // Ama tsc = item4 isc = item5
   // Sor tsc = item3 isc = item4...
-  // itemÎŞÎïÆ·Ê±Ä¬ÈÏÖµÎª0£¬Ò»¹²ÊÇitem1~item10¹²10ÖÖÎïÆ·
-  // forEach²»»áÊÜreturnÓ°Ïì
-  // ÕÒµ½»Ø³Ç±æÊ¶¾íÖáÌæ»»ÎªÊé
-  // ÕâÀï·¢ÏÖÒ»¸öÓĞÒâË¼µÄµØ·½itemXcountÊÇÖ¸µÄÊé×Ü¹²µÄ±¾Êı²»ÊÇÊéÀïÃæµÄ¾íÖáÊı
-  // ²¢ÇÒÓĞÆäËûMODĞŞ¸Ä¹ıÊéµÄ×î´ó¶ÑµşÁ¿Ê±£¬ÕâÑùÒ²»áÖ±½ÓÈûÂú,ËùÒÔÊéµÄcountÎÒ¸ù±¾²»ĞèÒªĞŞ¸Ä
+  // itemæ— ç‰©å“æ—¶é»˜è®¤å€¼ä¸º0ï¼Œä¸€å…±æ˜¯item1~item10å…±10ç§ç‰©å“
+  // forEachä¸ä¼šå—returnå½±å“
+  // æ‰¾åˆ°å›åŸè¾¨è¯†å·è½´æ›¿æ¢ä¸ºä¹¦
+  // è¿™é‡Œå‘ç°ä¸€ä¸ªæœ‰æ„æ€çš„åœ°æ–¹itemXcountæ˜¯æŒ‡çš„ä¹¦æ€»å…±çš„æœ¬æ•°ä¸æ˜¯ä¹¦é‡Œé¢çš„å·è½´æ•°
+  // å¹¶ä¸”æœ‰å…¶ä»–MODä¿®æ”¹è¿‡ä¹¦çš„æœ€å¤§å †å é‡æ—¶ï¼Œè¿™æ ·ä¹Ÿä¼šç›´æ¥å¡æ»¡,æ‰€ä»¥ä¹¦çš„countæˆ‘æ ¹æœ¬ä¸éœ€è¦ä¿®æ”¹
   if (config.replace_tsc_isc) {
     for (let i = 1; i < 11; i++) {
       const itemKey = row['item' + i];
@@ -46,7 +46,7 @@ charstats.rows.forEach((row) => {
     }
   }
 
-  // ÕÒµ½¿ÕÎ»ÖÃÌí¼ÓºĞ×Ó
+  // æ‰¾åˆ°ç©ºä½ç½®æ·»åŠ ç›’å­
   if (config.create_box) {
     for (let i = 1; i < 11; i++) {
       const itemKey = row['item' + i];
@@ -58,7 +58,7 @@ charstats.rows.forEach((row) => {
     }
   }
 
-  // ·¨Á¦»Ö¸´ËÙ¶È
+  // æ³•åŠ›æ¢å¤é€Ÿåº¦
   if (row.class !== "Expansion") {
     row.ManaRegen = config.manaRegen;
 
@@ -76,32 +76,5 @@ charstats.rows.forEach((row) => {
 
 D2RMM.writeTsv(charstatsFilename, charstats);
 
-// ¼¼ÄÜ¶¼ÔÚ³ÇÕòÖĞÊ©·Å
-const skillsFilename = 'global\\excel\\skills.txt';
-const skills = D2RMM.readTsv(skillsFilename);
 
-skills.rows.forEach((row) => {
-  if (row.charclass !== '' && row.passive === '') {
-    switch (config.skillTown) {
-      case 'allSkill':
-        row.InTown = 1;
-        break;
-      case 'partSkill':
-        if ([
-          'Armageddon',
-          'Battle Command',
-          'Battle Orders',
-          'Charge',
-          'Hurricane',
-          'Leap',
-          'Shout',
-          'Teleport',
-          'Thunder Storm',
-        ].indexOf(row.skill) !== -1) {
-          row.InTown = 1;
-        }
-        break;
-    }
-  }
-});
-D2RMM.writeTsv(skillsFilename, skills);
+

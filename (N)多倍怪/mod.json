@@ -1,0 +1,18 @@
+{
+  "name": "(N)多倍怪",
+  "description": "增加怪物密度。",
+  "author": "olegbl",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/184",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "multiplier",
+      "type": "number",
+      "name": "怪物密度乘数",
+      "description": "包括普通怪物和暗金/精英怪物。1=正常,>1=更多,限制1-100你也可以输入一个小于1的数字来减少怪物的数量。",
+      "defaultValue": 2,
+      "minValue": 0,
+      "maxValue": 100
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "name": "(N)死亡经验惩罚,体力消耗,出生送东西,法力恢复,技能城镇施放",
-  "description": "高难度不掉经验,角色跑步体力消耗,创建新角色送东西,法力恢复加快，技能能在城镇施放",
+  "name": "(N)死亡经验惩罚,体力消耗,出生送东西,法力恢复",
+  "description": "高难度不掉经验,角色跑步体力消耗,创建新角色送东西,法力恢复加快",
   "author": "lil174 & Demo",
   "version": "1.1",
   "config": [
@@ -41,30 +41,6 @@
       "description": "120=默认值。数字越低，法力恢复越快。",
       "defaultValue": 120,
       "minValue": 0
-    },
-    {
-      "id": "skillTown",
-      "type": "select",
-      "name": "技能在城镇中施放",
-      "description": "技能在城镇中施放.",
-      "defaultValue": "sillDef",
-      "options": [
-        {
-          "value": "sillDef",
-          "label": "游戏默认",
-          "description": "游戏默认"
-        },
-        {
-          "value": "allSkill",
-          "label": "允许在城镇中使用所有技能",
-          "description": "允许在城镇中使用所有技能"
-        },
-        {
-          "value": "partSkill",
-          "label": "只允许额外的移动和增益技能",
-          "description": "只允许额外的移动和增益技能"
-        }
-      ]
     }
   ]
 }
