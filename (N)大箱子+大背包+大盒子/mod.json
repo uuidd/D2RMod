@@ -1,9 +1,10 @@
 {
-  "name": "(N)箱子+背包+盒子大小调整",
-  "description": "将存储大小增加到16x13. Based on https://www.nexusmods.com/diablo2resurrected/mods/13.",
-  "author": "olegbl",
+  "name": "(N)大箱子+大背包+大盒子",
+  "description": "超高兼容度不缩放的大箱子、大背包和大盒子Based on https://www.nexusmods.com/diablo2resurrected/mods/13.",
+  "author": "olegbl & MetalTxus & Demo ",
   "website": "https://www.nexusmods.com/diablo2resurrected/mods/173",
-  "version": "",
+  "version": "1.0",
+  "file":"_profilehd.json、_profilelv.json、horadriccubelayouthd.json...",
   "config": [
     {
       "id": "caseSize",
@@ -19,7 +20,7 @@
         },
         {
           "value": "case_16X13",
-          "label": "16X13大箱子",
+          "label": "16X13大箱子(物品不缩放)",
           "description": "长16宽13"
         }
       ]
@@ -38,7 +39,7 @@
         },
         {
           "value": "package_13X8",
-          "label": "13X8中背包",
+          "label": "13X8中背包(物品不缩放)",
           "description": "长13宽8"
         }
       ]
@@ -52,17 +53,17 @@
       "options": [
         {
           "value": "def",
-          "label": "默认大小背包",
+          "label": "默认大小盒子",
           "description": "游戏默认，3X4"
         },
         {
           "value": "box_6X4",
-          "label": "6X4盒子",
+          "label": "6X4盒子(物品不缩放)",
           "description": "长6宽4"
         },
         {
           "value": "box_10X10",
-          "label": "10X10盒子",
+          "label": "10X10盒子(物品不缩放)",
           "description": "长10宽10"
         }
       ]
