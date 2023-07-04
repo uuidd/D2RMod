@@ -1,54 +1,54 @@
 
 if (config.move_cain) {
-    // Copy the ds1.bin files for act 5
+    // 复制act5的ds1.bin文件
     D2RMM.copyFile(
         'global\\tiles\\expansion\\combined_ds1.bin',
         'global\\tiles\\expansion\\combined_ds1.bin',
-        true // overwrite any conflicts
+        true // 覆盖所有冲突
     );
 
-    // Deckard Cain
+    // 迪卡·凯恩
     D2RMM.copyFile(
         'global\\tiles\\expansion\\town\\townwest.ds1',
         'global\\tiles\\expansion\\town\\townwest.ds1',
-        true // overwrite any conflicts
+        true // 覆盖所有冲突
     );
 }
 
 if (config.act2) {
-    // Copy the ds1.bin files for act 2
+    // 复制act2的ds1.bin文件
     D2RMM.copyFile(
         'global\\tiles\\act2\\combined_ds1.bin',
         'global\\tiles\\act2\\combined_ds1.bin',
-        true // overwrite any conflicts
+        true // 覆盖所有冲突
     );
 
-    // Act 2 Town
+    // 第二幕城镇
     D2RMM.copyFile(
         'global\\tiles\\act2\\town\\lutn.ds1',
         'global\\tiles\\act2\\town\\lutn.ds1',
-        true // overwrite any conflicts
+        true // 覆盖所有冲突
     );
 
     D2RMM.copyFile(
         'global\\tiles\\act2\\town\\lutw.ds1',
         'global\\tiles\\act2\\town\\lutw.ds1',
-        true // overwrite any conflicts
+        true // 覆盖所有冲突
     );
 }
 
 if (config.act3) {
-    // Copy the ds1.bin files for act 3
+    // 复制act3的ds1.bin文件
     D2RMM.copyFile(
         'global\\tiles\\act3\\combined_ds1.bin',
         'global\\tiles\\act3\\combined_ds1.bin',
-        true // overwrite any conflicts
+        true // 覆盖所有冲突
     );
 
-    // Act 3 Town
+    // 第三幕城镇
     D2RMM.copyFile(
         'global\\tiles\\act3\\docktown\\docktown3.ds1',
         'global\\tiles\\act3\\docktown\\docktown3.ds1',
-        true // overwrite any conflicts
+        true // 覆盖所有冲突
     );
 }
