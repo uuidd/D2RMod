@@ -1,5 +1,11 @@
 const cubemainFilename = "global\\excel\\cubemain.txt";
 const cubemain = D2RMM.readTsv(cubemainFilename);
+const baseRecipe = {
+  enabled: 1,
+  version: 100,
+  '*eol\r': 0,
+};
+
 const rName = {
   'r01': "el(01)",
   'r02': "eld(02)",
@@ -154,24 +160,35 @@ if (config.traderieRunes) {
   twoWayRuneRecipe(['r23'], ['r22', 'r20']);
   twoWayRuneRecipe(['r22'], ['r21', 'r20']);
   twoWayRuneRecipe(['r21'], ['r20', 'r18']);
-  twoWayRuneRecipe(['r20'], ['r18', 'r15']);
-  // r19-r2 r2-r19
-  multiToOne('r19', 6, 'r23');
+  twoWayRuneRecipe(['r20'], ['r18', 'r18']);
+  multiToOne('r19', 3, 'r20'); // 添加 19# 符文升级不需要宝石
+  multiToOne('r19', 8, 'r24');
+  multiToOne('r18', 8, 'r24');
+  multiToOne('r17', 8, 'r23');
+  multiToOne('r16', 8, 'r22');
+  multiToOne('r15', 8, 'r25');
+  multiToOne('r14', 8, 'r20');
+  multiToOne('r13', 8, 'r20');
+  multiToOne('r12', 8, 'r20');
+  multiToOne('r11', 8, 'r22');
+  multiToOne('r10', 8, 'r20');
+  multiToOne('r09', 8, 'r20');
+  multiToOne('r08', 8, 'r22');
+  multiToOne('r07', 8, 'r20');
+  multiToOne('r06', 8, 'r20');
+  multiToOne('r05', 8, 'r20');
+  multiToOne('r04', 8, 'r20');
+  multiToOne('r03', 8, 'r20');
+  multiToOne('r02', 8, 'r20');
+  multiToOne('r01', 8, 'r20');
+}
+
+// ↓ r19-r2 + 1 jew    ↑ r1-r18 + 2 jew
+if (config.traderieMinRunes) {
   for (let i = 19; i > 1; i--) {
     const rBig = 'r' + (i + '').padStart(2, '0');
     const rSmall = 'r' + ((i - 1) + '').padStart(2, '0');
     twoWayRuneRecipe([rBig], [rSmall]);
-    if (rSmall === 'r8') {
-      multiToOne(rSmall, 8, 'r23');
-    } else if (rSmall === 'r15') {
-      multiToOne(rSmall, 6, 'r24');
-    } else if (rSmall === 'r16' || rSmall === 'r17') {
-      multiToOne(rSmall, 8, 'r23');
-    } else if (rSmall === 'r18') {
-      multiToOne(rSmall, 6, 'r24');
-    } else {
-      multiToOne(rSmall, 8, 'r22');
-    }
   }
 }
 
@@ -236,6 +253,7 @@ function runeAndGoodsRecipe(rune, type, unique) {
   });
 }
 
+// 符文和常用暗金/绿色物品互换
 if (config.traderieNecessity) {
   // 戒指
   runeAndGoodsRecipe('r28', 'rin', `The Stone of Jordan`); // 乔丹之石
@@ -299,7 +317,8 @@ if (config.traderieNecessity) {
   runeAndGoodsRecipe('r23', 'belt', `Thudergod's Vigor`); // 雷神之力
   runeAndGoodsRecipe('r22', 'belt', `Goldwrap`); // 黃金裹腰
   runeAndGoodsRecipe('r21', 'belt', `Tal Rasha's Fire-Spun Cloth`); // 塔拉夏的精織腰布
-  //鞋子
+  runeAndGoodsRecipe('r20', 'belt', `Razortail`); // 剃刀之尾 穿刺腰带
+  // 鞋子
   runeAndGoodsRecipe('r27', 'boot', `Shadowdancer`); // 影舞者
   runeAndGoodsRecipe('r25', 'boot', `Wartraveler`); // 戰爭旅者
   runeAndGoodsRecipe('r24', 'boot', `Gorerider`); // 蝕肉騎士 cb 鞋
@@ -319,7 +338,7 @@ if (config.traderieNecessity) {
 const occBaseRecipe = {
   ...baseRecipe,
   numinputs: 2,
-  'input 1': 'jew',
+  'input 2': 'jew',
   plvl: 100
 }
 
@@ -381,4 +400,6 @@ if (config.occupationExclusiveItems) {
     output: `"pelt,nor"`
   });
 }
+
+
 D2RMM.writeTsv(cubemainFilename, cubemain);
