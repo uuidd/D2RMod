@@ -26,7 +26,7 @@ function ModItem(row, TCName, ItemNum, ItemName, ProbValue) {
   }
 }
 
-// Ö»ĞŞ¸ÄÇ°4Î»item
+// åªä¿®æ”¹å‰4ä½item
 function ModItem4(row, TCName, item1, prob1, item2, prob2, item3, prob3, item4, prob4) {
   if (row['Treasure Class'] === TCName) {
     row['Item1'] = item1;
@@ -40,7 +40,7 @@ function ModItem4(row, TCName, item1, prob1, item2, prob2, item3, prob3, item4, 
   }
 }
 
-// ÌŞ³ıMagicÆÁ±Î²¿·Ö¾íÖáÓëºìÀ¶
+// å‰”é™¤Magicå±è”½éƒ¨åˆ†å·è½´ä¸çº¢è“
 function ModMagic(row) {
   ModItem(row, 'Act 1 Cast A', 5, '', '');
   ModItem(row, 'Act 1 Cast B', 5, '', '');
@@ -129,7 +129,7 @@ function ModMagic(row) {
   ModItem(row, 'Act 5 (H) Wraith C', 2, '', '');
 }
 
-// Ö»ĞŞ¸Äitem1ºóÃæµÄÖ±½ÓÇå¿Õ
+// åªä¿®æ”¹item1åé¢çš„ç›´æ¥æ¸…ç©º
 function ModItemOnlyFirst(row, TCName, item1, prob1) {
   if (row['Treasure Class'] === TCName) {
     row['Item1'] = item1;
@@ -179,16 +179,16 @@ function BossQ(row, tcName, actNum, difficulty, abc, prob1, prob2, essence) {
 }
 
 treasureclassex.rows.forEach((row) => {
-  // ·ûÎÄµôÂä¼¸ÂÊ
+  // ç¬¦æ–‡æ‰è½å‡ ç‡
   if (row['Treasure Class'].substring(0, 5) === 'Runes') {
     if (row.Prob3 !== '') {
       row.Prob3 = Math.floor(row.Prob3 / config.runes_drop);
       if (row.Prob3 < 2) row.Prob3 = 2;
     }
-    if (row.Prob2 === 5170) row.Prob2 = Math.floor(row.Prob2 / config.runes_drop);// 33#·ûÎÄ
+    if (row.Prob2 === 5170) row.Prob2 = Math.floor(row.Prob2 / config.runes_drop);// 33#ç¬¦æ–‡
   }
 
-  // ÈÃËùÓĞBOSS¶¼ÊÇÊ×É±µôÂÊ
+  // è®©æ‰€æœ‰BOSSéƒ½æ˜¯é¦–æ€æ‰ç‡
   ModBossQ(row, 'Andariel', 995, 995, 1024, 1024);
   ModItem4(row, 'Andariel', 'Act 2 Equip A', 19, 'Act 2 Good', 3, '', '', '', '');
   ModBossQ(row, 'Andariel (N)', 995, 995, 1024, 1024);
@@ -245,7 +245,7 @@ treasureclassex.rows.forEach((row) => {
   BossQ(row, 'Baal (H)', 5, 3, 'B', 52, 3, 'fed');
   BossQ(row, 'Baal Item (H) Desecrated', 5, 3, 'C', 52, 3, 'fed');
 
-  // ½ûÖ¹BOSSµôÂä¾«»ª
+  // ç¦æ­¢BOSSæ‰è½ç²¾å
   if (config.disdrop_bosstoken) {
     ModItem(row, 'Andariel (H)', 5, '', '');
     ModItem(row, 'Andarielq (H)', 3, '', '');
@@ -282,9 +282,9 @@ treasureclassex.rows.forEach((row) => {
     ModItem(row, 'Baalq (H)', 3, '', '');
   }
 
-  // ¹ÖÎïµôÂä±¦Ê¯·½Ê½
+  // æ€ªç‰©æ‰è½å®çŸ³æ–¹å¼
   switch (config.gemdrop_select) {
-    // ¸ßÄÑ¶ÈµÄ¹ÖÒ²ÄÜµôÂäÍêÃÀ±¦Ê¯
+    // é«˜éš¾åº¦çš„æ€ªä¹Ÿèƒ½æ‰è½å®Œç¾å®çŸ³
     case 'dis_gem1':
       ModItem(row, 'Act 1 (H) Good', 7, 'Perfect Gem', 28);
       ModItem(row, 'Act 2 (H) Good', 7, 'Perfect Gem', 28);
@@ -292,7 +292,7 @@ treasureclassex.rows.forEach((row) => {
       ModItem(row, 'Act 4 (H) Good', 7, 'Perfect Gem', 28);
       ModItem(row, 'Act 5 (H) Good', 7, 'Perfect Gem', 28);
       break;
-    // ²»»áµôÂäÈÎºÎ±¦Ê¯,µØÃæ¸ü¸É¾»
+    // ä¸ä¼šæ‰è½ä»»ä½•å®çŸ³,åœ°é¢æ›´å¹²å‡€
     case 'dis_gem2':
       ClearItem(row, 'Act 1 Good', 7);
       ClearItem(row, 'Act 2 Good', 7);
@@ -328,14 +328,14 @@ treasureclassex.rows.forEach((row) => {
       break;
   }
 
-  // ½ûÖ¹¹ÖÎïµôÂäÒ©¼Á
-  // ÆÁ±ÎËùÓĞ(ºì, À¶, ½â¶¾, ¾«Á¦, ÈÚ±ù)Ò©¼ÁÖ»Áô´ó×ÏĞ¡×ÏÒ©µÄ»°
-  // ĞèÒªĞŞ¸ÄPotion·ÖÀàÖ»Ê£rvs
-  // ĞèÒªĞŞ¸ÄHpotion·ÖÀàÖ»Ê£rvs
-  // ÆÁ±ÎºìÀ¶Ò©ºÍ¾íÖá»¹ĞèÒªÌŞ³ıµôCast·ÖÀàÀïÃæµÄMagic·ÖÀà
-  // ÆÁ±ÎºìÀ¶Ò©ºÍ¾íÖá»¹ĞèÒªÌŞ³ıµôWraith·ÖÀàÀïÃæµÄMagic·ÖÀà
+  // ç¦æ­¢æ€ªç‰©æ‰è½è¯å‰‚
+  // å±è”½æ‰€æœ‰(çº¢, è“, è§£æ¯’, ç²¾åŠ›, èå†°)è¯å‰‚åªç•™å¤§ç´«å°ç´«è¯çš„è¯
+  // éœ€è¦ä¿®æ”¹Potionåˆ†ç±»åªå‰©rvs
+  // éœ€è¦ä¿®æ”¹Hpotionåˆ†ç±»åªå‰©rvs
+  // å±è”½çº¢è“è¯å’Œå·è½´è¿˜éœ€è¦å‰”é™¤æ‰Caståˆ†ç±»é‡Œé¢çš„Magicåˆ†ç±»
+  // å±è”½çº¢è“è¯å’Œå·è½´è¿˜éœ€è¦å‰”é™¤æ‰Wraithåˆ†ç±»é‡Œé¢çš„Magicåˆ†ç±»
   switch (config.disdrop_potion) {
-    // ½ûÖ¹µôÂä¾«Á¦,½â¶¾,ÈÚ±ù(±£ÁôºìÀ¶)
+    // ç¦æ­¢æ‰è½ç²¾åŠ›,è§£æ¯’,èå†°(ä¿ç•™çº¢è“)
     case 'dis_potion1':
       ModItem(row, 'Potion 1', 6, '', '');
       ModItem(row, 'Potion 2', 7, '', '');
@@ -354,7 +354,7 @@ treasureclassex.rows.forEach((row) => {
       ModItem(row, 'Potion 6', 7, '', '');
       ModItem(row, 'Potion 6', 8, '', '');
       break;
-    // ½ûÖ¹µôÂäºì,À¶,¾«Á¦,½â¶¾,ÈÚ±ù
+    // ç¦æ­¢æ‰è½çº¢,è“,ç²¾åŠ›,è§£æ¯’,èå†°
     case 'dis_potion2':
       ModItemOnlyFirst(row, 'Hpotion 1', 'rvs', 1);
       ModItemOnlyFirst(row, 'Hpotion 2', 'rvs', 1);
@@ -370,7 +370,7 @@ treasureclassex.rows.forEach((row) => {
       ModItemOnlyFirst(row, 'Potion 6', 'rvs', 1);
       ModMagic(row);
       break;
-    // ½ûÖ¹µôÂäĞ¡×Ï,ºì,À¶,¾«Á¦,½â¶¾,ÈÚ±ù
+    // ç¦æ­¢æ‰è½å°ç´«,çº¢,è“,ç²¾åŠ›,è§£æ¯’,èå†°
     case 'dis_potion3':
       ClearItem(row, 'Hpotion 1', 9);
       ClearItem(row, 'Hpotion 2', 9);
@@ -388,14 +388,14 @@ treasureclassex.rows.forEach((row) => {
       break;
   }
 
-  // ½ûÖ¹¹ÖÎïµôÂäÔÓÎï
-  // ÆÁ±ÎËùÓĞÔÓÎï(±¦ÏäÔ¿³×, ¾íÖá, ±¬Õ¨, ¶¾Æø)µÄ»°
-  // ĞèÒª´ÓËùÓĞµÄJunk·ÖÀàÀïÃæÌŞ³ıµôMisc·ÖÀà
-  // ÆÁ±Î¼ı´üÀàÊÇ´ÓJunkºÍMiss·ÖÀàÀïÃæÌŞ³ıµôAmmo·ÖÀà
-  // ÆÁ±ÎºìÀ¶Ò©ºÍ¾íÖá»¹ĞèÒªÌŞ³ıµôCast·ÖÀàÀïÃæµÄMagic·ÖÀà
-  // ÆÁ±ÎºìÀ¶Ò©ºÍ¾íÖá»¹ĞèÒªÌŞ³ıµôWraith·ÖÀàÀïÃæµÄMagic·ÖÀà
+  // ç¦æ­¢æ€ªç‰©æ‰è½æ‚ç‰©
+  // å±è”½æ‰€æœ‰æ‚ç‰©(å®ç®±é’¥åŒ™, å·è½´, çˆ†ç‚¸, æ¯’æ°”)çš„è¯
+  // éœ€è¦ä»æ‰€æœ‰çš„Junkåˆ†ç±»é‡Œé¢å‰”é™¤æ‰Miscåˆ†ç±»
+  // å±è”½ç®­è¢‹ç±»æ˜¯ä»Junkå’ŒMissåˆ†ç±»é‡Œé¢å‰”é™¤æ‰Ammoåˆ†ç±»
+  // å±è”½çº¢è“è¯å’Œå·è½´è¿˜éœ€è¦å‰”é™¤æ‰Caståˆ†ç±»é‡Œé¢çš„Magicåˆ†ç±»
+  // å±è”½çº¢è“è¯å’Œå·è½´è¿˜éœ€è¦å‰”é™¤æ‰Wraithåˆ†ç±»é‡Œé¢çš„Magicåˆ†ç±»
   switch (config.disdrop_junk) {
-    // ½ûÖ¹µôÂä±¦ÏäÔ¿³×,¾íÖá,±¬Õ¨,¶¾Æø(±£Áô¼ı´ü)
+    // ç¦æ­¢æ‰è½å®ç®±é’¥åŒ™,å·è½´,çˆ†ç‚¸,æ¯’æ°”(ä¿ç•™ç®­è¢‹)
     case 'dis_junk1':
       ModItem4(row, 'Act 1 Junk', 'Potion 1', 8, 'Ammo', 4, '', '', '', '');
       ModItem4(row, 'Act 2 Junk', 'Act 1 Junk', 2, 'Potion 2', 8, 'Ammo', 4, '', '');
@@ -414,7 +414,7 @@ treasureclassex.rows.forEach((row) => {
       ModItem4(row, 'Act 5 (H) Junk', 'Act 5 Junk', 2, 'Potion 6', 8, 'Ammo', 4, '', '');
       ModMagic(row);
       break;
-    // ½ûÖ¹µô±¦ÏäÔ¿³×, ¾íÖá, ±¬Õ¨, ¶¾Æø, ¼ı´ü
+    // ç¦æ­¢æ‰å®ç®±é’¥åŒ™, å·è½´, çˆ†ç‚¸, æ¯’æ°”, ç®­è¢‹
     case 'dis_junk2':
       ModItem4(row, 'Act 1 Junk', 'Potion 1', 8, '', '', '', '', '', '');
       ModItem4(row, 'Act 2 Junk', 'Act 1 Junk', 2, 'Potion 2', 8, '', '', '', '');
@@ -445,7 +445,7 @@ function MultiplyProb(row, item) {
   }
 }
 
-// 6bossÔ¿³×
+// 6bossé’¥åŒ™
 treasureclassex.rows.forEach((row) => {
   const treasureClass = row['Treasure Class'];
 
@@ -458,7 +458,7 @@ treasureclassex.rows.forEach((row) => {
   if (treasureClass === 'Nihlathak (H)' || treasureClass.includes('Nihlathak Item (H)'))
     MultiplyProb(row, 'pk3')
 });
-// ¾«»ª¼¶ÎïÆ·
+// ç²¾åçº§ç‰©å“
 treasureclassex.rows.forEach(tc => {
   if (tc['Treasure Class'].match(/(^Act [2-5] (Equip|Melee) [A-C]$)|(^Act [1-5] \((N|H)\) (Equip|Melee|Bow) [A-C]$)|(^Act [4-5] Bow [A-C]$)/) != null) {
     tc.Prob9 = Math.floor(Math.max(tc.Prob9 / config.eliteMultiplier, 2 * Math.sqrt(config.eliteMultiplier)));

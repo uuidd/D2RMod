@@ -190,6 +190,17 @@ if (config.traderieMinRunes) {
     const rSmall = 'r' + ((i - 1) + '').padStart(2, '0');
     twoWayRuneRecipe([rBig], [rSmall]);
   }
+  // 20# + 钥匙 -> 3 8#
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `1 ${rName['r20']} + 1 Key -> 3 ${rName['r08']}`,
+    numinputs: 2,
+    "input 1": "r20",
+    "input 2": "key",
+    output: "r08",
+    "output b": "r08",
+    "output c": "r08"
+  });
 }
 
 const sName = {
@@ -232,23 +243,20 @@ const sName = {
 }
 
 function runeAndGoodsRecipe(rune, type, unique) {
-  const uniBaseRecipe = {
-    ...baseRecipe,
-    numinputs: 2,
-    plvl: 100
-  }
   cubemain.rows.push({
-    ...uniBaseRecipe,
+    ...baseRecipe,
     description: `${rName[rune]} + ${sName[type]} -> ${unique}`,
+    numinputs: 2,
     'input 1': rune,
     'input 2': type,
-    output: unique
+    output: unique,
+    lvl: 100
   });
   cubemain.rows.push({
-    ...uniBaseRecipe,
-    description: `${unique} + ${sName['jew']} -> ${rName[rune]}`,
+    ...baseRecipe,
+    description: `${unique} -> 1 ${rName[rune]}`,
+    numinputs: 1,
     'input 1': unique,
-    'input 2': 'jew',
     output: rune
   });
 }
@@ -401,5 +409,143 @@ if (config.occupationExclusiveItems) {
   });
 }
 
+const gemName = {
+  gpv: "Perfect Amethyst",// 紫PG
+  gpy: "Perfect Topaz",// 黄PG
+  gpb: "Perfect Sapphire",// 蓝PG
+  gpg: "Perfect Emerald",// 绿PG
+  gpr: "Perfect Ruby",// 红PG
+  gpw: "Perfect Diamond", // 白PG
+  skz: "Perfect Skull" // 完美骷髅
+}
+
+
+function gemToOneAmethyst(gem, num) {
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `${num} ${gemName[gem]} -> 1 ${gemName['gpv']}`,
+    numinputs: num,
+    'input 1': `"${gem},qty=${num}"`,
+    output: 'gpv'
+  });
+}
+
+
+if (config.runeAndGemstone) {
+  // 宝石换成紫宝石
+  gemToOneAmethyst('gpy', 3);
+  gemToOneAmethyst('gpb', 3);
+  gemToOneAmethyst('gpg', 3);
+  gemToOneAmethyst('gpr', 2);
+  gemToOneAmethyst('gpw', 3);
+  gemToOneAmethyst('skz', 2);
+
+  // 1 完美宝石 = 3 无暇宝石
+  const gemClass = ['w', 'g', 'y', 'b', 'r'];
+  for (const gem of gemClass) {
+    cubemain.rows.push({
+      ...baseRecipe,
+      description: "1 Perfect " + gem + "= 3 Flawless " + gem,
+      numinputs: 1,
+      "input 1": "gp" + gem,
+      output: "gl" + gem,
+      "output b": "gl" + gem,
+      "output c": "gl" + gem,
+    });
+  }
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: "1 Perfect v = 3 Flawless v",
+    numinputs: 1,
+    "input 1": "gpv",
+    output: "gzv",
+    "output b": "gzv",
+    "output c": "gzv",
+  });
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: "1 Perfect sk = 3 Flawless sk",
+    numinputs: 1,
+    "input 1": "skz",
+    output: "skl",
+    "output b": "skl",
+    "output c": "skl",
+  });
+
+  // 20# + 无暇紫宝石 <=> 3 完美紫宝石
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `1 ${rName['r20']} + 1 Flawless Amethyst -> 3 ${gemName['gpv']}`,
+    numinputs: 2,
+    "input 1": "r20",
+    "input 2": "gzv",
+    output: "gpv",
+    "output b": "gpv",
+    "output c": "gpv",
+  });
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `3 ${gemName['gpv']} -> 1 ${rName['r20']} + 1 Flawless Amethyst`,
+    numinputs: 3,
+    "input 1": "gpv,qty=3",
+    output: "r20",
+    "output b": "gzv",
+  });
+
+  // 8# + 钥匙 <=> 1 完美紫宝石 + 钥匙
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `1 ${rName['r08']} + 1 Key -> 1 ${gemName['gpv']} + 1 Key`,
+    numinputs: 2,
+    "input 1": "r08",
+    "input 2": "key",
+    output: "gpv",
+    "output b": "key",
+  });
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `1 ${gemName['gpv']} + 1 Key -> 1 ${rName['r08']} + 1 Key`,
+    numinputs: 2,
+    "input 1": "gpv",
+    "input 2": "key",
+    output: "r08",
+    "output b": "key",
+  });
+
+}
+
+if (config.runeAndJew) {
+  // 20# + 蓝色珠宝 -> 3 亮金珠宝
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `1 ${rName['r20']} + 1 Thawing Potion -> 3 Rare Jewel`,
+    numinputs: 2,
+    "input 1": "r20",
+    "input 2": "wms",
+    output: "jew,rar",
+    "output b": "jew,rar",
+    "output c": "jew,rar",
+    plvl: 100
+  });
+  // 1 亮金珠宝 -> 3 蓝色珠宝
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `1 Rare Jewel -> 3 Magic Jewel`,
+    numinputs: 1,
+    "input 1": "jew,rar",
+    output: "jew,mag",
+    "output b": "jew,mag",
+    "output c": "jew,mag",
+    plvl: 100
+  });
+  // 8 蓝色珠宝 -> 20#
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `9 Magic Jewel -> 1 ${rName['r20']}`,
+    numinputs: 9,
+    "input 1": "jew,mag,qty=9",
+    output: "r20"
+  });
+}
 
 D2RMM.writeTsv(cubemainFilename, cubemain);
