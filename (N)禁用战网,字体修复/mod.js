@@ -1,4 +1,4 @@
-// ½ûÓÃÕ½Íø
+// ç¦ç”¨æˆ˜ç½‘
 if (config.notOnline) {
   const DISABLED_TOOLTIP = 'Not available in modded game.';
   const mainMenuPanelHDFilename = 'global\\ui\\layouts\\mainmenupanelhd.json';

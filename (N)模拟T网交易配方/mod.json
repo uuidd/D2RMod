@@ -1,0 +1,30 @@
+{
+  "name": "(N)模拟T网交易配方",
+  "description": "",
+  "author": "Demo",
+  "website": "",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "traderieRunes",
+      "type": "checkbox",
+      "name": "符文换符文",
+      "description": "模拟T网符文交易，以中后期为基准，与升级符文不需要宝石组件严重冲突！！！",
+      "defaultValue": true
+    },
+    {
+      "id": "occupationExclusiveItems",
+      "type": "checkbox",
+      "name": "通过购买商店合成职业专属物品",
+      "description": "通过购买商店合成职业专属物品，主要配和",
+      "defaultValue": false
+    },
+    {
+      "id": "traderieNecessity",
+      "type": "checkbox",
+      "name": "符文和常用暗金/绿色物品互换",
+      "description": "符文和常用暗金/绿色物品互换",
+      "defaultValue": true
+    }
+  ]
+}
