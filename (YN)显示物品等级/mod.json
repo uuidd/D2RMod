@@ -1,0 +1,44 @@
+{
+  "name": "(YN)显示物品等级",
+  "description": "在名称中显示物品等级，容易会被各种脚本覆盖，放较靠后",
+  "author": "olegbl",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/174",
+  "version": "1.3",
+  "config": [
+    {
+      "id": "weapons",
+      "type": "checkbox",
+      "name": "武器",
+      "description": "显示武器上的物品等级",
+      "defaultValue": true
+    },
+    {
+      "id": "armor",
+      "type": "checkbox",
+      "name": "护甲",
+      "description": "显示护甲上的物品等级",
+      "defaultValue": true
+    },
+    {
+      "id": "jewelry",
+      "type": "checkbox",
+      "name": "项链和戒指",
+      "description": "显示项链和戒指上的物品等级",
+      "defaultValue": true
+    },
+    {
+      "id": "charms",
+      "type": "checkbox",
+      "name": "神符",
+      "description": "显示神符上的物品等级",
+      "defaultValue": true
+    },
+    {
+      "id": "jewels",
+      "type": "checkbox",
+      "name": "珠宝",
+      "description": "显示珠宝上的物品等级",
+      "defaultValue": true
+    }
+  ]
+}
