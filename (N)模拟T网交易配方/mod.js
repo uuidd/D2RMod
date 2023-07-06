@@ -191,16 +191,16 @@ if (config.traderieMinRunes) {
     twoWayRuneRecipe([rBig], [rSmall]);
   }
   // 20# + 钥匙 -> 3 8#
-  cubemain.rows.push({
-    ...baseRecipe,
-    description: `1 ${rName['r20']} + 1 Key -> 3 ${rName['r08']}`,
-    numinputs: 2,
-    "input 1": "r20",
-    "input 2": "key",
-    output: "r08",
-    "output b": "r08",
-    "output c": "r08"
-  });
+  // cubemain.rows.push({
+  //   ...baseRecipe,
+  //   description: `1 ${rName['r20']} + 1 Key -> 3 ${rName['r08']}`,
+  //   numinputs: 2,
+  //   "input 1": "r20",
+  //   "input 2": "key",
+  //   output: "r08",
+  //   "output b": "r08",
+  //   "output c": "r08"
+  // });
 }
 
 const sName = {
@@ -346,7 +346,7 @@ if (config.traderieNecessity) {
 const occBaseRecipe = {
   ...baseRecipe,
   numinputs: 2,
-  'input 2': 'jew',
+  'input 2': 'yps',
   plvl: 100
 }
 
@@ -356,56 +356,56 @@ if (config.occupationExclusiveItems) {
     ...occBaseRecipe,
     description: 'Bow + Jewel -> Random Ama Bow',
     'input 1': 'miss',
-    output: `"abow,nor"`
+    output: `"abow,nor,bas"`
   });
   // 珠宝+标枪＝亚马逊标枪，刷新配方不变
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Javelin + Jewel -> Random Ama Javelin',
     'input 1': 'jave',
-    output: `"ajav,nor"`
+    output: `"ajav,nor,bas"`
   });
   // 珠宝+矛＝亚马逊矛，刷新配方不变
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Spear + Jewel -> Random Ama Spear',
     'input 1': 'spea',
-    output: `"aspe,nor"`
+    output: `"aspe,nor,bas"`
   });
   // 珠宝+盾牌＝圣骑士盾牌
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Shield + Jewel -> Random Pal Shield',
     'input 1': 'shie',
-    output: `"ashd,nor"`
+    output: `"ashd,nor,bas"`
   });
   // 珠宝+双手法杖＝女巫法珠
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Staff + Jewel -> Random Sor Orb',
     'input 1': 'staf',
-    output: `"orb,nor"`
+    output: `"orb,nor,bas"`
   });
   // 珠宝+死灵魔杖＝死灵法师盾牌
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Wand + Jewel -> Random Nec Skull Shield',
     'input 1': 'wand',
-    output: `"head,nor"`
+    output: `"head,nor,bas"`
   });
   // 珠宝+任意头盔＝野蛮人头盔
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Helm + Jewel -> Random Bar Helm',
     'input 1': 'helm',
-    output: `"phlm,nor"`
+    output: `"phlm,nor,bas"`
   });
   // 珠宝+木棒＝德鲁伊头盔
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Club + Jewel -> Random Dru Helm',
     'input 1': 'club',
-    output: `"pelt,nor"`
+    output: `"pelt,nor,bas"`
   });
 }
 
@@ -421,24 +421,30 @@ const gemName = {
 
 
 function gemToOneAmethyst(gem, num) {
-  cubemain.rows.push({
+  const gemRecipe = {
     ...baseRecipe,
-    description: `${num} ${gemName[gem]} -> 1 ${gemName['gpv']}`,
-    numinputs: num,
-    'input 1': `"${gem},qty=${num}"`,
-    output: 'gpv'
-  });
+    description: `6 ${gemName[gem]} -> ${num} ${gemName['gpv']}`,
+    numinputs: 6,
+    'input 1': `"${gem},qty=6"`,
+    output: 'gpv',
+    'output b': 'gpv'
+  }
+  if (num === 3) {
+    cubemain.rows.push({...gemRecipe, 'output c': 'gpv'});
+  } else {
+    cubemain.rows.push(gemRecipe);
+  }
 }
 
 
 if (config.runeAndGemstone) {
   // 宝石换成紫宝石
-  gemToOneAmethyst('gpy', 3);
-  gemToOneAmethyst('gpb', 3);
-  gemToOneAmethyst('gpg', 3);
-  gemToOneAmethyst('gpr', 2);
-  gemToOneAmethyst('gpw', 3);
-  gemToOneAmethyst('skz', 2);
+  gemToOneAmethyst('gpy', 2);
+  gemToOneAmethyst('gpb', 2);
+  gemToOneAmethyst('gpg', 2);
+  gemToOneAmethyst('gpr', 3);
+  gemToOneAmethyst('gpw', 2);
+  gemToOneAmethyst('skz', 3);
 
   // 1 完美宝石 = 3 无暇宝石
   const gemClass = ['w', 'g', 'y', 'b', 'r'];
