@@ -2,11 +2,11 @@ const treasureclassexFilename = 'global\\excel\\treasureclassex.txt';
 const treasureclassex = D2RMM.readTsv(treasureclassexFilename);
 treasureclassex.rows.forEach((row) => {
   const treasureClass = row['Treasure Class'];
-  // not all rows are valid entries
+  // 并非所有行都是有效的条目
   if (treasureClass !== '') {
-    // Sunder Charms have a massive default NoDrop rate of 23899
-    // if this is set to "0" (e.g. /players 0), then a charm is dropped
-    // from practically every single monster, which is not desireable
+    //Sunder Charms有23899的巨大默认NoDrop率
+    //如果将其设置为“0”（例如/players 0），则会丢弃一个符咒
+    //来自几乎每一个怪物，这是不可取的
     const players =
       treasureClass === 'Sunder Charms' ? config.sunderplayers : config.players;
     if (players === 0) {

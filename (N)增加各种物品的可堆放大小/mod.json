@@ -4,6 +4,7 @@
   "author": "olegbl",
   "website": "https://www.nexusmods.com/diablo2resurrected/mods/175",
   "version": "1.2",
+  "file": "misc.txt、weapons.txt",
   "config": [
     {
       "id": "tomes",

@@ -1,0 +1,19 @@
+{
+  "name": "(N)基德出售+1传送小型神符",
+  "description": "添加一个新的暗金小型神符，1级可用传送技能（由基德出售）",
+  "author": "marekW",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/245",
+  "version": "1.0",
+  "file": "misc.txt、uniqueitems.txt、items.json、item-names.json",
+  "config": [
+    {
+      "id": "lvlreq",
+      "type": "number",
+      "name": "设置小型神符等级需求",
+      "description": "添加一个附带1级的传送的小型神符，设置传送小型神符等级需求 (最低是 24 级可用)",
+      "defaultValue": 24,
+      "maxValue": 99,
+      "minValue": 24
+    }
+  ]
+}
