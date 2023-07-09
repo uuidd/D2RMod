@@ -1,0 +1,16 @@
+{
+  "name": "(N)Boss首杀(bug杀)",
+  "description": "安达利尔、督瑞尔、墨菲斯托、迪亚波罗、巴尔每次击杀都为首杀(战网可通过未通关小号卡bug，又称bug杀)，支持全难度恐怖地带",
+  "author": "lil174 & Demo",
+  "version": "1.3",
+  "file": "treasureclassex.txt",
+  "config": [
+    {
+      "id": "boss_q",
+      "type": "checkbox",
+      "name": "让关底BOSS每次都是首杀掉落",
+      "description": "让关底BOSS每次都是首杀掉落，支持全难度支持恐怖地带",
+      "defaultValue": true
+    }
+  ]
+}
