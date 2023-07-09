@@ -294,6 +294,304 @@ switch (config.caseSize) {
       true // overwrite any conflicts
     );
     break;
+  case 'case_16X16':
+    const inventoryFilename2 = 'global\\excel\\inventory.txt';
+    const inventory2 = D2RMM.readTsv(inventoryFilename2);
+    inventory2.rows.forEach((row) => {
+      const id = row.class;
+      if (
+        id === 'Bank Page 1' ||
+        id === 'Big Bank Page 1' ||
+        id === 'Bank Page2' ||
+        id === 'Big Bank Page2'
+      ) {
+        row.gridX = 16;
+        row.gridY = 16;
+      }
+    });
+    D2RMM.writeTsv(inventoryFilename2, inventory2);
+
+    const profileHDFilename2 = 'global\\ui\\layouts\\_profilehd.json';
+    const profileHD2 = D2RMM.readJson(profileHDFilename2);
+    profileHD2.LeftPanelRect_ExpandedStash = {
+      x: 236,
+      y: -651,
+      width: 1687,
+      height: 1507,
+    };
+    profileHD2.PanelClickCatcherRect_ExpandedStash = {
+      x: 0,
+      y: 0,
+      width: 1687,
+      height: 1507,
+    };
+// offset the left hinge so that it doesn't overlap with content of the left panel
+    profileHD2.LeftHingeRect = {x: -236 - 25, y: 630};
+    D2RMM.writeJson(profileHDFilename2, profileHD2);
+
+    const profileLVFilename2 = 'global\\ui\\layouts\\_profilelv.json';
+    const profileLV2 = D2RMM.readJson(profileLVFilename2);
+    profileLV2.LeftPanelRect_ExpandedStash = {
+      x: 0,
+      y: -856,
+      width: 1687,
+      height: 1507,
+      scale: 1.16,
+    };
+    D2RMM.writeJson(profileLVFilename2, profileLV2);
+
+    const bankOriginalLayoutFilename2 =
+      'global\\ui\\layouts\\bankoriginallayout.json';
+    const bankOriginalLayout2 = D2RMM.readJson(bankOriginalLayoutFilename2);
+    bankOriginalLayout2.children.forEach((child) => {
+      if (child.name === 'grid') {
+        child.fields.cellCount.x = 16;
+        child.fields.cellCount.y = 13;
+      }
+    });
+    D2RMM.writeJson(bankOriginalLayoutFilename2, bankOriginalLayout2);
+
+    const bankExpansionLayoutFilename2 =
+      'global\\ui\\layouts\\bankexpansionlayout.json';
+    const bankExpansionLayout2 = D2RMM.readJson(bankExpansionLayoutFilename2);
+    bankExpansionLayout2.children = bankExpansionLayout2.children.map((child) => {
+      if (
+        child.name === 'PreviousSeasonToggleDisplay' ||
+        child.name === 'PreviousLadderSeasonBankTabs'
+      ) {
+        return false;
+      }
+      if (child.name === 'grid') {
+        child.fields.cellCount.x = 16;
+        child.fields.cellCount.y = 13;
+      }
+      if (child.name === 'BankTabs') {
+        child.fields.tabCount = 8;
+        child.fields.textStrings = [
+          '@personal',
+          '@shared',
+          '@shared',
+          '@shared',
+          '@shared',
+          '@shared',
+          '@shared',
+          '@shared',
+        ];
+      }
+      return true;
+    });
+    D2RMM.writeJson(bankExpansionLayoutFilename2, bankExpansionLayout2);
+
+    const bankOriginalLayoutHDFilename2 =
+      'global\\ui\\layouts\\bankoriginallayouthd.json';
+    const bankOriginalLayoutHD2 = D2RMM.readJson(bankOriginalLayoutHDFilename2);
+    bankOriginalLayoutHD2.fields.rect = '$LeftPanelRect_ExpandedStash';
+    bankOriginalLayoutHD2.children.forEach((child) => {
+      if (child.name === 'grid') {
+        child.fields.cellCount.x = 16;
+        child.fields.cellCount.y = 13;
+        child.fields.rect.x = child.fields.rect.x - 229;
+        child.fields.rect.y = child.fields.rect.y - 572;
+      }
+      if (child.name === 'click_catcher') {
+        child.fields.rect = '$PanelClickCatcherRect_ExpandedStash';
+      }
+      if (child.name === 'background') {
+        child.fields.filename = 'PANEL\\Stash\\StashPanel_BG_Expanded';
+        child.fields.rect = {x: 0, y: 0};
+      }
+      if (child.name === 'gold_amount') {
+        child.fields.rect.x = 60 + 60 + 16;
+        child.fields.rect.y = 61 + 16;
+      }
+      if (child.name === 'gold_withdraw') {
+        child.fields.rect.x = 60 + 16;
+        child.fields.rect.y = 58 + 16;
+      }
+      if (child.name === 'title') {
+        child.fields.rect = {
+          x: 91 + (1687 - 1162) / 2,
+          y: 64,
+          width: 972,
+          height: 71,
+        };
+      }
+      if (child.name === 'close') {
+        child.fields.rect.x = child.fields.rect.x + 500;
+        child.fields.rect.y = child.fields.rect.y - 140;
+      }
+    });
+    D2RMM.writeJson(bankOriginalLayoutHDFilename2, bankOriginalLayoutHD2);
+
+    const bankExpansionLayoutHDFilename2 =
+      'global\\ui\\layouts\\bankexpansionlayouthd.json';
+    const bankExpansionLayoutHD2 = D2RMM.readJson(bankExpansionLayoutHDFilename2);
+    bankExpansionLayoutHD2.children = bankExpansionLayoutHD2.children.filter(
+      (child) => {
+        if (
+          child.name === 'PreviousSeasonToggleDisplay' ||
+          child.name === 'PreviousLadderSeasonBankTabs'
+        ) {
+          return false;
+        }
+        if (child.name === 'grid') {
+          child.fields.cellCount.x = 16;
+          child.fields.cellCount.y = 16;
+          child.fields.rect.x = child.fields.rect.x - 90;
+          child.fields.rect.y = child.fields.rect.y - 230;
+        }
+        if (child.name === 'background') {
+          child.fields.filename = 'PANEL\\Stash\\StashPanel_BG_Expanded';
+          child.fields.rect = {x: -90, y: -140};
+        }
+        if (child.name === 'BankTabs') {
+          child.fields.filename = 'PANEL\\stash\\Stash_Tabs_Expanded';
+          child.fields.rect.x = child.fields.rect.x - 90;
+          child.fields.rect.y = child.fields.rect.y - 235;
+          child.fields.tabCount = 8;
+          // 249 x 80 -> 197 x 80 (bottom 5 pixels are overlay)
+          child.fields.tabSize = {x: 197, y: 75};
+          child.fields.tabPadding = {x: 0, y: 0};
+          child.fields.inactiveFrames = [0, 0, 0, 0, 0, 0, 0, 0];
+          child.fields.activeFrames = [1, 1, 1, 1, 1, 1, 1, 1];
+          child.fields.disabledFrames = [0, 0, 0, 0, 0, 0, 0, 0];
+          child.fields.textStrings = [
+            '@personal',
+            '@shared',
+            '@shared',
+            '@shared',
+            '@shared',
+            '@shared',
+            '@shared',
+            '@shared',
+          ];
+        }
+        if (child.name === 'gold_amount') {
+          child.fields.rect.x = 60 + 60;
+          child.fields.rect.y = child.fields.rect.y - 1430;
+        }
+        if (child.name === 'gold_withdraw') {
+          child.fields.rect.x = 60;
+          child.fields.rect.y = child.fields.rect.y - 1430;
+        }
+        return child.name !== 'title';
+
+      }
+    );
+    D2RMM.writeJson(bankExpansionLayoutHDFilename2, bankExpansionLayoutHD2);
+
+    const controllerOverlayHDFilename2 =
+      'global\\ui\\layouts\\controller\\controlleroverlayhd.json';
+    const controllerOverlayHD2 = D2RMM.readJson(controllerOverlayHDFilename2);
+    controllerOverlayHD2.children.forEach((child) => {
+      if (child.name === 'Anchor') {
+        child.children.forEach((subchild) => {
+          if (subchild.name === 'ControllerCursorBounds') {
+            delete subchild.fields.fitToParent;
+            subchild.fields.rect = {
+              x: -285,
+              y: 0,
+              width: 2880 + 285,
+              height: 1763,
+            };
+          }
+        });
+      }
+    });
+    D2RMM.writeJson(controllerOverlayHDFilename2, controllerOverlayHD2);
+
+    const bankOriginalControllerLayoutHDFilename2 =
+      'global\\ui\\layouts\\controller\\bankoriginallayouthd.json';
+    const bankOriginalControllerLayoutHD2 = D2RMM.readJson(
+      bankOriginalControllerLayoutHDFilename2
+    );
+    bankOriginalControllerLayoutHD2.children.forEach((child) => {
+      if (child.name === 'background') {
+        child.fields.filename =
+          'Controller/Panel/Stash/V2/Classic_StashPanelBG_Expanded';
+        child.fields.rect.x = child.fields.rect.x - 285 - 81 - 2 - 120;
+        child.fields.rect.y = child.fields.rect.y + 17 - 293 + 100;
+      }
+      if (child.name === 'gold_amount' || child.name === 'gold_withdraw') {
+        child.fields.rect.x = child.fields.rect.x - 476 - 280;
+        child.fields.rect.y = child.fields.rect.y - 1404 + 30;
+      }
+      if (child.name === 'gold_max') {
+        child.fields.rect.x = child.fields.rect.x - 476 + 927;
+        child.fields.rect.y = child.fields.rect.y - 1404 - 90 + 25;
+      }
+      if (child.name === 'grid') {
+        child.fields.rect.x = -285 + 9;
+        child.fields.rect.y = 119;
+      }
+    });
+    D2RMM.writeJson(
+      bankOriginalControllerLayoutHDFilename2,
+      bankOriginalControllerLayoutHD2
+    );
+
+    const bankExpansionControllerLayoutHDFilename2 =
+      'global\\ui\\layouts\\controller\\bankexpansionlayouthd.json';
+    const bankExpansionControllerLayoutHD2 = D2RMM.readJson(
+      bankExpansionControllerLayoutHDFilename2
+    );
+    bankExpansionControllerLayoutHD2.children.forEach((child) => {
+      if (child.name === 'background') {
+        child.fields.filename = 'Controller/Panel/Stash/V2/StashPanelBG_Expanded';
+        child.fields.rect.x = child.fields.rect.x - 285 - 81;
+        child.fields.rect.y = child.fields.rect.y + 17 - 293;
+      }
+      if (child.name === 'gold_amount' || child.name === 'gold_withdraw') {
+        child.fields.rect.x = child.fields.rect.x - 476 - 280;
+        child.fields.rect.y = child.fields.rect.y - 1404;
+      }
+      if (child.name === 'gold_max') {
+        child.fields.rect.x = child.fields.rect.x - 476 + 927;
+        child.fields.rect.y = child.fields.rect.y - 1404 - 90;
+      }
+      if (child.name === 'grid') {
+        child.fields.cellCount.x = 16;
+        child.fields.cellCount.y = 13;
+        child.fields.rect.x = -285 + 9;
+        child.fields.rect.y = 119;
+      }
+      if (child.name === 'BankTabs') {
+        child.fields.filename = 'Controller/Panel/Stash/V2/StashTabs_Expanded';
+        child.fields.focusIndicatorFilename =
+          'Controller/HoverImages/StashTab_Hover_Expanded';
+        child.fields.rect.x = child.fields.rect.x - 300;
+        child.fields.rect.y = child.fields.rect.y + 10;
+        child.fields.tabCount = 8;
+        child.fields.tabSize = {x: 175, y: 120};
+        child.fields.tabPadding = {x: 0, y: 0};
+        child.fields.inactiveFrames = [1, 1, 1, 1, 1, 1, 1, 1];
+        child.fields.activeFrames = [0, 0, 0, 0, 0, 0, 0, 0];
+        child.fields.disabledFrames = [1, 1, 1, 1, 1, 1, 1, 1];
+        child.fields.textStrings = [
+          '@personal',
+          '@shared',
+          '@shared',
+          '@shared',
+          '@shared',
+          '@shared',
+          '@shared',
+          '@shared',
+        ];
+        child.fields.tabLeftIndicatorPosition = {x: -42, y: -2};
+        child.fields.tabRightIndicatorPosition = {x: 1135 + 300, y: -2};
+      }
+    });
+    D2RMM.writeJson(
+      bankExpansionControllerLayoutHDFilename2,
+      bankExpansionControllerLayoutHD2
+    );
+
+    D2RMM.copyFile(
+      'case16X16/hd', // <mod folder>\hd
+      'hd', // <diablo 2 folder>\mods\<modname>\<modname>.mpq\data\hd
+      true // overwrite any conflicts
+    );
+    break;
 }
 switch (config.packageSize) {
   case 'package_13X8':

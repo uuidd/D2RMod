@@ -22,6 +22,11 @@
           "value": "case_16X13",
           "label": "16X13大箱子(物品不缩放)",
           "description": "长16宽13"
+        },
+        {
+          "value": "case_16X16",
+          "label": "16X16大箱子(物品不缩放)",
+          "description": "长16宽16"
         }
       ]
     },
