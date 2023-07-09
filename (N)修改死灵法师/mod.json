@@ -1,0 +1,191 @@
+{
+  "name": "(N)修改死灵法师",
+  "description": "改变死灵法师的技能",
+  "author": "Fransango",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/223",
+  "version": "1.7",
+  "config": [
+    {
+      "id": "allgolems",
+      "type": "checkbox",
+      "name": "可召唤所有的魔像",
+      "description": "启用可召唤所有的魔像",
+      "defaultValue": true
+    },
+    {
+      "id": "revivenotime",
+      "type": "checkbox",
+      "name": "重生的怪物没有时间限制",
+      "description": "复活的怪物没有时间限制",
+      "defaultValue": true
+    },
+	{
+      "id": "reviverecolor",
+      "type": "checkbox",
+      "name": "更改重生的怪物颜色",
+      "description": "更改重生的怪物颜色。默认颜色值是D2R的灰度恢复。",
+      "defaultValue": true
+    }, 
+	{
+      "id": "reviverecolorpri",
+      "type": "number",
+      "name": "设置重生怪物的颜色",
+      "description": "设置重生怪物的颜色. 选择0表示无灰度。可能的值0到127。",
+      "defaultValue": 85,
+      "minValue": 0,
+      "maxValue": 127
+    },
+	{
+      "id": "reviverecolorshift",
+      "type": "number",
+      "name": "重生怪物的颜色偏移",
+      "description": "重生怪物的颜色偏移. 选择0表示无灰度。可能的值0到127。",
+      "defaultValue": 73,
+      "minValue": 0,
+      "maxValue": 127
+    },
+	{
+      "id": "reviverecolorred",
+      "type": "number",
+      "name": "Revives RGB color Red",
+      "description": "Color red RGB. For natural color, dont touch this. Posible value 0 to 255.",
+      "defaultValue": 255,
+      "minValue": 0,
+      "maxValue": 255
+    },
+	{
+      "id": "reviverecolorgreen",
+      "type": "number",
+      "name": "Revives RGB color Green",
+      "description": "Color green RGB. For natural color, dont touch this. Posible value 0 to 255.",
+      "defaultValue": 255,
+      "minValue": 0,
+      "maxValue": 255
+    },
+	{
+      "id": "reviverecolorblue",
+      "type": "number",
+      "name": "Revives RGB color Blue",
+      "description": "Color blue RGB. For natural color, dont touch this. Posible value 0 to 255.",
+      "defaultValue": 255,
+      "minValue": 0,
+      "maxValue": 255
+    },
+    {
+      "id": "skeletonnoblood",
+      "type": "checkbox",
+      "name": "骷髅不使用尸体爆炸动画",
+      "description": "移除召唤骷髅时的尸体爆炸动画。现在你可以召唤而不需要让所有东西都充满鲜血。",
+      "defaultValue": true
+    },    
+	{
+      "id": "skeletonshield",
+      "type": "checkbox",
+      "name": "Skeleton with kyte shield. With enought mastery they spawn with bad shield, but they can spawn with a kyte shield.",
+      "description": "Every skeleton summoned have kyte shield. En D2R each skeleton have 5% chance of have a shield that give 3% chance of block.",
+      "defaultValue": true
+    },
+    {
+      "id": "elementalgolem",
+      "type": "select",
+      "name": "Elementalgolem",
+      "description": "Choose what elementalgolem want summon with firegolem skill. Every golem have extra resis and damage to the choosen element, absorbelement damage and have that element aura.",
+      "defaultValue": "Firegolem",
+      "options": [
+        { "value":"Firegolem", "label": "Firegolem. Has fire element." },
+        { "value":"Icegolem", "label": "Icegolem. Has cold element." },
+        { "value":"IcegolemFull", "label": "Icegolem with custom textures. Has cold element." },
+        { "value":"Stormgolem", "label": "Stormgolem. Has lightning element." },
+        { "value":"StormgolemFull", "label": "Stormgolem with custom textures. Has lightning element." },
+        { "value":"Arcanegolem", "label": "Arcanegolem. Has magic element." },
+        { "value":"ArcanegolemFull", "label": "Arcanegolem with custom textures. Has magic element." }
+      ]
+    },
+    {
+      "id": "fanaticskeleton",
+      "type": "select",
+      "name": "Fanatic skeleton",
+      "description": "Dont want use axes for that beast runeword? Bored of useless skeletons? This modification do that skeleton has fanaticism aura. Dont waste the atk speed and hit rating in yourself if your skeletons will do all the work.",
+      "defaultValue": "Fanaticskeleton",
+      "options": [
+        { "value":"Disable", "label": "Disable" },
+        { "value":"Fanaticskeleton", "label": "Fanatic skeleton. Has fanaticism aura that level up every 3 levels." }
+      ]
+    },
+    {
+      "id": "priestskeleton",
+      "type": "select",
+      "name": "Priest skeleton",
+      "description": "Skeleton mages are useless. They dont survive much, have low damage and their missiles have little precision... At least they dominate the elements. Why don't they defend us from them? Priestskeleton has salvation for rise resistences.",
+      "defaultValue": "Disable",
+      "options": [
+        { "value":"Disable", "label": "Disable" },
+        { "value":"Priestskeleton", "label": "Priest skeleton. Has salvation aura that level up every 3 levels starting at level 10." }
+      ]
+    },    
+	{
+      "id": "quicksandgolem",
+      "type": "select",
+      "name": "Sandgolem",
+      "description": "Replace claygolem for sandgolem. Everyone knows that if the sand covers you, it will not only slow you down, you won't be able to defend yourself either. This modification replace claygolem for him upgraded version: the sandgolem. Sandgolem has conviction aura that reduce def and elemental resists.",
+      "defaultValue": "Disable",
+      "options": [
+        { "value":"Disable", "label": "Disable" },
+        { "value":"Quicksandgolem", "label": "Sandgolem. Has conviction aura that level up every 2 levels." }
+      ]
+    },	
+    {
+      "id": "bloodygolem",
+      "type": "select",
+      "name": "Bloodygolem",
+      "description": "Replace bloodgolem for bloodygolem. Bloodgolem is so useless. He only heal the summoner. This modification add bloodygolem that has prayer aura that heal your team.",
+      "defaultValue": "Disable",
+      "options": [
+        { "value":"Disable", "label": "Disable" },
+        { "value":"Bloodygolem", "label": "Bloodygolem. Has prayer aura that level up every 2 levels." }
+      ]
+    },	
+    {
+      "id": "steelgolem",
+      "type": "select",
+      "name": "Steelgolem",
+      "description": "Replace irongolem for steelgolem. Create a steelgolem golem that will protect your team. Steelgolem has Defiance aura that rise defense. This golem can be summoned with a aura item. The resultant golem will have thorn + defiance + item aura.",
+      "defaultValue": "Disable",
+      "options": [
+        { "value":"Disable", "label": "Disable" },
+        { "value":"Steelgolem", "label": "Steelgolem. Has concentration aura that level up every 3 levels." }
+      ]
+    },
+    {
+      "id": "legion",
+      "type": "select",
+      "name": "Legion",
+      "description": "We are legion. Your legion of revives will protect you. Revive has defiance aura that rise defense.",
+      "defaultValue": "Disable",
+      "options": [
+        { "value":"Disable", "label": "Disable" },
+        { "value":"Legion", "label": "Legion. Has defiance aura that level up every 3 levels." }
+      ]
+    },	
+    {
+      "id": "nocollision",
+      "type": "select",
+      "name": "No collisions",
+      "description": "Remove collosion with summons. This help for no get struck in corridors, or let your meele minions move through a wall of mages. Recomended for earlygame wout enigma.",
+      "defaultValue": "Disable",
+      "options": [
+        { "value":"Disable", "label": "Disable" },
+        { "value":"mages", "label": "Only mages." },
+        { "value":"skeletons", "label": "All skeletons." },
+        { "value":"all", "label": "All skeletons and golems." }
+      ]
+    },
+    {
+      "id": "customnames",
+      "type": "checkbox",
+      "name": "Custom names. Warning may be no compatible with new versions. If game crash, test disabling this option",
+      "description": "Install custom names for party sprites.",
+      "defaultValue": true
+    }
+  ]
+}
