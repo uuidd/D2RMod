@@ -553,5 +553,32 @@ if (config.runeAndJew) {
     output: "r20"
   });
 }
-
+if (config.runeAndWhile) {
+  // 四孔君主盾
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `${rName['r20']} + ${sName['shie']} -> Normal Monarch`,
+    numinputs: 2,
+    'input 1': 'r20',
+    'input 2': 'shie',
+    output: 'uit,nor',
+    'mod 1': 'sock',
+    'mod 1 min': 4,
+    'mod 1 max': 4,
+    lvl: 72
+  });
+  // 四孔水晶剑
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `${rName['r08']} + ${sName['swor']} -> Normal Crystal Sword`,
+    numinputs: 2,
+    'input 1': 'r08',
+    'input 2': 'swor',
+    output: 'crs,nor',
+    'mod 1': 'sock',
+    'mod 1 min': 4,
+    'mod 1 max': 4,
+    lvl: 30
+  });
+}
 D2RMM.writeTsv(cubemainFilename, cubemain);

@@ -11,7 +11,7 @@
       "type": "select",
       "name": "箱子大小",
       "description": "",
-      "defaultValue": "case_16X13",
+      "defaultValue": "case_16X16",
       "options": [
         {
           "value": "def",
@@ -35,7 +35,7 @@
       "type": "select",
       "name": "背包大小",
       "description": "",
-      "defaultValue": "def",
+      "defaultValue": "package_13X8",
       "options": [
         {
           "value": "def",
@@ -54,7 +54,7 @@
       "type": "select",
       "name": "盒子大小",
       "description": "",
-      "defaultValue": "box_6X4",
+      "defaultValue": "box_10X10",
       "options": [
         {
           "value": "def",

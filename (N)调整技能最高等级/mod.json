@@ -10,8 +10,8 @@
       "id": "maxlvl",
       "type": "number",
       "name": "技能最高等级",
-      "description": "将技能最高等级设置为1到99之间。",
-      "defaultValue": 20,
+      "description": "将技能最高等级设置为1到99之间。默认为20",
+      "defaultValue": 40,
       "minValue": 1,
       "maxValue": 99
     }

@@ -1,6 +1,6 @@
 {
-  "name": "(N)光柱",
-  "description": "当掉落符文、符咒、仇恨钥匙、毁灭钥匙、恐惧钥匙、宝石、完美宝石时，会产生一道光柱。基于。",
+  "name": "(N)光柱效果",
+  "description": "当掉落符文、符咒、6boss钥匙、宝石、完美宝石时，会产生一道光柱",
   "author": "qhu91it",
   "website": "https://www.nexusmods.com/diablo2resurrected/mods/197",
   "version": "1.0",
@@ -15,8 +15,8 @@
     {
       "id": "gemStack",
       "type": "checkbox",
-      "name": "宝石堆叠",
-      "description": "宝石堆用光柱",
+      "name": "堆叠的宝石也有光柱",
+      "description": "宝石堆叠光柱，有使用宝石堆叠功能mod才开启这个",
       "defaultValue": false
     },
     {
@@ -29,8 +29,8 @@
     {
       "id": "runeStack",
       "type": "checkbox",
-      "name": "符文堆栈",
-      "description": "符文堆叠的光柱",
+      "name": "堆叠的符文也有光柱",
+      "description": "符文堆叠的光柱，有使用符文堆叠功能mod才开启这个",
       "defaultValue": false
     },
     {
