@@ -1,13 +1,11 @@
 const miscFilename = 'global\\excel\\misc.txt';
 const misc = D2RMM.readTsv(miscFilename);
 misc.rows.push({
-	...misc.rows.find((row) => row.name === 'Small Charm'),
+	...misc.rows.find((row) => row.name === 'Grand Charm'),
 	name: 'Charm of Teleport',
 	level: 1,
 	code: 'cm9',
 	unique: 1,
-	cost: 0,
-	'gamble cost': 0,
 	GheedMin: 1,
 	GheedMax: 1,
 	GheedMagicMin: 1,
@@ -54,7 +52,7 @@ D2RMM.writeTsv(uniqueitemsFilename, uniqueitems);
 const itemsFilename = 'hd\\items\\items.json';
 const items = D2RMM.readJson(itemsFilename);
 items.push({
-	cm9: { asset: 'charm/charm_small' },
+	cm9: { asset: 'charm/charm_grand' },
 });
 D2RMM.writeJson(itemsFilename, items);
 
@@ -64,7 +62,7 @@ itemNames.push({
 	id: D2RMM.getNextStringID(),
 	Key: 'Charm of Teleport',
 	enUS: 'Charm of Teleport',
-	zhTW: '傳送小型咒符',
+	zhTW: '傳送之咒符',
 	deDE: 'Charm of Teleport',
 	esES: 'Charm of Teleport',
 	frFR: 'Charm of Teleport',
@@ -75,6 +73,6 @@ itemNames.push({
 	jaJP: 'Charm of Teleport',
 	ptBR: 'Charm of Teleport',
 	ruRU: 'Charm of Teleport',
-	zhCN: '传送小型神符',
+	zhCN: '传送之神符',
 });
 D2RMM.writeJson(itemNamesFilename, itemNames);
