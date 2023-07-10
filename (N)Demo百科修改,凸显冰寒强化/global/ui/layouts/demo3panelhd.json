@@ -1,0 +1,1618 @@
+{
+    "type": "VideoOptionsPanel",
+    "name": "demo3panel",
+    "fields": {
+        "priority": 9003,
+        "rect": {
+            "x": -865,
+            "y": 392,
+            "width": "$OptionsPanelWidth",
+            "height": "$OptionsPanelHeight"
+        },
+        "anchor": {
+            "x": 0.5
+        },
+        "applySettingsImmediately": true
+    },
+    "children": [
+        {
+            "type": "ImageWidget",
+            "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": {
+                    "x": 1.0
+                },
+                "filename": "PauseMenu\\VerticalScroll"
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget",
+                    "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": {
+                            "x": 1.0
+                        },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ScrollViewWidget",
+            "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController"
+            },
+            "children": [
+                {
+                    "type": "TableWidget",
+                    "name": "OptionsTable",
+                    "fields": {
+                        "columns": [
+                            "$OptionsTableColumn1",
+                            "$OptionsTableColumn2"
+                        ],
+                        "rowHeight": "$ModTableRowHeight"
+                    },
+                    "children": [
+                        {
+                            "type": "TableRowWidget",
+                            "name": "RowModQoL",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "ModQolTitle",
+                                    "fields": {
+                                        "text": "·符文之语·",
+                                        "style": {
+                                            "fontColor": "$FontColorGold",
+                                            "pointSize": "$XMediumLargeFontSize",
+                                            "spacing": "$ReducedSpacing",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            },
+                                            "options": {
+                                                "lineWrap": true
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Gameplay Changes",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GameplayChangesT",
+                                    "fields": {
+                                        "text": "",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "ImageWidget",
+                            "name": "Rwords",
+                            "fields": {
+                                "rect": {
+                                    "x": 50,
+                                    "y": 125,
+                                    "scale": 1.30
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLrunes",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 166,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn01",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 202,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn02",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 238,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn03",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 272,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn04",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 306,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn05",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 342,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn06",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 378,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn07",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 414,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn08",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 447,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn09",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 483,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn10",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 519,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn11",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 553,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn12",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 588,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn13",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 623,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn14",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 659,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn15",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 694,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn16",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 730,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn17",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 765,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn18",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 800,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn19",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 835,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn20",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 869,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn21",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 905,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn22",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 940,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn23",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 975,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn24",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1010,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn25",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1044,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn26",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1080,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn27",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1114,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn28",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1150,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn29",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1186,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn30",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1220,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn31",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1255,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn32",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1290,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn33",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1325,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn34",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1361,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn35",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune2",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1395,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn36",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1430,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn37",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1465,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn38",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1500,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn39",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1535,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn40",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1570,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn41",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1605,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn42",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1640,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn43",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1675,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn44",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1710,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn45",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1745,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn46",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1780,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn47",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1815,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn48",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1851,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn49",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1886,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn50",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1921,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn51",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1956,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn52",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 1991,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn53",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2026,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn54",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2061,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn55",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2096,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn56",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2131,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn57",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2166,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn58",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2201,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn59",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2236,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn60",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2272,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn61",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2307,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn62",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2342,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn63",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2377,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn64",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2412,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn65",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2447,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn66",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2482,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn67",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2517,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn68",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2552,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn69",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2587,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn70",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2622,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn71",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2657,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn72",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2692,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn73",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2727,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn74",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2762,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn75",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2797,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn76",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2832,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn77",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2867,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn78",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2902,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn79",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2937,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn80",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 2974,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn81",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3009,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn82",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3044,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn83",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3079,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn84",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3114,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn85",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3149,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn86",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3184,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn87",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3219,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn88",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3254,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn89",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3289,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn90",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3324,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn91",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3359,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn92",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3394,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn93",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3429,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn94",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3464,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn95",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3499,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn96",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3536,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn97",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3571,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn98",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "Rune",
+                            "fields": {
+                                "rect": {
+                                    "x": 15,
+                                    "y": 3604,
+                                    "scale": 0.5
+                                },
+                                "filename": "PANEL\\chestnutinfo\\PLtab2",
+                                "hoveredFrame": 2,
+                                "tooltipString": "@plrn99",
+                                "sound": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

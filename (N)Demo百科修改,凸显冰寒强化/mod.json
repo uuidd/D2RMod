@@ -6,7 +6,7 @@
   "version": "1.0",
   "config": [
     {
-      "id": "baike",
+      "id": "demoInfo",
       "type": "checkbox",
       "name": "Demo百科修改",
       "description": "Demo百科修改",
@@ -31,6 +31,13 @@
       "type": "checkbox",
       "name": "凸显冰寒强化文本",
       "description": "冰寒强化文本",
+      "defaultValue": true
+    },
+    {
+      "id": "demoSelect",
+      "type": "checkbox",
+      "name": "查询 Demo 百科",
+      "description": "查询 Demo 百科",
       "defaultValue": true
     }
   ]

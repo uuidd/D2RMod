@@ -1,0 +1,1702 @@
+{
+    "type": "VideoOptionsPanel",
+    "name": "demo1panel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": {
+            "x": 0.5
+        },
+        "applySettingsImmediately": true
+    },
+    "children": [
+        {
+            "type": "ImageWidget",
+            "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": {
+                    "x": 1.0
+                },
+                "filename": "PauseMenu\\VerticalScroll"
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget",
+                    "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": {
+                            "x": 1.0
+                        },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ScrollViewWidget",
+            "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController"
+            },
+            "children": [
+                {
+                    "type": "TableWidget",
+                    "name": "OptionsTable",
+                    "fields": {
+                        "columns": [
+                            "$OptionsTableColumn1",
+                            "$OptionsTableColumn2"
+                        ],
+                        "rowHeight": "$ModTableRowHeight"
+                    },
+                    "children": [
+                        {
+                            "type": "TableRowWidget",
+                            "name": "RowModQoL",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "ModQolTitle",
+                                    "fields": {
+                                        "text": "·综合·",
+                                        "style": {
+                                            "fontColor": "$FontColorGold",
+                                            "pointSize": "$XMediumLargeFontSize",
+                                            "spacing": "$ReducedSpacing",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            },
+                                            "options": {
+                                                "lineWrap": true
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Gameplay Changes",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GameplayChangesT",
+                                    "fields": {
+                                        "text": "界面",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC1",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC1T",
+                                    "fields": {
+                                        "text": " - 7页大仓库大盒子(标配)",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC3T",
+                                    "fields": {
+                                        "text": " - 腰带全部16格(没腰带也16格)",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 佣兵全装备",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC6T",
+                                    "fields": {
+                                        "text": " - 法爷刺客亚马逊略微美容了一下",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC6T",
+                                    "fields": {
+                                        "text": " - 地狱之牛美白了一下",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC6T",
+                                    "fields": {
+                                        "text": " - 稀有符文掉落现在有光柱",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC6T",
+                                    "fields": {
+                                        "text": " - 稀有符文有更明显的掉落音效",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC6T",
+                                    "fields": {
+                                        "text": " - 为新技能设计了图标和新的技能树",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC6T",
+                                    "fields": {
+                                        "text": " - 修复了所有技能的描述，现在更直观",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC6T",
+                                    "fields": {
+                                        "text": " - 部分装备换了新物品栏模型",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC6T",
+                                    "fields": {
+                                        "text": " - 怪的血条颜色更显眼",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Gameplay Changes",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GameplayChangesT",
+                                    "fields": {
+                                        "text": "人物",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC2",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC2T",
+                                    "fields": {
+                                        "text": " - 人物出生属性加强，带药水，书和盒子，基础移速增加，升级6属性点，2技能点",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 70级后升级经验降低",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 增加游戏难度，普通抗性-30，噩梦-80，地狱-140",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC6T",
+                                    "fields": {
+                                        "text": " - 死亡不再扣除经验值",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Gameplay Changes",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GameplayChangesT",
+                                    "fields": {
+                                        "text": "佣兵",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC4T",
+                                    "fields": {
+                                        "text": " - 佣兵血量和三维大幅加强",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC4T",
+                                    "fields": {
+                                        "text": " - 佣兵可以使用的物品类别增加：",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": "ACT1:所有弓，弩，亚马逊专属弓",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": "ACT2:所有长柄武器，矛，亚马逊专属矛",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": "ACT3:所有近战单手武器，所有盾牌，圣骑士专属盾牌",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": "ACT5:所有近战双手武器，野蛮人专属头盔",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": "ACT5(双持):2把所有近战单手武器，野蛮人专属头盔",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": " - 佣兵技能加强：",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": "ACT1:多重箭，翼尾箭，变身亚马逊，大幅增加三速",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": "ACT2:复仇，闪电攻击，天堂之拳，变身圣骑士，大幅增加三速",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": "ACT3:燎原，冰封球，球状闪电，变身法师，大幅增加三速",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": "ACT5:战斗狂嗥，大叫，不变身(本来就是野蛮人就不必变了)，但大幅增加三速",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Gameplay Changes",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GameplayChangesT",
+                                    "fields": {
+                                        "text": "装备",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 新增8种头环，补齐了原版没有的所有扩展级",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 新增200种暗金装备，补齐了所有物品的暗金形态",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 加强了所有原有的暗金装备",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 部分暗金装备有额外特效",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 新增套装",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 加强了所有原有的套装，低级套装随机带孔",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 给部分套装增加了变身效果",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 新增符文34#，35#",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 新增符文之语(详情在“符文之语”页面查看)",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 加强了所有原有的符文之语",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 大部分符文之语可用的装备类型增加",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 刺客的2种拳剑和爪换了模型，更易于区分",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Gameplay Changes",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GameplayChangesT",
+                                    "fields": {
+                                        "text": "NPC",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - ACT5的凯恩老头待在更近的地方，方便辨识物品",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 卖东西价格上限提高",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC9",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC9T",
+                                    "fields": {
+                                        "text": " - 赌博价格降低",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC13",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC13T",
+                                    "fields": {
+                                        "text": " - 赌博物品中补齐所有人物专属装备",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC14",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC14T",
+                                    "fields": {
+                                        "text": " - 赌博概率提升，更容易赌出套装暗金",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC14",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC14T",
+                                    "fields": {
+                                        "text": " - 增加新药水，百分比回复生命法力，各大NPC有售",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Gameplay Changes",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GameplayChangesT",
+                                    "fields": {
+                                        "text": "属性",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC15",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC15T",
+                                    "fields": {
+                                        "text": " - 书，钥匙的堆叠数量增加到100，售价大幅降低",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC15",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC15T",
+                                    "fields": {
+                                        "text": " - 所有物品都可生成镶孔：手套，靴子，物品栏装备镶嵌属性为武器。腰带，首饰镶嵌属性为防具",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "fields": {
+                                        "text": " - 所有投掷武器和箭矢十字弓矢数量增加，并自动回复数量",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC5",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC5T",
+                                    "fields": {
+                                        "text": " - 精良(超强的)物品属性加强",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC5",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC5T",
+                                    "fields": {
+                                        "text": " - 所有蓝色和亮金装备的属性加强",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC5",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC5T",
+                                    "fields": {
+                                        "text": " - 现在蓝色和亮金装备上会出现更多好的词缀",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC5",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC5T",
+                                    "fields": {
+                                        "text": " - 增加了新属性：冰霜技能，闪电技能，毒素技能，魔法技能(效果同火焰技能)",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC5",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC5T",
+                                    "fields": {
+                                        "text": " - 增加了新属性：百分比属性加成(例如：+20%力量)",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 增加了新属性：+男生/女生技能等级(字面意思)",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 加强了所有宝石和符文的属性",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC5",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC5T",
+                                    "fields": {
+                                        "text": " - 所有珠宝都随机带职业技能",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC6T",
+                                    "fields": {
+                                        "text": " - 简化并新加了合成公式(详情可以在盒子里查看)",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Gameplay Changes",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GameplayChangesT",
+                                    "fields": {
+                                        "text": "掉落",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 大幅增加暗金，套装和符文的掉率",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 所有BOSS都无限BUG杀(任务杀)",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 女伯爵可以掉落全部符文",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 牛场符文掉率提升10倍",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 完美宝石也可以掉落了",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 删除药水(除了紫瓶)卷轴等杂物掉落，增加金币掉落",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 6BOSS钥匙的掉率翻倍",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "GC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GC4T",
+                                    "fields": {
+                                        "text": " - 部分BOSS必掉暗金",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "Gameplay Changes",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "GameplayChangesT",
+                                    "fields": {
+                                        "text": "其他",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": "$RMDOptionsDividerRect",
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": " - 修复了部分属性的错误文字表述",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC3T",
+                                    "fields": {
+                                        "text": " - 修复了部分属性的排列优先级",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC4T",
+                                    "fields": {
+                                        "text": " - 补齐了几种基础药水的文字描述",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget",
+                            "name": "VC4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget",
+                                    "name": "VC4T",
+                                    "fields": {
+                                        "text": " - 修复了部分物品的错译",
+                                        "style": {
+                                            "fontColor": "$FontColorWhite",
+                                            "pointSize": "$MediumFontSize",
+                                            "alignment": {
+                                                "h": "left",
+                                                "v": "center"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
