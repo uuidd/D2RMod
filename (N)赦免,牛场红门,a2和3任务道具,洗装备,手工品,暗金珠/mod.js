@@ -110,11 +110,20 @@ if (config.convertPandemoniumKeys) {
     "*eol\r": 0,
   });
   cubemain.rows.push({
-    description: "Key of Hate -> Key of Terror",
+    description: "Key of Hate -> Key of Destroy",
     enabled: 1,
     version: 100,
     numinputs: 1,
     "input 1": "pk2",
+    output: "pk3",
+    "*eol\r": 0,
+  });
+  cubemain.rows.push({
+    description: "Key of Destroy -> Key of Terror",
+    enabled: 1,
+    version: 100,
+    numinputs: 1,
+    "input 1": "pk3",
     output: "pk1",
     "*eol\r": 0,
   });
@@ -418,32 +427,6 @@ if (config.a3task_item) {
     'input 2': 'rvl,qty=3',
     'output': 'qf2',
     '*eol\r': 0
-  });
-}
-
-// 镶嵌物分离
-if (config.unsocket) {
-  const unsocketRecipe = {
-    description: 'Empty Sockets',
-    enabled: 1,
-    version: 100,
-    numinputs: 2,
-    // input 1 defined below
-    'input 2': 'jew',
-    output: '"useitem,rem"',
-    '*eol\r': 0,
-  };
-
-  cubemain.rows.push({
-    ...unsocketRecipe,
-    description: `${unsocketRecipe.description} On Armor`,
-    'input 1': `"armo,sock"`,
-  });
-
-  cubemain.rows.push({
-    ...unsocketRecipe,
-    description: `${unsocketRecipe.description} On Weapon`,
-    'input 1': `"weap,sock"`,
   });
 }
 

@@ -29,22 +29,15 @@
     {
       "id": "mara3",
       "type": "checkbox",
-      "name": "3个暗金项链合成马拉的项链",
-      "description": "3个暗金项链合成马拉的项链",
+      "name": "6个暗金项链合成马拉的项链",
+      "description": "6个暗金项链合成马拉的项链",
       "defaultValue": true
     },
     {
       "id": "soj3",
       "type": "checkbox",
-      "name": "3个暗金戒指合成乔丹之石",
-      "description": "3个暗金戒指合成乔丹之石",
-      "defaultValue": true
-    },
-    {
-      "id": "soj33",
-      "type": "checkbox",
-      "name": "33号+戒指合成乔丹之石",
-      "description": "33号+戒指合成乔丹之石",
+      "name": "6个暗金戒指合成乔丹之石",
+      "description": "6个暗金戒指合成乔丹之石",
       "defaultValue": true
     },
     {
@@ -55,20 +48,6 @@
       "defaultValue": true
     },
     {
-      "id": "traderieRunes",
-      "type": "checkbox",
-      "name": "模拟T网符文交换符文",
-      "description": "模拟T网符文交易，以中后期为基准",
-      "defaultValue": true
-    },
-    {
-      "id": "occupationExclusiveItems",
-      "type": "checkbox",
-      "name": "通过购买商店合成职业专属物品",
-      "description": "通过购买商店合成职业专属物品",
-      "defaultValue": false
-    },
-    {
       "id": "refreshWhite",
       "type": "checkbox",
       "name": "刷新专属白色物品属性",
@@ -76,10 +55,10 @@
       "defaultValue": false
     },
     {
-      "id": "traderieUnique",
+      "id": "jpBlue",
       "type": "checkbox",
-      "name": "模拟T网符文交换暗金物品",
-      "description": "模拟T网符文交换暗金物品",
+      "name": "合成极品蓝装",
+      "description": "合成极品蓝装",
       "defaultValue": true
     }
   ]

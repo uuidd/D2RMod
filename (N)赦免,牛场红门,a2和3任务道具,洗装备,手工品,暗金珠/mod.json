@@ -1,5 +1,5 @@
 {
-  "name": "(N)赦免,牛场红门,a2和3任务道具,洗装备,手工品,暗金珠,打孔,分离镶嵌物",
+  "name": "(N)赦免,牛场红门,a2和3任务道具,洗装备,手工品,暗金珠",
   "description": "盒子合成配方改良。",
   "author": "Demo",
   "website": "https://bbs.d.163.com/forum.php?mod=viewthread&tid=174903947&extra=",
@@ -29,7 +29,7 @@
     {
       "id": "convertPandemoniumKeys",
       "type": "checkbox",
-      "name": "a1/a2钥匙互转",
+      "name": "a1/a2/a5钥匙互转",
       "description": "启用添加一个配方来转换钥匙（恐怖->仇恨->毁灭->恐怖）。",
       "defaultValue": true
     },
@@ -115,20 +115,6 @@
       "type": "checkbox",
       "name": "回城书 + 3大紫 = 克林姆的遗愿",
       "description": "A3任务道具合成公式,不替换原有公式",
-      "defaultValue": true
-    },
-    {
-      "id": "socket",
-      "type": "checkbox",
-      "name": "使用珠宝打孔",
-      "description": "通过将一个有镶嵌物的物品与1-6颗珠宝一起转化。",
-      "defaultValue": true
-    },
-    {
-      "id": "unsocket",
-      "type": "checkbox",
-      "name": "分离镶嵌物",
-      "description": "允许通过将已有镶嵌物的物品与珠宝一起转化来分离物品与镶嵌物。",
       "defaultValue": true
     }
   ]
