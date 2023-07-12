@@ -19,7 +19,7 @@
         {
           "value": "will",
           "label": "Will无屏蔽",
-          "description": "https://bbs.d.163.com/forum.php?mod=viewthread&tid=174019384"
+          "description": "十分简洁，无吐槽，含各种物品变量，场景等级，缩短地面显示物品，符文编号等，适合老玩家"
         },
         {
           "value": "will_p",
@@ -29,7 +29,7 @@
         {
           "value": "wing",
           "label": "Wing无屏蔽",
-          "description": "https://bbs.d.163.com/forum.php?mod=viewthread&tid=174577212"
+          "description": "细节UI显示跟will有差别，地面显示比Will详细，其他与Will相同，无吐槽"
         },
         {
           "value": "wing_p",
@@ -39,7 +39,7 @@
         {
           "value": "tina",
           "label": "Tina无屏蔽",
-          "description": "https://bbs.d.163.com/forum.php?mod=viewthread&tid=174831875"
+          "description": "有吐槽，新老翻译对照，含各种物品变量，场景等级，缩短地面显示物品，符文编号等"
         },
         {
           "value": "tina_p",
@@ -47,15 +47,27 @@
           "description": "开荒新角色勿用，https://bbs.d.163.com/forum.php?mod=viewthread&tid=174831875"
         },
         {
-          "value": "dfcn_p",
+          "value": "dfcn",
           "label": "DFCN无屏蔽",
-          "description": "https://bbs.d.163.com/forum.php?mod=viewthread&tid=174751487"
+          "description": "无吐槽，中英文对照，含各种物品变量，场景等级，缩短地面显示物品，符文编号等"
 
         },
         {
           "value": "dfcn_p",
           "label": "DFCN屏蔽版",
           "description": "开荒新角色勿用，https://bbs.d.163.com/forum.php?mod=viewthread&tid=174751487"
+
+        },
+        {
+          "value": "yte",
+          "label": "YTE无屏蔽",
+          "description": "无法替换字体，有吐槽，地面彩色图标，含各种物品变量，场景等级，缩短地面显示物品，符文编号等，适合新手"
+
+        },
+        {
+          "value": "yte_p",
+          "label": "YTE屏蔽版",
+          "description": "开荒新角色勿用，无法替换字体，https://bbs.d.163.com/forum.php?mod=viewthread&tid=174608896"
 
         }
       ]
