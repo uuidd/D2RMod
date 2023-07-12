@@ -1,0 +1,129 @@
+{
+    "type": "SettingsPanel", "name": "LamEsens7TipsPanel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5 },
+        "applySettingsImmediately": false
+    },
+     "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll"
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd"
+                    }
+                }
+            ]
+        },
+
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView","fields": {"fitToParent": true,"scrollControllerName": "ScrollController"}, 
+            "children": [
+                {"type": "TableWidget", "name": "SocketsTable",
+                 "fields": {
+                    "columns": [ { "width": 1700, "alignment": { "h": "fit", "v": "fit" } } ],
+                    "rowHeight": "$ModTableRowHeight"
+                 },
+                 "children": [
+                    {"type": "TextBoxWidget", "name": "RowRune",
+                     "fields": {
+                        "rect": {"x": 40, "y": 0, "width": 1700, "height": 120},
+                        "text": "·【暗黑物品在地面上保留时间】·",
+                        "style": "$StyleSettingsTitle"
+                     },
+                     "children": [ 
+                        {"type": "ImageWidget", "name": "Divider", 
+                         "fields": {"rect": {"x": 0, "y": 100},"filename": "PauseMenu\\Divider"  }
+                        },
+                        {"type": "TextBoxWidget","name": "LongDescription",
+		                 "fields": {
+                            "rect":{"x": 40, "y": 120, "width": 1600, "height": 550},
+                            "text": "物品掉落或被丢掉以后，若无人捡起，则会在持续一定时间后消失。\n无论是在城内还是城外，无论附近有没有玩家，都不影响持续时间。\n当然，你可以用鼠标隔一段时间点一次来防止它消失。\n无论你是否把它放在物品栏里，只要被鼠标点起来，持续时间将重新计算。\n========================\n任务物品　　　　　　：永不消失\n亮金、橙色、绿色、暗金物品：30分钟\n蓝色魔法物品　　　　：20分钟\n珠宝　　　　　　　　：视颜色而定\n----------------------------------------\n宝石、符文　　　　　：20分钟\n----------------------------------------\n金钱（10000以上）　：20分钟\n金钱（10000及以下）：10分钟\n----------------------------------------\n杂品杂物、白色装备　：10分钟\n========================",
+                            "style":{
+                                "fontFace": "Formal","pointSize": "$XMediumFontSize",
+                                "options": {"lineWrap": true,"pipeCharacterBehavior": "handle","newlineHandling": "standard" },
+                                "spacing": "$ReducedSpacing",
+                                "alignment":{"h": "left"},
+                                "fontColor": "$DescriptionTextColor"
+                            }
+                         }
+		                }
+                     ]
+                    },
+                    {"type": "TextBoxWidget", "name": "MRCRowTitle",
+                     "fields": {
+                        "rect": {"x": 40, "y": 1000,"width": 1700, "height": 120},
+                        "text": "·【K6BOSS钥匙的掉落概率】·",
+                        "style": "$StyleSettingsTitle"
+                     }, 
+                     "children": [
+                        {"type": "ImageWidget", "name": "Divider",
+                         "fields": {"rect": {"x": 0, "y": 100},"filename": "PauseMenu\\Divider" }
+                        },
+                        {"type": "TextBoxWidget","name": "LongDescription",
+                         "fields": {
+                            "rect":{"x": 0, "y": 120, "width": 1600, "height": 1450},
+                            "text": "Key of Terror(恐惧之钥)\n当你杀死Countess时,根据该TC可以算出,有 1/(19+11+19+15+3+1) = 1/68 的机会选中pk1(Key of Terror)。\n因此，Key of Terror在Countess Item (H)的一次遍历中，有1/68的几率掉落，由于Countess的Countess Item (H)最多可掉落5件物品,那么最大的掉落几率则为1-((1-1/68)^5) ≈ 1/14.如果掉落2个或2个以上,几率会更低.\nKey of Terror的掉落几率约为1/14.\n\nKey of Hate(憎恨之钥)\n选中Key of Hate的几率为1/(19+9+15+5+3+4+1)=1/56\nKey of Hate掉落几率 1-((1-1/56)^5) ≈ 1/11.6.\n\nKey of Destruction(毁灭之钥)\n选中Key of Destruction的几率为1/(19+14+19+5+3+1)=1/61\nKey of Destruction掉落几率 1-((1-1/61)^5) ≈ 1/12.6.\n\n备注:\n1.以上计算得出的几率均为近似值.\n2.以上计算过程均默认为单人难度.多人难度会缩小NoDrop值,对掉落有利.",
+                            "style":{
+                                "fontFace": "Formal","pointSize": "$XMediumFontSize",
+                                "options": {"lineWrap": true,"pipeCharacterBehavior": "handle","newlineHandling": "standard" },"spacing": "$ReducedSpacing","alignment":{"h": "left"},
+                                "fontColor": "$DescriptionTextColor"
+                            }
+                         }
+                        }
+                     ]
+                    },
+                    {"type": "TextBoxWidget", "name": "MRCRowTitle",
+                     "fields": {
+                        "rect": {"x": 40, "y": 2150,"width": 1700, "height": 120},
+                        "text": "·【赌博(Gamble)详细解析】·",
+                        "style": "$StyleSettingsTitle"
+                     },
+                     "children": [
+                        {"type": "ImageWidget", "name": "Divider",
+                         "fields": {"rect": {"x": 0, "y": 100},"filename": "PauseMenu\\Divider" }
+                        },
+                        {"type": "TextBoxWidget","name": "LongDescription",
+                         "fields": {
+                            "rect":{"x": 0, "y": 120, "width": 1600, "height": 1450},
+                            "text": "赌博(Gamble)详细解析\n\n(由 Hammerman 提供)\n供赌博的物品的生成过程如下:\n\n1. 生成基础级(Base)物品\n\n生成的基础级物品的 Qlvl 不高于 Clvl+4 .生成的基础级物品的 Ilvl 在 Clvl-5 到 Clvl+4 之间随机.\nClvl:赌博者的等级\n关于 Qlvl 请看Qlvl说明\n关于 Ilvl 请看这里\n赌博不会生成除刺客爪子之外的角色专用物品。\n\n2. 基础级物品升级成扩展级(Exceptional)物品\n\n   升级成扩展级的概率为:\n   Excep% = (1 + (Ilvl - Excep_Qlvl) * 0.9)%\n   其中 Excep_Qlvl 为基础级物品对应的扩展级物品的Qlvl. 若 Ilvl < Excep_Qlvl, 则不会发生升级.\n\n3. 扩展级物品升级成精华级(Elite)物品\n\n   升级成精华级的概率为:\n   Elite% = (1 + (Ilvl - Elite_Qlvl) * 0.33)%\n   其中 Elite_Qlvl 为扩展级物品对应的精华级物品的Qlvl. 若 Ilvl < Elite_Qlvl, 则不会发生升级.\n\n4. 物品成色的决定\n以下染色概率为旧版v1.10的赌博概率\nmagic: 89.85%\nrare: 10%\nset: 0.1%\nunique: 0.05%\n\n5. 对亮金和蓝色物品选择词缀\nMax_Alvl: 物品上可能出现的词缀的最高等级.\nMax_Alvl 的决定过程如下:\n(1) 在 ilvl 和 99 二者中取较小者, 以下记为 m;\n(2) 在 Qlvl 与 m 二者中取较大者, 以下记为 q;\n(3.1) 若 MagicLevel 不为零, 则 Max_Alvl = q + MagicLevel;\n(3.2) 否则:\n    (3.2.1) 若 q < (99 - Qlvl/2), 则 Max_Alvl = q - Qlvl/2\n    (3.2.2) 否则 Max_Alvl = 2*q - 99\n(4) 若 Max_Alvl > 99, 则 Max_Alvl = 99\n然后随机选取 Alvl 不高于 Max_Alvl 的词缀.\n蓝色物品上最多有一个前缀和一个后缀, 仅有一个后缀的几率为 50%,\n仅有一个前缀的几率为 25%, 既有前缀又有后缀的几率为 25% .\n亮金物品上最多可以有三个前缀和三个后缀.\n例外的是,亮金珠宝上最多有4个词缀,只是仍然可以出现三个前缀或后缀的情况.\n同组的词缀不会在一件物品上重复出现。\n\n相关FAQ：\n1. mf对gamble的成色判断有影响吗？游戏人数对gamble有影响吗？\n　没有，没有\n\n2. 不同的难度和npc对gamble有区别吗？\n　他们唯一的区别就是赌博出的物品再sell回去的价钱\n\n3. 如果物品的ilvl足够支持它的qlvl，但不足以支持该物品的unique形态，将会如何．\n　物品被降格为rare，并且耐久度变为3倍\n\n4. circlets, coronets, tiaras，diadems 是如何划分扩展和精华的？\n　circlet->tiara->diadem\n　coronet->tiara->diadem\n　如果系统生成一个coronet，并且成功的升级为tiara（或者diadem），在图象上仍会保留coronet的形象。\n注：circlet不会升级为tiara或diadem。\n\n5. gamble会得到白色物品吗？\n　不会\n\n6. gamble会得到ethreal形态物品吗？\n　不会,除非是那几个天生eth的unique物品",
+                            "style":{
+                                "fontFace": "Formal","pointSize": "$XMediumFontSize",
+                                "options": {"lineWrap": true,"pipeCharacterBehavior": "handle","newlineHandling": "standard" },
+                                "spacing": "$ReducedSpacing",
+                                "alignment":{"h": "left"},
+                                "fontColor": "$DescriptionTextColor"
+                            }
+                         }
+                        }
+                     ]
+                    },
+                    { "type": "TextBoxWidget", "name": "RowRune",
+                        "fields": {  "rect": {"x": 0, "y": 6000}},
+                        "children": [
+                            {"type": "ImageWidget", "name": "Divider", 
+                             "fields": {"rect": {"x": 0, "y": 20}, "filename": "PauseMenu\\Divider"  }
+                            }
+                        ]
+                    }
+                 ]
+                }
+            ]
+        }
+    ]
+}

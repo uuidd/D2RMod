@@ -1,0 +1,963 @@
+{
+    "type": "SettingsPanel", "name": "ModRecipes2Panel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5 },
+        "applySettingsImmediately": false
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll"
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController"
+            },
+            "children": [
+                {
+                    "type": "TableWidget", "name": "MRTable",
+                    "fields": {
+                        "columns": [                             
+                            { "width": 1700, "alignment": { "h": "fit", "v": "fit" } }
+                        ],
+                        "rowHeight": "$ModTableRowHeight"
+                    },
+                    "children": [
+                        {
+                            "type": "TableRowWidget", "name": "MRCRowTitle",
+                            "fields": {
+                                "rect": {"width": 1700, "height": 120}
+                            },
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "MRCTextTitle",
+                                "fields": {
+                                    "text": "·符文合成·",
+                                    "style": "$StyleSettingsTitle"
+                                },
+                                "children": [
+                                    {
+                                        "type": "ImageWidget", "name": "Divider",
+                                        "fields": {
+                                            "rect": {"x": 0, "y": 100},
+                                            "filename": "PauseMenu\\Divider" 
+                                        }
+                                    } 
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                        "type": "TableRowWidget", "name": "MRCRow",
+                        "fields": {
+                            "rect": {"width": 1700, "height": 100}
+                        },
+                    "children": [
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 0, "scale": 1.00 },
+                                "filename": "items\\misc\\rune\\eld_rune",
+                                "sound": "select",
+                                "pointSize": "$MediumFontSize",
+                                "textColor": "$FontColorLightRed",
+                                "tooltipString": "ÿc3ÿc82#(Eld) = 1#(El)×3"
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 100, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\tir_rune",
+                                "tooltipString": "ÿc3ÿc83#(Tir) = 2#(Eld)×3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 200, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\nef_rune",
+                                "tooltipString": "ÿc3ÿc84#(Nef) = 3#(Tir)×3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 300, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\eth_rune",
+                                "tooltipString": "ÿc3ÿc85#(Eth) = 4#(Nef)×3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 400, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\ith_rune",
+                                "tooltipString": "ÿc3ÿc86#(Ith) = 5#(Eth)×3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 500, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\tal_rune",
+                                "tooltipString": "ÿc3ÿc87#(Tal) = 6#(Ith)×3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 600, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\ral_rune",
+                                "tooltipString": "ÿc3ÿc88#(Ral) = 7#(Tal)×3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 700, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\ort_rune",
+                                "tooltipString": "ÿc3ÿc89#(Ort) = 8#(Ral)×3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 800, "scale": 1.00 },
+                                "filename": "items\\misc\\rune\\Thul_rune",
+                                "tooltipString": "ÿc3ÿc810#(Thul) = 9#(Ort)×3",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 900, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Amn_rune",
+                                "tooltipString": "ÿc3ÿc811#(Amn) = 10#(Thul)×3 + @gcy",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1000, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Sol_rune",
+                                "tooltipString": "ÿc3ÿc812#(Sol) = 11#(Amn)×3 + @gcv",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1100, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Shael_rune",
+                                "tooltipString": "ÿc3ÿc813#(Shael) = 12#(Sol)×3 + @gcb",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1200, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Dol_rune",
+                                "tooltipString": "ÿc3ÿc814#(Dol) = 13#(Shael)×3 + @gcr",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1300, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Hel_rune",
+                                "tooltipString": "ÿc3ÿc815#(Hel) = 14#(Dol)×3 + @gcg",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1400, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Io_rune",
+                                "tooltipString": "ÿc3ÿc816#(Io) = 15#(Hel)×3 + @gcw",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1500, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Lum_rune",
+                                "tooltipString": "ÿc3ÿc817#(Lum) = 16#(Io)×3 + @gfy",
+                                "sound": ""
+                            }
+                        }                
+                        ]},
+                        {
+                            "type": "TableRowWidget", "name": "MRCRow",
+                            "fields": {
+                                "rect": {"width": 1700, "height": 100}
+                            },
+                            "children": [
+                            {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 0, "scale": 1.00 },
+                                "filename": "items\\misc\\rune\\Ko_rune",
+                                "tooltipString": "ÿc3ÿc818#(Ko) = 17#(Lum)×3 + @gfv",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 100, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Fal_rune",
+                                "tooltipString": "ÿc3ÿc819#(Fal) = 18#(Ko)×3 + @gfb",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 200, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Lem_rune",
+                                "tooltipString": "ÿc3ÿc820#(Lem) = 19#(Fal)×3 + @gfr",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 300, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Pul_rune",
+                                "tooltipString": "ÿc3ÿc821#(Pul) = 20#(Lem)×3 + @gfg",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 400, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Um_rune",
+                                "tooltipString": "ÿc3ÿc822#(Um) = 21#(Pul)×2 + @gfw",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 500, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Mal_rune",
+                                "tooltipString": "ÿc3ÿc823#(Mal) = 22#(Um)×2 + @gsy",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 600, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Ist_rune",
+                                "tooltipString": "ÿc3ÿc824#(Ist) = 23#(Mal)×2 + @gsv",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 700, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Gul_rune",
+                                "tooltipString": "ÿc3ÿc825#(Gul) = 24#(Ist)×2 + @gsb",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 800, "scale": 1.00 },
+                                "filename": "items\\misc\\rune\\Vex_rune",
+                                "tooltipString": "ÿc3ÿc826#(Vex) = 25#(Gul)×2 + @gsr",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 900, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Ohm_rune",
+                                "tooltipString": "ÿc3ÿc827#(Ohm) = 26#(Vex)×2 + @gsg",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1000, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Lo_rune",
+                                "tooltipString": "ÿc3ÿc828#(Lo) = 27#(Ohm)×2 + @gsw",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1100, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Sur_rune",
+                                "tooltipString": "ÿc3ÿc829#(Sur) = 28#(Lo)×2 + @gly",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1200, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Ber_rune",
+                                "tooltipString": "ÿc3ÿc830#(Ber) = 29#(Sur)×2 + @gzv",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1300, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Jah_rune",
+                                "tooltipString": "ÿc3ÿc831#(Jah) = 30#(Ber)×2 + @glb",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1400, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\Cham_rune",
+                                "tooltipString": "ÿc3ÿc832#(Cham) = 31#(Jah)×2 + @glr",
+                                "sound": ""
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget", "name": "Rune",
+                            "fields": {
+                                "rect": { "x": 1500, "scale": 1.00  },
+                                "filename": "items\\misc\\rune\\zod_rune",
+                                "tooltipString": "ÿc3ÿc833#(Zod) = 32#(Cham)×2 + @glg",
+                                "sound": ""
+                            }
+                        }
+                        ]},
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "fields": {
+                                "rect": {"width": 1700, "height": 120}
+                            },
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "·装备升级·",
+                                    "style": "$StyleSettingsTitle"
+                                },
+                                "children": [
+                                {
+                                    "type": "ImageWidget", "name": "Divider",
+                                    "fields": {
+                                        "rect": {"x": 0, "y": 100},
+                                        "filename": "PauseMenu\\Divider" 
+                                    }
+                                } 
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "亮金防具普通级 => 扩展级：8# + 10# + 完美紫宝石",
+                                    "style": "$StyleRWRune"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "亮金防具扩展级 => 精华级：18# + 21# + 完美紫宝石",
+                                    "style": "$StyleRWRune"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "亮金武器普通级 => 扩展级：9# + 11# + 完美蓝宝石",
+                                    "style": "$StyleRWRune"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "亮金武器扩展级 => 精华级：19# + 22# + 完美蓝宝石",
+                                    "style": "$StyleRWRune"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "暗金防具普通级 => 扩展级：7# + 13# + 完美钻石",
+                                    "style": "$StyleRWName"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "暗金防具扩展级 => 精华级：18# + 20# + 完美钻石",
+                                    "style": "$StyleRWName"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "暗金武器普通级 => 扩展级：8# + 12# + 完美绿宝石",
+                                    "style": "$StyleRWName"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "暗金武器扩展级 => 精华级：17# + 21# + 完美绿宝石",
+                                    "style": "$StyleRWName"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "fields": {
+                                "rect": {"width": 1700, "height": 120}
+                            },
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "·装备打孔·",
+                                    "style": "$StyleSettingsTitle"
+                                },
+                                "children": [
+                                {
+                                    "type": "ImageWidget", "name": "Divider",
+                                    "fields": {
+                                        "rect": {"x": 0, "y": 100},
+                                        "filename": "PauseMenu\\Divider" 
+                                    }
+                                } 
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "盔甲打孔：7#+10#+完美黄宝石(仅限白色装备)",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 3, "g": 165, "b": 252, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "武器打孔：8#+11#+完美紫宝石(仅限白色装备)",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 3, "g": 165, "b": 252, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "头盔打孔：8#+10#+完美蓝宝石(仅限白色装备)",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 3, "g": 165, "b": 252, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "盾牌打孔：7#+11#+完美红宝石(仅限白色装备)",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 3, "g": 165, "b": 252, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "金色装备打孔：3个完美骷髅+乔丹之石(只能打1孔)",
+                                    "style": "$StyleRWRune"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "fields": {
+                                "rect": {"width": 1700, "height": 120}
+                            },
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "·洗装备·",
+                                    "style": "$StyleSettingsTitle"
+                                },
+                                "children": [
+                                {
+                                    "type": "ImageWidget", "name": "Divider",
+                                    "fields": {
+                                        "rect": {"x": 0, "y": 100},
+                                        "filename": "PauseMenu\\Divider" 
+                                    }
+                                } 
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "6 完美骷髅 + 金色物品 = 同类型金色物品",
+                                    "style": "$StyleRWRune"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "text",
+                                "fields": {
+                                    "text": "1 完美骷髅 + 乔丹之石 + 金色物品 = 更高品质的同类型金色物品",
+                                    "style": "$StyleRWRune"
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "3 完美宝石 + 蓝色物品 = 同类型蓝色物品",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 58, "g": 85, "b": 233, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "3 戒指 = 1 项链",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 58, "g": 85, "b": 233, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "3 项链  = 1 戒指",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 58, "g": 85, "b": 233, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "fields": {
+                                "rect": {"width": 1700, "height": 120}
+                            },
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "·其他合成公式·",
+                                    "style": "$StyleSettingsTitle"
+                                },
+                                "children": [
+                                {
+                                    "type": "ImageWidget", "name": "Divider",
+                                    "fields": {
+                                        "rect": {"x": 0, "y": 100},
+                                        "filename": "PauseMenu\\Divider" 
+                                    }
+                                } 
+                                ]
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "移除镶嵌：15# + 回城卷轴",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 223, "g": 85, "b": 32, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "防具修复：8# + 防具 （对无形无效）",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 244, "g": 221, "b": 11, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "武器修复：9# + 武器 （对无形无效）",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 244, "g": 221, "b": 11, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "防具修复(充能)：8# + 任意裂开的宝石 （对无形无效）",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 244, "g": 221, "b": 11, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "武器修复(充能)：9# + 任意碎裂的宝石 （对无形无效）",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 244, "g": 221, "b": 11, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "提高防具品质：1#+任意碎裂的宝石",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 146, "g": 248, "b": 7, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "提高武器品质：2#+任意碎裂的宝石",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 146, "g": 248, "b": 7, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "护身符刷新属性：+ 任意三颗完美宝石",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 194, "g": 56, "b": 184, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "2箭袋 = 1十字弓弹",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 58, "g": 85, "b": 233, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "2十字弓弹 = 1箭袋",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 58, "g": 85, "b": 233, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "3颗相同宝石 = 1颗下一级宝石 （已被mod配方替换）",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 58, "g": 85, "b": 233, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModInfo343",
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText343",
+                                "fields": {
+                                    "text": "维特之腿 + 回城书 = 母牛关 （已被mod配方替换）",
+                                    "style": "$StyleRWName",
+                                    "style": {
+                                        "fontColor": { "r": 58, "g": 85, "b": 233, "a": 255 }
+                                    }
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "fields": {
+                                "rect": {"width": 1700, "height": 120}
+                            },
+                            "children": [
+                            {
+                                "type": "TextBoxWidget", "name": "ModInfoText",
+                                "fields": {
+                                    "text": "·橙装合成·",
+                                    "style": "$StyleSettingsTitle"
+                                },
+                                "children": [
+                                {
+                                    "type": "ImageWidget", "name": "Divider",
+                                    "fields": {
+                                        "rect": {"x": 0, "y": 100},
+                                        "filename": "PauseMenu\\Divider" 
+                                    }
+                                }
+                                ] 
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "fields": {
+                                "rect": {"width": 1700, "height": 5500}
+                            },
+                            "children": [
+                            {
+                                "type": "ImageWidget", "name": "Rune",
+                                "fields": {
+                                    "fitToParent": true,
+                                    "rect": { "scale": 2 },
+                                    "filename": "PANEL\\message\\cz",
+                                    "sound": ""
+                                }
+                            }
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowRune",
+                            "children": [
+                            {
+                                "type": "ImageWidget", "name": "Divider",
+                                "fields": {
+                                    "rect": {"x": 0, "y": 20},
+                                    "filename": "PauseMenu\\Divider" 
+                                }
+                            } 
+                            ]
+                        }
+                        ]
+                    }
+            ]
+        }
+    ]
+}

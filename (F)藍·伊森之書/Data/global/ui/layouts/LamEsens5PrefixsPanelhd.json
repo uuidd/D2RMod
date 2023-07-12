@@ -1,0 +1,92 @@
+{
+    "type": "SettingsPanel", "name": "LamEsens5PrefixsPanel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5 },
+        "applySettingsImmediately": false
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll"
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView","fields": {"fitToParent": true,"scrollControllerName": "ScrollController"}, "children": [
+            {
+                    "type": "TableWidget", "name": "SocketsTable",
+                    "fields": {"columns": [ { "width": 1700, "alignment": { "h": "fit", "v": "fit" } } ],"rowHeight": "$ModTableRowHeight"},
+                    "children": [ {"type": "TableRowWidget", "name": "RowRune",
+                       "fields": {"rect": {"width": 1700, "height": 120}},"children": [
+             { "type": "TextBoxWidget", "name": "ModInfoText343", "fields": {
+                       "text": "·【常用词缀分类表】·",
+                       "style": "$StyleSettingsTitle" },"children": [ {"type": "ImageWidget", "name": "Divider", "fields": {"rect": {"x": 0, "y": 100},"filename": "PauseMenu\\Divider"  }} ] }]
+            },
+
+                        {"type": "TableRowWidget", "name": "Row Spacer"},
+
+                          { "type": "TableRowWidget", "name": "RowSocket",
+                            "fields": {"rect": {"width": 1700, "height": 7463} },
+                            "children": [
+                            {"type": "ImageWidget", "name": "skt1",
+                                "fields": {
+                                    "fitToParent": true,
+                                    "rect": { "scale": 1.2 },
+                                    "filename": "modUI\\LamEsensTome\\mw1",
+                                    "sound": ""
+                                }}
+                                ]
+                        },   
+                          { "type": "TableRowWidget", "name": "RowSocket",
+                            "fields": {"rect": {"width": 1700, "height": 6777} },
+                            "children": [
+                            {"type": "ImageWidget", "name": "skt2",
+                                "fields": {
+                                    "fitToParent": true,
+                                    "rect": { "scale": 1.2 },
+                                    "filename": "modUI\\LamEsensTome\\mw2",
+                                    "sound": ""
+                                }}
+                                ]
+                        },                        
+                          { "type": "TableRowWidget", "name": "RowSocket",
+                            "fields": {"rect": {"width": 1700, "height": 5340} },
+                            "children": [
+                            {"type": "ImageWidget", "name": "skt2",
+                                "fields": {
+                                    "fitToParent": true,
+                                    "rect": { "scale": 1.2 },
+                                    "filename": "modUI\\LamEsensTome\\mw3",
+                                    "sound": ""
+                                }}
+                                ]
+                        },                              
+                        
+                        { "type": "TableRowWidget", "name": "RowRune",
+                            "children": [ { "type": "ImageWidget", "name": "Divider", "fields": {  "rect": {"x": 0, "y": 20}, "filename": "PauseMenu\\Divider"  }} ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

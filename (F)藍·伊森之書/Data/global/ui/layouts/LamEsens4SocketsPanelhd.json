@@ -1,0 +1,224 @@
+{
+    "type": "SettingsPanel", "name": "LamEsens4SocketsPanel",
+        "fields": {
+            "priority": 9003,
+            "rect": "$OptionsPanelRect",
+            "anchor": { "x": 0.5 },
+            "applySettingsImmediately": false
+        },
+        "children": [
+            {
+                "type": "ImageWidget", "name": "ScrollBarBackground",
+                "fields": {
+                    "rect": "$OptionsScrollBarBackgroundRect",
+                    "anchor": { "x": 1.0 },
+                    "filename": "PauseMenu\\VerticalScroll"
+                },
+                "children": [
+                    {
+                        "type": "ScrollControllerWidget", "name": "ScrollController",
+                        "fields": {
+                            "rect": "$OptionsScrollBarRect",
+                            "anchor": { "x": 1.0 },
+                            "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                            "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                            "barFilepath": "PauseMenu\\VerticalIndicator",
+                            "viewName": "ScrollView",
+                            "wheelScrollSound": "cursor_scroll_hd",
+                            "buttonScrollSound": "cursor_scroll_hd"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ScrollViewWidget", "name": "ScrollView","fields": {"fitToParent": true,"scrollControllerName": "ScrollController"}, "children": [
+                {
+                        "type": "TableWidget", "name": "SocketsTable",
+                        "fields": {"columns": [ { "width": 1700, "alignment": { "h": "fit", "v": "fit" } } ],"rowHeight": "$ModTableRowHeight"},
+                        "children": [ {"type": "TableRowWidget", "name": "RowRune",
+                           "fields": {"rect": {"width": 1700, "height": 120}},"children": [
+                 { "type": "TextBoxWidget", "name": "ModInfoText343", "fields": {
+                           "text": "·【赫拉迪克方盒公式打孔】·",
+                           "style": "$StyleSettingsTitle" },"children": [ {"type": "ImageWidget", "name": "Divider", "fields": {"rect": {"x": 0, "y": 100},"filename": "PauseMenu\\Divider"  }} ] }]
+                },
+                            {
+                                "type": "TableRowWidget", "name": "RowModInfo343",
+                                "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModInfoText343",
+                                    "fields": {
+                                        "text": "盔甲打孔：7#+10#+完美黄宝石(仅限白色装备)",
+                                        "style": {
+										"fontColor": "$FontColorYellow",
+										"pointSize": "$XMediumFontSize",
+										"spacing" : "$ReducedSpacing",
+										"alignment": { "h": "left", "v": "center" }
+									},
+                                        "style": {
+                                            "fontColor": { "r": 3, "g": 165, "b": 252, "a": 255 }
+                                        }
+                                    }
+                                }
+                                ]
+                            },
+                            {
+                                "type": "TableRowWidget", "name": "RowModInfo343",
+                                "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModInfoText343",
+                                    "fields": {
+                                        "text": "武器打孔：8#+11#+完美紫宝石(仅限白色装备)",
+                                        "style": {
+										"fontColor": "$FontColorYellow",
+										"pointSize": "$XMediumFontSize",
+										"spacing" : "$ReducedSpacing",
+										"alignment": { "h": "left", "v": "center" }
+									},
+                                        "style": {
+                                            "fontColor": { "r": 3, "g": 165, "b": 252, "a": 255 }
+                                        }
+                                    }
+                                }
+                                ]
+                            },
+                            {
+                                "type": "TableRowWidget", "name": "RowModInfo343",
+                                "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModInfoText343",
+                                    "fields": {
+                                        "text": "头盔打孔：8#+10#+完美蓝宝石(仅限白色装备)",
+                                        "style": {
+										"fontColor": "$FontColorYellow",
+										"pointSize": "$XMediumFontSize",
+										"spacing" : "$ReducedSpacing",
+										"alignment": { "h": "left", "v": "center" }
+									},
+                                        "style": {
+                                            "fontColor": { "r": 3, "g": 165, "b": 252, "a": 255 }
+                                        }
+                                    }
+                                }
+                                ]
+                            },
+                            {
+                                "type": "TableRowWidget", "name": "RowModInfo343",
+                                "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModInfoText343",
+                                    "fields": {
+                                        "text": "盾牌打孔：7#+11#+完美红宝石(仅限白色装备)",
+                                        "style": {
+										"fontColor": "$FontColorYellow",
+										"pointSize": "$XMediumFontSize",
+										"spacing" : "$ReducedSpacing",
+										"alignment": { "h": "left", "v": "center" }
+									},
+                                        "style": {
+                                            "fontColor": { "r": 3, "g": 165, "b": 252, "a": 255 }
+                                        }
+                                    }
+                                }
+                                ]
+                            },
+                            {
+                                "type": "TableRowWidget", "name": "RowRune",
+                                "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "text",
+                                    "fields": {
+                                        "text": "金色装备打孔：3个完美骷髅+乔丹之石(只能打1孔)",
+                                        "style": {
+										"fontColor": "$FontColorYellow",
+										"pointSize": "$XMediumFontSize",
+										"spacing" : "$ReducedSpacing",
+										"alignment": { "h": "left", "v": "center" }
+									}
+                                    }
+                                }
+                                ]
+                            },
+                            {"type": "TableRowWidget", "name": "Row Spacer"},
+                            { "type": "TableRowWidget", "name": "RowModRecipes2","children": [ {"type": "TextBoxWidget", "name": "ModRecipesText2","fields": {
+                               "text": "对于方盒公式打孔的说明：",
+                                "style": {
+										"fontColor": "$FontColorGreen",
+										"pointSize": "$XMediumFontSize",
+										"spacing" : "$ReducedSpacing",
+										"alignment": { "h": "left", "v": "center" }
+									}}}]
+                            },
+    
+        {"type": "TextBoxWidget","name": "LongDescription",
+          "fields": { "rect":{"x": 40, "y": 820, "width": 1600, "height": 550},
+           "text": "打孔公式只能对普通品质（即没有超强、破旧等品质前缀的）的白色装备生效，也可以是无形的白色装备。\n公式定义中会随机选择1~6孔(不论被打孔的物品是武器或防具)\n选取这6种不同孔数的几率都是1/6\n然后再由下面表格中的最大孔数限制来决定产物最终的孔数\n如果超过物品自身的孔数限制,那么产物孔数取其最大值\n\n举两个例子:\n① 一把ilvl=6普通的短弓，查其最大孔数为3。\n应用公式[ 1 Ral(8#) + 1 Amn(11#) + 1 完美紫宝石 + 普通武器 = 同类型带孔武器 ]打孔时，选取3-6孔都将出现3孔。\n那么实际出孔的概率为：1孔 1/6；2孔 1/6；3孔 2/3。\n② 一件ilvl=81普通的执政官铠甲，查其最大孔数为4。\n应用公式[ 1 Tal(7#) + 1 Thul(10#) + 1 完美黄宝石 + 普通盔甲 = 同类型带孔盔甲 ]打孔时，选取4-6孔都将出现4孔。\n那么实际出孔的概率为：1孔 1/6；2孔 1/6；3孔 1/6；4孔 1/2",
+            "style": 
+            {"fontFace": "Formal","pointSize": "$XMediumFontSize",
+              "options": {"lineWrap": true,"pipeCharacterBehavior": "handle","newlineHandling": "standard" },"spacing": "$ReducedSpacing","alignment":{"h": "left"},
+              "fontColor": "$DescriptionTextColor"} }
+        },
+                            { "type": "TableRowWidget", "name": "Row Spacer"},
+                            { "type": "TableRowWidget", "name": "Row Spacer"},
+                            { "type": "TableRowWidget", "name": "Row Spacer"},
+                            { "type": "TableRowWidget", "name": "Row Spacer"},
+                            { "type": "TableRowWidget", "name": "Row Spacer"},
+                            { "type": "TableRowWidget", "name": "Row Spacer"},
+                            { "type": "TableRowWidget", "name": "Row Spacer"},
+                            { "type": "TableRowWidget", "name": "Row Spacer"},
+                            { "type": "TableRowWidget", "name": "Row Spacer"},
+                            
+                            {
+                                "type": "TableRowWidget", "name": "MRCRowTitle",
+                                "fields": {"rect": {"width": 1700, "height": 120} }, "children": [{ "type": "TextBoxWidget", "name": "MRCTextTitle","fields": {
+                                   "text": "·【A5 NPC 拉苏克处任务奖励打孔孔数表】·",
+                                   "style": "$StyleSettingsTitle"},"children": [ { "type": "ImageWidget", "name": "Divider", "fields": {"rect": {"x": 0, "y": 100},"filename": "PauseMenu\\Divider" }}]}]
+                              },
+                            {
+                                "type": "TableRowWidget", "name": "Row Spacer"
+                            },
+                              { "type": "TableRowWidget", "name": "RowSocket",
+                                "fields": {"rect": {"width": 1700, "height": 5664} },
+                                "children": [
+                                {"type": "ImageWidget", "name": "skt1",
+                                    "fields": {
+                                        "fitToParent": true,
+                                        "rect": { "scale": 1.5 },
+                                        "filename": "modUI\\LamEsensTome\\skt1",
+                                        "sound": ""
+                                    }}
+                                    ]
+                            },   
+                              { "type": "TableRowWidget", "name": "RowSocket",
+                                "fields": {"rect": {"width": 1700, "height": 7970} },
+                                "children": [
+                                {"type": "ImageWidget", "name": "skt2",
+                                    "fields": {
+                                        "fitToParent": true,
+                                        "rect": { "scale": 1.5 },
+                                        "filename": "modUI\\LamEsensTome\\skt2",
+                                        "sound": ""
+                                    }}
+                                    ]
+                            },                        
+                              { "type": "TableRowWidget", "name": "RowSocket",
+                                "fields": {"rect": {"width": 1700, "height": 9795} },
+                                "children": [
+                                {"type": "ImageWidget", "name": "skt2",
+                                    "fields": {
+                                        "fitToParent": true,
+                                        "rect": { "scale": 1.5 },
+                                        "filename": "modUI\\LamEsensTome\\skt3",
+                                        "sound": ""
+                                    }}
+                                    ]
+                            },                              
+                            
+                            { "type": "TableRowWidget", "name": "RowRune",
+                                "children": [ { "type": "ImageWidget", "name": "Divider", "fields": {  "rect": {"x": 0, "y": 20}, "filename": "PauseMenu\\Divider"  }} ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }

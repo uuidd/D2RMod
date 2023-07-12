@@ -79,16 +79,86 @@ if (config.demoSelect) {
     }
   });
   D2RMM.writeJson(pauselayouthdFilename, pauselayouthd);
-  // 复制组件下的global下json文件到mod目录
+  // 复制组件global下的json文件到mod目录
   //
   D2RMM.copyFile('global', 'global', true);
   const demopanelhdFilename = 'global\\ui\\layouts\\demopanelhd.json'
   const demopanelhd = D2RMM.readJson(demopanelhdFilename);
-  demopanelhd.children[0].children[1].children[1].fields.text = "DemoMod 2.6" // 帮助页面大标题
-  demopanelhd.children[2].fields.textStrings = ['合成公式', '手工品配方', '模拟联机交易','版本变更'] // 必须四个
+  demopanelhd.children[0].children[1].children[1].fields.text = "···『 DemoMod 2.6 』···" // 帮助页面大标题
+  demopanelhd.children[2].fields.textStrings = ['常用合成公式', '模拟联机交易', '手工品配方', '版本变更']
   D2RMM.writeJson(demopanelhdFilename, demopanelhd);
 
+  function bigTitle(enName, text) {
+    return {
+      "type": "TableRowWidget",
+      "name": enName,
+      "children": [
+        {
+          "type": "TextBoxWidget",
+          "name": enName,
+          "fields": {
+            "text": text,
+            "style": {
+              "fontColor": "$FontColorGold",
+              "pointSize": "$XMediumLargeFontSize",
+              "spacing": "$ReducedSpacing",
+              "alignment": {"h": "left", "v": "center"},
+              "options": {"lineWrap": true}
+            }
+          }
+        }
+      ]
+    }
+  }
 
+  function smallTitle(enName, text) {
+    return {
+      "type": "TableRowWidget",
+      "name": enName,
+      "children": [
+        {
+          "type": "TextBoxWidget",
+          "name": enName,
+          "fields": {"text": text, "style": "$StyleSettingsTitle"},
+          "children": [
+            {
+              "type": "ImageWidget",
+              "name": "Divider",
+              "fields": {"rect": "$RMDOptionsDividerRect", "filename": "PauseMenu\\Divider"}
+            }]
+        }
+      ]
+    }
+  }
+
+  function text(enName, text) {
+    return {
+      "type": "TableRowWidget",
+      "name": enName,
+      "children": [
+        {
+          "type": "TextBoxWidget",
+          "name": enName,
+          "fields": {
+            "text": text,
+            "style": {
+              "fontColor": "$FontColorWhite", // $FontColorRed $FontColorGold $FontColorBlue
+              "pointSize": "$MediumFontSize", // $XMediumLargeFontSize
+              "alignment": {"h": "left", "v": "center"}
+            }
+          }
+        }
+      ]
+    }
+  }
+
+  const demo1panelhdFilename = 'global\\ui\\layouts\\demo1panelhd.json'
+  const demo1panelhd = D2RMM.readJson(demopanelhdFilename);
+  demo1panelhd.children[1].children[0].children = [];
+  const children1 = demo1panelhd.children[1].children[0].children;
+  children1.push(...bigTitle('',''));
+
+  D2RMM.writeJson(demo1panelhdFilename, demo1panelhd);
 }
 
 

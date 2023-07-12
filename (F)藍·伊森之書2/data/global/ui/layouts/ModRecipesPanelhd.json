@@ -1,0 +1,939 @@
+{
+    "type": "SettingsPanel", "name": "ModRecipesPanel",
+    "fields": {
+        "priority": 9003,
+        "rect": "$OptionsPanelRect",
+        "anchor": { "x": 0.5 },
+        "applySettingsImmediately": false,
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "ScrollBarBackground",
+            "fields": {
+                "rect": "$OptionsScrollBarBackgroundRect",
+                "anchor": { "x": 1.0 },
+                "filename": "PauseMenu\\VerticalScroll",
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget", "name": "ScrollController",
+                    "fields": {
+                        "rect": "$OptionsScrollBarRect",
+                        "anchor": { "x": 1.0 },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "ScrollViewWidget", "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController",
+            },
+            "children": [
+                {
+                    "type": "TableWidget", "name": "OptionsTable",
+                    "fields": {
+                        "columns": [ "$OptionsTableColumn1", "$OptionsTableColumn2" ],
+                        "rowHeight": "$ModTableRowHeight",
+                    },
+                    "children": [
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes0",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesTitle",
+                                    "fields": {
+                                        "text": "·赫拉迪克方块配方增强·",
+                                        "style": "$StyleSettingsTitle"
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ImageWidget", "name": "Divider",
+                                            "fields": {
+                                                "rect": {"x": 0, "y": 75},
+                                                "filename": "PauseMenu\\Divider" 
+                                            }
+                                        }
+                                        ]
+                                    },
+                                ]
+                            },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes100",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText100",
+                                    "fields": {
+                                        "text": "·【打孔配方】·",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes2",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText2",
+                                    "fields": {
+                                        "text": "任意武器 + 符文(1#~6#)  =>  打1-6孔  （无法超过装备允许最大孔数）",
+                                        "style": "$StyleORLY1"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes3",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText3",
+                                    "fields": {
+                                        "text": "任意防具 + 符文(1#~4#)  =>  打1-4孔  （无法超过装备允许最大孔数）",
+                                        "style": "$StyleORLY1"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes4",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText4",
+                                    "fields": {
+                                        "text": "任意武器/防具 + 符文7#  =>  取下镶嵌物",
+                                        "style": "$StyleORLY1"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes5",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText5",
+                                    "fields": {
+                                        "text": "任意武器/防具 + 融解药水  =>  消除镶嵌物",
+                                        "style": "$StyleORLY1"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes6",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText6",
+                                    "fields": {
+                                        "text": "·【刷装备】·",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes7",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText7",
+                                    "fields": {
+                                        "text": "任意武器/防具 + 耐力药水 + 血瓶  =>  升级到 【扩展级】 或 【精英级】",
+                                        "style": {
+                                            "fontColor": "$FontColorOrange",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes28",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText28",
+                                    "fields": {
+                                        "text": "任意装备 + 赦免勋章  =>  同类型白色无孔装备",
+                                        "style": "$StyleModInfo"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes8",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText8",
+                                    "fields": {
+                                        "text": "任意武器/防具 + 耐力药水  =>  同类型白色超强装备",
+                                        "style": "$StyleModInfo"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes9",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText9",
+                                    "fields": {
+                                        "text": "白色超强武器/防具  =>  同类型超强",
+                                        "style": "$StyleModInfo"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes10",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText10",
+                                    "fields": {
+                                        "text": "蓝色武器/防具  =>  同类型蓝色装备",
+                                        "style": {
+                                            "fontColor": "$FontColorBlue",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes10",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText10",
+                                    "fields": {
+                                        "text": "金色武器/防具  =>  同类型金色装备",
+                                        "style": {
+                                            "fontColor": "$FontColorYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes11",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText11",
+                                    "fields": {
+                                        "text":"【任意】戒指/项链 + 1 ¼完美骷髅  =>  同类型暗金 ",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes11",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText11",
+                                    "fields": {
+                                        "text":"【普通】武器/防具 + 1 ¼完美骷髅  =>  同类型暗金 ",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes11",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText11",
+                                    "fields": {
+                                        "text":"【扩展】武器/防具 + 2 ¼完美骷髅  =>  同类型暗金 ",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes11",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText11",
+                                    "fields": {
+                                        "text":"【精英】武器/防具 + 3 ¼完美骷髅  =>  同类型暗金 ",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes11",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText11",
+                                    "fields": {
+                                        "text":"【任意】戒指/项链 + 1 ¼完美骷髅 + 1#符文  =>  同类型绿装 ",
+                                        "style": {
+                                            "fontColor": "$FontColorGreen",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes11",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText11",
+                                    "fields": {
+                                        "text":"【普通】武器/装备 + 1 ¼完美骷髅 + 1#符文  =>  同类型绿装 ",
+                                        "style": {
+                                            "fontColor": "$FontColorGreen",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes11",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText11",
+                                    "fields": {
+                                        "text":"【扩展】武器/装备 + 2 ¼完美骷髅 + 1#符文  =>  同类型绿装 ",
+                                        "style": {
+                                            "fontColor": "$FontColorGreen",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes11",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText11",
+                                    "fields": {
+                                        "text":"【精英】武器/装备 + 3 ¼完美骷髅 + 1#符文  =>  同类型绿装 ",
+                                        "style": {
+                                            "fontColor": "$FontColorGreen",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes9",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText9",
+                                    "fields": {
+                                        "text": "注1：如果同类型无暗金/绿装则生成其他颜色装备，戒指项链无法100%生成暗金，看脸",
+                                        "style": "$StyleModInfo"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes9",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText9",
+                                    "fields": {
+                                        "text": "注2：经过测试有一部分蓝金装无法直接合成暗金，但是洗白后就可以，建议先用赦免洗白",
+                                        "style": "$StyleModInfo"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes9",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText9",
+                                    "fields": {
+                                        "text": "注3：决定同类型的是名称不是图标，推荐用百科配合使用该配方，避免不必要的损失",
+                                        "style": "$StyleModInfo"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes9",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText9",
+                                    "fields": {
+                                        "text": "（百科地址见txt文档）",
+                                        "style": "$StyleModInfo"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes12",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText12",
+                                    "fields": {
+                                        "text": "任意武器/防具 + 1 解毒药水  =>  【无形】的武器/防具  可以自动修复",
+                                        "style": {
+                                            "fontColor": "$FontColorGrey",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes12",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText12",
+                                    "fields": {
+                                        "text": "带数量的投掷类武器 + 2 解毒药水  =>  【无形】的武器  可自动回复数量",
+                                        "style": {
+                                            "fontColor": "$FontColorGrey",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes13",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText13",
+                                    "fields": {
+                                        "text": "任意蓝装 + 32#符文  =>  珠宝匠的（词缀） +（0-1）个随机词缀的 蓝色装备",
+                                        "style": {
+                                            "fontColor": "$FontColorBlue",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes13",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText13",
+                                    "fields": {
+                                        "text": "次元碎片 + 33#符文 + 3颗 ¾完美黄宝石  =>  术士之 蕴雷 次元碎片（电系技能）",
+                                        "style": {
+                                            "fontColor": "$FontColorYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes13",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText13",
+                                    "fields": {
+                                        "text": "次元碎片 + 33#符文 + 3颗 ¾完美红宝石  =>  术士之 火山 次元碎片（火系技能）",
+                                        "style": {
+                                            "fontColor": "$FontColorRed",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes13",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText13",
+                                    "fields": {
+                                        "text": "次元碎片 + 33#符文 + 3颗 ¾完美蓝宝石  =>  术士之 冰川 次元碎片（冰系技能）",
+                                        "style": {
+                                            "fontColor": "$FontColorBlue",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes13",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText13",
+                                    "fields": {
+                                        "text": "任意戒指Ｂ + 30#符文 + 1颗 ¾完美红宝石  =>  乔丹之石Ｂ",
+                                        "style": {
+                                            "fontColor": "$FontColorYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes14",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText14",
+                                    "fields": {
+                                        "text": "·【护身符 珠宝配方】·",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes15",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText15",
+                                    "fields": {
+                                        "text": "任意护符 + 2 颗¾完美绿宝石  =>  经验提升 (30-40)% 的Ａ中型护符",
+                                        "style": {
+                                            "fontColor": "$FontColorGreen",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes16",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText16",
+                                    "fields": {
+                                        "text": "任意护符  + 2 颗¾完美钻石    =>    移动速度提升(20-30)% 的Ａ中型护符",
+                                        "style": "$StyleModInfo"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes17",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText17",
+                                    "fields": {
+                                        "text": "任意护符 + 2 颗¾完美蓝宝石  =>  魔法装备获取提升 (30-40)% 的Ａ大型护符",
+                                        "style": {
+                                            "fontColor": "$FontColorBlue",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes18",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText18",
+                                    "fields": {
+                                        "text": "任意护符 + 2 颗¾完美黄宝石  =>  额外金币获取提升 (30-80)% 的Ａ大型护符",
+                                        "style": {
+                                            "fontColor": "$FontColorYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes19",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText19",
+                                    "fields": {
+                                        "text": "任意护符 + 6 种不同颜色¾完美宝石  =>  所有抗性提升  (1-10 ) 的Ａ大型护符",
+                                        "style": {
+                                            "fontColor": "$FontColorOrange",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes20",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText20",
+                                    "fields": {
+                                        "text": "任意珠宝 + 10#符文  =>  ｖ蓝色珠宝 3枚",
+                                        "style": {
+                                            "fontColor": "$FontColorBlue",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes21",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText21",
+                                    "fields": {
+                                        "text": "任意珠宝 + 15#符文  =>  ｖ黄金珠宝 2枚",
+                                        "style": {
+                                            "fontColor": "$FontColorYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes22",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText22",
+                                    "fields": {
+                                        "text": "任意珠宝 + 20#符文  =>  ｖ彩虹刻面",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes22",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText22",
+                                    "fields": {
+                                        "text": "任意蓝瓶  =>  随机属性的珠宝ｖ",
+                                        "style": {
+                                            "fontColor": "$FontColorBlue",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes22",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText22",
+                                    "fields": {
+                                        "text": "任意珠宝 + 22#符文 + 33#符文  =>  狂热之五彩 珠宝ｖ（攻速+抗性）",
+                                        "style": {
+                                            "fontColor": "$FontColorBlue",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes22",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText22",
+                                    "fields": {
+                                        "text": "任意珠宝 + 30#符文 + 33#符文  =>  狂热之红宝石 珠宝（攻速+增伤）",
+                                        "style": {
+                                            "fontColor": "$FontColorBlue",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes23",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText23",
+                                    "fields": {
+                                        "text": "·【其他配方】·",
+                                        "style": {
+                                            "fontColor": "$FontColorGoldYellow",
+                                            "pointSize": "$XMediumFontSize",
+                                            "options": {
+                                                "lineWrap": true,
+                                                "pipeCharacterBehavior": "handle",
+                                            },
+                                  }
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes1",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText1",
+                                    "fields": {
+                                        "text": "2 相同的 ¾/¼  =>  更高一级的 ¾/¼",
+                                        "style": "$StyleORLY1"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes1",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText1",
+                                    "fields": {
+                                        "text": "1 血瓶 + 1 蓝瓶 + 【任意】 ¾  =>  3 小紫瓶",
+                                        "style": "$StyleORLY1"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes1",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText1",
+                                    "fields": {
+                                        "text": "3 小紫瓶  =>  2 大紫瓶",
+                                        "style": "$StyleORLY1"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes24",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText24",
+                                    "fields": {
+                                        "text": "1 血瓶  =>  赦免勋章（洗点药水）",
+                                        "style": "$StyleORLY1"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes25",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText25",
+                                    "fields": {
+                                        "text": "1 大紫瓶  =>  牛场门 （需要通关该难度后在第一幕开启，取代维特之腿配方）",
+                                        "style": "$StyleORLY1"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "RowModRecipes26",
+                            "children": [
+                                {
+                                    "type": "TextBoxWidget", "name": "ModRecipesText26",
+                                    "fields": {
+                                        "text": "1 箭筒  =>  自动回复数量的箭筒",
+                                        "style": "$StyleORLY1"
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                        {
+                            "type": "TableRowWidget", "name": "Row Spacer",
+                        },
+                    ]
+                }
+            ]
+        },
+    ]
+}
