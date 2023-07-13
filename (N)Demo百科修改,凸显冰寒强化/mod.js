@@ -216,11 +216,11 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1panelhd.children[1].children[0].children = [];
   const demo1 = demo1panelhd.children[1].children[0].children;
   demo1.push(bigTitle('备注'));
-  demo1.push(normalText('如果没有指定数量，默认为一个', 'Red', 2));
-  demo1.push(normalText('如果只有一个的物品，直接合成即可', 'Red', 2));
-  demo1.push(normalText('合成暗金一场游戏只能用一次，第二次将变为亮金，需要小退后重建游戏', 'Red', 2));
-  demo1.push(normalText('小退是角色退出游戏再重进就是新的一场游戏，大退是退出暗黑2重置版游戏', 'Red', 2));
-  demo1.push(normalText('切换难度刷地图可避免出现重复彩虹刻面暗金珠或变成亮金', 'Red', 2));
+  demo1.push(normalText('如果没有指定数量，默认为一个', 'Yellow'));
+  demo1.push(normalText('如果只有一个的物品，直接合成即可', 'Yellow'));
+  demo1.push(normalText('合成暗金一场游戏只能用一次，第二次将变为亮金，需要小退后重建游戏', 'Yellow'));
+  demo1.push(normalText('小退是角色退出游戏再重进就是新的一场游戏，大退是退出暗黑2重置版游戏', 'Yellow'));
+  demo1.push(normalText('切换难度刷地图可避免出现重复彩虹刻面暗金珠或变成亮金', 'Yellow'));
   demo1.push(space());
   demo1.push(bigTitle('常用合成公式'));
   demo1.push(normalText2('回城书 + 辨识书', '牛场红门', 'Red'));
@@ -380,7 +380,6 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText22('24#符文 + 鞋子', '蝕肉騎士 cb 鞋', 'Gold'));
   demo2.push(normalText22('23#符文 + 鞋子', '沙暴之旅 沙暴', 'Gold'));
   demo2.push(normalText22('20#符文 + 鞋子', '紗織鞋 纱织', 'Gold'));
-  demo2.push(dr());
   demo2.push(bigTitle('合成专属装备'));
   demo2.push(normalText('上面的有些合成材料是专属装备，防止买不到想要的，所以又做了个配方'));
   demo2.push(normalText2('珠宝 + 弓', '亚马逊专用弓'));
@@ -391,7 +390,6 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText2('珠宝 + 双手法杖', '女巫法珠'));
   demo2.push(normalText2('珠宝 + 死灵魔杖', '死灵法师盾牌'));
   demo2.push(normalText2('珠宝 + 盾牌', '圣骑士盾牌'));
-  demo2.push(dr());
   demo2.push(bigTitle('小号符文换取大号符文'));
   demo2.push(normalText('统一为8个换取，8个比较好计算刚好两列背包', 'Yellow', 2));
   demo2.push(normalText2('8个1#符文', '20#符文', '', 2));
@@ -414,14 +412,12 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText2('8个18#符文', '24#符文', '', 2));
   demo2.push(normalText2('8个19#符文', '24#符文', '', 2));
   demo2.push(normalText2('3个19#符文', '20#符文', '', 2));
-  demo2.push(dr());
   demo2.push(bigTitle('小符文升/降级'));
   demo2.push(normalText('T网上小号符文几乎都是一换一，添加珠宝作为手续费', 'Red', 2));
   demo2.push(normalText('所有符文升降级都不需要宝石，原升级配方保留。', 'Red', 2));
   demo2.push(normalText('符文降级一个珠宝，符文升级两个珠宝', 'Red', 2));
   demo2.push(normalText2('1个19#符文-2#符文 + 1 珠宝', '1个18#符文-1#符文', '', 2));
   demo2.push(normalText2('1个1#符文-18#符文 + 2 珠宝', '1个2#符文-19#符文', '', 2));
-  demo2.push(dr());
   demo2.push(bigTitle('大符文升/降级，T网比例'));
   demo2.push(normalText('注意两边符文可以左右互换，可升级可降级', 'Red', 2));
   demo2.push(normalText('商店买不到的珠宝作为系统手续费', 'Red', 2));
@@ -439,7 +435,6 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText22('31#符文 + 珠宝', '30#符文 + 28#符文', '', 2));
   demo2.push(normalText22('32#符文 + 珠宝', '26#符文 + 15#符文', '', 2));
   demo2.push(normalText22('33#符文 + 珠宝', '28#符文 + 15#符文', '', 2));
-  demo2.push(dr());
   demo2.push(bigTitle('宝石与符文'));
   demo2.push(normalText22('20#符文 + 无暇紫宝石 ', ' 3 完美紫宝石'));
   demo2.push(normalText22('8#符文 + 钥匙 ', ' 1 完美紫宝石 + 钥匙'));
@@ -450,12 +445,10 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText2('3 完美绿宝石 ', ' 1 完美紫宝石', 'Green'));
   demo2.push(normalText2('3 完美蓝宝石 ', ' 1 完美紫宝石', 'Blue'));
   demo2.push(normalText2('3 完美白宝石 ', ' 1 完美紫宝石'));
-  demo2.push(dr());
   demo2.push(bigTitle('符文与珠宝'));
   demo2.push(normalText2('20#符文 + 解冻药剂(商店黄色的药剂) ', ' 3 亮金珠宝', 'Yellow'));
   demo2.push(normalText2('1 亮金珠宝 ', ' 3 蓝色珠宝', 'Blue'));
   demo2.push(normalText2('9 珠宝 ', ' 20#符文'));
-  demo2.push(dr());
   demo2.push(bigTitle('符文与底材'));
   demo2.push(normalText2('20#符文 + 盾牌 ', ' 4孔君主盾'));
   demo2.push(normalText2('8#符文 + 剑 ', ' 4孔水晶剑'));
