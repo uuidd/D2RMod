@@ -60,9 +60,9 @@
         {
             "id": "modHelpText",
             "type": "text",
-            "name": "帮助文本",
-            "description": "帮助文本",
-            "defaultValue": "Mod说明"
+            "name": "帮助页大标题",
+            "description": "DEMO MOD",
+            "defaultValue": "DEMO MOD"
         }
     ]
 }
