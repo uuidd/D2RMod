@@ -116,7 +116,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   const demopanelhdFilename = 'global\\ui\\layouts\\demopanelhd.json'
   const demopanelhd = D2RMM.readJson(demopanelhdFilename);
   demopanelhd.children[0].children[1].children[1].fields.text = `···『 ${config.modHelpText} 』···` // 帮助页面大标题
-  demopanelhd.children[2].fields.textStrings = ['常用公式', '模拟交易', '模组功能', '暂留未定']
+  demopanelhd.children[2].fields.textStrings = ['常用公式', '模拟交易', '模组功能', '可选功能']
   D2RMM.writeJson(demopanelhdFilename, demopanelhd);
 
   function bigTitle(text) {
@@ -249,7 +249,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1.push(normalText2('15#符文 + 27#号符文 + 32#符文 + 3个亮金珠宝', '15攻速31-40ed蓝色珠宝(红白珠)', 'Blue'));
   demo1.push(normalText2('回城书 + 6个大紫', '国王之杖(第二幕任务道具，需在A2场景合成)'));
   demo1.push(normalText2('回城书 + 3个大紫', '克林姆的遗愿(第三幕任务道具，需在A3场景合成)'));
-  demo1.push(normalText2('火炬 + 3个小型神符', '全抗生命 + 法力生命 + 最大伤害准确生命小板子'));
+  demo1.push(normalText2('火炬 + 3个小型神符', '1 全抗生命 + 1 法力生命 + 1 最大伤害准确生命极品小板子'));
   demo1.push(normalText2('A1钥匙(恐惧之钥)', 'A2钥匙(憎恨之钥)'));
   demo1.push(normalText2('A2钥匙(憎恨之钥)', 'A5钥匙(毁灭之钥)'));
   demo1.push(normalText2('A5钥匙(毁灭之钥)', 'A1钥匙(恐惧之钥)'));
@@ -276,7 +276,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1.push(normalText2('蓝色重/鲨皮/吸血鬼骸骨手套 + 红药 + 无暇宝石(不分颜色) + 任意符文或珠宝', '吸血手套', 'Orange'));
   demo1.push(normalText2('蓝色皮/魔皮/荆棘连指手套 + 蓝药 + 无暇宝石(不分颜色) + 任意符文或珠宝', '施法手套', 'Orange'));
   demo1.push(bigTitle('其他手工配方'));
-  demo1.push(normalText('参考经验条中间的暗黑2百科书具体替换规则如下', 'Orange'));
+  demo1.push(normalText('合成效果参考经验条中间的参考暗黑2百科书替换规则如下', 'Orange'));
   demo1.push(normalText('1. 无暇宝石替换各种符文要求', 'Orange'));
   demo1.push(normalText('2. 珠宝可换成符文', 'Orange'));
   demo1.push(normalText('3. 蓝药替换掉完美紫宝石'));
@@ -285,7 +285,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1.push(normalText('6. 解毒替换掉完美绿宝石', 'Green'));
   demo1.push(dr());
   demo1.push(smallTitle('例如'));
-  demo1.push(normalText('蓝色项链 + 拉尔 8# + 完美的紫宝石 + 任何珠宝 => 施法项链'));
+  demo1.push(normalText('原版配方：蓝色项链 + 拉尔 8# + 完美的紫宝石 + 任何珠宝 => 施法项链'));
   demo1.push(normalText('拉尔 8#(符文) 替换为 无暇宝石(不分颜色)'));
   demo1.push(normalText('完美的紫宝石(完美宝石) 替换为 蓝药(各种药剂)'));
   demo1.push(normalText('最后变为：蓝色项链 + 蓝药 + 无暇宝石(不分颜色) + 任意符文或珠宝 => 施法项链'));
@@ -438,13 +438,13 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(bigTitle('宝石与符文'));
   demo2.push(normalText22('20#符文 + 无暇紫宝石 ', ' 3 完美紫宝石'));
   demo2.push(normalText22('8#符文 + 钥匙 ', ' 1 完美紫宝石 + 钥匙'));
-  demo2.push(normalText2('20#符文 + 钥匙 ', ' 3个8#符文(结合上下公式可实现所有符文与宝石互换)'));
-  demo2.push(normalText2('2 完美骷髅宝石 ', ' 1 完美紫宝石'));
-  demo2.push(normalText2('2 完美红宝石 ', ' 1 完美紫宝石', 'Red'));
-  demo2.push(normalText2('3 完美黄宝石 ', ' 1 完美紫宝石', 'Yellow'));
-  demo2.push(normalText2('3 完美绿宝石 ', ' 1 完美紫宝石', 'Green'));
-  demo2.push(normalText2('3 完美蓝宝石 ', ' 1 完美紫宝石', 'Blue'));
-  demo2.push(normalText2('3 完美白宝石 ', ' 1 完美紫宝石'));
+  demo2.push(normalText2('20#符文 + 钥匙 ', ' 3个8#符文(结合上下公式可实现所有宝石与符文互换)'));
+  demo2.push(normalText2('6 完美骷髅宝石 ', ' 3 完美紫宝石'));
+  demo2.push(normalText2('6 完美红宝石 ', ' 3 完美紫宝石', 'Red'));
+  demo2.push(normalText2('6 完美黄宝石 ', ' 2 完美紫宝石', 'Yellow'));
+  demo2.push(normalText2('6 完美绿宝石 ', ' 2 完美紫宝石', 'Green'));
+  demo2.push(normalText2('6 完美蓝宝石 ', ' 2 完美紫宝石', 'Blue'));
+  demo2.push(normalText2('6 完美白宝石 ', ' 2 完美紫宝石'));
   demo2.push(bigTitle('符文与珠宝'));
   demo2.push(normalText2('20#符文 + 解冻药剂(商店黄色的药剂) ', ' 3 亮金珠宝', 'Yellow'));
   demo2.push(normalText2('1 亮金珠宝 ', ' 3 蓝色珠宝', 'Blue'));
@@ -453,19 +453,106 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText2('20#符文 + 盾牌 ', ' 4孔君主盾'));
   demo2.push(normalText2('8#符文 + 剑 ', ' 4孔水晶剑'));
   D2RMM.writeJson(demo2panelhdFilename, demo2panelhd);
-// demo3 橙装合成
+// demo3 模组说明
   const demo3panelhdFilename = 'global\\ui\\layouts\\demo3panelhd.json';
   const demo3panelhd = D2RMM.readJson(demo3panelhdFilename);
   demo3panelhd.children[1].children[0].children = [];
   const demo3 = demo3panelhd.children[1].children[0].children;
-  demo3.push(normalText('Demo Mod 组件下载和反馈群【661975153】', 'Yellow', 2));
+  demo3.push(bigTitle('Mod功能'));
+  demo3.push(normalText('MOD说明百科，就是你现在看的这个，笑'));
+  demo3.push(normalText('7页无缩放大箱子16X16，比需缩放的大箱子略小但更美观'));
+  demo3.push(normalText('中盒子10X10，跟初始箱子一样大，同样无缩放且方方正正，百科可由此右侧点击弹出'));
+  demo3.push(normalText('手工品的词条全满，20fcr项链更好做了'));
+  demo3.push(normalText('大幅增加 6boss 钥匙爆率，适配邪恶区域'));
+  demo3.push(normalText('单机要打所有职业火炬，爆率要适度调高些，火炬没法刷新属性(经试验无法增加刷新配方)'));
+  demo3.push(normalText('超强白装一定是15ed，非超强白装全是满防御和攻击力，但超强白装掉率没改'));
+  demo3.push(normalText('死灵法师的召唤物可以穿过彼此，不再卡位，a2洞窟没那么遭罪了，纯招死灵增强'));
+  demo3.push(normalText('符文之语满变量，蓝色金色绿色暗金词缀不做更改，保留暗黑2装备精华的部分'));
+  demo3.push(normalText('增加赌博几率，避免金币后期没用，各职业的专属武器也能赌了，比如法师的次元，飞机头等，'));
+  demo3.push(normalText('普通模式只出普通级装备，噩梦只出扩展级装备，地狱只出精华级装备，'));
+  demo3.push(normalText('一直刷不到日用品暗金可以赌博试试，概率控制得还可以'));
+  demo3.push(normalText('关底boss bug杀适配2.6/2.7 邪恶区域，bug 杀文件已经过时不适配邪恶区域，花了大量的时间做了一版'));
+  demo3.push(normalText('扩大邪恶区域出现场景数量，邪恶区域将一次性循环很多张地图'));
+  demo3.push(normalText('战斗指挥，战斗命令原有基础为30秒，现延长持续时间至300秒，不更改其加血量尽量不影响游戏平衡'));
+  demo3.push(normalText('刺客聚气时间从原来15秒增加到30秒'));
+  demo3.push(normalText('修理装备降价为原有1/4，适度降低，尽量避免后期超强底材做符文之语导致的修复不起'));
+  demo3.push(normalText('禁用战网，防止将 mod 在战网环境下使用导致被封，正版如果出现30天未提示'));
+  demo3.push(normalText('请先用原版登录到人物选择界面退出即可，离线版请点击【Offline】程序'));
+  demo3.push(normalText('钥匙/书籍堆叠数量提升至100，省得频繁购买，太多开荒角色购买花费太多也不好'));
+  demo3.push(normalText('修改城镇人物出现位置，A2人物出生点在镇中间，A3在出生点在凯恩附近'));
+  demo3.push(normalText('A5凯恩移动到储物箱附近，城镇里可以找凯恩和出口距离变短了'));
+  demo3.push(normalText('城镇里可以传送，冲锋，跳跃等'));
+  demo3.push(normalText('由于游戏机制，像战争指挥，战争命令在城里使用只作用于角色本身，在城外使用小弟才会被作用到'));
+  demo3.push(normalText('新增一键点击角色进入地狱难度功能（就是点击选择角色选择界面的人物），退出游戏鼠标不用移动点击就能快速刷刷刷，'));
+  demo3.push(normalText('无法进入地狱的角色点击有提示且不会闪退，注意此功能无文本提示（文本太丑了）'));
+  demo3.push(normalText('添加彩色词条（源于 jgmod），集中关注重点词条'));
+  demo3.push(normalText('静音光环声音，不会那么吵了'));
+  demo3.push(bigTitle('YTEMOD的功能'));
+  demo3.push(normalText('刺客聚气图标以及刺客瞎眼特效优化'));
+  demo3.push(normalText('物品名称前添加图标（通过字体实现）'));
+  demo3.push(normalText('所有符文添加编号'));
+  demo3.push(normalText('暗金、套装、符文之语装备添加吐槽及变量信息'));
+  demo3.push(normalText('装备属性栏添加辅助信息'));
+  demo3.push(normalText('一行为底材的隐性属性信息如防具的防御变量范围值、负重信息、最大孔数，武器的攻击范围、攻速、最大孔数，'));
+  demo3.push(normalText('如涉及有拾取价值则另加一行用于提示拾取价值信息，如底材孔数、手工底材、暗金套装物品等'));
+  demo3.push(normalText('高价值物品在底材名称前加“★”提示。'));
+  demo3.push(normalText('底材词缀（“特等”、“劣等”等）后置，“特等”红色突显'));
+  demo3.push(normalText('四大垃圾词缀后置，统一改成“劣等”，淡青色显示，并默认屏蔽地面显示（拾取后可见）'));
+  demo3.push(normalText('带孔（含带孔无形）底材地面显示为淡粉紫色，纯无形底材地面显示为淡青色'));
+  demo3.push(normalText('井、祭坛添加效果辅助信息。'));
+  demo3.push(normalText('不重要的物品灰色显示，并精简一些物品名称'));
+  demo3.push(normalText('内置两种屏蔽模式（默认无屏蔽），模式一（标准屏蔽）：屏蔽低级药水等杂物及低价值基础物品'));
+  demo3.push(normalText('启用屏蔽后此类物品地面物品名称完全不显示，'));
+  demo3.push(normalText('可切换怀旧模式后拾取或按ALT切换成点击物品模型拾取模式拾取，拾取后物品名称可见（名称后添加屏蔽符号）'));
+  demo3.push(normalText('模式二（屏蔽项保留小图标）：低级药水、低级宝石等杂物及低价值基础物品屏蔽地面物品名称显示，'));
+  demo3.push(normalText('但保留小图标显示，拾取后可显示完整物品名称。两种屏蔽模式都默认完全屏蔽四大垃圾词缀物品的物品名称地面显示'));
+  demo3.push(normalText('地图场景名称后添加场景等级信息'));
+  demo3.push(normalText('任务记录界面任务详情栏添加任务奖励信息'));
+  demo3.push(normalText('角色进阶属性界面右上角增加FCR/FHR/FBR查询按钮，点击开启查询界面'));
+  demo3.push(normalText('字体采用励字准圆，英文采用经典暗黑风格英文字体'));
+  demo3.push(normalText('小站、入口添加指引光柱'));
+  demo3.push(normalText('高号符文、大小咒符、珠宝、完美宝石、红门钥匙添加掉落光柱'));
+  demo3.push(normalText('箱子、武器架、可破坏物品等加光效标注提示'));
+  demo3.push(normalText('凯恩增加发光效果、危险怪物、部分超级金怪加光效标记提示'));
+  demo3.push(normalText('更改战斗指挥、战斗命令、大叫技能光效，方便查看状态'));
+  demo3.push(normalText('部分地牢类型的小地图立柱黄色小点标注，方便第五幕沃特之廳快速识别尼拉塞克的正确方位'));
+  demo3.push(normalText('加长怪物血条'));
+  demo3.push(normalText('前面板经验条增加刻度'));
+  demo3.push(normalText('更换符文、红门钥匙贴图'));
+  demo3.push(normalText('暗黑2百科全书，有符文之语，所有盒子配方，有价值物品等等'));
   D2RMM.writeJson(demo3panelhdFilename, demo3panelhd);
 
-// demo4 模组说明
+// demo4 可选功能
   const demo4panelhdFilename = 'global\\ui\\layouts\\demo4panelhd.json';
   const demo4panelhd = D2RMM.readJson(demo4panelhdFilename);
   demo4panelhd.children[1].children[0].children = [];
   const demo4 = demo3panelhd.children[1].children[0].children;
+  demo4.push(normalText('Demo Mod 组件下载和反馈群【661975153】', 'Yellow', 2));
+  demo4.push(normalText('Demo Mod 组件下载和反馈群【661975153】', 'Yellow', 2));
+  demo4.push(normalText('Demo Mod 组件下载和反馈群【661975153】', 'Yellow', 2));
+  demo4.push(normalText('由于不建议修改MOD，【大背包版本】和【各种组件】及【(A)DemoMod-D2RMM组件】于Q群下载'));
+  demo4.push(normalText('其实原版Demo mod 就是我的自用版，我喜欢原版'));
+  demo4.push(dr());
+  demo4.push(normalText('大背包13X8，大背包可放太多神符破坏游戏平衡，所有有大背包和无大背包(自用版)两个版本'));
+  demo4.push(normalText('邪恶区域可固定王座，超市，劳模3c、古墓，牛场，石质古墓，古代通道，地穴等，也可同时3张或4张热门邪恶'));
+  demo4.push(normalText('不修改刺客聚气和战斗指挥和战斗命令时间'));
+  demo4.push(normalText('多倍怪-1-3-5倍'));
+  demo4.push(normalText('禁止无用暗金掉落-屏蔽小部分暗金戒指项链手套增加乔丹马拉亮金手套出现概率'));
+  demo4.push(normalText('提高染色率-暗金X2'));
+  demo4.push(normalText('提高染色率-暗金X3'));
+  demo4.push(normalText('提高染色率-暗金X3-绿装X3'));
+  demo4.push(normalText('提高染色率-暗金X5'));
+  demo4.push(normalText('提高染色率-暗金X5-绿装X5'));
+  demo4.push(normalText('提高染色率-蓝金绿暗金X3-超强X3'));
+  demo4.push(normalText('提高染色率-蓝金绿暗金X5-超强X5'));
+  demo4.push(normalText('首杀bug+6boss钥匙概率增加+高级符文掉率小幅增加+精华物品掉率小幅增加'));
+  demo4.push(normalText('首杀bug+6boss钥匙概率增加+高级符文掉率增加+精华物品掉率增加'));
+  demo4.push(normalText('首杀bug+怪物不掉杂物和药剂+6boss钥匙概率增加'));
+  demo4.push(normalText('首杀bug+怪物不掉杂物和药剂+6boss钥匙概率增加+高级符文掉率增加+精华物品掉率增加'));
+  demo4.push(normalText('邪恶区域-6boss钥匙场景(A1女伯爵,A2召唤者,A5尼拉塞克)'));
+  demo4.push(normalText('邪恶区域-大范围轮刷，来自yte离线版(DemoMod默认)'));
+  demo4.push(normalText('邪恶区域-MF场景(地穴+安姐+石质古墓+古代通道+劳模)'));
+  demo4.push(normalText('邪恶区域-热门4图同时出现(牛场,塔墓,魔殿,王座)'));
   D2RMM.writeJson(demo4panelhdFilename, demo4panelhd);
 }
 
