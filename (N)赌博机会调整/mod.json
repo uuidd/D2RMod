@@ -2,6 +2,7 @@
     "name": "(N)赌博机会调整",
     "description": "增加赌博的机会。",
     "author": "BotSarge",
+    "website": "https://www.nexusmods.com/diablo2resurrected/mods/304",
     "version": "1.0",
     "config": [
         {
@@ -24,7 +25,7 @@
             "id": "set",
             "type": "number",
             "name": "- 绿色物品机率",
-            "description": "0~100%. 如果将此值设置为100，则无法从赌博中获得稀有物品。香草几率为0.1%。",
+            "description": "0~100%. 如果将此值设置为100，则无法从赌博中获得稀有物品。默认几率为0.1%。",
             "defaultValue": 0.1,
             "minValue": 0,
             "maxValue": 100
@@ -33,7 +34,7 @@
             "id": "rare",
             "type": "number",
             "name": "- 金色物品机率",
-            "description": "0~100%. 如果将此值设置为100，则无法从赌博中获得魔法物品。香草的几率是10%。",
+            "description": "0~100%. 如果将此值设置为100，则无法从赌博中获得魔法物品。默认的几率是10%。",
             "defaultValue": 40,
             "minValue": 0,
             "maxValue": 100
@@ -48,7 +49,7 @@
         {
             "id": "nightmare",
             "type": "checkbox",
-            "name": "噩梦难度中只出的扩展级物品",
+            "name": "噩梦难度中只出扩展级物品",
             "description": "如果你的角色等级不够高，你可能会得到普通物品。",
             "defaultValue": false
         },

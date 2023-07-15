@@ -9,7 +9,7 @@
             "id": "infinite_arrow",
             "type": "checkbox",
             "name": "无限箭头",
-            "description": "箭头螺栓不再消耗。",
+            "description": "箭头弩矢不再消耗。",
             "defaultValue": true
         },
         {
@@ -22,22 +22,22 @@
         {
             "id": "drop_magic",
             "type": "checkbox",
-            "name": "为箭头添加蓝色金色质量等级",
-            "description": "箭头具有护身符可以具有的属性的相同机会，除了“更快的施法速度”",
+            "name": "箭头可以为蓝色金色品质",
+            "description": "箭头具有护身符可以具有的属性的相同机会，除了“更快的施法速度fcr”",
             "defaultValue": false
         },
         {
             "id": "add_recipe",
             "type": "checkbox",
-            "name": "添加箭的制作食谱",
-            "description": "只需使用神奇的箭头或螺栓作为成分，而不是护身符。",
+            "name": "添加箭的手工品配方",
+            "description": "跟护身符手工品一样，只需使用箭头或弩矢作为成分，而不是护身符。",
             "defaultValue": false
         },
         {
             "id": "mod_unique_bow",
             "type": "checkbox",
-            "name": "修改暗金绿色弓",
-            "description": "如果没有类似的属性，添加“发射魔箭”属性。",
+            "name": "修改暗金绿色弓，添加“发射魔法箭”属性",
+            "description": "如果没有类似的属性，添加“发射魔法箭”属性。",
             "defaultValue": false
         },
         {
@@ -50,7 +50,7 @@
         {
             "id": "mod_unique_throwing",
             "type": "checkbox",
-            "name": "修改暗金投掷武器",
+            "name": "无限暗金投掷武器",
             "description": "也让它们变得无限。",
             "defaultValue": false
         }
