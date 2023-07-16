@@ -1,0 +1,33 @@
+{
+  "name": "(SN)位移技能可在城镇施放",
+  "description": "",
+  "author": "Nexus4896",
+  "version": "1.0",
+  "file": "skills.txt",
+  "config": [
+    {
+      "id": "skillTown",
+      "type": "select",
+      "name": "技能在城镇中施放",
+      "description": "技能在城镇中施放.",
+      "defaultValue": "sillDef",
+      "options": [
+        {
+          "value": "sillDef",
+          "label": "游戏默认",
+          "description": "游戏默认"
+        },
+        {
+          "value": "allSkill",
+          "label": "允许在城镇中使用所有技能",
+          "description": "允许在城镇中使用所有技能"
+        },
+        {
+          "value": "partSkill",
+          "label": "只允许额外的移动和增益技能",
+          "description": "只允许额外的移动和增益技能"
+        }
+      ]
+    }
+  ]
+}

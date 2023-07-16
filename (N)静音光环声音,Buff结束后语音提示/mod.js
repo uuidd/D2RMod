@@ -2,7 +2,7 @@ const statesFilename = 'global\\excel\\states.txt';
 const states = D2RMM.readTsv(statesFilename);
 const soundsFilename = 'global\\excel\\sounds.txt';
 const sounds = D2RMM.readTsv(soundsFilename);
-// ÈÎºÎ·¢ÏÖ&È¡Ïû¹â»·µÄÉùÒô¡£¡£¡£
+// ä»»ä½•å‘ç°&å–æ¶ˆå…‰ç¯çš„å£°éŸ³ã€‚ã€‚ã€‚
 if (config.notHaloSound) {
   states.rows.forEach((row) => {
     if (row.onsound.includes('aura')) {
@@ -12,7 +12,7 @@ if (config.notHaloSound) {
 }
 
 
-// Buff¼¼ÄÜ½áÊøºóµÄÓïÒôÌáÊ¾
+// BuffæŠ€èƒ½ç»“æŸåçš„è¯­éŸ³æç¤º
 function SoundsPushData(sounds, Sound, index, Channel, FileName) {
   sounds.rows.push({
     'Sound': Sound,
@@ -61,10 +61,10 @@ function StatesMod(row, id, offsound) {
 }
 
 if (config.skillOff_sound) {
-  // 16¸öÓïÒôÎÄ¼ş¸´ÖÆ
+  // 16ä¸ªè¯­éŸ³æ–‡ä»¶å¤åˆ¶
   D2RMM.copyFile('skill', 'hd\\global\\sfx\\skill', true);
 
-  // soundsÎÄ¼şĞÂÔö16ĞĞ,À´×Ôjgmod
+  // soundsæ–‡ä»¶æ–°å¢16è¡Œ,æ¥è‡ªjgmod
 
   SoundsPushData(sounds, 'chillingarmor_off', 11399, 'sfx/items_hd', 'skill\\jg\\chillingarmor_off.flac');
   SoundsPushData(sounds, 'battleorders_off', 11400, 'sfx/items_hd', 'skill\\jg\\battleorders_off.flac');
@@ -84,25 +84,25 @@ if (config.skillOff_sound) {
   SoundsPushData(sounds, 'bladeshield_off', 11414, 'sfx/items_hd', 'skill\\jg\\bladeshield_off.flac');
 
 
-  // states.txtÎÄ¼ş16¸öĞ§¹ûĞŞ¸ÄÈÃÉùÒôÉúĞ§
+  // states.txtæ–‡ä»¶16ä¸ªæ•ˆæœä¿®æ”¹è®©å£°éŸ³ç”Ÿæ•ˆ
   states.rows.forEach((row) => {
-    StatesMod(row, 20, 'chillingarmor_off');//º®±ù¼×
-    StatesMod(row, 32, 'battleorders_off'); //Õ½¶·ÃüÁî
-    // StatesMod(row, 31, 'venom_off');        //´ã¶¾
-    StatesMod(row, 30, 'energyshield_off'); //ÄÜÁ¿»¤¶Ü
-    StatesMod(row, 10, 'frozenarmor_off');  //±ù·â¼×
-    StatesMod(row, 16, 'enchant_off');      //¸½Ä§
-    StatesMod(row, 101, 'holyshield_off');  //ÉñÊ¥Ö®¶Ü
-    StatesMod(row, 139, 'morph_off');       //±äĞÎÊõ(±äÀÇ)
-    StatesMod(row, 140, 'morph_off');       //±äĞÎÊõ(±äĞÜ)
-    StatesMod(row, 26, 'shout_off');        //´óºğ
-    StatesMod(row, 51, 'battlecommand_off');//Õ½¶·Ö¸»Ó
-    // StatesMod(row, 14, 'bonearmor_off');    //º¡¹Ç»¤¼×
-    StatesMod(row, 151, 'cyclonearmor_off');//ÆøĞı»¤¼×
-    StatesMod(row, 88, 'shiverarmor_off');  //Ëé±ù¼×
-    StatesMod(row, 159, 'fade_off');        //Ó°É¢
-    StatesMod(row, 157, 'burstofspeed_off');//ËÙ¶È±¬·¢
-    StatesMod(row, 158, 'bladeshield_off'); //ÀûÈĞÖ®¶Ü
+    StatesMod(row, 20, 'chillingarmor_off');//å¯’å†°ç”²
+    StatesMod(row, 32, 'battleorders_off'); //æˆ˜æ–—å‘½ä»¤
+    // StatesMod(row, 31, 'venom_off');        //æ·¬æ¯’
+    StatesMod(row, 30, 'energyshield_off'); //èƒ½é‡æŠ¤ç›¾
+    StatesMod(row, 10, 'frozenarmor_off');  //å†°å°ç”²
+    StatesMod(row, 16, 'enchant_off');      //é™„é­”
+    StatesMod(row, 101, 'holyshield_off');  //ç¥åœ£ä¹‹ç›¾
+    StatesMod(row, 139, 'morph_off');       //å˜å½¢æœ¯(å˜ç‹¼)
+    StatesMod(row, 140, 'morph_off');       //å˜å½¢æœ¯(å˜ç†Š)
+    StatesMod(row, 26, 'shout_off');        //å¤§å¼
+    StatesMod(row, 51, 'battlecommand_off');//æˆ˜æ–—æŒ‡æŒ¥
+    // StatesMod(row, 14, 'bonearmor_off');    //éª¸éª¨æŠ¤ç”²
+    StatesMod(row, 151, 'cyclonearmor_off');//æ°”æ—‹æŠ¤ç”²
+    StatesMod(row, 88, 'shiverarmor_off');  //ç¢å†°ç”²
+    StatesMod(row, 159, 'fade_off');        //å½±æ•£
+    StatesMod(row, 157, 'burstofspeed_off');//é€Ÿåº¦çˆ†å‘
+    StatesMod(row, 158, 'bladeshield_off'); //åˆ©åˆƒä¹‹ç›¾
   });
 }
 

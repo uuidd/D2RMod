@@ -1,0 +1,70 @@
+{
+  "name": "(SN)技能Buff持续时间调整",
+  "description": "",
+  "author": "Nexus4896 & Demo",
+  "version": "1.0",
+  "file": "skills.txt",
+  "config": [
+    {
+      "id": "bo",
+      "type": "number",
+      "name": "战斗命令和战斗指挥基础持续时间",
+      "description": "将基本持续时间设置在1到600之间，默认是30秒。总持续时间是基础持续时间加上第一级之后每级的10秒，所以3级战斗命令持续50秒",
+      "defaultValue": 30,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "gas",
+      "type": "number",
+      "name": "刺客聚气持续时间",
+      "description": "将聚气持续时间设置在1到400之间，默认为15秒",
+      "defaultValue": 15,
+      "minValue": 1,
+      "maxValue": 400
+    },
+    {
+      "id": "calc1",
+      "type": "checkbox",
+      "name": "限制火拳的元素转换",
+      "description": "如果启用，火之拳将固定50%的伤害转化为元素伤害。使用这个可以从攻击中吸取生命值和魔法值，无论技能等级如何",
+      "defaultValue": false
+    },
+    {
+      "id": "ass",
+      "type": "number",
+      "name": "刺客buff持续时间",
+      "description": "默认都是120秒，调整影散、速度爆发、淬毒、利刃之盾基础持续时间",
+      "defaultValue": 120,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "sor",
+      "type": "number",
+      "name": "法师buff持续时间",
+      "description": "默认都是144秒，调整寒冰甲、能量护盾、附魔基础持续时间",
+      "defaultValue": 144,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "pal",
+      "type": "number",
+      "name": "圣骑士buff持续时间",
+      "description": "默认都是30秒，调整神圣之盾基础持续时间",
+      "defaultValue": 30,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "dru",
+      "type": "number",
+      "name": "德鲁伊变狼变熊持续时间",
+      "description": "默认都是40秒，调整变形术(变狼)(变熊)基础持续时间",
+      "defaultValue": 40,
+      "minValue": 1,
+      "maxValue": 600
+    }
+  ]
+}
