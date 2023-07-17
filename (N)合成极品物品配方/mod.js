@@ -61,7 +61,7 @@ if (config.jew15sp40ed) {
     description: `${jewRecipe.description} Enhanced Damage: 31-40`,
     'input 2': 'r15',
     'input 3': 'r27',
-    output: `"jew,mag,pre=202,suf=171"`
+    output: `"jew,mag,pre=198,suf=171"`
   });
 }
 

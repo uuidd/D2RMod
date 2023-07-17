@@ -531,7 +531,9 @@ if (config.runeAndJew) {
     output: "jew,rar",
     "output b": "jew,rar",
     "output c": "jew,rar",
-    plvl: 100
+    plvl: 100,
+    'b plvl': 100,
+    'c plvl': 100
   });
   // 1 亮金珠宝 -> 3 蓝色珠宝
   cubemain.rows.push({
@@ -542,7 +544,9 @@ if (config.runeAndJew) {
     output: "jew,mag",
     "output b": "jew,mag",
     "output c": "jew,mag",
-    plvl: 100
+    plvl: 100,
+    'b plvl': 100,
+    'c plvl': 100
   });
   // 8 蓝色珠宝 -> 20#
   cubemain.rows.push({

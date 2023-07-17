@@ -294,6 +294,8 @@ switch (config.caseSize) {
       true // overwrite any conflicts
     );
     break;
+
+
   case 'case_16X16':
     const inventoryFilename2 = 'global\\excel\\inventory.txt';
     const inventory2 = D2RMM.readTsv(inventoryFilename2);
@@ -340,13 +342,12 @@ switch (config.caseSize) {
     };
     D2RMM.writeJson(profileLVFilename2, profileLV2);
 
-    const bankOriginalLayoutFilename2 =
-      'global\\ui\\layouts\\bankoriginallayout.json';
+    const bankOriginalLayoutFilename2 = 'global\\ui\\layouts\\bankoriginallayout.json';
     const bankOriginalLayout2 = D2RMM.readJson(bankOriginalLayoutFilename2);
     bankOriginalLayout2.children.forEach((child) => {
       if (child.name === 'grid') {
         child.fields.cellCount.x = 16;
-        child.fields.cellCount.y = 13;
+        child.fields.cellCount.y = 16;
       }
     });
     D2RMM.writeJson(bankOriginalLayoutFilename2, bankOriginalLayout2);
@@ -363,7 +364,7 @@ switch (config.caseSize) {
       }
       if (child.name === 'grid') {
         child.fields.cellCount.x = 16;
-        child.fields.cellCount.y = 13;
+        child.fields.cellCount.y = 16;
       }
       if (child.name === 'BankTabs') {
         child.fields.tabCount = 8;
@@ -389,7 +390,7 @@ switch (config.caseSize) {
     bankOriginalLayoutHD2.children.forEach((child) => {
       if (child.name === 'grid') {
         child.fields.cellCount.x = 16;
-        child.fields.cellCount.y = 13;
+        child.fields.cellCount.y = 16;
         child.fields.rect.x = child.fields.rect.x - 229;
         child.fields.rect.y = child.fields.rect.y - 572;
       }

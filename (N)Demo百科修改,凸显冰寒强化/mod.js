@@ -477,8 +477,17 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo3.push(normalText('一直刷不到日用品暗金可以赌博试试，概率控制得还可以'));
   demo3.push(normalText('关底boss bug杀适配2.6/2.7 邪恶区域，原有 bug 杀文件已经过时不适配邪恶区域'));
   demo3.push(normalText('扩大邪恶区域出现场景数量，邪恶区域将一次性循环很多张地图'));
-  demo3.push(normalText('战斗指挥，战斗命令原有基础为30秒，现延长持续时间至300秒，不更改其加血量尽量不影响游戏平衡'));
+  demo3.push(normalText('战斗指挥，战斗命令，大吼延长基础时间从30至300秒，不更改其加血量尽量不影响游戏平衡'));
+  demo3.push(normalText('野蛮人战嗥基础持续时间从12延长至120秒'));
+  demo3.push(normalText('野蛮人狂乱基础持续时间从6延长至30秒'));
   demo3.push(normalText('刺客聚气时间从原来15秒增加到30秒'));
+  demo3.push(normalText('刺客影散、速度爆发、淬毒、利刃之盾基础持续时间从120延长至360秒'));
+  demo3.push(normalText('法师寒冰甲、冰封甲，碎冰甲、能量护盾、附魔基础持续时间从144延长至432秒'));
+  demo3.push(normalText('圣骑士圣盾从30延长至300秒'));
+  demo3.push(normalText('德鲁伊变狼变熊基础持续时间从40延长至400秒'));
+  demo3.push(normalText('死灵法师诅咒基础持续时间延长'));
+  demo3.push(normalText('死灵法师骨墙骨牢基础持续时间从24延长至72秒'));
+  demo3.push(normalText('死灵法师重生怪物基础持续时间从180延长至540秒，加强死灵'));
   demo3.push(normalText('修理装备降价为原有1/4，适度降低，尽量避免后期超强底材做符文之语导致的修复不起'));
   demo3.push(normalText('禁用战网，防止将 mod 在战网环境下使用导致被封，正版如果出现30天未提示'));
   demo3.push(normalText('请先用原版登录到人物选择界面退出即可，离线版请点击【Offline】程序'));
@@ -486,6 +495,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo3.push(normalText('修改城镇人物出现位置，A2人物出生点在镇中间，A3在出生点在凯恩附近'));
   demo3.push(normalText('A5凯恩移动到储物箱附近，城镇里可以找凯恩和出口距离变短了'));
   demo3.push(normalText('城镇里可以传送，冲锋，跳跃等'));
+  demo3.push(normalText('删除技能的强制冷却时间，冰法加强'));
   demo3.push(normalText('战争指挥，战争命令在城里使用只作用于角色本身，在城外使用小弟才会被作用到'));
   demo3.push(normalText('新增一键点击角色进入地狱难度功能，退出游戏鼠标不用移动点击就能快速刷刷刷'));
   demo3.push(normalText('无法进入地狱的角色点击有提示且不会闪退，注意此功能无文本提示（文本太丑了）'));
