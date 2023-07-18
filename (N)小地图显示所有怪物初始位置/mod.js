@@ -174,7 +174,7 @@ if (config.allMonsters) {
   });
 }
 
-// 死灵法师的召唤物可以穿过彼此
+// 姝荤伒娉曞笀鐨勫彫鍞ょ墿鍙互绌胯繃褰兼
 function getEnabledMinions() {
   let minions = [];
 

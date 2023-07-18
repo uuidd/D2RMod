@@ -20,13 +20,6 @@
       "defaultValue": true
     },
     {
-      "id": "easierCowPortal",
-      "type": "checkbox",
-      "name": "鉴定书+回城书=奶牛关",
-      "description": "启用以使奶牛级门户配方使用标识和城镇门户的卷轴。",
-      "defaultValue": true
-    },
-    {
       "id": "convertPandemoniumKeys",
       "type": "checkbox",
       "name": "a1/a2/a5钥匙互转",

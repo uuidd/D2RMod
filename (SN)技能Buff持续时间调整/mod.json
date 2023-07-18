@@ -1,5 +1,5 @@
 {
-  "name": "(SN)各职业技能、Buff持续时间调整",
+  "name": "(NS)各职业技能、Buff持续时间调整",
   "description": "各职业技能、Buff持续时间调整，不修改伤害、血量等加成，主要避免一场游戏重复使用技能",
   "author": "Demo",
   "version": "1.2",
@@ -81,15 +81,6 @@
       "name": "德鲁伊变狼变熊基础持续时间/秒",
       "description": "默认都是40秒，调整变形术(变狼)(变熊)基础持续时间",
       "defaultValue": 40,
-      "minValue": 1,
-      "maxValue": 600
-    },
-    {
-      "id": "necCurses",
-      "type": "number",
-      "name": "死灵法师诅咒基础持续时间/秒",
-      "description": "默认是4-16秒不等，诅咒太多就不列，默认值设置为16则表示不修改",
-      "defaultValue": 16,
       "minValue": 1,
       "maxValue": 600
     },

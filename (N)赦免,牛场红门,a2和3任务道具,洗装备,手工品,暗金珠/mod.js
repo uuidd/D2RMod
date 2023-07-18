@@ -83,20 +83,6 @@ if (config.easierRunes) {
   }
 }
 
-// 牛场红门
-if (config.easierCowPortal) {
-  cubemain.rows.push({
-    description:
-      "Tome of Town Portal + Tome of Identify -> Portal to The Secret Cow Level",
-    enabled: 1,
-    version: 100,
-    numinputs: 2,
-    "input 1": "tbk",
-    "input 2": "ibk",
-    output: "Cow Portal",
-    "*eol\r": 0,
-  });
-}
 
 // 钥匙类型转换
 if (config.convertPandemoniumKeys) {

@@ -99,7 +99,7 @@ skills.rows.forEach((row) => {
   // 死灵法师
   if (row.charclass === 'nec') {
     // 默认值 16 则不修改数值
-    if (config.necCurses !== 16) {
+    if (config.necCurses !== 16 && config.necCurses) {
       // 伤害加深 200
       if (row.skilldesc === 'amplify damage') {
         row.Param3 = config.necCurses * 25;
