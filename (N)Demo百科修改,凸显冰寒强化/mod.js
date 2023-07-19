@@ -222,6 +222,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1.push(normalText('小退是角色退出游戏再重进就是新的一场游戏，大退是退出暗黑2重置版游戏', 'Yellow'));
   demo1.push(normalText('切换难度刷地图可避免出现重复彩虹刻面暗金珠或变成亮金', 'Yellow'));
   demo1.push(normalText('所有红门配方都会返还前两个物品，方便下次开门，相当于消耗最后一个物品', 'Red'));
+  demo1.push(normalText('红门只能在同一幕场景内使用，例如第一幕红门无法在第二幕使用', 'Red'));
   demo1.push(space());
   demo1.push(bigTitle('快速红门配方'));
   demo1.push(normalText2('回城书 + 辨识书', '奶牛关', 'Red'));
