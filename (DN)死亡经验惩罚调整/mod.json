@@ -9,7 +9,7 @@
       "id": "nightmare",
       "type": "number",
       "name": "噩梦死亡掉落经验/%",
-      "description": "恶梦掉落5%经验(也就是半格经验)",
+      "description": "恶梦死亡掉落5%经验(也就是半格经验)",
       "defaultValue": 5,
       "minValue": 0,
       "maxValue": 100
@@ -18,7 +18,7 @@
       "id": "hell",
       "type": "number",
       "name": "地狱死亡掉落经验/%",
-      "description": "地狱掉落10%经验(也就是一格经验)",
+      "description": "地狱死亡掉落10%经验(也就是一格经验)",
       "defaultValue": 10,
       "minValue": 0,
       "maxValue": 100
