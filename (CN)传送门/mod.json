@@ -1,0 +1,87 @@
+{
+  "name": "(CN)传送门",
+  "description": "由于配方重复无法开门，所以配方相对复杂，回返回部分材料，具体查看右上角描述，记忆技巧：回城书统一表示开门。解毒药剂为第一幕boss克星，解冻药剂是第二幕boss克星，精力药剂是第三幕boss，太经常光顾需要太多精力",
+  "author": "Demo",
+  "website": "",
+  "file": "cubemain.txt",
+  "version": "1.1",
+  "config": [
+    {
+      "id": "easierCowPortal",
+      "type": "checkbox",
+      "name": "回城书+鉴定书=奶牛关",
+      "description": "返还回城书和鉴定书，方便下次开门，历史遗留配方",
+      "defaultValue": true
+    },
+    {
+      "id": "easierTowerCellar5",
+      "type": "checkbox",
+      "name": "回城书+解毒药剂+红药=女伯爵闺房",
+      "description": "返还回城书+解毒药剂，也就是消耗一瓶红药开一次门",
+      "defaultValue": true
+    },
+    {
+      "id": "easierPit1",
+      "type": "checkbox",
+      "name": "回城书+解毒药剂+蓝药=地穴第一層",
+      "description": "返还回城书+解毒药剂，也就是消耗一瓶蓝药开一次门",
+      "defaultValue": true
+    },
+    {
+      "id": "easierCatacombs4",
+      "type": "checkbox",
+      "name": "回城书+解毒药剂+2瓶红药=安达利尔房间",
+      "description": "返还回城书+解毒药剂，也就是消耗2瓶红药开一次门",
+      "defaultValue": true
+    },
+    {
+      "id": "easierStonyTomb1",
+      "type": "checkbox",
+      "name": "回城书+解冻药剂+红药=石制古墓一层",
+      "description": "返还回城书+解冻药剂，也就是消耗1瓶红药开一次门",
+      "defaultValue": true
+    },
+    {
+      "id": "easierStonyTomb1",
+      "type": "checkbox",
+      "name": "回城书+解冻药剂+红药=石制古墓一层",
+      "description": "返还回城书+解冻药剂，也就是消耗1瓶红药开一次门",
+      "defaultValue": true
+    },
+    {
+      "id": "easierAncientTunnels",
+      "type": "checkbox",
+      "name": "回城书+解冻药剂+蓝药=古代通道",
+      "description": "返还回城书+解冻药剂，也就是消耗1瓶蓝药开一次门",
+      "defaultValue": true
+    },
+    {
+      "id": "easierDuriel",
+      "type": "checkbox",
+      "name": "回城书+解冻药剂+2瓶红药=督瑞尔房间",
+      "description": "返还回城书+解冻药剂，也就是消耗2瓶红药开一次门",
+      "defaultValue": true
+    },
+    {
+      "id": "easierDurance",
+      "type": "checkbox",
+      "name": "回城书+精力药剂+1瓶红药=墨菲斯托房间",
+      "description": "返还回城书+精力药剂，也就是消耗1瓶红药开一次门",
+      "defaultValue": true
+    },
+    {
+      "id": "easierChaos",
+      "type": "checkbox",
+      "name": "回城书+钥匙+红药=混沌避难所",
+      "description": "迪亚波罗房间/超市，返还回城书+钥匙，也就是消耗1瓶红药开一次门",
+      "defaultValue": true
+    },
+    {
+      "id": "easierThrone",
+      "type": "checkbox",
+      "name": "回城书+钥匙+蓝药=毀滅王座",
+      "description": "五小队，返还回城书+钥匙，也就是消耗1瓶蓝药开一次门",
+      "defaultValue": true
+    }
+  ]
+}

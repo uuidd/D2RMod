@@ -1,0 +1,41 @@
+{
+  "name": "(MN)提高移动速度",
+  "description": "提高角色的移动速度。",
+  "author": "olegbl",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/250",
+  "version": "1.1",
+  "config": [
+    {
+      "id": "walk",
+      "type": "number",
+      "name": "步行速度",
+      "description": "默认值为6。",
+      "defaultValue": 6,
+      "minValue": 1
+    },
+    {
+      "id": "run",
+      "type": "number",
+      "name": "跑步速度",
+      "description": "默认值为9。",
+      "defaultValue": 9,
+      "minValue": 1
+    },
+    {
+      "id": "druidshapeshift",
+      "type": "number",
+      "name": "德鲁伊狼/熊行走速度",
+      "description": "默认值为6。德鲁伊变形后的跑步速度等于该值乘以1.5。",
+      "defaultValue": 6,
+      "minValue": 1
+    },
+    {
+      "id": "necrovampire",
+      "type": "number",
+      "name": "吸血鬼速度(死灵法师套装效果)",
+      "description": "默认值为9。 步行和跑步时使用相同的速度。警告：也影响地下墓穴中的敌人吸血鬼。",
+      "defaultValue": 9,
+      "minValue": 1
+    }
+  ]
+}

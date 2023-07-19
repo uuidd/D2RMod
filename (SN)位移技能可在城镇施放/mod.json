@@ -1,5 +1,5 @@
 {
-  "name": "(NS)位移技能可在城镇施放",
+  "name": "(SN)位移技能可在城镇施放",
   "description": "",
   "author": "Nexus4896",
   "version": "1.0",
@@ -10,7 +10,7 @@
       "type": "select",
       "name": "技能在城镇中施放",
       "description": "技能在城镇中施放.",
-      "defaultValue": "sillDef",
+      "defaultValue": "partSkill",
       "options": [
         {
           "value": "sillDef",

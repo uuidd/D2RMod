@@ -1,0 +1,59 @@
+{
+  "name": "(RN)符文之语不再限定装备",
+  "description": "允许符文处理更多项目",
+  "author": "Shadedness",
+  "website": "https://",
+  "version": "1.4.2",
+  "file": "rune.txt",
+  "config": [
+    {
+      "id": "enableLadder",
+      "type": "checkbox",
+      "name": "启用天梯符文之语",
+      "description": "在离线游戏中启用仅梯形图符文。",
+      "defaultValue": false
+    },
+    {
+      "id": "weaponsUnlocked",
+      "type": "checkbox",
+      "name": "无武器限制",
+      "description": "启用以允许任何武器符文单词在所有武器中工作。",
+      "defaultValue": true
+    },
+    {
+      "id": "shieldsUnlocked",
+      "type": "checkbox",
+      "name": "无盾牌限制",
+      "description": "启用以允许任何护盾符文在所有护盾类型中工作。",
+      "defaultValue": true
+    },
+    {
+      "id": "shieldsToArmor",
+      "type": "checkbox",
+      "name": "盔甲上的盾牌符文",
+      "description": "启用以允许盾牌符文在盔甲中工作。如果启用“无护盾限制”，这也将包括圣骑士护盾符文。",
+      "defaultValue": true
+    },
+    {
+      "id": "armorToShields",
+      "type": "checkbox",
+      "name": "盾牌上的盔甲符文",
+      "description": "启用以允许护甲符文在护盾中工作。",
+      "defaultValue": true
+    },
+    {
+      "id": "helmsToShields",
+      "type": "checkbox",
+      "name": "护盾上的头盔符女",
+      "description": "启用以允许头盔符文在盾牌中工作。",
+      "defaultValue": true
+    },
+    {
+      "id": "armorUnlocked",
+      "type": "checkbox",
+      "name": "无装甲限制",
+      "description": "启用以允许任何盔甲或头盔符文在所有盔甲类型中工作。你需要一个单独的mod来启用其他物品类型的套接字。",
+      "defaultValue": true
+    }
+  ]
+}

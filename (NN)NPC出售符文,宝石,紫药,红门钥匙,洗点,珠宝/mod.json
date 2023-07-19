@@ -1,0 +1,61 @@
+{
+  "name": "(NN)NPC出售符文,宝石,紫药,红门钥匙,洗点,珠宝,修改装备降价",
+  "description": "A1阿卡拉A2桌格南(雷山德)A3奥玛斯(艾柯)A4贾梅拉A5玛拉",
+  "author": "lil174",
+  "version": "1.5",
+  "config": [
+    {
+      "id": "runesUpTo",
+      "type": "number",
+      "name": "A1-A5NPC出售符文最高编号",
+      "description": "0=不允许,限制0-33",
+      "defaultValue": 0,
+      "minValue": 0,
+      "maxValue": 33
+    },
+    {
+      "id": "allowGem",
+      "type": "checkbox",
+      "name": "A1-A5NPC出售完美宝石",
+      "description": "允许A1-A5NPC出售6种完美宝石包括完美骷髅",
+      "defaultValue": false
+    },
+    {
+      "id": "allowRev",
+      "type": "checkbox",
+      "name": "A1-A5NPC出售大紫药",
+      "description": "方便K6BOSS用",
+      "defaultValue": false
+    },
+    {
+      "id": "allowUKey",
+      "type": "checkbox",
+      "name": "A1-A5NPC出售红门钥匙",
+      "description": "方便K6BOSS用",
+      "defaultValue": false
+    },
+    {
+      "id": "allowToken",
+      "type": "checkbox",
+      "name": "A1-A5NPC出售洗点",
+      "description": "方便洗属性和技能点",
+      "defaultValue": false
+    },
+    {
+      "id": "allowJewel",
+      "type": "checkbox",
+      "name": "A1-A5NPC出售珠宝",
+      "description": "方便做手工物品",
+      "defaultValue": false
+    },
+    {
+      "id": "repMult",
+      "type": "number",
+      "name": "修复成本设定",
+      "description": "将维修成本设置为物品价值的百分几。 默认是12.5%",
+      "defaultValue": 12.5,
+      "minValue": 1,
+      "maxValue": 100
+    }
+  ]
+}

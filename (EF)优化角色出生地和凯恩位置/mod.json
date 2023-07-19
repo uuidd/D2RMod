@@ -1,0 +1,27 @@
+{
+  "name": "(EF)优化角色出生地和凯恩位置",
+  "description": "在A5移动凯恩，更好的入口点和传送门位置",
+  "author": "night0wl117",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/310",
+  "version": "1.1",
+  "config": [
+    {
+      "id": "move_cain",
+      "type": "checkbox",
+      "name": "在第5幕中移动凯恩",
+      "description": "在第5幕中将凯恩移到储存箱附近"
+    },
+    {
+      "id": "act2",
+      "type": "checkbox",
+      "name": "第2幕城镇出生地",
+      "description": "移动第2幕城镇角色出生地到法拉旁边"
+    },
+    {
+      "id": "act3",
+      "type": "checkbox",
+      "name": "第3幕城镇出生地",
+      "description": "移动第3幕城镇角色出生地靠近储存箱"
+    }
+  ]
+}

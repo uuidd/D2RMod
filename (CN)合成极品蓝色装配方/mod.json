@@ -1,0 +1,65 @@
+{
+  "name": "(CN)合成极品蓝色装配方",
+  "description": "15攻速31-40ed、15攻速11-15全抗、15攻速16-30火炕珠；20生命5全抗、20生命17法力、3最大伤害20准确20生命小板子；乔丹，马拉",
+  "author": "Demo",
+  "website": "",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "jew15sp40ed",
+      "type": "checkbox",
+      "name": "15攻速11-15全抗蓝色珠宝",
+      "description": "15攻速11-15全抗蓝色珠宝",
+      "defaultValue": true
+    },
+    {
+      "id": "jew15sp15res",
+      "type": "checkbox",
+      "name": "15攻速31-40ed蓝色珠宝(红白珠)",
+      "description": "15攻速31-40ed蓝色珠宝（红白珠）",
+      "defaultValue": true
+    },
+    {
+      "id": "jew15sp30fire",
+      "type": "checkbox",
+      "name": "15攻速16-30火炕蓝色珠宝(安头珠)",
+      "description": "15攻速16-30火炕蓝色珠宝(安头珠)",
+      "defaultValue": true
+    },
+    {
+      "id": "mara3",
+      "type": "checkbox",
+      "name": "6个暗金项链合成马拉的项链",
+      "description": "6个暗金项链合成马拉的项链",
+      "defaultValue": true
+    },
+    {
+      "id": "soj3",
+      "type": "checkbox",
+      "name": "6个暗金戒指合成乔丹之石",
+      "description": "6个暗金戒指合成乔丹之石",
+      "defaultValue": true
+    },
+    {
+      "id": "torchToSmallCharm",
+      "type": "checkbox",
+      "name": "火炬换成小板子",
+      "description": "1火炬 + 3 珠宝-> 1个3-5全抗16-20生命小板子+1-3最大伤害10-20准确16-20生命小板子 + 13-17法力16-20生命小板子",
+      "defaultValue": true
+    },
+    {
+      "id": "refreshWhite",
+      "type": "checkbox",
+      "name": "刷新专属白色物品属性",
+      "description": "刷新专属白色物品属性",
+      "defaultValue": false
+    },
+    {
+      "id": "jpBlue",
+      "type": "checkbox",
+      "name": "合成极品蓝装",
+      "description": "合成极品蓝装",
+      "defaultValue": true
+    }
+  ]
+}

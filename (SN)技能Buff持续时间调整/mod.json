@@ -1,5 +1,5 @@
 {
-  "name": "(NS)各职业技能、Buff持续时间调整",
+  "name": "(SN)各职业技能、Buff持续时间调整",
   "description": "各职业技能、Buff持续时间调整，不修改伤害、血量等加成，主要避免一场游戏重复使用技能",
   "author": "Demo",
   "version": "1.2",

@@ -1,0 +1,58 @@
+{
+  "name": "(CN)模拟联机物品交易",
+  "description": "详细配方请参考组件目录下[组件说明.txt]，最好把它放到桌面，我猜你会经常用到它，另外该组件与升级符文不需要宝石组件冲突，该组件已另类实现该功能！！！",
+  "author": "Demo",
+  "website": "",
+  "version": "1.1",
+  "config": [
+    {
+      "id": "traderieNecessity",
+      "type": "checkbox",
+      "name": "符文和常用暗金/绿色物品互换",
+      "description": "符文和常用暗金/绿色物品互换，详情请见组件目录下[组件说明.txt]【符文和常用暗金/绿色物品互换说明】【合成专属装备】",
+      "defaultValue": true
+    },
+    {
+      "id": "occupationExclusiveItems",
+      "type": "checkbox",
+      "name": "通过购买商店合成职业专属物品",
+      "description": "通过购买商店合成职业专属物品，配合符文和常用暗金/绿色物品互换使用,详情请见组件目录下[组件说明.txt]",
+      "defaultValue": true
+    },
+    {
+      "id": "traderieRunes",
+      "type": "checkbox",
+      "name": "符文换符文",
+      "description": "模拟T网符文交易比例交换，详细比例见组件目录下[组件说明.txt]中的【大符文升/降级，T网比例】【小号符文换取大号符文说明】",
+      "defaultValue": true
+    },
+    {
+      "id": "traderieMinRunes",
+      "type": "checkbox",
+      "name": "小符文低代价升降级",
+      "description": "符文降级：19#-2# + 1 珠宝 = 18#-1#，符文升级1#-18# + 2 珠宝 = 2#-19#，珠宝就是手续费",
+      "defaultValue": true
+    },
+    {
+      "id": "runeAndGemstone",
+      "type": "checkbox",
+      "name": "宝石与符文互换",
+      "description": "详细比例见组件目录下[组件说明.txt]中的【宝石与符文】",
+      "defaultValue": true
+    },
+    {
+      "id": "runeAndJew",
+      "type": "checkbox",
+      "name": "珠宝与符文互换",
+      "description": "详细比例见组件目录下[组件说明.txt]中的【符文与珠宝】",
+      "defaultValue": true
+    },
+    {
+      "id": "runeAndWhile",
+      "type": "checkbox",
+      "name": "符文换底材",
+      "description": "详细比例见组件目录下[组件说明.txt]中的【符文换底材】",
+      "defaultValue": true
+    }
+  ]
+}

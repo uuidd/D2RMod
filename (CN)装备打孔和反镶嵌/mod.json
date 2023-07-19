@@ -1,0 +1,46 @@
+{
+  "name": "(CN)装备打孔和反镶嵌",
+  "description": "允许使用珠宝插入和取出物品。",
+  "author": "olegbl & demo",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/188",
+  "version": "1.1",
+  "file": "cubemain.txt",
+  "config": [
+    {
+      "id": "socket",
+      "type": "checkbox",
+      "name": "装备打孔",
+      "description": "没有孔的物品使用1-6个珠宝打孔，不会超出物品最大孔数",
+      "defaultValue": true
+    },
+    {
+      "id": "maxSocket",
+      "type": "checkbox",
+      "name": "限制最大打孔数",
+      "description": "开启限制最大打孔数，暗金绿色只能打一孔,亮金只能打2孔，蓝色物品只能4孔，白色物品6孔",
+      "defaultValue": false
+    },
+    {
+      "id": "unsocket",
+      "type": "checkbox",
+      "name": "将已镶嵌物品分离",
+      "description": "反镶嵌，使用一个珠宝将已镶嵌的物品分离开",
+      "defaultValue": true
+    },
+    {
+      "id": "item",
+      "type": "select",
+      "name": "要使用物品",
+      "description": "你可以选择一件珠宝以外的物品来代替来使用。",
+      "defaultValue": "jew",
+      "options": [
+        { "value": "jew", "label": "珠宝" },
+        { "value": "rin", "label": "戒指" },
+        { "value": "amu", "label": "项链" },
+        { "value": "rvl", "label": "全效回复药水(大紫)" },
+        { "value": "tsc", "label": "回城卷轴" },
+        { "value": "isc", "label": "辨识卷轴" }
+      ]
+    }
+  ]
+}
