@@ -4,6 +4,7 @@
     "author": "lil174 && demo",
     "website": "",
     "version": "",
+    "file": "desecratedzones.json",
     "config": [
         {
             "id": "zone_select",

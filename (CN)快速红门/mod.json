@@ -42,13 +42,6 @@
       "defaultValue": true
     },
     {
-      "id": "easierStonyTomb1",
-      "type": "checkbox",
-      "name": "回城书+解冻药剂+红药=石制古墓一层",
-      "description": "返还回城书+解冻药剂，也就是消耗1瓶红药开一次门",
-      "defaultValue": true
-    },
-    {
       "id": "easierAncientTunnels",
       "type": "checkbox",
       "name": "回城书+解冻药剂+蓝药=古代通道",
