@@ -1,7 +1,8 @@
 {
-  "name": "(SN)位移技能可在城镇施放",
-  "description": "",
+  "name": "(SN)城镇可施放技能",
+  "description": "可在城镇中施放传送、跳跃、呐喊、冲锋、战斗命令和战斗指挥等等 ",
   "author": "Nexus4896",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/35",
   "version": "1.0",
   "file": "skills.txt",
   "config": [

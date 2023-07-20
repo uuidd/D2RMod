@@ -7,6 +7,8 @@ if (config.nightmare !== 5 && config.hell !== 10) {
       row['DeathExpPenalty'] = config.nightmare;
     } else if (row['Name'] === 'Hell') {
       row['DeathExpPenalty'] = config.hell;
+    }else if (row['Name'] === 'Normal'){
+      row['DeathExpPenalty'] = config.normal;
     }
   });
   D2RMM.writeTsv(difficultylevelsFilename, difficultylevels);
