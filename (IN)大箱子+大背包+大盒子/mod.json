@@ -20,13 +20,13 @@
         },
         {
           "value": "case_16X13",
-          "label": "16X13大箱子(物品不缩放)",
+          "label": "16X13大箱子(适配手柄)",
           "description": "长16宽13"
         },
         {
           "value": "case_16X16",
           "label": "16X16大箱子(物品不缩放)",
-          "description": "长16宽16"
+          "description": "长16宽16，不适配手柄"
         }
       ]
     },
@@ -69,7 +69,7 @@
         {
           "value": "box_10X10",
           "label": "10X10盒子(物品不缩放)",
-          "description": "长10宽10"
+          "description": "长10宽10，不适配手柄"
         }
       ]
     }
