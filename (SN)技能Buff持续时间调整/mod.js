@@ -14,7 +14,7 @@ skills.rows.forEach((row) => {
       row.Param1 = config.bo * 25;
     }
     // 大吼 持续时间 750 默认30秒
-    if (row.skilldesc === 'shout'){
+    if (row.skilldesc === 'shout') {
       row.Param3 = config.bo * 25;
     }
     if (row.skilldesc === 'battle cry') {
@@ -154,7 +154,10 @@ skills.rows.forEach((row) => {
       row.Param3 = config.necRevive * 25;
     }
   }
-
+  // 变化头
+  if (row.skilldesc === 'mark of the wolf' || row.skilldesc === 'mark of the bear') {
+    row.auralencalc = config.druImprint * 25;
+  }
 });
 
 D2RMM.writeTsv(skillsFileName, skills);
