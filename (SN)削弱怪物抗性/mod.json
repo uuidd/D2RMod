@@ -1,0 +1,24 @@
+{
+  "name": "(SN)削弱怪物抗性",
+  "description": "减少怪物的最大元素抗性，移除他们在噩梦和地狱困难中的免疫。",
+  "author": "olegbl",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/185",
+  "version": "1.0",
+  "file": "monstats.txt、monumod.txt、superuniques.txt",
+  "config": [
+    {
+      "id": "maxres",
+      "type": "number",
+      "name": "怪物最大抗性",
+      "description": "将怪物的抗性设置为该值的最大值。",
+      "defaultValue": 90
+    },
+    {
+      "id": "disableaffixes",
+      "type": "checkbox",
+      "name": "移除怪物强力词缀",
+      "description": "禁用某些怪物词缀（魔法、硬化皮肤、抗性），这些词缀可以增加属性，并可以使怪物在最大抗性低于100的情况下变得免疫。",
+      "defaultValue": true
+    }
+  ]
+}
