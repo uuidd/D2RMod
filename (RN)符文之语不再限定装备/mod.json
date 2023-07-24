@@ -44,7 +44,7 @@
     {
       "id": "helmsToShields",
       "type": "checkbox",
-      "name": "护盾上的头盔符女",
+      "name": "护盾上的头盔符文",
       "description": "启用以允许头盔符文在盾牌中工作。",
       "defaultValue": true
     },

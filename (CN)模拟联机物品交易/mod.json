@@ -3,7 +3,7 @@
   "description": "详细配方请参考组件目录下[组件说明.txt]，最好把它放到桌面，我猜你会经常用到它，另外该组件与升级符文不需要宝石组件冲突，该组件已另类实现该功能！！！",
   "author": "Demo",
   "website": "",
-  "version": "1.1",
+  "version": "1.2",
   "config": [
     {
       "id": "traderieNecessity",
@@ -52,6 +52,13 @@
       "type": "checkbox",
       "name": "符文换底材",
       "description": "详细比例见组件目录下[组件说明.txt]中的【符文换底材】",
+      "defaultValue": true
+    },
+    {
+      "id": "runeAndUniqueCharm",
+      "type": "checkbox",
+      "name": "符文换破免板子",
+      "description": "详细比例见组件目录下[组件说明.txt]中的【符文换破免板子】",
       "defaultValue": true
     }
   ]

@@ -1,4 +1,5 @@
 if (config.demoInfo) {
+  D2RMM.copyFile('local', 'local', true);
   const npcsFilename = 'local\\lng\\strings\\npcs.json';
   const npcs = D2RMM.readJson(npcsFilename);
   npcs.forEach((item) => {
@@ -200,8 +201,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1panelhd.children[1].children[0].children = [];
   const demo1 = demo1panelhd.children[1].children[0].children;
   demo1.push(bigTitle('备注'));
-  demo1.push(normalText('如果没有指定数量，默认为一个', 'Yellow'));
-  demo1.push(normalText('如果只有一个的物品，直接合成即可', 'Yellow'));
+  demo1.push(normalText('如果没有指定数量，默认为一个，如果只有一个的物品，直接合成即可', 'Yellow'));
   demo1.push(normalText('合成暗金一场游戏只能用一次，第二次将变为亮金，需要小退后重建游戏', 'Yellow'));
   demo1.push(normalText('小退是角色退出游戏再重进就是新的一场游戏，大退是退出暗黑2重置版游戏', 'Yellow'));
   demo1.push(normalText('切换难度刷地图可避免出现重复彩虹刻面暗金珠或变成亮金', 'Yellow'));
@@ -212,13 +212,13 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1.push(normalText2('回城书 + 辨识书', '奶牛关', 'Red'));
   demo1.push(normalText2('回城书 + 解毒药剂 + 红药', '女伯爵闺房/刷符文', 'Red'));
   demo1.push(normalText2('回城书 + 解毒药剂 + 蓝药', '地穴第一层', 'Red'));
-  demo1.push(normalText2('回城书 + 解毒药剂 + 2瓶红药', '安达利尔房间/安姐', 'Red'));
+  demo1.push(normalText2('回城书 + A1/A2精华 + 2瓶红药', '安达利尔房间/安姐', 'Red'));
   demo1.push(normalText2('回城书 + 解冻药剂 + 红药', '石制古墓一层', 'Red'));
   demo1.push(normalText2('回城书 + 解冻药剂 + 蓝药', '古代通道', 'Red'));
-  demo1.push(normalText2('回城书 + 解冻药剂 + 2瓶红药', '督瑞尔房间/督瑞雨', 'Red'));
-  demo1.push(normalText2('回城书 + 精力药剂 + 红药', '墨菲斯托房间/憎恨的囚牢第三层/劳模', 'Red'));
-  demo1.push(normalText2('回城书 + 钥匙 + 红药', '混沌避难所/迪亚波罗/超市', 'Red'));
-  demo1.push(normalText2('回城书 + 钥匙 + 蓝药', '毀滅王座/五小队/巴尔', 'Red'));
+  demo1.push(normalText2('回城书 + A1/A2精华 + 2瓶蓝药', '督瑞尔房间/督瑞雨', 'Red'));
+  demo1.push(normalText2('回城书 + A3精华 + 红药', '墨菲斯托房间/憎恨的囚牢第三层/劳模', 'Red'));
+  demo1.push(normalText2('回城书 + A4精华 + 红药', '混沌避难所/迪亚波罗/超市', 'Red'));
+  demo1.push(normalText2('回城书 + A5精华 + 蓝药', '毀滅王座/五小队/巴尔', 'Red'));
   demo1.push(bigTitle('常用合成公式'));
   demo1.push(normalText2('回城卷轴 + 辨识卷轴', '赦免徽章(洗点)'));
   demo1.push(normalText2('3个箭矢', '有一定几率不消耗且自恢复的箭矢'));
@@ -238,8 +238,6 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1.push(normalText('小退是角色退出游戏再重进就是新的一场游戏，大退是退出暗黑2重置版游戏', 'Yellow'));
   demo1.push(normalText('切换难度刷地图可避免出现重复彩虹刻面暗金珠，或变成亮金', 'Yellow'));
   demo1.push(normalText2('完美宝石', '3个同颜色无暇宝石(宝石还原)'));
-  demo1.push(normalText2('6个暗金戒指 ', '乔丹之石', 'Gold'));
-  demo1.push(normalText2('6个暗金项链 ', '马拉的项链', 'Gold'));
   demo1.push(normalText2('15#符文 + 22#号符文 + 32#符文 + 3个亮金珠宝', '15攻速11-15全抗蓝色珠宝', 'Blue'));
   demo1.push(normalText2('15#符文 + 8#号符文 + 32#符文 + 3个亮金珠宝', '15攻速16-30火炕蓝色珠宝(安头珠)', 'Blue'));
   demo1.push(normalText2('15#符文 + 27#号符文 + 32#符文 + 3个亮金珠宝', '15攻速31-40ed蓝色珠宝(红白珠)', 'Blue'));
@@ -411,6 +409,10 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText2('8个18#符文', '24#符文', '', 2));
   demo2.push(normalText2('8个19#符文', '24#符文', '', 2));
   demo2.push(normalText2('3个19#符文', '20#符文', '', 2));
+  demo2.push(normalText2('5个20#符文', '2个22#符文', '', 2));
+  demo2.push(normalText2('3个23#符文', '26#符文', '', 2));
+  demo2.push(normalText2('4个26#符文', '30#符文', '', 2));
+  demo2.push(normalText2('6个26#符文', '31#符文', '', 2));
   demo2.push(bigTitle('小符文升/降级'));
   demo2.push(normalText('T网上小号符文几乎都是一换一，添加珠宝作为手续费', 'Red', 2));
   demo2.push(normalText('所有符文升降级都不需要宝石，原升级配方保留。', 'Red', 2));
@@ -435,22 +437,31 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText22('32#符文 + 珠宝', '26#符文 + 15#符文', '', 2));
   demo2.push(normalText22('33#符文 + 珠宝', '28#符文 + 15#符文', '', 2));
   demo2.push(bigTitle('宝石与符文'));
-  demo2.push(normalText22('20#符文 + 无暇紫宝石 ', ' 3 完美紫宝石'));
-  demo2.push(normalText22('8#符文 + 钥匙 ', ' 1 完美紫宝石 + 钥匙'));
-  demo2.push(normalText2('20#符文 + 钥匙 ', ' 3个8#符文(结合上下公式可实现所有宝石与符文互换)'));
-  demo2.push(normalText2('6 完美骷髅宝石 ', ' 3 完美紫宝石'));
-  demo2.push(normalText2('6 完美红宝石 ', ' 3 完美紫宝石', 'Red'));
-  demo2.push(normalText2('6 完美黄宝石 ', ' 2 完美紫宝石', 'Yellow'));
-  demo2.push(normalText2('6 完美绿宝石 ', ' 2 完美紫宝石', 'Green'));
-  demo2.push(normalText2('6 完美蓝宝石 ', ' 2 完美紫宝石', 'Blue'));
-  demo2.push(normalText2('6 完美白宝石 ', ' 2 完美紫宝石'));
+  demo2.push(normalText22('20#符文 + 无暇紫宝石', '3 完美紫宝石'));
+  demo2.push(normalText22('8#符文 + 钥匙', '1 完美紫宝石 + 钥匙'));
+  demo2.push(normalText22('8 完美紫宝石', '20#符文'));
+  demo2.push(normalText2('20#符文 + 钥匙', '3个8#符文(结合上下公式可实现所有宝石与符文互换)'));
+  demo2.push(normalText2('6 完美骷髅宝石', '3 完美紫宝石'));
+  demo2.push(normalText2('6 完美红宝石', '3 完美紫宝石', 'Red'));
+  demo2.push(normalText2('6 完美黄宝石', '2 完美紫宝石', 'Yellow'));
+  demo2.push(normalText2('6 完美绿宝石', '2 完美紫宝石', 'Green'));
+  demo2.push(normalText2('6 完美蓝宝石', '2 完美紫宝石', 'Blue'));
+  demo2.push(normalText2('6 完美白宝石', '2 完美紫宝石'));
   demo2.push(bigTitle('符文与珠宝'));
   demo2.push(normalText2('20#符文 + 解冻药剂(商店黄色的药剂) ', ' 3 亮金珠宝', 'Yellow'));
   demo2.push(normalText2('1 亮金珠宝 ', ' 3 蓝色珠宝', 'Blue'));
   demo2.push(normalText2('9 珠宝 ', ' 20#符文'));
   demo2.push(bigTitle('符文与底材'));
-  demo2.push(normalText2('20#符文 + 盾牌 ', ' 4孔君主盾'));
-  demo2.push(normalText2('8#符文 + 剑 ', ' 4孔水晶剑'));
+  demo2.push(normalText2('20#符文 + 盾牌', ' 4孔君主盾'));
+  demo2.push(normalText2('8#符文 + 剑', ' 4孔水晶剑'));
+  demo2.push(bigTitle('符文与破免大板子'));
+  demo2.push(normalText2('24#符文 + 完美蓝宝石 + 超大板子', ' 破冰免板'));
+  demo2.push(normalText2('24#符文 + 完美紫宝石 + 超大板子', ' 破电免板'));
+  demo2.push(normalText2('23#符文 + 完美红宝石 + 超大板子', ' 破火免板'));
+  demo2.push(normalText2('23#符文 + 完美骷髅宝石 + 超大板子', ' 破魔免板'));
+  demo2.push(normalText2('23#符文 + 完美白宝石 + 超大板子', ' 破物免板'));
+  demo2.push(normalText2('22#符文 + 完美绿宝石 + 超大板子', ' 破毒免板'));
+
   D2RMM.writeJson(demo2panelhdFilename, demo2panelhd);
 // demo3 模组说明
   const demo3panelhdFilename = 'global\\ui\\layouts\\demo3panelhd.json';

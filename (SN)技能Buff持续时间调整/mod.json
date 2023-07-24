@@ -1,8 +1,8 @@
 {
-  "name": "(SN)各职业技能、Buff持续时间调整",
+  "name": "(SN)技能、Buff持续时间调整",
   "description": "各职业技能、Buff持续时间调整，不修改伤害、血量等加成，主要避免一场游戏重复使用技能",
   "author": "Demo & PHombie & givememodslmao",
-  "version": "1.2",
+  "version": "1.3",
   "file": "skills.txt",
   "config": [
     {
@@ -81,6 +81,15 @@
       "name": "德鲁伊变狼变熊基础持续时间/秒",
       "description": "原版都是40秒，调整变形术(变狼)(变熊)基础持续时间",
       "defaultValue": 400,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "druImprint",
+      "type": "number",
+      "name": "变化头狼人/熊人印记基础持续时间/秒",
+      "description": "原版是180秒，调整狼人/熊人变形基础持续时间",
+      "defaultValue": 540,
       "minValue": 1,
       "maxValue": 600
     },

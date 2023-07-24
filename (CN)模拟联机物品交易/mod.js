@@ -181,6 +181,19 @@ if (config.traderieRunes) {
   multiToOne('r03', 8, 'r20');
   multiToOne('r02', 8, 'r20');
   multiToOne('r01', 8, 'r20');
+  //
+  multiToOne('r23', 3, 'r26'); // 3个23换26
+  multiToOne('r26', 4, 'r30'); // 4个26换30
+  multiToOne('r26', 6, 'r31'); // 6个26换31
+  // 5个20换2个22
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `5 ${rName['r20']} -> 2 ${rName['r22']}`,
+    numinputs: 5,
+    "input 1": "r20,qty=5",
+    output: "r22",
+    "output b": "r22"
+  });
 }
 
 // ↓ r19-r2 + 1 jew    ↑ r1-r18 + 2 jew
@@ -190,17 +203,6 @@ if (config.traderieMinRunes) {
     const rSmall = 'r' + ((i - 1) + '').padStart(2, '0');
     twoWayRuneRecipe([rBig], [rSmall]);
   }
-  // 20# + 钥匙 -> 3 8#
-  // cubemain.rows.push({
-  //   ...baseRecipe,
-  //   description: `1 ${rName['r20']} + 1 Key -> 3 ${rName['r08']}`,
-  //   numinputs: 2,
-  //   "input 1": "r20",
-  //   "input 2": "key",
-  //   output: "r08",
-  //   "output b": "r08",
-  //   "output c": "r08"
-  // });
 }
 
 const sName = {
@@ -517,7 +519,16 @@ if (config.runeAndGemstone) {
     output: "r08",
     "output b": "key",
   });
-
+  // 8个紫换3个20
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `8 ${gemName['gpv']} -> 1 ${rName['r20']}`,
+    numinputs: 8,
+    "input 1": 'gpv,qty=8',
+    output: "r20",
+    "output b": "r20",
+    "output c": "r20"
+  });
 }
 
 if (config.runeAndJew) {
@@ -584,5 +595,27 @@ if (config.runeAndWhile) {
     'mod 1 max': 4,
     lvl: 30
   });
+}
+
+function uniqueCharm(rune, gem, charm) {
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `${rName[rune]} + ${gemName[gem]} + ExtraLarge Charm -> ${charm}`,
+    numinputs: 3,
+    'input 1': rune,
+    'input 2': 'cm3',
+    'input 3': gem,
+    output: charm,
+    plvl: 100
+  });
+}
+
+if (config.runeAndUniqueCharm) {
+  uniqueCharm("r24", 'gpb', "Cold Rupture"); // 破冰 蓝
+  uniqueCharm("r24", 'gpv', "Crack of the Heavens"); // 破电 紫
+  uniqueCharm("r23", 'gpr', "Flame Rift"); // 破火 红
+  uniqueCharm("r23", 'gpw', "Bone Break"); // 破物 白
+  uniqueCharm("r23", 'skz', "Black Cleft"); // 破魔 骷髅
+  uniqueCharm("r22", 'gpg', "Rotting Fissure"); // 破毒 绿
 }
 D2RMM.writeTsv(cubemainFilename, cubemain);

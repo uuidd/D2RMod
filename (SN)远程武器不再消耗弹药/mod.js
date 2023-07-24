@@ -449,7 +449,6 @@ if(config.add_recipe === true)
                     'mod 5 param': recipe['mod 5 param'],
                     'mod 5 min': recipe['mod 5 min'],
                     'mod 5 max': recipe['mod 5 max'],
-                    'b output': recipe['b output'],
                     'b lvl': recipe['b lvl'],
                     'b plvl': recipe['b plvl'],
                     'b ilvl': recipe['b ilvl'],
@@ -508,7 +507,6 @@ if(config.add_recipe === true)
                     'c mod 5 param': recipe['c mod 5 param'],
                     'c mod 5 min': recipe['c mod 5 min'],
                     'c mod 5 max': recipe['c mod 5 max'],
-                    'c output': recipe['c output'],
                     '*eol\r': 0
                 });
             }
