@@ -286,7 +286,7 @@
     // versions of fonts which can be used in panels.
     "XMediumPanelFontSize": "$XMediumFontSize",
     "MediumPanelFontSize": "$MediumFontSize",
-    "ModsMediumPanelFontSize": "$SmallFontSize",// Usage : for Mods
+    "ModsMediumPanelFontSizeModsMediumPanelFontSize": "$SmallFontSize",// Usage : for Mods
     "ModsScrollingTextFontSize": 28,// Usage : for Mods
     "SmallPanelFontSize": "$SmallFontSize",
     // Kerning
