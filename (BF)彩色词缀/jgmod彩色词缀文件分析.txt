@@ -1,3 +1,4 @@
+此文档为3DM lil174 大佬编写
 global\ui\layouts\characterstatspanelhd.json和hirelinginventorypanelhd.json只影响角色与佣兵属性下方的四种抗性彩色
 local\lng\strings\ui.json和上面文件关联产生角色与佣兵属性下方的四种抗性彩色的效果
 local\lng\strings\item-modifiers.json是各种装备词缀属性的彩色

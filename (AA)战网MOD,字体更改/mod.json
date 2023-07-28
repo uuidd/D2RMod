@@ -71,13 +71,6 @@
       "name": "jgmod的帮助面板",
       "description": "不支持YteMod,jgmod帮助面板有FCR等更多资料查询",
       "defaultValue": false
-    },
-    {
-      "id": "jgmod_color",
-      "type": "checkbox",
-      "name": "jgmod的彩色词缀",
-      "description": "采用jgmod的彩色词缀区分影响角色佣兵面板与装备属性",
-      "defaultValue": false
     }
   ]
 }

@@ -44,10 +44,3 @@ switch (config.talk_mod_select) {
     D2RMM.copyFile('jgmod4.2.1', '', true);
     break;
 }
-
-
-// jgmod彩色词缀
-if (config.jgmod_color) {
-  D2RMM.copyFile('jgmodcolor\\global', 'global', true);
-  D2RMM.copyFile('jgmodcolor\\local', 'local', true);
-}

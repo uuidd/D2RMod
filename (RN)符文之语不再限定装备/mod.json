@@ -2,57 +2,50 @@
   "name": "(RN)符文之语不再限定装备",
   "description": "允许符文处理更多项目",
   "author": "Shadedness",
-  "website": "https://",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/357",
   "version": "1.4.2",
   "file": "rune.txt",
   "config": [
     {
-      "id": "enableLadder",
-      "type": "checkbox",
-      "name": "启用天梯符文之语",
-      "description": "在离线游戏中启用仅梯形图符文。",
-      "defaultValue": false
-    },
-    {
       "id": "weaponsUnlocked",
       "type": "checkbox",
-      "name": "无武器限制",
+      "name": "符文之语无武器限制",
       "description": "启用以允许任何武器符文单词在所有武器中工作。",
       "defaultValue": true
     },
     {
       "id": "shieldsUnlocked",
       "type": "checkbox",
-      "name": "无盾牌限制",
+      "name": "符文之语无盾牌限制",
       "description": "启用以允许任何护盾符文在所有护盾类型中工作。",
       "defaultValue": true
     },
     {
       "id": "shieldsToArmor",
       "type": "checkbox",
-      "name": "盔甲上的盾牌符文",
-      "description": "启用以允许盾牌符文在盔甲中工作。如果启用“无护盾限制”，这也将包括圣骑士护盾符文。",
+      "name": "护甲可用盾牌符文之语",
+      "description": "启用以允许盾牌符文之语在护甲中工作。如果启用“无护盾限制”，这也将包括圣骑士护盾符文。",
       "defaultValue": true
     },
     {
       "id": "armorToShields",
       "type": "checkbox",
-      "name": "盾牌上的盔甲符文",
+      "name": "盾牌可用护甲符文之语",
       "description": "启用以允许护甲符文在护盾中工作。",
       "defaultValue": true
     },
     {
       "id": "helmsToShields",
       "type": "checkbox",
-      "name": "护盾上的头盔符文",
+      "name": "护盾可勇头盔符文之语",
       "description": "启用以允许头盔符文在盾牌中工作。",
       "defaultValue": true
     },
     {
       "id": "armorUnlocked",
       "type": "checkbox",
-      "name": "无装甲限制",
-      "description": "启用以允许任何盔甲或头盔符文在所有盔甲类型中工作。你需要一个单独的mod来启用其他物品类型的套接字。",
+      "name": "无护甲限制",
+      "description": "启用以允许任何护甲或头盔符文在所有防具(手套鞋子腰带)类型中工作。你需要一个其他MOD开启其他防具类型的孔。",
       "defaultValue": true
     }
   ]

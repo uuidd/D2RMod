@@ -1,0 +1,18 @@
+{
+  "name": "(TN)增加精华级物品掉落",
+  "description": "增加精华级物品掉落。",
+  "author": "BotSarge",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/302",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "eliteMultiplier",
+      "type": "number",
+      "name": "精华级物品掉率",
+      "description": "1=默认。10=精华级物品的可能性约为10倍，更多的精华级物品，更少的是普通和扩展级物品。100=分布相当均匀，但精英多于普通和扩展级。",
+      "defaultValue": 5,
+      "minValue": 1,
+      "maxValue": 100
+    }
+  ]
+}

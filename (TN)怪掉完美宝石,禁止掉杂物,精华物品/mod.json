@@ -13,15 +13,6 @@
       "defaultValue": false
     },
     {
-      "id": "eliteMultiplier",
-      "type": "number",
-      "name": "精华级物品掉率",
-      "description": "1=默认。10=精英级物品的可能性约为10倍，更多的是特殊精英级物品，更少的是普通物品。100=分布相当均匀，但精英多于例外常态。",
-      "defaultValue": 1,
-      "minValue": 1,
-      "maxValue": 100
-    },
-    {
       "id": "gemdrop_select",
       "type": "select",
       "name": "怪物掉落宝石方式",
