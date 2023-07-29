@@ -20,7 +20,7 @@
         {
           "value": "cube10X10",
           "label": "大小10X10迷你盒子",
-          "description": "长10宽10，会遮挡背包"
+          "description": "长10宽10，会遮挡装备位置"
         }
       ]
     }
