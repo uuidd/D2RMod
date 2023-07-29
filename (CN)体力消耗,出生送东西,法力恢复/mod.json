@@ -6,13 +6,6 @@
   "file": "charstats.txt",
   "config": [
     {
-      "id": "exp_noPunDeah",
-      "type": "checkbox",
-      "name": "高难度死亡不掉落经验",
-      "description": "游戏原设定为死亡时普通不掉经验,恶梦掉落5%经验,地狱掉落10%经验(也就是1格经验)",
-      "defaultValue": false
-    },
-    {
       "id": "run_drain",
       "type": "number",
       "name": "跑步的体力消耗倍率",

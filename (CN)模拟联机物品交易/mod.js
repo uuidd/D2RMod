@@ -252,7 +252,7 @@ function runeAndGoodsRecipe(rune, type, unique) {
     'input 1': rune,
     'input 2': type,
     output: unique,
-    lvl: 100
+    lvl: 90
   });
   cubemain.rows.push({
     ...baseRecipe,
@@ -304,7 +304,7 @@ if (config.traderieNecessity) {
   runeAndGoodsRecipe('r23', 'scep', `Heaven's Light`);// 天堂之光
   // 其他武器
   runeAndGoodsRecipe('r25', 'pole', `The Reaper's Toll`); // 死神喪鐘
-  runeAndGoodsRecipe('r24', 'swor', `Azurewrath`); // 碧藍怒火
+  // runeAndGoodsRecipe('r24', 'swor', `Azurewrath`); // 碧藍怒火
   runeAndGoodsRecipe('r22', 'pole', `Tomb Reaver`); // 盜墓者
   runeAndGoodsRecipe('r21', 'swor', `Blade of Ali Baba`); // 阿里巴巴之刃
   // 护甲
@@ -349,7 +349,7 @@ const occBaseRecipe = {
   ...baseRecipe,
   numinputs: 2,
   'input 2': 'yps',
-  plvl: 100
+  lvl: 85
 }
 
 if (config.occupationExclusiveItems) {
@@ -606,7 +606,7 @@ function uniqueCharm(rune, gem, charm) {
     'input 2': 'cm3',
     'input 3': gem,
     output: charm,
-    plvl: 100
+    lvl: 85
   });
 }
 

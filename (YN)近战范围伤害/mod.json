@@ -35,30 +35,30 @@
     {
       "id": "scha",
       "type": "checkbox",
-      "name": "小型神符",
-      "description": "范围伤害附加在小符咒上。",
+      "name": "小型咒符",
+      "description": "范围伤害词条随机会出现在小型咒符上。",
       "defaultValue": false
     },
     {
       "id": "mcha",
       "type": "checkbox",
-      "name": "中型神符",
-      "description": "范围伤害附加在大型符咒上。",
+      "name": "中型咒符",
+      "description": "范围伤害词条随机会出现在中型咒符上。",
       "defaultValue": false
     },
     {
       "id": "lcha",
       "type": "checkbox",
-      "name": "大型神符",
-      "description": "范围伤害附加在盛大的符咒上。",
-      "defaultValue": true
+      "name": "特大咒符",
+      "description": "范围伤害词条随机会出现在特大咒符上。",
+      "defaultValue": false
     },
     {
       "id": "unique",
       "type": "checkbox",
-      "name": "暗金小型神符",
-      "description": "为基德的店铺添加了暗金小型神符。",
-      "defaultValue": false
+      "name": "基德出售近战范围伤害暗金特大咒符",
+      "description": "基德出售近战范围伤害暗金特大咒符。",
+      "defaultValue": true
     }
   ]
 }

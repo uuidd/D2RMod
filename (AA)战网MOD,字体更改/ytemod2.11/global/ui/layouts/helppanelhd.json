@@ -682,14 +682,7 @@
                         "rect": { "x": 1382, "y": 1475, "width": 6, "height": 290 },
                         "color": [ 1, 1, 1, 1 ]
                     }
-                },
-//                {
-//                    "type": "IndicatorLineWidget", "name": "YtemodHelpLine",//Ytemod簡易説明分割綫
-//                    "fields": {
-//                        "rect": { "x": 50, "y": -270, "width": 6, "height": 1360 },
-//                        "color": [ 1, 1, 1, 1 ]
-//                    }
-//                },
+                }
             ]
         },
         // Right Anchored Panel
@@ -769,26 +762,6 @@
                     "fields": {
                         "rect": { "x": 0, "y": 820 },
                         "text": "@StrHDHelpAmmoStatus",
-                        "fontType": "12ptF",
-                        "style": {
-                            "fontColor": "$FontColorGoldYellow",
-                            "pointSize": "$MediumLargeFontSize",
-                            "alignment": { "v": "center", "h": "center" }
-                        }
-                    }
-                },
-                {
-                    "type": "ImageWidget", "name": "RewardCode",
-                    "fields": {
-                        "rect": { "x": -125, "y": 1700, "scale": 0.8 },
-                        "filename": "PANEL/dgs",
-                    }
-                },
-                {
-                    "type": "TextBoxWidget", "name": "RewardText",
-                    "fields": {
-                        "rect": { "x": 0, "y": 1650 },
-                        "text": "@YtemodRewardText",
                         "fontType": "12ptF",
                         "style": {
                             "fontColor": "$FontColorGoldYellow",

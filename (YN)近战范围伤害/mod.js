@@ -370,7 +370,7 @@ itemModifiers.push({
   id: D2RMM.getNextStringID(),
   Key: 'MeleeMinDamagePercent',
   enUS: '%+d%% Enhanced Minimum Melee Damage',
-  zhTW: '%+d%% 提高近战最低伤害',
+  zhTW: '%+d%% 近戰最低傷害',
   deDE: '%+d%% Verbesserter min. Nahkampfschaden',
   esES: '%+d%% de daño mínimo cuerpo a cuerpo mejorado',
   frFR: 'Dégâts de mêlée min. améliorés de %+d%%',
@@ -381,13 +381,13 @@ itemModifiers.push({
   jaJP: '最小近接ダメージ強化（%+d%%）',
   ptBR: '%+d%% de dano mínimo corpo a corpo aprimorado',
   ruRU: '%+d%% к минимальному урону в ближнем бою',
-  zhCN: '%+d%% 提高近战最低伤害',
+  zhCN: '%+d%% 近战最低伤害',
 });
 itemModifiers.push({
   id: D2RMM.getNextStringID(),
   Key: 'MeleeMaxDamagePercent',
   enUS: '%+d%% Enhanced Maximum Melee Damage',
-  zhTW: '%+d%% 提升近战最大伤害',
+  zhTW: '%+d%% 近戰最大傷害',
   deDE: '%+d%% Verbesserter max. Nahkampfschaden',
   esES: '%+d%% de daño máximo cuerpo a cuerpo mejorado',
   frFR: 'Dégâts de mêlée max. améliorés de %+d%%',
@@ -398,7 +398,7 @@ itemModifiers.push({
   jaJP: '最大近接ダメージ強化（%+d%%）',
   ptBR: '%+d%% de dano máximo corpo a corpo aprimorado',
   ruRU: '%+d%% к максимальному урону в ближнем бою',
-  zhCN: '%+d%% 提升近战最大伤害',
+  zhCN: '%+d%% 近战最大伤害',
 });
 D2RMM.writeJson(itemModifiersFilename, itemModifiers);
 
@@ -406,7 +406,7 @@ if (config.unique) {
   const miscFilename = 'global\\excel\\misc.txt';
   const misc = D2RMM.readTsv(miscFilename);
   misc.rows.push({
-    ...misc.rows.find((row) => row.name === 'Small Charm'),
+    ...misc.rows.find((row) => row.name === 'Grand Charm'),
     name: 'Charm of Melee Area Damage',
     level: 1,
     code: 'cm0',
@@ -460,7 +460,7 @@ if (config.unique) {
   const itemsFilename = 'hd\\items\\items.json';
   const items = D2RMM.readJson(itemsFilename);
   items.push({
-    cm0: { asset: 'charm/charm_small' },
+    cm0: { asset: 'charm/charm_large' },
   });
   D2RMM.writeJson(itemsFilename, items);
 
@@ -470,7 +470,7 @@ if (config.unique) {
     id: D2RMM.getNextStringID(),
     Key: 'Charm of Melee Area Damage',
     enUS: 'Charm of Melee Area Damage',
-    zhTW: '近战范围伤害的魅力',
+    zhTW: '近戰範圍傷害之衰減',
     deDE: 'Zauber des Nahkampfbereichsschadens',
     esES: 'Dije de daño de área cuerpo a cuerpo',
     frFR: 'Charme de dégâts de zone de mêlée',
@@ -481,7 +481,7 @@ if (config.unique) {
     jaJP: 'タリスマンオブメレーエリアダメージ',
     ptBR: 'Patuá de Dano de Área Corpo a Corpo',
     ruRU: 'Оберег урона ближнего боя по области',
-    zhCN: '近战范围伤害的魅力',
+    zhCN: '近战范围伤害之衰減',
   });
   D2RMM.writeJson(itemNamesFilename, itemNames);
 }

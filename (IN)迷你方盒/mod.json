@@ -1,0 +1,28 @@
+{
+  "name": "(IN)迷你盒子",
+  "description": "迷你盒子",
+  "author": "Demo ",
+  "website": "",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "miniCube",
+      "type": "select",
+      "name": "迷你盒子大小",
+      "description": "",
+      "defaultValue": "cube4X3",
+      "options": [
+        {
+          "value": "cube4X3",
+          "label": "原版大小迷你盒子",
+          "description": "长4宽3"
+        },
+        {
+          "value": "cube10X10",
+          "label": "大小10X10迷你盒子",
+          "description": "长10宽10，会遮挡背包"
+        }
+      ]
+    }
+  ]
+}
