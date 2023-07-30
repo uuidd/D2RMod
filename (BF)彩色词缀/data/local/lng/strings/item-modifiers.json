@@ -6378,7 +6378,7 @@
     "id": 27351,
     "Key": "ModStr2uPercentNegative",
     "enUS": "Physical Damage Received Increased by %d%%",
-    "zhTW": "受到的物理傷害提高 %d%%ÿc5[10%%~30%%]ÿc3",
+    "zhTW": "受到的物理傷害提高 %d%%",
     "deDE": "Erlittener Schaden um %d%% erhöht",
     "esES": "Daño sufrido aumentado un %d%%",
     "frFR": "Dégâts subis augmentés de %d%%",

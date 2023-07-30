@@ -254,6 +254,9 @@ function runeAndGoodsRecipe(rune, type, unique) {
     output: unique,
     lvl: 90
   });
+  if (config.sellDowngrade){
+    rune = 'r' + ((rune.slice(-2) - 1) + '').padStart(2, '0'); // r08 => r07
+  }
   cubemain.rows.push({
     ...baseRecipe,
     description: `${unique} -> 1 ${rName[rune]}`,

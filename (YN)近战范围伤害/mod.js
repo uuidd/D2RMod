@@ -332,7 +332,7 @@ itemNameAffixes.push({
   id: D2RMM.getNextStringID(),
   Key: 'of Melee Area Damage',
   enUS: 'of Melee Area Damage',
-  zhTW: '近战范围伤害',
+  zhTW: '近戰範圍傷害',
   deDE: 'des Nahkampfbereichsschadens',
   esES: 'de daño en el área cuerpo a cuerpo',
   frFR: 'de dégâts de zone de mêlée',
@@ -353,7 +353,7 @@ itemModifiers.push({
   id: D2RMM.getNextStringID(),
   Key: 'MeleeAreaDamage',
   enUS: '%d%% Chance of Melee Area Damage',
-  zhTW: '%d%% 有机会造成近战区域伤害',
+  zhTW: '%d%% 機率造成近戰範圍傷害',
   deDE: '%d%% Chance auf Nahkampfbereichsschadens',
   esES: '%d%% de probabilidad de daño en el área cuerpo a cuerpo',
   frFR: '%d%% de chances de dégâts de zone de mêlée',
@@ -364,7 +364,7 @@ itemModifiers.push({
   jaJP: '近接エリアのダメージ（%d%%の確率）',
   ptBR: '%d%% de chance de dano de área corpo a corpo',
   ruRU: 'Вероятность %d%% нанести удар ближнего боя по области',
-  zhCN: '%d%% 有机会造成近战区域伤害',
+  zhCN: '%d%% 机率造成近战范围伤害',
 });
 itemModifiers.push({
   id: D2RMM.getNextStringID(),
@@ -427,7 +427,8 @@ if (config.unique) {
 
   const uniqueitemsFilename = 'global\\excel\\uniqueitems.txt';
   const uniqueitems = D2RMM.readTsv(uniqueitemsFilename);
-  const damageReduction = getDamageReduction(100);
+  // const damageReduction = getDamageReduction(100);
+  const damageReduction = 33; // 固定减少的伤害
   uniqueitems.rows.push({
     ...uniqueitems.rows.find((row) => row.index === 'Annihilus'),
     index: 'Charm of Melee Area Damage', // links with item-names.json
