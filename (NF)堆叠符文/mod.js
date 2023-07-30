@@ -185,26 +185,24 @@ else if (
 }
 D2RMM.writeTsv(cubemainFilename, cubemain);
 
-//D2R默认情况下将符文颜色设置为橙色，但似乎是基于物品类型
-//而不是本地化字符串，因此它不适用于堆叠版本
-//我们在这里更新本地化文件以手动为符文的名称上色
-//以便它也适用于符文的堆叠版本
-// const itemRunesFilename = 'local\\lng\\strings\\item-runes.json';
-// const itemRunes = D2RMM.readJson(itemRunesFilename);
-// itemRunes.forEach((item) => {
-//   const itemtype = item["Key"];
-//   if (itemtype.match(/^r[0-9]{2}$/) !== null) {
-//     // 更新所有本地化
-//     for (const key in item) {
-//       if (key !== 'id' && key !== 'Key') {
-//         // no idea what this is, but color codes before [fs] don't work
-//         const [, prefix = '', value] = item[key].match(/^(\[fs\])?(.*)$/);
-//         item[key] = `${prefix}ÿc8${value}`;
-//       }
-//     }
-//   }
-// });
-// D2RMM.writeJson(itemRunesFilename, itemRunes);
+// D2R默认情况下将符文颜色设置为橙色，但似乎是基于物品类型
+// 而不是本地化字符串，因此它不适用于堆叠版本
+// 我们在这里更新本地化文件以手动为符文的名称上色
+// 以便它也适用于符文的堆叠版本
+const itemRunesFilename = 'local\\lng\\strings\\item-runes.json';
+const itemRunes = D2RMM.readJson(itemRunesFilename);
+itemRunes.forEach((item) => {
+  const itemtype = item["Key"];
+  if (itemtype.match(/^r[0-9]{2}$/) !== null) {
+    // 更新所有本地化
+    for (const key in item) {
+      if (key === 'zhTW' || key === 'zhCN') {
+        item[key] = `ÿc8${item[key]}`;
+      }
+    }
+  }
+});
+D2RMM.writeJson(itemRunesFilename, itemRunes);
 
 if (config.usenewsprites) {
   D2RMM.copyFile(

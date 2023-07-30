@@ -201,7 +201,7 @@ else if (
 if (config.bulkUpgrade) {
   for (let i = 0; i < ITEM_TYPES.length; i = i + 1) {
     // no upgrade for perfect gems
-    if ((i+1) % 5 == 0) {
+    if ((i+1) % 5 === 0) {
       continue;
     }
     const itemtype = ITEM_TYPES[i];
@@ -222,7 +222,7 @@ if (config.bulkUpgrade) {
         'input 1': stacktype,
         'input 2': 'isc',
         output: `"${upgradedStacktype},qty=10"`,
-        'output b': j == 30 ? null : `"${stacktype},qty=${j - 30}"`,
+        'output b': j === 30 ? null : `"${stacktype},qty=${j - 30}"`,
         'output c': 'isc',
         '*eol': 0,
       });
