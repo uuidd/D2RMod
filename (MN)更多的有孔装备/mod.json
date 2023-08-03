@@ -1,6 +1,6 @@
 {
-  "name": "(MN)更多可以打孔的装备",
-  "description": "在所有装备中启用更多插槽，释放您的制作潜力",
+  "name": "(MN)更多的有孔装备",
+  "description": "更多的有孔装备，投掷武器、手套、鞋子、腰带、戒指、项链可带孔，释放您的制作潜力",
   "author": "Shadedness",
   "website": "https://www.nexusmods.com/diablo2resurrected/mods/356",
   "version": "1.0.1",
@@ -8,8 +8,8 @@
     {
       "id": "gearRank",
       "type": "select",
-      "name": "可打孔数受等级影响的装备",
-      "description": "设置受影响的装备等级以增加孔数量（最多6个）：普通、特殊（噩梦等级25+）或精英（地狱等级40+）。孔的数量仍然限于该物品占用的格数。",
+      "name": "突破装备最大孔数",
+      "description": "设置受影响的装备等级以增加孔数量（最多6个）：普通、特殊（噩梦等级25+）或精英（地狱等级40+）。例如：所有盾牌现在都是 4 或 6 个插槽，具体取决于它们的大小，孔的数量仍然限于该物品占用的格数。",
       "defaultValue": "normal",
       "options": [
         { "value": "normal", "label": "普通级及以上" },
@@ -127,15 +127,15 @@
     {
       "id": "socketJewelry",
       "type": "checkbox",
-      "name": "戒指和护身符可打孔",
-      "description": "使戒指和护身符能够插入插槽。",
+      "name": "戒指和项链可打孔",
+      "description": "使戒指和项链能够插入插槽。",
       "defaultValue": true
     },
     {
       "id": "jewelryBehavior",
       "type": "select",
-      "name": "戒指和护身符的作用类似",
-      "description": "宝石和符文应该如何处理戒指和护身符孔？这定义了应用宝石和符文的效果。推荐：护盾带来一些多样性，而珠宝通常像护盾一样包含抗性加成。",
+      "name": "戒指和项链的作用类似",
+      "description": "宝石和符文应该如何处理戒指和项链孔？这定义了应用宝石和符文的效果。推荐：护盾带来一些多样性，而珠宝通常像护盾一样包含抗性加成。",
       "defaultValue": "2",
       "options": [
         { "value": "0", "label": "武器" },

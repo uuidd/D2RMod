@@ -9,14 +9,14 @@
     {
       "id": "weaponsUnlocked",
       "type": "checkbox",
-      "name": "符文之语无武器限制",
+      "name": "符文之语无武器类型限制",
       "description": "启用以允许任何武器符文单词在所有武器中工作。",
       "defaultValue": true
     },
     {
       "id": "shieldsUnlocked",
       "type": "checkbox",
-      "name": "符文之语无盾牌限制",
+      "name": "符文之语无盾牌类型限制",
       "description": "启用以允许任何护盾符文在所有护盾类型中工作。",
       "defaultValue": true
     },
@@ -37,14 +37,14 @@
     {
       "id": "helmsToShields",
       "type": "checkbox",
-      "name": "护盾可勇头盔符文之语",
+      "name": "盾牌可用头盔符文之语",
       "description": "启用以允许头盔符文在盾牌中工作。",
       "defaultValue": true
     },
     {
       "id": "armorUnlocked",
       "type": "checkbox",
-      "name": "无护甲限制",
+      "name": "符文之语可用手套鞋子腰带",
       "description": "启用以允许任何护甲或头盔符文在所有防具(手套鞋子腰带)类型中工作。你需要一个其他MOD开启其他防具类型的孔。",
       "defaultValue": true
     }
