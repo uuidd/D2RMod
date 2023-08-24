@@ -129,8 +129,8 @@ itemModifiers.forEach((item) => {
   addTextColor(item, 'BarOnly', '8');
   addTextColor(item, 'DruOnly', '8');
   addTextColor(item, 'AssOnly', '8');
-  addTextColor(item, 'ModStr1w', '7');
-  addTextColor(item, 'ModStr1x', '7');
+  addTextColor(item, 'ModStr1w', '4');
+  addTextColor(item, 'ModStr1x', '4');
   addTextColor(item, 'ModStre8b', '8');
   addTextColor(item, 'ModStre8a', '8');
   addTextColor(item, 'ModStre8h', '8');
