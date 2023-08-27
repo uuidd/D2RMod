@@ -1,8 +1,7 @@
 {
   "name": "(AF)吐槽补丁+场景等级+可选屏蔽",
   "description": "包含will,wing,tina,dfcn mod 吐槽补丁、场景等级、屏蔽版本",
-  "website": "",
-  "version": "",
+  "version": "1.1",
   "config": [
     {
       "id": "remarksMod",

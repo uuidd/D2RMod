@@ -35,7 +35,7 @@ function playSocket(rarity, maxSocket) {
         version: 100,
         numinputs: sockets + 1,
         // input 1 defined below
-        'input 2': `"jew,qty=${sockets}"`,
+        'input 2': `"${config.item},qty=${sockets}"`,
         output: 'useitem',
         'mod 1': 'sock',
         'mod 1 min': sockets,

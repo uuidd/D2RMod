@@ -32,40 +32,6 @@
       ]
     },
     {
-      "id": "fonts_select",
-      "type": "select",
-      "name": "选择字体(繁体)",
-      "description": "不支持YteMod,字体预览请查看文件夹",
-      "defaultValue": "mod_def",
-      "options": [
-        {
-          "value": "mod_def",
-          "label": "官方字体",
-          "description": ""
-        },
-        {
-          "value": "mod_1",
-          "label": "D2r繁体客户端隶书字体"
-        },
-        {
-          "value": "mod_2",
-          "label": "MElleHK-蒙娜繁雅丽"
-        },
-        {
-          "value": "mod_3",
-          "label": "方正准雅宋"
-        },
-        {
-          "value": "mod_4",
-          "label": "古印-暗黑3字体"
-        },
-        {
-          "value": "mod_5",
-          "label": "汉仪极隶"
-        }
-      ]
-    },
-    {
       "id": "jgmod_help",
       "type": "checkbox",
       "name": "jgmod的帮助面板",
