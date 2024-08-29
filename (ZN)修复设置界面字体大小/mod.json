@@ -1,8 +1,0 @@
-{
-  "name": "(ZN)修复设置界面字体大小",
-  "description": "修正了使用任何需要修改_profilehd.json的字体时“设置”菜单中的字体大小",
-  "author": "olegbl",
-  "website": "https://www.nexusmods.com/diablo2resurrected/mods/200",
-  "version": "1.0",
-  "file": "_profilehd.json"
-}

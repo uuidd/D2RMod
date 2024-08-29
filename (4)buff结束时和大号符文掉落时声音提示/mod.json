@@ -1,0 +1,128 @@
+{
+    "name": "(4)buff结束时和大号符文掉落时声音提示",
+    "description": "(4)女声提示buff结束和大号符文掉落，提取自jg",
+    "author": "demo & 烔哥",
+    "website": "",
+    "version": "1.0",
+    "config": [
+        {
+            "id": "big_runes",
+            "type": "checkbox",
+            "name": "24-33号符文掉落会有声音提示",
+            "description": "24号-33号符文在地上的声音提示，只要它在地上，你就会不停听到提示，而且不受物品显示数量限制，离它越近声音越大，也就是说老远你就能听到有符文掉落的声音，箱子里拿起放下24号-33号符文的声音为官方默认",
+            "defaultValue": true
+        },
+        {
+            "id": "battlecommand_off",
+            "type": "checkbox",
+            "name": "战斗指挥",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "battleorders_off",
+            "type": "checkbox",
+            "name": "战斗命令",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "bladeshield_off",
+            "type": "checkbox",
+            "name": "利刃之盾",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "bonearmor_off",
+            "type": "checkbox",
+            "name": "骸骨护甲",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": false
+        },
+        {
+            "id": "burstofspeed_off",
+            "type": "checkbox",
+            "name": "速度爆发",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "chillingarmor_off",
+            "type": "checkbox",
+            "name": "寒冰甲",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "cyclonearmor_off",
+            "type": "checkbox",
+            "name": "气旋护甲",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "enchant_off",
+            "type": "checkbox",
+            "name": "附魔",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "energyshield_off",
+            "type": "checkbox",
+            "name": "能量护盾",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "fade_off",
+            "type": "checkbox",
+            "name": "影散",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "frozenarmor_off",
+            "type": "checkbox",
+            "name": "冰封甲",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "holyshield_off",
+            "type": "checkbox",
+            "name": "神圣之盾",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "morph_off",
+            "type": "checkbox",
+            "name": "变形术",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "shiverarmor_off",
+            "type": "checkbox",
+            "name": "碎冰甲",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "shout_off",
+            "type": "checkbox",
+            "name": "大吼",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        },
+        {
+            "id": "venom_off",
+            "type": "checkbox",
+            "name": "淬毒",
+            "description": "buff 持续时间结束会播放女声提示",
+            "defaultValue": true
+        }
+    ]
+}

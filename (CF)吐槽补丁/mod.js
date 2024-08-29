@@ -1,1 +1,0 @@
-D2RMM.copyFile('roast1', 'local\\lng\\strings', true);

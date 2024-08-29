@@ -1,1 +1,0 @@
-D2RMM.copyFile(config.runeIcon, 'hd\\global\\ui\\items\\misc\\Rune', true);
