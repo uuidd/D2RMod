@@ -1,0 +1,27 @@
+{
+  "name": "(7)多倍怪",
+  "description": "增加怪物群的生成数量包括普通,暗金和精英怪,按照官方设定的数值进行加倍",
+  "author": "olegbl && Windforce",
+  "version": "1.1",
+  "file": "levels.txt",
+  "config": [
+    {
+      "id": "multiplier",
+      "type": "number",
+      "name": "怪物密度倍数",
+      "description": "包括普通怪物和暗金/精英怪物,1=正常,>1=更多,限制1-100,可以为小数例如2.5",
+      "defaultValue": 1,
+      "minValue": 1,
+      "maxValue": 100
+    },
+    {
+      "id": "EliteMon",
+      "type": "number",
+      "name": "金怪/蓝怪数量倍数",
+      "description": "金怪蓝怪数量倍数(只对地狱难度生效),可以为小数例如2.5",
+      "defaultValue": 1,
+      "minValue": 1,
+      "maxValue": 100
+    }
+  ]
+}

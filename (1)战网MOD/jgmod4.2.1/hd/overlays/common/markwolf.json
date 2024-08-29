@@ -1,0 +1,109 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+      {
+        "path": "data/hd/vfx/particles/overlays/common/impregnated/vfx_impregnated.particles"
+      }
+    ],
+    "models":
+    [
+    ],
+    "skeletons":
+    [
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/vfx/textures/default/Default_AlphaMap.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+    ],
+    "variantdata":
+    [
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "OverlayDefinition",
+  "name": "impregnated",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2963809941,
+      "components":
+      [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_root_VfxDefinition",
+          "filename": "data/hd/vfx/particles/overlays/common/impregnated/vfx_impregnated.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_root_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 1.25,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 1591210754,
+      "components":
+      [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "component_vfx",
+          "filename": "data/hd/vfx/particles/overlays/common/MarkW/MarkW_icon.particles",
+          "hardKillOnDestroy": true
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_root_TransformDefinition",
+          "position":
+          {
+            "x": 1,
+            "y": 10.0,
+            "z": -1
+          },
+          "inheritOnlyPosition": true
+        }
+      ]
+    }
+  ]
+}

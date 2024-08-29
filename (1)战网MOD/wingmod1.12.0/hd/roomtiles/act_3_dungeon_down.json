@@ -1,0 +1,1201 @@
+{
+  "dependencies": {
+    "animations": [],
+    "json": [],
+    "models": [],
+    "objecteffects": [],
+    "other": [],
+    "particles": [
+      {
+        "path": "data/hd/vfx/particles/env/UI/vfx_mouse_over_light_sml.particles"
+      }
+    ],
+    "physics": [],
+    "skeletons": [],
+    "textures": [],
+    "variantdata": []
+  },
+  "entities": [
+    {
+      "components": [
+        {
+          "animations": [],
+          "doNotInheritRotation": false,
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "name": "component_root",
+          "onCreateEventName": "",
+          "rotationOverride": {
+            "w": 0.9238795,
+            "x": 0,
+            "y": 0.3826834,
+            "z": 0
+          },
+          "state_machine_filename": "",
+          "type": "UnitRootComponent"
+        }
+      ],
+      "id": 3674036353,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/env/UI/vfx_mouse_over_light_sml.particles",
+          "hardKillOnDestroy": false,
+          "name": "component_vfx1",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 6,
+            "y": -3,
+            "z": 4.5
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 824569865,
+      "name": "entity_vfx1",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0.6
+          },
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": -0.6
+          },
+          "position": {
+            "x": -50,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 50
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.6,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": 0.95,
+            "z": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": 50
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.7,
+            "y": -0.6,
+            "z": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": -0.6,
+            "z": 0
+          },
+          "position": {
+            "x": -50,
+            "y": 0,
+            "z": 50
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.7,
+            "y": 0.65,
+            "z": 0
+          },
+          "position": {
+            "x": -50,
+            "y": 0,
+            "z": -50
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0.6
+          },
+          "position": {
+            "x": 85,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": -0.6
+          },
+          "position": {
+            "x": -85,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 85
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.6,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -85
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": 0.95,
+            "z": 0
+          },
+          "position": {
+            "x": 85,
+            "y": 0,
+            "z": 85
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.7,
+            "y": -0.6,
+            "z": 0
+          },
+          "position": {
+            "x": 85,
+            "y": 0,
+            "z": -85
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": -0.6,
+            "z": 0
+          },
+          "position": {
+            "x": -85,
+            "y": 0,
+            "z": 85
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.7,
+            "y": 0.65,
+            "z": 0
+          },
+          "position": {
+            "x": -85,
+            "y": 0,
+            "z": -85
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0.6
+          },
+          "position": {
+            "x": 125,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": -0.6
+          },
+          "position": {
+            "x": -125,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 125
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.6,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -125
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": 0.95,
+            "z": 0
+          },
+          "position": {
+            "x": 125,
+            "y": 0,
+            "z": 125
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.7,
+            "y": -0.6,
+            "z": 0
+          },
+          "position": {
+            "x": 125,
+            "y": 0,
+            "z": -125
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": -0.6,
+            "z": 0
+          },
+          "position": {
+            "x": -125,
+            "y": 0,
+            "z": 125
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.7,
+            "y": 0.65,
+            "z": 0
+          },
+          "position": {
+            "x": -125,
+            "y": 0,
+            "z": -125
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0.6
+          },
+          "position": {
+            "x": 150,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": -0.6
+          },
+          "position": {
+            "x": -150,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 150
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.6,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -150
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": 0.95,
+            "z": 0
+          },
+          "position": {
+            "x": 150,
+            "y": 0,
+            "z": 150
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.7,
+            "y": -0.6,
+            "z": 0
+          },
+          "position": {
+            "x": 150,
+            "y": 0,
+            "z": -150
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": -0.6,
+            "y": -0.6,
+            "z": 0
+          },
+          "position": {
+            "x": -150,
+            "y": 0,
+            "z": 150
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/FX_Horadric_Light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0.7,
+            "y": 0.65,
+            "z": 0
+          },
+          "position": {
+            "x": -150,
+            "y": 0,
+            "z": -150
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 2101618603,
+      "name": "entity_root",
+      "type": "Entity"
+    }
+  ],
+  "name": "act_3_dungeon_down",
+  "type": "UnitDefinition"
+}

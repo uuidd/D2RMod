@@ -1,0 +1,192 @@
+{
+  "dependencies": {
+    "particles": [
+      {
+        "path": "data/hd/vfx/particles/character/enemy/valkyrie/valkyrie_aura.particles"
+      }
+    ],
+    "models": [
+      {
+        "path": "data/hd/objects/armor_weapons/weapon_rack_left/model/torso.model"
+      }
+    ],
+    "skeletons": [
+      {
+        "path": "data/hd/objects/armor_weapons/weapon_rack_left/skeleton/weapon_rack_left.skeleton"
+      }
+    ],
+    "animations": [],
+    "textures": [
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_armordes_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_armordes_NRM.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/skeleton1/textures/skeleton_armordes_ORM.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/axe/battle_axe/weapon_battle_axe_ALB.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/axe/battle_axe/weapon_battle_axe_NRM.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/axe/battle_axe/weapon_battle_Axe_ORM.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/axe/giant_axe/weapon_giant_axe_ALB.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/axe/giant_axe/weapon_giant_axe_NRM.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/axe/giant_axe/weapon_giant_axe_ORM.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/polearm/war_scythe/weapon_war_scythe_ALB.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/polearm/war_scythe/weapon_war_scythe_NRM.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/polearm/war_scythe/weapon_war_scythe_ORM.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/sword/great_sword/weapon_great_sword_ALB.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/sword/great_sword/weapon_great_sword_mask.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/sword/great_sword/weapon_great_sword_NRM.texture"
+      },
+      {
+        "path": "data/hd/items/weapon/sword/great_sword/weapon_great_sword_ORM.texture"
+      },
+      {
+        "path": "data/hd/objects/armor_weapons/weapon_rack_left/texture/armor_weapons_weapon_rack_left_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/armor_weapons/weapon_rack_left/texture/armor_weapons_weapon_rack_left_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/armor_weapons/weapon_rack_left/texture/armor_weapons_weapon_rack_left_orm.texture"
+      }
+    ],
+    "physics": [],
+    "json": [
+      {
+        "path": "data/hd/objects/armor_weapons/weapon_rack_left/weapon_rack_left_state_machine.json"
+      }
+    ],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "weapon_rack_right",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 383668426,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/objects/armor_weapons/weapon_rack_left/weapon_rack_left_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride": {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/armor_weapons/weapon_rack_left/skeleton/weapon_rack_left.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 916046422,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/armor_weapons/weapon_rack_left/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position": { "x": 0.798, "y": 0.0, "z": -0.17 },
+          "orientation": {
+            "x": 0.0,
+            "y": 0.707106769,
+            "z": 0.0,
+            "w": -0.707106769
+          },
+          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 0.0,
+                    "y": 4.5,
+                    "z": 1.5
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
+  ]
+}

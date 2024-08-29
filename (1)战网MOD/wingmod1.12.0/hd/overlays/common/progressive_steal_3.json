@@ -1,0 +1,65 @@
+{
+  "dependencies": {
+    "animations": [],
+    "json": [],
+    "models": [],
+    "objecteffects": [],
+    "other": [],
+    "particles": [
+      {
+        "path": "data/hd/vfx/particles/overlays/common/progressive_steal_3/vfx_progressive_steal_3.particles"
+      },
+      {
+        "path": "data/hd/vfx/particles/overlays/common/progressive_steal_3/progressive_steal_3_fix.particles"
+      }
+    ],
+    "physics": [],
+    "skeletons": [],
+    "textures": [
+      {
+        "path": "data/hd/vfx/textures/gradient/T_FX_Ribbon_Gradient_02.texture"
+      }
+    ],
+    "variantdata": []
+  },
+  "entities": [
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/common/progressive_steal_3/vfx_progressive_steal_3.particles",
+          "hardKillOnDestroy": true,
+          "name": "component_vfx",
+          "type": "VfxDefinitionComponent"
+        }
+      ],
+      "id": 1591210754,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/overlays/common/progressive_steal_3/progressive_steal_3_fix.particles",
+          "hardKillOnDestroy": true,
+          "name": "component_vfx",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": true,
+          "name": "entity_root_TransformDefinition",
+          "position": {
+            "x": 153,
+            "y": 100,
+            "z": 142
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 304314862,
+      "name": "entity_root",
+      "type": "Entity"
+    }
+  ],
+  "name": "progressive_steal_3",
+  "type": "OverlayDefinition"
+}

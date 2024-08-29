@@ -1,0 +1,24 @@
+{
+  "name": "(4)隐藏头盔",
+  "description": "隐藏头盔",
+  "author": "烔哥",
+  "website": "",
+  "config": [
+    {
+      "id": "helmet_select",
+      "type": "select",
+      "name": "选择头盔隐藏方式",
+      "defaultValue": "noCapHat",
+      "options": [
+        {
+          "value": "all",
+          "label": "头盔全部隐藏"
+        },
+        {
+          "value": "noCapHat",
+          "label": "只隐藏丑丑的绿帽子"
+        }
+      ]
+    }
+  ]
+}

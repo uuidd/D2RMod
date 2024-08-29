@@ -1,0 +1,35 @@
+{
+  "name": "(5)光环应用速度调整",
+  "description": "调整光环应用所需的时间",
+  "author": "Jeo",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/276",
+  "version": "1.0",
+  "file": "skill.txt",
+  "config": [
+    {
+      "id": "perdelay",
+      "type": "number",
+      "name": "光环延迟",
+      "description": "将光环延迟设置在1和99之间，越小越快，原版是50。",
+      "defaultValue": 50,
+      "minValue": 1,
+      "maxValue": 99
+    },
+	 {
+      "id": "damagefix",
+      "type": "checkbox",
+      "name": "修复光环伤害",
+      "description": "启用以修复光环伤害，不然太变态了",
+      "defaultValue": true
+    },
+    {
+      "id": "basedmgfix",
+      "type": "number",
+      "name": "修复光环伤害值",
+      "description": "计算基础光环延迟1到250之间的光环伤害。越小伤害越低，如果跟“光环延迟”设置同一个值，光环伤害不变",
+      "defaultValue": 50,
+      "minValue": 1,
+      "maxValue": 250
+    }
+  ]
+}

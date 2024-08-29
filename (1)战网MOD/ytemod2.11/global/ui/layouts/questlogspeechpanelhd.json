@@ -1,0 +1,70 @@
+{
+    "type": "QuestLogSpeechPanel", "name": "QuestLogSpeechPanel",
+    "fields": {
+        "fitToParent": true,
+        "drawTint": false,
+    },
+    "children": [
+        {
+            "type": "ClickCatcherWidget", "name": "SpeechClickCatcher",
+            "fields": {
+                "fitToParent": true,
+            },
+        },
+        {
+            "type": "Widget", "name": "ScrollingSpeechParent",
+            "fields": {
+                "rect": "$QuestLogScrollingSpeechParentRect"
+            },
+            "children": [
+                {
+                    "type": "ScrollingSpeechWidget", "name": "ScrollSpeechWidget",
+                    "fields": {
+                        "fitToParent": true,
+                        "onSpeechOverMessage": "QuestLogPanelMessage:DialogueFinished",
+                        "scrollRate": -0.6,
+                        "scrollControllerName": "ScrollController",
+                    },
+                    "children": [
+                        {
+                            "type": "TextBoxWidget", "name": "ScrollingText",
+                            "fields": {
+                                "rect": { "x": 0, "y": 205, "width": "$ModsScrollingTextWidth", "height": 2000 },//"x": 0, "y": 205, "width": 770, "height": 2000
+                                "style": {
+                                    "fontFace": "Formal",
+                                    "pointSize": "$ModsScrollingTextFontSize",//$MediumPanelFontSize
+                                    "options": { "newlineHandling": "standard", "lineWrap": true },
+                                    "alignment": { "h": "left" },
+                                    "fontColor": "$FontColorWhite"
+                                }
+                            }
+                        },
+                    ]
+                },
+                {
+                    "type": "ImageWidget", "name": "ScrollBarBackground",
+                    "fields": {
+                        "rect": { "x": 0, "y": 20 },//"x": 0, "y": 20
+                        "anchor": { "x":  1.0 }
+                    },
+                    "children": [
+                        {
+                            "type": "ScrollControllerWidget", "name": "ScrollController",
+                            "fields": {
+                                "rect": { "x": 0, "y": 0, "width": 26, "height": "$ModsScrollControllerHeight" },//"x": 0, "y": 0, "width": 26, "height": 332
+                                "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                                "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                                "barFilepath": "PauseMenu\\VerticalIndicator",
+                                "viewName": "ScrollSpeechWidget",
+                                "isFullscreenScroll": true,
+                                "wheelScrollAmount": 50,
+                                "buttonScrollAmount" : 100,
+                                "focusIndicatorVisible": false,
+                            }
+                        },
+                    ]
+                },
+            ]
+        },
+    ]
+}

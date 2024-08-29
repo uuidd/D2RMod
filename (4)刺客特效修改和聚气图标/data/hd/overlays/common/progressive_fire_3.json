@@ -1,0 +1,45 @@
+{
+	"dependencies": {
+		"particles": [
+			{
+				"path": "data/hd/vfx/particles/overlays/common/progressive_fire_3/progressive_fire_3_fix.particles"
+			}
+		],
+		"models": [],
+		"skeletons": [],
+		"animations": [],
+		"textures": [],
+		"physics": [],
+		"json": [],
+		"variantdata": [],
+		"objecteffects": [],
+		"other": []
+	},
+	"type": "OverlayDefinition",
+	"name": "progressive_fire_3",
+	"entities": [
+		{
+			"type": "Entity",
+			"name": "entity_root",
+			"id": 1077384344,
+			"components": [
+				{
+					"type": "VfxDefinitionComponent",
+					"name": "component_vfx",
+					"filename": "data/hd/vfx/particles/overlays/common/progressive_fire_3/progressive_fire_3_fix.particles",
+					"hardKillOnDestroy": true
+				},
+				{
+					"type": "TransformDefinitionComponent",
+					"name": "entity_root_TransformDefinition",
+					"position": {
+						"x": 162.5,
+						"y": 100.7,
+						"z": 140.5
+					},
+					"inheritOnlyPosition": true
+				}
+			]
+		}
+	]
+}

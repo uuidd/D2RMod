@@ -1,0 +1,38 @@
+{"dependencies":{"particles":[{"path":"data/hd/vfx/particles/objects/shrines_other/tainted_sun_shrine/vfx_tainted_sun_shrine.particles"}],"models":[{"path":"data/hd/objects/shrines_other/tainted_sun_shrine/model/special1.model"},{"path":"data/hd/objects/shrines_other/tainted_sun_shrine/model/torso.model"}],"skeletons":[{"path":"data/hd/objects/shrines_other/tainted_sun_shrine/skeleton/tainted_sun_shrine.skeleton"}],"animations":[],"textures":[{"path":"data/hd/objects/shrines_other/tainted_sun_shrine/texture/tainted_sun_shrine_alb.texture"},{"path":"data/hd/objects/shrines_other/tainted_sun_shrine/texture/tainted_sun_shrine_nrm.texture"},{"path":"data/hd/objects/shrines_other/tainted_sun_shrine/texture/tainted_sun_shrine_orm.texture"},{"path":"data/hd/vfx/textures/debug/T_FX_Debug_ObjectState_Atlas_4x4.texture"}],"physics":[],"json":[{"path":"data/hd/objects/shrines_other/tainted_sun_shrine/tainted_sun_shrine_state_machine.json"}],"variantdata":[],"objecteffects":[],"other":[]},"type":"UnitDefinition","name":"tainted_sun_shrine","entities":[{"type":"Entity","name":"entity_root","id":4146505652,"components":[{"type":"UnitRootComponent","name":"component_root","state_machine_filename":"data/hd/objects/shrines_other/tainted_sun_shrine/tainted_sun_shrine_state_machine.json","doNotInheritRotation":false,"rotationOverride":{"x":0.0,"y":0.3826834,"z":0.0,"w":0.9238795},"doNotUseHDHeight":false,"hideAllMeshWhenInOpenedMode":false,"onCreateEventName":"","animations":[]},{"type":"SkeletonDefinitionComponent","name":"component_skeleton","filename":"data/hd/objects/shrines_other/tainted_sun_shrine/skeleton/tainted_sun_shrine.skeleton"},{"type":"VfxDefinitionComponent","name":"entity_root_VfxDefinition","filename":"data/hd/vfx/particles/objects/shrines_other/tainted_sun_shrine/vfx_tainted_sun_shrine.particles","hardKillOnDestroy":false}]},{"type":"Entity","name":"entity_torso","id":1256017401,"components":[{"type":"UnitPartComponent","name":"component_part_torso","part":"torso","variant":"lit"},{"type":"ModelDefinitionComponent","name":"component_model_torso","filename":"data/hd/objects/shrines_other/tainted_sun_shrine/model/torso.model","visibleLayers":1,"lightMask":19,"shadowMask":3,"ghostShadows":false,"floorModel":false,"terrainBlendEnableYUpBlend":false,"terrainBlendMode":1}]},{"type":"Entity","name":"entity_special1","id":400693313,"components":[{"type":"UnitPartComponent","name":"component_part_special1","part":"special1","variant":"lit"},{"type":"ModelDefinitionComponent","name":"component_model_special1","filename":"data/hd/objects/shrines_other/tainted_sun_shrine/model/special1.model","visibleLayers":1,"lightMask":19,"shadowMask":3,"ghostShadows":false,"floorModel":false,"terrainBlendEnableYUpBlend":false,"terrainBlendMode":1}]},{"type":"Entity","name":"entity_vfx","id":2720392889,"components":[{"type":"VfxDefinitionComponent","name":"entity_vfx_VfxDefinition","filename":"","hardKillOnDestroy":false}]}
+//빛기둥	이펙트
+,
+{
+"type": "Entity",
+"name": "droplight",
+"id": 9999996974,
+"components": [
+{
+"type": "TransformDefinitionComponent",
+"name": "component_transform1",
+"position": {
+"x": 0.0,
+"y": 0.0,
+"z": 0.0
+},
+"orientation": {
+"x": 0.0,
+"y": 0.0,
+"z": 0.0,
+"w": 1.0
+},
+"scale": {
+"x": 0.5,
+"y": 0.5,
+"z": 0.5
+},
+"inheritOnlyPosition": false
+},
+{
+"type": "VfxDefinitionComponent",
+"name": "entity_vfx_gousemyideaandshareyourfilthymods",
+"filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+"hardKillOnDestroy": false
+}
+]
+}
+]}

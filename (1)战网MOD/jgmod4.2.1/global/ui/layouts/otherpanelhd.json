@@ -1,0 +1,1159 @@
+﻿{
+  "type": "SettingsPanel",
+  "name": "OtherPanel",
+  "fields":
+  {
+    "priority": 9003,
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 1
+    },
+    "fitToParent": false,
+    "applySettingsImmediately": false,
+    "rect":
+    {
+      "x": -357,
+      "y": -1700,
+      "width": 695,
+      "height": 1140
+    }
+  },
+  "children":
+  [
+    {
+      "type": "ImageWidget",
+      "name": "ScrollBarBackground",
+      "fields":
+      {
+        "rect":
+        {
+          "x": 10,
+          "y": -110
+        },
+        "anchor":
+        {
+          "x": 1.0
+        },
+        "filename": "PauseMenu\\VerticalScroll"
+      },
+      "children":
+      [
+        {
+          "type": "ScrollControllerWidget",
+          "name": "ScrollController",
+          "fields":
+          {
+            "rect":
+            {
+              "x": -31,
+              "y": 29,
+              "width": 26,
+              "height": 1208
+            },
+            "anchor":
+            {
+              "x": 1.0
+            },
+            "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+            "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+            "barFilepath": "PauseMenu\\VerticalIndicator",
+            "viewName": "ScrollView",
+            "wheelScrollSound": "cursor_scroll_hd",
+            "buttonScrollSound": "cursor_scroll_hd"
+          }
+        }
+      ]
+    },
+    {
+      "type": "ScrollViewWidget",
+      "name": "ScrollView",
+      "fields":
+      {
+        "fitToParent": true,
+        "scrollControllerName": "ScrollController"
+      },
+      "children":
+      [
+        {
+          "type": "TableWidget",
+          "name": "OptionsTable",
+          "fields":
+          {
+            "columns":
+            [
+              {
+                "width": 320,
+                "alignment":
+                {
+                  "h": "left",
+                  "v": "center"
+                }
+              },
+              {
+                "width": 550,
+                "alignment":
+                {
+                  "h": "left",
+                  "v": "center"
+                }
+              }
+            ],
+            "rowHeight": 70
+          },
+          "children":
+          [
+            {
+              "type": "Widget",
+              "name": "MapInfoHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 0
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "MapInfo85",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "MapInfo85TitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 600,
+                          "height": 80
+                        },
+                        "text": "@jghelp52200MapInfo85Title",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52201MapInfo85Titletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "MapInfo85OneTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 130,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52202MapInfo85OneTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52203MapInfo85OneTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "MapInfo85TwoTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 140,
+                          "y": 0,
+                          "width": 130,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52204MapInfo85TwoTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52205MapInfo85TwoTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "MapInfo85ThreeTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 280,
+                          "y": 0,
+                          "width": 130,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52206MapInfo85ThreeTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52207MapInfo85ThreeTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "MapInfo85FourTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 420,
+                          "y": 0,
+                          "width": 130,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52208MapInfo85FourTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52209MapInfo85FourTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "MapInfo85FiveTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 560,
+                          "y": 0,
+                          "width": 130,
+                          "height": 60,
+                          "scale": 0.9
+                        },
+                        "text": "@jghelp52210MapInfo85FiveTitle",
+                        "style": "$RuneWordTextBoxWidgetStyle"
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52211MapInfo85FiveTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "FCRHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 130
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "FCR",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "FCRTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 600,
+                          "height": 80
+                        },
+                        "text": "@jghelp52212FCRTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52213FCRTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 10,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "ButtonWidget",
+                      "name": "AmazonFCR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 10,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\amazonicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52214AmazonFCRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "AssassinFCR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 90,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\assassinicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52215AssassinFCRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "BarbariaFCR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 170,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\barbarianicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52216BarbariaFCRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "DruidFCR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 250,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\druidicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52217DruidFCRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "NecromancerFCR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 330,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\necromancericon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52218NecromancerFCRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "PaladinFCR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 410,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\paladinicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52219PaladinFCRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "SorceressFCR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 490,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\sorceressicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52220SorceressFCRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    }
+
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "FHRHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 280
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "FHR",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "FHRTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 600,
+                          "height": 80
+                        },
+                        "text": "@jghelp52221FHRTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52222FHRTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 10,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "ButtonWidget",
+                      "name": "AmazonFHR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 10,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\amazonicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52223AmazonFHRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "AssassinFHR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 90,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\assassinicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52224AssassinFHRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "BarbariaFHR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 170,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\barbarianicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52225BarbariaFHRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "DruidFHR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 250,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\druidicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52226DruidFHRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "NecromancerFHR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 330,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\necromancericon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52227NecromancerFHRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "PaladinFHR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 410,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\paladinicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52228PaladinFHRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "SorceressFHR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 490,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\sorceressicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52229SorceressFHRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    }
+
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "FBRHead",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 430
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "FBR",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "FBRTitleText",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 600,
+                          "height": 80
+                        },
+                        "text": "@jghelp52230FBRTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "@jghelp52231FBRTitletooltip",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 10,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "ButtonWidget",
+                      "name": "AmazonFBR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 10,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\amazonicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52232AmazonFBRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "AssassinFBR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 90,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\assassinicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52233AssassinFBRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "BarbariaFBR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 170,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\barbarianicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52234BarbariaFBRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "DruidFBR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 250,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\druidicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52235DruidFBRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "NecromancerFBR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 330,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\necromancericon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52236NecromancerFBRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "PaladinFBR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 410,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\paladinicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52237PaladinFBRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    },
+                    {
+                      "type": "ButtonWidget",
+                      "name": "SorceressFBR",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 490,
+                          "y": 0,
+                          "scale": 0.5
+                        },
+                        "filename": "hireables\\sorceressicon",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52238SorceressFBRTitletooltip",
+                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                      }
+                    }
+
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Widget",
+              "name": "WebLink",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 580
+                }
+
+              },
+              "children":
+              [
+                {
+                  "type": "Widget",
+                  "name": "Link",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 0
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "TextBoxWidget",
+                      "name": "OtherWebLinkTitle",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0,
+                          "width": 600,
+                          "height": 80
+                        },
+                        "text": "@jghelp52244OtherWebLinkTitle",
+                        "style":
+                        {
+                          "fontColor": "$FontColorGoldYellow",
+                          "pointSize": "$XLargeFontSize",
+                          "alignment":
+                          {
+                            "h": "left",
+                            "v": "center"
+                          }
+                        }
+                      },
+                      "children":
+                      [
+                        {
+                          "type": "FocusableWidget",
+                          "name": "Tooltip",
+                          "fields":
+                          {
+                            "fitToParent": true,
+                            "tooltipString": "",
+                            "tooltipStyle": "$StandardLeftToolTipStyle"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "ImageWidget",
+                      "name": "Divider",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 64,
+                          "scale": 0.4
+                        },
+                        "filename": "PauseMenu\\Divider"
+                      }
+                    }
+
+                  ]
+                },
+                {
+                  "type": "Widget",
+                  "name": "Row1",
+                  "fields":
+                  {
+                    "rect":
+                    {
+                      "x": 0,
+                      "y": 80
+                    }
+                  },
+                  "children":
+                  [
+                    {
+                      "type": "ButtonWidget",
+                      "name": "ItemMaxSock",
+                      "fields":
+                      {
+                        "rect":
+                        {
+                          "x": 0,
+                          "y": 0
+                        },
+                        "filename": "PANEL\\jgmod\\label",
+                        "textString": "@jghelp52245ItemMaxSockTitle",
+                        "textColor": "$FontColorBlue",
+                        "text/style": "$StyleLinkButtonText",
+                        "hoveredFrame": 0,
+                        "pressedFrame": 0,
+                        "tooltipString": "@jghelp52243ClickMeOpenWeb",
+                        "tooltipStyle": "$StandardLeftToolTipStyle",
+                        "onClickMessage": "PanelManager:OpenPanel:linkmaxsock"
+                      }
+                    }
+
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [
+      { "path": "data/hd/objects/caskets/baal_tomb_3/model/torso.model" }
+    ],
+    "skeletons": [
+      {
+        "path": "data/hd/objects/caskets/baal_tomb_3/skeleton/baal_tomb_3.skeleton"
+      }
+    ],
+    "animations": [],
+    "textures": [
+      {
+        "path": "data/hd/objects/caskets/baal_tomb_3/texture/baal_tomb_3_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/caskets/baal_tomb_3/texture/baal_tomb_3_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/caskets/baal_tomb_3/texture/baal_tomb_3_orm.texture"
+      }
+    ],
+    "physics": [],
+    "json": [
+      {
+        "path": "data/hd/objects/caskets/baal_tomb_3/baal_tomb_3_state_machine.json"
+      }
+    ],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "tomb_baal_3",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2235281684,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/objects/caskets/baal_tomb_3/baal_tomb_3_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride": {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/caskets/baal_tomb_3/skeleton/baal_tomb_3.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 2784371617,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/caskets/baal_tomb_3/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position": { "x": 0.5, "y": 0.0, "z": 3.5 },
+          "orientation": {
+            "x": 0.0,
+            "y": 0.707106769,
+            "z": 0.0,
+            "w": 0.707106769
+          },
+          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 0.5,
+                    "y": 7.0,
+                    "z": 2.5
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
+  ]
+}

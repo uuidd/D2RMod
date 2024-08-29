@@ -1,0 +1,97 @@
+Name	Id	*StringName	GroupName
+Null	0	Null	
+Act 1 - Town	1	Rogue Encampment	[jg]Rogue Encampment
+Act 1 - Blood Moor	2	Blood Moor	[jg]Blood Moor
+Act 1 - Cold Plains	3	Cold Plains	[jg]Cold Plains
+Act 1 - Stony Field	4	Stony Field	[jg]Stony Field
+Act 1 - Dark Wood	5	Dark Wood	[jg]Dark Wood
+Act 1 - Black Marsh	6	Black Marsh	[jg]Black Marsh
+Act 1 - Tamoe Highland	7	Tamoe Highland	[jg]Tamoe Highland
+Act 1 - Den of Evil	8	Den of Evil	[jg]Den of Evil
+Act 1 - Cave	9	Cave	[jg]Cave
+Act 1 - Underground Passage	10	Underground Passage	[jg]Underground Passage
+Act 1 - Hole	11	Hole	[jg]Hole
+Act 1 - Pit	12	Pit	[jg]Act 1 Pit
+Act 1 - Burial Grounds	13	Burial Grounds	[jg]Burial Grounds
+Act 1 - Crypt	14	Crypt	[jg]Crypt
+Act 1 - Mausoleum	15	Mausoleum	[jg]Mausoleum
+Act 1 - Forgotten Tower	16	Forgotten Tower	[jg]Forgotten Tower
+Act 1 - Monastery Gate	17	Monastery Gate	[jg]Monastery Gate
+Act 1 - Outer Cloister	18	Outer Cloister	[jg]Outer Cloister
+Act 1 - Barracks	19	Barracks	[jg]Barracks
+Act 1 - Jail	20	Jail Level 1	[jg]Jail
+Act 1 - Inner Cloister	21	Inner Cloister	[jg]Inner Cloister
+Act 1 - Cathedral	22	Cathedral	[jg]Cathedral
+Act 1 - Catacombs	23	Catacombs	[jg]Catacombs
+Act 1 - Tristram	24	Tristram	[jg]Tristram
+Act 1 - Moo Moo Farm	25	Moo Moo Farm	[jg]MooMooFarmGroup
+Act 2 - Town	26	Lut Gholein	[jg]Lut Gholein
+Act 2 - Rocky Waste	27	Rocky Waste	[jg]Rocky Waste
+Act 2 - Dry Hills	28	Dry Hills	[jg]Dry Hills
+Act 2 - Far Oasis	29	Far Oasis	[jg]Far Oasis
+Act 2 - Lost City	30	Lost City	[jg]Lost City
+Act 2 - Valley of Snakes	31	Valley of Snakes	[jg]Valley of Snakes
+Act 2 - Canyon of the Magi	32	Canyon of the Magi	[jg]Canyon of the Magi
+Act 2 - Sewers	33	Sewers	[jg]Lut Gholein Sewers
+Act 2 - Harem	34	Harem	[jg]Harem
+Act 2 - Palace Cellar	35	Palace Cellar	[jg]Palace Cellar
+Act 2 - Stony Tomb	36	Stony Tomb	[jg]Stony Tomb
+Act 2 - Halls of the Dead	37	Halls of the Dead	[jg]Halls of the Dead
+Act 2 - Claw Viper Temple	38	Claw Viper Temple	[jg]Claw Viper Temple
+Act 2 - Maggot Lair	39	Maggot Lair	[jg]Maggot Lair
+Act 2 - Ancient Tunnels	40	Ancient Tunnels	[jg]Ancient Tunnels
+Act 2 - Tal Rasha's Tomb	41	Tal Rasha's Tomb	[jg]Tal Rasha's Tomb
+Act 2 - Duriel's Lair	42	Duriel's Lair	[jg]Duriel's Lair
+Act 2 - Arcane Sanctuary	43	Arcane Sanctuary	[jg]Arcane Sanctuary
+Act 3 - Town	44	Kurast Docktown	[jg]Kurast Docktown
+Act 3 - Spider Forest	45	Spider Forest	[jg]Spider Forest
+Act 3 - Great Marsh	46	Great Marsh	[jg]Great Marsh
+Act 3 - Flayer Jungle	47	Flayer Jungle	[jg]Flayer Jungle
+Act 3 - Lower Kurast	48	Lower Kurast	[jg]Lower Kurast
+Act 3 - Kurast Bazaar	49	Kurast Bazaar	[jg]Kurast Bazaar
+Act 3 - Upper Kurast	50	Upper Kurast	[jg]Upper Kurast
+Act 3 - Kurast Causeway	51	Kurast Causeway	[jg]Kurast Causeway
+Act 3 - Travincal	52	Travincal	[jg]Travincal
+Act 3 - Arachnid Lair	53	Arachnid Lair	[jg]Spider Cave
+Act 3 - Spider Cavern	54	Spider Cavern	[jg]Spider Cavern
+Act 3 - Swampy Pit	55	Swampy Pit	[jg]Swampy Pit
+Act 3 - Flayer Dungeon	56	Flayer Dungeon	[jg]Flayer Dungeon
+Act 3 - Sewers	57	Sewers	[jg]Kurast Sewers
+Act 3 - Ruined Temple	58	Ruined Temple	[jg]Ruined Temple
+Act 3 - Disused Fane	59	Disused Fane	[jg]Disused Fane
+Act 3 - Forgotten Reliquary	60	Forgotten Reliquary	[jg]Forgotten Reliquary
+Act 3 - Forgotten Temple	61	Forgotten Temple	[jg]Forgotten Temple
+Act 3 - Ruined Fane	62	Ruined Fane	[jg]Ruined Fane
+Act 3 - Disused Reliquary	63	Disused Reliquary	[jg]Disused Reliquary
+Act 3 - Durance of Hate	64	Durance of Hate	[jg]Durance of Hate
+Act 4 - Town	65	The Pandemonium Fortress	[jg]The Pandemonium Fortress
+Act 4 - Outer Steppes	66	Outer Steppes	[jg]Outer Steppes
+Act 4 - Plains of Despair	67	Plains of Despair	[jg]Plains of Despair
+Act 4 - City of the Damned	68	City of the Damned	[jg]City of the Damned
+Act 4 - River of Flame	69	River of Flame	[jg]River of Flame
+Act 4 - Chaos Sanctuary	70	The Chaos Sanctuary	[jg]Chaos Sanctum
+Expansion			
+Act 5 - Town	71	Harrogath	[jg]Harrogath
+Act 5 - Bloody Foothills	72	Bloody Foothills	[jg]Bloody Foothills
+Act 5 - Frigid Highlands	73	Frigid Highlands	[jg]Rigid Highlands
+Act 5 - Arreat Plateau	74	Arreat Plateau	[jg]Arreat Plateau
+Act 5 - Crystalline Passage	75	Crystalline Passage	[jg]Crystalized Cavern Level 1
+Act 5 - Frozen River	76	Frozen River	[jg]Cellar of Pity
+Act 5 - Glacial Trail	77	Glacial Trail	[jg]Crystalized Cavern Level 2
+Act 5 - Drifter Cavern	78	Drifter Cavern	[jg]Echo Chamber
+Act 5 - Frozen Tundra	79	Frozen Tundra	[jg]Tundra Wastelands
+Act 5 - The Ancient's Way	80	The Ancients' Way	[jg]Glacial Caves Level 1
+Act 5 - Icy Cellar	81	Icy Cellar	[jg]Glacial Caves Level 2
+Act 5 - Arreat Summit	82	Arreat Summit	[jg]Rocky Summit
+Act 5 - Nihlathak's Temple	83	Nihlathak's Temple	[jg]Nihlathaks Temple
+Act 5 - Halls	84	Halls	[jg]Temple Halls
+Act 5 - Abaddon	85	Abaddon	[jg]Hell1
+Act 5 - Pit of Acheron	86	Pit of Acheron	[jg]Hell2
+Act 5 - Infernal Pit	87	Infernal Pit	[jg]Hell3
+Act 5 - Worldstone Keep	88	The Worldstone Keep	[jg]The Worldstone Keep
+Act 5 - Throne of Destruction	89	Throne of Destruction	[jg]Throne of Destruction
+Act 5 - Worldstone Chamber	90	The Worldstone Chamber	[jg]The Worldstone Chamber
+Act 5 - Matron's Den	91	Matron's Den	[jg]Pandemonium Run 1
+Act 5 - Forgotten Sands	92	Forgotten Sands	[jg]Pandemonium Run 2
+Act 5 - Furnace of Pain	93	Furnace of Pain	[jg]Pandemonium Run 3
+Act 5 - Tristram	94	Tristram	[jg]Tristram The Pan demonium Finale

@@ -1,0 +1,115 @@
+{
+  "name": "(5)技能、Buff持续时间调整",
+  "description": "各职业技能、Buff持续时间调整，不修改伤害、血量等加成，主要避免一场游戏重复使用技能",
+  "author": "Demo & PHombie & givememodslmao",
+  "version": "1.3",
+  "file": "skills.txt",
+  "config": [
+    {
+      "id": "bo",
+      "type": "number",
+      "name": "战斗命令、战斗指挥、大吼基础持续时间/秒",
+      "description": "原版是30秒。总持续时间是基础持续时间加上第一级之后每级的10秒，所以3级战斗命令持续50秒",
+      "defaultValue": 300,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "bc",
+      "type": "number",
+      "name": "野蛮人战嗥基础持续时间/秒",
+      "description": "原版是12秒。",
+      "defaultValue": 120,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "frenzy",
+      "type": "number",
+      "name": "野蛮人狂乱基础持续时间/秒",
+      "description": "原版是6秒。",
+      "defaultValue": 30,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "gas",
+      "type": "number",
+      "name": "刺客聚气持续时间/秒",
+      "description": "将聚气持续时间设置在1到400之间，原版为15秒",
+      "defaultValue": 30,
+      "minValue": 1,
+      "maxValue": 400
+    },
+    {
+      "id": "calc1",
+      "type": "checkbox",
+      "name": "限制刺客火拳的元素转换",
+      "description": "如果启用，火之拳将固定50%的伤害转化为元素伤害。使用这个可以从攻击中吸取生命值和魔法值，无论技能等级如何",
+      "defaultValue": false
+    },
+    {
+      "id": "ass",
+      "type": "number",
+      "name": "刺客buff基础持续时间/秒",
+      "description": "原版都是120秒，调整影散、速度爆发、淬毒、利刃之盾基础持续时间",
+      "defaultValue": 360,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "sor",
+      "type": "number",
+      "name": "法师buff基础持续时间/秒",
+      "description": "原版都是144秒，调整寒冰甲、冰封甲，碎冰甲、能量护盾、附魔基础持续时间",
+      "defaultValue": 432,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "pal",
+      "type": "number",
+      "name": "圣骑士buff基础持续时间/秒",
+      "description": "原版都是30秒，调整神圣之盾基础持续时间",
+      "defaultValue": 300,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "dru",
+      "type": "number",
+      "name": "德鲁伊变狼变熊基础持续时间/秒",
+      "description": "原版都是40秒，调整变形术(变狼)(变熊)基础持续时间",
+      "defaultValue": 400,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "druImprint",
+      "type": "number",
+      "name": "变化头狼人/熊人印记基础持续时间/秒",
+      "description": "原版是180秒，调整狼人/熊人变形基础持续时间",
+      "defaultValue": 540,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "necSkill",
+      "type": "number",
+      "name": "死灵法师骨墙骨牢基础持续时间/秒",
+      "description": "原版都是24秒",
+      "defaultValue": 72,
+      "minValue": 1,
+      "maxValue": 600
+    },
+    {
+      "id": "necRevive",
+      "type": "number",
+      "name": "死灵法师重生怪物基础持续时间/秒",
+      "description": "原版都是180秒",
+      "defaultValue": 540,
+      "minValue": 1,
+      "maxValue": 600
+    }
+  ]
+}

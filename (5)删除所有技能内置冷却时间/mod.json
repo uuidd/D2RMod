@@ -1,0 +1,8 @@
+{
+  "name": "(5)删除所有技能内置冷却时间",
+  "description": "取消所有玩家技能的强制冷却时间",
+  "author": "Jeo",
+  "website": "https://github.com/naghi32/D2RMODS/tree/main/RemoveSkillCooldown",
+  "version": "1.0",
+  "file": "skill.txt"
+}

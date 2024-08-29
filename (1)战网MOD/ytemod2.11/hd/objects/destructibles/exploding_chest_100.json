@@ -1,0 +1,3322 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/objects/destructibles/barrel_exploding/vfx_barrel_explode.particles"
+            }
+        ],
+        "models": [
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_01.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_010.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_011.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_012.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_013.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_014.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_015.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_016.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_017.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_018.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_019.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_02.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_020.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_021.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_022.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_023.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_024.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_025.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_026.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_027.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_028.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_029.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_03.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_030.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_031.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_032.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_034.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_035.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_036.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_04.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_05.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_06.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_07.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_08.model"
+            },
+            {
+                "path": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_09.model"
+            }
+        ],
+        "skeletons": [
+            {
+                "path": "data/hd/objects/chests/exploding_chest_100/skeleton/exploding_chest_100.skeleton"
+            }
+        ],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/objects/chests/wood_chest_l/texture/wood_chest_l_alb.texture"
+            },
+            {
+                "path": "data/hd/objects/chests/wood_chest_l/texture/wood_chest_l_nrm.texture"
+            },
+            {
+                "path": "data/hd/objects/chests/wood_chest_l/texture/wood_chest_l_orm.texture"
+            },
+            {
+                "path": "data/hd/vfx/textures/decal/T_FX_blastmark_01_NRM.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "UnitDefinition",
+    "name": "exploding_chest_100",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 2923700756,
+            "components": [
+                {
+                    "type": "UnitRootComponent",
+                    "name": "component_root",
+                    "state_machine_filename": "",
+                    "doNotInheritRotation": false,
+                    "rotationOverride": {
+                        "x": 0.0,
+                        "y": 0.3826834,
+                        "z": 0.0,
+                        "w": 0.9238795
+                    },
+                    "doNotUseHDHeight": false,
+                    "hideAllMeshWhenInOpenedMode": false,
+                    "onCreateEventName": "",
+                    "animations": []
+                },
+                {
+                    "type": "SkeletonDefinitionComponent",
+                    "name": "component_skeleton",
+                    "filename": "data/hd/objects/chests/exploding_chest_100/skeleton/exploding_chest_100.skeleton"
+                },
+                {
+                    "type": "PhysicsApplyForceOnDynamicDefinitionComponent",
+                    "name": "entity_root_PhysicsApplyForceOnDynamicDefinition",
+                    "isExplosion": false,
+                    "explosionRadius": 25.0,
+                    "fromPlayerPosition": true,
+                    "manualForceDirection": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 1.0
+                    },
+                    "force": 300.0,
+                    "variance": 200.0,
+                    "life": 10.0,
+                    "lifeVariance": 1.0
+                },
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "entity_root_VfxDefinition",
+                    "filename": "data/hd/vfx/particles/objects/destructibles/barrel_exploding/vfx_barrel_explode.particles",
+                    "hardKillOnDestroy": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_torso",
+            "id": 33278041,
+            "components": [
+                {
+                    "type": "UnitPartComponent",
+                    "name": "component_part_torso",
+                    "part": "torso",
+                    "variant": "lit"
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_0",
+            "id": 3043683701,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_01.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition",
+                                "center": {
+                                    "x": 1.228786,
+                                    "y": 1.967246,
+                                    "z": -1.171793
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.1911798,
+                                    "y": 0.8674651,
+                                    "z": 1.042853
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_1",
+            "id": 3898941741,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform001",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model001",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_010.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent001",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition001",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition001",
+                                "center": {
+                                    "x": -0.5312617,
+                                    "y": 2.633239,
+                                    "z": 1.130558
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.8783743,
+                                    "y": 0.2159986,
+                                    "z": 1.646896
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_2",
+            "id": 153129914,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform002",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model002",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_011.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent002",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition002",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition002",
+                                "center": {
+                                    "x": 0.1523302,
+                                    "y": 2.621393,
+                                    "z": 1.200303
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.618479,
+                                    "y": 0.2036562,
+                                    "z": 1.59686
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_3",
+            "id": 1008453747,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform003",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model003",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_012.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent003",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition003",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition003",
+                                "center": {
+                                    "x": -0.7683374,
+                                    "y": 1.012309,
+                                    "z": -2.295536
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.6903713,
+                                    "y": 1.014312,
+                                    "z": 0.2360153
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_4",
+            "id": 1864236075,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform004",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model004",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_013.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent004",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition004",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition004",
+                                "center": {
+                                    "x": -1.013679,
+                                    "y": 2.626373,
+                                    "z": -2.30454
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.4896331,
+                                    "y": 0.982253,
+                                    "z": 0.2408834
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_5",
+            "id": 2430103224,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform005",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model005",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_014.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent005",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition005",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition005",
+                                "center": {
+                                    "x": 0.18937,
+                                    "y": 2.598917,
+                                    "z": -2.277688
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.9355415,
+                                    "y": 0.6877084,
+                                    "z": 0.2502881
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_6",
+            "id": 3285033584,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform006",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model006",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_015.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent006",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition006",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition006",
+                                "center": {
+                                    "x": 0.4275201,
+                                    "y": 0.8666926,
+                                    "z": -2.283028
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.7172311,
+                                    "y": 0.8532612,
+                                    "z": 0.2556282
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_7",
+            "id": 3817411837,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform007",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model007",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_016.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent007",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition007",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition007",
+                                "center": {
+                                    "x": -0.1434443,
+                                    "y": 2.013104,
+                                    "z": -2.27667
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 1.269102,
+                                    "y": 0.5839652,
+                                    "z": 0.2450684
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_8",
+            "id": 394545333,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform008",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model008",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_017.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent008",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition008",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition008",
+                                "center": {
+                                    "x": -0.9727333,
+                                    "y": 2.692902,
+                                    "z": 2.881575
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.5210319,
+                                    "y": 0.915724,
+                                    "z": 0.2434317
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_9",
+            "id": 1249869166,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform009",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model009",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_018.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent009",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition009",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition009",
+                                "center": {
+                                    "x": 0.2026734,
+                                    "y": 2.589647,
+                                    "z": 2.875341
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.9325311,
+                                    "y": 0.6969778,
+                                    "z": 0.2354047
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_10",
+            "id": 1782312699,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform010",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model010",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_019.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent010",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition010",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition010",
+                                "center": {
+                                    "x": -0.7646905,
+                                    "y": 1.557421,
+                                    "z": 2.868364
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.6844715,
+                                    "y": 0.6209634,
+                                    "z": 0.2343571
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_11",
+            "id": 2654348211,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform011",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model011",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_02.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent011",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition011",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition011",
+                                "center": {
+                                    "x": 1.195443,
+                                    "y": 2.349019,
+                                    "z": 0.1594151
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.1495519,
+                                    "y": 0.4856919,
+                                    "z": 0.8064187
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_12",
+            "id": 3510065259,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform012",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model012",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_020.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent012",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition012",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition012",
+                                "center": {
+                                    "x": -0.7361344,
+                                    "y": 0.6550035,
+                                    "z": 2.896868
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.6054957,
+                                    "y": 0.6570073,
+                                    "z": 0.1939236
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_13",
+            "id": 4059286008,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform013",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model013",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_021.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent013",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition013",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition013",
+                                "center": {
+                                    "x": 0.4273238,
+                                    "y": 0.6987828,
+                                    "z": 2.851943
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.726974,
+                                    "y": 0.6853514,
+                                    "z": 0.2500561
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_14",
+            "id": 636026545,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform014",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model014",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_022.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent014",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition014",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition014",
+                                "center": {
+                                    "x": 0.3869679,
+                                    "y": 1.950864,
+                                    "z": 2.857541
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.6569797,
+                                    "y": 0.8348114,
+                                    "z": 0.1762729
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_15",
+            "id": 1168338749,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform015",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model015",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_023.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent015",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition015",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition015",
+                                "center": {
+                                    "x": -1.293818,
+                                    "y": 1.889174,
+                                    "z": -0.4103481
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.2050331,
+                                    "y": 0.9759163,
+                                    "z": 1.741969
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_16",
+            "id": 2024056054,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform016",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model016",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_024.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent016",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition016",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition016",
+                                "center": {
+                                    "x": -1.295638,
+                                    "y": 2.001609,
+                                    "z": 1.420717
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.2021211,
+                                    "y": 0.813159,
+                                    "z": 1.33662
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_17",
+            "id": 2895829422,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform017",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model017",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_025.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent017",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition017",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition017",
+                                "center": {
+                                    "x": -1.299255,
+                                    "y": 0.8875122,
+                                    "z": -1.008181
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.1990081,
+                                    "y": 0.5189869,
+                                    "z": 1.13537
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_18",
+            "id": 3428141627,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform018",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model018",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_026.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent018",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition018",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition018",
+                                "center": {
+                                    "x": -1.305048,
+                                    "y": 0.7595369,
+                                    "z": 0.9681844
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.2083291,
+                                    "y": 0.7544428,
+                                    "z": 1.801293
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_19",
+            "id": 4283465715,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform019",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model019",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_027.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent019",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition019",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition019",
+                                "center": {
+                                    "x": -0.8363932,
+                                    "y": 0.5754963,
+                                    "z": 1.038673
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.3222583,
+                                    "y": 0.1070861,
+                                    "z": 1.938903
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_20",
+            "id": 860599468,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform020",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model020",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_028.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent020",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition020",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition020",
+                                "center": {
+                                    "x": -0.8397049,
+                                    "y": 0.5687208,
+                                    "z": -1.428378
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.3167736,
+                                    "y": 0.1025707,
+                                    "z": 0.9407356
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_21",
+            "id": 1393370424,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform021",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model021",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_029.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent021",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition021",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition021",
+                                "center": {
+                                    "x": -0.3185223,
+                                    "y": 0.5693189,
+                                    "z": 0.4563057
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.2351135,
+                                    "y": 0.108003,
+                                    "z": 1.459815
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_22",
+            "id": 2248301297,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform022",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model022",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_03.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent022",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition022",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition022",
+                                "center": {
+                                    "x": 1.227645,
+                                    "y": 1.945218,
+                                    "z": 1.881763
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.1923206,
+                                    "y": 0.8260987,
+                                    "z": 0.9151041
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_23",
+            "id": 2814299006,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform023",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model023",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_030.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent023",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition023",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition023",
+                                "center": {
+                                    "x": -0.196627,
+                                    "y": 0.5747371,
+                                    "z": 1.856393
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.3251482,
+                                    "y": 0.1076503,
+                                    "z": 1.213573
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_24",
+            "id": 3669950518,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform024",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model024",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_031.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent024",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition024",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition024",
+                                "center": {
+                                    "x": -0.3004736,
+                                    "y": 0.5718805,
+                                    "z": -1.637678
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.2193447,
+                                    "y": 0.1042716,
+                                    "z": 0.751134
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_25",
+            "id": 229913838,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform025",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model025",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_032.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent025",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition025",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition025",
+                                "center": {
+                                    "x": 0.1346651,
+                                    "y": 0.5738523,
+                                    "z": 1.049543
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.2166955,
+                                    "y": 0.1134145,
+                                    "z": 1.962831
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_26",
+            "id": 779069051,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform026",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model026",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_034.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent026",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition026",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition026",
+                                "center": {
+                                    "x": 0.6814189,
+                                    "y": 0.5715678,
+                                    "z": 1.508889
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.3303085,
+                                    "y": 0.1099917,
+                                    "z": 1.572533
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_27",
+            "id": 1634458420,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform027",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model027",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_035.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent027",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition027",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition027",
+                                "center": {
+                                    "x": 0.6834935,
+                                    "y": 0.57653,
+                                    "z": -0.1719866
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.3282333,
+                                    "y": 0.1101052,
+                                    "z": 2.12528
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_28",
+            "id": 2506493932,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform028",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model028",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_036.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent028",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition028",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition028",
+                                "center": {
+                                    "x": 0.2503413,
+                                    "y": 0.5729815,
+                                    "z": -1.259554
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.3301645,
+                                    "y": 0.1059195,
+                                    "z": 1.230768
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_29",
+            "id": 3038871929,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform029",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model029",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_04.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent029",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition029",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition029",
+                                "center": {
+                                    "x": 1.210089,
+                                    "y": 2.555269,
+                                    "z": 1.464988
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.1495026,
+                                    "y": 0.2794418,
+                                    "z": 0.8814987
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_30",
+            "id": 3894195505,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform030",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model030",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_05.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent030",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition030",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition030",
+                                "center": {
+                                    "x": 1.195316,
+                                    "y": 0.9619784,
+                                    "z": -1.406051
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.1592639,
+                                    "y": 0.3685368,
+                                    "z": 0.7016401
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_31",
+            "id": 148383678,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform031",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model031",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_06.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent031",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition031",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition031",
+                                "center": {
+                                    "x": 1.228023,
+                                    "y": 1.426245,
+                                    "z": 0.9073061
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.190417,
+                                    "y": 0.8328033,
+                                    "z": 1.796486
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_32",
+            "id": 1020877686,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform032",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model032",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_07.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent032",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition032",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition032",
+                                "center": {
+                                    "x": 0.9364235,
+                                    "y": 2.63932,
+                                    "z": 0.3002586
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.3265473,
+                                    "y": 0.2184554,
+                                    "z": 2.337136
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_33",
+            "id": 1875808303,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform033",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model033",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_08.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent033",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition033",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition033",
+                                "center": {
+                                    "x": -0.09069669,
+                                    "y": 2.622569,
+                                    "z": -1.256465
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.925953,
+                                    "y": 0.1982623,
+                                    "z": 0.9603713
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "destro_34",
+            "id": 1405073724,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "transform034",
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "model034",
+                    "filename": "data/hd/objects/destructibles/exploding_chest_100/model/mesh_09.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "PhysicsBodyDefinitionComponent",
+                    "name": "PhysicsBodyDefinitionComponent034",
+                    "bodytype": "static",
+                    "fixturedefs": [
+                        {
+                            "type": "PhysicsFixtureDefinition",
+                            "name": "PhysicsFixtureDefinition034",
+                            "shapetype": {
+                                "type": "PhysicsBoxDefinition",
+                                "name": "PhysicsBoxDefinition034",
+                                "center": {
+                                    "x": -0.9578229,
+                                    "y": 2.644002,
+                                    "z": -1.23225
+                                },
+                                "orientation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "extents": {
+                                    "x": 0.4515114,
+                                    "y": 0.2052352,
+                                    "z": 0.8942224
+                                }
+                            },
+                            "friction": 1.0,
+                            "restitution": 0.0,
+                            "rollingresistance": 0.2,
+                            "impulsefactor": 1.0,
+                            "explosionfactor": 1.0,
+                            "explosionliftfactor": 1.0,
+                            "windfactor": 0.0,
+                            "dragfactor": 0.0,
+                            "liftfactor": 1.0,
+                            "density": 37.5,
+                            "boneindex": -1
+                        }
+                    ],
+                    "filter": "destructible",
+                    "allowTransition": true,
+                    "removeOnDeath": true,
+                    "lineardamping": 0.0,
+                    "angulardamping": 0.0,
+                    "gravityscale": 1.0
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "vfx",
+            "id": 856925902,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "vfx_VfxDefinition",
+                    "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                    "hardKillOnDestroy": false
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "vfx_TransformDefinition",
+                    "position": {
+                        "x": 0.5,
+                        "y": 1.5,
+                        "z": 1.5
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        }
+    ]
+}

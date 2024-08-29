@@ -1,0 +1,148 @@
+{
+    "type": "SkillSelectPanel", "name": "SkillSelect",
+  "fields":
+  {
+    "priority": 100,
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 1
+    },
+    "rect":
+    {
+      "y": -320
+    },
+    "defaultWidget": "ButtonTemplate0",
+    "displayGroups":
+    [
+      {
+        "name": "@SkillCategoryMisc",
+        "skillCategories":
+        [
+          "otherClass",
+          "charged",
+          "scroll"
+        ]
+      },
+      {
+        "classNames":
+        [
+          "@SkillCategoryAm1",
+          "@SkillCategorySo1",
+          "@SkillCategoryNe1",
+          "@SkillCategoryPa1",
+          "@SkillCategoryBa1",
+          "@SkillCategoryDr1",
+          "@SkillCategoryAs1"
+        ],
+        "skillCategories": "class1"
+      },
+      {
+        "classNames":
+        [
+          "@SkillCategoryAm2",
+          "@SkillCategorySo2",
+          "@SkillCategoryNe2",
+          "@SkillCategoryPa2",
+          "@SkillCategoryBa2",
+          "@SkillCategoryDr2",
+          "@SkillCategoryAs2"
+        ],
+        "skillCategories": "class2"
+      },
+      {
+        "classNames":
+        [
+          "@SkillCategoryAm3",
+          "@SkillCategorySo3",
+          "@SkillCategoryNe3",
+          "@SkillCategoryPa3",
+          "@SkillCategoryBa3",
+          "@SkillCategoryDr3",
+          "@SkillCategoryAs3"
+        ],
+        "skillCategories": "class3"
+      },
+      {
+        "skillCategories": "common"
+      }
+    ],
+    "centerMirrorSkills": true,
+    "centerMirrorGapWidth": 146,
+    "skillPadding":
+    {
+      "x": 4,
+      "y": 4
+    },
+    "titlePadding":
+    {
+      "top": 10,
+      "bottom": 15
+    }
+  },
+    "children": [
+        {
+            "type": "Widget", "name": "SelectionTray",
+            "fields": {
+                "rect": { "x": -720, "width": 1440, "height": 1000 }
+            },
+            "children": [
+                {
+                    "type": "Widget", "name": "SelectionHighlight",
+                    "children": [
+                        {
+                            "type": "ImageWidget",
+                            "name": "SelectionBorder",
+                            "fields": {
+                                "rect": { "x": -3, "y": -4 },
+                                "filename": "PANEL/SkillSelect/Selected",
+                                "frame": 1
+                            }
+                        },
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "SkillSelectButtonWidget", "name": "ButtonTemplate",
+            "fields": {
+                "skillIconFilenames": "$SkillIconFilenames"
+            },
+            "children": [
+                {
+                    "type": "TextBoxWidget", "name": "HotkeyText",
+                    "fields": {
+                        "rect": "$SkillHotkeyTextRect",
+                        "style": "$SkillHotkeyTextStyle",
+                        "useAltStyleIfDoesntFit": true,
+                        "altStyle": "$SkillHotkeyTextAltStyle",
+                    }
+                },
+                {
+                    "type": "TextBoxWidget", "name": "QuantityText",
+                    "fields": {
+                        "rect": "$SkillQuantityTextRect",
+                        "style": "$SkillQuantityTextStyle",
+                    }
+                },
+            ]
+        },
+        {
+            "type": "TextBoxWidget", "name": "SkillBindText",
+            "fields": {
+                "rect": { "x": 0, "y": 35 },
+                "fontType": "16pt",
+                "text": "@SkillSelectSkillBindingHelpText",
+                "style": {
+                    "pointSize": "$XMediumLargeFontSize",
+                    "alignment": { "h": "center" },
+                    "options": { "pipeCharacterBehavior": "handle" },
+                    "highlight": {
+                        "endIndex": 200,
+                        "backgroundColor": { "r": 0, "g": 0, "b": 0, "a": 175 }
+                    },
+                }
+            }
+        },
+    ]
+}

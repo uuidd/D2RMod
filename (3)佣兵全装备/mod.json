@@ -1,0 +1,8 @@
+{
+  "name": "(3)佣兵全装备",
+  "description": "佣兵现在可以装备 鞋子, 手套, 腰带, 项链和双戒指. ",
+  "author": "qhu91it",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/193",
+  "file": "inventory.txt、itemtypes.txt、hirelinginventorypanelhd.json、_profilehd.json",
+  "version": "1.3"
+}

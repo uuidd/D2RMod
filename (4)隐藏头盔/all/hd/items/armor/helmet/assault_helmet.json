@@ -1,0 +1,191 @@
+{
+	"dependencies": {
+		"particles": [],
+		"models": [
+			{
+				"path": "data/hd/items/armor/helmet/assault_helmet/assault_helmet.model"
+			}
+		],
+		"skeletons": [
+			{
+				"path": "data/hd/items/dropped_items/skeleton/dropped_items.skeleton"
+			}
+		],
+		"animations": [],
+		"textures": [
+			{
+				"path": "data/hd/items/armor/helmet/assault_helmet/textures/armor_assault_helmet_alb.texture"
+			},
+			{
+				"path": "data/hd/items/armor/helmet/assault_helmet/textures/armor_assault_helmet_KTINT.texture"
+			},
+			{
+				"path": "data/hd/items/armor/helmet/assault_helmet/textures/armor_assault_helmet_nrm.texture"
+			},
+			{
+				"path": "data/hd/items/armor/helmet/assault_helmet/textures/armor_assault_helmet_orm.texture"
+			}
+		],
+		"physics": [],
+		"json": [
+			{
+				"path": "data/hd/items/dropped_items/dropped_items_helms_flip_vert.json"
+			}
+		],
+		"variantdata": [],
+		"objecteffects": [],
+		"other": []
+	},
+	"type": "UnitDefinition",
+	"name": "assault_helmet",
+	"entities": [
+		{
+			"type": "Entity",
+			"name": "entity_root",
+			"id": 2356553067,
+			"components": [
+				{
+					"type": "UnitRootComponent",
+					"name": "component_root",
+					"state_machine_filename": "data/hd/items/dropped_items/dropped_items_helms_flip_vert.json",
+					"doNotInheritRotation": false,
+					"rotationOverride": {
+						"x": 0.0,
+						"y": 0.3826834,
+						"z": 0.0,
+						"w": 0.9238795
+					},
+					"doNotUseHDHeight": false,
+					"hideAllMeshWhenInOpenedMode": false,
+					"onCreateEventName": "",
+					"animations": []
+				},
+				{
+					"type": "SkeletonDefinitionComponent",
+					"name": "component_skeleton",
+					"filename": "data/hd/items/dropped_items/skeleton/dropped_items.skeleton"
+				},
+				{
+					"type": "ChangeMeshLayersOnAttachComponent",
+					"name": "entity_root_ChangeMeshLayersOnAttach",
+					"defaultLayerChange": {
+						"type": "MeshLayerChange",
+						"name": "entity_root_ChangeMeshLayersOnAttach_defaultLayerChange",
+						"layersToHide": 32,
+						"layersToShow": 32
+					},
+					"playerClassOverrides": {}
+				},
+				{
+					"type": "OverrideAttachmentTransformComponent",
+					"name": "entity_root_OverrideAttachmentTransform",
+					"playerClassTransforms": {
+						"2": {
+							"type": "Transform",
+							"name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Necromancer",
+							"scale": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							}
+						},
+						"3": {
+							"type": "Transform",
+							"name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Paladin",
+							"scale": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							}
+						},
+						"6": {
+							"type": "Transform",
+							"name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Assassin",
+							"scale": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							}
+						},
+						"4": {
+							"type": "Transform",
+							"name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Barbarian",
+							"scale": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							}
+						},
+						"1": {
+							"type": "Transform",
+							"name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Sorceress",
+							"scale": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							}
+						},
+						"5": {
+							"type": "Transform",
+							"name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Druid",
+							"scale": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							}
+						},
+						"0": {
+							"type": "Transform",
+							"name": "entity_root_OverrideAttachmentTransform_playerClassTransforms_Amazon",
+							"scale": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							}
+						}
+					}
+				},
+				{
+					"type": "TransformDefinitionComponent",
+					"name": "entity_root_TransformDefinition",
+					"position": {
+						"x": -0.05,
+						"y": 0.0,
+						"z": -0.5
+					},
+					"orientation": {
+						"x": 0.0,
+						"y": 0.0348994955,
+						"z": 0.0,
+						"w": 0.999390841
+					},
+					"scale": {
+						"x": 1.0,
+						"y": 1.0,
+						"z": 1.0
+					},
+					"inheritOnlyPosition": false
+				}
+			]
+		},
+		{
+			"type": "Entity",
+			"name": "entity_model",
+			"id": 2838222485,
+			"components": [
+				{
+					"type": "ModelDefinitionComponent",
+					"name": "component_model_assault_helmet",
+					"filename": "data/hd/items/armor/helmet/assault_helmet/assault_helmet.model",
+					"visibleLayers": 1,
+					"lightMask": 19,
+					"shadowMask": 3,
+					"ghostShadows": false,
+					"floorModel": false,
+					"terrainBlendEnableYUpBlend": false,
+					"terrainBlendMode": 1
+				}
+			]
+		}
+	]
+}

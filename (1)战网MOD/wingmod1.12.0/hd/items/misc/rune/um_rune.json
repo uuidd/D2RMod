@@ -1,0 +1,210 @@
+{
+  "dependencies": {
+    "animations": [],
+    "json": [
+      {
+        "path": "data/hd/items/dropped_items/dropped_items_helms_flip_sw.json"
+      }
+    ],
+    "models": [
+      {
+        "path": "data/hd/items/misc/rune/um_rune/um_rune.model"
+      }
+    ],
+    "objecteffects": [],
+    "other": [],
+    "particles": [],
+    "physics": [],
+    "skeletons": [
+      {
+        "path": "data/hd/items/dropped_items/skeleton/dropped_items.skeleton"
+      }
+    ],
+    "textures": [
+      {
+        "path": "data/hd/items/misc/rune/um_rune/misc_um_rune_ALB.texture"
+      },
+      {
+        "path": "data/hd/items/misc/rune/um_rune/misc_um_rune_NRM.texture"
+      },
+      {
+        "path": "data/hd/items/misc/rune/um_rune/misc_um_rune_ORM.texture"
+      }
+    ],
+    "variantdata": []
+  },
+  "entities": [
+    {
+      "components": [
+        {
+          "animations": [],
+          "doNotInheritRotation": false,
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "name": "component_root",
+          "onCreateEventName": "",
+          "rotationOverride": {
+            "w": 0.9238795,
+            "x": 0,
+            "y": 0.3826834,
+            "z": 0
+          },
+          "state_machine_filename": "data/hd/items/dropped_items/dropped_items_helms_flip_sw.json",
+          "type": "UnitRootComponent"
+        },
+        {
+          "filename": "data/hd/items/dropped_items/skeleton/dropped_items.skeleton",
+          "name": "component_skeleton",
+          "type": "SkeletonDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "entity_root_TransformDefinition",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": -1,
+            "y": 0,
+            "z": -0.9
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 1554347513,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/items/misc/rune/um_rune/um_rune.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_um_rune",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 1071332909,
+      "name": "entity_model",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        },
+        {
+          "filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_vfx_dfcnmod",
+          "type": "VfxDefinitionComponent"
+        }
+      ],
+      "id": 9999996974,
+      "name": "droplight",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 10,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        },
+        {
+          "filename": "data/hd/vfx/particles/missiles/holy_bolt_missile/fx_holybolt_missile.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_root_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        }
+      ],
+      "id": 1079187010,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        },
+        {
+          "filename": "data/hd/vfx/particles/overlays/common/valkyriestart/valkriestart_overlay.particles",
+          "hardKillOnDestroy": false,
+          "name": "entity_vfx_dfcnmod",
+          "type": "VfxDefinitionComponent"
+        }
+      ],
+      "id": 9999996974,
+      "name": "droplight",
+      "type": "Entity"
+    }
+  ],
+  "name": "um_rune",
+  "type": "UnitDefinition"
+}

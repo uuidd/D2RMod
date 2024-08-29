@@ -1,0 +1,202 @@
+{
+  "type": "SettingsPanel",
+  "name": "OnlineGameSettingsPanel",
+  "fields":
+  {
+    "anchor":
+    {
+      "x": 0.5,
+      "y": 1
+    },
+    "priority": 9002,
+    "fitToParent": false
+  },
+  "children":
+  [
+    {
+      "type": "RectangleWidget",
+      "name": "Background",
+      "children":
+      [
+        {
+          "type": "Widget",
+          "name": "Anchor",
+          "fields":
+          {
+            "rect":
+            {
+              "x": -437,
+              "y": -1950,
+              "width": 875,
+              "height": 1500
+            }
+          },
+          "children":
+          [
+            {
+              "type": "ClickCatcherWidget",
+              "name": "click_catcher",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 0,
+                  "width": 900,
+                  "height": 1507
+                }
+              }
+            },
+            {
+              "type": "ImageWidget",
+              "name": "Background",
+              "fields":
+              {
+                "filename": "PANEL\\AdvancedCharacterSheet\\AdvancedCharacterSheet_BG"
+              }
+            },
+            {
+              "type": "TextBoxWidget",
+              "name": "Title",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 0,
+                  "y": 86,
+                  "width": 875,
+                  "height": 25
+                },
+                "text": "@jghelp50099diablowiki",
+                "style": "$StyleTitleBlock"
+              }
+            },
+
+            {
+              "type": "ButtonWidget",
+              "name": "CloseButton",
+              "fields":
+              {
+                "rect":
+                {
+                  "x": 800,
+                  "y": 0
+                },
+                "filename": "PANEL\\closebtn_4x",
+                "hoveredFrame": 3,
+                "onClickMessage": "PanelManager:ClosePanel:OnlineGameSettingsPanel",
+                "tooltipString": "@strClose",
+                "sound": "cursor_close_window_hd",
+                "acceptsReturnKey": true,
+                "acceptsEscKeyEverywhere": true
+              }
+            },
+            //{
+            //  "type": "ButtonWidget",
+            //  "name": "Diablo2WiKi",
+            //  "fields":
+            //  {
+            //    "rect":
+            //    {
+            //      "x": 401,
+            //      "y": 1802,
+            //      "scale": 0.7
+            //    },
+            //    "filename": "items\\misc\\book\\identify_book",
+            //    "tooltipString": "@jghelp50099diablowiki",
+            //    "onClickMessage": "PanelManager:ClosePanel:OnlineGameSettingsPanel",
+            //    "focusIndicatorVisible": true,
+            //    "hoveredFrame": 0,
+            //    "pressedFrame": 0
+
+            //  }
+            //}
+
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TabBarWidget",
+      "name": "OptionsTabs",
+      "fields":
+      {
+        "rect":
+        {
+          "x": -370,
+          "y": -1790,
+          "width": 675,
+          "height": 121
+        },
+        "anchor":
+        {
+          "x": 0.5
+        },
+        "tabCount": 4,
+        "tabSize":
+        {
+          "x": 170,
+          "y": 60
+        },
+        "tabPadding":
+        {
+          "x": 0,
+          "y": 0
+        },
+        "unavailableTabsLeaveGaps": false,
+        "tabSizingMethod": "fixedCenter",
+        "filename": "PANEL\\jgmod\\Tab",
+        "inactiveFrames":
+        [
+          1,1,1,1
+        ],
+        "activeFrames":
+        [
+          0,0,0,0
+        ],
+        "activeTextColor": "$FontColorGoldYellow",
+        "inactiveTextColor": "$TabsInactiveTextColor",
+        "tabTextOffset":
+        {
+          "x":26,
+          "y": -10
+        },
+        "textStyle":
+        {
+          "options":
+          {
+            "lineWrap": true
+          },
+          "pointSize": 26, //"$MediumFontSize",
+          "alignment":
+          {
+            "h": "center",
+            "v": "center"
+          },
+          "fontColor": "$FontColorWhite",
+          "spacing":
+          {
+            "leading": 0.9,
+            "kerning": 0.95
+          }
+        },
+        "textStrings":
+        [
+          "@jghelp50098runeword",
+          "@jghelp50095piercingeye",
+          "@jghelp50081box",
+          "@jghelp50080other"
+        ],
+        "tabMessages":
+        [
+          "SettingsPanelMessage:CheckChanges:RunewordsPanel",
+          "SettingsPanelMessage:CheckChanges:PiercingEyePanel",
+          "SettingsPanelMessage:CheckChanges:BoxPanel",
+          "SettingsPanelMessage:CheckChanges:OtherPanel"
+        ]
+      }
+    }
+
+  ]
+
+}

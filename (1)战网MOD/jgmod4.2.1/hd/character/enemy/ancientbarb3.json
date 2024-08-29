@@ -1,0 +1,384 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/hair.model"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/torso.model"
+      }
+    ],
+    "skeletons":
+    [
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/skeleton/ancientbarb3.skeleton"
+      }
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/character/common/common_cloud_threshold.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_hair2_FLOW.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_hair2_HRT.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_ktint.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_armor_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_armor_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_armor_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_body_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_body_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_body_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_hair_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_head_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_head_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_head_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_helm_crest_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_helm_crest_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/textures/ancientbarb3_helm_crest_orm.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+      {
+        "path": "data/hd/character/enemy/ancientbarb3/ancientbarb3_state_machine.json"
+      },
+      {
+        "path": "data/hd/items/weapon/axe/_monsters/korlic_battle_axe.json"
+      },
+      {
+        "path": "data/hd/overlays/common/bash.json"
+      }
+    ],
+    "variantdata":
+    [
+      {
+        "path": "data/hd/character/enemy/ancientbarb1/ancientbarb1_variant.json"
+      }
+    ],
+    "objecteffects":
+    [
+      {
+        "path": "data/hd/vfx/particles/character/enemy/ancientbarb3/vfx_ancientbarb3_objfx.particles",
+        "dependency": ""
+      },
+      {
+        "path": "data/hd/vfx/particles/character/enemy/ancientbarb3/vfx_ancientbarb3_objfx_hair.particles",
+        "dependency": ""
+      }
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "ancientbarb3",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2674843339,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/character/enemy/ancientbarb3/ancientbarb3_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/character/enemy/ancientbarb3/skeleton/ancientbarb3.skeleton"
+        },
+        {
+          "type": "VariantDefinitionComponent",
+          "name": "component_variant",
+          "filename": "data/hd/character/enemy/ancientbarb1/ancientbarb1_variant.json"
+        },
+        {
+          "type": "DefinitionPreloadComponent",
+          "name": "Root_DefinitionPreloadComponent",
+          "missiles":
+          [
+          ],
+          "overlays":
+          [
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry1",
+              "filename": "data/hd/overlays/common/bash.json"
+            }
+          ],
+          "minions":
+          [
+          ]
+        },
+        {
+          "type": "MoveAnimationSelectComponent",
+          "name": "entity_root_MoveAnimationSelect",
+          "animationOptions":
+          [
+            {
+              "type": "MoveAnimationOption",
+              "name": "entity_root_MoveAnimationSelect_animationOptions_0",
+              "validForWalk": true,
+              "validForRun": true,
+              "validInsideTown": true,
+              "validOutsideTown": true,
+              "minMoveSpeed": 0.0,
+              "maxMoveSpeed": 99.0,
+              "baseMoveSpeed": 10.0,
+              "animationName": "Walk"
+            }
+          ],
+          "defaultAnimationName": "Walk"
+        },
+        {
+          "type": "IKComponent",
+          "name": "entity_root_IK",
+          "preset":
+          {
+            "type": "IKPreset",
+            "name": "Default_Biped_VV",
+            "footIKSetup":
+            [
+              {
+                "type": "FootIKSetup",
+                "name": "Default_Biped_VV_footIKSetup_0",
+                "footBoneName": "R_Foot",
+                "kneeBoneName": "R_Calf",
+                "hipBoneName": "R_Thigh",
+                "locationTrackName": "R_IK_position",
+                "enabledTrackName": "R_FKIK",
+                "hyperExtensionStart": 0.0,
+                "hyperExtensionScale": 1.0,
+                "defaultEnabled": false,
+                "kneeRotationAxis": 2,
+                "flipKneeRotationAxis": false
+              },
+              {
+                "type": "FootIKSetup",
+                "name": "Default_Biped_VV_footIKSetup_1",
+                "footBoneName": "L_Foot",
+                "kneeBoneName": "L_Calf",
+                "hipBoneName": "L_Thigh",
+                "locationTrackName": "L_IK_position",
+                "enabledTrackName": "L_FKIK",
+                "hyperExtensionStart": 0.0,
+                "hyperExtensionScale": 1.0,
+                "defaultEnabled": false,
+                "kneeRotationAxis": 2,
+                "flipKneeRotationAxis": false
+              }
+            ]
+          }
+        },
+        {
+          "type": "DeadAnimationSpeedOverrideComponent",
+          "name": "entity_root_DeadAnimationSpeedOverride",
+          "speed": 1.0
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 1511779713,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/character/enemy/ancientbarb3/torso.model",
+          "visibleLayers": 2049,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "UnitAttachmentComponent",
+          "name": "entity_torso_UnitAttachment",
+          "filename": "data/hd/items/weapon/axe/_monsters/korlic_battle_axe.json",
+          "overrideBoneName": "R_weapon_attach",
+          "orientTowardBoneName": "",
+          "attachmentTransform":
+          {
+            "type": "Transform",
+            "name": "entity_torso_UnitAttachment_attachmentTransform",
+            "translation":
+            {
+              "x": 0.0,
+              "y": -0.5,
+              "z": 0.0
+            },
+            "rotation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale":
+            {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "attachmentStateMachineFilename": "",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ObjectEffectDefinitionComponent",
+          "name": "entity_torso_ObjectEffectDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/ancientbarb3/vfx_ancientbarb3_objfx.particles"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_hair",
+      "id": 1655517728,
+      "components":
+      [
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "entity_hair_ModelDefinition",
+          "filename": "data/hd/character/enemy/ancientbarb3/hair.model",
+          "visibleLayers": 6145,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        {
+          "type": "UnitPartComponent",
+          "name": "entity_hair_UnitPart",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ObjectEffectDefinitionComponent",
+          "name": "entity_hair_ObjectEffectDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/ancientbarb3/vfx_ancientbarb3_objfx_hair.particles"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_pointlight",
+      "id": 2353308128,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0, //0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PointLightDefinitionComponent",
+          "name": "white_light",
+          "color":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 300.0,
+          "radius": 10.0,
+          "attenuation": 1.0,
+          "lightMask": 1,
+          "diffuseContribution": 1.0,
+          "specularContribution": 1.0,
+          "isLocalLight": false
+        }
+      ]
+    }
+  ]
+}

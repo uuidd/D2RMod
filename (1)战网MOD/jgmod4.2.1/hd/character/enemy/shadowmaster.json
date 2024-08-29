@@ -1,0 +1,1341 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/character/enemy/shadowmaster/head.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/larm_hvy.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/larm_lit.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/larm_med.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/legs_hvy.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/legs_lit.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/legs_med.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/rarm_hvy.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/rarm_lit.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/rarm_med.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/special1_hvy.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/special1_lit.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/special1_med.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/special2_hvy.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/special2_lit.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/special2_med.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/torso_hvy.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/torso_lit.model"
+      },
+      {
+        "path": "data/hd/character/enemy/shadowmaster/torso_med.model"
+      }
+    ],
+    "skeletons":
+    [
+      {
+        "path": "data/hd/character/enemy/shadowmaster/skeleton/shadowmaster.skeleton"
+      }
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/character/common/common_hair1_FLOW.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_hair1_HRT.texture"
+      },
+      {
+        "path": "data/hd/character/common/common_ktint.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/assassin_armorhvy_alb.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/assassin_armorhvy_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/assassin_armorhvy_orm.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/assassin_armorlit_alb.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/assassin_armorlit_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/assassin_armorlit_orm.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/assassin_armormed_alb.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/assassin_armormed_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/assassin_armormed_orm.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/Assassin_Body_SSS.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/Assassin_Face_alb.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/Assassin_Face_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/Assassin_Face_orm.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/Assassin_Face_SSS.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/Assassin_Hair_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/Assassins_Body_alb.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/Assassins_Body_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/player/assassin/textures/Assassins_Body_orm.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+      {
+        "path": "data/hd/character/enemy/shadowmaster/shadowmaster_state_machine.json"
+      },
+      {
+        "path": "data/hd/items/weapon/h2h/claws.json"
+      },
+      {
+        "path": "data/hd/items/weapon/h2h/hatchet_hands.json"
+      },
+      {
+        "path": "data/hd/items/weapon/h2h/katar.json"
+      },
+      {
+        "path": "data/hd/items/weapon/h2h/scissors_katar.json"
+      },
+      {
+        "path": "data/hd/items/weapon/h2h/shadowkiller.json"
+      },
+      {
+        "path": "data/hd/missiles/charged_bolt.json"
+      },
+      {
+        "path": "data/hd/missiles/electric_nova.json"
+      },
+      {
+        "path": "data/hd/missiles/exp_arrow_explode.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_bladefury.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_caltrops.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_fire_trauma_ground.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_fire_trauma_missile.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_fire_trauma_xplosion.json"
+      },
+      {
+        "path": "data/hd/missiles/expansion_shock_field.json"
+      },
+      {
+        "path": "data/hd/missiles/ground_fire_medium.json"
+      },
+      {
+        "path": "data/hd/missiles/ground_fire_small.json"
+      },
+      {
+        "path": "data/hd/missiles/ice_bolt.json"
+      },
+      {
+        "path": "data/hd/missiles/ice_break_small.json"
+      },
+      {
+        "path": "data/hd/missiles/lightning_strike.json"
+      },
+      {
+        "path": "data/hd/missiles/meteor.json"
+      },
+      {
+        "path": "data/hd/missiles/meteor_tail.json"
+      },
+      {
+        "path": "data/hd/missiles/meteor_target_indicator.json"
+      },
+      {
+        "path": "data/hd/overlays/common/fist_will_cast.json"
+      },
+      {
+        "path": "data/hd/overlays/common/lightning.json"
+      },
+      {
+        "path": "data/hd/overlays/common/progressive_cold_1.json"
+      },
+      {
+        "path": "data/hd/overlays/common/progressive_damage_1.json"
+      },
+      {
+        "path": "data/hd/overlays/common/progressive_fire_1.json"
+      },
+      {
+        "path": "data/hd/overlays/common/progressive_lightning_1.json"
+      },
+      {
+        "path": "data/hd/overlays/common/progressive_other_1.json"
+      },
+      {
+        "path": "data/hd/overlays/common/progressive_steal_1.json"
+      },
+      {
+        "path": "data/hd/overlays/common/psychic_hammer_curse.json"
+      },
+      {
+        "path": "data/hd/overlays/common/psychic_hammer_hit.json"
+      },
+      {
+        "path": "data/hd/overlays/common/shadowmasterfootimpact.json"
+      },
+      {
+        "path": "data/hd/overlays/common/tigerstrike_1.json"
+      },
+      {
+        "path": "data/hd/overlays/shadowmaster/bladeshield.json"
+      },
+      {
+        "path": "data/hd/overlays/shadowmaster/cobrastrike_1.json"
+      },
+      {
+        "path": "data/hd/overlays/shadowmaster/dragonflight.json"
+      },
+      {
+        "path": "data/hd/overlays/shadowmaster/fade.json"
+      },
+      {
+        "path": "data/hd/overlays/shadowmaster/quickness.json"
+      }
+    ],
+    "variantdata":
+    [
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "shadowmaster",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 2074115629,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/character/enemy/shadowmaster/shadowmaster_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/character/enemy/shadowmaster/skeleton/shadowmaster.skeleton"
+        },
+        {
+          "type": "DefinitionPreloadComponent",
+          "name": "Root_DefinitionPreloadComponent",
+          "missiles":
+          [
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry1",
+              "filename": "data/hd/missiles/expansion_bladefury.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry2",
+              "filename": "data/hd/missiles/ice_bolt.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry3",
+              "filename": "data/hd/missiles/meteor_target_indicator.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry4",
+              "filename": "data/hd/missiles/exp_arrow_explode.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry5",
+              "filename": "data/hd/missiles/ice_break_small.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry6",
+              "filename": "data/hd/missiles/meteor_tail.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry7",
+              "filename": "data/hd/missiles/ground_fire_small.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry8",
+              "filename": "data/hd/missiles/electric_nova.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry9",
+              "filename": "data/hd/missiles/expansion_caltrops.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry10",
+              "filename": "data/hd/missiles/ground_fire_medium.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry11",
+              "filename": "data/hd/missiles/expansion_fire_trauma_ground.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry12",
+              "filename": "data/hd/missiles/meteor.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry13",
+              "filename": "data/hd/missiles/expansion_shock_field.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry14",
+              "filename": "data/hd/missiles/lightning_strike.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry15",
+              "filename": "data/hd/missiles/expansion_fire_trauma_missile.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry16",
+              "filename": "data/hd/missiles/expansion_fire_trauma_xplosion.json"
+            },
+            {
+              "type": "UnitDefinitionListEntry",
+              "name": "Root_UnitDefinitionList_Entry17",
+              "filename": "data/hd/missiles/charged_bolt.json"
+            }
+          ],
+          "overlays":
+          [
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry1",
+              "filename": "data/hd/overlays/common/progressive_lightning_1.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry2",
+              "filename": "data/hd/overlays/shadowmaster/dragonflight.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry3",
+              "filename": "data/hd/overlays/common/progressive_cold_1.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry4",
+              "filename": "data/hd/overlays/shadowmaster/cobrastrike_1.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry5",
+              "filename": "data/hd/overlays/common/progressive_damage_1.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry6",
+              "filename": "data/hd/overlays/common/shadowmasterfootimpact.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry7",
+              "filename": "data/hd/overlays/common/psychic_hammer_curse.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry8",
+              "filename": "data/hd/overlays/common/psychic_hammer_hit.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry9",
+              "filename": "data/hd/overlays/shadowmaster/bladeshield.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry10",
+              "filename": "data/hd/overlays/common/lightning.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry11",
+              "filename": "data/hd/overlays/common/progressive_other_1.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry12",
+              "filename": "data/hd/overlays/common/tigerstrike_1.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry13",
+              "filename": "data/hd/overlays/common/fist_will_cast.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry14",
+              "filename": "data/hd/overlays/shadowmaster/fade.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry15",
+              "filename": "data/hd/overlays/common/progressive_fire_1.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry16",
+              "filename": "data/hd/overlays/shadowmaster/quickness.json"
+            },
+            {
+              "type": "OverlayDefinitionListEntry",
+              "name": "Root_OverlayDefinitionList_Entry17",
+              "filename": "data/hd/overlays/common/progressive_steal_1.json"
+            }
+          ],
+          "minions":
+          [
+          ]
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_root_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          },
+          "inheritOnlyPosition": false
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_head",
+      "id": 3318709416,
+      "components":
+      [
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_head",
+          "filename": "data/hd/character/enemy/shadowmaster/head.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso_lit",
+      "id": 3703298670,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso_lit",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso_lit",
+          "filename": "data/hd/character/enemy/shadowmaster/torso_lit.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso_med",
+      "id": 280366630,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso_med",
+          "part": "torso",
+          "variant": "med"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso_med",
+          "filename": "data/hd/character/enemy/shadowmaster/torso_med.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso_hvy",
+      "id": 2847909301,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso_hvy",
+          "part": "torso",
+          "variant": "hvy"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso_hvy",
+          "filename": "data/hd/character/enemy/shadowmaster/torso_hvy.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_legs_lit",
+      "id": 2688089578,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_legs_lit",
+          "part": "legs",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_legs_lit",
+          "filename": "data/hd/character/enemy/shadowmaster/legs_lit.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_legs_med",
+      "id": 3237178999,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_legs_med",
+          "part": "legs",
+          "variant": "med"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_legs_med",
+          "filename": "data/hd/character/enemy/shadowmaster/legs_med.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_legs_hvy",
+      "id": 1832765490,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_legs_hvy",
+          "part": "legs",
+          "variant": "hvy"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_legs_hvy",
+          "filename": "data/hd/character/enemy/shadowmaster/legs_hvy.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_rarm_lit",
+      "id": 669702376,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_rarm_lit",
+          "part": "rarm",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_rarm_lit",
+          "filename": "data/hd/character/enemy/shadowmaster/rarm_lit.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_rarm_med",
+      "id": 1202014581,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_rarm_med",
+          "part": "rarm",
+          "variant": "med"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_rarm_med",
+          "filename": "data/hd/character/enemy/shadowmaster/rarm_med.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_rarm_hvy",
+      "id": 4109280048,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_rarm_hvy",
+          "part": "rarm",
+          "variant": "hvy"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_rarm_hvy",
+          "filename": "data/hd/character/enemy/shadowmaster/rarm_hvy.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_larm_lit",
+      "id": 428221165,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_larm_lit",
+          "part": "larm",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_larm_lit",
+          "filename": "data/hd/character/enemy/shadowmaster/larm_lit.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_larm_med",
+      "id": 1283544997,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_larm_med",
+          "part": "larm",
+          "variant": "med"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_larm_med",
+          "filename": "data/hd/character/enemy/shadowmaster/larm_med.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_larm_hvy",
+      "id": 3867930165,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_larm_hvy",
+          "part": "larm",
+          "variant": "hvy"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_larm_hvy",
+          "filename": "data/hd/character/enemy/shadowmaster/larm_hvy.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special1_lit",
+      "id": 3461817458,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_special1_lit",
+          "part": "special1",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_special1_lit",
+          "filename": "data/hd/character/enemy/shadowmaster/special1_lit.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special1_med",
+      "id": 38951211,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_special1_med",
+          "part": "special1",
+          "variant": "med"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_special1_med",
+          "filename": "data/hd/character/enemy/shadowmaster/special1_med.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special1_hvy",
+      "id": 2929439718,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_special1_hvy",
+          "part": "special1",
+          "variant": "hvy"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_special1_hvy",
+          "filename": "data/hd/character/enemy/shadowmaster/special1_hvy.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special2_lit",
+      "id": 1426718576,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_special2_lit",
+          "part": "special2",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_special2_lit",
+          "filename": "data/hd/character/enemy/shadowmaster/special2_lit.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special2_med",
+      "id": 2298753832,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_special2_med",
+          "part": "special2",
+          "variant": "med"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_special2_med",
+          "filename": "data/hd/character/enemy/shadowmaster/special2_med.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_special2_hvy",
+      "id": 571394744,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_special2_hvy",
+          "part": "special2",
+          "variant": "hvy"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_special2_hvy",
+          "filename": "data/hd/character/enemy/shadowmaster/special2_hvy.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso_lit_rhand",
+      "id": 1129962491,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "entity_torso_lit_rhand_UnitPart",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "UnitAttachmentComponent",
+          "name": "entity_torso_lit_rhand_UnitAttachment",
+          "filename": "data/hd/items/weapon/h2h/hatchet_hands.json",
+          "overrideBoneName": "R_weapon_attach",
+          "orientTowardBoneName": "",
+          "attachmentTransform":
+          {
+            "type": "Transform",
+            "name": "entity_torso_lit_rhand_UnitAttachment_attachmentTransform",
+            "translation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale":
+            {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "attachmentStateMachineFilename": "",
+          "part": "torso",
+          "variant": "lilt"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso_lit_lhand",
+      "id": 4275446334,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "entity_torso_lit_lhand_UnitPart",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "UnitAttachmentComponent",
+          "name": "entity_torso_lit_lhand_UnitAttachment",
+          "filename": "data/hd/items/weapon/h2h/claws.json",
+          "overrideBoneName": "L_weapon_attach",
+          "orientTowardBoneName": "",
+          "attachmentTransform":
+          {
+            "type": "Transform",
+            "name": "entity_torso_lit_lhand_UnitAttachment_attachmentTransform",
+            "translation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale":
+            {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "attachmentStateMachineFilename": "",
+          "part": "torso",
+          "variant": "lit"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso_med_rhand",
+      "id": 1811699726,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "entity_torso_med_rhand_UnitPart",
+          "part": "torso",
+          "variant": "med"
+        },
+        {
+          "type": "UnitAttachmentComponent",
+          "name": "entity_torso_med_rhand_UnitAttachment",
+          "filename": "data/hd/items/weapon/h2h/shadowkiller.json",
+          "overrideBoneName": "R_weapon_attach",
+          "orientTowardBoneName": "",
+          "attachmentTransform":
+          {
+            "type": "Transform",
+            "name": "entity_torso_med_rhand_UnitAttachment_attachmentTransform",
+            "translation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale":
+            {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "attachmentStateMachineFilename": "",
+          "part": "torso",
+          "variant": "med"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso_med_lhand",
+      "id": 1607261728,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "entity_torso_med_lhand_UnitPart",
+          "part": "torso",
+          "variant": "med"
+        },
+        {
+          "type": "UnitAttachmentComponent",
+          "name": "entity_torso_med_lhand_UnitAttachment",
+          "filename": "data/hd/items/weapon/h2h/katar.json",
+          "overrideBoneName": "L_weapon_attach",
+          "orientTowardBoneName": "",
+          "attachmentTransform":
+          {
+            "type": "Transform",
+            "name": "entity_torso_med_lhand_UnitAttachment_attachmentTransform",
+            "translation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale":
+            {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "attachmentStateMachineFilename": "",
+          "part": "torso",
+          "variant": "med"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso_hvy_rhand",
+      "id": 1869787287,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "entity_torso_hvy_rhand_UnitPart",
+          "part": "torso",
+          "variant": "hvy"
+        },
+        {
+          "type": "UnitAttachmentComponent",
+          "name": "entity_torso_hvy_rhand_UnitAttachment",
+          "filename": "data/hd/items/weapon/h2h/claws.json",
+          "overrideBoneName": "R_weapon_attach",
+          "orientTowardBoneName": "",
+          "attachmentTransform":
+          {
+            "type": "Transform",
+            "name": "entity_torso_hvy_rhand_UnitAttachment_attachmentTransform",
+            "translation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale":
+            {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "attachmentStateMachineFilename": "",
+          "part": "torso",
+          "variant": "hvy"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso_hvy_lhand",
+      "id": 936687061,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "entity_torso_hvy_lhand_UnitPart",
+          "part": "torso",
+          "variant": "hvy"
+        },
+        {
+          "type": "UnitAttachmentComponent",
+          "name": "entity_torso_hvy_lhand_UnitAttachment",
+          "filename": "data/hd/items/weapon/h2h/scissors_katar.json",
+          "overrideBoneName": "L_weapon_attach",
+          "orientTowardBoneName": "",
+          "attachmentTransform":
+          {
+            "type": "Transform",
+            "name": "entity_torso_hvy_lhand_UnitAttachment_attachmentTransform",
+            "translation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "rotation":
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale":
+            {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            }
+          },
+          "attachmentStateMachineFilename": "",
+          "part": "torso",
+          "variant": "hvy"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_pointlight",
+      "id": 2353308128,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0, //0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PointLightDefinitionComponent",
+          "name": "white_light",
+          "color":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 300.0,
+          "radius": 10.0,
+          "attenuation": 1.0,
+          "lightMask": 1,
+          "diffuseContribution": 1.0,
+          "specularContribution": 1.0,
+          "isLocalLight": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/objects/characters/jack_in_the_box_1/vfx_JackInTheBox1.particles"
+            }
+        ],
+        "models": [
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_1/model/special1.model"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_1/model/torso.model"
+            },
+            {
+                "path": "data/hd/vfx/meshes/missiles/ground_fire_big/fx_mesh_groundFireCylinder.model"
+            }
+        ],
+        "skeletons": [
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_1/skeleton/jack_in_the_box_1.skeleton"
+            }
+        ],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/character/common/common_hair1_FLOW.texture"
+            },
+            {
+                "path": "data/hd/character/common/common_hair1_HRT.texture"
+            },
+            {
+                "path": "data/hd/character/common/common_ktint.texture"
+            },
+            {
+                "path": "data/hd/character/npc/act3male/textures/act3male_body_old_SSS.texture"
+            },
+            {
+                "path": "data/hd/character/npc/act3male/textures/act3male_hair_ALB.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_blood_alb.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_blood_nrm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_blood_orm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_body_alb.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_body_nrm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_body_orm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_chains_alb.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_chains_nrm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_chains_orm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_clothing_alb.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_clothing_nrm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_clothing_orm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_head_alb.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_head_nrm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_head_orm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_rocks_alb.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_rocks_nrm.texture"
+            },
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_2/textures/jack_in_the_box_2_rocks_orm.texture"
+            },
+            {
+                "path": "data/hd/vfx/textures/gradient/T_FX_Linear_Gradient_Mirrored_Horizontal_Imbalanced.texture"
+            }
+        ],
+        "physics": [],
+        "json": [
+            {
+                "path": "data/hd/objects/characters/jack_in_the_box_1/jack_in_the_box_1_state_machine.json"
+            }
+        ],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "UnitDefinition",
+    "name": "jack_in_the_box_1",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 350444771,
+            "components": [
+                {
+                    "type": "UnitRootComponent",
+                    "name": "component_root",
+                    "state_machine_filename": "data/hd/objects/characters/jack_in_the_box_1/jack_in_the_box_1_state_machine.json",
+                    "doNotInheritRotation": false,
+                    "rotationOverride": {
+                        "x": 0.0,
+                        "y": 0.3826834,
+                        "z": 0.0,
+                        "w": 0.9238795
+                    },
+                    "doNotUseHDHeight": false,
+                    "hideAllMeshWhenInOpenedMode": false,
+                    "onCreateEventName": "",
+                    "animations": []
+                },
+                {
+                    "type": "SkeletonDefinitionComponent",
+                    "name": "component_skeleton",
+                    "filename": "data/hd/objects/characters/jack_in_the_box_1/skeleton/jack_in_the_box_1.skeleton"
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_torso",
+            "id": 2077934932,
+            "components": [
+                {
+                    "type": "UnitPartComponent",
+                    "name": "component_part_torso",
+                    "part": "torso",
+                    "variant": "lit"
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "component_model_torso",
+                    "filename": "data/hd/objects/characters/jack_in_the_box_1/model/torso.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_torso_TransformDefinition",
+                    "position": {
+                        "x": 0.6,
+                        "y": 0.0,
+                        "z": 0.6
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_special1",
+            "id": 1205833884,
+            "components": [
+                {
+                    "type": "UnitPartComponent",
+                    "name": "component_part_special1",
+                    "part": "special1",
+                    "variant": "lit"
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "component_model_special1",
+                    "filename": "data/hd/objects/characters/jack_in_the_box_1/model/special1.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "vfx",
+            "id": 252955816,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "vfx_VfxDefinition",
+                    "filename": "data/hd/vfx/particles/objects/characters/jack_in_the_box_1/vfx_JackInTheBox1.particles",
+                    "hardKillOnDestroy": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "vfx",
+            "id": 856925902,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "vfx_VfxDefinition",
+                    "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                    "hardKillOnDestroy": false
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "vfx_TransformDefinition",
+                    "position": {
+                        "x": 1.0,
+                        "y": 1.5,
+                        "z": 1.5
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+      {
+        "path": "data/hd/vfx/particles/overlays/common/valkyriestart/ValkrieStart_overlay.particles"
+      }
+    ],
+    "models":
+    [
+    ],
+    "skeletons":
+    [
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/vfx/textures/mask/T_FX_thornMask_trail_01.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+    ],
+    "variantdata":
+    [
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "OverlayDefinition",
+  "name": "valkyriestart",
+  "entities":
+  [
+    
+  ]
+}

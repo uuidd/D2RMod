@@ -1,0 +1,53 @@
+{
+  "name": "(4)符文贴图带编号",
+  "description": "符文贴图带编号，符文图标详情请查看文件夹内符文贴图",
+  "author": "demo & other",
+  "website": "",
+  "version": "1.2",
+  "config": [
+    {
+      "id": "runeIcon",
+      "type": "select",
+      "name": "选择符文图标",
+      "description": "符文图标详情请查看组件内详细符文贴图说明",
+      "defaultValue": "runeIcon3",
+      "options": [
+        {
+          "value": "modDef",
+          "label": "官方默认不修改",
+          "description": "游戏默认"
+        },
+        {
+          "value": "runeIcon1",
+          "label": "符文贴图1",
+          "description": "彩色浮雕立体符文右上带编号和左下带英文名"
+        },
+        {
+          "value": "runeIcon2",
+          "label": "符文贴图2",
+          "description": "彩色符文右上带编号和左下带英文名"
+        },
+        {
+          "value": "runeIcon3",
+          "label": "符文贴图3(推荐)",
+          "description": "彩色符文右上带编号"
+        },
+        {
+          "value": "runeIcon4",
+          "label": "符文贴图4",
+          "description": "符文发光，酷炫贴图，比较酷，但不带编号"
+        },
+        {
+          "value": "runeIcon5",
+          "label": "符文贴图5",
+          "description": "原版符文颜色底，替换中间图标带编号和英文名，朴实无华，甚至有点难看"
+        },
+        {
+          "value": "runeIcon6",
+          "label": "符文贴图6",
+          "description": "原版符文，右上带带编号和升级合成宝石，朴素实用"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "(5)加快角色升级速度",
+  "description": "加快角色升级速度",
+  "author": "Demo",
+  "website": "",
+  "version": "1.1",
+  "file":"experience.txt",
+  "config": [
+    {
+      "id": "expIncreaseNum",
+      "type": "number",
+      "name": "加快升级速度%",
+      "defaultValue": 1,
+      "minValue": 0,
+      "description": "加快经验获取效率多少个百分点，0表示不修改，1等于增加1个百分点，可以是非整数例如0.5，默认只修改70级以上的升级速度"
+    },
+    {
+      "id": "expStartLevel",
+      "type": "number",
+      "name": "多少级开始提升",
+      "defaultValue": 70,
+      "minValue": 1,
+      "maxValue": 99,
+      "description": "提升多少级以上的升级速度，默认70级以下经验获取效率都为100%"
+    },
+    {
+      "id": "expRemoveMaxLimit",
+      "type": "checkbox",
+      "name": "去除经验效率限制",
+      "defaultValue": false,
+      "description": "是否去除最高经验获取效率的限制，默认限制在最多获取100%经验"
+    }
+  ]
+}

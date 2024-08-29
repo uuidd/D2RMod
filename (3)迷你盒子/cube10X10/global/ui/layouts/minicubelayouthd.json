@@ -1,0 +1,48 @@
+{
+    "type": "HoradricCubePanel", "name": "MiniCubeLayout",
+    "fields": {
+        "priority": 10,
+        "rect": { "x": -1006, "y": -845 },// { "x": -320, "y": 226 },
+        "anchor": "$RightPanelAnchor",
+    },
+    "children": [
+        {
+            "type": "ImageWidget", "name": "background",
+            "fields": {
+                "filename": "PANEL\\Horadric_Cube\\Cube_Grid"
+            },
+        },
+        {
+            "type": "ButtonWidget", "name": "convert",
+            "fields": {
+                "rect": { "x": 885, "y": 1006},
+                "filename": "PANEL\\Horadric_Cube\\TransmuteButton",
+                "tooltipString": "@strUiMenu2",
+                "hoveredFrame": 2,
+                "onClickMessage": "HoradricCubePanelMessage:Convert",
+            },
+        },
+
+        {
+            "type": "ButtonWidget", "name": "close",
+            "fields": {
+                "rect": { "x": -70, "y": 0 },
+                "filename": "PANEL\\closebtn_4x",
+                "hoveredFrame": 3,
+                "tooltipString": "@strClose",
+                "sound": "cursor_close_window_hd",
+                "onClickMessage": "PanelManager:ClosePanel:MiniCubeLayout",
+            },
+        },
+
+        {
+            "type": "InventoryGridWidget", "name": "grid",
+            "fields": {
+                "rect": { "x": 15, "y": 10 },
+                "cellCount": { "x": 10, "y": 10 },
+                "cellSize": "$ItemCellSize",
+                "gemSocketFilename": "PANEL\\gemsocket",
+            },
+        },
+    ]
+}

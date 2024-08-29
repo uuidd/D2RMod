@@ -1,0 +1,238 @@
+{
+    "dependencies": {
+        "particles": [],
+        "models": [
+            {
+                "path": "data/hd/character/npc/alkor/torso.model"
+            }
+        ],
+        "skeletons": [
+            {
+                "path": "data/hd/character/npc/alkor/skeleton/alkor.skeleton"
+            }
+        ],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/character/common/common_hair2_FLOW.texture"
+            },
+            {
+                "path": "data/hd/character/common/common_hair2_HRT.texture"
+            },
+            {
+                "path": "data/hd/character/common/common_ktint.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Body_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Body_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Body_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Body_SSS.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Hair_ALB.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Head_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Head_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Head_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Head_SSS.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Outfit_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Outfit_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_Outfit_orm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_WeaponStick_alb.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_WeaponStick_nrm.texture"
+            },
+            {
+                "path": "data/hd/character/npc/alkor/textures/Alkor_WeaponStick_orm.texture"
+            }
+        ],
+        "physics": [],
+        "json": [
+            {
+                "path": "data/hd/character/npc/alkor/alkor_state_machine.json"
+            }
+        ],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "UnitDefinition",
+    "name": "alkor",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 3014748526,
+            "components": [
+                {
+                    "type": "UnitRootComponent",
+                    "name": "component_root",
+                    "state_machine_filename": "data/hd/character/npc/alkor/alkor_state_machine.json",
+                    "doNotInheritRotation": false,
+                    "rotationOverride": {
+                        "x": 0.0,
+                        "y": 0.3826834,
+                        "z": 0.0,
+                        "w": 0.9238795
+                    },
+                    "doNotUseHDHeight": false,
+                    "hideAllMeshWhenInOpenedMode": false,
+                    "onCreateEventName": "",
+                    "animations": []
+                },
+                {
+                    "type": "SkeletonDefinitionComponent",
+                    "name": "component_skeleton",
+                    "filename": "data/hd/character/npc/alkor/skeleton/alkor.skeleton"
+                },
+                {
+                    "type": "IKComponent",
+                    "name": "entity_root_IK",
+                    "preset": {
+                        "type": "IKPreset",
+                        "name": "Default_NPC",
+                        "footIKSetup": [
+                            {
+                                "type": "FootIKSetup",
+                                "name": "Default_NPC_footIKSetup_0",
+                                "footBoneName": "L_leg_03_bind_jnt",
+                                "kneeBoneName": "L_leg_02_bind_jnt",
+                                "hipBoneName": "L_leg_01_bind_jnt",
+                                "locationTrackName": "L_IK_position",
+                                "enabledTrackName": "L_FKIK",
+                                "hyperExtensionStart": 0.0,
+                                "hyperExtensionScale": 0.0,
+                                "defaultEnabled": true,
+                                "kneeRotationAxis": 1,
+                                "flipKneeRotationAxis": false
+                            },
+                            {
+                                "type": "FootIKSetup",
+                                "name": "Default_NPC_footIKSetup_1",
+                                "footBoneName": "R_leg_03_bind_jnt",
+                                "kneeBoneName": "R_leg_02_bind_jnt",
+                                "hipBoneName": "R_leg_01_bind_jnt",
+                                "locationTrackName": "R_IK_position",
+                                "enabledTrackName": "R_FKIK",
+                                "hyperExtensionStart": 0.0,
+                                "hyperExtensionScale": 0.0,
+                                "defaultEnabled": true,
+                                "kneeRotationAxis": 1,
+                                "flipKneeRotationAxis": false
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "AimLayersComponent",
+                    "name": "entity_root_AimLayers",
+                    "aimLayers": [
+                        {
+                            "type": "AimLayerSetup",
+                            "name": "entity_root_AimLayers_aimLayers_0",
+                            "layerName": "Aim_Head",
+                            "yawAnimationState": "HeadAimLayer_Yaw",
+                            "yawOutOfRangeBehavior": 2,
+                            "yawAngleOffset": 0.0,
+                            "pitchAnimationState": "HeadAimLayer_Pitch",
+                            "pitchOutOfRangeBehavior": 0,
+                            "pitchAngleOffset": 0.0,
+                            "aimLocationTrackName": "aim_location",
+                            "aimDampingFactor": 0.15,
+                            "aimTarget": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "LookAtAnimationControlComponent",
+                    "name": "entity_root_LookAtAnimationControl",
+                    "controlOverrides": [],
+                    "aimLayerName": "Aim_Head",
+                    "blendInTime": 0.25,
+                    "blendOutTime": 0.25
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_torso",
+            "id": 3886849574,
+            "components": [
+                {
+                    "type": "UnitPartComponent",
+                    "name": "component_part_torso",
+                    "part": "torso",
+                    "variant": "lit"
+                },
+                {
+                    "type": "ModelDefinitionComponent",
+                    "name": "component_model_torso",
+                    "filename": "data/hd/character/npc/alkor/torso.model",
+                    "visibleLayers": 1,
+                    "lightMask": 19,
+                    "shadowMask": 3,
+                    "ghostShadows": false,
+                    "floorModel": false,
+                    "terrainBlendEnableYUpBlend": false,
+                    "terrainBlendMode": 1
+                }
+            ]
+        },
+        {
+          "type": "Entity",
+          "name": "entity_root",
+          "id": 1079187010,
+          "components": [
+              {
+                  "type": "VfxDefinitionComponent",
+                  "name": "entity_root_VfxDefinition",
+                  "filename": "data/hd/nickname/particles/alkor.particles",
+                  "hardKillOnDestroy": false
+              },
+              {
+                  "type": "TransformDefinitionComponent",
+                  "name": "vfx4294962040_component_transform",
+                  "position": {
+                      "x": 0.0,
+                      "y": 9.0,
+                      "z": 0.0
+                  },
+                  "orientation": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0,
+                      "w": 1.0
+                  },
+                  "scale": {
+                      "x": 1.0,
+                      "y": 1.0,
+                      "z": 1.0
+                  },
+                  "inheritOnlyPosition": false
+              }
+          ]
+      }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "name": "(6)盒子配方1(洗点,符文,宝石)",
+    "description": "盒子合成配方改良。",
+    "author": "Demo",
+    "website": "https://mod.3dmgame.com/u/23729816/Home",
+    "version": "1.2",
+    "config": [
+        {
+            "id": "easierToken",
+            "type": "checkbox",
+            "name": "鉴定卷轴+回城卷轴=赦免徽章(洗点)",
+            "description": "添加更简单的“赦免令牌”配方。不是回城书和鉴别书",
+            "defaultValue": true
+        },
+        {
+            "id": "releasePerfectGem",
+            "type": "checkbox",
+            "name": "一个完美宝石=三个无暇同色宝石(分解完美宝石)",
+            "description": "一个完美宝石=三个无暇同色宝石",
+            "defaultValue": true
+        },
+        {
+            "id": "easierRunes",
+            "type": "checkbox",
+            "name": "符文配方中删除宝石要求，与符文降级冲突",
+            "description": "启用以从符文配方中删除宝石要求。会跟符文降级冲突",
+            "defaultValue": true
+        },
+        {
+            "id": "easierReduce",
+            "type": "checkbox",
+            "name": "使用一珠宝让符文降级，与符文升级无需宝石冲突",
+            "description": "符文降级",
+            "defaultValue": true
+        },
+        {
+            "id": "genJew",
+            "type": "checkbox",
+            "name": "两完美宝石合一珠宝",
+            "description": "宝石合珠宝",
+            "defaultValue": true
+        }
+    ]
+}

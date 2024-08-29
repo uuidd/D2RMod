@@ -1,0 +1,53 @@
+{
+    "name": "(6)盒子配方3(暗金珠,精华,任务道具,6Boss钥匙)",
+    "description": "盒子合成配方改良。",
+    "author": "Demo",
+    "website": "https://mod.3dmgame.com/u/23729816/Home",
+    "version": "1.3",
+    "config": [
+        {
+            "id": "convertPandemoniumKeys",
+            "type": "checkbox",
+            "name": "a1/a2/a5钥匙互转",
+            "description": "启用添加一个配方来转换钥匙（恐怖->仇恨->毁灭->恐怖）。",
+            "defaultValue": true
+        },
+
+        {
+            "id": "easierDestruction",
+            "type": "checkbox",
+            "name": "A1/A2精华+A3精华+A4精华=A5精华",
+            "description": "扭曲的苦难精华（蓝色精华）+充能的仇恨精华（黄色精华）+恐怖燃烧精华（红色精华）= 毁灭的溃烂精华（绿色精华）",
+            "defaultValue": true
+        },
+
+        {
+            "id": "easierEssence",
+            "type": "checkbox",
+            "name": "转换精华类型",
+            "description": "扭曲的苦难精华（蓝色精华）-> 充能的仇恨精华（黄色精华）-> 恐怖燃烧精华（红色精华）-> 毁灭的溃烂精华（绿色精华）-> 扭曲的苦难精华（蓝色精华）",
+            "defaultValue": true
+        },
+        {
+            "id": "genUniqueJew",
+            "type": "checkbox",
+            "name": "暗金破免板合成暗金珠宝(彩虹刻面)",
+            "description": "暗金破免板合成暗金宝珠，无法合成特定珠宝，由于游戏机制，每次合成需要切换难度重置地图，否则只会出同一种珠宝",
+            "defaultValue": true
+        },
+        {
+            "id": "a2task_item",
+            "type": "checkbox",
+            "name": "回城书 + 6大紫 = 国王之杖",
+            "description": "A2任务道具合成公式,不替换原有公式，时灵时不灵",
+            "defaultValue": true
+        },
+        {
+            "id": "a3task_item",
+            "type": "checkbox",
+            "name": "回城书 + 3大紫 = 克林姆的遗愿",
+            "description": "A3任务道具合成公式,不替换原有公式，时灵时不灵",
+            "defaultValue": true
+        }
+    ]
+}

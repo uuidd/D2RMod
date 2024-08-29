@@ -1,0 +1,745 @@
+{
+    "type": "SettingsPanel",
+    "name": "message3Panel",
+    "fields": {
+        "priority": 9003,
+        "rect": {
+            "x": 1510,
+            "y": -377,
+            "width": 650,
+            "height": 1130
+        },
+        "anchor": "$LeftPanelAnchor",
+        "applySettingsImmediately": false
+    },
+    "children": [
+        {
+            "type": "ImageWidget",
+            "name": "ScrollBarBackground",
+            "fields": {
+                "rect": {
+                    "x": 10,
+                    "y": -128
+                },
+                "anchor": {
+                    "x": 1.0
+                },
+                "filename": "PauseMenu\\VerticalScroll"
+            },
+            "children": [
+                {
+                    "type": "ScrollControllerWidget",
+                    "name": "ScrollController",
+                    "fields": {
+                        "rect": {
+                            "x": -31,
+                            "y": 29,
+                            "width": 26,
+                            "height": 1208
+                        },
+                        "anchor": {
+                            "x": 1.0
+                        },
+                        "upArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollUpBtn",
+                        "downArrowFilepath": "FrontEnd\\HD\\Final\\FrontEnd_ScrollDownBtn",
+                        "barFilepath": "PauseMenu\\VerticalIndicator",
+                        "viewName": "ScrollView",
+                        "wheelScrollSound": "cursor_scroll_hd",
+                        "buttonScrollSound": "cursor_scroll_hd"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ScrollViewWidget",
+            "name": "ScrollView",
+            "fields": {
+                "fitToParent": true,
+                "scrollControllerName": "ScrollController"
+            },
+            "children": [
+                {
+                    "type": "TableWidget",
+                    "name": "OptionsTable",
+                    "fields": {
+                        "columns": [
+                            {
+                                "width": 320,
+                                "alignment": {
+                                    "h": "left",
+                                    "v": "center"
+                                }
+                            },
+                            {
+                                "width": 550,
+                                "alignment": {
+                                    "h": "left",
+                                    "v": "center"
+                                }
+                            }
+                        ],
+                        "rowHeight": 70
+                    },
+                    "children": [
+                        {
+                            "type": "Widget",
+                            "name": "MagicItemsAffixHead",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "Widget",
+                                    "name": "MagicItemsAffix",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 0
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TextBoxWidget",
+                                            "name": "MagicItemsAffixTitleText",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "width": 300,
+                                                    "height": 80
+                                                },
+                                                "text": "@jghelp50800MagicItemsAffixTitle",
+                                                "style": {
+                                                    "fontColor": "$FontColorGoldYellow",
+                                                    "pointSize": "$MediumFontSize",
+                                                    "alignment": {
+                                                        "h": "left",
+                                                        "v": "center"
+                                                    }
+                                                }
+                                            },
+                                            "children": [
+                                                {
+                                                    "type": "FocusableWidget",
+                                                    "name": "Tooltip",
+                                                    "fields": {
+                                                        "fitToParent": true,
+                                                        "tooltipString": "@jghelp50801MagicItemsAffixTitletooltip",
+                                                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 0,
+                                                    "y": 64,
+                                                    "scale": 0.4
+                                                },
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Widget",
+                                    "name": "Row1",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 10,
+                                            "y": 80
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "CharmSmall",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 10,
+                                                    "y": 0,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\charm\\charm_small",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@cm1@jghelp50802MagicItemsAffixSmallCharmTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "CharmMedium",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 90,
+                                                    "y": 0,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\misc\\charm\\charm_medium",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@cm2@jghelp50803MagicItemsAffixLargeCharmTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "CharmLarge",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 150,
+                                                    "y": 0,
+                                                    "scale": 0.25
+                                                },
+                                                "filename": "items\\misc\\charm\\charm_large",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@cm3@jghelp50804MagicItemsAffixGrandCharmTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "PerfectDiamond",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 210,
+                                                    "y": 0,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\gem\\perfect_diamond2",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jew@jghelp50805MagicItemsAffixJewelTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Ring",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 290,
+                                                    "y": 0,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\ring\\ring3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@rin@jghelp50806MagicItemsAffixRingTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Amulet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 360,
+                                                    "y": 0,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\amulet\\amulet3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@amu@jghelp50807MagicItemsAffixAmuletTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Helm",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 10,
+                                                    "y": 80,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\helmet\\helm",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50092ItemTypeHelmtooltip@jghelp50808MagicItemsAffixHelmTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "HelmBar",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 80,
+                                                    "y": 80,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\helmet\\fanged_helm",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50091ItemTypeHelmBartooltip@jghelp50809MagicItemsAffixHelmBarTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "HelmDru",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 150,
+                                                    "y": 80,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\pelt\\antlers",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50090ItemTypeHelmDrutooltip@jghelp50810MagicItemsAffixHelmDruTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Circlet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 220,
+                                                    "y": 80,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\circlet\\tiara",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50089ItemTypeCirclettooltip@jghelp50811MagicItemsAffixCircletTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Armor",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 290,
+                                                    "y": 80,
+                                                    "scale": 0.2
+                                                },
+                                                "filename": "items\\armor\\armor\\ancient_armor",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50088ItemTypeArmortooltip@jghelp50812MagicItemsAffixArmorTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Shield",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 360,
+                                                    "y": 90,
+                                                    "scale": 0.2
+                                                },
+                                                "filename": "items\\armor\\shield\\steelclash",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50087ItemTypeShieldtooltip@jghelp50813MagicItemsAffixShieldTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "ShieldPal",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 430,
+                                                    "y": 90,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\shield\\crown_shield",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50086ItemTypeShieldPaltooltip@jghelp50814MagicItemsAffixShieldPalTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "ShieldNec",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 500,
+                                                    "y": 90,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\voodoo_head\\demon_head",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50085ItemTypeShieldNectooltip@jghelp50815MagicItemsAffixShieldNecTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Belt",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 430,
+                                                    "y": 10,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\belt\\heavy_belt",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50084ItemTypeBelttooltip@jghelp50816MagicItemsAffixBeltTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Boot",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 500,
+                                                    "y": 0,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\boot\\chain_boots",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50083ItemTypeBoottooltip@jghelp50817MagicItemsAffixBootTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Glove",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 570,
+                                                    "y": 0,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\glove\\bracers_m",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorlanse@jghelp50082ItemTypeGlovetooltip@jghelp50818MagicItemsAffixGloveTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Widget",
+                            "name": "RareItemsAffixHead",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 240
+                                }
+                            },
+                            "children": [
+                                {
+                                    "type": "Widget",
+                                    "name": "RareItemsAffix",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 0,
+                                            "y": 0
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "TextBoxWidget",
+                                            "name": "RareItemsAffixTitleText",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 0,
+                                                    "y": 0,
+                                                    "width": 300,
+                                                    "height": 80
+                                                },
+                                                "text": "@jghelp50900RareItemsAffixTitle",
+                                                "style": {
+                                                    "fontColor": "$FontColorGoldYellow",
+                                                    "pointSize": "$MediumFontSize",
+                                                    "alignment": {
+                                                        "h": "left",
+                                                        "v": "center"
+                                                    }
+                                                }
+                                            },
+                                            "children": [
+                                                {
+                                                    "type": "FocusableWidget",
+                                                    "name": "Tooltip",
+                                                    "fields": {
+                                                        "fitToParent": true,
+                                                        "tooltipString": "@jghelp50901RareItemsAffixTitletooltip",
+                                                        "tooltipStyle": "$StandardLeftToolTipStyle"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "ImageWidget",
+                                            "name": "Divider",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 0,
+                                                    "y": 64,
+                                                    "scale": 0.4
+                                                },
+                                                "filename": "PauseMenu\\Divider"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Widget",
+                                    "name": "Row1",
+                                    "fields": {
+                                        "rect": {
+                                            "x": 10,
+                                            "y": 80
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "PerfectDiamond",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 10,
+                                                    "y": 0,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\gem\\perfect_diamond3",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jew@jghelp50902RareItemsAffixJewelTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Ring",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 90,
+                                                    "y": 0,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\ring\\ring4",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@rin@jghelp50903RareItemsAffixRingTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Amulet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 160,
+                                                    "y": 0,
+                                                    "scale": 0.5
+                                                },
+                                                "filename": "items\\misc\\amulet\\amulet2",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@amu@jghelp50904RareItemsAffixAmuletTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Helm",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 10,
+                                                    "y": 80,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\helmet\\helm",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50092ItemTypeHelmtooltip@jghelp50905RareItemsAffixHelmTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "HelmBar",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 80,
+                                                    "y": 80,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\helmet\\fanged_helm",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50091ItemTypeHelmBartooltip@jghelp50906RareItemsAffixHelmBarTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "HelmDru",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 150,
+                                                    "y": 80,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\pelt\\antlers",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50090ItemTypeHelmDrutooltip@jghelp50907RareItemsAffixHelmDruTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Circlet",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 220,
+                                                    "y": 80,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\circlet\\tiara",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50089ItemTypeCirclettooltip@jghelp50908RareItemsAffixCircletTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Armor",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 290,
+                                                    "y": 80,
+                                                    "scale": 0.2
+                                                },
+                                                "filename": "items\\armor\\armor\\ancient_armor",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50088ItemTypeArmortooltip@jghelp50909RareItemsAffixArmorTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Shield",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 360,
+                                                    "y": 90,
+                                                    "scale": 0.2
+                                                },
+                                                "filename": "items\\armor\\shield\\steelclash",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50087ItemTypeShieldtooltip@jghelp50910RareItemsAffixShieldTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "ShieldPal",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 430,
+                                                    "y": 90,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\shield\\crown_shield",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50086ItemTypeShieldPaltooltip@jghelp50911RareItemsAffixShieldPalTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "ShieldNec",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 500,
+                                                    "y": 90,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\voodoo_head\\demon_head",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50085ItemTypeShieldNectooltip@jghelp50912RareItemsAffixShieldNecTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Belt",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 230,
+                                                    "y": 10,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\belt\\heavy_belt",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50084ItemTypeBelttooltip@jghelp50913RareItemsAffixBeltTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Boot",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 300,
+                                                    "y": 0,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\boot\\chain_boots",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50083ItemTypeBoottooltip@jghelp50914RareItemsAffixBootTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        },
+                                        {
+                                            "type": "ButtonWidget",
+                                            "name": "Glove",
+                                            "fields": {
+                                                "rect": {
+                                                    "x": 370,
+                                                    "y": 0,
+                                                    "scale": 0.3
+                                                },
+                                                "filename": "items\\armor\\glove\\bracers_m",
+                                                "hoveredFrame": 0,
+                                                "pressedFrame": 0,
+                                                "tooltipString": "@colorhuangse@jghelp50082ItemTypeGlovetooltip@jghelp50915RareItemsAffixGloveTitletooltip",
+                                                "tooltipStyle": "$StandardToolTipStyle"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

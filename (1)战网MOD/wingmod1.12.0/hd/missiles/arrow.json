@@ -1,0 +1,151 @@
+{
+  "dependencies": {
+    "animations": [],
+    "json": [],
+    "models": [
+      {
+        "path": "data/hd/missiles/arrow/arrow.model"
+      }
+    ],
+    "objecteffects": [],
+    "other": [],
+    "particles": [],
+    "physics": [],
+    "skeletons": [],
+    "textures": [
+      {
+        "path": "data/hd/missiles/arrow/missiles_arrow_ALB.texture"
+      },
+      {
+        "path": "data/hd/missiles/arrow/missiles_arrow_NRM.texture"
+      },
+      {
+        "path": "data/hd/missiles/arrow/missiles_arrow_ORM.texture"
+      }
+    ],
+    "variantdata": []
+  },
+  "entities": [
+    {
+      "components": [
+        {
+          "animations": [],
+          "doNotInheritRotation": false,
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "name": "component_root",
+          "onCreateEventName": "",
+          "rotationOverride": {
+            "w": 0.9238795,
+            "x": 0,
+            "y": 0.3826834,
+            "z": 0
+          },
+          "state_machine_filename": "",
+          "type": "UnitRootComponent"
+        }
+      ],
+      "id": 2001416446,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/missiles/arrow/arrow.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "entity_vfx_ModelDefinition",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.25,
+            "y": 1.25,
+            "z": 1.25
+          },
+          "type": "TransformDefinitionComponent"
+        },
+        {
+          "name": "entity_vfx_TrackReleasePointDefinition",
+          "transitionTime": 0.5,
+          "type": "TrackReleasePointDefinitionComponent"
+        }
+      ],
+      "id": 2873517494,
+      "name": "entity_vfx",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/missiles/safe_arrow/Safe_arrow.particles",
+          "hardKillOnDestroy": true,
+          "name": "component_vfx1",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "component_transform1",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        },
+        {
+          "filename": "data/hd/missiles/arrow/arrow.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "entity_vfx1_ModelDefinition",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        },
+        {
+          "name": "entity_vfx1_TrackReleasePointDefinition",
+          "transitionTime": 0.5,
+          "type": "TrackReleasePointDefinitionComponent"
+        }
+      ],
+      "id": 464231253,
+      "name": "entity_vfx1",
+      "type": "Entity"
+    }
+  ],
+  "name": "arrow",
+  "type": "UnitDefinition"
+}

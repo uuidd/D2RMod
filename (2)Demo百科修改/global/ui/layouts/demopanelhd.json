@@ -1,0 +1,160 @@
+{
+    "type": "SettingsPanel",
+    "name": "demopanel",
+    "fields": {
+        "priority": 9002,
+        "fitToParent": true
+    },
+    "children": [
+        {
+            "type": "RectangleWidget",
+            "name": "Background",
+            "fields": {
+                "fitToScreen": true,
+                "color": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.7
+                ]
+            },
+            "children": [
+                {
+                    "type": "ClickCatcherWidget",
+                    "name": "catcher",
+                    "fields": {
+                        "fitToParent": true
+                    }
+                },
+                {
+                    "type": "Widget",
+                    "name": "Anchor",
+                    "fields": {
+                        "anchor": {
+                            "x": 0.5,
+                            "y": 0.5
+                        },
+                        "rect": "$SettingsPanelAnchorRect"
+                    },
+                    "children": [
+                        {
+                            "type": "ImageWidget",
+                            "name": "Background",
+                            "fields": {
+                                "filename": "\\PANEL\\Options\\FrontEndOptionsBG"
+                            }
+                        },
+                        {
+                            "type": "TextBoxWidget",
+                            "name": "Title",
+                            "fields": {
+                                "rect": {
+                                    "x": 0,
+                                    "y": 50,
+                                    "width": 1950,
+                                    "height": 103
+                                },
+                                "text": "帮助页面大标题",
+                                "style": "$StyleTitleBlock"
+                            }
+                        },
+                        {
+                            "type": "ButtonWidget",
+                            "name": "CloseButton",
+                            "fields": {
+                                "rect": {
+                                    "x": 1868,
+                                    "y": 8
+                                },
+                                "filename": "PANEL\\closebtn_4x",
+                                "hoveredFrame": 3,
+                                "onClickMessage": "PanelManager:ClosePanel:demopanel",
+                                "tooltipString": "@strClose",
+                                "sound": "cursor_close_window_hd",
+                                "acceptsEscKeyEverywhere": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ImageWidget",
+            "name": "SettingsBackground",
+            "fields": {
+                "rect": "$SettingsPanelBackgroundRect",
+                "anchor": {
+                    "x": 0.5
+                },
+                "filename": "Controller/Panel/Options/Panel_Options_BG"
+            }
+        },
+        {
+            "type": "TabBarWidget",
+            "name": "OptionsTabs",
+            "fields": {
+                "rect": "$SettingsPanelTabsRect",
+                "anchor": {
+                    "x": 0.5
+                },
+                "tabCount": 4,
+                "tabSize": {
+                    "x": 266,
+                    "y": 121
+                },
+                "tabPadding": {
+                    "x": 2,
+                    "y": 0
+                },
+                "unavailableTabsLeaveGaps": false,
+                "tabSizingMethod": "fixedCenter",
+                "filename": "Controller/Panel/Stash/V2/StashTabs",
+                "inactiveFrames": [
+                    1,
+                    1,
+                    1,
+                    1
+                ],
+                "activeFrames": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "activeTextColor": "$TabsActiveTextColor",
+                "inactiveTextColor": "$TabsInactiveTextColor",
+                "tabTextOffset": {
+                    "x": 0,
+                    "y": -4
+                },
+                "textStyle": {
+                    "options": {
+                        "lineWrap": true
+                    },
+                    "pointSize": "$MediumFontSize",
+                    "alignment": {
+                        "h": "center",
+                        "v": "center"
+                    },
+                    "fontColor": "$FontColorWhite",
+                    "spacing": {
+                        "leading": 0.9,
+                        "kerning": 0.95
+                    }
+                },
+                "textStrings": [
+                    "页面1",
+                    "页面2",
+                    "页面3",
+                    "页面4"
+                ],
+                "tabMessages": [
+                    "SettingsPanelMessage:CheckChanges:demo1panel",
+                    "SettingsPanelMessage:CheckChanges:demo2panel",
+                    "SettingsPanelMessage:CheckChanges:demo3panel",
+                    "SettingsPanelMessage:CheckChanges:demo4panel"
+                ]
+            }
+        }
+    ]
+}

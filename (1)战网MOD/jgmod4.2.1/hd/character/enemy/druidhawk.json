@@ -1,0 +1,255 @@
+{
+  "dependencies":
+  {
+    "particles":
+    [
+      {
+        "path": "data/hd/vfx/particles/character/enemy/druidhawk/vfx_druidraven_spawn.particles"
+      }
+    ],
+    "models":
+    [
+      {
+        "path": "data/hd/character/enemy/druidhawk/torso.model"
+      }
+    ],
+    "skeletons":
+    [
+      {
+        "path": "data/hd/character/enemy/druidhawk/skeleton/druidhawk.skeleton"
+      }
+    ],
+    "animations":
+    [
+    ],
+    "textures":
+    [
+      {
+        "path": "data/hd/character/enemy/druidhawk/textures/druidhawk_body_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/druidhawk/textures/druidhawk_body_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/druidhawk/textures/druidhawk_body_orm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/druidhawk/textures/druidhawk_feather_alb.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/druidhawk/textures/druidhawk_feather_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/enemy/druidhawk/textures/druidhawk_feather_orm.texture"
+      },
+      {
+        "path": "data/hd/vfx/textures/animal/T_FX_RavenFeather_Atlas_Alpha.texture"
+      }
+    ],
+    "physics":
+    [
+    ],
+    "json":
+    [
+      {
+        "path": "data/hd/character/enemy/druidhawk/druidhawk_state_machine.json"
+      }
+    ],
+    "variantdata":
+    [
+      {
+        "path": "data/hd/character/enemy/druidhawk/druidhawk_variant.json"
+      }
+    ],
+    "objecteffects":
+    [
+    ],
+    "other":
+    [
+    ]
+  },
+  "type": "UnitDefinition",
+  "name": "druidhawk",
+  "entities":
+  [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 3667222789,
+      "components":
+      [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/character/enemy/druidhawk/druidhawk_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride":
+          {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations":
+          [
+          ]
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/character/enemy/druidhawk/skeleton/druidhawk.skeleton"
+        },
+        {
+          "type": "VariantDefinitionComponent",
+          "name": "component_variant",
+          "filename": "data/hd/character/enemy/druidhawk/druidhawk_variant.json"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 4216443538,
+      "components":
+      [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/character/enemy/druidhawk/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1
+        },
+        //半火鸟
+        //{
+        //  "type": "ObjectEffectDefinitionComponent",
+        //  "name": "entity_burning_ObjectEffectDefinition",
+        //  "filename": "data/hd/vfx/particles/character/enemy/thornhulk1/vfx_thornhulk1_main_objfx.particles"
+        //}
+        //黑火相间
+        //{
+        //  "type": "ObjectEffectDefinitionComponent",
+        //  "name": "entity_burning_ObjectEffectDefinition",
+        //  "filename": "data/hd/vfx/particles/character/enemy/diablo/vfx_diablo_skill3_objfx.particles"
+        //}
+        //黄色描边
+        //{
+        //  "type": "ObjectEffectDefinitionComponent",
+        //  "name": "entity_burning_ObjectEffectDefinition",
+        //  "filename": "data/hd/vfx/particles/character/enemy/ancientbarb1/vfx_ancientbarb1_objfx.particles"
+        //}
+        //红色描边
+        //{
+        //  "type": "ObjectEffectDefinitionComponent",
+        //  "name": "entity_burning_ObjectEffectDefinition",
+        //  "filename": "data/hd/vfx/particles/character/enemy/ancientbarb2/vfx_ancientbarb2_objfx.particles"
+        //}
+        //蓝色描边
+        //{
+        //  "type": "ObjectEffectDefinitionComponent",
+        //  "name": "entity_burning_ObjectEffectDefinition",
+        //  "filename": "data/hd/vfx/particles/character/enemy/ancientbarb3/vfx_ancientbarb3_objfx.particles"
+        //}
+        //蓝乌鸦
+        //{
+        //  "type": "ObjectEffectDefinitionComponent",
+        //  "name": "entity_burning_ObjectEffectDefinition",
+        //  "filename": "data/hd/vfx/particles/character/enemy/wraith1/vfx_wraith1_objectfx.particles"
+        //}
+        //血乌鸦
+        //{
+        //  "type": "ObjectEffectDefinitionComponent",
+        //  "name": "entity_burning_ObjectEffectDefinition",
+        //  "filename": "data/hd/vfx/particles/character/enemy/fingermage1/fingermageobjectfx.particles"
+        //}
+        //火鸟
+        {
+          "type": "ObjectEffectDefinitionComponent",
+          "name": "entity_burning_ObjectEffectDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/firegolem/vfx_firegolem_objfx.particles"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_vfx",
+      "id": 3779000435,
+      "components":
+      [
+        {
+          "type": "VfxDefinitionComponent",
+          "name": "entity_vfx_VfxDefinition",
+          "filename": "data/hd/vfx/particles/character/enemy/druidhawk/vfx_druidraven_spawn.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "EntityAttachmentDefinitionComponent",
+          "name": "entity_vfx_EntityAttachmentDefinition",
+          "targetbone": "spine1_bind_jnt"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_pointlight",
+      "id": 2353308128,
+      "components":
+      [
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": 3.0,
+            "z": 0.0
+          },
+          "orientation":
+          {
+            "x": 0.0, //0.707106769,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "PointLightDefinitionComponent",
+          "name": "white_light",
+          "color":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "power": 300.0,
+          "radius": 10.0,
+          "attenuation": 1.0,
+          "lightMask": 1,
+          "diffuseContribution": 1.0,
+          "specularContribution": 1.0,
+          "isLocalLight": false
+        }
+      ]
+    }
+  ]
+}

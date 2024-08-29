@@ -1,0 +1,139 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [
+      { "path": "data/hd/objects/chests/cloth_chest_l/model/torso.model" }
+    ],
+    "skeletons": [
+      {
+        "path": "data/hd/objects/chests/cloth_chest_l/skeleton/cloth_chest_l.skeleton"
+      }
+    ],
+    "animations": [],
+    "textures": [
+      {
+        "path": "data/hd/objects/chests/cloth_chest_l/texture/cloth_chest_l_alb.texture"
+      },
+      {
+        "path": "data/hd/objects/chests/cloth_chest_l/texture/cloth_chest_l_nrm.texture"
+      },
+      {
+        "path": "data/hd/objects/chests/cloth_chest_l/texture/cloth_chest_l_orm.texture"
+      }
+    ],
+    "physics": [],
+    "json": [
+      {
+        "path": "data/hd/objects/chests/cloth_chest_l/cloth_chest_l_state_machine.json"
+      }
+    ],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "UnitDefinition",
+  "name": "snow_cloth_chest_l",
+  "entities": [
+    {
+      "type": "Entity",
+      "name": "entity_root",
+      "id": 3451332516,
+      "components": [
+        {
+          "type": "UnitRootComponent",
+          "name": "component_root",
+          "state_machine_filename": "data/hd/objects/chests/cloth_chest_l/cloth_chest_l_state_machine.json",
+          "doNotInheritRotation": false,
+          "rotationOverride": {
+            "x": 0.0,
+            "y": 0.3826834,
+            "z": 0.0,
+            "w": 0.9238795
+          },
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "onCreateEventName": "",
+          "animations": []
+        },
+        {
+          "type": "SkeletonDefinitionComponent",
+          "name": "component_skeleton",
+          "filename": "data/hd/objects/chests/cloth_chest_l/skeleton/cloth_chest_l.skeleton"
+        }
+      ]
+    },
+    {
+      "type": "Entity",
+      "name": "entity_torso",
+      "id": 28531804,
+      "components": [
+        {
+          "type": "UnitPartComponent",
+          "name": "component_part_torso",
+          "part": "torso",
+          "variant": "lit"
+        },
+        {
+          "type": "ModelDefinitionComponent",
+          "name": "component_model_torso",
+          "filename": "data/hd/objects/chests/cloth_chest_l/model/torso.model",
+          "visibleLayers": 1,
+          "lightMask": 19,
+          "shadowMask": 3,
+          "ghostShadows": false,
+          "floorModel": false,
+          "terrainBlendEnableYUpBlend": true,
+          "terrainBlendMode": 2
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "entity_torso_TransformDefinition",
+          "position": { "x": -0.975, "y": 0.0, "z": -0.598 },
+          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
+          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "inheritOnlyPosition": false
+        },
+        {
+          "type": "ModelPlatformTierComponent",
+          "name": "entity_torso_ModelPlatformTier",
+          "visibilityTier": -1,
+          "shadowTier": 0
+        }
+      ]
+    },
+    {
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 1.0,
+                    "y": 0.0,
+                    "z": 2.0
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
+  ]
+}

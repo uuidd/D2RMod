@@ -1,0 +1,24 @@
+{
+  "name": "(6)合成原版无法出现的装备",
+  "description": "",
+  "author": "Demo",
+  "website": "",
+  "version": "1.0",
+  "file": "cubemain.txt",
+  "config": [
+    {
+      "id": "infinite_arrows",
+      "type": "checkbox",
+      "name": "自恢复的箭矢",
+      "description": "3个箭矢合成自恢复箭矢",
+      "defaultValue": true
+    },
+    {
+      "id": "infinite_bolts",
+      "type": "checkbox",
+      "name": "自恢复的弩矢",
+      "description": "3个弩矢合成自恢复弩矢",
+      "defaultValue": true
+    }
+  ]
+}

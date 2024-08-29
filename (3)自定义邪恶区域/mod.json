@@ -1,0 +1,58 @@
+{
+    "name": "(3)自定义邪恶区域",
+    "description": "邪恶区域范围调整",
+    "author": "Demo & lil174 & 老玩童白开水",
+    "website": "",
+    "version": "1.3",
+    "config": [
+        {
+            "id": "zone_select",
+            "type": "select",
+            "name": "选择恐怖地带的循环方式",
+            "description": "刷图场景详情请查看文件说明",
+            "defaultValue": "mod_def",
+            "options": [
+                {
+                    "value": "mod_def",
+                    "label": "官方默认循环方式",
+                    "description": "游戏默认"
+                },
+                {
+                    "value": "mod_fire_map",
+                    "label": "热门TZ场景轮换",
+                    "description": "热门TZ场景轮换"
+                },
+                {
+                    "value": "mod_all_map",
+                    "label": "流畅刷图循环方式",
+                    "description": "比官方图更多更流畅"
+                },
+                {
+                    "value": "mod_all_ActMap",
+                    "label": "全章节刷图循环方式",
+                    "description": "整个章节的全连续图"
+                },
+                {
+                    "value": "zoneMfMap",
+                    "label": "MF场景(地穴+安姐+石质古墓+古代通道+劳模)"
+                },
+                {
+                    "value": "zone3allMap",
+                    "label": "热门3图同时出现(塔墓,魔殿,王座)"
+                },
+                {
+                    "value": "zone4allMap",
+                    "label": "热门4图同时出现(牛场,塔墓,魔殿,王座)"
+                },
+                {
+                    "value": "zone6BossKeyMap",
+                    "label": "6boss钥匙场景(A1女伯爵,A2召唤者,A5尼拉塞克)"
+                },
+                {
+                    "value": "mod_4_map",
+                    "label": "只刷热门4图(牛场,塔墓,魔殿,王座)"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "(4)光柱效果",
+  "description": "当掉落符文、符咒、6boss钥匙、宝石、完美宝石时，会产生一道光柱",
+  "author": "qhu91it",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/197",
+  "version": "1.0",
+  "file": "misc/xxx/xxx.json",
+  "config": [
+    {
+      "id": "gem",
+      "type": "checkbox",
+      "name": "宝石",
+      "description": "宝石光柱",
+      "defaultValue": true
+    },
+    {
+      "id": "gemStack",
+      "type": "checkbox",
+      "name": "堆叠的宝石也有光柱",
+      "description": "宝石堆叠光柱，有使用宝石堆叠功能mod才开启这个",
+      "defaultValue": false
+    },
+    {
+      "id": "rune",
+      "type": "checkbox",
+      "name": "符文",
+      "description": "大号21+符文光柱",
+      "defaultValue": true
+    },
+    {
+      "id": "runeStack",
+      "type": "checkbox",
+      "name": "堆叠的符文也有光柱",
+      "description": "符文堆叠的光柱，有使用符文堆叠功能mod才开启这个",
+      "defaultValue": false
+    },
+    {
+      "id": "charm",
+      "type": "checkbox",
+      "name": "神符",
+      "description": "大小神符光柱，中神符没光柱",
+      "defaultValue": true
+    },
+    {
+      "id": "key",
+      "type": "checkbox",
+      "name": "6boss钥匙",
+      "description": "6boss钥匙的光柱",
+      "defaultValue": true
+    }
+  ]
+}

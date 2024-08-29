@@ -1,0 +1,1445 @@
+{
+  "dependencies": {
+    "animations": [],
+    "json": [
+      {
+        "path": "data/hd/character/player/paladin/paladin_state_machine.json"
+      },
+      {
+        "path": "data/hd/missiles/blessedhammer.json"
+      },
+      {
+        "path": "data/hd/missiles/holy_bolt_missile.json"
+      },
+      {
+        "path": "data/hd/missiles/teethexplode.json"
+      },
+      {
+        "path": "data/hd/overlays/common/cast_undead.json"
+      },
+      {
+        "path": "data/hd/overlays/common/convictionback.json"
+      },
+      {
+        "path": "data/hd/overlays/common/handofgod.json"
+      },
+      {
+        "path": "data/hd/overlays/common/healing.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_defiance_back.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_defiance_front.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_holyfire_back.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_holyfire_front.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_might_back.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_might_front.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_prayer_back.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_prayer_front.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_resistall_back.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_resistall_front.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_resistcold.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_resistfire.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_resistlight.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_thorns_back.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/aura_thorns_front.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/blessedaimback.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/blessedaimfront.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/cast_resistall.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/cast_resistcold.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/cast_resistfire.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/cast_resistlight.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/cleansingback.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/cleansingfront.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/concentrationback.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/concentrationfront.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/convictionfront.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/fanaticismback.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/fanaticismfront.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/holyfreeze.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/holyshockback.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/holyshockfront.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/meditationback.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/meditationfront.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/redemptionback.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/redemptionfront.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/sanctuaryback.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/sanctuaryfront.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/staminaback.json"
+      },
+      {
+        "path": "data/hd/overlays/paladin/staminafront.json"
+      }
+    ],
+    "models": [
+      {
+        "path": "data/hd/character/player/paladin/head.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/larm_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/larm_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/larm_med.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/legs_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/legs_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/legs_med.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/rarm_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/rarm_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/rarm_med.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/special1_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/special1_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/special1_med.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/special2_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/special2_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/special2_med.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/torso_hvy.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/torso_lit.model"
+      },
+      {
+        "path": "data/hd/character/player/paladin/torso_med.model"
+      },
+      {
+        "path": "data/hd/vfx/meshes/lit_mesh/holyShield/holyShield_Trails.model"
+      }
+    ],
+    "objecteffects": [],
+    "other": [],
+    "particles": [
+      {
+        "path": "data/hd/vfx/particles/items/Paladin/holyshield/fx_holyshield.particles"
+      }
+    ],
+    "physics": [],
+    "skeletons": [
+      {
+        "path": "data/hd/character/player/paladin/skeleton/paladin.skeleton"
+      }
+    ],
+    "textures": [
+      {
+        "path": "data/hd/character/common/common_ktint.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armorhvy_alb.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armorhvy_mask.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armorhvy_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armorhvy_orm.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armorlit_alb.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armorlit_mask.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armorlit_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armorlit_orm.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armormed_alb.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armormed_mask.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armormed_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_armormed_orm.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_body_alb.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_body_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_body_orm.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_body_SSS.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_face_alb.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_face_nrm.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_face_orm.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/paladin_face_SSS.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/Paladin_Hair_ALB.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/Paladin_Hair_FLOW.texture"
+      },
+      {
+        "path": "data/hd/character/player/paladin/textures/Paladin_Hair_HRT.texture"
+      },
+      {
+        "path": "data/hd/vfx/Library/PopcornFXCore/Materials/DefaultTextures/White.texture"
+      }
+    ],
+    "variantdata": []
+  },
+  "entities": [
+    {
+      "components": [
+        {
+          "animations": [],
+          "doNotInheritRotation": false,
+          "doNotUseHDHeight": false,
+          "hideAllMeshWhenInOpenedMode": false,
+          "name": "component_root",
+          "onCreateEventName": "",
+          "rotationOverride": {
+            "w": 0.9238795,
+            "x": 0,
+            "y": 0.3826834,
+            "z": 0
+          },
+          "state_machine_filename": "data/hd/character/player/paladin/paladin_state_machine.json",
+          "type": "UnitRootComponent"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/skeleton/paladin.skeleton",
+          "name": "component_skeleton",
+          "type": "SkeletonDefinitionComponent"
+        },
+        {
+          "minions": [],
+          "missiles": [
+            {
+              "filename": "data/hd/missiles/teethexplode.json",
+              "name": "Root_UnitDefinitionList_Entry1",
+              "type": "UnitDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/missiles/holy_bolt_missile.json",
+              "name": "Root_UnitDefinitionList_Entry2",
+              "type": "UnitDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/missiles/blessedhammer.json",
+              "name": "Root_UnitDefinitionList_Entry3",
+              "type": "UnitDefinitionListEntry"
+            }
+          ],
+          "name": "Root_DefinitionPreloadComponent",
+          "overlays": [
+            {
+              "filename": "data/hd/overlays/paladin/staminaback.json",
+              "name": "Root_OverlayDefinitionList_Entry1",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_holyfire_back.json",
+              "name": "Root_OverlayDefinitionList_Entry2",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_holyfire_front.json",
+              "name": "Root_OverlayDefinitionList_Entry3",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/meditationback.json",
+              "name": "Root_OverlayDefinitionList_Entry4",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_prayer_front.json",
+              "name": "Root_OverlayDefinitionList_Entry5",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/cast_resistall.json",
+              "name": "Root_OverlayDefinitionList_Entry6",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_prayer_back.json",
+              "name": "Root_OverlayDefinitionList_Entry7",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/fanaticismfront.json",
+              "name": "Root_OverlayDefinitionList_Entry8",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/holyshockfront.json",
+              "name": "Root_OverlayDefinitionList_Entry9",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_resistcold.json",
+              "name": "Root_OverlayDefinitionList_Entry10",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/cleansingback.json",
+              "name": "Root_OverlayDefinitionList_Entry11",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_resistlight.json",
+              "name": "Root_OverlayDefinitionList_Entry12",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/blessedaimfront.json",
+              "name": "Root_OverlayDefinitionList_Entry13",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/sanctuaryfront.json",
+              "name": "Root_OverlayDefinitionList_Entry14",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/cast_resistlight.json",
+              "name": "Root_OverlayDefinitionList_Entry15",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/concentrationfront.json",
+              "name": "Root_OverlayDefinitionList_Entry16",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_defiance_back.json",
+              "name": "Root_OverlayDefinitionList_Entry17",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/common/convictionback.json",
+              "name": "Root_OverlayDefinitionList_Entry18",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_might_back.json",
+              "name": "Root_OverlayDefinitionList_Entry19",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_defiance_front.json",
+              "name": "Root_OverlayDefinitionList_Entry20",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/common/handofgod.json",
+              "name": "Root_OverlayDefinitionList_Entry21",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/redemptionfront.json",
+              "name": "Root_OverlayDefinitionList_Entry22",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/concentrationback.json",
+              "name": "Root_OverlayDefinitionList_Entry23",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_resistall_front.json",
+              "name": "Root_OverlayDefinitionList_Entry24",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/staminafront.json",
+              "name": "Root_OverlayDefinitionList_Entry25",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/fanaticismback.json",
+              "name": "Root_OverlayDefinitionList_Entry26",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_resistall_back.json",
+              "name": "Root_OverlayDefinitionList_Entry27",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/common/cast_undead.json",
+              "name": "Root_OverlayDefinitionList_Entry28",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/redemptionback.json",
+              "name": "Root_OverlayDefinitionList_Entry29",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_thorns_back.json",
+              "name": "Root_OverlayDefinitionList_Entry30",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_resistfire.json",
+              "name": "Root_OverlayDefinitionList_Entry31",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/cast_resistcold.json",
+              "name": "Root_OverlayDefinitionList_Entry32",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/meditationfront.json",
+              "name": "Root_OverlayDefinitionList_Entry33",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/sanctuaryback.json",
+              "name": "Root_OverlayDefinitionList_Entry34",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/convictionfront.json",
+              "name": "Root_OverlayDefinitionList_Entry35",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/holyshockback.json",
+              "name": "Root_OverlayDefinitionList_Entry36",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_thorns_front.json",
+              "name": "Root_OverlayDefinitionList_Entry37",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/cleansingfront.json",
+              "name": "Root_OverlayDefinitionList_Entry38",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/holyfreeze.json",
+              "name": "Root_OverlayDefinitionList_Entry39",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/blessedaimback.json",
+              "name": "Root_OverlayDefinitionList_Entry40",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/aura_might_front.json",
+              "name": "Root_OverlayDefinitionList_Entry41",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/common/healing.json",
+              "name": "Root_OverlayDefinitionList_Entry42",
+              "type": "OverlayDefinitionListEntry"
+            },
+            {
+              "filename": "data/hd/overlays/paladin/cast_resistfire.json",
+              "name": "Root_OverlayDefinitionList_Entry43",
+              "type": "OverlayDefinitionListEntry"
+            }
+          ],
+          "type": "DefinitionPreloadComponent"
+        },
+        {
+          "defaultTransforms": {
+            "0": {
+              "name": "entity_root_DefaultAttachmentTransform_defaultTransforms_Head",
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1.1
+              },
+              "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0.05
+              },
+              "type": "Transform"
+            }
+          },
+          "name": "entity_root_DefaultAttachmentTransform",
+          "type": "DefaultAttachmentTransformComponent"
+        },
+        {
+          "fineTurnAngle": 30,
+          "fineTurnDamping": 0.4,
+          "name": "entity_root_TraversalAnimation",
+          "runStartAnimation": "Run_Start",
+          "runStartTownAnimation": "Run_Start",
+          "runStopAnimation": "Run_Stop",
+          "runStopRequiredTimeRunning": 0.1,
+          "runStopTownAnimation": "Run_Stop_Town",
+          "runTurn180AngleThresholdController": 100,
+          "runTurn180AngleThresholdMouse": 110,
+          "runTurn180CCWAnimation": "Run_Turn_180_CCW",
+          "runTurn180CCWTownAnimation": "Run_Turn_180_CCW",
+          "runTurn180CWAnimation": "Run_Turn_180_CW",
+          "runTurn180CWTownAnimation": "Run_Turn_180_CW",
+          "runTurn180CooldownTime": 0.1,
+          "runTurn180NoiseProtectionAngleThreshold": 30,
+          "runTurn180RotationLockTime": 0.1,
+          "runTurn180StopInterruptableTime": 0.25,
+          "runTurnRateControllerMax": 1080,
+          "runTurnRateControllerMin": 180,
+          "runTurnRateMouseMax": 1080,
+          "runTurnRateMouseMin": 30,
+          "stopToStartRunSkipWindow": 0.25,
+          "type": "TraversalAnimationComponent",
+          "walkToStartRunInterruptWindow": 0.25,
+          "walkTurnRateControllerMax": 1080,
+          "walkTurnRateControllerMin": 180,
+          "walkTurnRateMouseMax": 1080,
+          "walkTurnRateMouseMin": 30
+        },
+        {
+          "characterSelectSet": {
+            "firstFidgetDelayMax": 7,
+            "firstFidgetDelayMin": 1,
+            "name": "entity_root_FidgetAnimation_characterSelectSet",
+            "options": [
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_characterSelectSet_options_0",
+                "stateName": "CE_Fidget01",
+                "type": "FidgetAnimationOption",
+                "weight": 3
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_characterSelectSet_options_1",
+                "stateName": "CE_Fidget02",
+                "type": "FidgetAnimationOption",
+                "weight": 1
+              }
+            ],
+            "subsequentFidgetDelayMax": 12,
+            "subsequentFidgetDelayMin": 3,
+            "type": "FidgetAnimationSet"
+          },
+          "frontendSet": {
+            "firstFidgetDelayMax": 3,
+            "firstFidgetDelayMin": 1,
+            "name": "entity_root_FidgetAnimation_townNeutralSet",
+            "options": [
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_townNeutralSet_options_0",
+                "stateName": "Townfidget01",
+                "type": "FidgetAnimationOption",
+                "weight": 10
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_townNeutralSet_options_1",
+                "stateName": "Townfidget02",
+                "type": "FidgetAnimationOption",
+                "weight": 15
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_townNeutralSet_options_2",
+                "stateName": "Townfidget03",
+                "type": "FidgetAnimationOption",
+                "weight": 20
+              }
+            ],
+            "subsequentFidgetDelayMax": 5,
+            "subsequentFidgetDelayMin": 2,
+            "type": "FidgetAnimationSet"
+          },
+          "name": "entity_root_FidgetAnimation",
+          "neutralSet": {
+            "firstFidgetDelayMax": 7,
+            "firstFidgetDelayMin": 5,
+            "name": "entity_root_FidgetAnimation_neutralSet",
+            "options": [
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_neutralSet_options_0",
+                "stateName": "Fidget01",
+                "type": "FidgetAnimationOption",
+                "weight": 1
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_neutralSet_options_1",
+                "stateName": "Fidget02",
+                "type": "FidgetAnimationOption",
+                "weight": 1
+              }
+            ],
+            "subsequentFidgetDelayMax": 5,
+            "subsequentFidgetDelayMin": 2,
+            "type": "FidgetAnimationSet"
+          },
+          "townNeutralSet": {
+            "firstFidgetDelayMax": 3,
+            "firstFidgetDelayMin": 1,
+            "name": "entity_root_FidgetAnimation_townNeutralSet",
+            "options": [
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_townNeutralSet_options_0",
+                "stateName": "Townfidget01",
+                "type": "FidgetAnimationOption",
+                "weight": 10
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_townNeutralSet_options_1",
+                "stateName": "Townfidget02",
+                "type": "FidgetAnimationOption",
+                "weight": 15
+              },
+              {
+                "cooldownMax": 0,
+                "cooldownMin": 0,
+                "name": "entity_root_FidgetAnimation_townNeutralSet_options_2",
+                "stateName": "Townfidget03",
+                "type": "FidgetAnimationOption",
+                "weight": 20
+              }
+            ],
+            "subsequentFidgetDelayMax": 5,
+            "subsequentFidgetDelayMin": 2,
+            "type": "FidgetAnimationSet"
+          },
+          "type": "FidgetAnimationComponent"
+        },
+        {
+          "name": "entity_root_IK",
+          "preset": {
+            "footIKSetup": [
+              {
+                "defaultEnabled": false,
+                "enabledTrackName": "R_FKIK",
+                "flipKneeRotationAxis": false,
+                "footBoneName": "R_leg_03_bind_jnt",
+                "hipBoneName": "R_leg_01_bind_jnt",
+                "hyperExtensionScale": 1,
+                "hyperExtensionStart": 0,
+                "kneeBoneName": "R_leg_02_bind_jnt",
+                "kneeRotationAxis": 0,
+                "locationTrackName": "R_IK_position",
+                "name": "Default_Biped_Outsource_footIKSetup_0",
+                "type": "FootIKSetup"
+              },
+              {
+                "defaultEnabled": false,
+                "enabledTrackName": "L_FKIK",
+                "flipKneeRotationAxis": false,
+                "footBoneName": "L_leg_03_bind_jnt",
+                "hipBoneName": "L_leg_01_bind_jnt",
+                "hyperExtensionScale": 1,
+                "hyperExtensionStart": 0,
+                "kneeBoneName": "L_leg_02_bind_jnt",
+                "kneeRotationAxis": 0,
+                "locationTrackName": "L_IK_position",
+                "name": "Default_Biped_Outsource_footIKSetup_1",
+                "type": "FootIKSetup"
+              }
+            ],
+            "name": "Default_Biped_Outsource",
+            "type": "IKPreset"
+          },
+          "type": "IKComponent"
+        },
+        {
+          "aimLayers": [
+            {
+              "aimDampingFactor": 0.15,
+              "aimLocationTrackName": "aim_location",
+              "aimTarget": 2,
+              "layerName": "Aim_Head",
+              "name": "entity_root_AimLayers_aimLayers_0",
+              "pitchAngleOffset": 0,
+              "pitchAnimationState": "HeadAimLayer_Pitch",
+              "pitchOutOfRangeBehavior": 0,
+              "type": "AimLayerSetup",
+              "yawAngleOffset": 0,
+              "yawAnimationState": "HeadAimLayer_Yaw",
+              "yawOutOfRangeBehavior": 2
+            },
+            {
+              "aimDampingFactor": 0.3,
+              "aimLocationTrackName": "aim_location",
+              "aimTarget": 1,
+              "layerName": "Aim_Melee",
+              "name": "entity_root_AimLayers_aimLayers_1",
+              "pitchAngleOffset": 0,
+              "pitchAnimationState": "MeleeAimLayer",
+              "pitchOutOfRangeBehavior": 0,
+              "type": "AimLayerSetup",
+              "yawAngleOffset": 0,
+              "yawAnimationState": "",
+              "yawOutOfRangeBehavior": 2
+            },
+            {
+              "aimDampingFactor": 0.15,
+              "aimLocationTrackName": "aim_location",
+              "aimTarget": 2,
+              "layerName": "Aim_Head_Town",
+              "name": "entity_root_AimLayers_aimLayers_2",
+              "pitchAngleOffset": 0,
+              "pitchAnimationState": "HeadAimLayer_Pitch_Town",
+              "pitchOutOfRangeBehavior": 0,
+              "type": "AimLayerSetup",
+              "yawAngleOffset": 0,
+              "yawAnimationState": "HeadAimLayer_Yaw_Town",
+              "yawOutOfRangeBehavior": 2
+            }
+          ],
+          "name": "entity_root_AimLayers",
+          "type": "AimLayersComponent"
+        },
+        {
+          "aimLayerName": "Aim_Head",
+          "blendInTime": 0.25,
+          "blendOutTime": 0.25,
+          "controlOverrides": [
+            {
+              "aimLayerName": "Aim_Head_Town",
+              "blendInTime": 0.25,
+              "blendOutTime": 0.25,
+              "mode": 5,
+              "name": "entity_root_LookAtAnimationControl_controlOverrides_0",
+              "type": "LookAtControlSetup"
+            },
+            {
+              "aimLayerName": "Aim_Head_Town",
+              "blendInTime": 0.25,
+              "blendOutTime": 0.25,
+              "mode": 6,
+              "name": "entity_root_LookAtAnimationControl_controlOverrides_1",
+              "type": "LookAtControlSetup"
+            }
+          ],
+          "name": "entity_root_LookAtAnimationControl",
+          "type": "LookAtAnimationControlComponent"
+        },
+        {
+          "equipmentLayers": [
+            {
+              "animationStateName": "ShieldAdditiveLayer",
+              "layerName": "ShieldEquipLayer",
+              "name": "entity_root_EquipmentAnimationLayers_equipmentLayers_0",
+              "type": "EquipmentLayerSetup"
+            }
+          ],
+          "name": "entity_root_EquipmentAnimationLayers",
+          "type": "EquipmentAnimationLayersComponent"
+        },
+        {
+          "inheritOnlyPosition": false,
+          "name": "entity_root_TransformDefinition",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.93,
+            "y": 0.93,
+            "z": 0.93
+          },
+          "type": "TransformDefinitionComponent"
+        }
+      ],
+      "id": 1286083504,
+      "name": "entity_root",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/character/player/paladin/head.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_head",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 33
+        }
+      ],
+      "id": 2530677035,
+      "name": "entity_head",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_torso_lit",
+          "part": "torso",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/torso_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_torso_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 2915200753,
+      "name": "entity_torso_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_torso_med",
+          "part": "torso",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/torso_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_torso_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 3787367337,
+      "name": "entity_torso_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_torso_hvy",
+          "part": "torso",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/torso_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_torso_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 2059876920,
+      "name": "entity_torso_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_legs_lit",
+          "part": "legs",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/legs_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_legs_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 1899991661,
+      "name": "entity_legs_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_legs_med",
+          "part": "legs",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/legs_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_legs_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 2449146874,
+      "name": "entity_legs_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_legs_hvy",
+          "part": "legs",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/legs_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_legs_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 1027890613,
+      "name": "entity_legs_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_rarm_lit",
+          "part": "rarm",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/rarm_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_rarm_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 4176571755,
+      "name": "entity_rarm_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_rarm_med",
+          "part": "rarm",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/rarm_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_rarm_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 414047992,
+      "name": "entity_rarm_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_rarm_hvy",
+          "part": "rarm",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/rarm_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_rarm_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 3304470707,
+      "name": "entity_rarm_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_larm_lit",
+          "part": "larm",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/larm_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_larm_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 3935221616,
+      "name": "entity_larm_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_larm_med",
+          "part": "larm",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/larm_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_larm_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 495578152,
+      "name": "entity_larm_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_larm_hvy",
+          "part": "larm",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/larm_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_larm_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 3063055032,
+      "name": "entity_larm_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special1_lit",
+          "part": "special1",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/special1_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special1_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 2673850869,
+      "name": "entity_special1_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special1_med",
+          "part": "special1",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/special1_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special1_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 3545951662,
+      "name": "entity_special1_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special1_hvy",
+          "part": "special1",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/special1_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special1_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 2141407081,
+      "name": "entity_special1_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special2_lit",
+          "part": "special2",
+          "type": "UnitPartComponent",
+          "variant": "lit"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/special2_lit.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special2_lit",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 638620915,
+      "name": "entity_special2_lit",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special2_med",
+          "part": "special2",
+          "type": "UnitPartComponent",
+          "variant": "med"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/special2_med.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special2_med",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 1510787243,
+      "name": "entity_special2_med",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "name": "component_part_special2_hvy",
+          "part": "special2",
+          "type": "UnitPartComponent",
+          "variant": "hvy"
+        },
+        {
+          "filename": "data/hd/character/player/paladin/special2_hvy.model",
+          "floorModel": false,
+          "ghostShadows": false,
+          "lightMask": 19,
+          "name": "component_model_special2_hvy",
+          "shadowMask": 3,
+          "terrainBlendEnableYUpBlend": false,
+          "terrainBlendMode": 1,
+          "type": "ModelDefinitionComponent",
+          "visibleLayers": 1
+        }
+      ],
+      "id": 4078264123,
+      "name": "entity_special2_hvy",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "filename": "data/hd/vfx/particles/items/Paladin/holyshield/fx_holyshield.particles",
+          "hardKillOnDestroy": true,
+          "name": "entity_holyshield_VfxDefinition",
+          "type": "VfxDefinitionComponent"
+        },
+        {
+          "name": "entity_holyshield_EntityAttachmentDefinition",
+          "targetbone": "shield_attach",
+          "type": "EntityAttachmentDefinitionComponent"
+        },
+        {
+          "name": "entity_holyshield_UnitPart",
+          "part": "shield",
+          "type": "UnitPartComponent",
+          "variant": "hsh"
+        },
+        {
+          "name": "entity_holyshield_ModelPlatformTierComponent",
+          "shadowTier": 1,
+          "type": "ModelPlatformTierComponent",
+          "visibilityTier": 0
+        },
+        {
+          "defaultEnabledWeight": 1,
+          "equipmentLayerName": "ShieldEquipLayer",
+          "name": "entity_holyshield_EnableEquipmentAnimationLayer",
+          "type": "EnableEquipmentAnimationLayerComponent"
+        }
+      ],
+      "id": 3452340888,
+      "name": "entity_holyshield",
+      "type": "Entity"
+    },
+    {
+      "components": [
+        {
+          "inheritOnlyPosition": false,
+          "name": "entity_torso_TransformDefinition",
+          "orientation": {
+            "w": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "position": {
+            "x": 0,
+            "y": 50,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "type": "TransformDefinitionComponent"
+        },
+        {
+          "attenuation": 1,
+          "color": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "diffuseContribution": 1,
+          "isLocalLight": false,
+          "lightMask": 1,
+          "name": "white_light",
+          "power": 25000,
+          "radius": 200,
+          "specularContribution": 1,
+          "type": "PointLightDefinitionComponent"
+        }
+      ],
+      "id": 2353308128,
+      "name": "entity_pointlight",
+      "type": "Entity"
+    }
+  ],
+  "name": "paladin",
+  "type": "UnitDefinition"
+}

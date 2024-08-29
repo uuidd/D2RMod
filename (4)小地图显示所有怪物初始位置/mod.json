@@ -1,0 +1,15 @@
+{
+  "name": "(4)小地图显示所有怪物初始位置",
+  "description": "小地图显示所有怪物初始位置",
+  "author": "Demo",
+  "website": "",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "allMonsters",
+      "type": "checkbox",
+      "name": "所有怪物",
+      "defaultValue": true
+    }
+  ]
+}
