@@ -1,0 +1,15 @@
+{
+  "name": "(UN)暗金装备附带随机孔数",
+  "description": "",
+  "author": "Demo",
+  "version": "0.7",
+  "config": [
+    {
+      "id": "addSocket",
+      "type": "checkbox",
+      "name": "暗金装备附带随机孔数",
+      "description": "暗金装备附带随机孔数",
+      "defaultValue": true
+    }
+  ]
+}
