@@ -39,5 +39,7 @@ switch (config.zone_select) {
   case 'mod_only_a5':
     D2RMM.copyFile('zoneOnlyA5', 'hd\\global\\excel', true);
     break;
-
+  case 'demo':
+    D2RMM.copyFile('demo', 'hd\\global\\excel', true);
+    break;
 }
