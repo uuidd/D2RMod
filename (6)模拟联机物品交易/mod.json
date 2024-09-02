@@ -64,7 +64,7 @@
     {
       "id": "runeAndUniqueCharm",
       "type": "checkbox",
-      "name": "符文换破免板子",
+      "name": "符文与破免板子互换",
       "description": "详细比例见组件目录下[组件说明.txt]中的【符文换破免板子】",
       "defaultValue": true
     }

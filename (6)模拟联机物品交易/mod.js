@@ -254,7 +254,7 @@ function runeAndGoodsRecipe(rune, type, unique) {
     output: unique,
     lvl: 90
   });
-  if (config.sellDowngrade){
+  if (config.sellDowngrade) {
     rune = 'r' + ((rune.slice(-2) - 1) + '').padStart(2, '0'); // r08 => r07
   }
   cubemain.rows.push({
@@ -611,6 +611,7 @@ function uniqueCharm(rune, gem, charm) {
     output: charm,
     lvl: 85
   });
+
 }
 
 if (config.runeAndUniqueCharm) {
@@ -620,5 +621,16 @@ if (config.runeAndUniqueCharm) {
   uniqueCharm("r23", 'gpw', "Bone Break"); // 破物 白
   uniqueCharm("r23", 'skz', "Black Cleft"); // 破魔 骷髅
   uniqueCharm("r22", 'gpg', "Rotting Fissure"); // 破毒 绿
+
+  // 3 个暗金大板子 => 2 个 #20
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: "3 unique charm -> 2 rune20",
+    numinputs: 3,
+    'input 1': 'cm3,uni,qty=3',
+    output: 'r20',
+    "output b": 'r20'
+  });
 }
+
 D2RMM.writeTsv(cubemainFilename, cubemain);

@@ -5,18 +5,24 @@ misc.rows.forEach((row) => {
     row.code === 'tbk' || // Tome of Town Portal
     row.code === 'ibk' // Tome of Identify
   ) {
-    row.maxstack = config.tomes;
+    if (config.tomes !== 0) {
+      row.maxstack = config.tomes;
+    }
   }
   if (
     row.code === 'aqv' || // Arrows
     row.code === 'cqb' // Bolts
   ) {
-    row.maxstack = config.projectiles;
+    if (config.projectiles !== 0) {
+      row.maxstack = config.projectiles;
+    }
   }
   if (
     row.code === 'key' // Key
   ) {
-    row.maxstack = config.keys;
+    if (config.keys !== 0) {
+      row.maxstack = config.keys;
+    }
   }
 });
 D2RMM.writeTsv(miscFilename, misc);
@@ -30,9 +36,11 @@ weapons.rows.forEach((row) => {
     // 只修改投掷武器
     row.stackable === '1'
   ) {
-    row.minstack = config.throwingweapons;
-    row.maxstack = config.throwingweapons;
-    row.spawnstack = config.throwingweapons;
+    if (config.throwingweapons !== 0) {
+      row.minstack = config.throwingweapons;
+      row.maxstack = config.throwingweapons;
+      row.spawnstack = config.throwingweapons;
+    }
   }
 });
 D2RMM.writeTsv(weaponsFilename, weapons);

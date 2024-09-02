@@ -33,7 +33,7 @@ let sound = {
 
 function sound_skill(buff_sound) {
   if (config[buff_sound]) {
-    D2RMM.copyFile('buff\\' + buff_sound + '.flac', 'hd\\global\\sfx\\skill\\buff', true);
+    D2RMM.copyFile('buff', 'hd\\global\\sfx\\skill\\buff', true);
     sounds.rows.push({
       "Sound": buff_sound,
       "*Index": Math.max(...sounds.rows.map((row) => row['*Index'])) + 1,
@@ -72,7 +72,7 @@ if (config.big_runes) {
   D2RMM.copyFile('runes', 'hd\\global\\sfx\\item\\runes', true);
   for (let i = 24; i < 33; i++) {
     sounds.rows.push({
-      "Sound": "rune_" + i,
+      "Sound": "high_rune" + i,
       "*Index": Math.max(...sounds.rows.map((row) => row['*Index'])) + 1,
       "Redirect": null,
       "Channel": "sfx/items_hd",

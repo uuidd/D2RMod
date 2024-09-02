@@ -1,7 +1,7 @@
 {
   "name": "(5)增加各种物品的可堆放大小",
-  "description": "增加各种物品的可堆放大小。",
-  "author": "olegbl",
+  "description": "增加各种物品的可堆放大小。填 0 则表示不修改，保持原值",
+  "author": "olegbl & demo",
   "website": "https://www.nexusmods.com/diablo2resurrected/mods/175",
   "version": "1.2",
   "file": "misc.txt、weapons.txt",
