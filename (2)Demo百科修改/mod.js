@@ -293,17 +293,14 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(bigTitle('小号符文换取大号符文'));
   demo2.push(normalText('统一为8个换取，8个比较好计算刚好两列背包', 'Yellow', 2));
   demo2.push(normalText2('8个1-14#符文(无法混杂)', '20#符文', '', 2));
-  demo2.push(normalText('比如4个1#加4个2#符文无法置换'));
-  demo2.push(normalText2('8个15#符文', '25#符文', '', 2));
-  demo2.push(normalText2('8个16#符文', '22#符文', '', 2));
-  demo2.push(normalText2('8个17#符文', '23#符文', '', 2));
-  demo2.push(normalText2('8个18#符文', '24#符文', '', 2));
-  demo2.push(normalText2('8个19#符文', '24#符文', '', 2));
-  demo2.push(normalText2('3个19#符文', '20#符文', '', 2));
-  demo2.push(normalText2('5个20#符文', '2个22#符文', '', 2));
-  demo2.push(normalText2('3个23#符文', '26#符文', '', 2));
-  demo2.push(normalText2('4个26#符文', '30#符文', '', 2));
-  demo2.push(normalText2('6个26#符文', '31#符文', '', 2));
+  demo2.push(normalText2('比如4个1#加4个2#符文无法置换'));
+  demo2.push(normalText2('8 15#符文', '25#符文', '', 2));
+  demo2.push(normalText2('8 16#符文', '22#符文', '', 2));
+  demo2.push(normalText2('8 17#符文', '23#符文', '', 2));
+  demo2.push(normalText2('8 18#符文', '24#符文', '', 2));
+  demo2.push(normalText2('8 19#符文', '24#符文', '', 2));
+  demo2.push(normalText2('3 19#符文', '20#符文', '', 2));
+
 
   demo2.push(bigTitle('小符文升/降级'));
   demo2.push(normalText('所有符文升降级都不需要宝石，原升级配方保留。', 'Red', 2));
@@ -329,10 +326,17 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText22('32#符文 + 珠宝', '26#符文 + 15#符文', '', 2));
   demo2.push(normalText22('33#符文 + 珠宝', '28#符文 + 15#符文', '', 2));
 
+  demo2.push(bigTitle('便捷符文兑换'));
+  demo2.push(normalText2('3 20#符文 + 18#符文', '23#符文'));
+  demo2.push(normalText2('5 20#符文', '24#符文'));
+  demo2.push(normalText2('3 23#符文', '26#符文'));
+  demo2.push(normalText2('4 26#符文', '30#符文'));
+  demo2.push(normalText2('6 26#符文', '31#符文'));
+
   demo2.push(bigTitle('宝石与符文'));
   demo2.push(normalText22('20#符文 + 无暇紫宝石', '3 完美紫宝石'));
   demo2.push(normalText22('8#符文 + 钥匙', '1 完美紫宝石 + 钥匙'));
-  demo2.push(normalText22('8 完美紫宝石', '20#符文'));
+  demo2.push(normalText22('8 无暇紫宝石', '20#符文'));
   demo2.push(normalText2('20#符文 + 钥匙', '3个8#符文(结合上下公式可实现所有宝石与符文互换)'));
   demo2.push(normalText2('6 完美骷髅宝石', '3 完美紫宝石'));
   demo2.push(normalText2('6 完美红宝石', '3 完美紫宝石', 'Red'));
@@ -340,13 +344,16 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText2('6 完美绿宝石', '2 完美紫宝石', 'Green'));
   demo2.push(normalText2('6 完美蓝宝石', '2 完美紫宝石', 'Blue'));
   demo2.push(normalText2('6 完美白宝石', '2 完美紫宝石'));
+
   demo2.push(bigTitle('符文与珠宝'));
   demo2.push(normalText2('20#符文 + 解冻药剂(商店黄色的药剂) ', ' 3 亮金珠宝', 'Yellow'));
   demo2.push(normalText2('1 亮金珠宝 ', ' 3 蓝色珠宝', 'Blue'));
   demo2.push(normalText2('9 珠宝 ', ' 20#符文'));
+
   demo2.push(bigTitle('符文与底材'));
   demo2.push(normalText2('20#符文 + 盾牌', ' 4孔君主盾'));
   demo2.push(normalText2('8#符文 + 剑', ' 4孔水晶剑'));
+
   demo2.push(bigTitle('符文与破免大板子'));
   demo2.push(normalText2('24#符文 + 完美蓝宝石 + 超大板子', ' 破冰免板'));
   demo2.push(normalText2('24#符文 + 完美紫宝石 + 超大板子', ' 破电免板'));

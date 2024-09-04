@@ -182,17 +182,27 @@ if (config.traderieRunes) {
   multiToOne('r02', 8, 'r20');
   multiToOne('r01', 8, 'r20');
   //
+  multiToOne('r20', 5, 'r24'); // 5个20换24
   multiToOne('r23', 3, 'r26'); // 3个23换26
   multiToOne('r26', 4, 'r30'); // 4个26换30
   multiToOne('r26', 6, 'r31'); // 6个26换31
-  // 5个20换2个22
+  // 5个20换1个24
   cubemain.rows.push({
     ...baseRecipe,
-    description: `5 ${rName['r20']} -> 2 ${rName['r22']}`,
+    description: `5 ${rName['r20']} -> ${rName['r24']}`,
     numinputs: 5,
     "input 1": "r20,qty=5",
-    output: "r22",
-    "output b": "r22"
+    output: "r24",
+  });
+
+  // 3个20#符文 ➕ 18#符文 =>23#符文
+    cubemain.rows.push({
+    ...baseRecipe,
+    description: `3 ${rName['r20']}+ ${rName['r18']} -> 2 ${rName['r23']}`,
+    numinputs: 4,
+    "input 1": "r20,qty=3",
+    "input 2": "r18,qty=1",
+    output: "r23"
   });
 }
 
