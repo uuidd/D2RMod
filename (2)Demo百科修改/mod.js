@@ -293,7 +293,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(bigTitle('小号符文换取大号符文'));
   demo2.push(normalText('统一为8个换取，8个比较好计算刚好两列背包', 'Yellow', 2));
   demo2.push(normalText2('8个1-14#符文(无法混杂)', '20#符文', '', 2));
-  demo2.push(normalText2('比如4个1#加4个2#符文无法置换'));
+  demo2.push(normalText('比如4个1#加4个2#符文无法置换','Yellow', 2));
   demo2.push(normalText2('8 15#符文', '25#符文', '', 2));
   demo2.push(normalText2('8 16#符文', '22#符文', '', 2));
   demo2.push(normalText2('8 17#符文', '23#符文', '', 2));
@@ -443,9 +443,10 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo3.push(smallTitle('腰带'));
   demo3.push(normalText22('27#符文 + 腰带', '蜘蛛之网 技能腰', 'Gold'));
   demo3.push(normalText22('23#符文 + 腰带', '雷神之力 雷神腰', 'Gold'));
-  demo3.push(normalText22('22#符文 + 腰带', '黃金裹腰 黄金腰带', 'Gold'));
+  demo3.push(normalText22('22#符文 + 腰带', '伐頓戈的強韌腰索 物免腰 心结', 'Gold'));
   demo3.push(normalText22('21#符文 + 腰带', '塔拉夏腰带', 'Green'));
-  demo3.push(normalText22('20#符文 + 腰带', '剃刀之尾 穿刺腰带', 'Gold'));
+  demo3.push(normalText22('20#符文 + 腰带', '黃金裹腰 黄金腰带', 'Gold'));
+  demo3.push(normalText22('19#符文 + 腰带', '剃刀之尾 穿刺腰带', 'Gold'));
   demo3.push(dr());
   demo3.push(smallTitle('鞋子'));
   demo3.push(normalText22('27#符文 + 鞋子', '影武者 鹦鹉鞋', 'Gold'));

@@ -338,9 +338,10 @@ if (config.traderieNecessity) {
   // 腰带
   runeAndGoodsRecipe('r27', 'belt', `Arachnid Mesh`); // 蜘蛛之網 技能腰
   runeAndGoodsRecipe('r23', 'belt', `Thudergod's Vigor`); // 雷神之力
-  runeAndGoodsRecipe('r22', 'belt', `Goldwrap`); // 黃金裹腰
+  runeAndGoodsRecipe('r22', 'belt', `Verdungo's Hearty Cord`); // 伐頓戈的強韌腰索 物免腰 心结
   runeAndGoodsRecipe('r21', 'belt', `Tal Rasha's Fire-Spun Cloth`); // 塔拉夏的精織腰布
-  runeAndGoodsRecipe('r20', 'belt', `Razortail`); // 剃刀之尾 穿刺腰带
+  runeAndGoodsRecipe('r20', 'belt', `Goldwrap`); // 黃金裹腰
+  runeAndGoodsRecipe('r19', 'belt', `Razortail`); // 剃刀之尾 穿刺腰带
   // 鞋子
   runeAndGoodsRecipe('r27', 'boot', `Shadowdancer`); // 影舞者
   runeAndGoodsRecipe('r25', 'boot', `Wartraveler`); // 戰爭旅者
@@ -532,15 +533,13 @@ if (config.runeAndGemstone) {
     output: "r08",
     "output b": "key",
   });
-  // 8个紫换3个20
+  // 8个无暇紫换1个20
   cubemain.rows.push({
     ...baseRecipe,
     description: `8 ${gemName['gpv']} -> 1 ${rName['r20']}`,
     numinputs: 8,
-    "input 1": 'gpv,qty=8',
-    output: "r20",
-    "output b": "r20",
-    "output c": "r20"
+    "input 1": 'gzv,qty=8',
+    output: "r20"
   });
 }
 
