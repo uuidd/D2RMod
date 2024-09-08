@@ -12,7 +12,6 @@
             "description": "启用添加一个配方来转换钥匙（恐怖->仇恨->毁灭->恐怖）。",
             "defaultValue": true
         },
-
         {
             "id": "easierDestruction",
             "type": "checkbox",
@@ -20,13 +19,26 @@
             "description": "扭曲的苦难精华（蓝色精华）+充能的仇恨精华（黄色精华）+恐怖燃烧精华（红色精华）= 毁灭的溃烂精华（绿色精华）",
             "defaultValue": true
         },
-
+        {
+            "id": "easierHatred",
+            "type": "checkbox",
+            "name": "2个A1/A2精华=A3精华",
+            "description": "2个扭曲的苦难精华（蓝色精华）= 充能的仇恨精华（黄色精华）",
+            "defaultValue": true
+        },
+        {
+            "id": "easierTerror",
+            "type": "checkbox",
+            "name": "3个A1/A2精华=A4精华",
+            "description": "3个扭曲的苦难精华（蓝色精华）= 恐怖燃烧精华（红色精华）",
+            "defaultValue": true
+        },
         {
             "id": "easierEssence",
             "type": "checkbox",
             "name": "转换精华类型",
             "description": "扭曲的苦难精华（蓝色精华）-> 充能的仇恨精华（黄色精华）-> 恐怖燃烧精华（红色精华）-> 毁灭的溃烂精华（绿色精华）-> 扭曲的苦难精华（蓝色精华）",
-            "defaultValue": true
+            "defaultValue": false
         },
         {
             "id": "genUniqueJew",
@@ -40,14 +52,14 @@
             "type": "checkbox",
             "name": "回城书 + 6大紫 = 国王之杖",
             "description": "A2任务道具合成公式,不替换原有公式，时灵时不灵",
-            "defaultValue": true
+            "defaultValue": false
         },
         {
             "id": "a3task_item",
             "type": "checkbox",
             "name": "回城书 + 3大紫 = 克林姆的遗愿",
             "description": "A3任务道具合成公式,不替换原有公式，时灵时不灵",
-            "defaultValue": true
+            "defaultValue": false
         }
     ]
 }

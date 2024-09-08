@@ -76,6 +76,13 @@
             "defaultValue": true
         },
         {
+            "id": "easierVaught",
+            "type": "checkbox",
+            "name": "回城书+精力药剂=尼拉塞克（尼拉塞克神殿）",
+            "description": "只能到五小队/巴尔门口，系统限制无法直达巴尔，A5精华，巴尔有概率掉落",
+            "defaultValue": true
+        },
+        {
             "id": "easierThrone",
             "type": "checkbox",
             "name": "回城书+A5精华=毀滅王座",

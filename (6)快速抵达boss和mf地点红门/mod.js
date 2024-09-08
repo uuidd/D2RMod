@@ -45,6 +45,9 @@ if (config.easierDurance) redPortal("Durance of Hate Level 3", 102, "ceh", "tbk"
 // 混沌避难所 迪亚波罗 超市
 if (config.easierChaos) redPortal("The Chaos Sanctuary", 108, "bet", "tbk");
 
+// 尼拉塞克神殿A5尼拉塞克
+if (config.easierVaught) redPortal("Halls of Vaught", 124, "tbk", "vps");
+
 // 毀滅王座
 if (config.easierThrone) redPortal("Throne of Destruction", 131, "fed", "tbk");
 

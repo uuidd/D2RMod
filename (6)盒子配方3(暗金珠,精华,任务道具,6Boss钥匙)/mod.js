@@ -48,6 +48,32 @@ if (config.easierDestruction) {
   });
 }
 
+if (config.easierHatred) {
+  cubemain.rows.push({
+    description:
+      "2 Twisted Essence of Suffering  ->  1 Charged Essence of Hatred",
+    enabled: 1,
+    version: 100,
+    numinputs: 2,
+    "input 1": "tes,qty=2",
+    output: "ceh",
+    "*eol\r": 0,
+  });
+}
+
+if (config.easierTerror) {
+  cubemain.rows.push({
+    description:
+      "3 Twisted Essence of Suffering  ->  1 Burning Essence of Terror",
+    enabled: 1,
+    version: 100,
+    numinputs: 3,
+    "input 1": "tes,qty=3",
+    output: "bet",
+    "*eol\r": 0,
+  });
+}
+
 // 精华种类循环
 if (config.easierEssence) {
   cubemain.rows.push({

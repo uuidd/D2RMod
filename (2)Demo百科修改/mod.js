@@ -207,6 +207,10 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1.push(normalText('切换难度刷地图可避免出现重复彩虹刻面暗金珠或变成亮金', 'Yellow'));
   demo1.push(normalText('所有红门都不会消耗原物品，物品只是为了游戏辨识及门槛而设置', 'Red'));
   demo1.push(normalText('红门只能在同一幕城镇内使用，例如第一幕红门无法在第二幕使用，也无法在野外使用', 'Red'));
+  demo1.push(normalText('A1/A2精华指扭曲的苦难精华（蓝色精华），第一幕安达利尔和第二幕督瑞尔掉落', 'Red'));
+  demo1.push(normalText('A3精华指充能的仇恨精华（黄色精华），第三幕墨菲斯托掉落', 'Red'));
+  demo1.push(normalText('A4精华指恐怖燃烧精华（红色精华），第四幕迪亚波罗掉落', 'Red'));
+  demo1.push(normalText('A5精华指毁灭的溃烂精华（绿色精华），第五幕巴尔掉落', 'Red'));
   demo1.push(space());
   demo1.push(bigTitle('快速红门配方'));
   demo1.push(normalText2('回城书 + 辨识书', '奶牛关', 'Red'));
@@ -218,7 +222,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1.push(normalText2('回城书 + A1/A2精华', '督瑞尔房间/督瑞雨', 'Red'));
   demo1.push(normalText2('回城书 + A3精华', '墨菲斯托房间/憎恨的囚牢第三层/劳模', 'Red'));
   demo1.push(normalText2('回城书 + A4精华', '混沌避难所/迪亚波罗/超市', 'Red'));
-  demo1.push(normalText2('回城书 + 辨识卷轴', '尼拉塞克的神殿/皮叔', 'Red'));
+  demo1.push(normalText2('回城书 + 精力药剂', '尼拉塞克神殿/尼拉塞克', 'Red'));
   demo1.push(normalText2('回城书 + A5精华', '毀滅王座/五小队/巴尔', 'Red'));
   demo1.push(bigTitle('常用合成公式'));
   demo1.push(normalText2('回城卷轴 + 辨识卷轴', '赦免徽章(洗点)'));
@@ -244,6 +248,8 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1.push(normalText2('15#符文 + 27#号符文 + 32#符文 + 3个亮金珠宝', '15攻速31-40ed蓝色珠宝(红白珠)', 'Blue'));
   demo1.push(normalText2('火炬 + 3个小型神符', '1 全抗生命 + 1 法力生命 + 1 最大伤害准确生命极品小板子'));
   demo1.push(normalText2('A1/A2 + A3 + A4 + A5精华 + 蓝戒指', '恐怖之石(向商店出售恐怖之石召唤超级暗黑破坏神)'));
+  demo1.push(normalText2('2个A1/A2精华', 'A3精华'));
+  demo1.push(normalText2('3个A1/A2精华', 'A4精华'));
   demo1.push(normalText2('A1/A2 + A3 + A4精华', 'A5精华'));
   demo1.push(normalText2('暗金大板子(破冰/电/毒/火/魔/物及基德大板子)+ 珠宝', '随机暗金珠宝(一场游戏只能用一次)', 'Gold'));
   demo1.push(normalText2('暗金珠宝 + 3个完美宝石', '随机暗金珠宝(一场游戏只能用一次)', 'Gold'));

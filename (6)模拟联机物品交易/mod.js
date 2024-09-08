@@ -338,7 +338,7 @@ if (config.traderieNecessity) {
   // 腰带
   runeAndGoodsRecipe('r27', 'belt', `Arachnid Mesh`); // 蜘蛛之網 技能腰
   runeAndGoodsRecipe('r23', 'belt', `Thudergod's Vigor`); // 雷神之力
-  runeAndGoodsRecipe('r22', 'belt', `Verdungo's Hearty Cord`); // 伐頓戈的強韌腰索 物免腰 心结
+  runeAndGoodsRecipe('r22', 'belt', `Verdugo's Hearty Cord`); // 伐頓戈的強韌腰索 物免腰 心结
   runeAndGoodsRecipe('r21', 'belt', `Tal Rasha's Fire-Spun Cloth`); // 塔拉夏的精織腰布
   runeAndGoodsRecipe('r20', 'belt', `Goldwrap`); // 黃金裹腰
   runeAndGoodsRecipe('r19', 'belt', `Razortail`); // 剃刀之尾 穿刺腰带
@@ -351,14 +351,14 @@ if (config.traderieNecessity) {
 }
 
 
-// 珠宝+弓＝亚马逊专用弓
-// 珠宝+标枪＝亚马逊标枪
-// 珠宝+矛＝亚马逊矛
-// 珠宝+任意头盔＝野蛮人头盔
-// 珠宝+木棒＝德鲁伊头盔
-// 珠宝+双手法杖＝女巫法珠
-// 珠宝+死灵魔杖＝死灵法师盾牌
-// 珠宝+盾牌＝圣骑士盾牌
+// 解毒药剂+弓＝亚马逊专用弓
+// 解毒药剂+标枪＝亚马逊标枪
+// 解毒药剂+矛＝亚马逊矛
+// 解毒药剂+任意头盔＝野蛮人头盔
+// 解毒药剂+木棒＝德鲁伊头盔
+// 解毒药剂+双手法杖＝女巫法珠
+// 解毒药剂+死灵魔杖＝死灵法师盾牌
+// 解毒药剂+盾牌＝圣骑士盾牌
 const occBaseRecipe = {
   ...baseRecipe,
   numinputs: 2,
@@ -367,56 +367,56 @@ const occBaseRecipe = {
 }
 
 if (config.occupationExclusiveItems) {
-  // 珠宝+弓＝亚马逊专用弓，刷新配方不变
+  // 解毒药剂+弓＝亚马逊专用弓，刷新配方不变
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Bow + Jewel -> Random Ama Bow',
     'input 1': 'miss',
     output: `"abow,nor,bas"`
   });
-  // 珠宝+标枪＝亚马逊标枪，刷新配方不变
+  // 解毒药剂+标枪＝亚马逊标枪，刷新配方不变
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Javelin + Jewel -> Random Ama Javelin',
     'input 1': 'jave',
     output: `"ajav,nor,bas"`
   });
-  // 珠宝+矛＝亚马逊矛，刷新配方不变
+  // 解毒药剂+矛＝亚马逊矛，刷新配方不变
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Spear + Jewel -> Random Ama Spear',
     'input 1': 'spea',
     output: `"aspe,nor,bas"`
   });
-  // 珠宝+盾牌＝圣骑士盾牌
+  // 解毒药剂+盾牌＝圣骑士盾牌
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Shield + Jewel -> Random Pal Shield',
     'input 1': 'shie',
     output: `"ashd,nor,bas"`
   });
-  // 珠宝+双手法杖＝女巫法珠
+  // 解毒药剂+双手法杖＝女巫法珠
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Staff + Jewel -> Random Sor Orb',
     'input 1': 'staf',
     output: `"orb,nor,bas"`
   });
-  // 珠宝+死灵魔杖＝死灵法师盾牌
+  // 解毒药剂+死灵魔杖＝死灵法师盾牌
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Wand + Jewel -> Random Nec Skull Shield',
     'input 1': 'wand',
     output: `"head,nor,bas"`
   });
-  // 珠宝+任意头盔＝野蛮人头盔
+  // 解毒药剂+任意头盔＝野蛮人头盔
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Helm + Jewel -> Random Bar Helm',
     'input 1': 'helm',
     output: `"phlm,nor,bas"`
   });
-  // 珠宝+木棒＝德鲁伊头盔
+  // 解毒药剂+木棒＝德鲁伊头盔
   cubemain.rows.push({
     ...occBaseRecipe,
     description: 'Club + Jewel -> Random Dru Helm',
