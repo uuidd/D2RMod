@@ -336,6 +336,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText2('3 20#符文 + 18#符文', '23#符文'));
   demo2.push(normalText2('5 20#符文', '24#符文'));
   demo2.push(normalText2('3 23#符文', '26#符文'));
+  demo2.push(normalText2('2 24#符文 + 3 20#符文', '26#符文'));
   demo2.push(normalText2('4 26#符文', '30#符文'));
   demo2.push(normalText2('6 26#符文', '31#符文'));
 

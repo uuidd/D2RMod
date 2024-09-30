@@ -1,0 +1,67 @@
+{
+  "name": "(3)显示物品质量",
+  "description": "在名称中显示物品质量。 (n: normal, x: exceptional, e: elite)",
+  "author": "minseoksuh",
+  "website": "https://www.nexusmods.com/diablo2resurrected/mods/351",
+  "version": "0.3",
+  "config": [
+    {
+      "id": "normalItemColor",
+      "type": "select",
+      "name": "颜色 (普通)",
+      "defaultValue": "none",
+      "options": [
+        { "label": "空白", "value": "none" },
+        { "label": "白色", "value": "ÿc0" },
+        { "label": "红色", "value": "ÿc1" },
+        { "label": "绿色", "value": "ÿc2" },
+        { "label": "蓝色", "value": "ÿc3" },
+        { "label": "金色", "value": "ÿc4" },
+        { "label": "灰色", "value": "ÿc5" },
+        { "label": "棕褐色", "value": "ÿc7" },
+        { "label": "橙色", "value": "ÿc8" },
+        { "label": "黄色", "value": "ÿc9" },
+        { "label": "紫色", "value": "ÿc;" }
+      ]
+    },
+    {
+      "id": "exceptionalItemColor",
+      "type": "select",
+      "name": "颜色 (扩展)",
+      "defaultValue": "ÿc1",
+      "options": [
+        { "label": "空白", "value": "none" },
+        { "label": "白色", "value": "ÿc0" },
+        { "label": "红色", "value": "ÿc1" },
+        { "label": "绿色", "value": "ÿc2" },
+        { "label": "蓝色", "value": "ÿc3" },
+        { "label": "金色", "value": "ÿc4" },
+        { "label": "灰色", "value": "ÿc5" },
+        { "label": "棕褐色", "value": "ÿc7" },
+        { "label": "橙色", "value": "ÿc8" },
+        { "label": "黄色", "value": "ÿc9" },
+        { "label": "紫色", "value": "ÿc;" }
+      ]
+    },
+    {
+      "id": "eliteItemColor",
+      "type": "select",
+      "name": "Color (精华)",
+      "defaultValue": "ÿc;",
+      "options": [
+        { "label": "空白", "value": "none" },
+        { "label": "白色", "value": "ÿc0" },
+        { "label": "红色", "value": "ÿc1" },
+        { "label": "绿色", "value": "ÿc2" },
+        { "label": "蓝色", "value": "ÿc3" },
+        { "label": "金色", "value": "ÿc4" },
+        { "label": "灰色", "value": "ÿc5" },
+        { "label": "棕褐色", "value": "ÿc7" },
+        { "label": "橙色", "value": "ÿc8" },
+        { "label": "黄色", "value": "ÿc9" },
+        { "label": "紫色", "value": "ÿc;" }
+      ]
+    }
+    
+  ]
+}

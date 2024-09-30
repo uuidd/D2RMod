@@ -196,13 +196,23 @@ if (config.traderieRunes) {
   });
 
   // 3个20#符文 ➕ 18#符文 =>23#符文
-    cubemain.rows.push({
+  cubemain.rows.push({
     ...baseRecipe,
     description: `3 ${rName['r20']}+ ${rName['r18']} -> 2 ${rName['r23']}`,
     numinputs: 4,
     "input 1": "r20,qty=3",
     "input 2": "r18,qty=1",
     output: "r23"
+  });
+
+  // 2个24#符文 ➕ 3个20#符文 =>26#符文
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `2 ${rName['r24']}+ 3 ${rName['r20']} -> ${rName['r26']}`,
+    numinputs: 5,
+    "input 1": "r24,qty=2",
+    "input 2": "r20,qty=3",
+    output: "r26"
   });
 }
 

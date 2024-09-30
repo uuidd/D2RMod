@@ -240,7 +240,7 @@
       "fields":
       {
         "time": 1,
-        "message": "PanelManager:OpenPanel:minihoradriccubelayout" //jg注释：如果想进游戏默认关闭迷你盒子，注释这句话
+//        "message": "PanelManager:OpenPanel:minihoradriccubelayout" //jg注释：如果想进游戏默认关闭迷你盒子，注释这句话
       }
     },
     {
