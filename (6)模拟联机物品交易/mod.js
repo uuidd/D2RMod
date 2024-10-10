@@ -565,7 +565,7 @@ if (config.runeAndGemstone) {
       ...baseRecipe,
       description: `12 Flawless ${gem} -> 1 ${rName['r18']}`,
       numinputs: 12,
-      "input 1": 'gp' + gem + ',qty=12',
+      "input 1": 'gl' + gem + ',qty=12',
       output: "r18"
     });
   }
@@ -575,7 +575,7 @@ if (config.runeAndGemstone) {
     ...baseRecipe,
     description: `8 Flawless red -> 1 ${rName['r18']}`,
     numinputs: 8,
-    "input 1": 'gpr,qty=12',
+    "input 1": 'glr,qty=8',
     output: "r18"
   });
 
@@ -584,7 +584,7 @@ if (config.runeAndGemstone) {
     ...baseRecipe,
     description: `8 Flawless skl -> 1 ${rName['r18']}`,
     numinputs: 8,
-    "input 1": 'skl,qty=12',
+    "input 1": 'skl,qty=8',
     output: "r18"
   });
 }

@@ -39,6 +39,13 @@
             "name": "两完美宝石合一珠宝",
             "description": "宝石合珠宝",
             "defaultValue": true
+        },
+        {
+            "id": "testDemo",
+            "type": "checkbox",
+            "name": "测试生成",
+            "description": "测试生成",
+            "defaultValue": false
         }
     ]
 }

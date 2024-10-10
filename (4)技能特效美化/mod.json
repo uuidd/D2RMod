@@ -1,0 +1,23 @@
+{
+  "name": "(4)技能特效美化",
+  "description": "技能特效美化",
+  "author": "大漠苍苍 & Demo",
+  "website": "",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "arrowSkill",
+      "type": "checkbox",
+      "name": "炮轰和多重箭美化",
+      "description": "炮轰和多重箭特效替换为魔法箭特效",
+      "defaultValue": true
+    },
+    {
+      "id": "diabloWall",
+      "type": "checkbox",
+      "name": "屏蔽火炬火焰风暴效果",
+      "description": "大菠萝不受影响",
+      "defaultValue": true
+    }
+  ]
+}

@@ -25,7 +25,7 @@ if (config.easierCowPortal) redPortal("Moo Moo Farm", 39, "tbk", "ibk");
 if (config.easierTowerCellar5) redPortal("Tower Cellar Level 5", 25, "ibk", "yps")
 
 // 地穴第一層
-if (config.easierPit1) redPortal("Pit Level 1", 12, "ibk", "yps");
+if (config.easierPit1) redPortal("Pit Level 1", 12, "tbk", "yps");
 
 // 安达利尔 安姐房间
 if (config.easierCatacombs4) redPortal("Catacombs Level 4", 37, "tes", "ibk");
@@ -49,7 +49,10 @@ if (config.easierChaos) redPortal("The Chaos Sanctuary", 108, "bet", "tbk");
 if (config.easierVaught) redPortal("Halls of Vaught", 124, "tbk", "vps");
 
 // 毀滅王座
-if (config.easierThrone) redPortal("Throne of Destruction", 131, "fed", "tbk");
+if (config.easierThrone) redPortal("Throne of Destruction", 131, "fed", "ibk");
+
+// 世界之石大殿
+if (config.easierBaal) redPortal("The Worldstone Chamber", 132, "fed", "tbk");
 
 
 D2RMM.writeTsv(cubemainFilename, cubemain);

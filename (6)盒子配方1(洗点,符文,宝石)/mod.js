@@ -159,6 +159,30 @@ if (config.genJew) {
   };
   cubemain.rows.push(recipe);
 }
+
+
+if (config.testDemo) {
+  let recipe1 = {
+    description: 'testDemo1',
+    enabled: 1,
+    version: 100,
+    numinputs: 1,
+    "input 1": 'ibk',
+    output: 'gpr,qty=3',
+    "*eol\r": 0,
+  };
+  cubemain.rows.push(recipe1);
+  let recipe2 = {
+    description: 'testDemo2',
+    enabled: 1,
+    version: 100,
+    numinputs: 1,
+    "input 1": 'tbk',
+    output: 'skl,qty=8',
+    "*eol\r": 0,
+  };
+  cubemain.rows.push(recipe2);
+}
 D2RMM.writeTsv(cubemainFilename, cubemain);
 
 

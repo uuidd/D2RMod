@@ -1,93 +1,100 @@
 {
-    "name": "(6)快速抵达boss和mf地点红门",
-    "description": "所有红门都不会消耗原物品，物品只是为了游戏辨识及门槛而设置，红门只能在同一幕城镇内使用，例如第一幕红门无法在第二幕使用，也无法在野外使用",
-    "author": "Demo",
-    "website": "",
-    "version": "1.3",
-    "config": [
-        {
-            "id": "tip",
-            "type": "checkbox",
-            "name": "所有红门都不会消耗原物品",
-            "description": "物品只是为了游戏辨识及门槛而设置",
-            "defaultValue": true
-        },
-        {
-            "id": "easierCowPortal",
-            "type": "checkbox",
-            "name": "回城书+鉴定书=奶牛关",
-            "description": "返还回城书和鉴定书，方便下次开门，历史遗留配方",
-            "defaultValue": true
-        },
-        {
-            "id": "easierTowerCellar5",
-            "type": "checkbox",
-            "name": "鉴定书+解毒药剂=女伯爵（地牢第五层）",
-            "description": "地牢第五层",
-            "defaultValue": true
-        },
-        {
-            "id": "easierPit1",
-            "type": "checkbox",
-            "name": "回城书+解毒药剂=地穴第一层",
-            "description": "",
-            "defaultValue": true
-        },
-        {
-            "id": "easierCatacombs4",
-            "type": "checkbox",
-            "name": "鉴定书+A1/A2精华=安达利尔（地下墓穴第四层）",
-            "description": "A1/A2精华，蓝色的精华，安达利尔和督瑞尔有概率掉落",
-            "defaultValue": true
-        },
-        {
-            "id": "easierStonyTomb1",
-            "type": "checkbox",
-            "name": "回城书+解冻药剂=石制古墓一层",
-            "description": "",
-            "defaultValue": true
-        },
-        {
-            "id": "easierAncientTunnels",
-            "type": "checkbox",
-            "name": "鉴定书+解冻药剂=古代通道",
-            "description": "返还回城书+解冻药剂，也就是消耗1瓶蓝药开一次门",
-            "defaultValue": true
-        },
-        {
-            "id": "easierDuriel",
-            "type": "checkbox",
-            "name": "回城书+A1/A2精华=督瑞尔巢穴",
-            "description": "A1/A2精华，蓝色的精华，安达利尔和督瑞尔有概率掉落",
-            "defaultValue": true
-        },
-        {
-            "id": "easierDurance",
-            "type": "checkbox",
-            "name": "回城书+A3精华=墨菲斯托",
-            "description": "A3精华，墨菲斯托有概率掉落",
-            "defaultValue": true
-        },
-        {
-            "id": "easierChaos",
-            "type": "checkbox",
-            "name": "回城书+A4精华=迪亚波罗（混沌避难所/超市）",
-            "description": "A4精华，迪亚波罗有概率掉落",
-            "defaultValue": true
-        },
-        {
-            "id": "easierVaught",
-            "type": "checkbox",
-            "name": "回城书+精力药剂=尼拉塞克（尼拉塞克神殿）",
-            "description": "只能到五小队/巴尔门口，系统限制无法直达巴尔，A5精华，巴尔有概率掉落",
-            "defaultValue": true
-        },
-        {
-            "id": "easierThrone",
-            "type": "checkbox",
-            "name": "回城书+A5精华=毀滅王座",
-            "description": "只能到五小队/巴尔门口，系统限制无法直达巴尔，A5精华，巴尔有概率掉落",
-            "defaultValue": true
-        }
-    ]
+  "name": "(6)快速抵达boss和mf地点红门",
+  "description": "所有红门都不会消耗原物品，物品只是为了游戏辨识及门槛而设置，红门只能在同一幕城镇内使用，例如第一幕红门无法在第二幕使用，也无法在野外使用",
+  "author": "Demo",
+  "website": "",
+  "version": "1.3",
+  "config": [
+    {
+      "id": "tip",
+      "type": "checkbox",
+      "name": "所有红门都不会消耗原物品",
+      "description": "物品只是为了游戏辨识及门槛而设置",
+      "defaultValue": true
+    },
+    {
+      "id": "easierCowPortal",
+      "type": "checkbox",
+      "name": "回城书+鉴定书=奶牛关",
+      "description": "返还回城书和鉴定书，方便下次开门，历史遗留配方",
+      "defaultValue": true
+    },
+    {
+      "id": "easierTowerCellar5",
+      "type": "checkbox",
+      "name": "鉴定书+解毒药剂=女伯爵（地牢第五层）",
+      "description": "地牢第五层",
+      "defaultValue": true
+    },
+    {
+      "id": "easierPit1",
+      "type": "checkbox",
+      "name": "回城书+解毒药剂=地穴第一层",
+      "description": "",
+      "defaultValue": true
+    },
+    {
+      "id": "easierCatacombs4",
+      "type": "checkbox",
+      "name": "鉴定书+A1/A2精华=安达利尔（地下墓穴第四层）",
+      "description": "A1/A2精华，蓝色的精华，安达利尔和督瑞尔有概率掉落",
+      "defaultValue": true
+    },
+    {
+      "id": "easierStonyTomb1",
+      "type": "checkbox",
+      "name": "回城书+解冻药剂=石制古墓一层",
+      "description": "",
+      "defaultValue": true
+    },
+    {
+      "id": "easierAncientTunnels",
+      "type": "checkbox",
+      "name": "鉴定书+解冻药剂=古代通道",
+      "description": "返还回城书+解冻药剂，也就是消耗1瓶蓝药开一次门",
+      "defaultValue": true
+    },
+    {
+      "id": "easierDuriel",
+      "type": "checkbox",
+      "name": "回城书+A1/A2精华=督瑞尔巢穴",
+      "description": "A1/A2精华，蓝色的精华，安达利尔和督瑞尔有概率掉落",
+      "defaultValue": true
+    },
+    {
+      "id": "easierDurance",
+      "type": "checkbox",
+      "name": "回城书+A3精华=墨菲斯托",
+      "description": "A3精华，墨菲斯托有概率掉落",
+      "defaultValue": true
+    },
+    {
+      "id": "easierChaos",
+      "type": "checkbox",
+      "name": "回城书+A4精华=迪亚波罗（混沌避难所/超市）",
+      "description": "A4精华，迪亚波罗有概率掉落",
+      "defaultValue": true
+    },
+    {
+      "id": "easierVaught",
+      "type": "checkbox",
+      "name": "回城书+精力药剂=尼拉塞克（尼拉塞克神殿）",
+      "description": "A5精华，巴尔有概率掉落",
+      "defaultValue": true
+    },
+    {
+      "id": "easierThrone",
+      "type": "checkbox",
+      "name": "辨识书+A5精华=毀滅王座",
+      "description": "五小队/巴尔门口，A5精华，巴尔有概率掉落",
+      "defaultValue": true
+    },
+    {
+      "id": "easierBaal",
+      "type": "checkbox",
+      "name": "回城书+A5精华=世界之石大殿/巴尔",
+      "description": "只，A5精华，巴尔有概率掉落",
+      "defaultValue": true
+    }
+  ]
 }
