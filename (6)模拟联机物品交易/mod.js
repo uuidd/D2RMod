@@ -103,31 +103,34 @@ function genDescription(inputList, outputList) {
 // 珠宝是手续费
 function twoWayRuneRecipe(inputList, outputList) {
   inputList.push('jew');
-  const inputDic1 = inputDic(inputList);
-  const outputDic1 = outputDic(outputList);
-  cubemain.rows.push({
-    ...baseRecipe,
-    description: genDescription(inputList, outputList),
-    numinputs: inputList.length,
-    ...inputDic1,
-    ...outputDic1
-  });
-
+  if (outputList !== 'r15') {
+    const inputDic1 = inputDic(inputList);
+    const outputDic1 = outputDic(outputList);
+    cubemain.rows.push({
+      ...baseRecipe,
+      description: genDescription(inputList, outputList),
+      numinputs: inputList.length,
+      ...inputDic1,
+      ...outputDic1
+    });
+  }
   // reverse
   inputList.pop();
-  if (outputList.length === 1 && inputList.length === 1) {
-    outputList.push('jew');
-    outputList.push('jew');
+  if (inputList[0] !== 'r15') {
+    if (outputList.length === 1 && inputList.length === 1) {
+      outputList.push('jew');
+      outputList.push('jew');
+    }
+    const inputDic2 = inputDic(outputList);
+    const outputDic2 = outputDic(inputList);
+    cubemain.rows.push({
+      ...baseRecipe,
+      description: genDescription(outputList, inputList),
+      numinputs: outputList.length,
+      ...inputDic2,
+      ...outputDic2
+    });
   }
-  const inputDic2 = inputDic(outputList);
-  const outputDic2 = outputDic(inputList);
-  cubemain.rows.push({
-    ...baseRecipe,
-    description: genDescription(outputList, inputList),
-    numinputs: outputList.length,
-    ...inputDic2,
-    ...outputDic2
-  });
 }
 
 /*
@@ -163,7 +166,7 @@ if (config.traderieRunes) {
   twoWayRuneRecipe(['r20'], ['r18', 'r18']);
   multiToOne('r19', 3, 'r20'); // 添加 19# 符文升级不需要宝石
   multiToOne('r19', 8, 'r24');
-  multiToOne('r18', 8, 'r24');
+  multiToOne('r18', 7, 'r23'); // 18#符文关联宝石价格得降价匹配
   multiToOne('r17', 8, 'r23');
   multiToOne('r16', 8, 'r22');
   multiToOne('r15', 8, 'r25');
@@ -515,6 +518,7 @@ if (config.runeAndGemstone) {
     "output b": "gpv",
     "output c": "gpv",
   });
+
   cubemain.rows.push({
     ...baseRecipe,
     description: `3 ${gemName['gpv']} -> 1 ${rName['r20']} + 1 Flawless Amethyst`,
@@ -534,6 +538,7 @@ if (config.runeAndGemstone) {
     output: "gpv",
     "output b": "key",
   });
+
   cubemain.rows.push({
     ...baseRecipe,
     description: `1 ${gemName['gpv']} + 1 Key -> 1 ${rName['r08']} + 1 Key`,
@@ -543,18 +548,49 @@ if (config.runeAndGemstone) {
     output: "r08",
     "output b": "key",
   });
+
   // 8个无暇紫换1个20
   cubemain.rows.push({
     ...baseRecipe,
-    description: `8 ${gemName['gpv']} -> 1 ${rName['r20']}`,
+    description: `8 Flawless Amethyst -> 1 ${rName['r20']}`,
     numinputs: 8,
     "input 1": 'gzv,qty=8',
     output: "r20"
   });
+
+  // 12个无暇黄/绿/蓝/白/宝石 -> 18#符文
+  const gemL = ['w', 'g', 'y', 'b'];
+  for (const gem of gemL) {
+    cubemain.rows.push({
+      ...baseRecipe,
+      description: `12 Flawless ${gem} -> 1 ${rName['r18']}`,
+      numinputs: 12,
+      "input 1": 'gp' + gem + ',qty=12',
+      output: "r18"
+    });
+  }
+
+  // 8个无暇红 -> 18#符文
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `8 Flawless red -> 1 ${rName['r18']}`,
+    numinputs: 8,
+    "input 1": 'gpr,qty=12',
+    output: "r18"
+  });
+
+  // 8个无暇骷髅 -> 18#符文
+  cubemain.rows.push({
+    ...baseRecipe,
+    description: `8 Flawless skl -> 1 ${rName['r18']}`,
+    numinputs: 8,
+    "input 1": 'skl,qty=12',
+    output: "r18"
+  });
 }
 
 if (config.runeAndJew) {
-  // 20# + 蓝色珠宝 -> 3 亮金珠宝
+  // 20# + 融冰药剂 -> 3 亮金珠宝
   cubemain.rows.push({
     ...baseRecipe,
     description: `1 ${rName['r20']} + 1 Thawing Potion -> 3 Rare Jewel`,
@@ -581,7 +617,7 @@ if (config.runeAndJew) {
     'b plvl': 100,
     'c plvl': 100
   });
-  // 8 蓝色珠宝 -> 20#
+  // 9 蓝色珠宝 -> 20#
   cubemain.rows.push({
     ...baseRecipe,
     description: `9 Magic Jewel -> 1 ${rName['r20']}`,

@@ -117,18 +117,34 @@ if (config.uniitem) {
   const uniqueitemsFilename = 'global\\excel\\uniqueitems.txt';
   const uniqueitems = D2RMM.readTsv(uniqueitemsFilename);
   uniqueitems.rows.forEach((row) => {
-    UpdateRow(row, 'prop1', 'min1', 'max1');
-    UpdateRow(row, 'prop2', 'min2', 'max2');
-    UpdateRow(row, 'prop3', 'min3', 'max3');
-    UpdateRow(row, 'prop4', 'min4', 'max4');
-    UpdateRow(row, 'prop5', 'min5', 'max5');
-    UpdateRow(row, 'prop6', 'min6', 'max6');
-    UpdateRow(row, 'prop7', 'min7', 'max7');
-    UpdateRow(row, 'prop8', 'min8', 'max8');
-    UpdateRow(row, 'prop9', 'min9', 'max9');
-    UpdateRow(row, 'prop10', 'min10', 'max10');
-    UpdateRow(row, 'prop11', 'min11', 'max11');
-    UpdateRow(row, 'prop12', 'min12', 'max12');
+    let charmList
+    if (config.nouniitem) {
+      charmList = [
+        'Cold Rupture',
+        'Flame Rift',
+        'Crack of the Heavens',
+        'Rotting Fissure',
+        'Bone Break',
+        'Black Cleft'
+      ]
+    } else {
+      charmList = [];
+    }
+
+    if (!charmList.includes(row['index'])) {
+      UpdateRow(row, 'prop1', 'min1', 'max1');
+      UpdateRow(row, 'prop2', 'min2', 'max2');
+      UpdateRow(row, 'prop3', 'min3', 'max3');
+      UpdateRow(row, 'prop4', 'min4', 'max4');
+      UpdateRow(row, 'prop5', 'min5', 'max5');
+      UpdateRow(row, 'prop6', 'min6', 'max6');
+      UpdateRow(row, 'prop7', 'min7', 'max7');
+      UpdateRow(row, 'prop8', 'min8', 'max8');
+      UpdateRow(row, 'prop9', 'min9', 'max9');
+      UpdateRow(row, 'prop10', 'min10', 'max10');
+      UpdateRow(row, 'prop11', 'min11', 'max11');
+      UpdateRow(row, 'prop12', 'min12', 'max12');
+    }
   });
   D2RMM.writeTsv(uniqueitemsFilename, uniqueitems);
 }
@@ -148,8 +164,8 @@ if (config.setitem) {
     UpdateRow(row, 'prop8', 'min8', 'max8');
     UpdateRow(row, 'prop9', 'min9', 'max9');
 
-  //不确定是否为amim1a/amax1a/等。。。也应该均衡
-  //它们似乎是针对固定项词缀的，不应该变化
+    //不确定是否为amim1a/amax1a/等。。。也应该均衡
+    //它们似乎是针对固定项词缀的，不应该变化
   });
   D2RMM.writeTsv(setitemsFilename, setitems);
 }

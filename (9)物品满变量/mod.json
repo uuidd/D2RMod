@@ -28,6 +28,13 @@
       "defaultValue": true
     },
     {
+      "id": "nouniitem",
+      "type": "checkbox",
+      "name": "除破免板子满变",
+      "description": "破免板子后期太多了，不满变才有刷刷的动力",
+      "defaultValue": false
+    },
+    {
       "id": "crafted",
       "type": "checkbox",
       "name": "手工物品固定词缀满变",

@@ -286,7 +286,7 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo1.push(normalText('完美的紫宝石(完美宝石) 替换为 蓝药(各种药剂)'));
   demo1.push(normalText('最后变为：蓝色项链 + 蓝药 + 无暇宝石(不分颜色) + 任意符文或珠宝 => 施法项链'));
   demo1.push(normalText('按照这样的规则 mod 新增所有手工品的替代配方，不用频繁合宝石操作，也能较低成本合成手工品'));
-  demo1.push(normalText('主要是解决手工品难出的问题，希望我这个例子你能比较清晰的理解这些手工品配方'));
+  demo1.push(normalText('主要是解决手工品难出的问题，希望这个例子能帮助你理解这些新的手工品配方'));
 
 
   D2RMM.writeJson(demo1panelhdFilename, demo1panelhd);
@@ -298,13 +298,13 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   const demo2 = demo2panelhd.children[1].children[0].children;
   demo2.push(bigTitle('小号符文换取大号符文'));
   demo2.push(normalText('统一为8个换取，8个比较好计算刚好两列背包', 'Yellow', 2));
-  demo2.push(normalText2('8个1-14#符文(无法混杂)', '20#符文', '', 2));
-  demo2.push(normalText('比如4个1#加4个2#符文无法置换','Yellow', 2));
+  demo2.push(normalText2('8个1-14#符文(除8#和11#符文)', '20#符文', '', 2));
+  demo2.push(normalText('比如4个1#加4个2#符文无法置换', 'Yellow', 2));
+  demo2.push(normalText2('8 8#符文', '22#符文', '', 2));
+  demo2.push(normalText2('8 11#符文', '22#符文', '', 2));
   demo2.push(normalText2('8 15#符文', '25#符文', '', 2));
   demo2.push(normalText2('8 16#符文', '22#符文', '', 2));
   demo2.push(normalText2('8 17#符文', '23#符文', '', 2));
-  demo2.push(normalText2('8 18#符文', '24#符文', '', 2));
-  demo2.push(normalText2('8 19#符文', '24#符文', '', 2));
   demo2.push(normalText2('3 19#符文', '20#符文', '', 2));
 
 
@@ -333,6 +333,8 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText22('33#符文 + 珠宝', '28#符文 + 15#符文', '', 2));
 
   demo2.push(bigTitle('便捷符文兑换'));
+  demo2.push(normalText2('7 18#符文', '23#符文'));
+  demo2.push(normalText2('8 19#符文', '24#符文'));
   demo2.push(normalText2('3 20#符文 + 18#符文', '23#符文'));
   demo2.push(normalText2('5 20#符文', '24#符文'));
   demo2.push(normalText2('3 23#符文', '26#符文'));
@@ -342,9 +344,11 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
 
   demo2.push(bigTitle('宝石与符文'));
   demo2.push(normalText22('20#符文 + 无暇紫宝石', '3 完美紫宝石'));
-  demo2.push(normalText22('8#符文 + 钥匙', '1 完美紫宝石 + 钥匙'));
-  demo2.push(normalText22('8 无暇紫宝石', '20#符文'));
-  demo2.push(normalText2('20#符文 + 钥匙', '3个8#符文(结合上下公式可实现所有宝石与符文互换)'));
+  demo2.push(normalText2('8#符文 + 钥匙', '1 完美紫宝石 + 钥匙'));
+  demo2.push(normalText2('8 无暇紫宝石', '20#符文'));
+  demo2.push(normalText2('8个无暇红/骷髅宝石', '18#符文'));
+  demo2.push(normalText2('12个无暇黄/绿/蓝/白/宝石', '18#符文'));
+  // demo2.push(normalText2('20#符文 + 钥匙', '3个8#符文(结合上下公式可实现所有=宝石与符文互换)'));
   demo2.push(normalText2('6 完美骷髅宝石', '3 完美紫宝石'));
   demo2.push(normalText2('6 完美红宝石', '3 完美紫宝石', 'Red'));
   demo2.push(normalText2('6 完美黄宝石', '2 完美紫宝石', 'Yellow'));
@@ -357,9 +361,6 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo2.push(normalText2('1 亮金珠宝 ', ' 3 蓝色珠宝', 'Blue'));
   demo2.push(normalText2('9 珠宝 ', ' 20#符文'));
 
-  demo2.push(bigTitle('符文与底材'));
-  demo2.push(normalText2('20#符文 + 盾牌', ' 4孔君主盾'));
-  demo2.push(normalText2('8#符文 + 剑', ' 4孔水晶剑'));
 
   demo2.push(bigTitle('符文与破免大板子'));
   demo2.push(normalText2('24#符文 + 完美蓝宝石 + 超大板子', ' 破冰免板'));
@@ -461,6 +462,12 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo3.push(normalText22('24#符文 + 鞋子', '蝕肉騎士 cb 鞋', 'Gold'));
   demo3.push(normalText22('23#符文 + 鞋子', '沙暴之旅 沙暴', 'Gold'));
   demo3.push(normalText22('20#符文 + 鞋子', '紗織鞋 纱织', 'Gold'));
+
+  demo3.push(dr());
+  demo3.push(bigTitle('底材'));
+  demo3.push(normalText2('20#符文 + 盾牌', ' 4孔君主盾'));
+  demo3.push(normalText2('8#符文 + 剑', ' 4孔水晶剑'));
+
   demo3.push(bigTitle('合成专属装备'));
   demo3.push(normalText('上面的有些合成材料是专属装备，防止买不到想要的，所以又做了个配方'));
   demo3.push(normalText2('解毒药剂 + 弓', '亚马逊专用弓'));
@@ -484,16 +491,24 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
 
   demo4.push(bigTitle('DEMOMOD其他功能'));
   demo4.push(normalText('MOD说明百科，就是你现在看的这个，笑'));
+  demo4.push(normalText('将角色区域分成3列，左边和右边各四分之一区域为普通和噩梦难度，'));
+  demo4.push(normalText('地狱难度位于中部，点击角色即可进去，不需要再点下面的小按钮（有文本提示）'));
+  demo4.push(normalText('按两次 Esc 键快速退出，此法与原先习惯稍许不同，很好用，但也很容易误触，请注意'));
+  demo4.push(normalText('基德（第一幕西南角npc）出售 +1 传送技能特大咒符，会增加自己所受伤害'));
+  demo4.push(normalText('基德出售近战范围伤害特大咒符'));
+  demo4.push(normalText('城镇里可以传送，冲锋，跳跃、战争指挥、战争命令等技能'));
+  demo4.push(normalText('但战争指挥，战争命令在城里使用只作用于角色本身，在城外使用小弟才会被作用到'));
   demo4.push(normalText('大箱子16X16，7页无缩放，需自行替换共享仓库文件，比缩放的大箱子更美观'));
   demo4.push(normalText('大背包13X8，项链/戒指在鞋子上面，还算美观'));
   demo4.push(normalText('大盒子10X10，跟初始箱子一样大，同样无缩放且方方正正，百科可由此右侧点击弹出'));
   demo4.push(normalText('佣兵全装备，可带两个戒指'));
-  demo4.push(normalText('不太迷你盒子10X10由右下角点击弹出，但会覆盖装备栏，但单独点击背包不覆盖'));
+  demo4.push(normalText('不太迷你的迷你小盒子10X10由右下角点击弹出，方便与箱子/npc交换物品'));
   // demo4.push(normalText('超强白装一定是15ed，非超强白装全是满防御和攻击力，但超强白装掉率没改'));
   demo4.push(normalText('死灵法师的召唤物可以穿过彼此，不再卡位，a2洞窟没那么遭罪了，纯招死灵增强'));
-  demo4.push(normalText('删除技能的强制冷却时间，冰法/元素德等加强'));
-  demo4.push(normalText('手工品的固定词条满变量，20fcr项链更好做了'));
+  // demo4.push(normalText('删除技能的强制冷却时间，冰法/元素德等加强'));
+  demo4.push(normalText('手工品的固定词条满变量，20fcr项链更好做了，但能用依旧很少，不变态'));
   demo4.push(normalText('暗金装备满变量，不改爆率暗金太难打'));
+  demo4.push(normalText('但暗金破免板不满变，不然后期破免板太多，没用也没初刷的惊喜'));
   demo4.push(normalText('符文之语满变量，蓝色金色不做更改，保留暗黑2装备精华的部分'));
   // demo4.push(normalText('增加赌博几率，避免金币后期没用，各职业的专属武器也能赌了，比如法师的次元，飞机头等，'));
   // demo4.push(normalText('普通模式只出普通级装备，噩梦只出扩展级装备，地狱只出精华级装备，'));
@@ -520,34 +535,33 @@ if (config.demoSelect !== '' || config.demoSelect !== 'def') {
   demo4.push(normalText('投掷武器堆叠数量提升至500，省得频繁修复，最多511没法更多了'));
   demo4.push(normalText('修改城镇人物出现位置，A2人物出生点在镇中间，A3在出生点在凯恩附近'));
   demo4.push(normalText('A5凯恩移动到储物箱附近，城镇里可以找凯恩和出口距离变短了'));
-  demo4.push(normalText('城镇里可以传送，冲锋，跳跃等'));
-  demo4.push(normalText('战争指挥，战争命令在城里使用只作用于角色本身，在城外使用小弟才会被作用到'));
-  demo4.push(normalText('一键点击角色进入地狱难度功能，退出游戏鼠标不用移动点击就能快速刷刷刷'));
-  demo4.push(normalText('无法进入地狱的角色点击有提示且不会闪退，注意此功能无文本提示（文本太丑了）'));
   demo4.push(normalText('添加彩色词条，集中关注重点词条'));
   demo4.push(normalText('静音光环声音，不会那么吵了'));
   demo4.push(normalText('怪物禁掉精力/解毒/融冰药剂、箭矢/弩矢、钥匙、回城/辨识卷轴、爆炸/毒气瓶'));
-  demo4.push(normalText('基德出售 +1 传送技能特大咒符，可用可不用'));
-  demo4.push(normalText('基德出售近战范围伤害特大咒符，可用可不用'));
   demo4.push(normalText('隐藏丑丑的绿帽子'));
-  demo4.push(normalText('加快后期升级速度，类似升级原版虚线，不会一刀99'));
+  demo4.push(normalText('加快后期升级速度，类似升级原版虚线，新手较难感知'));
   demo4.push(normalText('扩大邪恶区域出现场景数量，邪恶区域将一次性循环很多张地图'));
   demo4.push(normalText('怪物脚底加光源，避免眼瞎看不见怪'));
   demo4.push(normalText('显示物品等级，物品后面会显示(xx)，打孔/做手工/刷新物品用得到'));
-  // demo4.push(bigTitle('jgmod的功能'));
+
+  demo4.push(bigTitle('jgmod的功能'));
   // demo4.push(normalText('https://www.caimogu.cc/post/77223.html'));
-  demo4.push(bigTitle('YTEMOD的功能'));
+  // demo4.push(bigTitle('YTEMOD的功能'));
   demo4.push(normalText('刺客聚气图标以及刺客瞎眼特效优化'));
   demo4.push(normalText('物品名称前添加图标（通过字体实现）'));
+  demo4.push(normalText('重要物品用彩色五角星标记，如果项目掉落到与图标颜色相同的颜色，请将其捡起来'));
+  demo4.push(normalText('M（蓝色：对应魔法物品；R（金色：对应稀有物品；S（绿色：对应套装； U（暗金：对应唯一物品'));
+  demo4.push(normalText('5色拾：必拾取物品；蓝橙手：做手工底材（必须是蓝色物品才能做手工）'));
+  demo4.push(normalText('物品添加底材类标★底，推荐底材孔数由显示为①②③④⑤⑥，可用于符文之语'));
+  demo4.push(normalText('所有手套、鞋子和头饰都标有稀有标记 戒指、项链、珠宝、大中小护身符，权冠都有五色拾星'));
   demo4.push(normalText('所有符文添加编号'));
   demo4.push(normalText('暗金、套装、符文之语装备添加吐槽及变量信息'));
   demo4.push(normalText('装备属性栏添加辅助信息'));
   demo4.push(normalText('如防具的防御变量范围值、负重信息、最大孔数，武器的攻击范围、攻速、最大孔数，'));
   demo4.push(normalText('如涉及有拾取价值则另加一行用于提示拾取价值信息，如底材孔数、手工底材、暗金套装物品等'));
   demo4.push(normalText('高价值物品在底材名称前加“★”提示。'));
-  demo4.push(normalText('底材词缀（“特等”、“劣等”等）后置，“特等”红色突显'));
-  demo4.push(normalText('四大垃圾词缀后置，统一改成“劣等”，淡青色显示，并默认屏蔽地面显示（拾取后可见）'));
-  demo4.push(normalText('带孔（含带孔无形）底材地面显示为淡粉紫色，纯无形底材地面显示为淡青色'));
+  demo4.push(normalText('物品名称前缀“劣等的”改为“劣”，“损坏的”改为“坏”,“破旧的”改为“破”,“粗糙的”改为“粗”'));
+  demo4.push(normalText('为特等的物品增加粉色特等标识，对装备属性无形和镶孔加粉色强调'));
   demo4.push(normalText('井、祭坛添加效果辅助信息。'));
   demo4.push(normalText('不重要的物品灰色显示，并精简一些物品名称'));
   demo4.push(normalText('地图场景名称后添加场景等级信息'));
